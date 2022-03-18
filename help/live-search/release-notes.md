@@ -1,0 +1,75 @@
+---
+title: 라이브 검색 릴리스 노트
+description: Adobe Commerce의 라이브 검색에 대한 최신 릴리스 정보입니다.
+exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 1%
+
+---
+
+# [!DNL Live Search] 릴리스 정보
+
+이러한 릴리스 노트에서는 최신 버전의 [!DNL Live Search] 다음을 포함합니다.
+
+* ![새로 만들기](../assets/new.svg) - 새로운 기능
+* ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
+* ![버그](../assets/bug.svg) - 알려진 문제
+
+## [!DNL Live Search] 1.3.1
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![수정](../assets/fix.svg) - [사용자 지정 가격 속성](https://docs.magento.com/user-guide/stores/attributes-input-types.html) 로 구성할 때 더 이상 오류를 반환하지 않습니다. [패싯]({% 링크 live-search/facets-add.md %}).
+* ![수정](../assets/fix.svg) - 없을 때 오류가 발생하는 문제를 수정했습니다. [통화 기호](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`사용 가능합니다.
+* ![수정](../assets/fix.svg) - [상점 앞에 포버](storefront-popover.md) 이제 를 표시합니다. [특별 가격](https://docs.magento.com/user-guide/catalog/product-price-special.html) (최소 최종 가격) 사용 가능한 경우
+
+## [!DNL Live Search] 1.3.0
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![새로 만들기](../assets/new.svg) - [성능](https://docs.magento.com/user-guide/live-search/performance.html) 보고 대시보드는 구매자들이 사용하는 검색어에 대한 통찰력을 제공합니다.
+* ![새로 만들기](../assets/new.svg) - [!DNL Live Search] [Storefront 이벤트 SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 이벤트 게시 및 구독 서비스, 지표 등을 통해 일반 데이터 계층에 대한 액세스 권한을 제공합니다.
+* ![수정](../assets/fix.svg) - [스토어프런트포버](https://devdocs.magento.com/live-search/storefront-popover.html) 새 항목 있음 `active` 의 클래스 `.search-autocomplete` 가시성을 제어하는 컨테이너입니다.
+* ![수정](../assets/fix.svg) - 상점 앞에서 [검색어](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 바닥글 링크가 제거되고 캐시가 비활성화되어 있습니다. [!DNL Live Search] 설치.
+* ![버그](../assets/bug.svg) - 검색 어댑터용 패치는 중복 제품을 처리합니다.
+* ![버그](../assets/bug.svg) - [!DNL Live Search] 지원 [단일 소스](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (물리적) 복수(가상)가 있는 재고 위치 [주식](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 현재 여러 인벤토리 소스가 지원되지 않습니다.
+
+## [!DNL Live Search] 1.2.0
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![새로 만들기](../assets/new.svg) - 상점 [poover](storefront-popover.md) 쇼핑객이 검색 상자에 쿼리를 입력할 때 상위 검색 결과의 추천 제품 및 축소판 이미지를 표시합니다.
+* ![새로 만들기](../assets/new.svg) - Commerce Admin 세션은 키보드가 장기간 동안 열려 있습니다
+* ![새로 만들기](../assets/new.svg) - [!DNL Live Search] 은 온보딩 후 자동으로 활성화됩니다
+* ![수정](../assets/fix.svg) - 초기 인덱싱 시간이 1시간 미만
+* ![수정](../assets/fix.svg) - 제품 업데이트 시간이 거의 실시간으로 변경됨(설치 및 설정 후)
+* ![수정](../assets/fix.svg) - 동의어 편집기의 정렬 가능한 열
+* ![수정](../assets/fix.svg) - [!DNL Live Search] 검색 기준에 빈 정렬 순서 값이 포함되어 있으면 더 이상 오류가 발생하지 않습니다
+* ![수정](../assets/fix.svg) - 속성 코드에 문자열 &quot;to&quot; 또는 &quot;from&quot;이 포함된 경우 범위 필터링이 더 이상 중단되지 않습니다.
+
+## [!DNL Live Search] 1.1.0
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![버그](../assets/bug.svg) - [!DNL Live Search] 서비스는 만 지원합니다 [기본 통화](https://docs.magento.com/user-guide/stores/currency-configuration.html) Adobe Commerce 설치 섹션에 자세히 설명되어 있습니다.
+* ![버그](../assets/bug.svg) - 패싯을 추가할 때 을 설정할 때 제품 속성 피드가 올바르게 업데이트되지 않음 `Update on Save`. 이 문제를 방지하려면 다음 위치로 이동하십시오. [인덱스 관리](https://docs.magento.com/user-guide/system/index-management.html) 제품 속성 피드를 로 설정하고 `Update by Schedule`.
+* ![버그](../assets/bug.svg) - [!DNL Live Search] 동의어는 스토어 보기별로 정의되지만, 현재 웹 사이트별로 저장되며, `environmentId` + `storeViewCode`. 따라서 Adobe Commerce 설치 내의 모든 웹 사이트 및 저장소 뷰는 동일한 동의어 집합을 공유합니다. 저장소 보기에 대해 가장 최근에 만든 동의어 세트가 우선합니다.
+* ![버그](../assets/bug.svg) - 동의어 용어에 여러 단어가 포함된 경우 각 단어는 별도의 동의어로 처리됩니다. 예를 들어 &quot;time piece&quot;를 &quot;watch&quot;의 동의어로 정의하는 경우 &quot;time&quot;과 &quot;piece&quot;가 모두 시계의 동의어로 처리됩니다.
+
+## 설명서
+
+자세한 내용:
+
+* [Adobe Commerce 개발자 설명서](https://devdocs.magento.com/)
+* [Adobe Commerce 사용 안내서](https://docs.magento.com/user-guide/)
+* [[!DNL Live Search] Marketplace에서](https://marketplace.magento.com/magento-live-search.html)

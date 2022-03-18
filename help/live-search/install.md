@@ -1,0 +1,282 @@
+---
+title: 라이브 검색 설치
+description: Adobe Commerce에서 Live Search를 설치, 업데이트 및 제거하는 방법을 알아봅니다.
+exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
+
+---
+
+# 설치 [!DNL Live Search]
+
+[!DNL Live Search] 는 독립 실행형 세트입니다 [패키지](#live-search-packages) 는 표준 Magento Open Source 및 Adobe Commerce 검색 기능을 대체합니다. 다음 [!DNL Live Search] 모듈은 서버의 명령줄에서 설치되고 Adobe Commerce 설치 시 로 연결됩니다. [서비스](https://docs.magento.com/user-guide/system/saas.html). 프로세스가 완료되면 [!DNL Live Search] 에 표시됩니다. *마케팅* 메뉴 아래의 *SEO &amp; Search* 에서 [!DNL Commerce] 관리자.
+
+Adobe Commerce 측에는 검색 관리자를 호스팅하고, 카탈로그 데이터를 동기화하고, 쿼리 서비스 실행을 포함합니다.
+
+![라이브 검색 아키텍처 다이어그램](assets/architecture-diagram.svg)
+
+다음 이후 [!DNL Live Search] 모듈(카탈로그 모듈을 종속성으로 사용)이 설치 및 구성되고 [!DNL Commerce] SaaS 서비스와 검색 및 카탈로그 데이터 공유를 시작합니다. 이때 관리 사용자는 검색 패싯, 동의어 및 머천다이징 규칙을 설정, 사용자 지정 및 관리할 수 있습니다.
+
+이 항목에서는 다음을 수행하는 지침을 제공합니다.
+
+* [설치 [!DNL Live Search]](#before-you-begin) (방법 1 및 2)
+* [업데이트 [!DNL Live Search]](#update)
+* [제거 [!DNL Live Search]](#uninstall)
+
+## 요구 사항 {#requirements}
+
+* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.x
+* PHP 7.3 / 7.4
+* [!DNL Composer]
+
+### 지원되는 플랫폼
+
+* Adobe Commerce on prem (EE) : 2.4.x
+* Adobe Commerce on Cloud (ECE) : 2.4.x
+
+## 경계 및 임계값
+
+현재 라이브 검색 카테고리 검색/카테고리 API에는 다음과 같은 지원되는 제한 및 정적 경계가 있습니다.
+
+### 색인 지정
+
+* 저장소 보기당 최대 300개의 제품 특성을 인덱싱합니다
+* Adobe Commerce 데이터베이스의 제품만 인덱싱합니다
+* CMS 페이지를 색인화하지 않습니다
+
+### 기능
+
+* 상점 [고급(양식) 검색](https://docs.magento.com/user-guide/catalog/search-advanced.html) 모듈
+* [고객 그룹](https://docs.magento.com/user-guide/customers/customer-groups.html)
+* [사용자 지정 가격 그룹](https://docs.magento.com/user-guide/catalog/product-price-group.html)
+* 에 사용된 복수 재고 위치 [MCOM](https://docs.magento.com/user-guide/mcom.html) 또는 기타 OMS 확장
+* [통합 B2B 기능](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+
+### 쿼리
+
+* Live Search는 카테고리 트리의 전체 분류에 액세스할 수 없으며 이로 인해 몇 가지 계층화된 탐색 검색 시나리오가 도달할 수 없습니다.
+* 라이브 검색에서는 지능형 세그먼트와 사용자 지정 검색 등의 기능을 지원하는 쿼리에 고유한 GraphQL 엔드포인트를 사용합니다. 와 비슷하지만 [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)에는 몇 가지 차이점이 있으며 일부 필드는 현재 완전히 호환되지 않을 수 있습니다.
+
+### Progressive Web Application(PWA)
+
+* 라이브 검색은 지원되지 않습니다 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 현재
+
+## 시작하기 전에 {#before-you-begin}
+
+다음을 수행합니다.
+
+1. 확인 [직장](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 및 [인덱서](https://docs.magento.com/user-guide/system/index-management.html) 실행 중입니다.
+
+1. 요구 사항을 충족하는 온보딩 방법을 선택하고 지침을 따르십시오.
+
+   * [방법 1](#method-1): 설치 안 함 [!DNL Elasticsearch]
+   * [방법 2](#method-2): 설치 [!DNL Elasticsearch] (다운타임 없음)
+
+   >[!TIP]
+   >
+   >명령줄에 지침을 입력하려면 코드 상자의 오른쪽 맨 위를 마우스로 가리킨 다음 [!UICONTROL **복사**] 링크를 클릭합니다. 그런 다음 명령줄에 붙여 넣습니다. 명령줄에서 작업하는 경험이 없는 경우 시스템 통합자 또는 개발자에게 지원을 요청하십시오.
+
+## 방법 1: Elasticsearch 없이 설치 {#method-1}
+
+이 온보딩 방법은 설치할 때 권장됩니다 [!DNL Live Search] 아래와 같이 변경하는 것을 의미합니다.
+
+* 새로 만들기 [!DNL Commerce] 설치
+* 스테이징 환경
+
+이 시나리오에서는 [!DNL Live Search] 서비스는 카탈로그의 모든 제품을 인덱싱합니다. 설치하는 동안 [!DNL Live Search] 모듈이 활성화되어 있고 [!DNL Elasticsearch] 모듈이 비활성화되어 있습니다.
+
+1. 없이 Adobe Commerce 2.4.x 설치 [!DNL Live Search].
+
+1. 를 다운로드하려면 `live-search` package에서 다음 명령을 실행합니다.
+
+   ```bash
+   composer require magento/DNL live-search
+   ```
+
+   자세한 내용은 [!DNL Live Search] [종속성](#dependencies) 에 의해 [!DNL Composer].
+
+1. 다음 명령을 실행하여 비활성화하십시오 [!DNL Elasticsearch] 및 관련 모듈 및 설치 [!DNL Live Search]:
+
+   ```bash
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch  Magento_InventoryElasticsearch
+   ```
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+   >[!WARNING]
+   >
+   > 데이터가 색인화되고 동기화되는 동안 검색 및 범주 찾아보기 작업은 상점 전면에서 사용할 수 없습니다. 카탈로그의 크기에 따라 프로세스가 시간에서 최소 1시간이 소요될 수 있습니다 `cron` 를 실행하여 데이터 동기화 [!DNL Live Search] 서비스.
+
+1. 다음을 확인합니다 [인덱서](https://docs.magento.com/user-guide/system/index-management.html) 가 로 설정되어 있습니다. `Update by Schedule`:
+
+   * 제품 피드
+   * 제품 변형 피드
+   * 카탈로그 속성 피드
+
+1. 구성 [API 키](#configure-api-keys) to [동기화](#synchronize-catalog-data) 카탈로그 데이터를에 [!DNL Live Search] 서비스.
+
+1. 패싯을 스토어에 필터로 사용할 수 있도록 하려면 [패싯](https://docs.magento.com/user-guide/live-search/facets-add.html) 당신이 필요로 하는 것은 [계면 요구 사항](https://docs.magento.com/user-guide/live-search/facets.html).
+
+   다음에 패싯을 추가할 수 있습니다 `cron` 속성 피드를 실행하고 속성 메타데이터를 내보냅니다.
+
+1. 적어도 한 시간 후에 대기 `cron` 를 실행하여 데이터를 동기화합니다. 그럼, [확인](#verify-export) 데이터가 내보내졌음.
+
+1. [테스트](#test-the-connection) 상점 전면의 연결.
+
+## 방법 2: Elasticsearch으로 설치 {#method-2}
+
+이 온보딩 방법은 설치할 때 권장됩니다 [!DNL Live Search] 변환:
+
+* 기존 프로덕션 [!DNL Commerce] 설치
+
+이 시나리오에서는 [!DNL Elasticsearch] 가 [!DNL Live Search] 서비스는 일반 상점 작업에 중단 없이 백그라운드에 있는 모든 제품을 색인화합니다. [!DNL Elasticsearch] 이 비활성화되어 있고 [!DNL Live Search] 모든 카탈로그 데이터가 인덱싱되고 동기화된 후에 활성화됩니다.
+
+1. 를 다운로드하려면 `live-search` package에서 다음 명령을 실행합니다.
+
+   ```bash
+   composer require magento/live-search
+   ```
+
+   자세한 내용은 [!DNL Live Search] [종속성](#live-search-dependencies) 에 의해 [!DNL Composer].
+
+1. 다음 명령을 실행하여 일시적으로 [!DNL Live Search] storefront 검색 결과를 제공하는 모듈입니다.
+
+   ```bash
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   ```
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+   [!DNL Elasticsearch] 는 [!DNL Live Search] 서비스는 카탈로그 데이터와 인덱스 제품을 백그라운드에서 동기화합니다.
+
+1. 다음을 확인합니다 [인덱서](https://docs.magento.com/user-guide/system/index-management.html) 가 로 설정되어 있습니다. `Update by Schedule`:
+
+   * 제품 피드
+   * 제품 변형 피드
+   * 카탈로그 속성 피드
+
+1. 구성 [API 키](#configure-api-keys) to [동기화](#synchronize-catalog-data) 카탈로그 데이터를에 [!DNL Live Search] 서비스.
+
+1. 패싯을 스토어에 필터로 사용할 수 있도록 하려면 [패싯](https://docs.magento.com/user-guide/live-search/facets-add.html) 당신이 필요로 하는 것은 [계면 요구 사항](https://docs.magento.com/user-guide/live-search/facets.html).
+
+   다음에 패싯을 추가할 수 있습니다 `cron` 제품 및 속성 피드를 실행하고 속성 메타데이터를 로 내보냅니다. [!DNL Live Search] 서비스.
+
+1. 데이터가 인덱싱되고 동기화될 때까지 최소 1시간 대기합니다. 그런 다음 [GraphQL 놀이터](https://devdocs.magento.com/live-search/graphql-support.html) 기본 쿼리를 사용하여 다음을 확인합니다.
+
+   * 반환된 제품 개수가 저장소 보기에 대해 예상한 개수에 근접합니다
+   * 패싯이 반환됩니다
+
+1. 다음 명령을 실행하여 비활성화하십시오 [!DNL Elasticsearch] 모듈, 활성화 [!DNL Live Search] 모듈 및 실행 `setup`:
+
+   ```bash
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   ```
+
+   ```bash
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_AdvancedSearch Magento_InventoryElasticsearch
+   ```
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+1. [테스트](#test-the-connection) 상점 전면의 연결.
+
+## API 키 구성 {#configure-api-keys}
+
+연결하려면 Adobe Commerce API 키 및 관련 개인 키가 필요합니다 [!DNL Live Search] Adobe Commerce을 설치하는 동안 변경되었습니다. API 키는 [!DNL Commerce] 개발자 또는 SI와 공유할 수 있는 라이센스 소지자. 그런 다음 개발자는 라이센스 보유자를 대신하여 SaaS 데이터 공간을 만들고 관리할 수 있습니다.
+
+### Adobe Commerce 라이선스 소유자
+
+API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce Services 커넥터](https://docs.magento.com/user-guide/system/saas.html).
+
+### Adobe Commerce 개발자 또는 SI
+
+개발자 또는 SI는 구성의 상거래 서비스 섹션에 설명된 대로 SaaS 데이터 공간을 구성합니다. SaaS 모듈이 설치되면 관리 구성 사이드바에서 커머스 서비스를 사용할 수 있습니다.
+
+## 카탈로그 데이터 동기화 {#synchronize-catalog-data}
+
+[!DNL Live Search] 검색 작업을 위해 동기화된 제품 데이터와 패싯을 구성하려면 동기화된 속성 데이터가 필요합니다. 제품 카탈로그와 카탈로그 서비스 간의 초기 동기화는 [!DNL Live Search] 가 처음 연결되었습니다. 카탈로그의 설치 방법 및 크기에 따라 데이터를 내보내고 인덱싱하는 데 최대 8시간이 걸릴 수 있습니다. [!DNL Live Search]. 카탈로그 서비스와 동기화되고 공유되는 데이터 목록은 다음 스키마에 정의되어 있습니다.
+
+`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+### 내보내기 확인 {#verify-export}
+
+카탈로그 데이터를 Adobe Commerce 인스턴스에서 내보내고 을 동기화했는지 확인하려면 [!DNL Live Search]에서는 다음 표에서 항목을 찾습니다.
+
+* `catalog_data_exporter_products`
+* `catalog_data_exporter_product_attributes`
+
+자세한 도움말은 [[!DNL Live Search] 카탈로그가 동기화되지 않음](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) 지원 기술 자료에서
+
+### 향후 제품 업데이트
+
+초기 동기화 후 증분 제품 업데이트를 상점 검색 시 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [스트리밍 제품 업데이트](https://devdocs.magento.com/live-search/indexing.html).
+
+## 연결 테스트 {#test-connection}
+
+스토어에서 다음을 확인합니다.
+
+* 다음 [!UICONTROL Search] 결과 반환
+* 카테고리 찾아보기가 결과를 올바르게 반환합니다
+* 패싯은 검색 결과 페이지에서 필터로 사용할 수 있습니다
+
+모든 것이 제대로 작동한다면, 축하합니다! [!DNL Live Search] 설치, 연결 및 사용 준비가 되었습니다.
+
+상점 앞에서 문제가 발생하면 `var/log/system.log` 파일 을 참조하십시오.
+
+## 업데이트 중 [!DNL Live Search] {#update}
+
+업데이트하려면 [!DNL Live Search]명령줄에서 다음을 실행합니다.
+
+```bash
+composer update magento/live-search --with-dependencies
+```
+
+1.0에서 2.0과 같은 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일:
+
+1. 루트 열기 `composer.json` 파일 및 검색 `magento/live-search`.
+
+1. 에서 `require` 섹션에서 버전 번호를 다음과 같이 업데이트합니다.
+
+   ```json
+   "require": {
+      ...
+      "magento/live-search": "^2.0",
+      ...
+    }
+   ```
+
+1. **저장** `composer.json`. 그런 다음 명령줄에서 다음을 실행합니다.
+
+   ```bash
+   composer update magento/live-search –-with-dependencies
+   ```
+
+## 제거 [!DNL Live Search] {#uninstall}
+
+제거하려면 [!DNL Live Search]를 참조하려면 [모듈 제거](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+
+## [!DNL Live Search] 패키지 {#packages}
+
+| 패키지 | 설명 |
+|--- |--- |
+| `module-live-search` | 판매자가 계면, 동의어, 쿼리 규칙 등에 대한 검색 설정을 구성할 수 있으며, 관리자로부터 쿼리를 테스트할 수 있도록 읽기 전용 GraphQL 놀이터에 액세스할 수 있습니다. |
+| `module-live-search-adapter` | 스토어프론트에서 다음으로 검색 요청을 라우팅합니다. [!DNL Live Search] 서비스를 제공하고 결과를 상점 앞에 렌더링합니다. <br />- 범주 찾아보기 - 상점 전면의 요청을 라우팅합니다. [위쪽 탐색](https://docs.magento.com/user-guide/catalog/navigation-top.html) 를 클릭합니다.<br />- 전역 검색 - [빠른 검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 상점 오른쪽 상단의 상자 [!DNL Live Search] 서비스. |
+| `module-live-search-storefront-popover` | &quot;입력할 때 검색&quot; 팝오버는 표준 빠른 검색을 대체하고 상위 검색 결과의 동적 제품 제안 및 미리 보기를 반환합니다. |
+
+## [!DNL Live Search] 종속성 {#dependencies}
+
+다음 [!DNL Live Search] 종속성은 [!DNL Composer]:
+
+| 종속성 | 설명 |
+|--- |--- |
+| 모듈 내보내기 | 다음 모듈은 카탈로그 데이터를 수집하고 동기화합니다.<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
+| `services-connector` | Commerce Services에 대한 연결을 구성하는 데 필요합니다. |
+| `module-services-id` | Commerce Services에 대한 연결을 구성하는 데 필요합니다. |
