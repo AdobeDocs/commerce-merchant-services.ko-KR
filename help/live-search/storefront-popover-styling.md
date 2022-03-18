@@ -4,7 +4,7 @@ description: Live Search Storefront poover 사용자 지정에 대한 기술 참
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---

@@ -4,7 +4,7 @@ description: Adobe Commerce에서 Live Search를 설치, 업데이트 및 제거
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
