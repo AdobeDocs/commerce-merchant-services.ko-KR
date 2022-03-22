@@ -1,10 +1,10 @@
 ---
-title: 체크아웃 흐름
+title: '"[!DNL Express Checkout] 호환 가능한 결제 방법"'
 description: Adobe Commerce의 체크아웃 플로우 개요.
 exl-id: 60faef08-7083-4175-93f2-086aa54b1614
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: f52bd11e4872f4a1621382f5528e2e477b2e9e48
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
