@@ -2,9 +2,9 @@
 title: 라이브 검색 릴리스 노트
 description: Adobe Commerce의 라이브 검색에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ ht-degree: 1%
 * ![새로 만들기](../assets/new.svg) - 새로운 기능
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) - 알려진 문제
+
+## [!DNL Live Search] 2.0
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![새로 만들기](../assets/new.svg) - 사용 가능한 줄 수 [상점 앞에 있는 팝오버](quick-tour.md) 는 *관리*.
+* ![새로 만들기](../assets/new.svg) - 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 라이브 검색에 대한 호환성.
+* ![새로 만들기](../assets/new.svg) - Live Search 설치 프로세스가 고급 프로세스 변경 사항으로 업데이트됩니다.
+* ![수정](../assets/fix.svg) - [고급 검색](https://docs.magento.com/user-guide/catalog/search-advanced.html) 링크가 상점 바닥글에서 제거되었습니다.
+* ![버그](../assets/bug.svg) - 다음 제품 속성은 [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) PWA 베타 릴리스와 관련하여 사용하는 경우: `description`, `name`, `short_description`
+* ![버그](../assets/bug.svg) - 라이브 검색에 대한 PWA 베타 릴리스가 지원되지 않음 [이벤트 처리](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1
 
@@ -47,7 +60,7 @@ ht-degree: 1%
 * 안정성: 안정적인
 
 * ![새로 만들기](../assets/new.svg) - 상점 [poover](storefront-popover.md) 쇼핑객이 검색 상자에 쿼리를 입력할 때 상위 검색 결과의 추천 제품 및 축소판 이미지를 표시합니다.
-* ![새로 만들기](../assets/new.svg) - Commerce Admin 세션은 키보드가 장기간 동안 열려 있습니다
+* ![새로 만들기](../assets/new.svg) - 상거래 *관리* 장기간 키보드 비활성화 시 세션 열기 유지
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] 은 온보딩 후 자동으로 활성화됩니다
 * ![수정](../assets/fix.svg) - 초기 인덱싱 시간이 1시간 미만
 * ![수정](../assets/fix.svg) - 제품 업데이트 시간이 거의 실시간으로 변경됨(설치 및 설정 후)

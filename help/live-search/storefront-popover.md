@@ -2,9 +2,9 @@
 title: 스토어프런트포버
 description: Live Search storefront 팝오버는 제안된 제품 및 축소판을 동적으로 반환합니다.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ When [!DNL Live Search] is [설치](install.md)고객이 상점 안에 [검색](
 * `categories`
 
 ![라이브 검색 팝업](assets/storefront-search-as-you-type.png)
+
+## 페이지 크기 채우기
+
+팝오버의 페이지 크기는 자동 완성된 제품 라인의 수를 결정합니다. 이전에는 페이지 크기를 6줄로 하드코딩했습니다. 하지만, `page_size` 값은 이제 *관리*. 라이브 검색 설치 중에 `page_size` 값이 [카탈로그 검색](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 설정
+
+기본적으로 카탈로그 검색 - 자동 완료 제한 값은 8행(또는 행)으로 설정됩니다. 팝오버의 페이지 크기를 변경하려면 다음을 수행하십시오.
+
+1. 설정 *관리* 사이드바, 다음 위치로 이동 **스토어** > 설정 > **구성**.
+1. 왼쪽 패널에서 를 확장합니다. **카탈로그** 및 **카탈로그** 설정 목록에서 을 선택합니다.
+1. 를 확장합니다. *카탈로그 검색* 섹션을 참조하십시오.
+1. 설정 **자동 완료 제한** 팝오버에서 허용하려는 줄 수를 지정합니다.
+1. 완료되면 를 클릭합니다. **구성 저장**.

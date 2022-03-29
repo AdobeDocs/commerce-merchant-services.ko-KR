@@ -3,20 +3,22 @@ user-guide-title: 라이브 검색 안내서
 user-guide-description: 이 안내서에서는 Adobe Commerce에서 라이브 검색 사용을 위한 자세한 지침을 제공합니다.
 breadcrumb-title: 라이브 검색 안내서
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '90'
 ht-degree: 2%
 
 ---
 
 # 상거래 라이브 검색 {#live-search}
 
-- [라이브 검색 안내서](overview.md)
-- 시작하기 {#getting-started}
-   - [설치](install.md)
-   - [릴리스 정보](release-notes.md)
-- Live Search Storefront{#live-search-storefront}
+- [안내서 개요](guide-overview.md)
+- [라이브 검색 소개](overview.md)
+- [릴리스 정보](release-notes.md)
+- 온보드 라이브 검색 {#onboard}
+   - [온보딩 개요](onboarding-overview.md)
+   - [라이브 검색 설치](install.md)
+- Live Search Storefront {#live-search-storefront}
    - [빠른 둘러보기](quick-tour.md)
    - [스토어프런트포버](storefront-popover.md)
    - [스타일링 팝오버 요소](storefront-popover-styling.md)
