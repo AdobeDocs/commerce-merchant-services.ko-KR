@@ -1,9 +1,9 @@
 ---
 title: 배치 및 레이블
 description: 사이트의 다양한 페이지에 권장 사항을 배치할 수 있는 위치와 각 권장 사항 유형에 대해 자주 사용되는 레이블에 대한 제안을 알아봅니다.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 선택할 권장 사항 유형이 너무 많기 때문에 각 페이지에서 어떤 항목을 사용해야 합니까? 시작할 위치를 모를 경우 다음을 시도해 보십시오.
 
-|홈 페이지|`Recommended for you`| |제품 페이지|`Viewed this, viewed that`| |장바구니|`Bought this, bought that`|
+| 페이지 | 권장 사항 유형 |
+|---|---|
+| 홈 페이지 | `Recommended for you` |
+| 제품 페이지 | `Viewed this, viewed that` |
+| 장바구니 | `Bought this, bought that` |
 
 을(를) 추적할 수 있습니다 [지표](workspace.md) 필요한 경우 조정합니다. 실험이 핵심이라는 것을 기억하세요.
 
