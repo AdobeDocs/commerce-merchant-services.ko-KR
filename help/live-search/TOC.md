@@ -2,8 +2,7 @@
 user-guide-title: 라이브 검색 안내서
 user-guide-description: 이 안내서에서는 Adobe Commerce에서 라이브 검색 사용을 위한 자세한 지침을 제공합니다.
 breadcrumb-title: 라이브 검색 안내서
-hide: true
-source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%

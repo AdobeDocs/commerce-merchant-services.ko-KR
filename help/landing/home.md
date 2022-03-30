@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
+source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하도록 호�
 
 다음 항목은 설명서의 최근 변경 사항입니다.
 
-* 업데이트 날짜: [!DNL Live Search] 의 릴리스 노트 [1.3.1 릴리스](/help/live-search/release-notes.md).
+* 업데이트 날짜: [!DNL Live Search] 의 릴리스 노트 [2.0 릴리스](/help/live-search/release-notes.md).
 * 섹션이 추가되었습니다(_경계 및 임계값_) [설치 [!DNL Live Search]](/help/live-search/install.md) 주제.
 * 추가됨 [[!DNL Payment Services] 안내서](/help/payment-services/guide-overview.md) 새로운 marketplace 확장 및 호스팅 서비스 v1.0.0에 대한 최신 정보를 제공합니다.
 * 다음 [!DNL Live Search] [성능 보고 대시보드](/help/live-search/performance.md) 는 구매자가 사용하는 검색어의 효과에 대한 통찰력을 제공합니다.
-* 에 B2B 지원이 추가되었습니다. [[!DNL Product Recommendations]](https://docs.magento.com/user-guide/recommendations/overview.html).
+* 에 B2B 지원이 추가되었습니다. [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
