@@ -1,0 +1,92 @@
+---
+title: 설치 및 구성
+description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
+source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
+
+---
+
+# 설치 및 구성
+
+배포 [!DNL Product Recommendations] 저장소 및 관리자에게 연락하려면 모듈을 설치하고 Commerce Services 커넥터를 구성해야 합니다. 업데이트가 릴리스되면 최신 버전으로 설치를 쉽게 업데이트할 수 있습니다.
+
+- [설치](#install)
+- [Configure](#configure)
+- [업데이트](#update)
+- [제거](#uninstall)
+
+## 설치 [!DNL Product Recommendations] {#install}
+
+왜냐하면 [!DNL Product Recommendations] 모듈은 독립형 메타패키지입니다. 업데이트는 Adobe Commerce보다 자주 릴리스됩니다. 최신 버그 수정 및 기능을 사용하여 최신 정보를 확인하려면 [릴리스 노트](release-notes.md).
+
+설치 `magento/product-recommendations` 모듈(작성기 포함):
+
+```bash
+composer require magento/product-recommendations
+```
+
+### 페이지 빌더 추가 지원 {#pbsupport}
+
+[!DNL Product Recommendations] 용 Page Builder 는 선택적 모듈이며 별도로 설치됩니다. 를 사용하려면 [!DNL Product Recommendations] 페이지 빌더를 사용하여 다음 명령을 실행하여 모듈을 설치합니다.
+
+```bash
+composer require magento/module-page-builder-product-recommendations
+```
+
+사용 [!DNL Product Recommendations] 페이지 빌더에서 활성 상태의 기존 를 추가할 수 있습니다 [추천 단위](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 페이지, 블록 및 동적 블록과 같이 페이지 빌더에서 만든 모든 컨텐츠에 매핑해야 합니다.
+
+### 시각적 유사성 권장 사항 유형 추가 {#vissimsupport}
+
+다음 _시각적 유사성_ 권장 사항 유형을 사용하면 제품을 표시하는 제품 세부 사항 페이지에 권장 사항 단위를 배포할 수 있습니다 [시각적으로 유사](type.md#visualsim) 보려는 제품에 연결할 수 있습니다. 이 권장 사항 유형은 제품의 이미지와 시각적 측면이 쇼핑 경험의 중요한 부분인 경우 가장 유용합니다. 설치 _시각적 유사성_ 다음 명령을 실행하여 권장 사항 유형:
+
+```bash
+composer require magento/module-visual-product-recommendations
+```
+
+## Configure [!DNL Product Recommendations] {#configure}
+
+를 설치한 후 `magento/product-recommendations` 모듈, 구성 [Commerce Services 커넥터](https://docs.magento.com/user-guide/configuration/services/saas.html) api 키를 지정하고 SaaS 데이터 공간을 선택하여 데이터를 제거합니다.
+
+카탈로그 내보내기가 올바르게 실행되는지 확인하려면 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 작업 및 [인덱서](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 실행 중이며 `Product Feed` 인덱서가 `Update by Schedule`.
+
+API 키를 통해 Commerce Services에 연결하고 SaaS 데이터 공간을 지정하면 카탈로그 동기화가 시작되고 [검증](verify.md) 해당 행동 데이터가 스토어에 전송됩니다.
+
+## 업데이트 [!DNL Product Recommendations] 설치 {#update}
+
+모든 Adobe Commerce과 마찬가지로 [!DNL Product Recommendations] 설치 및 업데이트에 작성기 를 사용합니다. 를 업데이트하려면 `magento/product-recommendations` 모듈에서 다음을 실행합니다.
+
+```bash
+composer update magento/product-recommendations --with-dependencies
+```
+
+2.0~3.0과 같은 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집해야 합니다 `composer.json` 파일. (자세한 내용은 [릴리스 노트](release-notes.md) 최신 버전에 대한 정보) 예를 들어, 기본 `composer.json` 파일 및 검색 `magento/product-recommendations` 모듈:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^2.0",
+    ...
+}
+```
+
+주요 버전을 `2.0` to `3.0`:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^3.0",
+    ...
+}
+```
+
+를 저장합니다 `composer.json` 파일 및 실행:
+
+```bash
+composer update magento/product-recommendations --with-dependencies
+```
+
+## 제거 [!DNL Product Recommendations] {#uninstall}
+
+필요한 경우 다음을 수행할 수 있습니다 [제거](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) 제품-권장 사항 모듈.
