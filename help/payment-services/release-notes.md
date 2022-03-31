@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 는 이제 Adobe Commerce 및 Magento Open Source 버전 2.4.0과 2.4.4와 호환됩니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2682 --> 다음 [!DNL Payment Services] 캐나다 상인들은 Adobe Commerce 및 Magento Open Source 확장을 사용할 수 있습니다. 상인은 다음 중 하나에서 결제 구성을 볼 수 있습니다 [프랑스어](overview.md?lang=fr) 또는 [영어](overview.md?lang=en).
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-2682 --> 다음 [!DNL Payment Services] 캐나다 상인들은 Adobe Commerce 및 Magento Open Source 확장을 사용할 수 있습니다. 상인은 다음 중 하나에서 결제 구성을 볼 수 있습니다 [프랑스어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) 또는 [영어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 지원 [캐나다 달러(CAD)](overview.md#accepted-credit-cards-and-currencies) 카드 및 페이팔과 함께 사용할 수 있습니다. 쇼핑객은 쇼핑 중인 상점의 로케일에 따라 원하는 언어로 쇼핑 경험을 할 수 있습니다.
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal 샌드박스 계정](https://support.magento.com/hc/en-us/articles/4406954952461) 대상 [!DNL Payment Services] 온보딩 중에 계정이 만들어졌는지 확인할 수 없습니다.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2842 --> [신용 카드 테스트 실패](https://support.magento.com/hc/en-us/articles/4406954952461) 샌드박스 환경에서 지급을 처리할 때 PayPal과 함께 사용할 수 있습니다.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2842 --> [신용 카드 테스트 실패](https://support.magento.com/hc/en-us/articles/5201041963917) 샌드박스 환경에서 지급을 처리할 때 PayPal과 함께 사용할 수 있습니다.
 
 ## v1.0.0
 
