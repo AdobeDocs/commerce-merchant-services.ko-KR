@@ -4,9 +4,9 @@ description: 설치 및 사용 방법 알아보기 [!DNL Payment Services] Adobe
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: b790ef50c2acaa830ce5ad1b9a755f9d7f9dd5c5
+source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,10 @@ ht-degree: 0%
 
 ## 허용된 신용 카드 및 통화
 
-현재, [!DNL Payment Services] 은 미국(미국)에서만 사용할 수 있으며 미국 달러(USD) 통화를 수락합니다.
+현재, [!DNL Payment Services] 다음에서만 사용할 수 있습니다.
+
+* 미국 및 미국 달러(USD) 통화를 수락합니다.
+* 캐나다(CA) 및 캐나다 달러(CAD) 통화를 수락합니다.
 
 자세한 내용은 [PayPal 통화 가용성](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 설명서 를 참조하십시오.
 
