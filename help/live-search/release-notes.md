@@ -2,9 +2,9 @@
 title: 라이브 검색 릴리스 노트
 description: Adobe Commerce의 라이브 검색에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 1%
 * Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
 * 안정성: 안정적인
 
-* ![새로 만들기](../assets/new.svg) - [성능](https://docs.magento.com/user-guide/live-search/performance.html) 보고 대시보드는 구매자들이 사용하는 검색어에 대한 통찰력을 제공합니다.
+* ![새로 만들기](../assets/new.svg) - [성능](performance.md) 보고 대시보드는 구매자들이 사용하는 검색어에 대한 통찰력을 제공합니다.
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] [Storefront 이벤트 SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 이벤트 게시 및 구독 서비스, 지표 등을 통해 일반 데이터 계층에 대한 액세스 권한을 제공합니다.
 * ![수정](../assets/fix.svg) - [스토어프런트포버](https://devdocs.magento.com/live-search/storefront-popover.html) 새 항목 있음 `active` 의 클래스 `.search-autocomplete` 가시성을 제어하는 컨테이너입니다.
 * ![수정](../assets/fix.svg) - 상점 앞에서 [검색어](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 바닥글 링크가 제거되고 캐시가 비활성화되어 있습니다. [!DNL Live Search] 설치.

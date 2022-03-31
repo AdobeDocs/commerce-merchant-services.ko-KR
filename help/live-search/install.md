@@ -2,9 +2,9 @@
 title: 라이브 검색 설치
 description: Adobe Commerce에서 Live Search를 설치, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
 1. 구성 [API 키](#configure-api-keys) 카탈로그 데이터가 [동기화](#synchronize-catalog-data) with [!DNL Live Search] 서비스.
 
-1. 패싯을 스토어에 필터로 사용할 수 있도록 하려면 [패싯](https://docs.magento.com/user-guide/live-search/facets-add.html) 당신이 필요로 하는 것은 [계면 요구 사항](https://docs.magento.com/user-guide/live-search/facets.html).
+1. 패싯을 스토어에 필터로 사용할 수 있도록 하려면 [패싯](facets-add.md) 당신이 필요로 하는 것은 [계면 요구 사항](facets.md).
 
    다음에 패싯을 추가할 수 있습니다 `cron` 속성 피드를 실행하고 속성 메타데이터를 내보냅니다.
 
@@ -123,7 +123,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
 1. 구성 [API 키](#configure-api-keys) 카탈로그 데이터가 [동기화](#synchronize-catalog-data) with [!DNL Live Search] 서비스.
 
-1. 패싯을 스토어에 필터로 사용할 수 있도록 하려면 [패싯](https://docs.magento.com/user-guide/live-search/facets-add.html) 당신이 필요로 하는 것은 [계면 요구 사항](https://docs.magento.com/user-guide/live-search/facets.html).
+1. 패싯을 스토어에 필터로 사용할 수 있도록 하려면 [패싯](facets-add.md) 당신이 필요로 하는 것은 [계면 요구 사항](facets.md).
 
    다음에 패싯을 추가할 수 있습니다 `cron` 제품 및 속성 피드를 실행하고 속성 메타데이터를 로 내보냅니다. [!DNL Live Search] 서비스.
 
@@ -177,7 +177,7 @@ API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce
 
 ### 향후 제품 업데이트
 
-초기 동기화 후 증분 제품 업데이트를 상점 검색 시 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [스트리밍 제품 업데이트](https://devdocs.magento.com/live-search/indexing.html).
+초기 동기화 후 증분 제품 업데이트를 상점 검색 시 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [스트리밍 제품 업데이트](indexing.md).
 
 ## 연결 테스트 {#test-connection}
 

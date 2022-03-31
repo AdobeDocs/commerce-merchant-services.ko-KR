@@ -5,10 +5,10 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 0%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
@@ -59,11 +59,11 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하도록 호�
 
 ## 서비스에 연결
 
-다음 [Commerce Services 커넥터](https://docs.magento.com/user-guide/system/saas.html) api 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce만 해당)의 경우 구성에 데이터 공간을 지정할 수도 있습니다.
+다음 [Commerce Services 커넥터](saas.md) api 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce만 해당)의 경우 구성에 데이터 공간을 지정할 수도 있습니다.
 
 ## 카탈로그 동기화
 
-카탈로그 데이터(제품 Recommendations 및 라이브 검색)를 사용하는 서비스의 경우, [카탈로그 동기화](https://docs.magento.com/user-guide/system/catalog-sync.html) process는 서비스를 최신 상태로 유지하기 위해 지속적으로 상거래 서버에서 Commerce Services로 제품 데이터를 내보냅니다.
+카탈로그 데이터(제품 Recommendations 및 라이브 검색)를 사용하는 서비스의 경우, [카탈로그 동기화](catalog-sync.md) process는 서비스를 최신 상태로 유지하기 위해 지속적으로 상거래 서버에서 Commerce Services로 제품 데이터를 내보냅니다.
 
 ## 새로운 기능
 
