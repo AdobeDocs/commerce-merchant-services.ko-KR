@@ -2,7 +2,7 @@
 title: 스타일링 팝오버 요소
 description: Live Search Storefront poover 사용자 지정에 대한 기술 참고 사항.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스타일 시트)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 에서 [Frontend Developers 안내서](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스타일 시트)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 에서 [프런트 엔드 개발자 안내서](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
 
 ## 클래스 선택기
 

@@ -2,7 +2,7 @@
 title: 패싯 추가
 description: 필터링 가능한 제품 속성을 라이브 검색 패싯으로 추가하는 방법을 알아봅니다.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 2단계: 패싯 속성 편집(선택 사항)
 
-1. 패싯 속성을 편집하려면 **자세히** (![더 보기 선택기](assets/btn-more.png) 맨 오른쪽 열의 옵션.
+1. 패싯 속성을 편집하려면 **자세히** (![더 보기 선택기](assets/btn-more.png)) 옵션을 구성합니다.
 1. 메뉴에서 **편집**. 그런 다음 필요에 따라 다음 속성을 조정합니다.
 
    * 레이블 - ([헤드리스](facets-type.md) 만) 사용할 패싯 레이블을 입력합니다.

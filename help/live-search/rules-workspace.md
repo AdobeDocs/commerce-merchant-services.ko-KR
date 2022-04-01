@@ -2,9 +2,9 @@
 title: 규칙 작업 공간
 description: 라이브 검색 규칙 작업 공간에 대해 알아봅니다.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Adobe Commerce 설치에 여러 저장소 보기가 포함된 경우 **범위** 
 
 | 제어 | 설명 |
 |--- |--- |
-| 규칙 추가 | 를 엽니다. [규칙 편집기]({% 링크 live-search/rules-add.md %}). |
+| 규칙 추가 | 를 엽니다. [규칙 편집기](rules-add.md). |
 | 상태 | 상태별로 규칙 목록을 필터링합니다. 옵션: 모두, 활성, 비활성, 예약됨 |
 | ![열 선택기](assets/btn-show-hide-columns.png) | 그리드에 표시되는 열을 지정합니다. 옵션: 마지막 업데이트, 시작 날짜, 종료 날짜, 상태 |
 | 검색 | 전체 이름 또는 부분 일치로 규칙을 검색합니다. |

@@ -2,9 +2,9 @@
 title: 스토어프런트포버
 description: Live Search storefront 팝오버는 제안된 제품 및 축소판을 동적으로 반환합니다.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ When [!DNL Live Search] is [설치](install.md)고객이 상점 안에 [검색](
 
 >[!NOTE]
 >
->다음 [!DNL Live Search] storefront poover는 *루마* 테마 또는 사용자 정의된 테마 *루마*. 다음 *루마* 테마는 [!DNL Commerce] 샘플 데이터. 팝오버는 *비어 있음* 테마. 자세한 내용은 [수정된 테마 작업](#working-with-modified-theme) 추가 정보.
+>다음 [!DNL Live Search] storefront poover는 *루마* 테마 또는 사용자 정의된 테마 *루마*. 다음 *루마* 테마는 [!DNL Commerce] 샘플 데이터. 팝오버는 *비어 있음* 테마. 자세한 내용은 [스타일링 팝오버 요소](storefront-popover-styling.md) 추가 정보
 
 ## 검색 가능한 속성
 

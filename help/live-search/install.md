@@ -2,9 +2,9 @@
 title: 라이브 검색 설치
 description: Adobe Commerce에서 Live Search를 설치, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
 이 항목에서는 다음을 수행하는 지침을 제공합니다.
 
-* [설치 [!DNL Live Search]](#before-you-begin) (방법 1 및 2)
+* 설치 [!DNL Live Search] (방법 1 및 2)
 * [업데이트 [!DNL Live Search]](#update)
 * [제거 [!DNL Live Search]](#uninstall)
 
@@ -150,15 +150,15 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
 ## API 키 구성 {#configure-api-keys}
 
-연결하려면 Adobe Commerce API 키 및 관련 개인 키가 필요합니다 [!DNL Live Search] Adobe Commerce을 설치하는 동안 변경되었습니다. API 키는 [!DNL Commerce] 개발자 또는 SI와 공유할 수 있는 라이센스 소지자. 그런 다음 개발자는 라이센스 보유자를 대신하여 SaaS 데이터 공간을 만들고 관리할 수 있습니다.
+연결하려면 Adobe Commerce API 키 및 관련 개인 키가 필요합니다 [!DNL Live Search] Adobe Commerce을 설치하는 동안 변경되었습니다. API 키는 [!DNL Commerce] 개발자 또는 SI와 공유할 수 있는 라이센스 소지자. 그런 다음 개발자는 라이센스 보유자를 대신하여 SaaS 데이터 공간을 만들고 관리할 수 있습니다.  이미 API 키 세트가 있는 경우 다시 생성할 필요가 없습니다.
 
 ### Adobe Commerce 라이선스 소유자
 
-API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce Services 커넥터](https://docs.magento.com/user-guide/system/saas.html).
+API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce Services 커넥터](../landing/saas.md).
 
 ### Adobe Commerce 개발자 또는 SI
 
-개발자 또는 SI는 구성의 상거래 서비스 섹션에 설명된 대로 SaaS 데이터 공간을 구성합니다. 에서 *관리*, SaaS 모듈이 설치되면 구성 사이드바에서 상거래 서비스를 사용할 수 있게 됩니다.
+개발자 또는 SI는 *상거래 서비스* 섹션에 나열된 상태로 남아 있습니다. 에서 *관리*, Commerce Services는 *구성* SaaS 모듈이 설치된 경우 사이드바
 
 ## 카탈로그 데이터 동기화 {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce
 
 ### 향후 제품 업데이트
 
-초기 동기화 후 증분 제품 업데이트를 상점 검색 시 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [스트리밍 제품 업데이트](indexing.md).
+초기 동기화 후 증분 제품 업데이트를 상점 검색 시 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [색인 지정 - 스트리밍 제품 업데이트](indexing.md).
 
 ## 연결 테스트 {#test-connection}
 

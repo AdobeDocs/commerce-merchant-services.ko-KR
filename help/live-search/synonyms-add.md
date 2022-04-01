@@ -2,9 +2,9 @@
 title: 동의어 추가
 description: 라이브 검색 동의어를 추가하여 검색 요청에 대한 응답을 개선합니다.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ ht-degree: 0%
 
 ## 3단계: 변경 사항 게시
 
-동의어가 완료되면 **변경 사항 게시**.
-업데이트를 상점 앞에서 이용할 수 있는 데는 최대 2시간이 걸릴 수 있습니다.
+1. 동의어가 완료되면 **변경 사항 게시**.
+1. 업데이트를 상점 앞에서 이용할 수 있도록 최대 2시간을 기다리십시오.
 
 ![변경 사항 게시](assets/synonym-publish.png)
 
