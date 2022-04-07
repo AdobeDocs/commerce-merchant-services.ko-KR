@@ -2,9 +2,9 @@
 title: 활성화 [!DNL Payment Services] 프로덕션
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다 [!DNL Payment Services] 제작 관련
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,17 @@ Payments Services 확장이 [설치](install.md)이면 인스턴스가 [구성 �
 
 ## Adobe에서 지급 자격 요청
 
-Live Onboarding을 활성화하려면 [Adobe](https://business.adobe.com/resources/payment-services.html).
+Live Onboarding을 사용하려면 Adobe에서 지급을 요청해야 합니다.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 클릭 **[!UICONTROL Get Live Payments]** 다음 위치에서 [!DNL Payment Services] 대시보드 .
+
+   ![권한 요청](assets/request-entitlements.png)
+
+1. 양식을 작성합니다.
+1. 영업팀 직원이 연락드리겠습니다.
+
+또는 Adobe에서 지급 자격을 요청할 수 있습니다 [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

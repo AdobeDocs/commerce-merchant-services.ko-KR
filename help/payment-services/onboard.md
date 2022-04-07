@@ -4,9 +4,9 @@ description: 인스턴스 연결 [!DNL Payment Services] 몇 가지 온보딩 �
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -59,3 +59,4 @@ API 키를 만들거나 액세스하는 방법에 대해 알아보려면 [API �
 * [문제 해결 [!DNL Payment Services] 설치](https://support.magento.com/hc/en-us/articles/4406603542541)
 * [PayPal 샌드박스 계정이 확인되지 않음](https://support.magento.com/hc/en-us/articles/4406954952461)
 * [지연 [!DNL Payment Services] 보고서 데이터](https://support.magento.com/hc/en-us/articles/4406114741517)
+* [샌드박스 환경에서 지급을 처리할 때 PayPal에서 신용 카드 테스트가 실패합니다](https://support.magento.com/hc/en-us/articles/5201041963917)

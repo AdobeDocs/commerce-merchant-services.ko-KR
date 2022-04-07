@@ -2,18 +2,19 @@
 title: 결제 옵션
 description: 결제 옵션을 설정하여 스토어 고객에게 사용 가능한 방법을 사용자 정의합니다.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9aa701e006a7f107775679f156f84d3e2fdc153b
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
 
 # 결제 옵션
 
-Adobe Commerce 및 Magento Open Source 사용 [!DNL Payment Services], 여러 가지 결제 옵션을 사용할 수 있습니다. 관리자 저장소 구성에서 이러한 옵션을 설정합니다(**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**)**[!UICONTROL Sales]**, 선택&#x200B;**[!UICONTROL Payment Method]s**그리고_[!UICONTROL Recommended Solutions]_ 클릭합니다.
+Adobe Commerce 및 Magento Open Source 사용 [!DNL Payment Services], 여러 가지 결제 옵션을 사용할 수 있습니다. 다음을 통해 다음 결제 옵션을 구성할 수 있습니다.
 
-![결제 방법 보기](assets/methods-view.png)
+* [대시보드](configure-dashboard.md)
+* [저장소 구성](configure-admin.md) (기존 결제 옵션 또는 다중 저장소 설정에 권장)
 
 체크아웃 프로세스 위치에 따라 각 결제 방법에 대해 다양한 동작이 있습니다.
 
@@ -22,17 +23,21 @@ Adobe Commerce 및 Magento Open Source 사용 [!DNL Payment Services], 여러 �
 * 장바구니 - _장바구니 보기 및 편집_ 미니 카트에서
 * 체크 아웃 뷰 - 를 클릭하면 사용할 수 있습니다. _체크아웃으로 이동_ 미니 장바구니 또는 장바구니에서
 
+>[!IMPORTANT]
+>
+>결제를 처리하려면 먼저 결제 서비스 온보딩을 완료해야 합니다.
+
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] 신용 카드 또는 직불 카드 결제 방법에 대해 간단하고 안전한 체크아웃을 제공합니다. 쇼핑객이 신용 카드 필드를 사용하여 체크아웃할 때, 주문하기 위해 이름, 청구 주소 및 신용 또는 직불 카드 정보를 입력합니다. 이 고객의 고객 정보는 구매 세션 중에 안전하게 사용되어 체크아웃 플로우를 원활하게 안내합니다.
 
-다음을 구성할 수 있습니다 [!UICONTROL Credit Card Fields] 관리자. 자세한 내용은 [구성 [!DNL Payment Services]](configure-admin.md#configure-credit-card-fields) 추가 정보.
+다음을 구성할 수 있습니다 [!UICONTROL Credit Card Fields] 저장 구성 또는 Payment Services 대시보드에서 확인할 수 있습니다. 자세한 내용은 [구성 [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) 추가 정보.
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]- PayPal을 사용하여 구매를 완료하고, 구매자의 배송 주소, 청구 주소 및 결제 세부 정보를 저장하여 나중에 사용할 수 있습니다. 쇼핑객은 이전에 PayPal에서 저장하거나 제공하는 모든 결제 방법을 사용할 수 있습니다.
 
-다음을 구성할 수 있습니다 [!DNL PayPal Smart Buttons] 관리자. 자세한 내용은 [구성 [!DNL Payment Services]](configure-admin.md#configure-paypal-smart-buttons) 추가 정보.
+다음을 구성할 수 있습니다 [!DNL PayPal Smart Buttons] 저장 구성 또는 Payment Services 대시보드에서 확인할 수 있습니다.  자세한 내용은 [구성 [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) 추가 정보.
 
 ### PayPal 단추
 

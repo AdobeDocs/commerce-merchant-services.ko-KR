@@ -1,17 +1,17 @@
 ---
-title: 관리자에서 구성
-description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Services] 관리자.
+title: 기존 결제 서비스 구성
+description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Services] 관리자(저장소 구성)를 참조하십시오.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
 
-# 관리자에서 구성
+# 기존 결제 서비스 구성
 
 사용자 지정할 수 있습니다 [!DNL Payment Services] Admin Console에서 유용한 구성 옵션을 사용하여 필요에 맞게 구성할 수 있습니다.
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 자세한 내용은 [결제 옵션](payments-options.md#paypal-smart-buttons) 추가 정보.
 
-### PayPal 스마트 단추 구성
+### Configure [!DNL PayPal Smart Buttons]
 
 관리자 내에서 PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니다.
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 1. 디버그 모드를 활성화하려면 `Yes` 대상 **[!UICONTROL Debug Mode]** (`No` 사용 안 함).
 1. 변경 사항을 저장하려면 **[!UICONTROL Save Config]** .
 
-#### 구성 옵션
+### 구성 옵션
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
@@ -106,3 +106,15 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | 저장소 보기 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 를 클릭합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | 저장소 보기 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] minicart 미리 보기에서. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | 저장소 보기 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 참조하십시오. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] 스타일 지정 옵션
+
+| 필드 | [범위]({% 링크 configuration/scope.md %}) | 설명 |
+|--- |--- |--- |
+| [!UICONTROL Layout] | 저장소 보기 | Paypal 스마트 단추의 레이아웃 스타일을 정의합니다. 옵션: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | 저장소 보기 | Paypal 스마트 단추의 색상을 정의합니다. 옵션: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | 저장소 보기 | Paypal 스마트 단추의 모양을 정의합니다. 옵션: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | 저장소 보기 | PayPal 스마트 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | 저장소 보기 | PayPal 스마트 단추의 높이를 정의합니다. 기본값: 없음 |
+| [!UICONTROL Label] | 저장소 보기 | PayPal 스마트 단추에 표시되는 레이블을 정의합니다. 옵션: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | 저장소 보기 | 태그라인을 활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |

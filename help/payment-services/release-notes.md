@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -42,8 +42,6 @@ ht-degree: 1%
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2561 --> 이전에 제거한 제품이 _검토 순서_ 페이지.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] 관리자의 결제 방법 레이블을 개선합니다.
-
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2907 --> 위조 규칙 및 chargeback 보호를 최대한 활용할 수 있도록 트랜잭션 데이터 수집 개선
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 사용 [잘못된 작성기 키](https://support.magento.com/hc/en-us/articles/4406603542541) 확장을 설치하는 동안 사용자는 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 정확하 `MAGEID`.
 
