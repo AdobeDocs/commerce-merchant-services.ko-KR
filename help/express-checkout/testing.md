@@ -2,9 +2,9 @@
 title: 테스트 [!DNL Express Checkout] Adobe Commerce 확장 프로그램
 description: 테스트 및 유효성 검사 를 통해 [!DNL Express Checkout] 확장은 예상대로 작동합니다.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Adobe Analytics Mobile Apps 또는 Analytics Premium이 [!DNL Express Checkout] 
 
 ### 샌드박스 계정 사용
 
-샌드박스를 테스트하고 유효성을 확인할 때 가짜 신용 카드 번호와 [샌드박스](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} 머천트 계정을 사용하여 기존 신용 카드 계정에 실제 요금을 생성하지 않습니다.
+샌드박스를 테스트하고 유효성을 확인할 때 가짜 신용 카드 번호와 [샌드박스](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} 머천트 계정 [!DNL Bolt]기존 신용 카드 계정에 실제 비용을 생성하지 않도록 하는 등
 
 ## 프로덕션 테스트
 
@@ -48,7 +48,7 @@ Adobe Analytics Mobile Apps 또는 Analytics Premium이 [!DNL Express Checkout] 
 
 1. 스토어프런트로 이동하여 원하는 항목을 카트에 넣습니다.
 1. 체크아웃을 진행합니다.
-1. 메시지가 표시되면 볼트 계정과 연결된 이메일 주소를 입력합니다.
+1. 와 연결된 이메일 주소를 입력합니다 [!DNL Bolt] 메시지가 표시되면 계정이 설정됩니다.
 1. 계정의 전자 메일 주소로 보낸 OTP(일회성 암호)를 입력합니다.
 1. 환경 대시보드를 선택합니다.
 

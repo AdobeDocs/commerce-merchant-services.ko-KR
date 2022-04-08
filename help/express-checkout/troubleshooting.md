@@ -2,9 +2,9 @@
 title: 문제 해결 [!DNL Express Checkout]
 description: 오류 문제 해결. [!DNL Express Checkout] Adobe Commerce 확장
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce은 일반적으로 최대 20개의 주소 라인을 지원하도�
 
 에 대해 알려진 문제가 있습니다 [!DNL Express Checkout].
 
-를 활성화하면 `Enable terms and conditions` 확인란 및 [볼트 계정으로 로그인](https://help.bolt.com/shoppers/guides/checkout/log-in/)이면 확인란이 표시되지 않습니다.
+를 활성화하면 `Enable terms and conditions` 관리자에서 확인란을 선택하고 [!DNL Bolt] 계정, `Enable terms and conditions` 체크 아웃 중에는 확인란이 표시되지 않습니다. 자세한 내용은 [로그인](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] 페이지를 참조하십시오.
 
-자세한 내용은 [약관](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) 주제 를 참조하십시오.
+자세한 내용은 [약관](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) 관리자 구성에 대한 자세한 내용을 보려면 를 참조하십시오.
 
 ## 다음 경우에 예기치 않은 동작이 발생합니다. `Display Billing Address On` 가 로 설정되어 있습니다. `payment page`
 
@@ -105,7 +105,7 @@ Adobe Commerce은 일반적으로 최대 20개의 주소 라인을 지원하도�
 
 를 설정하는 경우 `Display Billing Address On` 매개 변수 대상 `payment page` 및 [볼트 계정으로 로그인](https://help.bolt.com/shoppers/guides/checkout/log-in/) 확인할 때 `My billing and shipping address are the same` 확인란:
 
-![동일한 주소](../assets/checked-address.png)
+![동일한 주소](assets/checked-address.png)
 
 라디오 단추가 표시됩니다 `use existing card`.
 
@@ -119,4 +119,4 @@ Adobe Commerce을 사용하면 여러 지역 및 시장에 대해 스토어를 �
 
 ## 지원 요청
 
-추가 지원 또는 질문이 있으면 Adobe Commerce 지원 센터에 문의하십시오.
+도움이 필요하면 Adobe Commerce 지원 센터에 문의하십시오.

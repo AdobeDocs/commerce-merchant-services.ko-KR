@@ -2,9 +2,9 @@
 title: 체크아웃 페이지
 description: Adobe Commerce의 체크아웃 페이지 개요.
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 체크아웃 페이지의 예:
 
-![체크아웃 페이지](../assets/checkout-page.png)
+![체크아웃 페이지](assets/checkout-page.png)
 
 Adobe Commerce 표준 체크아웃 페이지에 대한 자세한 내용은 [체크아웃 페이지](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) 주제.
 
