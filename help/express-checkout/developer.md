@@ -2,7 +2,7 @@
 title: '`[!DNL Express Checkout] Adobe Commerce 개발자 정보용'
 description: '`[!DNL Express Checkout] 개발자 정보.'''
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 확장 지점을 사용하면 애플리케이션 코드에서 핵심 구성 요소를 실제로 변경하지 않고 사용자 지정을 수행할 수 있습니다.
 
-### 배송 세부 정보 단계
+## 배송 세부 정보 단계
 
 확장 포인트는 [!DNL Bolt].
 
