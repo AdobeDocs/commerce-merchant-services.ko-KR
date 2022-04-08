@@ -3,7 +3,7 @@ user-guide-title: '[!DNL Express Checkout] Adobe Commerce'
 user-guide-description: 방법 알아보기 [!DNL Express Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다.
 breadcrumb-title: Merchant Services 안내서
 hide: true
-source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
+source-git-commit: af8c5288e6d6275c40bcc17a0ab809b4663f7535
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -26,4 +26,5 @@ ht-degree: 0%
    - [체크아웃 흐름](checkout-flow.md)
    - [배송 세부 사항](shipping-details.md)
    - [결제 방법](payment-methods.md)
+   - [관리자에서 주문 만들기](create-order-admin.md)
    - [문제 해결 [!DNL Express Checkout]](troubleshooting.md)
