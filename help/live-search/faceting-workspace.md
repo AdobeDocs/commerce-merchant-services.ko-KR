@@ -2,14 +2,14 @@
 title: Faceting Workspace
 description: Live Search Faceting 작업 공간에 대해 알아봅니다.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# Facting workspace
+# Faceting Workspace
 
 다음 [!DNL Live Search] 작업 영역에는 현재 사용 가능한 모든 패싯이 나열되며 패싯을 설정하고 관리하는 데 필요한 도구에 액세스할 수 있습니다. 고정된 패싯은 기존 패싯 목록에 먼저 나타나고 동적 패싯이 표시됩니다. 목록을 필터링하여 모든 패싯을 표시하거나 고정되거나 동적 패싯만 표시할 수 있습니다.
 

@@ -2,14 +2,14 @@
 title: 스타일링 팝오버 요소
 description: Live Search Storefront poover 사용자 지정에 대한 기술 참고 사항.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# 팝오버 요소 스타일링
+# 스타일링 팝오버 요소
 
 다음 [상점 앞에 있는 팝오버](storefront-popover.md) 항상 제품 표시 `name` 및 `price`, 그리고 필드 선택을 구성할 수 없습니다. 그러나 팝오버 요소는 CSS 클래스를 사용하여 스타일을 지정할 수 있습니다. 예를 들어, 다음 선언에서는 팝업 컨테이너 및 바닥글의 배경색을 변경합니다.
 

@@ -2,9 +2,9 @@
 title: 패싯 기술 정보
 description: 라이브 검색 패싯 사용에 대한 기술 참고 사항.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ ht-degree: 0%
 * `categories` 합계 - 집계 `categories`, 적용 `color` 및 `price` 필터 `categories` 필터.
 * `color` 합계 - 집계 `color`, 적용 `price` 및 `categories` 필터 `color` 필터.
 * `price` 합계 - 집계 `price`, 적용 `color` 및 `categories` 필터 `price` 필터.
-
-## 기본 속성 값
-
-다음 제품 속성에는 몇 가지 기능이 있습니다 [storefront 속성](https://docs.magento.com/user-guide/stores/attributes-product.html) 기본적으로 활성화되어 있습니다.
-
-| 속성 | Storefront 속성 | 속성 |
-|---|---|---|
-| 정렬 가능 | 제품 목록의 정렬에 사용됩니다. | `price` |
-| 검색 가능 | 검색에서 사용 | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | 레이어 탐색 - 필터링 가능(결과 포함)에서 사용 | `price`<br />`visibility`<br />`category_name` |

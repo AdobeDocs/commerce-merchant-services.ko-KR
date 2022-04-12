@@ -2,9 +2,9 @@
 title: 라이브 검색 설치
 description: Adobe Commerce에서 Live Search를 설치, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 1. 다음 명령을 실행하여 비활성화하십시오 [!DNL Elasticsearch] 및 관련 모듈 및 설치 [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -139,7 +140,8 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -200,6 +202,18 @@ composer update magento/live-search --with-dependencies
 ```
 
 1.0.0에서 2.0.0과 같은 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집하십시오 [!DNL Composer] `.json` 파일:
+
+1. 현재 설치되어 있는 경우 `magento/live-search` version `1.3.1` 또는 아래에 있는 를 버전으로 업그레이드할 수 있습니다 `2.0.0` 업그레이드 전에 다음 명령을 실행하십시오.
+
+   ```bash
+   bin/magento module:enable Magento_AdvancedSearch
+   ```
+
+   현재 설치된 항목에 대한 자세한 정보 `magento/live-search` version, 다음 명령을 실행합니다.
+
+   ```bash
+   composer show magento/live-search
+   ```
 
 1. 루트 열기 `composer.json` 파일 및 검색 `magento/live-search`.
 

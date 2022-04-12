@@ -1,13 +1,13 @@
 ---
-title: 안내서 개요
+title: 라이브 검색 안내서 개요
 description: Adobe Commerce의 라이브 검색 기능을 통해 빠르고 관련성이 높고 직관적인 검색 경험을 이용할 수 있습니다.
-source-git-commit: 69c2689c4d97169078c413e9055601893c5467a0
+exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # 라이브 검색 안내서 개요
 

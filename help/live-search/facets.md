@@ -2,16 +2,16 @@
 title: 패싯
 description: 라이브 검색 패싯에서는 여러 속성 값의 차원을 검색 기준으로 사용합니다.
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # 패싯
 
-검색 기준으로 여러 차원 속성 값을 사용하는 고성능 필터링 방법입니다. 면처리 검색은 비슷하지만 표준보다 상당히 &quot;더 스마트함&quot;입니다 [계층 탐색](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 사용 가능한 필터 목록은 [필터링 가능한 속성](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 검색 결과에 반환되는 제품 수. 최대 100개의 패싯을 [!DNL Live Search].
+검색 기준으로 여러 차원 속성 값을 사용하는 고성능 필터링 방법입니다. 면처리 검색은 비슷하지만 표준보다 상당히 &quot;더 스마트함&quot;입니다 [계층 탐색](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 사용 가능한 필터 목록은 [필터링 가능한 속성](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 검색 결과에 반환되는 제품 수.
 
 ![필터링된 검색 결과](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ ht-degree: 0%
 
 페이싱을 위한 카테고리 및 제품 속성 요구 사항은 계층화된 탐색에 사용되는 필터링 가능한 속성과 유사합니다. 각 특성의 storefront 속성은 `filterable (with results)`.
 
+* 최대 100개의 속성을 [!DNL Live Search].
+* [!DNL Live Search] 는 최대 300개의 속성을 필터링 가능/검색/정렬 가능하고 검색 결과에 표시됩니다.
+
 | 설정 | 설명 |
 |--- |--- |
 | [카테고리 표시 설정](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | 앵커 - `Yes` |
 | [속성 속성](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [카탈로그 입력 유형](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | 속성 저장소 등록 정보 | 레이어 탐색에서 사용 - `Filterable (with results)` |
+
+## 기본 속성 값
+
+다음 제품 속성은 다음과 같습니다 [storefront 속성](https://docs.magento.com/user-guide/stores/attributes-product.html) 다음에서 사용 [!DNL Live Search] 기본적으로 활성화되어 있습니다.
+
+| 속성 | Storefront 속성 | 속성 |
+|---|---|---|
+| 정렬 가능 | 제품 목록의 정렬에 사용됩니다. | `price` |
+| 검색 가능 | 검색에서 사용 | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | 레이어 탐색 - 필터링 가능(결과 포함)에서 사용 | `price`<br />`visibility`<br />`category_name` |
 
 ## 기본 비시스템 속성 속성
 
