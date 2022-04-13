@@ -1,9 +1,10 @@
 ---
 title: Commerce Services 커넥터
 description: API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 
 | 서비스 | 사용 가능 |
 | ---|--- |
-| [!DNL Product Recommendations] Adobe Sensei에서 제공 | Adobe Commerce |
-| [!DNL Live Search] Adobe Sensei에서 제공 | Adobe Commerce |
-| [!DNL Payment Services] | Adobe Commerce 및 Magento Open Source |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) Adobe Sensei에서 제공 | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) Adobe Sensei에서 제공 | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce 및 Magento Open Source |
 
 ## 아키텍처
 
@@ -74,7 +75,7 @@ API 키 및 개인 키는 [!DNL Commerce] 라이센스 소유자의 계정으로
 
 >[!NOTE]
 >
-> 이 표시되지 않으면 **Commerce Services 커넥터** 의 섹션 [!DNL Commerce] configuration, 설치 [!DNL Commerce] 원하는 모듈용 [!DNL Commerce Service], 예 [!DNL Product Recommendations].
+> 이 표시되지 않으면 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] configuration, 설치 [!DNL Commerce] 원하는 모듈용 [!DNL Commerce] 서비스(예: [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 SaaS 프로젝트를 선택하거나 만들려면 [!DNL Commerce] 의 API 키 [!DNL Commerce] 스토어의 라이선스 소유자.
 

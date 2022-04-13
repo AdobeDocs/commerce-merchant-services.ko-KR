@@ -1,9 +1,10 @@
 ---
 title: 이벤트 컬렉션 확인
 description: 동작 데이터가 Adobe Commerce으로 전송되고 있는지 확인하는 방법을 알아봅니다.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ ht-degree: 0%
 1. 페이지를 다시 로드합니다.
 1. 이제 `ds.js` 또는 `ds.min.js` 에서 **이름** 열.
 
+![이벤트 수집기 JS](assets/filter-ds.png)
+_이벤트 수집기 JS_
+
 이벤트가 사이트(홈, 제품, 체크아웃 등)의 페이지에서 실행되는지 확인하려면:
 
 1. 브라우저에서 광고 차단기를 비활성화하고 사이트에서 쿠키를 허용하는지 확인하십시오.
@@ -29,6 +33,9 @@ ht-degree: 0%
 1. 을(를) 선택합니다 **네트워크** 에 대한 탭 및 필터 `tp2`.
 1. 페이지를 다시 로드합니다.
 1. 아래에 호출이 표시됩니다 `tp2` 에서 **이름** 열.
+
+![이벤트 실행](assets/filter-tp2.png)
+_이벤트가 실행 중인지 확인_
 
 ## Snowfaul Chrome 확장을 사용하여 확인
 
@@ -46,7 +53,8 @@ ht-degree: 0%
 
 1. 다음 사항을 확인합니다. [SaaS 데이터 공간 ID](https://docs.magento.com/user-guide/configuration/services/saas.html) 가 올바르게 설정되어 있습니다.
 
-이벤트가 수집되어 Adobe Commerce으로 전송되는지 확인하는 데 문제가 발생하는 경우, [연락처 지원](https://support.magento.com/hc/en-us).
+![제설기 필터](assets/snowplow-filter.png)
+_제설기 필터_
 
 >[!NOTE]
 >

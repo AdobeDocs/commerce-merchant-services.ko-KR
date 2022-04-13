@@ -1,9 +1,10 @@
 ---
 title: 카탈로그 동기화
-description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로"
-source-git-commit: 5910874fbd386456c50c4d87098f72fef908a7ae
+description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로.
+exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그 데이터를 테이블에 컴파일합니다. 이 프로세스는 자동으로 [events](https://docs.magento.com/user-guide/system/index-management-events.html) 제품 가격 또는 재고 수준 변경과 같은 변경.
 
-카탈로그 동기화 프로세스는 시간별로 실행되어 [!DNL Commerce Services] 카탈로그 데이터를 사용하려면 카탈로그 동기화에서 제품 데이터를 내보냅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로. 예, [!DNL Product Recommendations] 올바른 이름, 가격 및 가용성을 가진 권장 사항을 정확하게 반환하려면 현재 카탈로그 정보가 필요합니다. 를 사용할 수 있습니다 _카탈로그 동기화_ 대시보드 를 사용하여 동기화 프로세스 또는 [명령줄 인터페이스](#resynccmdline) 카탈로그 동기화를 트리거하고 다음을 통해 소비할 제품 데이터를 다시 색인화합니다. [!DNL Commerce Services].
+카탈로그 동기화 프로세스는 시간별로 실행되어 [!DNL Commerce] 카탈로그 데이터를 사용할 서비스. 카탈로그 동기화에서 제품 데이터를 내보냅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce] 서비스를 최신 상태로 유지하기 위한 지속적인 서비스 제공 예, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 올바른 이름, 가격 및 가용성을 가진 권장 사항을 정확하게 반환하려면 현재 카탈로그 정보가 필요합니다. 를 사용할 수 있습니다 _카탈로그 동기화_ 대시보드 를 사용하여 동기화 프로세스 또는 [명령줄 인터페이스](#resynccmdline) 카탈로그 동기화를 트리거하고 다음을 통해 소비할 제품 데이터를 다시 색인화합니다. [!DNL Commerce] 서비스.
 
 >[!NOTE]
 >
@@ -99,7 +100,7 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 
 ## 명령줄 인터페이스 {#resynccmdline}
 
-다음 `saas:resync` 명령은 다음 중 일부입니다. `magento/saas-export` 패키지. 다음 중 하나를 사용하여 이 패키지를 설치할 수 있습니다 [!DNL Commerce Services] 와 같은 제품 [!DNL Product Recommendations] 또는 [!DNL Live Search].
+다음 `saas:resync` 명령은 다음 중 일부입니다. `magento/saas-export` 패키지. 다음 중 하나를 사용하여 이 패키지를 설치할 수 있습니다 [!DNL Commerce Services] 와 같은 제품 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 또는 [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
