@@ -2,7 +2,7 @@
 title: 라이브 검색 설치
 description: Adobe Commerce에서 Live Search를 설치, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
+source-git-commit: 26d841f8a47f4b9067974234c94d4441be6733ea
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 1. 를 다운로드하려면 `live-search` package에서 다음 명령을 실행합니다.
 
    ```bash
-   composer require magento/DNL live-search
+   composer require magento/live-search
    ```
 
    자세한 내용은 [!DNL Live Search] [종속성](#dependencies) 에 의해 [!DNL Composer].
