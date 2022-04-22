@@ -2,7 +2,7 @@
 title: 패싯 추가
 description: 필터링 가능한 제품 속성을 라이브 검색 패싯으로 추가하는 방법을 알아봅니다.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ ht-degree: 0%
 
    ![Facting workspace](assets/facet-edit.png)
 
-1. 패싯을 *필터* 목록에서 회색 푸시핀(![핀 선택기](assets/btn-pin-gray.png).
-1. 고정된 패싯의 순서를 변경하려면 **이동** (![이동 선택기](assets/btn-move.png) 아이콘을 클릭하고 행을 *고정된 패싯* 섹션을 참조하십시오.
+1. 패싯을 *필터* 목록에서 회색 푸시핀(![핀 선택기](assets/btn-pin-gray.png)).
+1. 고정된 패싯의 순서를 변경하려면 **이동** (![이동 선택기](assets/btn-move.png)) 아이콘을 클릭하고 행을 의 새 위치로 드래그합니다. *고정된 패싯* 섹션을 참조하십시오.
 
 ## 3단계: 변경 사항 게시
 

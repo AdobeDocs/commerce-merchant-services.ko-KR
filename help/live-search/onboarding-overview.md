@@ -2,9 +2,9 @@
 title: 온보딩 개요
 description: 라이브 검색 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ ht-degree: 0%
 
 ### PWA 베타 릴리스
 
+* 라이브 검색의 현재 베타 PWA 구현에는 기본 상거래 스토어를 사용하는 라이브 검색보다 검색 결과를 반환하기 위한 처리 시간이 더 필요합니다.
 * 용 PWA 베타 릴리스 [!DNL Live Search] 을 지원하지 않음 [이벤트 처리](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * GraphQL에서 다음 제품 속성을 베타 릴리스와 관련하여 사용할 경우 지원하지 않습니다 [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ ht-degree: 0%
 * [사용자 지정 가격 그룹](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 에 사용된 복수 재고 위치 [MCOM](https://docs.magento.com/user-guide/mcom.html) 또는 기타 OMS 확장
 * [통합 B2B 기능](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* 제품 가격은 포함되지 않습니다 [부가세](https://docs.magento.com/user-guide/tax/vat.html) (VAT).
+* 재고 부족 제품이 [스톡 옵션](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 구성.

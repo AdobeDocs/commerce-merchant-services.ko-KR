@@ -2,16 +2,16 @@
 title: 라이브 검색 안내서 개요
 description: Adobe Commerce의 라이브 검색 기능을 통해 빠르고 관련성이 높고 직관적인 검색 경험을 이용할 수 있습니다.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # 라이브 검색 안내서 개요
 
-[!DNL Live Search] Adobe Commerce에서 번개를 빠르고 관련성이 높고 직관적인 검색 경험을 제공하며, Adobe Commerce에서 추가 비용 없이 사용할 수 있습니다. [!DNL Live Search] 전원 [Adobe Sensei](https://www.adobe.com/sensei.html) 인공 지능 및 기계 학습 알고리즘을 사용하여 집계된 방문자 데이터에 대한 심층적인 분석을 수행합니다. 이 데이터를 Adobe Commerce 카탈로그와 결합하면 매우 매력적인 개인화된 쇼핑 경험을 만들 수 있습니다. 속도, 관련성, 사용 편의성에 중점을 두고 [!DNL Live Search] 는 쇼핑객과 상인을 비슷하게 하기 위한 게임 교환기입니다.
+[!DNL Live Search] Adobe Commerce에서 추가 비용 없이 Adobe Commerce에 대한 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다. [!DNL Live Search] 전원 [Adobe Sensei](https://www.adobe.com/sensei.html) 인공 지능 및 기계 학습 알고리즘을 사용하여 집계된 방문자 데이터에 대한 심층적인 분석을 수행합니다. 이 데이터를 Adobe Commerce 카탈로그와 결합하면 매우 매력적인 개인화된 쇼핑 경험을 만들 수 있습니다. 속도, 관련성, 사용 편의성에 중점을 두고 [!DNL Live Search] 는 쇼핑객과 상인을 비슷하게 하기 위한 게임 교환기입니다.
 
 Live Search에는 관리자를 위한 세 개의 영역이 있습니다.
 
