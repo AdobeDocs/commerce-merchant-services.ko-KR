@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ### [!DNL PayPal Smart Buttons] 스타일 지정 옵션
 
-| 필드 | [범위]({% 링크 configuration/scope.md %}) | 설명 |
+| 필드 | 범위 | 설명 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | 저장소 보기 | Paypal 스마트 단추의 레이아웃 스타일을 정의합니다. 옵션: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | 저장소 보기 | Paypal 스마트 단추의 색상을 정의합니다. 옵션: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |

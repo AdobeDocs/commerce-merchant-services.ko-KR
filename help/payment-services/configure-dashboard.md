@@ -3,9 +3,10 @@ title: 대시보드에서 구성
 description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Services] 을 클릭합니다.
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ ht-degree: 0%
 1. 변경 사항을 저장하려면 **[!UICONTROL Save]** 을 클릭합니다.
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
-다음을 구성할 수 있습니다 [!DNL PayPal Smart Buttons] 관리 또는 대시보드에서 스타일을 지정합니다. 자세한 내용은 [구성 [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) 추가 정보.
+다음을 구성할 수 있습니다 [!DNL PayPal Smart Buttons] 관리 또는 대시보드에서 스타일을 지정합니다. 자세한 내용은 [PayPal 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 추가 정보.
