@@ -2,16 +2,16 @@
 title: 동의어 추가
 description: 라이브 검색 동의어를 추가하여 검색 요청에 대한 응답을 개선합니다.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # 동의어 추가
 
-선별된 목록을 직접 추가합니다. [!DNL Live Search] 검색 요청에 대한 응답을 개선하고 고객의 참여를 유지하기 위한 동의어입니다.
+라이브 검색 동의어 목록을 직접 추가하여 고객 참여를 늘립니다. [!DNL Live Search] 에서는 최대 200개의 동의어를 관리할 수 있습니다 `Data Space ID`.
 
 ![[!DNL Live Search] 동의어](assets/synonym-workspace.png)
 
