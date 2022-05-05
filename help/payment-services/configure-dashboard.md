@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ ht-degree: 0%
 
 1. 변경 사항을 저장하려면 **[!UICONTROL Save]** 을 클릭합니다.
 
+   변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
+
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 ### 신용 카드 필드
@@ -63,6 +65,9 @@ ht-degree: 0%
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 설정 **[!UICONTROL Payment action]** to `Authorize` 또는 `Authorize and Capture`.
 1. 대상 **[!UICONTROL Debug Mode]**&#x200B;을 눌러 선택기를 전환하여 디버그 모드를 활성화합니다.
 1. 변경 사항을 저장하려면 **[!UICONTROL Save]** 을 클릭합니다.
+
+   변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
+
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 ### PayPal 스마트 단추
@@ -83,6 +88,9 @@ ht-degree: 0%
 1. 를 변경하려면 [나중에 메시지 결제](payments-options.md#pay-later-button) (원하는 경우), 을 전환합니다. **[!UICONTROL Display Pay Later message]** 선택 사항입니다.
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]**,
 1. 변경 사항을 저장하려면 **[!UICONTROL Save]** 을 클릭합니다.
+
+   변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
+
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 ### 단추 스타일
@@ -96,6 +104,9 @@ ht-degree: 0%
 1. 단추 높이 선택기를 활성화하려면 **[!UICONTROL Responsive button height]**.
 1. 를 수정하려면 **[!UICONTROL Label]**&#x200B;원하는 레이블 옵션을 선택합니다.
 1. 변경 사항을 저장하려면 **[!UICONTROL Save]** 을 클릭합니다.
+
+   변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
+
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 다음을 구성할 수 있습니다 [!DNL PayPal Smart Buttons] 관리 또는 대시보드에서 스타일을 지정합니다. 자세한 내용은 [PayPal 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 추가 정보.
