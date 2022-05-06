@@ -2,9 +2,9 @@
 title: 라이브 검색 안내서 개요
 description: Adobe Commerce의 라이브 검색 기능을 통해 빠르고 관련성이 높고 직관적인 검색 경험을 이용할 수 있습니다.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
+source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -32,3 +32,9 @@ Live Search에는 관리자를 위한 세 개의 영역이 있습니다.
 
 [도움말 센터](https://support.magento.com/hc/en-us) - 라이브 검색 관련 문제 해결 문서를 참조하십시오.
 [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - 추가 도움말을 보려면 티켓을 제출하십시오.
+
+지원 티켓을 제출하기 전에 명령줄에서 다음을 실행하여 현재 설치된 라이브 검색 버전을 확인합니다.
+
+```bash
+composer show magento/module-live-search | grep version
+```
