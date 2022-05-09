@@ -4,22 +4,22 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 결제 보고서
 
-[!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우 스토어의 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 저장소의 주문 및 지불을 명확하게 파악할 수 있도록 포괄적인 보고를 제공합니다.
 
 ![재무 보고서 보기](assets/reports-view.png)
 
 지급 보고서는 재무 조정을 위한 거래 수준에 대한 자세한 보고 및 지급 금액, 처리된 거래량 및 지급 금액을 전체적으로 확인할 수 있도록 포괄적인 지급 정보를 한 눈에 표시합니다.
 
-상호 참조 주문 및 지급이나 계정을 조정하기 위해 여러 개의 대시보드 또는 보기를 열 필요가 없습니다. [!DNL Payment Services] Adobe Commerce과 Magento Open Source의 경우, 페이아웃 보고서를 사용하여 이러한 모든 작업을 한 곳에서 수행할 수 있으므로 페이로드를 효율적으로 보고 관리할 수 있습니다.
+상호 참조 주문 및 지급 또는 계정 조정을 위해 여러 뷰를 열 필요가 없습니다. [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 이러한 모든 작업을 한 곳에서 수행할 수 있도록 합니다. 즉, 페이아웃 보고서를 사용하여 효율적으로 페이아웃을 보고 관리할 수 있습니다.
 
 관리자의 Payouts 보고서 내에서 연결된 상거래 주문 및 거래 ID, 거래 금액, 트랜잭션당 결제 방법 등을 참조하십시오.
 
@@ -45,7 +45,7 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. 라이브 스토�
 
 데이터 소스 선택 기능은 다음과 같이 작동합니다.
 
-* 라이브 모드에 있는 저장소가 없는 경우 데이터 소스 선택 기본값은 입니다 [!UICONTROL Sandbox]_
+* 라이브 모드에 있는 저장소가 없는 경우 데이터 소스 선택 기본값은 입니다 _[!UICONTROL Sandbox]_.
 * 라이브 모드에 저장소(하나 또는 여러 개)가 있는 경우 데이터 소스 선택 기본값은 입니다. _[!UICONTROL Live]_.
 * 보고서 내보내기는 항상 데이터 소스를 선택합니다.
 

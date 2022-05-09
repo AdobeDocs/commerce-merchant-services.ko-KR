@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 사용자 지정할 수 있습니다 [!DNL Payment Services] Admin Console에서 유용한 구성 옵션을 사용하여 필요에 맞게 구성할 수 있습니다.
 
-구성 시 [!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우 이러한 구성은 [!UICONTROL Method] 필드 [!UICONTROL General Configuration]. 구성 필드에서 수행하는 모든 변경 사항은 [!UICONTROL Method] 선택(selection) - 방법을 전환하면 선택 사항이 재설정되지 않습니다.
+구성 시 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 관리에서 이러한 구성은 _[!UICONTROL Method]_필드_[!UICONTROL General Configuration]_. 구성 필드에서 수행하는 모든 변경 사항은 _[!UICONTROL Method]_선택(selection) - 방법을 전환하면 선택 사항이 재설정되지 않습니다.
 
 자세한 내용은 [[!UICONTROL General Configuration] 섹션](#general-configuration) 추가 정보.
 
 ## 일반 구성
 
-다음을 활성화할 수 있습니다 [!DNL Payment Services] 를 사용하여 스토어에 대해 및 [!UICONTROL General Configuration] 섹션을 참조하십시오.
+다음을 활성화할 수 있습니다 [!DNL Payment Services] 를 사용하여 스토어에 대해 및 _[!UICONTROL General Configuration]_섹션을 참조하십시오.
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >사용자 [!UICONTROL Sandbox Merchant ID] 및 [!UICONTROL Production Merchant ID] 샌드박스 및/또는 프로덕션에 대한 온보딩을 완료하면 자동으로 생성되어 해당 분야의 고급 필드에 표시됩니다. 이러한 ID를 제거하거나 변경하지 마십시오.
+   >사용자 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_ 샌드박스 및/또는 프로덕션에 대한 온보딩을 완료하면 자동으로 생성되어 해당 분야의 고급 필드에 표시됩니다. 이러한 ID를 제거하거나 변경하지 마십시오.
 
 1. 클릭 **[!UICONTROL Save Config]** 변경 사항을 저장하려면 을 클릭합니다.
 

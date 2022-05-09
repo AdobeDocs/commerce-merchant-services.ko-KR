@@ -2,9 +2,9 @@
 title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 상거래 인스턴스를 연결하고 구성에 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Commerce SaaS 서비스를 사용하려면 인스턴스에서 만들고 관리�
 
 ### 상거래 API 키 및 개인 키
 
-일부 Adobe Commerce 및 Magento Open Source 기능은 Commerce Services라고 하는 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 API 키 및 개인 키를 사용하여 상거래 인스턴스를 이러한 서비스에 연결하고, [구성](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+일부 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 기능은 Commerce Services라고 하는 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 API 키 및 개인 키를 사용하여 상거래 인스턴스를 이러한 서비스에 연결하고, [구성](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 MageID로 식별되는 상거래 계정을 만들 때 상거래 API 키 및 개인 키를 생성할 수 있습니다. 다음과 같은 Commerce Services를 사용하려면 [!DNL Payment Services], [!DNL Product Recommendations], 또는 [!DNL Live Search]를 지정하는 경우, 자격 소유자가 자격 검증을 전달하려면 이러한 키를 생성해야 합니다. 그런 다음 라이센스 보유자를 대신하여 프로젝트 및 환경을 관리하는 시스템 통합자 또는 개발 팀에 이러한 키를 전달할 수 있습니다. 솔루션 통합자인 경우 이러한 서비스를 직접 필요에 따라 사용할 수도 있습니다. 이 경우 상거래 파트너 계약의 서명자는 키를 생성해야 합니다.
 
@@ -67,8 +67,8 @@ MageID로 식별되는 상거래 계정을 만들 때 상거래 API 키 및 개�
 
 SaaS 프로젝트를 만들 때, Commerce는 상거래 라이센스에 따라 하나 이상의 SaaS 데이터 공간을 생성합니다.
 
-* Adobe Commerce - 하나의 프로덕션 데이터 공간 두 개의 테스트 데이터 공간
-* Magento Open Source - 하나의 프로덕션 데이터 공간 데이터 공간 테스트 안 함
+* [!DNL Adobe Commerce] - 운영 데이터 공간 1개 두 개의 테스트 데이터 공간
+* [!DNL Magento Open Source] - 운영 데이터 공간 1개 데이터 공간 테스트 안 함
 
 ### SaaS 프로젝트 구성
 

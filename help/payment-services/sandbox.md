@@ -2,9 +2,9 @@
 title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모
 샌드박스 온보딩을 완료하려면
 
 1. 로 이동합니다 [PayPal 개발자 계정 페이지](https://developer.paypal.com/developer/accounts/).
-1. 클릭 **[!UICONTROL Log in to Dashboard]** PayPal 개발자 계정에 로그인하거나 **등록** 계정을 만들려면
+1. 클릭 **[!UICONTROL Log in to Home]** PayPal 개발자 계정에 로그인하거나 **등록** 계정을 만들려면
 1. PayPal 샌드박스 계정을 만듭니다.
    1. 이동 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. 클릭 **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모
 
    이 옵션은 용 샌드박스 온보딩을 아직 완료하지 않은 경우 표시됩니다 [!DNL Payment Services].
 
-   샌드박스 머천 ID가 자동으로 생성되어 [구성](configure-admin.md). 이 ID를 변경하거나 변경하지 마십시오.
+   샌드박스 머천 ID가 자동으로 생성되어 [설정](settings.md). 이 ID를 변경하거나 변경하지 마십시오.
 
    지급 수락을 시작하기 위해 PayPal 계정을 연결하는 PayPal 창이 표시됩니다.
 
@@ -59,7 +59,7 @@ PayPal 샌드박스 온보딩이 승인되면, 결제 시스템이 현재 샌드
 
 >[!IMPORTANT]
 >
->동의를 취소하는 경우 [!DNL Payment Services] 결제 처리를 위한 Adobe Commerce 및 Magento Open Source(PayPal 계정 설정에서)의 경우 스토어의 주문은 [!DNL Payment Services].
+>동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services].
 
 ## 연락처 전화 번호 사용
 

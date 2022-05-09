@@ -4,26 +4,26 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # 명령줄 구성
 
-설치 후 [!DNL Payment Services]에서 쉽게 구성할 수 있습니다. [관리자 내에서](configure-admin.md) 또는 CLI(명령줄 인터페이스)를 통해
+설치 후 [!DNL Payment Services]에서 쉽게 구성할 수 있습니다. [집 안에서](payments-home.md) 또는 CLI(명령줄 인터페이스)를 통해
 
 ## 데이터 내보내기 구성
 
-[!DNL Payment Services] Magento Open Source 및 Adobe Commerce에서 내보낸 주문 데이터를 지급 제공자의 합계된 지급 데이터와 결합하여 유용한 보고서를 생성합니다. 다음 [!DNL Payment Services] 확장은 인덱서를 사용하여 보고서에 필요한 모든 데이터를 효율적으로 수집합니다.
+[!DNL Payment Services] 에서 내보낸 주문 데이터를 결합합니다. [!DNL Magento Open Source] 및 [!DNL Adobe Commerce] 결제 제공자의 결제 데이터를 집계하여 유용한 보고서를 만들 수 있습니다. 다음 [!DNL Payment Services] 확장은 인덱서를 사용하여 보고서에 필요한 모든 데이터를 효율적으로 수집합니다.
 
 에 사용된 데이터에 대해 알아보려면 [!DNL Payment Services] 보고, [주문 결제 상태 보고서](order-payment-status.md#data-used-in-the-report).
 
-### Magento Open Source에 크론 구성
+### 크론 구성 [!DNL Magento Open Source]
 
-를 사용하려면 `BY SCHEDULE` Magento Open Source의 인덱스 모드이므로 cron을 구성해야 합니다. 자세한 내용은 [크론 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+를 사용하려면 `BY SCHEDULE` 인덱스 모드 [!DNL Magento Open Source]로 지정하는 경우 cron을 구성해야 합니다. 자세한 내용은 [크론 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### 인덱스 설정
 

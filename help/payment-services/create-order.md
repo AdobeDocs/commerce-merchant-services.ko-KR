@@ -2,18 +2,18 @@
 title: 주문 만들기 [!DNL Payment Services]
 description: 관리자는 를 사용하여 주문을 이행하는 기능을 제공합니다 [!DNL Payment Services] 지원이 필요한 고객을 위해 매상에서 관리자에게 직접 요청합니다.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '162'
 ht-degree: 1%
 
 ---
 
 # 주문 만들기 [!DNL Payment Services]
 
-사용자 지정할 수 있습니다 [!DNL Payment Services] 를 사용하도록 할 수도 있습니다.
+을 사용하여 필요에 따라 결제 서비스를 사용자 정의할 수 있습니다 [[!DNL Payment Services] 설정](settings.md).
 
-[!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우, 지원이 필요한 고객을 위해 가맹점이 관리자로부터 직접 주문을 받을 수 있습니다. 다음 **[!UICONTROL Create New Order]** 양식에는 신용 카드 정보가 있는 호스팅된 필드를 비롯하여 일반적인 체크아웃 프로세스를 완료하는 데 필요한 모든 정보가 포함되어 있습니다. 자세한 내용은 [주문 만들기](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} 을 참조하십시오.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 을(를) 사용하면 지원이 필요한 고객을 위해 가맹점이 관리자로부터 직접 주문을 받을 수 있습니다. 다음 **[!UICONTROL Create New Order]** 양식에는 신용 카드 정보가 있는 호스팅된 필드를 비롯하여 일반적인 체크아웃 프로세스를 완료하는 데 필요한 모든 정보가 포함되어 있습니다. 자세한 내용은 [주문 만들기](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} 을 참조하십시오.
 
 ## 호스팅된 신용 카드 필드
 

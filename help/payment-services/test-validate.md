@@ -2,16 +2,16 @@
 title: 테스트 및 유효성 검사
 description: 테스트 및 유효성 검사 기능을 통해 [!DNL Payment Services] 함수는 예상대로 작동하며 고객에게 최상의 결제 옵션을 제공합니다
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 테스트 및 유효성 검사
 
-노출되기 전에 [!DNL Payment Services] Adobe Commerce과 Magento Open Source을 통해 쇼핑객에게 제공하는 샌드박스 환경에서 테스트하는 것이 좋습니다 _및_ 제작 중입니다. 테스트 및 유효성 검사 기능을 통해 [!DNL Payment Services] 함수는 예상대로 작동하며 스토어 및 고객을 위한 최상의 결제 옵션을 제공합니다.
+노출되기 전에 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 고객에게 샌드박스 환경에서 테스트하는 것이 좋습니다 _및_ 제작 중입니다. 테스트 및 유효성 검사 기능을 통해 [!DNL Payment Services] 함수는 예상대로 작동하며 스토어 및 고객을 위한 최상의 결제 옵션을 제공합니다.
 
 ## 샌드박스 환경에서 테스트
 

@@ -1,19 +1,19 @@
 ---
 title: 소개 [!DNL Payment Services]
-description: 설치 및 사용 방법 알아보기 [!DNL Payment Services] Adobe Commerce 및 Magento Open Source 웹 사이트를 위한 턴키, 강력하고 안전한 결제 처리 솔루션입니다.
+description: 설치 및 사용 방법 알아보기 [!DNL Payment Services] 귀사를 위한 턴키, 강력하고 안전한 결제 처리 솔루션으로 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 웹 사이트.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # 소개 [!DNL Payment Services]
 
-[!DNL Payment Services] Adobe Commerce 및 Magento Open Source용 은 상거래 웹 사이트에 강력하고 안전한 결제 처리를 제공하기 위한 샌드박스 테스트 및 간단한 설정을 포함한 턴키 셀프 서비스 솔루션입니다.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 은 상거래 웹 사이트에 강력하고 안전한 결제 처리를 제공하기 위한 샌드박스 테스트 및 간단한 설정을 포함한 턴키 셀프 서비스 솔루션입니다.
 
 ![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png)
 
@@ -36,14 +36,13 @@ ht-degree: 0%
 [!DNL Payment Services] 온라인 체크아웃을 위한 원스톱 샵입니다(결제 및 환불을 결제에서 결제 받기까지). 구매자를 위한 최상의 경험을 만드는 데 필요한 통찰력과 컨트롤을 제공하는 강력한 도구를 제공합니다.
 
 * [**온보딩**](onboard.md)—이 프로세스는 상업용 등록, 기술 구성, 자격, 샌드박스 환경 구성 및 라이브 지불 지원 과정을 안내합니다.
-* [**결제 체크아웃**](configure-dashboard.md)—해당 로컬 및 지역별 결제 방법을 사용하여 고객에게 최상의 서비스를 제공합니다.
 * [**결제 옵션**](payments-options.md)- 결제 옵션을 설정하여 스토어(또는 다중 스토어) 고객에게 사용 가능한 방법을 사용자 정의합니다.
 * **Cash flow Management 재무 보고**—동기화 [결제 세부 사항](order-payment-status.md) 주문 시 처리된 볼륨, 결제 잔액 및 상세 정보를 완벽하게 투명하게 확인 [트랜잭션 수준 보고](payouts.md) 재정 조정을 위해
 * **투명한 가격 책정**—가격이 명확하고 우선합니다. 보이는 것은 여러분이 얻는 것입니다.
 
 ## 사용 가능
 
-[!DNL Payment Services] Adobe Commerce 및 Magento Open Source에서 사용할 수 있습니다. 다음 [!DNL Payment Services] 이제 확장은 Adobe Commerce 버전 2.4.x와 호환됩니다.
+[!DNL Payment Services] 다음 기간 동안 사용 가능합니다. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source]. 다음 [!DNL Payment Services] 이제 확장은 [!DNL Adobe Commerce] 버전 2.4.x
 
 자세한 내용은 [라이프사이클 정책](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} 및 [[!DNL Payment Services] 릴리스 노트](release-notes.md) 추가 릴리스 및 버전별 정보용 페이지
 

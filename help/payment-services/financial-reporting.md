@@ -4,16 +4,16 @@ description: '"[!DNL Payment Services] 은 포괄적인 보고를 제공하여 �
 role: User
 feature: Payments
 level: Intermediate
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 # 재무 보고
 
-[!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우 스토어의 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 저장소의 주문 및 지불을 명확하게 파악할 수 있도록 포괄적인 보고를 제공합니다.
 
 ![재무 보고서 보기](assets/reports-view.png)
 

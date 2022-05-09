@@ -4,16 +4,16 @@ description: 인스턴스 연결 [!DNL Payment Services] 몇 가지 온보딩 �
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 온보드 [!DNL Payment Services]
 
-를 사용하려면 [!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우 인스턴스에 결제 기능을 연결하기 위해 몇 가지 온보딩 단계를 완료해야 합니다.
+를 사용하려면 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source]를 설정하는 경우 인스턴스에 결제 기능을 연결하기 위해 몇 가지 온보딩 단계를 완료해야 합니다.
 
 ## 온보딩 흐름
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 샌드박스 또는 라이브 지급에 대한 온보딩을 완료하면 Financial Reporting에서 액세스할 수 있습니다 [!DNL Payment Services] 관리자.
 
-샌드박스와 Live Payments가 모두 온보딩되고 활성화되면 [!DNL Payment Services] 집.
+샌드박스와 Live Payments가 모두 온보딩되고 활성화되면 [!DNL Payment Services] 집에
 
 ## 전제 조건
 

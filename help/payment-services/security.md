@@ -2,9 +2,9 @@
 title: 보안 및 규정 준수
 description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검토합니다.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 상거래 보안
 
-Adobe Commerce 및 Magento Open Source에는 몇 가지 보안 기능이 지원됩니다.
+[!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 여러 보안 기능에 대한 지원을 포함합니다.
 
 자세한 내용은 [보안](https://docs.magento.com/user-guide/stores/security.html)핵심 사용 안내서의 {target=&quot;_blank&quot;} 를 사용하여 보안 모범 사례를 검토하고, 관리 세션 및 자격 증명을 관리하고, CAPTCHA를 구현하고, 웹 사이트 제한을 관리하는 방법을 알아봅니다.
 

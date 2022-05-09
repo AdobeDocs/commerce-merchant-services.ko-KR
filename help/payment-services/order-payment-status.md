@@ -4,22 +4,22 @@ description: 주문 지급 상태 보고서를 사용하여 주문의 지급 상
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # 주문 결제 상태 보고서
 
-[!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우 스토어의 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 저장소의 주문 및 지불을 명확하게 파악할 수 있도록 포괄적인 보고를 제공합니다.
 
 ![재무 보고서 보기](assets/reports-view.png)
 
 주문 지급 상태 보고서는 특정 주문이 현금 처리 흐름 주문 내에 있는 위치를 쉽게 이해할 수 있도록 도와줍니다. 이 보고서를 사용하면 주문의 지급 상태를 신속하게 확인하고 잠재적 문제를 식별할 수 있습니다.
 
-수동으로 상호 참조 주문과 지급을 상호 연결하기 위해 여러 뷰를 열 필요가 없습니다. [!DNL Payment Services] Adobe Commerce 및 Magento Open Source의 경우 주문 결제 상태 보고서 내에서 주문 및 지급에 대한 조시 뷰를 얻을 수 있습니다.
+수동으로 상호 참조 주문과 지급을 상호 연결하기 위해 여러 뷰를 열 필요가 없습니다. [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 주문 결제 상태 보고서 내에서 주문 및 지급에 대한 조시 뷰를 얻을 수 있습니다.
 
 관리자의 이 보고서 내에서 지급 상태, 송장 및 출하 상태, 환불 상태, 분쟁 상태 등을 참조하십시오.
 

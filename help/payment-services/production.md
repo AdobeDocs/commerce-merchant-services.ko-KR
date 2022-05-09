@@ -2,9 +2,9 @@
 title: 활성화 [!DNL Payment Services] 프로덕션
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다 [!DNL Payment Services] 제작 관련
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Payments Services 확장이 [설치](install.md)이면 인스턴스가 [구성 �
 
    이 옵션은 아직 구성되지 않은 경우 표시됩니다 [!DNL Payment Services] 하나 이상의 Magento 웹 사이트에 대한 결제 방법입니다.
 
-   관련 옵션이 확장되어 관리자의 구성 영역으로 이동됩니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Methods]** > _[!UICONTROL Recommended Solutions]_>_[!UICONTROL Payment Services]_) 여기에서 [!DNL Payment Services] 옵션 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   관련 옵션이 확장되어 홈 보기에서 설정 영역으로 이동됩니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 여기에서 [!DNL Payment Services] 옵션 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
 
 1. in _[!UICONTROL General Configuration]_, 설정&#x200B;**[!UICONTROL Enable]**to `Yes`.
 1. 설정 **[!UICONTROL Payment Action]**, 두 가지 모두에 대해 _[!UICONTROL Credit Card Fields]_및_[!UICONTROL PayPal Smart Buttons]_&#x200B;를 다음 중 한 곳에 추가합니다.
@@ -32,13 +32,13 @@ Payments Services 확장이 [설치](install.md)이면 인스턴스가 [구성 �
    | `Authorize` | 구매승인을 하고 자금을 보류한다. 그 금액은 상인이 포획할 때까지 인출되지 않는다. |
    | `Authorize and Capture` | 상인은 구매를 승인하고 자금을 &quot;회수&quot;한다. |
 
-1. 클릭 **[!UICONTROL Save Config]**.
-1. 클릭 **[!UICONTROL Go to Payment Services]** 다시 [!DNL Payment Services] 집.
+1. 클릭 **[!UICONTROL Save]**.
+1. 클릭 **[!UICONTROL Go to Payment Services]** 다시 [!DNL Payment Services] 집에
 1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
 
    구성 변경이 있을 때마다 선택을 취소해야 합니다.
 
-자세한 내용은 [결제 서비스 구성](configure-admin.md) 신용 카드 필드 및 PayPal 스마트 단추 구성에 대한 자세한 내용을 참조하십시오.
+자세한 내용은 [결제 서비스 구성](settings.md) 신용 카드 필드 및 PayPal 스마트 단추 구성에 대한 자세한 내용을 참조하십시오.
 
 ## Complete Merchant 온보딩
 
@@ -64,14 +64,14 @@ Payments Services 확장이 [설치](install.md)이면 인스턴스가 [구성 �
 
    >[!IMPORTANT]
    >
-   >동의를 취소하는 경우 [!DNL Payment Services] 결제 처리를 위한 Adobe Commerce 및 Magento Open Source(PayPal 계정 설정에서)의 경우 스토어의 주문은 [!DNL Payment Services].
+   >동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services].
 
 ## Adobe에서 지급 자격 요청
 
 Live Onboarding을 사용하려면 Adobe에서 지급을 요청해야 합니다.
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 클릭 **[!UICONTROL Get Live Payments]** 다음 위치에서 [!DNL Payment Services] 대시보드 .
+1. 클릭 **[!UICONTROL Get Live Payments]** 다음 위치에서 [!DNL Payment Services] 집에
 
    ![권한 요청](assets/request-entitlements.png)
 
@@ -88,10 +88,9 @@ Live Onboarding을 사용하려면 Adobe에서 지급을 요청해야 합니다.
 
 원하는 [!DNL Payment Services] _Merchant ID_:
 
-1. 설정 _관리_ 사이드바, 탐색 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 **[!UICONTROL Payment Methods]**.
-1. 를 확장합니다. _[!UICONTROL Recommended Solutions]_섹션을 참조하십시오.
-1. 에서 _[!UICONTROL Payment Services]_섹션에서_[!UICONTROL General Configuration]_ 섹션을 참조하십시오.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 홈 보기에서 **[!UICONTROL Settings]**. 자세한 내용은 [홈](payments-home.md) 추가 정보.
 1. 필요한 을(를) 선택합니다 _Merchant ID_ 영업 담당자에게 제출하면 올바른 가격 책정 계층을 구성할 수 있습니다.
 
 ## 라이브 지급 활성화
@@ -100,21 +99,19 @@ A _프로덕션 머천트 ID_ 는 자동으로 생성되어 [구성](configure-a
 
 Live Payments를 사용하려면
 
-1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
-1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 **[!UICONTROL Payment Methods]**.
-1. 를 확장합니다. _[!UICONTROL Recommended Solutions]_섹션을 참조하십시오.
-1. 에서 _[!UICONTROL Payment Services]_섹션에서_[!UICONTROL General Configuration]_ 섹션을 참조하십시오.
-1. 설정 **[!UICONTROL Method]** to `Production`.
-1. 클릭 **[!UICONTROL Save Config]**.
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 홈에서 **[!UICONTROL Settings]** 을 클릭합니다. 자세한 내용은 [홈](payments-home.md) 추가 정보.
+1. 에서 _[!UICONTROL General Configuration]_섹션 세트&#x200B;**[!UICONTROL Payment mode]**to `Production`.
+1. 클릭 **[!UICONTROL Save]**.
 1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
 
    >[!IMPORTANT]
    >
    >캐시를 지우지 않으면 체크아웃 중에 PayPal 결제 옵션이 표시되지 않습니다.
 
-로 돌아가는 경우 [!DNL Payment Services] 홈에서 현재 라이브 지급을 처리하고 있으므로 샌드박스 결제 모드 메시지가 더 이상 표시되지 않습니다.
+로 돌아가는 경우 [!DNL Payment Services] 홈에서 이제 Live Payments를 처리하고 있으므로 Sandbox 결제 모드 메시지가 더 이상 표시되지 않습니다.
 
-자세한 내용은 [관리자에서 구성](configure-admin.md) 추가 구성 옵션.
+자세한 내용은 [관리자에서 구성](configure-admin.md) 을 참조하십시오.
 
 >[!IMPORTANT]
 >

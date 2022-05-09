@@ -1,12 +1,12 @@
 ---
 user-guide-title: '[!DNL Payment Services] 안내서'
-user-guide-description: 이 안내서에서는 설치 및 구성에 대한 자세한 정보를 제공합니다 [!DNL Payment Services] Adobe Commerce 또는 Magento Open Source 스토어용.
+user-guide-description: 이 안내서에서는 설치 및 구성에 대한 자세한 정보를 제공합니다 [!DNL Payment Services] 에 대해 [!DNL Adobe Commerce] 또는 [!DNL Magento Open Source] 저장.
 breadcrumb-title: '[!DNL Payment Services] 안내서'
 index: true
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,8 @@ ht-degree: 3%
    - [테스트 샌드박스 설정](sandbox.md)
    - [프로덕션에 사용](production.md)
 - Configure [!DNL Payment Services] {#configure}
-   - [대시보드에서 구성](configure-dashboard.md)
+   - [[!DNL Payment Services] 홈](payments-home.md)
+   - [[!DNL Payment Services] 설정](settings.md)
    - [명령줄 구성](configure-cli.md)
    - [이전 결제 구성](configure-admin.md)
 - [테스트 및 유효성 검사](test-validate.md)
