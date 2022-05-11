@@ -2,9 +2,9 @@
 title: Commerce Services 커넥터
 description: API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ API 키 및 개인 키는 [!DNL Commerce] 라이센스 소유자의 계정으로
 1. 아래에 **Magento** 탭, 선택 **API 포털** 클릭합니다.
 
 1. 에서 _환경_ 메뉴, 선택 **프로덕션** 또는 **샌드박스**.
-
-   >[!NOTE]
-   >
-   > 대상 [!DNL _제품 Recommendations_] 및 [!DNL _라이브 검색_], 선택 **프로덕션**. 프로덕션 키를 사용하면 프로덕션 및 비프로덕션 데이터 공간에 액세스할 수 있습니다. 샌드박스 키는 이러한 서비스에 사용되지 않습니다.
 
 1. 에 이름을 입력합니다. _API 키_ 섹션을 클릭하고 **새로 추가**.
 

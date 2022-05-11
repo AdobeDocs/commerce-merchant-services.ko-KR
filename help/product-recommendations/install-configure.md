@@ -1,16 +1,17 @@
 ---
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # 설치 및 구성
 
-배포 [!DNL Product Recommendations] 저장소 및 관리자에게 연락하려면 모듈을 설치하고 Commerce Services 커넥터를 구성해야 합니다. 업데이트가 릴리스되면 최신 버전으로 설치를 쉽게 업데이트할 수 있습니다.
+배포 [!DNL Product Recommendations] 를 설치 및 구성하려면 모듈을 설치하고 [Commerce Services 커넥터](../landing/saas.md). 업데이트가 릴리스되면 최신 버전으로 설치를 쉽게 업데이트할 수 있습니다.
 
 - [설치](#install)
 - [Configure](#configure)
@@ -47,11 +48,11 @@ composer require magento/module-visual-product-recommendations
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
-를 설치한 후 `magento/product-recommendations` 모듈, 구성 [Commerce Services 커넥터](https://docs.magento.com/user-guide/configuration/services/saas.html) api 키를 지정하고 SaaS 데이터 공간을 선택하여 데이터를 제거합니다.
+를 설치한 후 `magento/product-recommendations` 모듈, 구성 [Commerce Services 커넥터](https://docs.magento.com/user-guide/configuration/services/saas.html) API 키를 지정하고 SaaS 데이터 공간 선택
 
 카탈로그 내보내기가 올바르게 실행되는지 확인하려면 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 작업 및 [인덱서](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 실행 중이며 `Product Feed` 인덱서가 `Update by Schedule`.
 
-API 키를 통해 Commerce Services에 연결하고 SaaS 데이터 공간을 지정하면 카탈로그 동기화가 시작되고 [검증](verify.md) 해당 행동 데이터가 스토어에 전송됩니다.
+API 키를 통해 Commerce Services에 연결하고 SaaS 데이터 공간을 지정하면 카탈로그 동기화가 시작됩니다. 그러면 다음 작업을 수행할 수 있습니다 [확인](verify.md) 해당 행동 데이터가 스토어에 전송됩니다.
 
 ## 업데이트 [!DNL Product Recommendations] 설치 {#update}
 
