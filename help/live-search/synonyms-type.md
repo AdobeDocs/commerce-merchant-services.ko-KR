@@ -2,9 +2,9 @@
 title: 동의어 유형
 description: 단방향 및 양방향 라이브 검색 동의어는 키워드 정의를 확장합니다.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 ### 키워드 매핑
 
 이 기법은 동의어 대신 검색 가능한 제품 속성을 사용하여 제품 간에 키워드 기반 연결을 만듭니다. 따라서 다른 제품의 검색 결과에 매핑된 제품이 나타날 수 있습니다. 자세한 내용은 [검색 결과](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### 단일 단어 사용
+
+동의어 용어에 여러 단어가 포함된 경우 단어 사이의 빈 공백이 해당 단어를 별도의 동의어로 처리합니다. 예를 들어 &quot;time pies&quot;를 &quot;watch&quot;의 동의어로 정의하는 경우 &quot;time&quot; 및 &quot;piece&quot;라는 단어는 별도의 동의어로 처리됩니다.
 
 ### 단일 및 복수 사용
 
