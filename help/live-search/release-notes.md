@@ -2,9 +2,9 @@
 title: 라이브 검색 릴리스 노트
 description: Adobe Commerce의 라이브 검색에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] 는 이제 Adobe Commerce 2.4.4를 실행하는 설치에 대해 PHP 8.1을 지원합니다.
 * ![새로 만들기](../assets/new.svg) - `Magento_ElasticsearchCatalogPermissionsGraphQl` 모듈이 설치 중에 비활성화된 모듈 목록에 추가됩니다.
-* ![새로 만들기](../assets/new.svg) - 사용 가능한 줄 수 [상점 앞에 있는 팝오버](quick-tour.md) 는 *관리*.
+* ![새로 만들기](../assets/new.svg) - 사용 가능한 줄 수 [[!DNL storefront popover]](quick-tour.md) 는 *관리*.
 * ![새로 만들기](../assets/new.svg) - 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 호환성 [!DNL Live Search].
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] 설치 프로세스는 고급 프로세스 변경 사항으로 업데이트됩니다.
 * ![수정](../assets/fix.svg) - [고급 검색](https://docs.magento.com/user-guide/catalog/search-advanced.html) 링크가 상점 바닥글에서 제거되었습니다.
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 * ![수정](../assets/fix.svg) - [사용자 지정 가격 속성](https://docs.magento.com/user-guide/stores/attributes-input-types.html) 로 구성할 때 더 이상 오류를 반환하지 않습니다. [패싯]({% 링크 live-search/facets-add.md %}).
 * ![수정](../assets/fix.svg) - 없을 때 오류가 발생하는 문제를 수정했습니다. [통화 기호](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`사용 가능합니다.
-* ![수정](../assets/fix.svg) - [상점 앞에 포버](storefront-popover.md) 이제 를 표시합니다. [특별 가격](https://docs.magento.com/user-guide/catalog/product-price-special.html) (최소 최종 가격) 사용 가능한 경우
+* ![수정](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 이제 를 표시합니다. [특별 가격](https://docs.magento.com/user-guide/catalog/product-price-special.html) (최소 최종 가격) 사용 가능한 경우
 
 ## [!DNL Live Search] 1.3.0
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 * ![새로 만들기](../assets/new.svg) - [성능](performance.md) 보고 대시보드는 구매자들이 사용하는 검색어에 대한 통찰력을 제공합니다.
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] [Storefront 이벤트 SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 이벤트 게시 및 구독 서비스, 지표 등을 통해 일반 데이터 계층에 대한 액세스 권한을 제공합니다.
-* ![수정](../assets/fix.svg) - [스토어프런트포버](https://devdocs.magento.com/live-search/storefront-popover.html) 새 항목 있음 `active` 의 클래스 `.search-autocomplete` 가시성을 제어하는 컨테이너입니다.
+* ![수정](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 새 항목 있음 `active` 의 클래스 `.search-autocomplete` 가시성을 제어하는 컨테이너입니다.
 * ![수정](../assets/fix.svg) - 상점 앞에서 [검색어](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 바닥글 링크가 제거되고 캐시가 비활성화되어 있습니다. [!DNL Live Search] 설치.
 * ![버그](../assets/bug.svg) - 검색 어댑터용 패치는 중복 제품을 처리합니다.
 * ![버그](../assets/bug.svg) - [!DNL Live Search] 지원 [단일 소스](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (물리적) 복수(가상)가 있는 재고 위치 [주식](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 현재 여러 인벤토리 소스가 지원되지 않습니다.
@@ -63,7 +63,7 @@ ht-degree: 1%
 * Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
 * 안정성: 안정적인
 
-* ![새로 만들기](../assets/new.svg) - 상점 [poover](storefront-popover.md) 쇼핑객이 검색 상자에 쿼리를 입력할 때 상위 검색 결과의 추천 제품 및 축소판 이미지를 표시합니다.
+* ![새로 만들기](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) 쇼핑객이 검색 상자에 쿼리를 입력할 때 상위 검색 결과의 추천 제품 및 축소판 이미지를 표시합니다.
 * ![새로 만들기](../assets/new.svg) - 상거래 *관리* 장기간 키보드 비활성화 시 세션 열기 유지
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] 은 온보딩 후 자동으로 활성화됩니다
 * ![수정](../assets/fix.svg) - 초기 인덱싱 시간이 1시간 미만

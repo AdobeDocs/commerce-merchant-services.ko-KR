@@ -2,22 +2,22 @@
 title: 스토어프런트포버
 description: Live Search storefront 팝오버는 제안된 제품 및 축소판을 동적으로 반환합니다.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# 스토어프런트포버
+# [!DNL Storefront Popover]
 
-When [!DNL Live Search] is [설치](install.md)고객이 상점 안에 [검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 상자. 각 문자를 입력하면 상위 검색 결과의 추천 제품 및 축소판 이미지로 팝오버가 업데이트됩니다.
+When [!DNL Live Search] is [설치](install.md), [!DNL popover] 고객이 [검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 상자. 각 문자를 입력하면 [!DNL popover] 상위 검색 결과의 추천 제품 및 축소판 이미지로 업데이트됩니다.
 
 [!DNL Live Search] 두 문자 이상의 쿼리에 대한 결과를 반환합니다. 부분 일치의 경우 단어당 최대 문자 수는 20자입니다. &quot;입력한 대로 검색&quot; 쿼리의 문자 수를 구성할 수 없습니다.
 
 >[!NOTE]
 >
->다음 [!DNL Live Search] storefront poover는 *루마* 테마 또는 사용자 정의된 테마 *루마*. 다음 *루마* 테마는 [!DNL Commerce] 샘플 데이터. 팝오버는 *비어 있음* 테마. 자세한 내용은 [스타일링 팝오버 요소](storefront-popover-styling.md) 추가 정보
+>다음 [!DNL Live Search] [!DNL storefront popover] 는 *루마* 테마 또는 사용자 정의된 테마 *루마*. 다음 *루마* 테마는 [!DNL Commerce] 샘플 데이터. 다음 [!DNL popover] 은 을 지원하지 않습니다 *비어 있음* 테마. 자세한 내용은 [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md) 추가 정보
 
 ## 검색 가능한 속성
 
@@ -29,16 +29,16 @@ When [!DNL Live Search] is [설치](install.md)고객이 상점 안에 [검색](
 * `name`
 * `categories`
 
-![라이브 검색 팝업](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## 페이지 크기 채우기
+## [!DNL Popover] 페이지 크기
 
-팝오버의 페이지 크기는 자동 완성된 제품 라인의 수를 결정합니다. 이전에는 페이지 크기를 6줄로 하드코딩했습니다. 하지만, `page_size` 값은 이제 *관리*. 라이브 검색 설치 중에 `page_size` 값이 [카탈로그 검색](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 설정
+페이지의 크기 [!DNL popover] 자동 완성된 제품 라인을 반환할 수 있는지 여부를 결정합니다. 이전에는 페이지 크기를 6줄로 하드코딩했습니다. 하지만, `page_size` 값은 이제 *관리*. 라이브 검색 설치 중에 `page_size` 값이 [카탈로그 검색](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` 설정
 
-기본적으로 카탈로그 검색 - 자동 완료 제한 값은 8행(또는 행)으로 설정됩니다. 팝오버의 페이지 크기를 변경하려면 다음을 수행하십시오.
+기본적으로 카탈로그 검색 - 자동 완료 제한 값은 8행(또는 행)으로 설정됩니다. 페이지의 크기를 변경하려면 [!DNL popover]를 채울 때 다음을 수행합니다.
 
 1. 설정 *관리* 사이드바, 다음 위치로 이동 **스토어** > 설정 > **구성**.
 1. 왼쪽 패널에서 를 확장합니다. **카탈로그** 및 **카탈로그** 설정 목록에서 을 선택합니다.
 1. 를 확장합니다. *카탈로그 검색* 섹션을 참조하십시오.
-1. 설정 **자동 완료 제한** 팝오버에서 허용하려는 줄 수를 지정합니다.
+1. 설정 **자동 완료 제한** 에서 허용할 라인 수로 [!DNL popover].
 1. 완료되면 를 클릭합니다. **구성 저장**.

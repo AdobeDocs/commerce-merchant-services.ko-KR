@@ -2,9 +2,9 @@
 title: 라이브 검색 안내서 개요
 description: Adobe Commerce의 라이브 검색 기능을 통해 빠르고 관련성이 높고 직관적인 검색 경험을 이용할 수 있습니다.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 5f83b72c18490a6829ef30064f75c5d963bd93be
+source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Live Search에는 관리자를 위한 세 개의 영역이 있습니다.
 
-* 상점: CSS 스타일링을 사용하여 저장소 전면 팝오버를 사용자 지정합니다.
+* 상점: CSS 스타일링을 사용하여 사용자 지정 [!DNL storefront popover].
 * 관리자: 이 영역을 사용하여 구성 및 설정에 액세스합니다.
 * 명령줄 인터페이스: 이 도구를 사용하여 설치 및 백엔드 구성 작업을 실행합니다.
 
