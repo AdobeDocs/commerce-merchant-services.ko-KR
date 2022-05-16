@@ -2,9 +2,9 @@
 title: 문제 해결 [!DNL Express Checkout]
 description: 오류 문제 해결. [!DNL Express Checkout] Adobe Commerce 확장
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,10 @@ Adobe Commerce을 사용하면 여러 지역 및 시장에 대해 스토어를 �
 
 자세한 내용은 [번역 및 현지화](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) 주제 를 참조하십시오.
 
+## 캐시 초기화
+
+1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
+
 ## 지원 요청
 
-도움이 필요하면 Adobe Commerce 지원 센터에 문의하십시오.
+연락처 [!DNL Adobe Commerce] 지정된 Slack을 통한 엔지니어링 팀 [Adobe 베타 프로그램 채널](http://adobe-beta-programs.slack.com/) 도움이 필요하십니까?

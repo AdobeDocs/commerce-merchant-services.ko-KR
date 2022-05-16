@@ -2,9 +2,9 @@
 title: 온보드 [!DNL Express Checkout] Adobe Commerce 확장 프로그램
 description: 방법 알아보기 [!DNL Express Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
 를 사용하려면 [!DNL Express Checkout] Adobe Commerce 확장:
 
 1. 클릭 **구성 저장**.
+1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 ## 지원 요청
 
-온보딩 프로세스는 모든 것을 설정하고 구현하는 데 필요한 단계를 안내하도록 설계되었습니다 [!DNL Express Checkout] 기능을 사용할 수 있습니다. 도움이 필요하면 Adobe Commerce 지원 센터에 문의하십시오.
+온보딩 프로세스는 을 설정하고 구현하는 데 필요한 단계를 안내하도록 설계되었습니다 [!DNL Express Checkout] 기능을 사용할 수 있습니다. 연락처 [!DNL Adobe Commerce] 지정된 Slack을 통한 엔지니어링 팀 [Adobe 베타 프로그램 채널](http://adobe-beta-programs.slack.com/) 도움이 필요하십니까?
 
 자세한 내용은 [테스트 및 유효성 검사](../express-checkout/testing.md) 주제 를 참조하십시오.
