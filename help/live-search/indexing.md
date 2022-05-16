@@ -1,10 +1,10 @@
 ---
-title: 라이브 검색 색인 지정
-description: Live Search가 제품 속성 속성을 인덱싱하는 방법을 알아봅니다
+title: '"[!DNL Live Search] 색인 지정"'
+description: '"방법 알아보기 [!DNL Live Search] 제품 속성 속성을 인덱싱합니다."'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 8cc10feccda91fc1d9ead35f9b2b1e8ea19d4c95
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---

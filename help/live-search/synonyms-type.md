@@ -1,10 +1,10 @@
 ---
-title: 동의어 유형
-description: 단방향 및 양방향 라이브 검색 동의어는 키워드 정의를 확장합니다.
+title: '"동의어 유형"'
+description: '"일방, 양방향" [!DNL Live Search] 동의어는 키워드 정의를 확장합니다."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---

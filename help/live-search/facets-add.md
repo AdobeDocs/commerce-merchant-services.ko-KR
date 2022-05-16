@@ -1,10 +1,10 @@
 ---
-title: 패싯 추가
-description: 필터링 가능한 제품 속성을 라이브 검색 패싯으로 추가하는 방법을 알아봅니다.
+title: '"패싯 추가"'
+description: '"필터링 가능한 제품 속성을 [!DNL Live Search] 패싯."'
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

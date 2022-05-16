@@ -1,27 +1,27 @@
 ---
-user-guide-title: 라이브 검색 안내서
-user-guide-description: 이 안내서에서는 Adobe Commerce에서 라이브 검색 사용을 위한 자세한 지침을 제공합니다.
-breadcrumb-title: 라이브 검색 안내서
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] 안내서"'
+user-guide-description: '"이 안내서에서는 [!DNL Live Search] Adobe Commerce"'
+breadcrumb-title: '"[!DNL Live Search] 안내서"'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 2%
 
 ---
 
-# 상거래 라이브 검색 {#live-search}
+# [!DNL Live Search] 상거래 {#live-search}
 
 - [안내서 개요](guide-overview.md)
-- [라이브 검색 소개](overview.md)
+- [소개 [!DNL Live Search]](overview.md)
 - [릴리스 정보](release-notes.md)
 - 온보드 라이브 검색 {#onboard}
    - [온보딩 개요](onboarding-overview.md)
-   - [라이브 검색 설치](install.md)
-- Live Search Storefront {#live-search-storefront}
+   - [설치 [!DNL Live Search]](install.md)
+- [!DNL Live Search] 상점 {#live-search-storefront}
    - [빠른 둘러보기](quick-tour.md)
-   - [스토어프런트포버](storefront-popover.md)
-   - [스타일링 팝오버 요소](storefront-popover-styling.md)
-- 라이브 검색 관리자{#live-search-admin}
+   - [상점 [!DNL Popover]](storefront-popover.md)
+   - [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md)
+- [!DNL Live Search] 관리{#live-search-admin}
    - [작업 공간](workspace.md)
    - [성능](performance.md)
    - 패싯 {#facets}

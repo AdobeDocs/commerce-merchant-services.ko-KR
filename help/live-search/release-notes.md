@@ -1,10 +1,10 @@
 ---
-title: 라이브 검색 릴리스 노트
-description: Adobe Commerce의 라이브 검색에 대한 최신 릴리스 정보입니다.
+title: '"[!DNL Live Search] 릴리스 정보"'
+description: '"에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '672'
 ht-degree: 1%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: 동의어 관리
-description: 기존 라이브 검색 동의어를 관리하는 방법을 알아봅니다.
+title: '"동의어 관리"'
+description: 기존 관리 방법 알아보기 [!DNL Live Search] 동의어."
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---

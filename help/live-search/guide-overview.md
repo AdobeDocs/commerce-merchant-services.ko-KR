@@ -1,10 +1,10 @@
 ---
-title: 라이브 검색 안내서 개요
-description: Adobe Commerce의 라이브 검색 기능을 통해 빠르고 관련성이 높고 직관적인 검색 경험을 이용할 수 있습니다.
+title: '"[!DNL Live Search] 안내서 개요"'
+description: '"[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."'
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 2676c363182d0b7cb02d15d1093066b1ad4e7b87
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: 온보딩 개요
-description: 라이브 검색 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항
+title: '"온보딩 개요"'
+description: '"[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: 패싯 기술 정보
-description: 라이브 검색 패싯 사용에 대한 기술 참고 사항.
+title: '"패싯 기술 노트"'
+description: '"사용에 대한 기술 노트 [!DNL Live Search] 패싯."'
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---

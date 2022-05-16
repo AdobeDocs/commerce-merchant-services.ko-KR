@@ -1,10 +1,10 @@
 ---
-title: 패싯 관리
-description: 기존 라이브 검색 패싯을 관리하는 방법을 알아봅니다.
+title: '"패싯 관리"'
+description: 기존 관리 방법 알아보기 [!DNL Live Search] 패싯."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---

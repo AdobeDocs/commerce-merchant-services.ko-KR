@@ -1,10 +1,10 @@
 ---
-title: 동의어
-description: 라이브 검색 동의어는 카탈로그의 검색어와 다른 단어로 쿼리를 확장합니다.
+title: '"동의어"'
+description: '"[!DNL Live Search] 동의어는 카탈로그의 용어와 다른 단어로 쿼리를 확장합니다."'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

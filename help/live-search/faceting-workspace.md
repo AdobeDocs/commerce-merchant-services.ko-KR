@@ -1,10 +1,10 @@
 ---
-title: Faceting Workspace
-description: Live Search Faceting 작업 공간에 대해 알아봅니다.
+title: '"Facting Workspace"'
+description: '"EMC IT 솔루션 [!DNL Live Search] 작업 공간 확보"'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---

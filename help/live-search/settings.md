@@ -1,10 +1,10 @@
 ---
-title: 라이브 검색 설정
-description: 라이브 검색 패싯에 대한 가격 패싯 범위 및 간격을 구성합니다.
+title: '"[!DNL Live Search] 설정"'
+description: '"가격 패싯 범위 및 간격 구성 [!DNL Live Search] 패싯."'
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
