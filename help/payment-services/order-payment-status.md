@@ -4,9 +4,9 @@ description: 주문 지급 상태 보고서를 사용하여 주문의 지급 상
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. [!DNL Payment Ser
 1. 을(를) 클릭합니다. **[!UICONTROL Order dates]** 달력 선택기 필터.
 1. 적용 가능한 날짜 범위를 선택합니다.
 1. 그리드에서 지정된 일자에 대한 주문 지급 상태를 봅니다.
+
+## 열 표시 및 숨기기
+
+주문 지급 상태 보고서에는 기본적으로 사용 가능한 모든 정보 열이 표시됩니다. 그러나 보고서에 표시되는 열을 사용자 지정할 수 있습니다.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 을(를) 클릭합니다. _열 설정_ 아이콘 (![열 설정 아이콘](assets/column-settings.png)).
+1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
+
+   주문 지급 상태 보고서에는 열 설정 메뉴에서 수행한 변경 사항이 즉시 표시됩니다. 열 환경 설정이 저장되며 보고서 보기에서 멀리 탐색하는 경우 그대로 유지됩니다.
 
 ## 상태 보기
 

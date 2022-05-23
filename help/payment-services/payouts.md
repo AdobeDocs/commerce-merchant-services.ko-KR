@@ -4,9 +4,9 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. 라이브 스토�
 1. 트랜잭션 날짜 달력 선택기 필터를 클릭합니다.
 1. 적용 가능한 날짜 범위를 선택합니다.
 1. 지정된 날짜에 대한 그리드에서 결제 상태를 봅니다.
+
+## 열 표시 및 숨기기
+
+페이아웃 보고서에는 기본적으로 사용 가능한 대부분의 정보 열이 표시됩니다. 그러나 보고서에 표시되는 열을 사용자 지정할 수 있습니다.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. 을(를) 클릭합니다. _열 설정_ 아이콘 (![열 설정 아이콘](assets/column-settings.png)).
+1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
+
+   페이아웃 보고서에는 열 설정 메뉴에서 수행한 변경 사항이 즉시 표시됩니다. 열 환경 설정이 저장되며 보고서 보기에서 멀리 탐색하는 경우 그대로 유지됩니다.
 
 ## 트랜잭션 다운로드
 
