@@ -3,7 +3,7 @@ title: 온보드 "[!DNL Store Fulfillment]"
 description: 전자 상거래 인스턴스를 [!DNL Store Fulfillment Manager] 몇 가지 온보딩 단계를 완료하여 서비스를 제공합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Onboard Store Fulfillment에서 상거래 인스턴스에 확장을 설치하고
 
 ## 전제 조건
 
-* **상거래 계정 정보**- 다운로드 및 설치 [!DNL Channel Manager] 를 사용하려면 [상거래 계정](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. 에 대한 소유자 또는 관리자 액세스 권한이 있는 계정 ID 및 자격 증명이 필요합니다 [!DNL Adobe Commerce] 또는 [!DNL Magento Open Source] 인스턴스.
+* **상거래 계정 정보**-설치 중 [!DNL Store Fulfillment by Walmart Technologies] 를 사용하려면 [상거래 계정](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. 에 대한 소유자 또는 관리자 액세스 권한이 있는 계정 ID 및 자격 증명이 필요합니다 [!DNL Adobe Commerce] 또는 [!DNL Magento Open Source] 인스턴스.
 
 * 대상 [!DNL Adobe Commerce] 클라우드 인프라 프로젝트에서 소프트웨어 설치 관리자는 [!DNL Commerce] 인스턴스:
 
@@ -47,7 +47,7 @@ Onboard Store Fulfillment에서 상거래 인스턴스에 확장을 설치하고
 
       자세한 내용은 [사용자 액세스 관리](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Walmart Technologies 소프트웨어 아카이브 의 Store Fulfillment에 액세스하여 Adobe Commerce 인스턴스에 Store Fulfillment 솔루션을 설치합니다.**-고객 계정 담당자가 확장 설치 파일에 액세스할 수 있습니다.
+* **Walmart Technologies 소프트웨어 아카이브(.zip 파일)에 액세스하여 Adobe Commerce 인스턴스에 Store Fulfillment 솔루션을 설치합니다**-고객 계정 담당자가 확장 설치 파일에 액세스할 수 있습니다.
 
 * **작성기 및 를 사용한 경험[!DNL Commerce CLI]** -참조 [일반 CLI 설치](https://devdocs.magento.com/extensions/install/)다음 도구를 사용하여 확장을 설치 및 관리하는 방법에 대한 자세한 내용은 target=&quot;_blank&quot;} 를 참조하십시오. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 플랫폼.
 
