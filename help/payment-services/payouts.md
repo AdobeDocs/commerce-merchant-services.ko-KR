@@ -4,9 +4,9 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![재무 보고서 보기](assets/reports-view.png)
 
 지급 보고서는 재무 조정을 위한 거래 수준에 대한 자세한 보고 및 지급 금액, 처리된 거래량 및 지급 금액을 전체적으로 확인할 수 있도록 포괄적인 지급 정보를 한 눈에 표시합니다.
+
+>[!NOTE]
+>
+>지급 보고서는 캡처된 주문만 표시합니다. 지급 조치는 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))—또는 [표시 `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 상호 참조 주문 및 지급 또는 계정 조정을 위해 여러 뷰를 열 필요가 없습니다. [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 이러한 모든 작업을 한 곳에서 수행할 수 있도록 합니다. 즉, 페이아웃 보고서를 사용하여 효율적으로 페이아웃을 보고 관리할 수 있습니다.
 
@@ -106,7 +110,7 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. 라이브 스토�
 | [!UICONTROL Provider] | 결제 공급자 |
 | [!UICONTROL Provider trans] | 거래 ID |
 | [!UICONTROL Trans date] | 트랜잭션이 시작된 날짜 및 시간 |
-| [!UICONTROL Type] | 트랜잭션 유형—*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>자세한 내용은 [트랜잭션 유형](#transaction-types) 추가 정보. |
+| [!UICONTROL Type] | 트랜잭션 유형—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>자세한 내용은 [트랜잭션 유형](#transaction-types) 추가 정보. |
 | [!UICONTROL Status] | 거래의 현재 상태—*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | 대변(*CR*) 또는 차변(*DR*) |
 | [!UICONTROL Reference ID] | 이 이벤트와 관련된 원래 거래 ID |
