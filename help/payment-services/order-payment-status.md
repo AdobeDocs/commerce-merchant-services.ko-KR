@@ -4,9 +4,9 @@ description: 주문 지급 상태 보고서를 사용하여 주문의 지급 상
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. [!DNL Payment Ser
 
    주문 결제 상태 보고서 데이터가 새로 고쳐지고 *[!UICONTROL Update complete]* 확인이 나타나고 최신 정보가 그리드에 표시됩니다.
 
+## 분쟁 보기
+
+상점의 주문에 대한 모든 분쟁을 조회하고, 주문 결제 상태 보고서 내에서 해당 분쟁에 대해 조치를 취할 수 있는 PayPal 해결 센터로 이동합니다.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 로 이동합니다 **[!UICONTROL Disputes column]**.
+1. 특정 주문에 대한 모든 분쟁 확인 및 참조 [분쟁 상태](#order-payment-status-information).
+1. 분쟁 ID 링크를 클릭합니다(다음으로 시작). _PP-D-_)으로 이동합니다. [PayPal Resolution Center](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 필요에 따라 적절한 조치를 취하십시오.
+
+   상태별로 주문 분쟁을 정렬하려면 분쟁 열 헤더를 누릅니다.
+
 ## 주문 결제 상태 다운로드
 
 기본 30일 상태를 보는지 사용자 지정된 기간을 보는지 여부에 관계없이 주문 지급 상태 보기 그리드에 표시되는 모든 상태의 .csv 파일을 다운로드할 수 있습니다.
@@ -171,7 +183,7 @@ These order payment status timeframes are currently available in [!DNL Payment S
 | [!UICONTROL Refund Status] | 주문 환불 상태(예: 반품, RMA 및 대변 메모의 정보) -   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, 또는 *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | 주문에 대한 환급된 금액의 합계 |
 | [!UICONTROL Cur] | 주문에 대해 반환되는 금액의 통화 유형 |
-| [!UICONTROL Dispute Status] | 주문 관련 분쟁 상태(분쟁 및 채권갱신 정보)*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]*, 또는 *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | 주문 관련 분쟁 상태(분쟁 및 채권갱신 정보)*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, 또는 *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | 주문에 대해 상거래 거래에 사용되는 결제 방법 |
 | [!UICONTROL Website] | 주문이 수행된 웹 사이트 |
 | [!UICONTROL Store] | 주문이 수행된 저장 |
