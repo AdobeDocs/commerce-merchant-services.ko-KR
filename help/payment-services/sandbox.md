@@ -2,9 +2,9 @@
 title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ PayPal 샌드박스 온보딩이 승인되면, 결제 시스템이 현재 샌드
 
 >[!IMPORTANT]
 >
->동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services].
+>동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 서비스 홈에 해지된 동의에 대한 경고가 표시됩니다. 경고를 취소하려면 **[!UICONTROL Do not show again]**.
 
 ## 연락처 전화 번호 사용
 

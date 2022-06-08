@@ -2,9 +2,9 @@
 title: 활성화 [!DNL Payment Services] 프로덕션
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다 [!DNL Payment Services] 제작 관련
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Payments Services 확장이 [설치](install.md)이면 인스턴스가 [구성 �
 
    >[!IMPORTANT]
    >
-   >동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services].
+   >동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 서비스 홈에 해지된 동의에 대한 경고가 나타납니다.
 
 ## Adobe에서 지급 자격 요청
 
@@ -115,7 +115,7 @@ Live Payments를 사용하려면
 
 >[!IMPORTANT]
 >
->동의를 취소하는 경우 [!DNL Payment Services] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 처리를 다시 활성화하려면 온보딩을 다시 완료해야 합니다.
+>동의를 취소하는 경우 [!DNL Payment Services] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 처리를 다시 활성화하려면 온보딩을 다시 완료해야 합니다. 결제 서비스 홈에 해지된 동의에 대한 경고가 나타납니다.
 
 ## 프로덕션 테스트
 
