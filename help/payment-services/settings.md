@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
    >
    >사용자 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_ 샌드박스 및/또는 프로덕션에 대한 온보딩을 마치면 자동으로 생성되어 해당 어량 필드에 표시됩니다. 이러한 ID를 제거하거나 변경하지 마십시오.
 
+1. 저장소 보기에서 **[!UICONTROL Scope]** 드롭다운 메뉴에서 결제 방법을 사용할 수 있습니다.
 1. 결제 기능 및 상점 표시에 대한 기본 설정을 변경하려면 필요에 따라 추가 옵션을 설정합니다.
 
    - [신용 카드 필드](#credit-card-fields)

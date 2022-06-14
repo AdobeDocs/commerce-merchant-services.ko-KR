@@ -2,9 +2,9 @@
 title: 테스트 및 유효성 검사
 description: 테스트 및 유효성 검사 기능을 통해 [!DNL Payment Services] 함수는 예상대로 작동하며 고객에게 최상의 결제 옵션을 제공합니다
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 599405b908cc8b770c917a18ad488a1f69be222b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 테스트 [!DNL Payment Services] 샌드박스 환경에서는 실제 은행과 상인이 아닌 PayPal 샌드박스에만 연결된 시뮬레이션된 환경이지만 중요한 유효성 검사 단계입니다.
 
 1. 다음 중 하나를 사용하여 저장소에서 성공적인 체크아웃을 완료합니다 [신용 카드 필드](payments-options.md#credit-card-fields) 또는 [PayPal 스마트 단추](payments-options.md#paypal-smart-buttons). 자세한 내용은 [샌드박스 모드 사용](#use-sandbox-mode) 를 참조하십시오.
-1. 캡처(결제 작업이 [설정 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [환급](refunds.md), 또는 [void](voids.md) 방금 완료된 주문입니다. 또한 간단하게 [송장 생성](https://docs.magento.com/user-guide/sales/invoice-create.html)결제 작업이 `Authorize` 대신 `Authorize and Capture`.
+1. 캡처(결제 작업이 [설정 `Authorize and Capture`](production.md#set-payment-services-as-payment-method), [환급](refunds.md), 또는 [void](voids.md) 방금 완료된 주문입니다. 또한 간단하게 [송장 생성](https://docs.magento.com/user-guide/sales/invoice-create.html)결제 작업이 `Authorize` 대신 `Authorize and Capture`.
 1. 24-48시간 이내에 [결제 보고서](payouts.md).
 1. 주문 세부 사항을 [주문 결제 상태 보고서](order-payment-status.md).
 
