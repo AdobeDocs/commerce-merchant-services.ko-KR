@@ -1,12 +1,12 @@
 ---
 title: '"소개 [!DNL Store Fulfillment]"'
-description: '"방법 알아보기 [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] 은 온라인 구매를 지원하고 고객을 위한 매장(BOPIS)을 선택합니다. Store Assist 모바일을 사용하여 Store Associates 및 Commerce 고객을 위한 BOPIS 이행 및 주문 처리를 간소화합니다."'
+description: '"방법 알아보기 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 은 온라인 구매를 지원하고 고객을 위한 매장(BOPIS)을 선택합니다. Store Assist 모바일을 사용하여 Store Associates 및 Commerce 고객을 위한 BOPIS 이행 및 주문 처리를 간소화합니다."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Walmart Commerce Technologies의 Store Fulfillment for Adobe Commerce은 사용자의 [!DNL Commerce] 스토어를 통해 온라인에서 뛰어난 구매 경험을 제공하려면 BOPIS(Store in Store) 고객 경험을 선택합니다.
 
-![Walmart Technologies의 Store Fulfillment 관리 구성](assets/store-fulfillment-admin-home.png)
+![저장소 이행 솔루션 Adobe 관리 구성](assets/store-fulfillment-admin-home.png)
 
 또한 Store Fulfillment는 판매자가 전환율, 평균 주문 가격, 고객 만족도를 높이면서 비용을 절감하도록 지원하는 종단 간 이행 워크플로우를 제공합니다. 이 워크플로우는 다음과 같은 이점을 제공합니다.
 
