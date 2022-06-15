@@ -2,9 +2,9 @@
 title: '"설치 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"다음 단계에 따라 [!DNL Quick Checkout] Adobe Commerce 프로젝트에서 다음을 수행하십시오."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 설치를 시도할 때 오류가 표시될 수 있습니다 [!DNL Quick Checkout] 확장.
 
-자세한 내용은 [문제 해결](../quick-checkout/troubleshooting.md) 설치 시 문제가 발생하는 경우 참조할 항목을 제공합니다 [!DNL Quick Checkout].
+다음 기간 동안 문제가 발생하는 경우 [!DNL Quick Checkout] 설치 프로세스 [빠른 체크아웃 문제 해결](https://support.magento.com/hc/en-us/articles/6909450342541) ( Adobe Commerce 도움말 센터)
 
 ## 전제 조건
 
