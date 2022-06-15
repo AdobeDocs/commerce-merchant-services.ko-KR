@@ -1,12 +1,12 @@
 ---
-title: '`[!DNL Store Fulfillment by Walmart Commerce Technologies] 안내서 개요'''
-description: 에 대한 포괄적인 정보 [!DNL Store Fulfillment] Adobe Commerce 관리자(설치 및 온보딩 포함)
+title: '`[!DNL Store Fulfillment] 안내서 개요'''
+description: '"에 대한 포괄적인 정보 [!DNL Store Fulfillment] 설치 및 온보딩을 포함하여 Adobe Commerce 관리자를 위한 것입니다."'
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 | 안내서 | 설명 |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 사용 안내서](https://docs.magento.com/user-guide/) | Adobe Commerce 둘 다에 대한 머천트 중심의 설명서 |
+| [Adobe Commerce 2.4 사용 안내서](https://docs.magento.com/user-guide/) | Adobe Commerce에 대한 Merchant 중심의 설명서 |
 | [Adobe Commerce 2.4 개발자 안내서](https://devdocs.magento.com/) | Adobe Commerce을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서입니다 |
 
 ## 지원

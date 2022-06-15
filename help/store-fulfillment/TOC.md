@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Adobe Commerce 스토어의 Store Fulfillment 설치, 구성 및 사용에 대한 자세한 정보
+user-guide-description: Adobe Commerce 스토어의 Store Fulfillment 설치, 구성 및 사용에 대한 자세한 정보입니다.
 breadcrumb-title: Adobe Commerce에 대한 주문 처리 저장
 index: false
 hidden: true
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 - 저장소 구성 {#store-configuration}
    - [일반 구성](enable-general.md)
    - [영업 이메일](sales-emails.md)
-   - [머천트 스토어 소스](merchant-store-configuration.md)
+   - [Merchant Store(소스)](merchant-store-configuration.md)
    - [제품 스톡 관리](product-stock.md)
    - [Inventory management 소스 전송](inventory-stock-transfer.md)
    - [여러 웹 사이트/범위](multi-site-and-scope-config.md)

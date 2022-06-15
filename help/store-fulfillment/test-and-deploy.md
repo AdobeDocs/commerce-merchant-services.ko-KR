@@ -3,9 +3,9 @@ title: 저장소 이행 테스트 및 배포
 description: 저장 이행 기능을 검증하기 위한 테스트 계획. 테스트에서는 Inventory Sync API, 취소된 주문에 대한 종단 간 이행 워크플로우, Store Fulfillment 앱 사용자 관리 및 고객 체크인 경험을 다룹니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2652'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,6 @@ ht-degree: 0%
 | Adobe Commerce 프론트엔드 | 제품 유형 | 고객, 관리자 |
 | 프런트 엔드 체크아웃</br>체크인 양식 | 체크인 경험 | 고객, 관리자 |
 | 스토어 지원 앱 | 주문</br>선택</br>단계</br>및 핸드오프 | 저장소 연결 |
-
-
-
 
 ### 인벤토리 API 동기화
 
@@ -639,8 +636,6 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </tbody>
 </table>
 
-
-
 ## 배포
 
 솔루션이 사양에 맞게 구성 및 테스트되었는지 확인했으면 스테이징에서 프로덕션에 배포할 준비가 된 것입니다.
@@ -650,7 +645,6 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 >[!TIP]
 >
 >클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 배포 지침, 확인 목록 및 우수 사례에 대해서는 다음을 참조하십시오 [스토어 배포](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ( Adobe Commerce 개발자 설명서).
-
 
 
 

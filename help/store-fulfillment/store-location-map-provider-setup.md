@@ -1,11 +1,11 @@
 ---
-title: 저장소 위치 및 매핑 시스템 구성
-description: 상점 UI에서 저장소 위치 매핑을 지원하도록 거리 공급자를 구성합니다.
+title: 저장 위치 및 매핑 시스템 구성
+description: 상점 UI에서 저장소 위치 매핑을 지원하도록 거리 공급자를 구성합니다. Store Fulfillment 솔루션에서는 소매점 검색 및 종단간 이행 워크플로우에 대한 기타 매핑 및 스케줄링 기능을 사용하기 위해 거리 공급자가 필요합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,3 @@ ht-degree: 0%
    - 추가 **Google API 키**.
 
    - 설정 **[!UICONTROL Computation Mode]** to `Driving` 및 **[!UICONTROL Value]** to `Distance`
-

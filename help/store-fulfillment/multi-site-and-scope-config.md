@@ -3,12 +3,13 @@ title: 여러 웹 사이트 및 범위 구성
 description: 여러 웹 사이트 및 저장소 범위에 대한 주식 및 전달 방법을 구성합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
+
 
 # 여러 웹 사이트 및 범위 구성
 

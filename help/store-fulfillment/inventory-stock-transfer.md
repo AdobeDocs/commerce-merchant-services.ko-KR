@@ -1,15 +1,16 @@
 ---
 title: Inventory management 소스 전송
-description: 새 주식을 설정하고 기본 재고에서 재고를 이전하여 Store Fulfillment에 대한 주식을 구성합니다.
+description: '"에 대한 주식 구성 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management 사용. Store Fulfillment 솔루션에서 필요한 Store Pickup 기능을 사용하도록 구성된 출처에 할당할 수 있도록 새 재고를 설정하고 기본 재고로부터 재고를 이전합니다."'
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
+
 
 # Inventory management 소스 전송
 
@@ -19,12 +20,11 @@ ht-degree: 0%
 
 1. [출처로 재고 이전](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) 기본 재고/출처의 재고를 새 재고/출처로 이동하려면
 
-2. [소스 일괄 할당](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 를 추가하여 모든 제품에 대한 새 소스를 추가합니다.
+1. [소스를 일괄 지정](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 를 추가하여 모든 제품에 대한 새 소스를 추가합니다.
 
-3. [제품 속성에 대한 전체 벌크 업데이트](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 를 추가하려면 `Allow Store Pickup` 및 `Allow Home Delivery` 기존 제품에 대한 속성입니다. 솔루션이 설치되면 속성에 최적화가 사용됩니다 *기본* 값. 그러나 벌크 업데이트 프로세스를 완료할 때까지 이러한 속성은 기존 제품에 적용되지 않습니다.
+1. [제품 속성에 대한 전체 벌크 업데이트](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 를 추가하려면 `Allow Store Pickup` 및 `Allow Home Delivery` 기존 제품에 대한 속성입니다. 솔루션이 설치되면 속성에 최적화가 사용됩니다 *기본* 값. 그러나 벌크 업데이트 프로세스를 완료할 때까지 이러한 속성은 기존 제품에 적용되지 않습니다.
 
 선택한 출처(소매점 위치 또는 전자 상거래 창고)에서 재고가 공제됩니다. 전자 상거래 웨어하우스로 사용되는 소스는 상점 픽업 위치와 동일한 주식에 할당하고 소매 위치 이전에 우선 순위를 지정해야 합니다. 자세한 내용은 [스톡 소스 우선 순위 지정](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
-
 
 인벤토리, 주식 및 소스 관리에 대한 자세한 내용은 Adobe Commerce 사용 설명서를 참조하십시오.
 

@@ -1,14 +1,15 @@
 ---
 title: 저장소 이행 구성 개요
-description: Store Fulfillment 솔루션에서 사용할 수 있는 관리 구성 설정 범주 및 구성 방법에 대해 알아봅니다.
+description: Store Fulfillment 솔루션에서 제공하는 확장 이행 기능을 사용자 지정하는 데 사용할 수 있는 관리 구성 설정 유형에 대해 알아보고 구성을 완료하기 위한 지침에 연결합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # 저장소 이행 구성 개요
 
@@ -26,10 +27,9 @@ Adobe Commerce 관리에서 Walmart Commerce Technologies의 Store Fulfillment S
 | [다중 웹 사이트/범위 구성](multi-site-and-scope-config.md) | 여러 웹 사이트/스토어 범위에 대한 주식 및 전달 방법을 구성합니다. | 아니요 |
 | [백그라운드 프로세스 시스템 구성](background-processes.md) | 데이터를 이행 서비스와 동기화하는 데 사용되는 백그라운드 프로세스에 대한 일정을 구성합니다. | 아니요 |
 | [저장소 위치 및 매핑 설정](store-location-map-provider-setup.md) | 거리 공급자를 사용하여 소매점을 검색하고 이 정보를 SLS 맵에 표시할 수 있습니다 | 예 |
-| [체크인 Experience Setup](store-location-map-provider-setup.md) | 체크 인 프로세스 중에 사용할 수 있는 자동차 색상 및 자동차 제조 옵션을 구성합니다 | 예 |
+| [체크인 Experience Setup](check-in-experience-setup.md) | 체크 인 프로세스 중에 사용할 수 있는 자동차 색상 및 자동차 제조 옵션을 구성합니다 | 예 |
 | [사용자 설정](user-setup.md) | Store Assist 앱을 사용하는 Store Associate의 사용자 계정, 역할 및 권한을 관리합니다. 범위. | 예 |
 | [앱 설정](app-setup.md) | 온보딩 프로세스를 완료하는 데 필요한 스토어 지원 앱에 사용 가능한 구성을 검토합니다. Adobe Commerce 관리에서 이러한 설정을 구성할 수 없습니다. | 예 |
-
 
 ## 구성 참조 사용
 

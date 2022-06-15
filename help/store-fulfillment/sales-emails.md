@@ -1,15 +1,16 @@
 ---
 title: 영업 이메일
-description: 주문 및 주문 처리 프로세스 중에 고객과 통신하고 저장 관리자와 통신하도록 트랜잭션 전자 메일 템플릿에 대한 설정을 구성합니다.
+description: 저장 픽업 주문에 대한 이행 프로세스 중에 고객과 통신하고 저장소 관리자에게 연락하기 위한 트랜잭션 전자 메일 템플릿을 구성합니다.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # 영업 이메일
 

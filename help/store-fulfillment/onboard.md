@@ -1,9 +1,9 @@
 ---
 title: Store Fulfillment 서비스에 대한 온보딩 개요
-description: '"[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"'
+description: '"[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ ht-degree: 0%
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] 모바일 장치에서 보기](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 모바일 장치](assets/store-assist-orders-small.png) |
 
-
-
-
 ## 프로비저닝 단계
 
 - **등록[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-등록 양식 완료 [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)도움이 필요하면 Adobe Commerce 계정 관리자에게 문의하십시오.
@@ -47,12 +44,11 @@ ht-degree: 0%
 
 1. [Adobe Commerce 관리에서 저장소 이행 확장 구성](service-config-settings-overview.md).
 
-1. [연결 [!DNL Store Fulfillment] 제공되는 저장소 이행 자격 증명을 사용한 서비스입니다.](connect-set-up-service.md)
+1. [연결 [!DNL Store Fulfillment] 사용자에게 제공된 저장소 이행 자격 증명을 사용한 서비스](connect-set-up-service.md).
 
-1. [스토어 지원 앱의 사용자 및 역할 만들기](user-setup.md)
+1. [스토어 지원 앱의 사용자 및 역할 만들기](user-setup.md).
 
-1. [월마트 다운로드 [!DNL Store Assist] 앱을 원하는 장치에 추가합니다. 이 앱은 앱스토어(iOS)과 재생 스토어(Android)에서 모두 사용할 수 있습니다](app-setup.md)
+1. [월마트 다운로드 [!DNL Store Assist] 앱을 원하는 장치에 추가합니다. 이 앱은 앱스토어(iOS)과 재생 스토어(Android)에서 모두 사용할 수 있습니다](app-setup.md).
 
 설치, 구성, 온보딩을 완료하고 를 액세스할 수 있게 되면 [!DNL Store Assist] 앱, [주문 및 테스트 만들기](test-and-deploy.md).
-
 

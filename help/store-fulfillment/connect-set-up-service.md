@@ -3,9 +3,9 @@ title: 저장소 이행 솔루션 연결
 description: Adobe Commerce 통합을 만들고 인증하고 Store Fulfillment 계정 자격 증명을 Adobe Commerce 서비스 구성에 추가하여 Adobe Commerce과 Store Fulfillment 솔루션 간의 연결을 설정합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합
 
 흡입 양식을 완료하면 Walmart Store Fulfillment 계정이 생성됩니다. 자격 증명이 있으면 다음 자격 증명을 받게 됩니다.
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

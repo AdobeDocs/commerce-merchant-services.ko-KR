@@ -1,14 +1,15 @@
 ---
 title: 사용자 설정
-description: 'Merchant Store로 향상된 Inventory management 소스를 설정합니다. '
+description: 'Adobe Commerce용 Store Fulfillment 솔루션을 지원하도록 Merchant 스토어로 향상된 Inventory management 소스를 설정합니다. '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
+
 
 # 사용자 설정
 
@@ -42,7 +43,6 @@ Store Fulfillment App 사용자 모델은 다른 Adobe Commerce 사용자 모델
 
 관리 시스템 설정에서 스토어 지원 앱 사용자 프로필 관리:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-
 | **필드** | **설명** | **범위** | **필수 여부** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | 사용자를 활성화하거나 비활성화합니다. | 글로벌 | 예 |
@@ -54,8 +54,3 @@ Store Fulfillment App 사용자 모델은 다른 Adobe Commerce 사용자 모델
 | **인터페이스 로케일** | 스토어에 여러 언어가 있는 경우 인터페이스 로케일을 Admin 인터페이스에 사용할 언어로 설정합니다. | 글로벌 | 아니요 |
 | **활성 From** | 시작 날짜를 설정하려면 달력 아이콘을 선택합니다. | 글로벌 | 아니요 |
 | **활성 대상** | 달력 아이콘을 선택하여 만료 날짜를 설정합니다. 만료 날짜를 설정하면 임시 사용자 또는 역할 할당을 설정하는 데 유용합니다. 만료 날짜 이후 사용자 계정 상태가 `Inactive`하지만 필요한 경우 계정을 계속 업데이트할 수 있습니다. | 글로벌 | 아니요 |
-
-
-
-
-

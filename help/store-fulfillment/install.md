@@ -1,25 +1,26 @@
 ---
 title: 설치
-description: 설명 추가
+description: '"설치 [!DNL Store Fulfillment solution] PHP용 Composer를 사용하여 Adobe Commerce 상점"에 사용할 수 있습니다."'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # 설치
 
-초기 설치 완료 [!DNL Store Fulfillment] 예외 처리를 허용하도록 구성된 큐 관리자 실행 및 캐싱을 사용하는 비프로덕션 환경의 확장 Adobe Commerce 인스턴스의 운영 및 유지 관리에 대한 우수 사례를 보장하려면 환경에 다른 개발 도구가 포함되어 있어야 합니다.
+의 초기 설치를 완료합니다 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 예외 처리를 허용하도록 구성된 큐 관리자 실행 및 캐싱을 사용하는 비프로덕션 환경의 확장 개발 환경에 Adobe Commerce 인스턴스의 운영 및 유지 관리를 위한 우수 사례를 보장하는 개발 도구가 포함되어 있는지 확인합니다.
 
 ## 전제 조건
 
 를 검토합니다. [요구 사항](solution-requirements.md) 저장 이행 솔루션에 대한 정보를 수집하고 [!DNL Store Fulfillment] Adobe Commerce 확장.
 
-Store Fulfillment for Adobe Commerce 확장의 시험판 또는 베타 버전을 설치한 경우 현재 버전을 설치하기 전에 제거하십시오.
+Store Fulfillment for Adobe Commerce 확장의 시험판 또는 베타 버전을 설치한 경우 현재 버전을 설치하기 전에 다음 명령을 사용하여 제거하십시오.
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Adobe Commerce에 타사 확장 설치 경험**-자세한 내용은 Adobe Commerce 설명서를 참조하십시오.
 
-   - [클라우드 인프라 인스턴스에 Adobe Commerce용 확장 설치](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [클라우드 인프라 인스턴스에 Adobe Commerce용 확장 설치](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Adobe Commerce 온-프레미스 인스턴스용 확장 설치](https://devdocs.magento.com/extensions/install/)
+   - [Adobe Commerce 온-프레미스 인스턴스용 확장 설치](https://devdocs.magento.com/extensions/install/).
 
 ### 1단계: 확장 번들 다운로드
 
@@ -79,7 +80,7 @@ Composer를 사용하여 설치에 대한 소스 디렉토리를 구성하고 St
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Store Fulfillment Services 확장 추가 `composer.json`
+1. Store Fulfillment Services 확장 추가 `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ Adobe Commerce 서버에서 Store Fulfillment Services 확장 모듈에 설치 �
 
 1. 서버에 로그인합니다.
 
-   클라우드 인프라 상에 Adobe Commerce에 설치하는 경우 SSH를 사용하여 원격 환경에 로그인합니다.
+   클라우드 인프라에 Adobe Commerce에 설치하는 경우, [원격 환경에 로그인하려면 SSH 사용](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Store Fulfillment Services 모듈이 활성화되어 있는지 확인합니다.
 
@@ -182,7 +183,7 @@ Adobe Commerce 서버에서 Store Fulfillment Services 확장 모듈에 설치 �
 
 ### 추가 단계
 
-필요한 경우 [설정:static-content: 배포](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) 운영 환경에 정적 뷰 파일을 배포하는 CLI 명령
+필요한 경우 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` 운영 환경에 정적 뷰 파일을 배포하는 CLI 명령
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ php bin/magento setup:static-content:deploy -f
 >[!NOTE]
 >
 >자세한 내용은 [Adobe Commerce에서 정적 콘텐츠 배포 우수 사례](https://support.magento.com/hc/en-us/articles/360031624091) ( Adobe Commerce 도움말 센터)
-
