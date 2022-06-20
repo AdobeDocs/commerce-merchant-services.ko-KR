@@ -3,8 +3,7 @@ user-guide-title: '"[!DNL Store FulFillment Guide]"'
 user-guide-description: Adobe Commerce 스토어의 Store Fulfillment 설치, 구성 및 사용에 대한 자세한 정보입니다.
 breadcrumb-title: Adobe Commerce에 대한 주문 처리 저장
 index: false
-hidden: true
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 2%
