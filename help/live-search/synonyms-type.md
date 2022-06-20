@@ -2,9 +2,9 @@
 title: '"동의어 유형"'
 description: '"일방, 양방향" [!DNL Live Search] 동의어는 키워드 정의를 확장합니다."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ ht-degree: 0%
 
 라이브 검색 동의어를 최대한 활용하려면 다음 모범 사례를 기억하십시오.
 
-### 키워드 매핑
+### &quot;stop words&quot; 방지
 
-이 기법은 동의어 대신 검색 가능한 제품 속성을 사용하여 제품 간에 키워드 기반 연결을 만듭니다. 따라서 다른 제품의 검색 결과에 매핑된 제품이 나타날 수 있습니다. 자세한 내용은 [검색 결과](https://docs.magento.com/user-guide/catalog/search-results.html).
+라이브 검색은 다음과 같은 동의어에서 일반적인 영어 &quot;stop words&quot;를 필터링합니다.
+
+a, an 및, is, as, as, be, but, for, if, in, in, into, is, it, no, not, on, or, that, the, the, their, then, 이것들, 이것들, is, to, is, with,
+
+Stop words는 동의어를 더 의미 있게 만들지 않지만 처리해야 하는 데이터의 양을 증가시킵니다.
 
 ### 단일 단어 사용
 
@@ -46,3 +50,7 @@ ht-degree: 0%
 ### 일관성
 
 카탈로그에서 용어가 사용되는 방식과 일치하십시오. 사용량에 지역적 차이점과 산업 내 차이점이 있을 수 있음을 명심하십시오.
+
+### 키워드 매핑
+
+이 기법은 동의어 대신 검색 가능한 제품 속성을 사용하여 제품 간에 키워드 기반 연결을 만듭니다. 따라서 다른 제품의 검색 결과에 매핑된 제품이 나타날 수 있습니다. 자세한 내용은 [검색 결과](https://docs.magento.com/user-guide/catalog/search-results.html).
