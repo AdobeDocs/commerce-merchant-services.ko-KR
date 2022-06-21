@@ -1,19 +1,19 @@
 ---
 title: Commerce Services 커넥터
-description: API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
+description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
+source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]  SaaS(Software as a service)로 배포됩니다. 이러한 서비스를 사용하려면 [!DNL Commerce] API 키 및 개인 키를 사용하여 인스턴스를 만들고 [구성](https://docs.magento.com/user-guide/configuration/services/saas.html). 이를 한 번만 설정하면 됩니다.
+일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]  SaaS(Software as a service)로 배포됩니다. 이러한 서비스를 사용하려면 [!DNL Commerce] 프로덕션 및 샌드박스 API 키를 사용하여 인스턴스화하고 [구성](https://docs.magento.com/user-guide/configuration/services/saas.html). 이를 한 번만 설정하면 됩니다.
 
-## 사용 가능한 서비스
+## 사용 가능한 서비스 {#availableservices}
 
 다음은 [!DNL Commerce] 를 통해 액세스할 수 있는 기능 [!DNL Commerce Services Connector]:
 
@@ -33,9 +33,9 @@ ht-degree: 0%
 
 ## 자격 증명 {#apikey}
 
-API 키 및 개인 키는 [!DNL Commerce] 라이센스 소유자의 계정으로서, 고유한 [!DNL Commerce] ID(MageID). 과 같은 서비스에 대한 자격 증명을 전달하려면 [!DNL Product Recommendations] 또는 [!DNL Live Search]를 설정하는 경우, 머천트 조직의 라이선스 보유자는 계정이 양호하다면 API 키 세트를 생성할 수 있습니다. 키는 라이센스 보유자를 대신하여 프로젝트 및 환경을 관리하는 시스템 통합자 또는 개발 팀과 &quot;알아야 할 사항&quot;으로 공유할 수 있습니다. 또한 솔루션 통합자는 [!DNL Commerce Services]. 솔루션 통합자인 경우 [!DNL Commerce] 파트너 계약은 API 키를 생성해야 합니다.
+프로덕션 및 샌드박스 API 키는 [!DNL Commerce] 라이센스 소유자의 계정으로서, 고유한 [!DNL Commerce] ID(MageID). 과 같은 서비스에 대한 자격 증명을 전달하려면 [!DNL Product Recommendations] 또는 [!DNL Live Search]를 설정하는 경우, 머천트 조직의 라이선스 보유자는 계정이 양호하다면 API 키 세트를 생성할 수 있습니다. 키는 라이센스 보유자를 대신하여 프로젝트 및 환경을 관리하는 시스템 통합자 또는 개발 팀과 &quot;알아야 할 사항&quot;으로 공유할 수 있습니다. 또한 솔루션 통합자는 [!DNL Commerce Services]. 솔루션 통합자인 경우 [!DNL Commerce] 파트너 계약은 API 키를 생성해야 합니다.
 
-### API 키 및 개인 키 생성 {#genapikey}
+### 프로덕션 및 샌드박스 API 키 생성 {#genapikey}
 
 1. 에 로그인합니다. [!DNL Commerce] 계정 [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
@@ -55,7 +55,9 @@ API 키 및 개인 키는 [!DNL Commerce] 라이센스 소유자의 계정으로
 
 1. 클릭 **다운로드** 을 클릭한 다음 **취소**.
 
-   다음 **API 키** 이제 섹션에 API 키가 표시됩니다. 다음의 경우 API 키와 개인 키가 모두 필요합니다 [SaaS 프로젝트 선택 또는 생성](#createsaasenv).
+1. 각 환경(프로덕션 및 샌드박스)에 대해 위의 단계를 반복합니다.
+
+   다음 **API 키** 이제 섹션에 API 키가 표시됩니다. 프로덕션 키와 샌드박스 키 모두 필요할 때 [SaaS 프로젝트 선택 또는 생성](#createsaasenv).
 
 ## SaaS 구성 {#saasenv}
 
@@ -71,35 +73,37 @@ API 키 및 개인 키는 [!DNL Commerce] 라이센스 소유자의 계정으로
 
 >[!NOTE]
 >
-> 이 표시되지 않으면 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] configuration, 설치 [!DNL Commerce] 원하는 모듈용 [!DNL Commerce] 서비스(예: [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
+> 이 표시되지 않으면 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] configuration, 설치 [!DNL Commerce] 원하는 모듈용 [[!DNL Commerce] 서비스](#availableservices).
 
 SaaS 프로젝트를 선택하거나 만들려면 [!DNL Commerce] 의 API 키 [!DNL Commerce] 스토어의 라이선스 소유자.
 
-1. 설정 _관리_ 사이드바, 다음 위치로 이동 **스토어** > _설정_ > **구성**.
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **시스템** > 서비스 > **Commerce Services 커넥터**.
 
-1. 왼쪽 패널에서 를 확장합니다. **서비스** 및 **Commerce Services 커넥터**.
-
-1. 에서 _API 키_ 섹션에서 **프로덕션 API 키** 그리고 **프로덕션 개인 키**.
+1. 에서 _샌드박스 API 키_ 및 _프로덕션 API 키_ 섹션에서 키 값을 붙여넣습니다.
 
    개인 키는 다음을 포함해야 합니다 `----BEGIN PRIVATE KEY---` 키의 시작 부분에 `----END PRIVATE KEY----` 개인 키의 끝.
 
-1. 클릭 **구성 저장**.
+1. 클릭 **저장**.
 
-API 키와 연결된 모든 SaaS 프로젝트는 **SaaS 프로젝트** 필드.
+키와 연결된 모든 SaaS 프로젝트는 **프로젝트** 의 필드 **SaaS 식별자** 섹션을 참조하십시오.
 
-1. SaaS 프로젝트가 없는 경우 **프로젝트 만들기**. 그런 다음 **프로젝트 이름** 필드에 SaaS 프로젝트의 이름을 입력합니다.
+1. SaaS 프로젝트가 없는 경우 **프로젝트 만들기**. 그런 다음 **프로젝트** 필드에 SaaS 프로젝트의 이름을 입력합니다.
 
    SaaS 프로젝트를 만들 때, [!DNL Commerce] 는 사용자의 [!DNL Commerce] 라이센스:
    - Adobe Commerce - 하나의 프로덕션 데이터 공간 두 개의 테스트 데이터 공간
    - Magento Open Source - 하나의 프로덕션 데이터 공간 데이터 공간 테스트 안 함
 
-1. 을(를) 선택합니다 **SaaS 데이터 공간** 를 사용하여 [!DNL Commerce] 저장.
+1. 을(를) 선택합니다 **데이터 공간** 를 사용하여 [!DNL Commerce] 저장.
 
 >[!WARNING]
 >
 > 내 계정의 API 포털 섹션에서 새 키를 생성하는 경우 관리 구성에서 API 키를 즉시 업데이트합니다. 새 키를 생성하고 관리자에서 해당 키를 업데이트하지 않으면 SaaS 확장이 더 이상 작동하지 않으며 중요한 데이터를 잃게 됩니다.
 
-SaaS 프로젝트 또는 데이터 공간 이름을 변경하려면 **이 프로젝트 이름 바꾸기** 또는 **데이터 공간 이름 변경** 각각 사용할 수 있습니다.
+SaaS 프로젝트 또는 데이터 공간 이름을 변경하려면 **이름 변경**.
+
+## IMS 조직(선택 사항) {#organizationid}
+
+(이 기능은 Adobe Experience Platform과 향후 통합하기 위한 것입니다.) Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하려면 Adobe ID을 사용하여 Adobe 계정에 로그인하십시오. 로그인하면 이 섹션에 Adobe 계정과 연결된 IMS 조직이 표시됩니다.
 
 ## 카탈로그 동기화
 

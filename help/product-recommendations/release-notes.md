@@ -1,9 +1,10 @@
 ---
 title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
+source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,11 @@ ht-degree: 0%
 개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x 및 2.4.x
+
+## magento/product-recommendations 4.0.0
+
+* ![새로 만들기](../assets/new.svg) - 추가됨 [준비 지표](create.md) 각 권장 사항 유형의 교육 진행 상황을 시각화하는 데 도움이 됩니다.
+* ![새로 만들기](../assets/new.svg) - 주요 버전 릴리스입니다. 다음을 수행해야 합니다. [편집](install-configure.md#update) 루트 `composer.json` 파일을 만들 수 있습니다. 또한 이 릴리스에서는 Product Recommendations을 설치 및 구성할 때 두 개의 API 키를 제공해야 합니다. [프로덕션 키 및 샌드박스 키](../landing/saas.md).
 
 ## magento/product-recommendations 3.3.7
 

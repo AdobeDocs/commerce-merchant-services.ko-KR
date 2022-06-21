@@ -2,9 +2,9 @@
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
+source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -62,17 +62,7 @@ API 키를 통해 Commerce Services에 연결하고 SaaS 데이터 공간을 지
 composer update magento/product-recommendations --with-dependencies
 ```
 
-2.0~3.0과 같은 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집해야 합니다 `composer.json` 파일. (자세한 내용은 [릴리스 노트](release-notes.md) 최신 버전에 대한 정보) 예를 들어, 기본 `composer.json` 파일 및 검색 `magento/product-recommendations` 모듈:
-
-```json
-"require": {
-    ...
-    "magento/product-recommendations": "^2.0",
-    ...
-}
-```
-
-주요 버전을 `2.0` to `3.0`:
+3.0에서 4.0과 같은 주요 버전으로 업데이트하려면 루트를 편집해야 합니다 `composer.json` 파일을 만들 수 있습니다. (자세한 내용은 [릴리스 노트](release-notes.md) 최신 버전에 대한 정보) 예를 들어, 기본 `composer.json` 파일 및 검색 `magento/product-recommendations` 모듈:
 
 ```json
 "require": {
@@ -82,11 +72,25 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
+주요 버전을 `3.0` to `4.0`:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^4.0",
+    ...
+}
+```
+
 를 저장합니다 `composer.json` 파일 및 실행:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
+
+>[!NOTE]
+>
+> 제품 Recommendations 버전 3.x.x에서는 단일 API 키만 필요했습니다. 4.x.x 이상에서는 프로덕션 공용 및 개인 API 키와 Sandbox 공용 및 개인 API 키를 제공해야 합니다. 두 API 키 쌍을 모두 제공하지 않으면 관리자의 제품 Recommendations 기능에 액세스할 수 없습니다. 그러나 데이터 수집은 상점 앞에서 계속 진행될 것이며 기존 권장 사항은 계속해서 고객에게 표시됩니다.
 
 ## 제거 [!DNL Product Recommendations] {#uninstall}
 
