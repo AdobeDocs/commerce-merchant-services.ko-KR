@@ -1,7 +1,7 @@
 ---
 title: 사용자 지정 이벤트 만들기
 description: Adobe Commerce 데이터를 다른 Adobe DX 제품에 연결하는 사용자 지정 이벤트를 만드는 방법을 알아봅니다.
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Experience Platform 모서리에서:
 
 >[!NOTE]
 >
-> 사용자 지정 이벤트를 사용하면 OOTB Adobe Analytics 보고서에 영향을 줄 수 있습니다.
+> 사용자 지정 이벤트를 사용하면 기본 Adobe Analytics 보고서에 영향을 줄 수 있습니다.
 
 ## 이벤트 무시 처리(사용자 지정 속성)
 
@@ -104,4 +104,4 @@ Experience Platform 모서리에서:
 
 >[!NOTE]
 >
-> 사용자 지정 속성으로 이벤트를 재정의하는 것은 OOTB Adobe Analytics 보고서에 영향을 줄 수 있습니다.
+> 사용자 지정 속성으로 이벤트를 재정의하는 것은 기본 Adobe Analytics 보고서에 영향을 줄 수 있습니다.

@@ -1,7 +1,7 @@
 ---
 title: 이벤트
 description: 데이터를 캡처하는 이벤트를 알아보고 전체 스키마 정의를 확인합니다.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 전체 스키마 정의를 보려면 이벤트 이름을 클릭합니다.
 
 | Event | 유형 |
-|---|---|---|
+|---|---|
 | [장바구니에 추가](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts) | 상점 |
 | [장바구니 보기](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts) | 상점 |
 | [페이지 보기](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | 상점 |
