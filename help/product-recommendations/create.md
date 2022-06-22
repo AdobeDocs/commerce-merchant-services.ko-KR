@@ -2,9 +2,9 @@
 title: 새 권장 사항 만들기
 description: 제품 추천 단위를 만드는 방법을 알아봅니다.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ _추천 단위_
 
    각 페이지 유형에 대해 최대 5개의 활성 권장 사항 단위를 만들고 Page Builder에 대해 최대 25개의 활성 권장 사항 단위를 만들 수 있습니다. 페이지 유형이 회색으로 표시됩니다. 제한에 도달하면
 
-   ![권장 사항 이름](assets/create-recommendation.png)
-   _권장 사항 이름 및 배치_
+   ![권장 사항 이름 및 페이지](assets/create-recommendation.png)
+   _권장 사항 이름 및 페이지 배치_
 
 1. 에서 _권장 사항 유형 선택_ 섹션에서 [권장 사항 유형](type.md) 선택한 페이지에 표시하려는 경우 일부 페이지의 경우 [배치](placement.md) 의 권장 사항은 특정 유형으로 제한됩니다.
 
@@ -54,10 +54,10 @@ _추천 단위_
 
    위의 요소를 기반으로 준비 값이 계산되어 표시됩니다. 권장 사항 유형은 준비 값이 75% 이상인 경우 배포할 준비가 된 것으로 간주됩니다. 권장 사항 유형은 준비 상태가 50% 이상인 경우 부분적으로 준비된 것으로 간주됩니다. 마지막으로, 권장 사항 유형은 준비 값이 50% 미만인 경우 배포할 준비가 되지 않은 것으로 간주됩니다.
 
-1. 에서 _Storfront 디스플레이 레이블_ 섹션에서 다음을 입력합니다. [레이블](placement.md#recommendation-labels) &quot;Top sellers&quot;와 같이 구매자에게 표시되는 고객
-
-   ![권장 사항 이름](assets/create-recommendation-select-type.png)
+   ![권장 사항 유형](assets/create-recommendation-select-type.png)
    _권장 사항 유형_
+
+1. 에서 _Storfront 디스플레이 레이블_ 섹션에서 다음을 입력합니다. [레이블](placement.md#recommendation-labels) &quot;Top sellers&quot;와 같이 구매자에게 표시되는 고객
 
 1. 에서 _제품 수 선택_ 섹션에서 슬라이더를 사용하여 권장 사항 단위에 표시할 제품 수를 지정합니다.
 
@@ -72,12 +72,12 @@ _추천 단위_
 
    다음 _위치 선택_ 섹션에는 선택한 페이지 유형에 대해 생성된 모든 권장 사항(있는 경우)이 표시됩니다.
 
-   ![권장 사항 이름](assets/create-recommendation-select-placement.png)
-   _권장 사항 유형_
+   ![권장 사항 순서](assets/create-recommendation-select-placement.png)
+   _페이지의 권장 사항 순서_
 
 1. (선택 사항)에서 _필터_ 섹션, [필터 적용](filters.md) 를 입력하여 추천 단위에 나타나는 제품을 제어합니다.
 
-   ![권장 사항 이름](assets/create-recommendation-select-placement.png)
+   ![권장 사항 필터](assets/create-recommendation-filter-products.png)
    _권장 사항 제품 필터_
 
 1. 완료되면 다음 중 하나를 클릭합니다.
