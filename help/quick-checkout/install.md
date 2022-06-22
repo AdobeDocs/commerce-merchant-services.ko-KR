@@ -2,18 +2,16 @@
 title: '"설치 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"다음 단계에 따라 [!DNL Quick Checkout] Adobe Commerce 프로젝트에서 다음을 수행하십시오."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # 설치 [!DNL Quick Checkout]
 
-다음 [!DNL Quick Checkout] Adobe Commerce의 경우 일회용 게스트 구매자를 단골 고객 보유자로 전환하도록 디자인된 원활한 체크아웃 환경을 제공합니다.
-
-다음 [!DNL Quick Checkout] Adobe Commerce 및 [!DNL Magento Open Source] 을(를) 사용하여 설치할 수 있습니다. [!DNL Composer keys]: [Magento ID(mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)등록 프로세스에 제공된 {target=&quot;_blank&quot;}. 작성기는 Adobe Commerce의 초기 설치 중에 또는 [!DNL Composer keys] 이 이전에 `auth.json` 파일.
+다음 [!DNL Quick Checkout] Adobe Commerce 및 Magento Open Source용 확장은 [!DNL Composer keys]: [Magento ID(mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)등록 프로세스에 제공된 {target=&quot;_blank&quot;}. 작성기는 Adobe Commerce의 초기 설치 중에 또는 [!DNL Composer keys] 이 이전에 `auth.json` 파일.
 
 자세한 내용은 [인증 키 가져오기](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;} 항목을 참조하십시오 [!DNL Composer keys].
 

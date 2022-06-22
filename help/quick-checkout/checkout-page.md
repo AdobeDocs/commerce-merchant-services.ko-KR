@@ -2,7 +2,7 @@
 title: '"체크아웃 페이지"'
 description: '"Adobe Commerce의 체크아웃 페이지 개요."'
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -28,4 +28,4 @@ Adobe Commerce 표준 체크아웃 페이지에 대한 자세한 내용은 [체�
 >
 > 첫 번째 단계를 완료하면 체크아웃에 체크아웃 합계 및 해당 측면 표시줄 정보가 표시됩니다.
 
-자세한 내용은 [체크아웃 흐름](../quick-checkout/onboarding.md) 주제 [!DNL Quick Checkout] 흐름.
+자세한 내용은 [체크아웃 흐름](../quick-checkout/checkout-flow.md) 주제 [!DNL Quick Checkout] 흐름.
