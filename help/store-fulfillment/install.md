@@ -4,9 +4,9 @@ description: '"설치 [!DNL Store Fulfillment solution] PHP용 Composer를 사�
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies 소프트웨어 아카이브(.zip 파일)의 Store Fulfillment 액세스**-온보딩 및 사용 프로세스 중에 계정 관리자와 함께 Store Fulfillment 확장의 설치 파일에 액세스할 수 있습니다.
 
-- **Adobe Commerce 계정 정보**-설치 중 [!DNL Channel Manager] 를 사용하려면 [상거래 계정](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. 에 대한 소유자 또는 관리자 액세스 권한이 있는 계정 ID 및 자격 증명이 필요합니다 [!DNL Adobe Commerce] 프로젝트.
+- **Adobe Commerce 계정 정보**-설치 [!DNL Store Fulfillment] 솔루션을 사용하려면 [상거래 계정](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. 에 대한 소유자 또는 관리자 액세스 권한이 있는 계정 ID 및 자격 증명이 필요합니다 [!DNL Adobe Commerce] 프로젝트.
 
 - 대상 [!DNL Adobe Commerce] 클라우드 인프라 프로젝트에서 소프트웨어 설치 관리자는 클라우드 프로젝트에 대한 관리자 액세스 권한이 있어야 합니다. 자세한 내용은 [사용자 액세스 관리](https://devdocs.magento.com/cloud/project/user-admin.html).
 
