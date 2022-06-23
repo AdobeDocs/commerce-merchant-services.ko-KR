@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ ht-degree: 0%
 1. 체크아웃 중에 표시되는 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout title]** 필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** to `Authorize` 또는 `Authorize and Capture`.
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
+
+   디버그 모드를 활성화하면 신용 카드 결제에 대한 추가 디버깅 정보가 `var/log/payment.log` 파일. 이 정보를 통해 문제를 해결하는 데 도움이 되도록 특정 지급에 대한 자세한 통찰력을 얻을 수 있습니다.
+
 1. 클릭 **[!UICONTROL Save]**.
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
@@ -88,6 +91,9 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
 1. 를 변경하려면 [나중에 메시지 결제](payments-options.md#pay-later-button), 전환 **[!UICONTROL Display Pay Later message]** 선택 사항입니다.
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
+
+   디버그 모드를 활성화하면 PayPal 결제에 대한 추가 디버깅 정보가 `var/log/payment.log` 파일. 이 정보를 통해 문제를 해결하는 데 도움이 되도록 특정 지급에 대한 자세한 통찰력을 얻을 수 있습니다.
+
 1. 클릭 **[!UICONTROL Save]**.
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
