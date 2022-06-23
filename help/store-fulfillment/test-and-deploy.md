@@ -3,13 +3,13 @@ title: 저장소 이행 테스트 및 배포
 description: 저장 이행 기능을 검증하기 위한 테스트 계획. 테스트에서는 Inventory Sync API, 취소된 주문에 대한 종단 간 이행 워크플로우, Store Fulfillment 앱 사용자 관리 및 고객 체크인 경험을 다룹니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce에 대한 스토어 이행 테스트 및 배포
 
@@ -136,7 +136,6 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<td>
 <li>주문 내역이 <code>We refunded $X online. Transaction ID: transactionID</code> 및 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>주문 상태는 <code>Closed</code>. (지금 지급 검토를 설정했습니다.)</li>
 <li>Adobe Commerce에서 만든 대변 메모입니다. (크론이 작동할 때까지 기다립니다.)</li>
@@ -449,7 +448,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 
 - 대체 픽업 연락처 - 추가 작업 과정을 확인합니다. [!UICONTROL Alternate Pickup Contact] 및 선택 [!UICONTROL Preferred Contact] 매장 픽업 주문
 
-- 체크인 양식 - 스토어 픽업 주문에 대한 체크인 요청을 제출하는 워크플로우를 확인합니다.
+- 체크인 양식 - 저장 픽업 주문에 대한 체크인 요청을 제출하는 워크플로우를 확인합니다.
 
 **기능 영역:** 장바구니 체크아웃, 저장소 픽업 주문을 위한 체크인 양식</br>
 **역할:** 관리자, 고객, 저장소 연결</br>
@@ -566,7 +565,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </tr>
 <tr>
 <td>
-<strong>단일 주문 피킹-해피 경로, 커브사이드 픽업</strong></td>
+<strong>단일 주문 피킹—행복한 경로, 커브사이드 픽업</strong></td>
 <td>단일 및 복수 수량 품목을 선택합니다. 밀림 없음 및 커브사이드 픽업(스테이징 포함).
 </td>
 <td>
@@ -645,22 +644,3 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 >[!TIP]
 >
 >클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 배포 지침, 확인 목록 및 우수 사례에 대해서는 다음을 참조하십시오 [스토어 배포](https://devdocs.magento.com/cloud/live/stage-prod-live.html) ( Adobe Commerce 개발자 설명서).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

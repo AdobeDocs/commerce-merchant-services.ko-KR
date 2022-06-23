@@ -4,9 +4,9 @@ description: 저장 픽업 주문에 대한 이행 프로세스 중에 고객과
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 영업 이메일
 
-Store Fulfillment는 주문 및 이행 워크플로우를 지원하기 위해 확장된 트랜잭션 전자 메일 템플릿 세트를 제공합니다. 이러한 DM은 여러 채널에서 일관되고 자동화된 커뮤니케이션 및 메시지를 제공합니다. 즉, 고객 및 스토어 관리자에게 주문 상태 변경, 매장 내 픽업 주문에 대한 지침 등을 알립니다.
+Store Fulfillment는 주문 및 이행 워크플로우를 지원하기 위해 확장된 트랜잭션 전자 메일 템플릿 세트를 제공합니다. 이 솔루션은 채널 간에 일관되고 자동화된 커뮤니케이션 및 메시지를 제공하여 고객 및 저장소 관리자에게 주문 상태 변경, 매장 내 픽업 주문에 대한 지침 등을 알려줍니다.
 
 Store Fulfillment 전자 메일 템플릿은 기본 메시징 및 설정으로 구성됩니다. Adobe Commerce의 머천트 관리자는 구성을 관리 및 수정하고, 다양한 시나리오에서 고객과 통신할 이메일 템플릿을 선택할 수 있습니다. 관리자는 템플릿을 구성하고 사용자 지정할 수도 있습니다.
 

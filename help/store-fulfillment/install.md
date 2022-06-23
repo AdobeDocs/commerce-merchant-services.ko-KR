@@ -4,9 +4,9 @@ description: '"설치 [!DNL Store Fulfillment solution] PHP용 Composer를 사�
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## 설치 요구 사항
 
-- **Walmart Commerce Technologies 소프트웨어 아카이브(.zip 파일)의 Store Fulfillment 액세스**-온보딩 및 사용 프로세스 중에 계정 관리자와 함께 Store Fulfillment 확장의 설치 파일에 액세스할 수 있습니다.
+- **Walmart Commerce Technologies 소프트웨어 아카이브(.zip 파일)의 Store Fulfillment 액세스**- 온보딩 및 지원 프로세스 중에 계정 관리자와 함께 Store Fulfillment 확장의 설치 파일에 액세스할 수 있습니다.
 
-- **Adobe Commerce 계정 정보**-설치 [!DNL Store Fulfillment] 솔루션을 사용하려면 [상거래 계정](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. 에 대한 소유자 또는 관리자 액세스 권한이 있는 계정 ID 및 자격 증명이 필요합니다 [!DNL Adobe Commerce] 프로젝트.
+- **Adobe Commerce 계정 정보**-설치 [!DNL Store Fulfillment] 솔루션을 사용하려면 [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. 에 대한 소유자 또는 관리자 액세스 권한이 있는 계정 ID 및 자격 증명이 필요합니다 [!DNL Adobe Commerce] 프로젝트.
 
 - 대상 [!DNL Adobe Commerce] 클라우드 인프라 프로젝트에서 소프트웨어 설치 관리자는 클라우드 프로젝트에 대한 관리자 액세스 권한이 있어야 합니다. 자세한 내용은 [사용자 액세스 관리](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **작성기 및 를 사용한 경험[!DNL Commerce CLI]**- 자세한 내용은 [일반 CLI 설치](https://devdocs.magento.com/extensions/install/)이 도구를 사용하여 확장을 설치하고 관리하는 방법에 대한 자세한 내용은 {target=&quot;_blank&quot;} 를 참조하십시오 [!DNL Adobe Commerce] 플랫폼.
 
-- **Adobe Commerce에 타사 확장 설치 경험**-자세한 내용은 Adobe Commerce 설명서를 참조하십시오.
+- **Adobe Commerce에 타사 확장 설치 경험**- 참조용으로 Adobe Commerce 설명서를 참조하십시오.
 
    - [클라우드 인프라 인스턴스에 Adobe Commerce용 확장 설치](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -94,7 +94,8 @@ Composer를 사용하여 설치에 대한 소스 디렉토리를 구성하고 St
 
 를 사용하여 설치를 완료합니다 `bin/magento setup:upgrade` 저장 이행 솔루션을 지원하는 변경 사항으로 데이터베이스 스키마와 데이터를 업데이트하려면
 
->참고:
+>[!NOTE]
+>
 >클라우드 인프라 프로젝트에서 Adobe Commerce을 사용하려면 확장을 등록할 필요가 없습니다. 대신 이전 단계의 코드 변경 사항을 커밋하고 환경 분기에 푸시합니다. 데이터베이스 스키마와 데이터를 업데이트하는 명령은 클라우드 빌드 및 배포 프로세스 중에 자동으로 실행됩니다.
 
 ### 5단계: 설치 완료
@@ -183,7 +184,7 @@ Adobe Commerce 서버에서 Store Fulfillment Services 확장 모듈에 설치 �
 
 ### 추가 단계
 
-필요한 경우 `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` 운영 환경에 정적 뷰 파일을 배포하는 CLI 명령
+필요한 경우 [설정:static-content:배포](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} CLI 명령을 사용하여 운영 환경에 정적 보기 파일을 배포합니다.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f

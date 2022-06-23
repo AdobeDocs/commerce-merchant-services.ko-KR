@@ -4,9 +4,9 @@ description: 설정 [!DNL Store Assist] 온라인 구매를 위한 종단 간 �
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ Store Assist 는 Walmart Commerce Technologies에서 제공하는 Faa(Fulfillmen
 
    - 앱 지침(선택, 스테이징, 핸드오프)에서 모든 것을 사용자 지정합니다.
 
-   - **알림 선택**-고객이 주문을 한 후 피킹 프로세스를 시작하기 위해 푸시 알림을 전송할지 여부를 지정합니다.
+   - **알림 선택**- 고객이 주문을 지정한 후 피킹 프로세스를 시작하기 위해 푸시 알림을 전송할지 여부를 지정합니다.
 
-   - **알림 확인**-고객 대기 시간이 지정된 기간을 초과한 후, 체크인 후 주문 픽업을 위한 체크인 프로세스 동안 푸시 알림을 전송할지 여부를 지정합니다. 또는 알림을 비활성화합니다.
+   - **알림 확인**—고객 대기 시간이 지정된 기간을 초과한 후, 체크인 후 주문 픽업을 위한 체크인 프로세스 동안 푸시 알림을 전송할지 여부를 지정합니다. 또는 알림을 비활성화합니다.
 
    - **핸드오프 프로세스**- Store Associate에서 고객에게 주문을 전달할 때 선택적 프로세스를 활성화합니다. 예를 들어 고객 서명이 필요하거나, Associate에서 고객 ID를 확인하라는 메시지가 표시됩니다.
 
-   - **핸드오프 시 항목 거부 활성화**-주문 핸드오프 중에 고객이 주문 품목을 반품하거나 취소할 수 있도록 허용합니다.
+   - **핸드오프 시 항목 거부 활성화**- 주문 핸드오프 중에 고객이 주문 품목을 반품하거나 취소할 수 있습니다.
    Walmart Commerce Technologies 클라이언트 서비스 팀과 협력하여 스토어 지원 앱에 대한 프런트 엔드 구성을 완료합니다.
 
 ## 앱 다운로드 및 설치
@@ -67,7 +67,7 @@ Store Assist 는 Walmart Commerce Technologies에서 제공하는 Faa(Fulfillmen
 
 - Store Associates에서 로그인하려면 다음 정보가 필요합니다.
 
-   - 스토어 지원 계정과 연결된 회사 이름
+   - **[!UICONTROL Company name]** 스토어 지원 계정에 연결됨
 
-   - 계정 지원 계정 자격 증명(사용자 이름 및 해당 계정의 암호 자격 증명)을 저장합니다.
+   - **저장소 지원 계정 자격 증명**—사용자 이름 및 해당 계정의 암호 자격 증명입니다.
    Adobe Commerce 관리자는 사용자 계정을 만들고 저장소 지원 앱 사용자 계정에 대해 다음 권한을 가진 저장소 위치에 대한 권한을 설정할 수 있습니다 [매장 내 픽업](merchant-store-configuration.md#pickup-location-configuration) 관리자 저장소 설정에서 활성화했습니다.
