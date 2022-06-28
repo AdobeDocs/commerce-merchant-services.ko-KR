@@ -2,7 +2,7 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
+source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ## 결제 공급자 구성
 
-결제 서비스 공급자를 연결하려면 [프로세서 설정](https://help.bolt.com/integrations/adobe-express-checkout/set-up/){target=&quot;_blank&quot;} 개발자 [!DNL Bolt] 페이지.
+결제 서비스 공급자를 연결하려면 [프로세서 설정](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} 개발자 [!DNL Bolt] 페이지.
 
 ## 확장 활성화
 
