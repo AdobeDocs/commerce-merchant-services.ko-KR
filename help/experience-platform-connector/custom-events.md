@@ -1,7 +1,8 @@
 ---
 title: 사용자 지정 이벤트 만들기
 description: Adobe Commerce 데이터를 다른 Adobe DX 제품에 연결하는 사용자 지정 이벤트를 만드는 방법을 알아봅니다.
-source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
+exl-id: 5a754106-c66a-4280-9896-6d065df8a841
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # 사용자 지정 이벤트 만들기
 
-을(를) 확장할 수 있습니다 [이벤트 플랫폼](events.md) 고유한 데이터를 수집하기 위해 고유한 storefront 이벤트를 만듭니다. 사용자 지정 이벤트를 만들고 구성하면 [Magento 저장소 이벤트 수집기](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+을(를) 확장할 수 있습니다 [이벤트 플랫폼](events.md) 고유한 데이터를 수집하기 위해 고유한 storefront 이벤트를 만듭니다. 사용자 지정 이벤트를 만들고 구성하면 [Adobe Commerce 이벤트 수집기](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## 사용자 지정 이벤트 처리
 

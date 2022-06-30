@@ -1,9 +1,10 @@
 ---
 title: 헤드리스
 description: 통합 방법 알아보기 [!DNL Product Recommendations] 헤드리스 상점.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 1. [설치](install-configure.md) a [!DNL Product Recommendations] 모듈.
 
-1. 설치 및 사용 [Storefront 이벤트 SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 발사하다 [행동 이벤트](https://devdocs.magento.com/recommendations/events.html).
+1. 설치 및 사용 [Adobe Commerce Storefront 이벤트 SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 발사하다 [행동 이벤트](https://devdocs.magento.com/recommendations/events.html).
 
    반환할 최소 필수 이벤트 [!DNL Product Recommendations] 결과:
 
@@ -43,7 +44,7 @@ ht-degree: 0%
    | `rec-click` | 추천 단위 |
    | `rec-add-to-cart-click` | 권장 사항 단위(장바구니에 추가 단추가 권장 사항 템플릿에 있는 경우) |
 
-1. 이벤트가 실행되면 [Storefront 이벤트 수집기](https://devdocs.magento.com/shared-services/storefront-event-collector.html) 를 사용하여 이벤트를 처리하고 Adobe Sensei으로 보냅니다.
+1. 이벤트가 실행되면 [Adobe Commerce Storefront 이벤트 수집기](https://devdocs.magento.com/shared-services/storefront-event-collector.html) 를 사용하여 이벤트를 처리하고 Adobe Sensei으로 보냅니다.
 
 1. 동작 데이터가 수집되면 [만들기](create.md) [!DNL Product Recommendations] 관리자.
 

@@ -1,14 +1,15 @@
 ---
 title: 이벤트
 description: 데이터를 캡처하는 이벤트를 알아보고 전체 스키마 정의를 확인합니다.
-source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 프로젝트 비콘 이벤트
+# Experience Platform 커넥터 이벤트
 
 다음은 [!DNL Commerce] Experience Platform 커넥터 확장을 설치할 때 사용할 수 있는 이벤트입니다. 이러한 이벤트가 수집하는 데이터는 Adobe Experience Platform Edge로 전송됩니다. 만들 수도 있습니다 [사용자 지정 이벤트](custom-events.md) 기본적으로 제공되지 않은 추가 데이터를 수집하기 위해
 
