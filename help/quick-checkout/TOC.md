@@ -3,9 +3,9 @@ user-guide-title: '"[!DNL Quick Checkout] for Adobe Commerce"'
 user-guide-description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
 breadcrumb-title: Merchant Services 안내서
 hide: true
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '63'
 ht-degree: 3%
 
 ---
@@ -24,6 +24,9 @@ ht-degree: 3%
    - [개발자 정보](developer.md)
 - 체크아웃 {#manage-checkout}
    - [체크아웃 페이지](checkout-page.md)
-   - [체크아웃 흐름](checkout-flow.md)
+   - 체크아웃 옵션 {#checkout-options}
+      - [체크아웃 흐름](checkout-flow.md)
+      - [볼트 사용자 체크아웃](checkout-bolt.md)
+      - [Adobe Commerce 사용자 체크아웃](checkout-adobe-commerce.md)
    - [결제 방법](payment-methods.md)
-   - [관리자에서 주문 만들기](create-order-admin.md)
+- [관리자에서 주문 만들기](create-order-admin.md)

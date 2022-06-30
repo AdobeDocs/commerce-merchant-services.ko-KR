@@ -1,9 +1,10 @@
 ---
-title: '"주문 만들기 [!DNL Quick Checkout] 관리자'
-description: '"관리자는 [!DNL Quick Checkout] 지원이 필요한 고객을 위해 상인이 직접 관리자에게 문의합니다."'
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: 주문 만들기 [!DNL Quick Checkout] 관리자
+description: 관리자는 를 사용하여 주문을 할 수 있습니다 [!DNL Quick Checkout] 지원이 필요한 고객을 위해 매상에서 관리자에게 직접 요청합니다.
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -26,4 +27,4 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
-> EAP(Early Adopter Program) 동안 사용자는 OTP 로그인을 사용하여 배송 및 결제 세부 정보를 자동으로 입력할 수 없습니다.
+> 사용자는 OTP 로그인을 사용하여 모든 배송 및 결제 세부 사항을 자동으로 입력할 수 없습니다.

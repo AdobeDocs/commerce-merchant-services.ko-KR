@@ -2,9 +2,9 @@
 title: '"체크아웃 흐름"'
 description: '"개요 [!DNL Quick Checkout] Adobe Commerce의 흐름"'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -39,73 +39,8 @@ ht-degree: 0%
 
 다음 [!DNL Quick Checkout] 에서는 체크아웃 흐름 중에 여러 사용 사례를 사용할 수 있습니다.
 
-- 등록된 게스트 사용자 [!DNL Bolt] 계정이 필요합니다.
-- 새 기능이 있는 게스트 사용자 [!DNL Bolt] 계정이 필요합니다.
-- 등록된 사용자/없는 기존 Adobe Commerce 사용자 [!DNL Bolt] 계정이 필요합니다.
-
-## 게스트 사용자 체크아웃: 작동 방법
-
-게스트 체크아웃 경험은 로그인한 경험과 다릅니다. 쇼핑객이 체크아웃에 이메일 주소를 입력하면 [!DNL Quick Checkout] 유효성을 검사하여 기존 [!DNL Bolt] 계정이 필요합니다.
-
-### 등록 [!DNL Bolt] account
-
-다음과 같은 경우 [!DNL Bolt] 계정이 발견되면 구매자는 계속해서 [!DNL Quick Checkout] 원활한 체크아웃 경험:
-
-1. 보낸 OTP(일회용 암호)를 입력합니다 [!DNL Bolt] 계정의 이메일 주소 또는 모바일 [!DNL Bolt] 계정이 필요합니다.
-1. 을 사용하여 로그인하면 [!DNL Bolt] 계정을 사용하면 자동으로 체크아웃 세부 사항을 채웁니다.
-
-   - 배송 정보
-   - 결제 방법
-
-1. 주문.
-
->[!TIP]
->
-> 게스트 사용자는 순서를 지정하며 Adobe Commerce에 등록할 수 있습니다.
-
-### 새로 만들기 [!DNL Bolt] account
-
-없는 경우 [!DNL Bolt] 계정이 발견되면 구매자는 기본 기본 Adobe Commerce 체크아웃을 계속 수행하고 구매자는 주문 처리에 필요한 모든 세부 정보를 제공합니다.
-
-- 배송 및 청구 정보
-- 배송 방법
-- 결제 방법 검토
-- 로그인하는 확인란이 표시됩니다 [!DNL Bolt] 주문하기 전에 더 빠른 체크아웃 이러한 사용자는 이용 약관에 동의하여 사용 약관을 만들 수 있습니다 [!DNL Bolt] 계정이 필요합니다.
-
-   ![기억 [!DNL Bolt]](assets/checked-bolt.png)
-
-- 게스트 사용자는 순서를 지정하며 Adobe Commerce에 등록할 수 있습니다.
-
-## 기존 Adobe Commerce 사용자: 작동 방법
-
-기존 사용자는 사용자가 [!DNL Quick Checkout] 를 참조하십시오.
-
-쇼핑객이 체크아웃에 이메일 주소를 입력하면 [!DNL Quick Checkout] 유효성을 검사하여 기존 [!DNL Bolt] 계정이 필요합니다.
-
-### 등록 [!DNL Bolt] Adobe Commerce 사용자가 있는 계정
-
-다음과 같은 경우 [!DNL Bolt] 계정이 발견되면 구매자는 기본 기본 제공 Adobe Commerce 체크아웃을 계속 수행하고 구매자는 필요한 모든 세부 사항을 제공하고 다음 주문을 배치합니다.
-
-- 배송 및 청구 정보
-- 배송 방법
-- 결제 방법 검토
-
-기존 Adobe Commerce 사용자로 주문할 때 문제가 발생하는 경우 [빠른 체크아웃 문제 해결](https://support.magento.com/hc/en-us/articles/6909450342541) Adobe Commerce 도움말 센터의 문서.
-
->[!NOTE]
->
-> 사용자에게 [!DNL Bolt] 계정 및 이메일이 Adobe Commerce에 등록된 것으로 표시되지 않으므로 OTP(일회성 암호) 로그인을 트리거합니다. 자세한 내용은 [등록 [!DNL Bolt] account](#registered-bolt-account) 흐름.
-
-### 새로 만들기 [!DNL Bolt] account
-
-없는 경우 [!DNL Bolt] 계정이 발견되면 구매자는 기본 Adobe Commerce 체크아웃을 계속 수행하고 구매자는 저장된 정보에서 필요한 모든 세부 정보를 선택하여 주문을 수행합니다.
-
-- 배송 및 청구 정보
-- 배송 방법
-- 결제 방법 검토
-- 로그인하는 확인란이 표시됩니다 [!DNL Bolt] 주문하기 전에 더 빠른 체크아웃 이러한 사용자는 이용 약관에 동의하여 사용 약관을 만들 수 있습니다 [!DNL Bolt] 계정이 필요합니다.
-
-   ![기억 [!DNL Bolt]](assets/checked-bolt.png)
+- [게스트 사용자](../quick-checkout/checkout-adobe-commerce.md) 등록 또는 신규 [!DNL Bolt] 계정이 필요합니다.
+- 기존 [Adobe Commerce 사용자](../quick-checkout/checkout-adobe-commerce.md) 등록 시/등록 안 함 [!DNL Bolt] 계정이 필요합니다.
 
 ## 지원 요청
 
