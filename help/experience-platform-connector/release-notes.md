@@ -1,10 +1,11 @@
 ---
-title: 프로젝트 비콘 릴리스 노트
-description: Adobe Commerce의 Project Beacon에 대한 최신 릴리스 정보입니다.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+title: 릴리스 정보
+description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 0%
+source-wordcount: '76'
+ht-degree: 2%
 
 ---
 
@@ -18,8 +19,8 @@ ht-degree: 0%
 
 ## Experience Platform 커넥터 1.1.0
 
-* Adobe Commerce(EE)와 호환됩니다. 2.4.x
-* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* Adobe Commerce(EE)와 호환됩니다. 2.4.4
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.4
 * 안정성: 안정적인
 
 ## 설명서

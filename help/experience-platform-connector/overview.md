@@ -1,9 +1,10 @@
 ---
 title: 안내서 개요
 description: Adobe Commerce용 Adobe Experience Platform 커넥터 이 연결됩니다 [!DNL Commerce] 다른 Adobe Experience Cloud 제품에 대한 인스턴스입니다.
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Experience Platform 커넥터를 사용하려면 먼저 다음을 수행해야 �
 액세스 권한이 부여되면:
 
 1. [로그인](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe 계정에 연결할 수도 있습니다.
-1. 네 [조직](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 @AdobeOrg(포함 필수)로 구성됩니다.
-1. 데이터 스트림 작업 공간에 액세스하고 [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. 네 [조직](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 그 뒤에 오는 (및 는 포함해야 함)입니다 `@AdobeOrg`.
+1. 만들기 또는 업데이트 [XDM 스키마](update-xdm.md) 를 사용합니다.
+1. [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) 상거래 특정 스키마를 포함하는 XDM 스키마를 선택하고 선택합니다 **필드 그룹**.
 
-조직 ID 및 데이터 스트림은 Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결할 때 사용됩니다.
+>[!NOTE]
+>
+> 조직 ID 및 데이터 스트림은 Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하는 데 사용됩니다.
 
 ## 다음 단계
 

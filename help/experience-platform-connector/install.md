@@ -2,9 +2,9 @@
 title: Adobe Commerce에서 Adobe Experience Platform 커넥터 설치 및 구성
 description: Adobe Commerce에서 Adobe Experience Platform 커넥터를 설치, 구성, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ ht-degree: 0%
 
    이 메타 태그는 다음 모듈과 확장을 포함합니다.
 
-   * `module-platform-connector-admin` - 데이터 스트림 ID를 구성할 수 있도록 관리 UI를 업데이트합니다
+   * `module-platform-connector-admin` - 특정 Adobe Commerce 인스턴스에 대한 데이터 스트림 ID를 선택할 수 있도록 관리 UI를 업데이트합니다
    * `module-platform-connector` - 을 설정합니다. `ImsOrgId` 및 `datastreamId` Adobe Commerce Storefront 이벤트 SDK에서
    * `data-services` - storfront 이벤트에 대한 속성 컨텍스트를 제공합니다. 예를 들어 체크아웃 이벤트가 발생하면 장바구니에 있었던 항목 수와 해당 항목에 대한 제품 속성 데이터가 포함된 정보입니다.
-   * `commerce-services` - Adobe Commerce 인스턴스를 [Adobe Commerce SaaS](../landing/saas.md) 샌드박스 및 프로덕션 API 키 사용 및 IMS 조직 ID를 사용하여 Adobe Experience Platform
+   * `services-id` - Adobe Commerce 인스턴스를 [Adobe Commerce SaaS](../landing/saas.md) sandbox 및 프로덕션 API 키 및 Adobe Experience Platform을 사용하여 IMS 조직 ID 검색
 
 1. (선택 사항) 다음을 포함합니다 [!DNL Live Search] 검색 이벤트를 포함하는 데이터를 설치합니다 [[!DNL Live Search]](../live-search/install.md) 확장.
 
