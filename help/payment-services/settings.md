@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 1. 결제 기능 및 상점 표시에 대한 기본 설정을 변경하려면 필요에 따라 추가 옵션을 설정합니다.
 
    - [신용 카드 필드](#credit-card-fields)
-   - [PayPal 스마트 단추](#paypal-smart-buttons)
+   - [결제 단추](#payment-buttons)
    - [단추 스타일](#button-style)
 
 1. 클릭 **[!UICONTROL Save]**.
@@ -74,22 +74,22 @@ ht-degree: 0%
 
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
-### PayPal 스마트 단추
+### 결제 단추
 
 다음 [!DNL PayPal Smart Buttons] 결제 옵션은 고객을 위한 간단하고 빠르고 안전한 체크아웃 프로세스를 제공합니다. 자세한 내용은 [결제 옵션](payments-options.md#paypal-smart-buttons) 추가 정보.
 
-PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니다.
+지급 버튼을 활성화하고 구성할 수 있습니다.
 
 1. 체크아웃 중에 표시된 대로 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout Title]** 필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** to `Authorize` 또는 `Authorize and Capture`.
 1. 토글 선택기를 사용하여 활성화하거나 비활성화합니다 [!DNL PayPal smart button] 디스플레이 기능:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
 
-1. 를 변경하려면 [나중에 메시지 결제](payments-options.md#pay-later-button), 전환 **[!UICONTROL Display Pay Later message]** 선택 사항입니다.
+1. 를 변경하려면 [나중에 메시지 결제](payments-options.md#pay-later-button), 전환 **[!UICONTROL Show PayPal Pay Later message]** 선택 사항입니다.
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 
    디버그 모드를 활성화하면 PayPal 결제에 대한 추가 디버깅 정보가 `var/log/payment.log` 파일. 이 정보를 통해 문제를 해결하는 데 도움이 되도록 특정 지급에 대한 자세한 통찰력을 얻을 수 있습니다.
@@ -102,13 +102,13 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
 #### 단추 스타일
 
-를 구성할 수도 있습니다 _[!UICONTROL Button style]_PayPal 스마트 단추의 옵션:
+를 구성할 수도 있습니다 _[!UICONTROL Button style]_결제 버튼의 옵션:
 
 1. 를 변경하려면 **[!UICONTROL Layout]**, 선택 `Vertical` 또는 `Horizontal`.
 
    >[!NOTE]
    >
-   > 단추 스타일이 `Horizontal` 그리고 스토어는 여러 PayPal 스마트 단추를 표시하도록 구성되며, 제품 페이지, 체크아웃 페이지, 미니 장바구니에 표시되는 버튼은 두 개뿐입니다. 장바구니에 표시되는 버튼은 한 개뿐입니다.
+   > 단추 스타일이 `Horizontal` 그리고 스토어에 여러 개의 결제 버튼이 표시되도록 구성되었으며, 제품 페이지, 체크아웃 페이지, 미니 장바구니에 표시되는 버튼이 두 개, 장바구니에 표시되는 버튼이 한 개만 표시될 수 있습니다.
 
 1. 가로 레이아웃에서 태그라인을 활성화하려면 **[!UICONTROL Show tagline]** 선택기.
 1. 를 수정하려면 **[!UICONTROL Color]**&#x200B;원하는 색상 옵션을 선택합니다.

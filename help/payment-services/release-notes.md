@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 44e1f7dce951f9244498565eccaebd70328d91e4
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 0%
@@ -69,7 +69,7 @@ _2022년 3월 31일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2742 --> 이제 저장소 보기 수준에서 벤 등의 사용 가능한 결제 방법을 활성화하고 비활성화할 수 있습니다. 이전에는 웹 사이트당 결제 방법을 구성할 수만 있었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2277 --> 이제 선택적으로 사용할 수 있습니다 [개별 PayPal 스마트 단추 활성화 또는 비활성화](settings.md#paypal-smart-buttons).
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2277 --> 이제 선택적으로 사용할 수 있습니다 [개별 PayPal 스마트 단추 활성화 또는 비활성화](settings.md#payment-buttons).
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2561 --> 이전에 제거한 제품이 _검토 순서_ 페이지.
 
