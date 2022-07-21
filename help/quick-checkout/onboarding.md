@@ -2,9 +2,9 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
+source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ ht-degree: 0%
 
 1. [확장 가져오기](#get-extension).
 1. [을 사용하여 프로덕션 또는 샌드박스 머천트 계정 만들기 [!DNL Bolt]](#create-account-with-bolt). ID를 확인하는 데 필요한 모든 정보를 제공합니다.
-1. [고유 값을 제공합니다 [!DNL API Key] 및 [!DNL Publishable Key] 생성된 [!DNL Bolt]](#obtain-api-credentials).
+1. [고유 값을 제공합니다 [!DNL API Key] 및 [!DNL Publishable Key]](#obtain-api-credentials) 생성된 [!DNL Bolt].
 1. [에서 결제 공급자를 설정합니다. [!DNL Bolt] account](#configure-payment-providers).
 1. [활성화 드롭다운을 예로 설정](#enable-extension) 확장을 활성화하려면
 1. [서비스 설정 정의](#complete-admin-configuration) 를 [!DNL Quick Checkout] 확장.
-1. [Save Config 단추를 클릭합니다.](#enable-live-quick-checkout) 확장을 활성화하려면
+1. [Save Config 를 클릭합니다.](#enable-live-quick-checkout) 확장을 활성화하는 단추.
+1. 범위를 다음으로 전환 **기본 웹 사이트** 및 [콜백 URL 구성 을 클릭합니다.](#check-shopper-valid-account) 버튼을 클릭합니다.
 
 >[!NOTE]
 >
@@ -49,12 +50,15 @@ ht-degree: 0%
 
 ## API 자격 증명 가져오기
 
-를 사용하려면 [!DNL Quick Checkout] 필요한 경우 [!DNL Bolt] 고유 키. 다음을 얻습니다 [!DNL API keys] 으로 이동 **개발자** > **API** > **키** 에서 **볼트 머천트 대시보드**.
+를 사용하려면 [!DNL Quick Checkout] 필요한 경우 [!DNL Bolt] 고유 키 및 [!DNL signing secret]. 다음을 얻습니다 [!DNL API keys] 으로 이동 **개발자** > **API** > **키** 에서 **볼트 머천트 대시보드**.
 
 - [!DNL API key]: 백 엔드가 상호 작용하는 데 사용하는 개인 키 [!DNL Bolt] API.
 - [!DNL Publishable key]: 선단이 상호 작용하는 데 사용하는 키 [!DNL Bolt] API.
+- [!DNL Signing secret]: 에서 받은 요청에 대한 서명 확인에 사용됩니다. [!DNL Bolt].
 
-자세한 내용은 [[!DNL Bolt] 환경 세부 사항](https://help.bolt.com/developers/references/environment-details/#about-keys)API에 대해 알아보려면 {target=&quot;_blank&quot;} 페이지 [!DNL Publishable keys] 대상 [!DNL Quick Checkout] 확장.
+![빠른 체크아웃](assets/account-credentials.png)
+
+자세한 내용은 [[!DNL Bolt] 환경 세부 사항](https://help.bolt.com/developers/references/environment-details/#about-keys)다음 페이지에서 키 및 서명 비밀에 대해 알아보려면 {target=&quot;_blank&quot;} 페이지를 참조하십시오. [!DNL Bolt] 대상 [!DNL Quick Checkout] 확장.
 
 >[!CAUTION]
 >
@@ -68,9 +72,6 @@ ht-degree: 0%
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **스토어** > _설정_ > **구성**.
 1. 왼쪽 패널에서 를 확장합니다. **영업** 을(를) 선택합니다. **체크아웃**.
-
-   ![빠른 체크아웃](assets/admin-view.png)
-
 1. 에서 [!DNL Quick Checkout] 보기, 설정 **활성화** to `Yes`.
 1. 사용할 방법(샌드박스 또는 프로덕션)을 선택하십시오.
 
@@ -79,9 +80,11 @@ ht-degree: 0%
 
 1. 고유 API를 제공한 후 자격 증명을 확인하고 [!DNL Publishable keys].
 
+![빠른 체크아웃](assets/extension-view.png)
+
 >[!CAUTION]
 >
-> 고유한 API를 제공하고 [!DNL Publishable keys] 확장을 활성화하기 전에는 고객이 결제 양식을 볼 수 있으며 주문을 할 수 없습니다.
+> 고유한 API를 제공하고 [!DNL Publishable] 확장을 활성화하기 전에 키가 있으면 고객이 결제 양식을 볼 수 있고 주문을 할 수 없습니다.
 
 ## 관리 구성 완료
 
@@ -100,6 +103,19 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
 
 1. 다음을 확인하십시오. [!UICONTROL Enable] 드롭다운이 **예** 확장을 활성화하려면
 1. 클릭 **구성 저장**.
+
+## 구매자의 유효한 계정 확인
+
+쇼핑객에게 [!DNL Bolt] 계정:
+
+1. 범위를 다음으로 전환 **기본 웹 사이트**.
+1. 을(를) 클릭합니다. **콜백 URL 구성** 버튼을 클릭합니다. 이렇게 하면 [!DNL Bolt] 에 계정이 있는지 확인합니다. 그러면 OTP 팝업이 나타납니다.
+
+>[!CAUTION]
+>
+> 범위를 로 전환 **기본 웹 사이트** 는 적절한 URL이 설정되었는지 확인합니다. 각 웹 사이트에는 여러 도메인이 있을 수 있습니다.
+
+자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Adobe Commerce의 범위에 대한 자세한 내용은 {target=&quot;_blank&quot;} 항목을 참조하십시오.
 
 ## 지원 요청
 
