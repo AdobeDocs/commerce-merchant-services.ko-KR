@@ -2,9 +2,9 @@
 title: 설치 [!DNL Payment Services]
 description: Payments Services 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,6 @@ ht-degree: 0%
 자세한 내용은 [인증 키 가져오기](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 작성기 키 가져오기에 대한 자세한 정보.
 
 이 확장을 설치하는 두 가지 방법이 있습니다. [[!DNL Adobe Commerce] 클라우드 인프라](install.md#adobe-commerce-on-cloud-infrastructure) 또는 [온-프레미스](install.md#on-premises) 설치. 이러한 방법에서는 CLI(명령줄 인터페이스)를 사용해야 합니다.
-
-## 최소 안정성 설정 업데이트
-
-확장을 설치하기 전에 `minimum-stability` 요구 사항 `RC` (릴리스 후보)를 사용 중인 `composer.json` 파일. IDE나 즐겨찾는 텍스트 편집기(예: Visual Studio 코드 또는 Giabliant 텍스트)를 사용할 수 있습니다.
-
-사용자 `composer.json` 파일, 변경 `"minimum-stability": "stable"` to `"minimum-stability": "RC"`.
 
 ## 확장 설치
 
