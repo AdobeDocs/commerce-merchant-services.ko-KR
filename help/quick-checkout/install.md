@@ -2,9 +2,9 @@
 title: '"설치 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"다음 단계에 따라 [!DNL Quick Checkout] Adobe Commerce 프로젝트에서 다음을 수행하십시오."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 ## 최소 안정성 설정 업데이트
 
-확장을 설치하기 전에 `minimum-stability` 요구 사항 `RC` (릴리스 후보)를 사용 중인 `composer.json` 파일 을 사용하십시오. IDE나 즐겨찾는 텍스트 편집기(예: Visual Studio 코드 또는 Giabliant 텍스트)를 사용할 수 있습니다.
+확장을 설치하기 전에 `minimum-stability` 필드 `composer.json` 파일이 `"stable"`:
 
-사용자 `composer.json` 파일, 변경 `"minimum-stability": "stable"` to `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## 확장 설치
 
