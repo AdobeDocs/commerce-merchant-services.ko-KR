@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
+source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -64,13 +64,13 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하도록 호�
     <em>Adobe Commerce 또는 Magento Open Source 제품 카탈로그를 Walmart Marketplace와 통합하여 매출을 늘리고, 신규 고객에게 도달하고, 영업 운영을 간소화하고, 시간을 절약할 수 있습니다. 스토어 관리자 및 운영 직원이 상거래 환경에서 Walmart Marketplace 판매, 인벤토리 및 제품 가격을 원활하게 관리할 수 있도록 지원합니다.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="저장 이행" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="저장 이행" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(Adobe Commerce만 해당)<br><em>모바일 장치를 통해 제공되는 완벽한 옴니채널 이행 워크플로우를 제공하여 온라인 구매가 우수하고 BOPIS(Store in Customer Experience)를 통해 고객 경험을 확보하며 매장 직원의 생산성을 극대화합니다.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -94,4 +94,3 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하도록 호�
 * 에 B2B 지원이 추가되었습니다. [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * 가 추가되었습니다. [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) Walmart Marketplace 판매를 관리하려는 고객을 위한 [!DNL Commerce] 인스턴스.
 * 가 추가되었습니다. [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) 온라인 구매를 개선하려는 고객의 경우 BOPIS(Store in) 고객 경험을 선택하고 매장 내 및 경품 구매를 위한 모바일 사용이 가능한 원활한 옴니채널 이행 워크플로우를 제공합니다.
-
