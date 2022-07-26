@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
+source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ ht-degree: 0%
 ## v1.2.0
 
 _2022년 6월 29일_
+
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay는 모바일 및 데스크탑의 Safari 브라우저 v15.5와 호환되지 않습니다. Safari 버전 15.5를 사용하는 경우 Apple Pay를 사용하여 체크아웃을 완료할 수 없습니다.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3264 --> 이전에는 로그인한 사용자가 계정의 기본 주소 이외의 다른 청구/배송 주소를 선택한 경우 체크아웃에 실패했습니다. 이 문제를 해결했으며, 이제 선택한 청구/배송 주소가 기본 저장된 주소 대신 전송되고 체크아웃이 성공적으로 완료되었습니다.
 

@@ -4,9 +4,9 @@ description: 주문 지급 상태 보고서를 사용하여 주문의 지급 상
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. [!DNL Payment Ser
 
 데이터 소스 선택 기능은 다음과 같이 작동합니다.
 
-* 사용하는 매장이 없으면 [!DNL Payment Services] 라이브 모드에서 데이터 소스 선택 기본값은 입니다. [!UICONTROL Sandbox]_
+* 사용하는 매장이 없으면 [!DNL Payment Services] 라이브 모드에서 데이터 소스 선택 기본값은 입니다. _[!UICONTROL Sandbox]_.
 * 사용하는 저장소(하나 또는 여러 개)가 있는 경우 [!DNL Payment Services] 라이브 모드에서 데이터 소스 선택 기본값은 입니다. _[!UICONTROL Live]_.
 * 보고서 내보내기는 항상 데이터 소스를 선택합니다.
 
 의 데이터 소스를 선택하려면 다음을 수행하십시오 [!UICONTROL Order Payment Status] 보고서:
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 클릭 **[!UICONTROL Data source]** 을(를) 선택합니다. _[!UICONTROL Live]_또는 [!UICONTROL Sandbox]_
+1. 클릭 **[!UICONTROL Data source]** 을(를) 선택합니다. _[!UICONTROL Live]_또는_[!UICONTROL Sandbox]_.
 
    보고서 결과는 선택한 데이터 소스에 따라 다시 생성됩니다.
 
@@ -105,11 +105,23 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. [!DNL Payment Ser
 
 ## 상태 보기
 
+주문 지급 상태 보고서 뷰에는 각 지급 서비스 주문에 대한 종합 거래 상태 및 지급 상태 정보가 표시됩니다.
+
+### 거래 상태
+
 기본적으로 30일 동안의 주문 결제 상태가 그리드에 표시됩니다.
 
 보려면 왼쪽 및 오른쪽으로 스크롤합니다. [결제 상태 정보](#column-descriptions)주문 일자, 승인 일자, 송장 발행, 출하, 지급 상태 등을 포함합니다.
 
 검색에서 반환되거나 기본 30일 동안의 주문 결제 상태에 표시되는 행 수는 주문 날짜 달력 선택기 필터와 함께 주문 지급 상태 보기 그리드 위에 표시됩니다.
+
+### 지급 상태
+
+지급 상태 열에는 지급에 대한 현재 상태가 표시됩니다. A `Capture failed` 지불은 빨간색 경고 상태와 `Voided` 지불은 회색 경보 상태를 표시합니다.
+
+### 환불 상태
+
+환불 상태 열에는 환불을 위한 현재 상태가 표시됩니다. A `Capture failed` 지불은 빨간색 경고 상태와 `Voided` 지불은 회색 경보 상태를 표시합니다.
 
 ## 보고서 데이터 업데이트
 
