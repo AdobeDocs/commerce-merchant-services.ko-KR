@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _2022년 6월 29일_
 ### 호스팅된 서비스 업데이트
 
 이러한 릴리스 노트는 현재 v1.2.0 릴리스와 호스팅된 서비스에 대한 이전 1.1.0 릴리스 간, 일반적인 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay는 이제 PayPal 스마트 단추로 사용할 수 있습니다. 이 [결제 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 고객이 장치에서 터치 ID를 사용하여 iOS 또는 macOS 장치에 저장된 신용 및 직불 카드 결제 자격 증명을 사용하는 Apple 페이을 사용할 수 있도록 해줍니다.
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-1720 --> 이제 매장주문에대한 분쟁은 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 에서 직접 PayPal Resolution Center 로 이동할 수 있습니다. [!DNL Payment Services] 분쟁을 해결하기 위해
 
