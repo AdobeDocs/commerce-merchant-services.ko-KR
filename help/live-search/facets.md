@@ -2,9 +2,9 @@
 title: '"패싯"'
 description: '"[!DNL Live Search] 패싯에서는 속성 값의 여러 차원을 검색 기준으로 사용합니다."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 |--- |--- |
 | [카테고리 표시 설정](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | 앵커 - `Yes` |
 | [속성 속성](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [카탈로그 입력 유형](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| 속성 저장소 등록 정보 | 레이어 탐색에서 사용 - `Filterable (with results)` |
+| 속성 저장소 등록 정보 | 검색 결과에서 계층 탐색 사용 - `Yes` |
 
 ## 기본 속성 값
 
