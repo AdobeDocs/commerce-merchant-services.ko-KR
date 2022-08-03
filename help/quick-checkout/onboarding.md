@@ -2,9 +2,9 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 - [!DNL Publishable key]: 선단이 상호 작용하는 데 사용하는 키 [!DNL Bolt] API.
 - [!DNL Signing secret]: 에서 받은 요청에 대한 서명 확인에 사용됩니다. [!DNL Bolt].
 
-![빠른 체크아웃](assets/account-credentials.png)
+   ![빠른 체크아웃](assets/account-credentials.png)
 
 자세한 내용은 [[!DNL Bolt] 환경 세부 사항](https://help.bolt.com/developers/references/environment-details/#about-keys)다음 페이지에서 키 및 서명 비밀에 대해 알아보려면 {target=&quot;_blank&quot;} 페이지를 참조하십시오. [!DNL Bolt] 대상 [!DNL Quick Checkout] 확장.
 
@@ -73,6 +73,13 @@ ht-degree: 0%
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **스토어** > _설정_ > **구성**.
 1. 왼쪽 패널에서 를 확장합니다. **영업** 을(를) 선택합니다. **체크아웃**.
 1. 에서 [!DNL Quick Checkout] 보기, 설정 **활성화** to `Yes`.
+
+![빠른 체크아웃](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> 빠른 체크아웃 필드는 **활성화** 가 로 설정되어 있습니다. `Yes`.
+
 1. 사용할 방법(샌드박스 또는 프로덕션)을 선택하십시오.
 
    - 테스트 및 개발을 위한 샌드박스
@@ -80,7 +87,7 @@ ht-degree: 0%
 
 1. 고유 API를 제공한 후 자격 증명을 확인하고 [!DNL Publishable keys].
 
-![빠른 체크아웃](assets/extension-view.png)
+![빠른 체크아웃](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
