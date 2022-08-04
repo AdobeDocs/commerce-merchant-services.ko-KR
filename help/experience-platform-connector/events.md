@@ -2,9 +2,9 @@
 title: 이벤트
 description: 데이터를 캡처하는 이벤트를 알아보고 전체 스키마 정의를 확인합니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ ht-degree: 0%
 | [로그아웃](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | 프로필 |
 | [계정 만들기](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | 프로필 |
 | [계정 편집](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts) | 프로필 |
+| [검색 요청이 전송됨](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts) | 검색 |
+| [검색 응답 수신](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts) | 검색 |
 
 >[!NOTE]
 >

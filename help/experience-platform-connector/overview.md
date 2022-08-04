@@ -2,9 +2,9 @@
 title: 안내서 개요
 description: Adobe Commerce용 Adobe Experience Platform 커넥터 이 연결됩니다 [!DNL Commerce] 다른 Adobe Experience Cloud 제품에 대한 인스턴스입니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ Experience Platform 커넥터를 사용하려면 먼저 다음을 수행해야 �
 - 설치 [Experience Platform 커넥터 확장](install.md).
 
    Experience Platform 커넥터 확장은 서버의 명령줄에서 설치되며 Adobe Commerce 설치에 다음으로 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 Experience Platform 커넥터가 **시스템** 메뉴 아래의 **서비스** 에서 [!DNL Commerce] _관리_.
+- [쇼퍼 프로필 업로드](profile.md) Adobe Experience Platform에 연결하여 상점 데이터를 제공하는 것은 특정 쇼핑객이 쇼핑 경험을 향상시키는 데 도움이 될 수 있습니다.
 
 ## Audience
 
 이 안내서는 Adobe Commerce 상점 데이터를 다른 Adobe DX 제품에 연결해야 하는 Adobe Commerce 머천트용으로 설계되었습니다.
+
+### PWA Studio 지원
+
+자세한 내용은 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) PWA Studio 저장소 내 Experience Platform 커넥터를 사용하는 방법에 대한 설명서입니다.
 
 ## 알려진 문제
 

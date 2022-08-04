@@ -3,10 +3,10 @@ user-guide-title: Adobe Commerce용 Adobe Experience Platform 커넥터
 user-guide-description: 이 안내서에서는 Adobe Commerce용 Adobe Experience Platform 커넥터 사용에 대한 자세한 지침을 제공합니다.
 breadcrumb-title: Adobe Commerce용 Adobe Experience Platform 커넥터
 hide: true
-source-git-commit: 74537c8dc6b4f4720598a1dc68ffc1d63ad0d234
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 3%
+source-wordcount: '73'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 3%
    - [Experience Platform 커넥터 설치](install.md)
    - [Experience Platform 커넥터 구성](connect-data.md)
    - [XDM 스키마에 필드 그룹 추가](update-xdm.md)
-- 이벤트 전달 {#event-forwarding}
+   - [Adobe Experience Platform에 쇼퍼 프로필 업로드](profile.md)
+- 데이터 캡처 {#event-forwarding}
    - [이벤트](events.md)
    - [사용자 지정 이벤트](custom-events.md)
+   - [Adobe Experience Platform 태그 사용](using-tags.md)
