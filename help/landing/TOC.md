@@ -2,10 +2,10 @@
 user-guide-title: Adobe Commerce용 서비스
 user-guide-description: Adobe Commerce 및 Magento Open Source에 확장 기능을 제공하는 호스트 서비스에 대한 설명서 및 리소스입니다.
 title: Adobe Commerce용 서비스
-source-git-commit: 39456e272b756498186cb267f32a3ac09a548b58
+source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 32%
+source-wordcount: '94'
+ht-degree: 30%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 32%
 - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
 - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+- [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/catalog-service/guide-overview.html)
 - [Experience Platform 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
 - [서비스 커넥터](/help/landing/saas.md)
 - [카탈로그 동기화](/help/landing/catalog-sync.md)
