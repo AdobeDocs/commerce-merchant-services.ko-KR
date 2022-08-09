@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
       >[!NOTE]
       >
-      > Apple Pay는 기본적으로 샌드박스 모드에 대해 활성화되지만 [Apple 개발자 계정이 있어야 합니다.](test-validate.md#test-in-sandbox-environment) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 프로덕션 모드에서 Apple Pay를 사용할 준비가 되면 작업 완료 후 [테스트 및 유효성 검사](test-validate.md)를 활성화하려면 영업 팀에 연락하여 라이브 스토어에 사용할 수 있도록 합니다.
+      > Apple Pay를 사용하려면 [Apple 개발자 계정이 있어야 합니다.](test-validate.md#test-in-sandbox-environment) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 *또는* 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md)를 활성화하려면 영업 담당자에게 문의하십시오.
 
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.

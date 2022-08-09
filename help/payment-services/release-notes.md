@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
+source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ ht-degree: 0%
 자세한 내용은 [예정된 릴리스](https://devdocs.magento.com/release/) 릴리스 일정 및 지원에 대해 알아보십시오.
 
 자세한 내용은 [사용 가능](https://devdocs.magento.com/release/availability.html) 개발자 설명서에서 제품 호환성에 대해 알아봅니다.
+
+## v1.3.0
+
+_2022년 8월 9일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-XX --> 일반 공급 릴리스—[!DNL Payment Services] is now [호환 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0~2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay는 이제 모바일 및 데스크탑의 Safari 브라우저 v15.5와 호환됩니다.
 
 ## v1.2.0
 
