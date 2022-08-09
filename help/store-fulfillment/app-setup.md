@@ -4,9 +4,9 @@ description: 설정 [!DNL Store Assist] 온라인 구매를 위한 종단 간 �
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Store Assist 는 Walmart Commerce Technologies에서 제공하는 Faa(Fulfillmen
 
 - 모바일 장치가 를 충족하는지 확인합니다 [하드웨어 및 소프트웨어 요구 사항](solution-requirements.md#store-assist-app-requirements) Store Fulfillment 솔루션에 대해 설명합니다.
 
-- 에서 스토어 지원 앱을 다운로드합니다. [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} 또는 [Google Play 스토어](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- 에서 스토어 지원 앱을 다운로드합니다. [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} 또는 [Google Play 스토어](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - Store Associates에서 로그인하려면 다음 정보가 필요합니다.
 

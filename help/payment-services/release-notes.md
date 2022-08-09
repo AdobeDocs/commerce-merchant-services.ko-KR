@@ -2,7 +2,7 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
+source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 0%
@@ -45,7 +45,7 @@ _2022년 6월 29일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services 자격 증명이 올바르지 않으면 [!DNL Payment Services] 이제 Home 이 Admin Console에 표시됩니다. 자격 증명이 잘못되었음을 알리는 자격 증명 오류가 나타납니다.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 은 현재 와 호환되지 않습니다 [`commerce-data-export` v101.20 이상](https://github.com/magento-commerce/commerce-data-export/releases/tag/v101.2.0)를 사용하면 와 호환되지 않습니다 [[!DNL Channel manager] 확장](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 은 현재 과 호환되지 않습니다. `commerce-data-export` v101.20 이상에서는 호환되지 않습니다. [[!DNL Channel manager] 확장](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ### 호스팅된 서비스 업데이트
 
@@ -67,7 +67,7 @@ _2022년 3월 31일_
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 공급 릴리스—[!DNL Payment Services] is now [호환 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0~2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2682 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 현재 캐나다 상인들이 이용할 수 있습니다. 상인은 다음 중 하나에서 결제 구성을 볼 수 있습니다 [프랑스어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies) 또는 [영어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.md#accepted-credit-cards-and-currencies).
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-2682 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 현재 캐나다 상인들이 이용할 수 있습니다. 상인은 다음 중 하나에서 결제 구성을 볼 수 있습니다 [프랑스어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 또는 [영어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 지원 [캐나다 달러(CAD)](overview.md#accepted-credit-cards-and-currencies) 신용 카드 및 PayPal 거래의 경우
 
