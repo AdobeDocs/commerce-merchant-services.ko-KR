@@ -2,7 +2,7 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
+source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -126,6 +126,8 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
 
 ## 지원 요청
 
-온보딩 프로세스는 을 설정하고 구현하는 데 필요한 단계를 안내하도록 설계되었습니다 [!DNL Express Checkout] 기능을 사용할 수 있습니다. 지정된 Slack을 통해 Adobe Commerce 엔지니어링 팀에 문의하십시오 [Adobe 베타 프로그램 채널](http://adobe-beta-programs.slack.com/) 채널 을 참조하십시오.
+온보딩 프로세스는 을 설정하고 구현하는 데 필요한 단계를 안내하도록 설계되었습니다 [!DNL Express Checkout] 기능을 사용할 수 있습니다.
+
+다음을 통해 Adobe Commerce 지원 센터에 문의하십시오 [Adobe Commerce 도움말 센터](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) 도움이 필요하십니까?
 
 자세한 내용은 [테스트 및 유효성 검사](../quick-checkout/testing.md) 주제 를 참조하십시오.
