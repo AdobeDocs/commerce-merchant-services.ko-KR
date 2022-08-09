@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] 릴리스 정보"'
 description: '"에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,29 @@ ht-degree: 1%
 * ![새로 만들기](../assets/new.svg) - 새로운 기능
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) - 알려진 문제
+
+## [!DNL Live Search] 2.0.3
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![새로 만들기](../assets/new.svg) - 이제 Live Search는 카테고리 권한, 공유 카탈로그 및 고객 그룹별 가격을 적용하여 B2B 기능을 지원합니다.
+
+가맹점은 Live Search 확장 버전 >= 2.0.3을 업그레이드하여 이러한 기능에 액세스해야 합니다.
+
+프로덕션에 투입하기 전에 업그레이드 및 테스트를 수행하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 비스파이크 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
+
+>[!NOTE]
+>
+>B2B 지원은 8월 9일부터 백엔드 서비스에서 단계적인 방식으로 추가되며, 마이그레이션은 8월 말까지 완료될 예정입니다. 라이브 검색 확장이 업그레이드되지 않은 경우 스토어는 정상적으로 계속 작동하지만 B2B 기능은 없습니다.
+
+### 알려진 제한 사항 / 버그:
+
+* ![버그](../assets/bug.svg) - 고객 그룹에 표시할 수 없는 제품에서 제안이 소싱됩니다.
+* ![버그](../assets/bug.svg) - &quot;기본 공유 카탈로그&quot;에 추가되지 않은 경우 제품이 표시되지 않습니다.
+* PWA Studio이 PWA Studio에 대한 지원을 추가할 때까지 B2B에 대한 라이브 검색을 사용할 수 없습니다.
+* 제품 무시 및 제품 특성 피드에 관리자가 실행해야 하는 동기화 문제가 있을 수 있습니다 `bin/magento indexer:reset` 및 `bin/magento indexer:reindex` 올바르게 다시 동기화하려면 다음을 수행하십시오.
 
 ## [!DNL Live Search] 2.0
 

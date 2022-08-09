@@ -2,9 +2,9 @@
 title: '"패싯"'
 description: '"[!DNL Live Search] 패싯에서는 속성 값의 여러 차원을 검색 기준으로 사용합니다."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ ht-degree: 0%
 
 페이싱을 위한 카테고리 및 제품 속성 요구 사항은 계층화된 탐색에 사용되는 필터링 가능한 속성과 유사합니다. 각 특성의 storefront 속성은 `filterable (with results)`.
 
-* 최대 100개의 속성을 [!DNL Live Search].
-* [!DNL Live Search] 는 최대 300개의 속성을 필터링 가능/검색/정렬 가능하고 검색 결과에 표시됩니다.
+라이브 검색은 최대 다음을 지원합니다.
+
+* 패싯으로 구성된 100 속성
+* 정렬 가능한 속성 50개
+* 200개의 필터링 가능한 속성
+* 검색 가능한 속성 200개
 
 | 설정 | 설명 |
 |--- |--- |
