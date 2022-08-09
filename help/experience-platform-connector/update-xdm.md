@@ -2,7 +2,7 @@
 title: XDM 스키마에 필드 그룹 추가
 description: XDM 스키마에 Adobe Commerce 관련 필드 그룹을 추가하는 방법을 알아봅니다.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 06499893f6cad4d920a231f5b22417d3044b2319
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%

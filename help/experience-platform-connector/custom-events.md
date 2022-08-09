@@ -2,16 +2,16 @@
 title: 사용자 지정 이벤트 만들기
 description: Adobe Commerce 데이터를 다른 Adobe DX 제품에 연결하는 사용자 지정 이벤트를 만드는 방법을 알아봅니다.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # 사용자 지정 이벤트 만들기
 
-을(를) 확장할 수 있습니다 [이벤트 플랫폼](events.md) 고유한 데이터를 수집하기 위해 고유한 storefront 이벤트를 만듭니다. 사용자 지정 이벤트를 만들고 구성하면 [Adobe Commerce 이벤트 수집기](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+을(를) 확장할 수 있습니다 [이벤트 플랫폼](events.md) 고유한 데이터를 수집하기 위해 고유한 storefront 이벤트를 만듭니다. 사용자 지정 이벤트를 만들고 구성하면 [Adobe Commerce 이벤트 수집기](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## 사용자 지정 이벤트 처리
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 예:
 
-MSE SDK를 통해 게시된 사용자 지정 이벤트:
+Adobe Commerce 이벤트 SDK를 통해 게시된 사용자 지정 이벤트:
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ Experience Platform 모서리에서:
 
 예:
 
-MSE SDK를 통해 게시된 재정의가 있는 제품 보기:
+Adobe Commerce 이벤트 SDK를 통해 게시된 재정의가 있는 제품 보기:
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ Experience Platform 모서리에서:
 }
 ```
 
-Adobe Commerce이 있는 제품 보기가 MSE SDK를 통해 게시되었습니다.
+Adobe Commerce이 있는 제품 보기는 Adobe Commerce Events SDK를 통해 게시되었습니다.
 
 ```javascript
 mse.publish.productPageView({

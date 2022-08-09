@@ -1,17 +1,17 @@
 ---
 title: 안내서 개요
-description: Adobe Commerce용 Adobe Experience Platform 커넥터 이 연결됩니다 [!DNL Commerce] 다른 Adobe Experience Cloud 제품에 대한 인스턴스입니다.
+description: Adobe Commerce용 Adobe Experience Platform 커넥터는 상거래 인스턴스를 다른 Adobe Experience Cloud 제품에 연결합니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Experience Platform 커넥터 개요
 
-Experience Platform 커넥터 확장을 사용하면 Adobe Commerce 가맹점이 Adobe Experience Platform 에지로 데이터를 전송할 수 있으므로 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 사용할 수 있습니다 [!DNL Commerce] 데이터. 연결 [!DNL Commerce] 데이터를 Adobe Experience Cloud의 다른 제품에 사용하면 사이트에서 사용자 행동을 분석하고 AB 테스트를 수행하며 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
+Experience Platform 커넥터 확장을 사용하면 Adobe Commerce 가맹점이 Adobe Experience Platform 에지로 데이터를 전송할 수 있으므로 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 해당 상거래 데이터를 사용할 수 있습니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고 AB 테스트를 수행하고 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
 Storfront 이벤트는 다음과 같은 쇼퍼 상호 작용을 캡처합니다. `View Page`, `View Product`, `Add to Cart`등 캡처된 데이터에는 PII(개인 식별 정보)가 포함되지 않습니다. 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명 처리됩니다. [추가 정보](https://www.adobe.com/privacy/experience-cloud.html). 전체 목록 보기 [storefront 이벤트](events.md).
 
@@ -36,7 +36,7 @@ Experience Platform 커넥터를 사용하려면 먼저 다음을 수행해야 �
 
 - 설치 [Experience Platform 커넥터 확장](install.md).
 
-   Experience Platform 커넥터 확장은 서버의 명령줄에서 설치되며 Adobe Commerce 설치에 다음으로 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 Experience Platform 커넥터가 **시스템** 메뉴 아래의 **서비스** 에서 [!DNL Commerce] _관리_.
+   Experience Platform 커넥터 확장은 서버의 명령줄에서 설치되며 Adobe Commerce 설치에 다음으로 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 Experience Platform 커넥터가 **시스템** 메뉴 아래의 **서비스** 상거래 _관리_.
 - [쇼퍼 프로필 업로드](profile.md) Adobe Experience Platform에 연결하여 상점 데이터를 제공하는 것은 특정 쇼핑객이 쇼핑 경험을 향상시키는 데 도움이 될 수 있습니다.
 
 ## Audience
@@ -54,8 +54,8 @@ Experience Platform 커넥터를 사용하려면 먼저 다음을 수행해야 �
 - 검색 이벤트는 B2B 모듈이 설치된 Adobe Commerce Enterprise Edition에서 지원되지 않습니다.
 - Adobe Experience Platform 에지에 연결한 후 Adobe Commerce에서 다양한 대상으로 연결하는 데 약 1시간이 소요됩니다.
 
-## 지원
+이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 Slack 채널에 게시하십시오.
-
-- `#beacon-ama`
+- [도움말 센터](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
+- Slack 시: `#beacon-ama`

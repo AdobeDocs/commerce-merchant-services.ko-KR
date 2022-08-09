@@ -1,9 +1,10 @@
 ---
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법을 알아봅니다.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ _태그를 사용한 Experience Platform 커넥터 데이터 흐름_
 
 상거래 이벤트 데이터를 수집하려면
 
-- 설치 [Adobe Commerce 이벤트 SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). PHP 저장 영역의 경우 [설치](install.md) 주제. PWA Studio 스토어에 대해서는 [PWA Studio 안내서](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- 설치 [Adobe Commerce 이벤트 SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). PHP 저장 영역의 경우 [설치](install.md) 주제. PWA Studio 스토어에 대해서는 [PWA Studio 안내서](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **이름**: `Account email`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
-   - **[선택 사항입니다] 경로**: `accountContext.accountEmail`
+   - **[선택 사항입니다] 경로**: `accountContext.emailAddress`
 
 1. 계정 유형:
 
@@ -210,7 +211,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **이름**: `Account email`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
-   - **[선택 사항입니다] 경로**: `accountContext.accountEmail`
+   - **[선택 사항입니다] 경로**: `accountContext.emailAddress`
 
 1. 계정 유형:
 
@@ -259,7 +260,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **이름**: `Account email`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
-   - **[선택 사항입니다] 경로**: `accountContext.accountEmail`
+   - **[선택 사항입니다] 경로**: `accountContext.emailAddress`
 
 1. 계정 유형:
 
@@ -344,12 +345,23 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.sku`
 
-1. 통화 코드:
+1. 제품 통화:
 
-   - **이름**: `Currency code`
+   - **이름**: `Product currency`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.currencyCode`
+
+1. 통화 코드:
+
+   - **이름**: `Currency code`
+   - **확장**: `Core`
+   - **데이터 요소 유형**: `Custom Code`
+   - **편집기 열기**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. 특별 가격:
 
@@ -370,7 +382,11 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **이름**: `Product price`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
-   - **편집기 열기**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **편집기 열기**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. 제품 보기:
 
@@ -414,7 +430,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **편집기 열기**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. 검색 입력 정렬
@@ -517,7 +533,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **편집기 열기**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. 검색 결과 제품:
@@ -712,13 +728,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **편집기 열기**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **편집기 열기**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **편집기 열기**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
