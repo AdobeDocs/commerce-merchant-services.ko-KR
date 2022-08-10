@@ -1,11 +1,12 @@
 ---
 title: Store Fulfillment 서비스에 대한 온보딩 개요
-description: '"[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항."'
+description: '`[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항'''
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 시작하기 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 다음 구성 요소를 설정, 구성 및 활성화하여 다음을 수행합니다.
 
-- **저장 이행 확장**-Adobe Commerce 인스턴스에 이 타사 확장을 설치하고 구성합니다. 설치 후 관리자가 제공하는 Store Fulfillment 솔루션을 구성하고 관리할 수 있습니다 [!DNL buy online, pickup in store] (BOPIS) 시나리오와 동일합니다.
+- **저장 이행 확장**-Adobe Commerce 인스턴스에 이 타사 확장을 설치하고 구성합니다. 설치 후 관리자가 제공하는 Store Fulfillment 솔루션을 구성하고 관리할 수 있습니다 [!DNL buys online, pickup in store] (BOPIS) 시나리오와 동일합니다.
 
    ![[!DNL Store Fulfillment Service] 관리자 보기의 구성](assets/store-fulfillment-admin-home.png)
 
-- **주문 처리 계정 저장**-사용 프로세스 중에 계정 관리자가 저장소 이행 계정을 만들고 계정 정보 및 자격 증명을 제공합니다. 이러한 자격 증명은 Adobe Commerce과 Store Fulfillment 솔루션 간의 연결을 사용하도록 설정하는 데 필요합니다.
+- **주문 처리 계정 저장**-사용 프로세스 중에 계정 관리자가 저장소 이행 계정을 만들고 계정 정보 및 자격 증명을 제공합니다. 이러한 자격 증명은 Adobe Commerce과 Store Fulfillment 솔루션 간에 연결을 활성화하는 데 필요합니다.
 
-- **스토어 지원 앱**- 모바일 장치에서 BOPIS 주문을 관리하기 위해 Store Associate와 End-to-End Store 이행 워크플로우를 제공합니다. Store Associates에서 Walmart&#39;s를 다운로드하여 설치할 수 있습니다 [!DNL Store Assist] iOS 및 Android 장치용. 앱 온보딩 프로세스는 Walmart Commerce Technology Client Center에서 별도의 프로세스로 관리됩니다. 하지만, [일부 앱 구성 설정](user-setup.md) Adobe Commerce 관리자에서 이 완료되었습니다.
+- **스토어 지원 앱**- 모바일 장치에서 BOPIS 주문을 관리하기 위해 Store Associate와 End-to-End Store 이행 워크플로우를 제공합니다. Store Associates에서 Walmart&#39;s를 다운로드하여 설치할 수 있습니다 [!DNL Store Assist] iOS 및 Android™ 장치용. 앱 온보딩 프로세스는 Walmart Commerce Technologies Client Center에서 별도의 프로세스로 관리됩니다. 하지만, [일부 앱 구성 설정](user-setup.md) Adobe Commerce 관리자에서 이 완료되었습니다.
 
    | 스토어 지원 앱 - 시작 보기 | 스토어 지원 앱 — 모듈 보기 |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -48,7 +49,6 @@ ht-degree: 0%
 
 1. [스토어 지원 앱의 사용자 및 역할 만들기](user-setup.md).
 
-1. [월마트 다운로드 [!DNL Store Assist] 앱을 원하는 장치에 추가합니다. 이 앱은 앱스토어(iOS)과 재생 스토어(Android)에서 모두 사용할 수 있습니다](app-setup.md).
+1. [월마트 다운로드 [!DNL Store Assist] 앱을 원하는 장치에 추가합니다. 이 앱은 Apple 앱(iOS)과 Google Play(Android™) 모두에서 사용할 수 있습니다](app-setup.md) 상점들.
 
 설치, 구성, 온보딩을 완료하고 를 액세스할 수 있게 되면 [!DNL Store Assist] 앱, [주문 및 테스트 만들기](test-and-deploy.md).
-
