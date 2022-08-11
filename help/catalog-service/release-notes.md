@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] 릴리스 정보"'
-description: '"에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce에 대해 설명합니다."'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] 릴리스 정보'''
+description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] 릴리스 정보
 
@@ -32,6 +32,7 @@ ht-degree: 2%
 
 ## 알려진 제한 사항
 
+* 번들 및 그룹화된 제품은 지원되지 않습니다.
 * 계층 가격이 지원되지 않습니다.
 * 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
 * 변형에 대한 이미지를 검색할 수 없습니다.
