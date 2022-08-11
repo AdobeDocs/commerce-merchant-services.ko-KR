@@ -2,16 +2,20 @@
 title: 활성화 [!DNL Payment Services] 프로덕션
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다 [!DNL Payment Services] 제작 관련
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # 활성화 [!DNL Payment Services] 프로덕션
 
-Payments Services 확장이 [설치](install.md)이면 인스턴스가 [구성 및 연결](connect.md), 그리고 [샌드박스 설정](sandbox.md) 테스트한 후 서비스를 프로덕션에 넣고 [온보딩 프로세스](onboard.md).
+서비스를 프로덕션에 넣고 [온보딩 프로세스](onboard.md), 다음 항목의 단계에 따라 다음을 수행합니다.
+
+* [설치](install.md) 결제 서비스 확장
+* [구성 및 연결](connect.md) 인스턴스
+* [설정](sandbox.md) 및 [테스트](test-validate.md) 샌드박스
 
 ## 설정 [!DNL Payment Services] 결제 방법
 

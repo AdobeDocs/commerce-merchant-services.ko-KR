@@ -2,9 +2,9 @@
 title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
+source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,20 @@ ht-degree: 0%
 
 샌드박스 온보딩을 시작하기 전에 무료 PayPal 개발자 계정에 등록하고 머천트(온보딩에 사용)와 쇼퍼 계정(체크아웃을 테스트하는 데 사용)을 모두 만들어야 합니다. 원하는 경우 여러 개발자 계정을 만들 수 있습니다.
 
-PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모드. PayPal을 사용하려면 PayPal Developer Portal에서 생성한 비즈니스 샌드박스 테스트 계정, 이메일 및 암호를 샌드박스 온보딩에 사용해야 합니다. 샌드박스 온보딩 프로세스 중에 다른 계정을 만들지 마십시오.
+PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모드. PayPal을 사용하려면 PayPal Developer Portal에서 생성한 비즈니스 샌드박스 테스트 계정, 이메일 및 암호를 샌드박스 온보딩에 사용해야 합니다. *샌드박스 온보딩 프로세스 중에 다른 계정을 만들지 마십시오.*
 
-샌드박스 PayPal 온보딩 프로세스 중에 계정을 만든 경우, 또는 이메일을 확인할 수 없으므로 온보딩 샌드박스를 재설정해야 합니다.
-
-샌드박스 계정을 재설정하려면 다음을 수행하십시오.
-
-1. 클릭 **[!UICONTROL Reset sandbox]**. 자세한 내용은 [PayPal 비즈니스 샌드박스 계정 만들기](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) 설명서 를 참조하십시오.
-1. 클릭 **[!UICONTROL Sandbox onboarding]** 다음 단계 세트를 완료합니다.
+## 샌드박스 온보딩
 
 샌드박스 온보딩을 완료하려면
 
 1. 로 이동합니다 [PayPal 개발자 계정 페이지](https://developer.paypal.com/developer/accounts/).
-1. 클릭 **[!UICONTROL Log in to Home]** PayPal 개발자 계정에 로그인하거나 **등록** 계정을 만들려면
+1. 클릭 **[!UICONTROL Log in to Home]** 기존 PayPal Developer Portal 생성 비즈니스 샌드박스 테스트 계정으로 로그인하거나 **등록** 계정을 만들려면
 1. PayPal 샌드박스 계정을 만듭니다.
    1. 이동 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. 클릭 **[!UICONTROL Create account]**.
+
+      샌드박스 PayPal 온보딩 프로세스 중에 PayPal 샌드박스 계정을 만든 경우 다음을 수행해야 합니다 [온보딩 샌드박스 재설정](#reset-your-sandbox-account) 또는 이메일을 확인할 수 없기 때문입니다.
+
    1. 선택 **[!UICONTROL Business]** 을(를) 계정 유형으로 사용하고 **[!UICONTROL Create]**.
    1. 에서 _[!UICONTROL Sandbox Accounts]_섹션에서_[!UICONTROL Manage accounts]_ 만든 샌드박스 계정에 대한 열입니다.
    1. 클릭 **[!UICONTROL View/edit account]**.
@@ -46,7 +44,7 @@ PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모
 
    지급 수락을 시작하기 위해 PayPal 계정을 연결하는 PayPal 창이 표시됩니다.
 
-1. 비즈니스 계정 및 국가 또는 지역의 이메일을 입력하고 **[!UICONTROL Next]**.
+1. PayPal 비즈니스 계정(PayPal 샌드박스 계정 아님)과 국가 또는 지역의 전자 메일을 입력하고 를 클릭합니다. **[!UICONTROL Next]**.
 
    ![PayPal - 지급 PayPal 계정 연결](assets/paypal-connectacct.png)
 
@@ -60,6 +58,15 @@ PayPal 샌드박스 온보딩이 승인되면, 결제 시스템이 현재 샌드
 >[!IMPORTANT]
 >
 >동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제 처리를 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 서비스 홈에 해지된 동의에 대한 경고가 표시됩니다. 경고를 취소하려면 **[!UICONTROL Do not show again]**.
+
+### 샌드박스 계정 재설정
+
+샌드박스 PayPal 온보딩 프로세스 중에 PayPal 샌드박스 계정을 만든 경우, 또는 이메일을 확인할 수 없으므로 온보딩 샌드박스를 재설정해야 합니다.
+
+샌드박스 계정을 재설정하려면 다음을 수행하십시오.
+
+1. 클릭 **[!UICONTROL Reset sandbox]**. [PayPal 비즈니스 샌드박스 계정 만들기](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. 클릭 **[!UICONTROL Sandbox onboarding]** 다음 단계 세트를 완료합니다.
 
 ## 연락처 전화 번호 사용
 

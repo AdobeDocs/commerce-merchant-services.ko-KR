@@ -2,28 +2,38 @@
 title: 설치 [!DNL Payment Services]
 description: Payments Services 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
+source-git-commit: 43599d041899251f7716e215284b6eff9312943d
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # 설치 [!DNL Payment Services]
 
-설치 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 사용하기 위한 사전 요구 단계입니다 [!DNL Payment Services].
+다운로드 및 설치 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 사용하기 위한 사전 요구 단계입니다 [!DNL Payment Services].
 
 ![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png)
 
-다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] Magento ID([자이드](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 등록 프로세스에서 제공됩니다. 작성기는 초기 설치 중에 이러한 키를 사용합니다 [!DNL Adobe Commerce]또는 작성기 키가 이전에 `auth.json` 파일.
+## 확장 다운로드
 
-자세한 내용은 [인증 키 가져오기](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 작성기 키 가져오기에 대한 자세한 정보.
+먼저 확장을 [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 설치하기 전에
 
-이 확장을 설치하는 두 가지 방법이 있습니다. [[!DNL Adobe Commerce] 클라우드 인프라](install.md#adobe-commerce-on-cloud-infrastructure) 또는 [온-프레미스](install.md#on-premises) 설치. 이러한 방법에서는 CLI(명령줄 인터페이스)를 사용해야 합니다.
+1. 로 이동합니다 [Commerce Marketplace의 결제 서비스 확장](https://marketplace.magento.com/magento-payment-services.html).
+1. 버전과 버전을 선택하려면 을 전환합니다. **[!UICONTROL Edition]** 및 **[!UICONTROL Your store version]** 원하는 항목을 선택합니다.
+1. 클릭 **[!UICONTROL Add to Cart]**.
+1. 체크 아웃을 완료하고 **[!UICONTROL Place Order]**.
+1. 주문 확인 및 세부 사항은 Marketplace 다운로드와 연결된 이메일을 확인하십시오.
 
 ## 확장 설치
 
-을(를) 설치할 수 있습니다 [!DNL Payment Services] 둘 다 확장 [!DNL Adobe Commerce] 클라우드 인프라 및 온-프레미스 인스턴스에서 사용됩니다.
+을(를) 설치할 수 있습니다 [!DNL Payment Services] 둘 다 확장 [!DNL Adobe Commerce] Magento ID([자이드](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions))가 작성기 키를 사용하여 등록 프로세스에 제공됩니다. [!DNL Magento] 오픈 소스 고객은 온-프레미스 지침을 사용합니다.
+
+작성기는 초기 설치 중에 이러한 키를 사용합니다 [!DNL Adobe Commerce]또는 작성기 키가 이전에 `auth.json` 파일.
+
+자세한 내용은 [인증 키 가져오기](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 작성기 키 가져오기에 대한 자세한 정보.
+
+자세한 내용은 [확장 설치](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) 확장을 다운로드하여 설치하기 전에 고려해야 할 사항에 대한 자세한 내용을 확인하십시오.
 
 ### [!DNL Adobe Commerce] 클라우드 인프라
 
@@ -45,9 +55,9 @@ ht-degree: 0%
 
 1. 변경 사항을 커밋하고 푸시합니다.
 
-### 온-프레미스
+### 온-프레미스 및 기타 구성
 
-이 메서드는 을 설치하는 데 사용됩니다 [!DNL Payment Services] 확장 프로그램 을 사용하십시오.
+이 메서드는 을 설치하는 데 사용됩니다 [!DNL Payment Services] 온-프레미스 인스턴스 및 [!DNL Magento] 오픈 소스 고객.
 
 1. 확장을 가져오려면 다음 명령을 실행합니다.
 
@@ -63,7 +73,7 @@ ht-degree: 0%
 
    다음 `composer update` 명령은 모든 종속성을 업데이트합니다. 모든 종속성을 동시에 업데이트하지 않으려면 이 명령을 대신 사용하십시오. `composer require magento/payment-services`.
 
-1. 업그레이드 [!DNL Adobe Commerce]:
+1. 인스턴스 업그레이드:
 
    ```bash
    bin/magento setup:upgrade
@@ -76,7 +86,7 @@ ht-degree: 0%
    ```
 
 1. 변경 사항을 커밋합니다.
-1. 커밋된 코드가 배포되었는지 확인하려면 온-프레미스 인스턴스 를 업데이트하십시오.
+1. 커밋된 코드가 배포되었는지 확인하려면 인스턴스를 업데이트하십시오 .
 
 ## 확장 업그레이드
 
