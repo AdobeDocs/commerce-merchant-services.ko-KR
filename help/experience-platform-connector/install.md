@@ -2,9 +2,9 @@
 title: Adobe Commerce에서 Adobe Experience Platform 커넥터 설치 및 구성
 description: Adobe Commerce에서 Adobe Experience Platform 커넥터를 설치, 구성, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ ht-degree: 0%
 
 ## 확장 설치
 
-1. Experience Platform 커넥터 메타패키지를 설치합니다.
+Experience Platform 커넥터는 [Adobe 마켓플레이스](https://marketplace.magento.com/magento-experience-platform-connector.html).
+
+1. 를 다운로드하려면 `experience-platform-connector` package에서 다음 명령을 실행합니다.
 
    ```bash
    composer require magento/experience-platform-connector

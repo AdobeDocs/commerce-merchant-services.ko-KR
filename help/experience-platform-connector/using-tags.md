@@ -2,9 +2,9 @@
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법을 알아봅니다.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    ![새 데이터 요소 만들기](assets/create-new-data-elements.png)
    _새 데이터 요소 만들기_
 
-1. 설정 **이름** to `Sign out`.
+1. 설정 **이름** to `sign out`.
 
 1. 설정 **확장** to `Adobe Experience Platform Web SDK`.
 
@@ -76,16 +76,22 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    ![로그아웃 값 업데이트](assets/signout-value.png)
    _로그아웃 값 업데이트_
 
+1. 선택 **저장**.
+
 1. 규칙 만들기:
 
    ![새 규칙 만들기](assets/create-new-rule.png)
    _새 규칙 만들기_
+
+1. 선택 **추가** 아래에 **이벤트**.
 
 1. 설정 **확장** to `Adobe Client Data Layer`.
 
 1. 설정 **이벤트 유형** to `Data Pushed`.
 
 1. 선택 **특정 이벤트** 그리고 **등록할 이벤트/키** to `sign-out`.
+
+1. 선택 **변경 내용 유지** 새 규칙을 저장하려면 을 클릭합니다.
 
 1. 작업을 추가합니다.
 
@@ -159,36 +165,44 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 계정 전자 메일:
 
-   - **이름**: `Account email`
+   - **이름**: `account email`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `accountContext.emailAddress`
 
 1. 계정 유형:
 
-   - **이름**: `Account type`
+   - **이름**: `account type`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `accountContext.accountType`
 
 1. 계정 ID:
 
-   - **이름**: `Account ID`
+   - **이름**: `account id`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로***: `accountContext.accountId`
 
 1. 로그인:
 
-   - **이름**: `Sign in`
+   - **이름**: `sign in`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
+   - **필드 그룹**: `person` > `accountID`
+   - **계정 ID**: **값** = `%account id%`
+   - **필드 그룹**: `person` > `accountType`
+   - **계정 유형**: **값** = `%account type%`
+   - **필드 그룹**: `person` > `personalEmailID`
+   - **개인 이메일 주소**: **값** = `%account email%`
+   - **필드 그룹**: `personalEmail` > `address`
+   - **주소**: **값** = `%account email%`
    - **필드 그룹**: `userAccount` > `login`
    - **방문자 로그인**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Sign in`
+- **이름**: `sign in`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `sign-in`
@@ -198,7 +212,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - **확장**: `Adobe Experience Platform Web SDK`
 - **작업 유형**: `Send event`
 - **유형**: `userAccount.login`
-- **XDM 데이터**: `%sign-in%`
+- **XDM 데이터**: `%sign in%`
 
 ### createAccount {#createaccount}
 
@@ -208,30 +222,38 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 계정 전자 메일:
 
-   - **이름**: `Account email`
+   - **이름**: `account email`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `accountContext.emailAddress`
 
 1. 계정 유형:
 
-   - **이름**: `Account type`
+   - **이름**: `account type`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `accountContext.accountType`
 
 1. 계정 ID:
 
-   - **이름**: `Account ID`
+   - **이름**: `account id`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
-   - **[선택 사항입니다] 경로***: `accountContext.accountId`
+   - **[선택 사항입니다] 경로**: `accountContext.accountId`
 
 1. 계정 만들기:
 
    - **이름**: `Create account`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
+   - **필드 그룹**: `person` > `accountID`
+   - **계정 ID**: **값** = `%account id%`
+   - **필드 그룹**: `person` > `accountType`
+   - **계정 유형**: **값** = `%account type%`
+   - **필드 그룹**: `person` > `personalEmailID`
+   - **개인 이메일 주소**: **값** = `%account email%`
+   - **필드 그룹**: `personalEmail` > `address`
+   - **주소**: **값** = `%account email%`
    - **필드 그룹**: `userAccount` > `createProfile`
    - **계정 프로필 만들기**: **값** = `1`
 
@@ -257,30 +279,38 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 계정 전자 메일:
 
-   - **이름**: `Account email`
+   - **이름**: `account email`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `accountContext.emailAddress`
 
 1. 계정 유형:
 
-   - **이름**: `Account type`
+   - **이름**: `account type`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `accountContext.accountType`
 
 1. 계정 ID:
 
-   - **이름**: `Account ID`
+   - **이름**: `account id`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
-   - **[선택 사항입니다] 경로***: `accountContext.accountId`
+   - **[선택 사항입니다] 경로**: `accountContext.accountId`
 
 1. 계정 편집:
 
    - **이름**: `Edit account`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
+   - **필드 그룹**: `person` > `accountID`
+   - **계정 ID**: **값** = `%account id%`
+   - **필드 그룹**: `person` > `accountType`
+   - **계정 유형**: **값** = `%account type%`
+   - **필드 그룹**: `person` > `personalEmailID`
+   - **개인 이메일 주소**: **값** = `%account email%`
+   - **필드 그룹**: `personalEmail` > `address`
+   - **주소**: **값** = `%account email%`
    - **필드 그룹**: `userAccount` > `updateProfile`
    - **계정 프로필 만들기**: **값** = `1`
 
@@ -306,17 +336,17 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 페이지 이름:
 
-   - **이름**: `Page name`
+   - **이름**: `page name`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `pageContext.pageName`
 
 #### 규칙 
 
-- **이름**: `Page view`
+- **이름**: `page view`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
-- **특정 이벤트**: `Core-Library Loaded`
+- **특정 이벤트**: `page-view`
 
 ##### 작업
 
@@ -333,28 +363,28 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 이름:
 
-   - **이름**: `Product name`
+   - **이름**: `product name`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.name`
 
 1. 제품 SKU:
 
-   - **이름**: `Product sku`
+   - **이름**: `product sku`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.sku`
 
 1. 제품 통화:
 
-   - **이름**: `Product currency`
+   - **이름**: `product currency`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.currencyCode`
 
 1. 통화 코드:
 
-   - **이름**: `Currency code`
+   - **이름**: `currency code`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -365,21 +395,21 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 특별 가격:
 
-   - **이름**: `Special price`
+   - **이름**: `special price`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.specialPrice`
 
 1. 정가:
 
-   - **이름**: `Regular price`
+   - **이름**: `regular price`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.regularPrice`
 
 1. 제품 가격:
 
-   - **이름**: `Product price`
+   - **이름**: `product price`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -390,14 +420,24 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 보기:
 
-   - **이름**: `Product view`
+   - **이름**: `product view`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 선택 **개별 항목 제공** 을 클릭하고 **항목 추가** 버튼을 클릭합니다. 이 보기는 PDP용이므로 단일 항목으로 채울 수 있습니다.
+   - **필드 그룹**: `productListItems` > `name`
+   - **이름**: **값** = `%product name%`
+   - **필드 그룹**: `productListItems` > `SKU`
+   - **SKU**: **값** = `%product sku%`
+   - **필드 그룹**: `productListItems` > `priceTotal`
+   - **가격 합계**: **값** = `%product price%`
+   - **필드 그룹**: `productListItems` > `currencyCode`
+   - **통화 코드**: **값** = `%currency code%`
+   - **필드 그룹**: `commerce` > `productViews` > `value`
+   - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Product view`
+- **이름**: `product view`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `product-page-view`
@@ -417,14 +457,14 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 입력
 
-   - **이름**: `Search input`
+   - **이름**: `search input`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `searchInputContext.units[0]`
 
 1. 검색 입력 구
 
-   - **이름**: `Search input phrase`
+   - **이름**: `search input phrase`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -435,7 +475,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 입력 정렬
 
-   - **이름**: `Search input sort`
+   - **이름**: `search input sort`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -454,7 +494,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 입력 필터 검색
 
-   - **이름**: `Search input filters`
+   - **이름**: `search input filters`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -488,7 +528,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 요청:
 
-   - **이름**: `Search request`
+   - **이름**: `search request`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 #### 규칙 
 
-- **이름**: `Search request sent`
+- **이름**: `search request sent`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `search-request-sent`
@@ -520,14 +560,14 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 결과:
 
-   - **이름**: `Search results`
+   - **이름**: `search results`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `searchResultsContext.units[0]`
 
 1. 제품 검색 결과 수:
 
-   - **이름**: `Search result number of products`
+   - **이름**: `search result number of products`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -538,7 +578,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 결과 제품:
 
-   - **이름**: `Search result products`
+   - **이름**: `search result products`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -556,7 +596,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 결과 제안:
 
-   - **이름**: `Search result products`
+   - **이름**: `search result products`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -570,19 +610,21 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 검색 응답:
 
-   - **이름**: `Search response`
+   - **이름**: `search response`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `siteSearch` > `suggestions`. 선택 **전체 개체 제공**.
+   - **데이터 요소**: `%search result suggestions%`
    - **필드 그룹**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **필드 그룹**: `productListItems`. 선택 **전체 개체 제공**.
+   - **데이터 요소**: `%search result products%`
    - **필드 그룹**: `searchResponse` > `value`
    - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Search Response Received`
+- **이름**: `search response received`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `search-response-received`
@@ -602,42 +644,42 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 이름:
 
-   - **이름**: `Product name`
+   - **이름**: `product name`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.name`
 
 1. 제품 sku:
 
-   - **이름**: `Product sku`
+   - **이름**: `product sku`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.sku`
 
 1. 통화 코드:
 
-   - **이름**: `Currency code`
+   - **이름**: `currency code`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.currencyCode`
 
 1. 제품 특별 가격:
 
-   - **이름**: `Product special price`
+   - **이름**: `product special price`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.specialPrice`
 
 1. 제품 정가:
 
-   - **이름**: `Product regular price`
+   - **이름**: `product regular price`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.regularPrice`
 
 1. 제품 가격:
 
-   - **이름**: `Product price`
+   - **이름**: `product price`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -648,14 +690,14 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 장바구니:
 
-   - **이름**: `Cart`
+   - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `shoppingCartContext`
 
 1. 장바구니 ID:
 
-   - **이름**: `Cart id`
+   - **이름**: `cart id`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -666,18 +708,26 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 장바구니에 추가:
 
-   - **이름**: `Add to cart`
+   - **이름**: `add to cart`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 선택 **개별 항목 제공** 을 클릭하고 **항목 추가** 버튼을 클릭합니다. 이 보기는 PDP용이므로 단일 항목으로 채울 수 있습니다.
+   - **필드 그룹**: `productListItems` > `name`
+   - **이름**: **값** = `%product name%`
+   - **필드 그룹**: `productListItems` > `SKU`
+   - **SKU**: **값** = `%product sku%`
+   - **필드 그룹**: `productListItems` > `priceTotal`
+   - **가격 합계**: **값** = `%product price%`
+   - **필드 그룹**: `productListItems` > `currencyCode`
+   - **통화 코드**: **값** = `%currency code%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
-   - **필드 그룹**: `commerce` > `productListAdds` > `id`
-   - **고유 식별자**: **value** = `1`
+   - **필드 그룹**: `commerce` > `productListAdds` > `value`
+   - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Add to cart`
+- **이름**: `add to cart`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `add-to-cart`
@@ -697,21 +747,21 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 상점:
 
-   - **이름**: `Storefront`
+   - **이름**: `storefront`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `storefrontInstanceContext`
 
 1. 장바구니:
 
-   - **이름**: `Cart`
+   - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `shoppingCartContext`
 
 1. 장바구니 ID:
 
-   - **이름**: `Cart id`
+   - **이름**: `cart id`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -722,7 +772,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 목록 항목:
 
-   - **이름**: `Product list items:`
+   - **이름**: `product list items:`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -757,18 +807,19 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 장바구니 보기:
 
-   - **이름**: `View cart`
+   - **이름**: `view cart`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 대상 `productListItems`를 채울 때 여러 항목이 있을 수 있습니다. 선택 **productListItems** > **전체 어레이 채우기**.
+   - **데이터 요소**: `%product list items%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
-   - **필드 그룹**: `commerce` > `productListAdds` > `id`
-   - **고유 식별자**: **value** = `1`
+   - **필드 그룹**: `commerce` > `productListViews` > `value`
+   - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `View cart`
+- **이름**: `view cart`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `shopping-cart-view`
@@ -788,42 +839,42 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 이름:
 
-   - **이름**: `Product name`
+   - **이름**: `product name`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.name`
 
 1. 제품 sku:
 
-   - **이름**: `Product sku`
+   - **이름**: `product sku`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.sku`
 
 1. 통화 코드:
 
-   - **이름**: `Currency code`
+   - **이름**: `currency code`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.currencyCode`
 
 1. 제품 특별 가격:
 
-   - **이름**: `Product special price`
+   - **이름**: `product special price`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.specialPrice`
 
 1. 제품 정가:
 
-   - **이름**: `Product regular price`
+   - **이름**: `product regular price`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.regularPrice`
 
 1. 제품 가격:
 
-   - **이름**: `Product price`
+   - **이름**: `product price`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -834,14 +885,14 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 장바구니:
 
-   - **이름**: `Cart`
+   - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `shoppingCartContext`
 
 1. 장바구니 ID:
 
-   - **이름**: `Cart id`
+   - **이름**: `cart id`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -852,18 +903,26 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 장바구니에서 제거:
 
-   - **이름**: `Remove from cart`
+   - **이름**: `remove from cart`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 선택 **개별 항목 제공** 을 클릭하고 **항목 추가** 버튼을 클릭합니다. 이 보기는 PDP용이므로 단일 항목으로 채울 수 있습니다.
+   - **필드 그룹**: `productListItems` > `name`
+   - **이름**: **값** = `%product name%`
+   - **필드 그룹**: `productListItems` > `SKU`
+   - **SKU**: **값** = `%product sku%`
+   - **필드 그룹**: `productListItems` > `priceTotal`
+   - **가격 합계**: **값** = `%product price%`
+   - **필드 그룹**: `productListItems` > `currencyCode`
+   - **통화 코드**: **값** = `%currency code%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
-   - **필드 그룹**: `commerce` > `productListRemovals`
-   - **고유 식별자**: **value** = `1`
+   - **필드 그룹**: `commerce` > `productListRemovals` > `value`
+   - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Remove from cart`
+- **이름**: `remove from cart`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `remove-from-cart`
@@ -883,21 +942,21 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 상점:
 
-   - **이름**: `Storefront`
+   - **이름**: `storefront`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `storefrontInstanceContext`
 
 1. 장바구니:
 
-   - **이름**: `Cart`
+   - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `shoppingCartContext`
 
 1. 장바구니 ID:
 
-   - **이름**: `Cart id`
+   - **이름**: `cart id`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -908,7 +967,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 목록 항목:
 
-   - **이름**: `Product list items`
+   - **이름**: `product list items`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -943,18 +1002,19 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 체크 아웃 시작:
 
-   - **이름**: `Initiate checkout`
+   - **이름**: `initiate checkout`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 대상 `productListItems`를 채울 때 여러 항목이 있을 수 있습니다. 선택 **productListItems** > **전체 어레이 채우기**.
+   - **데이터 요소**: `%product list items%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
-   - **필드 그룹**: `commerce` > `checkouts`
-   - **고유 식별자**: **value** = `1`
+   - **필드 그룹**: `commerce` > `checkouts` > `value`
+   - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Initiate checkout`
+- **이름**: `initiate checkout`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `initiate-checkout`
@@ -974,21 +1034,21 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 상점:
 
-   - **이름**: `Storefront`
+   - **이름**: `storefront`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `storefrontInstanceContext`
 
 1. 장바구니:
 
-   - **이름**: `Cart`
+   - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `shoppingCartContext`
 
 1. 장바구니 ID:
 
-   - **이름**: `Cart id`
+   - **이름**: `cart id`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -999,14 +1059,14 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 순서:
 
-   - **이름**: `Order`
+   - **이름**: `order`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `orderContext`
 
 1. 상거래 순서:
 
-   - **이름**: `Commerce order`
+   - **이름**: `commerce order`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -1042,7 +1102,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 주문 배송:
 
-   - **이름**: ` Order shipping`
+   - **이름**: `order shipping`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -1057,7 +1117,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 프로모션 ID:
 
-   - **이름**: `Promotion id`
+   - **이름**: `promotion id`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -1068,7 +1128,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 제품 목록 항목:
 
-   - **이름**: `Product list items`
+   - **이름**: `product list items`
    - **확장**: `Core`
    - **데이터 요소 유형**: `Custom Code`
    - **편집기 열기**:
@@ -1103,22 +1163,23 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 1. 주문:
 
-   - **이름**: `Place order`
+   - **이름**: `place order`
    - **확장**: `Adobe Experience Platform Web SDK`
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 대상 `productListItems`를 채울 때 여러 항목이 있을 수 있습니다. 선택 **productListItems** > **전체 어레이 채우기**.
+   - **데이터 요소**: `%product list items%`
    - **필드 그룹**: `commerce` > `order`
    - **고유 식별자**: **값** = `%commerce order%`
    - **필드 그룹**: `commerce` > `shipping`
-   - **고유 식별자**: **value** = ` %order shipping%`
+   - **고유 식별자**: **값** = `%order shipping%`
    - **필드 그룹**: `commerce` > `promotionID`
    - **프로모션 ID**: **값** = `%promotion id%`
    - **필드 그룹**: `commerce` > `purchases` > `value`
-   - **값**: **값** = `1`
+   - **value**: **값** = `1`
 
 #### 규칙 
 
-- **이름**: `Place order`
+- **이름**: `place order`
 - **확장**: `Adobe Client Data Layer`
 - **이벤트 유형**: `Data Pushed`
 - **특정 이벤트**: `place-order`

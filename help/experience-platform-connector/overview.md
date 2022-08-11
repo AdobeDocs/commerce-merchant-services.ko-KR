@@ -2,9 +2,9 @@
 title: 안내서 개요
 description: Adobe Commerce용 Adobe Experience Platform 커넥터는 상거래 인스턴스를 다른 Adobe Experience Cloud 제품에 연결합니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -58,4 +58,3 @@ Experience Platform 커넥터를 사용하려면 먼저 다음을 수행해야 �
 
 - [도움말 센터](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
 - [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
-- Slack 시: `#beacon-ama`
