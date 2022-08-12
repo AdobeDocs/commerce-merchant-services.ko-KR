@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] 릴리스 정보'''
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '320'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,17 @@ ht-degree: 1%
 
 자세한 내용은 [사용 가능](https://devdocs.magento.com/release/availability.html) 개발자 설명서에서 제품 호환성에 대해 알아봅니다.
 
+## v1.1.0
+
+_2022년 8월 12일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-375 --> 사용자 환경 개선 사항 [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 이제 확장이 활성화될 때 표시되고 유효성 검사되는 매개 변수만 포함합니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-349 --> 볼트 지갑과의 기존 배송 주소의 호환성 개선.
+
 ## v1.0.0
+
+_2022년 8월 9일_
 
 ![새로 만들기](../assets/new.svg)<!-- Issue BOLT-341 --> 일반 공급 릴리스—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 는 이제 Adobe Commerce 버전 2.4.1과 2.4.4와 호환됩니다.
 
@@ -41,4 +51,6 @@ ht-degree: 1%
 
 ![새로 만들기](../assets/new.svg)<!-- Issue BOLT-288 --> 사용자 지정 [사용자 세션 라이프타임](user-session-lifetime.md) 대상 [!DNL Quick Checkout] Adobe Commerce용.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue BOLT-342 --> 사용 [잘못된 작성기 키](https://support.magento.com/hc/en-us/articles/6909450342541) 설치 중 [!DNL Quick Checkout] 사용자가 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 올바른 `MAGEID`.
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-375 --> 사용자 환경 개선 사항 [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 모든 필수 매개 변수가 제공되면 구성을 저장할 수 있습니다.
+
+![알려진 문제](../assets/bug.svg)<!-- Issue BOLT-342 --> 공통 [문제 해결](https://support.magento.com/hc/en-us/articles/6909450342541) 설치 중 발생하는 문제 [!DNL Quick Checkout].

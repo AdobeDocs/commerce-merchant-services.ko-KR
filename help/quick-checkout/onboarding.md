@@ -2,9 +2,9 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 계정 만들기 [!DNL Bolt]
 
-구성하기 전에 [!DNL Quick Checkout] Adobe Commerce 관리자에서 다음을 만들어야 합니다. [샌드박스](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} 및 [production](https://merchant.bolt.com/register){target=&quot;_blank&quot;} 머천트 계정 [!DNL Bolt]. 에서 계정을 만드는 데 필요한 모든 세부 정보를 제공합니다. [!DNL Bolt].
+구성하기 전에 [!DNL Quick Checkout] Adobe Commerce 관리자에서 다음을 만들어야 합니다. [샌드박스](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} 및 [production](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} 머천트 계정 [!DNL Bolt]. 에서 계정을 만드는 데 필요한 모든 세부 정보를 제공합니다. [!DNL Bolt].
 
 자세한 내용은 [테스트 및 유효성 검사](../quick-checkout/testing.md) 주제 를 참조하십시오.
 

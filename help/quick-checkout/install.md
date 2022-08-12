@@ -1,10 +1,10 @@
 ---
 title: '"설치 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
-description: '"다음 단계에 따라 [!DNL Quick Checkout] Adobe Commerce 프로젝트에서 다음을 수행하십시오."'
+description: '"다음 단계에 따라 설치합니다 [!DNL Quick Checkout] Adobe Commerce 프로젝트에서 다음을 수행하십시오."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
