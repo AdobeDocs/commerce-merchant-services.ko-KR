@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
+source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -79,18 +79,18 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원할 수 있도�
 
 다음 [Commerce Services 커넥터](saas.md) api 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce만 해당)의 경우 구성에 데이터 공간을 지정할 수도 있습니다.
 
-## 카탈로그 동기화
+## 카탈로그 서비스
 
-카탈로그 데이터(제품 Recommendations 및 라이브 검색)를 사용하는 서비스의 경우, [카탈로그 동기화](catalog-sync.md) process는 서비스를 최신 상태로 유지하기 위해 지속적으로 상거래 서버에서 Commerce Services로 제품 데이터를 내보냅니다.
+카탈로그 서비스는 제품 세부 사항 페이지 및 제품 목록 페이지를 포함하여 제품 관련 컨텐츠를 스토어프런트에서 빠르고 완전히 렌더링할 수 있도록 풍부한 읽기 전용 카탈로그 데이터를 제공합니다. 고객에게 최적화된 제품 경험을 제공하면서 성능 향상, 확장성 향상, 전환율 향상 등의 효과를 제공합니다.
 
 ## 새로운 기능
 
 다음 항목은 설명서의 최근 변경 사항입니다.
 
-* 업데이트 날짜: [!DNL Live Search] 의 릴리스 노트 [2.0 릴리스](/help/live-search/release-notes.md).
-* 섹션이 추가되었습니다(_경계 및 임계값_) [설치 [!DNL Live Search]](/help/live-search/install.md) 주제.
-* 추가됨 [[!DNL Payment Services] 안내서](/help/payment-services/guide-overview.md) 새로운 marketplace 확장 및 호스팅 서비스 v1.0.0에 대한 최신 정보를 제공합니다.
-* 다음 [!DNL Live Search] [성능 보고 대시보드](/help/live-search/performance.md) 는 구매자가 사용하는 검색어의 효과에 대한 통찰력을 제공합니다.
-* 에 B2B 지원이 추가되었습니다. [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
-* 가 추가되었습니다. [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) Walmart Marketplace 판매를 관리하려는 고객을 위한 [!DNL Commerce] 인스턴스.
-* 가 추가되었습니다. [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) 온라인 구매를 개선하려는 고객의 경우 BOPIS(Store in) 고객 경험을 선택하고 매장 내 및 경품 구매를 위한 모바일 사용이 가능한 원활한 옴니채널 이행 워크플로우를 제공합니다.
+* *결제 서비스*—에 대한 지침을 추가했습니다. [확장 다운로드](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension)를 업데이트하여 [상거래 서비스 커넥터에 연결](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html), 및 [추가 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) 를 눌러 사용자의 서비스가 이미 연결되어 있는지 여부(그리고 연결되지 않은 경우 어떻게 해야 하는지 확인)
+* 지금 사용 가능합니다!—[카탈로그 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) Adobe Commerce
+* *라이브 검색*—에 새 정보가 추가되었습니다. [라이브 검색 설치](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) 및 [온보딩 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) 새 모듈(Adobe Commerce v2.4.6의 가용성)에 도입된 OpenSearch 검색 엔진에 대한 정보입니다.
+* *Experience Platform 커넥터*- 주제가 추가되었습니다 [태그 사용 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) 그리고 주제 [쇼퍼 프로필 업로드 방법 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) 프로필을 만들고 AEP 태그를 사용하는 방법을 설명하는 항목입니다.
+* *빠른 체크아웃*- 개선 [온보딩 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 단계 순서 조정 및 Admin UI에 있는 최신 제품 변경 사항을 포함하여
+* *결제 서비스*—[Apple Pay 사용 가능](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 결제 서비스에서 사용할 수 있습니다.
+* *Experience Platform 커넥터*- 새 추가 [xdm 스키마 업데이트에 대한 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) (Adobe Commerce 특정 필드 이름 포함).
