@@ -2,9 +2,9 @@
 title: 결제 옵션
 description: 결제 옵션을 설정하여 스토어 고객에게 사용 가능한 방법을 사용자 정의합니다.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 0%
 고객은 장치에서 Touch ID를 사용하여 를 사용할 수 있습니다 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)은 iOS 또는 macOS 장치에 저장된 신용 및 직불 카드 결제 자격 증명을 사용합니다.
 
 다음 [!DNL Apple Pay] 버튼은 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 볼 수 있습니다.
+
+>[!NOTE]
+>
+> Apple Pay를 사용하려면 영업 담당자에게 문의하여 라이브 스토어에 사용할 수 있도록 하십시오.
 
 ### [!DNL Pay Later] 버튼
 

@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
       >
       > Apple Pay를 사용하려면 [Apple 개발자 계정이 있어야 합니다.](test-validate.md#test-in-sandbox-environment) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 *또는* 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md)를 활성화하려면 영업 담당자에게 문의하십시오.
 
+      지급 단추나 PayPal 나중에 지급 메시지에 대한 표시/해제를 켜거나 끌 때 해당 구성의 시각적 미리 보기가 설정 페이지 하단에 표시됩니다.
+
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 1. 를 수정하려면 **[!UICONTROL Shape]**, 선택 `Pill` 또는 `Rect`.
 1. 단추 높이 선택기를 활성화하려면 **[!UICONTROL Responsive button height]** 선택기.
 1. 를 수정하려면 **[!UICONTROL Label]**&#x200B;원하는 레이블 옵션을 선택합니다.
+
+   레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 해당 구성의 시각적 미리 보기가 설정 페이지 하단에 표시됩니다.
+
 1. 클릭 **[!UICONTROL Save]**.
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
