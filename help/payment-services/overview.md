@@ -4,9 +4,9 @@ description: 설치 및 사용 방법 알아보기 [!DNL Payment Services] 귀�
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ ht-degree: 0%
 1. 활성화 [!DNL Payment Services] 라이브 모드에서 라이브 지급 처리를 시작합니다.
 
 전체 지침을 받고 온보딩 프로세스를 시작하려면 다음을 참조하십시오 [온보드 [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] 데모
+
+자세한 내용은 이 비디오 를 참조하십시오 [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

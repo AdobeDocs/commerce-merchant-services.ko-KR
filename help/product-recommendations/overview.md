@@ -1,14 +1,15 @@
 ---
-title: 개요
-description: '"[!DNL Product Recommendations] 는 전환율을 높이고, 매출을 증대하고, 쇼핑객 참여를 유도하는 데 사용할 수 있는 강력한 마케팅 도구입니다."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: 소개 [!DNL Product Recommendations]
+description: '`[!DNL Product Recommendations] 는 전환율을 높이고, 매출을 증대하고, 쇼핑객의 참여를 유도하기 위해 사용할 수 있는 강력한 마케팅 도구입니다.'''
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# 개요
+# 소개 [!DNL Product Recommendations]
 
 제품 추천은 전환율을 높이고, 매출을 증대하고, 구매자 참여를 유도하는 데 사용할 수 있는 강력한 마케팅 도구입니다. Adobe Commerce 제품 권장 사항은 [Adobe Sensei](https://www.adobe.com/sensei.html)- 인공 지능 및 기계 학습 알고리즘을 사용하여 집계된 방문자 데이터에 대한 심층적인 분석을 수행합니다. 이 데이터를 Adobe Commerce 카탈로그와 결합하면 매우 매력적인 연관성 있고 개인화된 경험이 만들어집니다.
 
@@ -31,3 +32,9 @@ ht-degree: 0%
 - 다음 영역을 기준으로 9개의 개별 지능형 추천 유형 중에서 선택합니다. 쇼핑객 기반, 항목 기반, 인기도 기반, 트렌드 및 유사성 기반
 - 행동 데이터를 사용하여 구매자의 상점 여정 전체에서 추천을 개인화합니다
 - 권장 사항의 영향을 이해하는 데 도움이 되도록 각 권장 사항과 관련된 주요 지표를 측정합니다
+
+## [!DNL Product Recommendations] 데모
+
+자세한 내용은 이 비디오 를 참조하십시오 [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
