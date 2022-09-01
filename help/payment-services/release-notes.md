@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] 릴리스 정보"'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,32 @@ ht-degree: 0%
 자세한 내용은 [예정된 릴리스](https://devdocs.magento.com/release/) 릴리스 일정 및 지원에 대해 알아보십시오.
 
 자세한 내용은 [사용 가능](https://devdocs.magento.com/release/availability.html) 개발자 설명서에서 제품 호환성에 대해 알아봅니다.
+
+## 호스팅된 서비스 업데이트
+
+이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
+
++++호스팅된 서비스 업데이트
+
+_2022년 8월 31일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3629 --> 새 머천트가 처음으로 Payment Services 홈에 액세스하면 이제 페이지를 새로 고치지 않고 컨텐츠를 표시하기 위해 페이지가 즉시 로드됩니다.
+
+_2021년 8월 9일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay는 이제 PayPal 스마트 단추로 사용할 수 있습니다. 이 [결제 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 고객이 iOS 또는 macOS 장치에서 터치 ID 기능을 사용하여 Apple 페이을 선택할 수 있도록 합니다. Apple Pay는 장치에 저장된 신용 카드 및 차변 카드 결제 인증서를 사용하여 지급을 처리합니다.
+
+_2021년 6월 28일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-1720 --> 이제 매장주문에대한 분쟁은 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center로 직접 이동하여 분쟁에 대해 조치를 취할 수 있습니다. [!DNL Payment Services].
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-2854 --> 사용자 환경 개선 사항 [!DNL Payment Services] 홈에는 현재 상속 수준에서 구성을 수정하는 기능과 헤더 및 탐색 표시에 대한 개선 사항이 포함됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-2854 --> 이제 샌드박스 모드에서 프로덕션 모드로 전환하고 저장되지 않은 업데이트가 있는 보기에서 탐색하려고 하면 경고가 표시됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _2022년 6월 29일_
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services 자격 증명이 올바르지 않으면 [!DNL Payment Services] 이제 Home 이 Admin Console에 표시됩니다. 자격 증명이 잘못되었음을 알리는 자격 증명 오류가 나타납니다.
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 은 현재 과 호환되지 않습니다. `commerce-data-export` v101.20 이상에서는 호환되지 않습니다. [[!DNL Channel manager] 확장](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### 호스팅된 서비스 업데이트
-
-이러한 릴리스 노트는 현재 v1.2.0 릴리스와 호스팅된 서비스에 대한 이전 1.1.0 릴리스 간, 일반적인 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
-
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay는 이제 PayPal 스마트 단추로 사용할 수 있습니다. 이 [결제 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 고객이 장치에서 터치 ID를 사용하여 iOS 또는 macOS 장치에 저장된 신용 및 직불 카드 결제 자격 증명을 사용하는 Apple 페이을 사용할 수 있도록 해줍니다.
-
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-1720 --> 이제 매장주문에대한 분쟁은 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 에서 직접 PayPal Resolution Center 로 이동할 수 있습니다. [!DNL Payment Services] 분쟁을 해결하기 위해
-
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2854 --> 사용자 환경 개선 사항 [!DNL Payment Services] 홈에는 현재 상속 수준에서 구성을 수정하는 기능과 헤더 및 탐색 표시를 위한 개선 사항이 포함됩니다.
-
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2854 --> 이제 샌드박스 모드에서 프로덕션 모드로 전환하고 저장되지 않은 업데이트가 있는 보기에서 탐색하려고 하면 경고가 표시됩니다.
-
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
 
 ## v1.1.0
 
