@@ -1,10 +1,10 @@
 ---
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
-description: '"자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."'
+description: "자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] 온보딩
 
 를 사용하여 시작하려면 [!DNL Quick Checkout] Adobe Commerce 확장의 경우 인스턴스를 체크아웃 기능과 연결하려면 몇 가지 온보딩 단계를 완료해야 합니다.
+
+![빠른 체크아웃](assets/overview-admin-panel.png)
 
 1. [확장 가져오기](#get-extension).
 1. [을 사용하여 프로덕션 또는 샌드박스 머천트 계정 만들기 [!DNL Bolt]](#create-account-with-bolt). ID를 확인하는 데 필요한 모든 정보를 제공합니다.
@@ -21,6 +23,16 @@ ht-degree: 0%
 1. [서비스 설정 정의](#complete-admin-configuration) 를 [!DNL Quick Checkout] 확장.
 1. [Save Config 를 클릭합니다.](#enable-live-quick-checkout) 확장을 활성화하는 단추.
 1. 범위를 다음으로 전환 **기본 웹 사이트** 및 [콜백 URL 구성 을 클릭합니다.](#check-shopper-valid-account) 버튼을 클릭합니다.
+
+Gainsight가 활성화된 경우 **관광을 하세요** 버튼 [!DNL Quick Checkout] 관리 패널 정보 [!DNL Quick Checkout] Adobe Commerce용:
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > 고급:
+
+   ![빠른 체크아웃](assets/gainsight-admin.png)
+
+Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행합니다.
+
+자세한 내용은 [[!DNL Quick Checkout] 관리 패널](../quick-checkout/admin-panel.md) 주제 를 참조하십시오.
 
 >[!NOTE]
 >
