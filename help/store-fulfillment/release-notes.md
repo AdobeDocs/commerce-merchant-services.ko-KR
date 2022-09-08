@@ -1,8 +1,8 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 정보'''
-description: '"릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 정보'
+description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 4%
@@ -17,7 +17,7 @@ ht-degree: 4%
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
 
-## v1.0.1
+## v1.1.0
 
 ![해결된 문제](../assets/fix.svg) <!-- Issue WM-x -->간소화된 [체크인 경험 구성](check-in-experience-setup.md) 기본 자동차 선택 및 모델 선택 사항을 추가하여 스토어 지원 앱에 대한 정보를 제공합니다. 이전 버전에서는 판매자들이 수동으로 자동차 제어와 모델 선택을 구성해야 했습니다.
 
@@ -31,4 +31,4 @@ ht-degree: 4%
 
 ## 스토어 지원 앱
 
-스토어 지원 앱의 새 릴리스에 대한 자세한 내용은 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} 또는 [Google Play 스토어](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+스토어 지원 앱의 새 릴리스에 대한 자세한 내용은 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} 또는 [Google Play 스토어](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
