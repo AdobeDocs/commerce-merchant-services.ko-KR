@@ -1,10 +1,10 @@
 ---
-title: '''[!DNL Quick Checkout] 릴리스 정보'''
+title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,28 @@ ht-degree: 1%
 자세한 내용은 [예정된 릴리스](https://devdocs.magento.com/release/) 릴리스 일정 및 지원에 대해 알아보십시오.
 
 자세한 내용은 [사용 가능](https://devdocs.magento.com/release/availability.html) 개발자 설명서에서 제품 호환성에 대해 알아봅니다.
+
+## v1.2.0
+
+_2022년 9월 8일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-341 --> 일반 공급 릴리스—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 는 이제 Adobe Commerce 버전 2.4.5와 호환됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] Adobe Commerce 및 Magento Open Source용 는 [관리 패널 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 확장을 설정하고 사용하는 데 필요한 모든 정보를 제공합니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-364 --> 관리자 사용자 [사용자 역할 및 권한을 설정할 수 있음](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 다른 사용자가 볼 수 있도록 허용 [!DNL Quick Checkout] 관리 패널.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 이제 관리 패널에 다음과 같은 특정 섹션이 포함된 페이지 헤더가 있습니다 **개요**, **보고서**, 및 **설정**.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 관리 패널에서는 Gainsight에서 제공하는 기능 둘러보기를 제공하는 시작 위젯을 추가합니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [관리 패널 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 일체형 **구성** API 및 게시 가능한 키가 [설정](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 보기.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [관리 패널 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 일체형 **리소스** 온보딩 단계에 따라 변경되는 섹션을 참조하십시오.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [관리 패널 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 포함 **도움말 및 지원** 섹션을 참조하십시오.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 다음 [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 이제 바닥글에 확장 버전이 표시됩니다.
 
 ## v1.1.0
 
