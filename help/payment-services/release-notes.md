@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Payment Services] 릴리스 정보"'
+title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
+source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2022년 9월 12일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3705 --> 다음 `increment_id` 이제 외부 ERP 시스템의 페이아웃 조정에 사용할 수 있습니다. 이 파일은 로 전파됩니다 [`custom_id` _및_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)PayPal 웹 후크 및 머천트 활동 세부 사항 둘 다에 표시되며, 지급 목적으로 제공됩니다.
 
 _2022년 8월 31일_
 
