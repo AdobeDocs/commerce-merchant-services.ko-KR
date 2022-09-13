@@ -1,15 +1,15 @@
 ---
-title: '"저장 지원 이행 워크플로우"'
-description: '"스토어 지원 앱에서 사용할 수 있는 선택, 단계, 핸드오프 및 주문 모듈에 대해 알아봅니다. 이러한 모듈은 BOPIS 주문에 대해 전체 저장소 이행 워크플로우를 활성화합니다. Store Associates는 이러한 모듈을 사용하여 고객을 위한 스토어 픽업 주문을 관리하고 제공합니다."'
+title: 저장 지원 이행 워크플로우
+description: 스토어 지원 앱에서 사용할 수 있는 선택, 단계, 핸드오프 및 주문 모듈에 대해 알아봅니다. 이러한 모듈은 BOPIS 주문에 대해 전체 저장소 이행 워크플로우를 활성화합니다. Store Associates는 이러한 모듈을 사용하여 고객에게 저장소 픽업 주문을 관리하고 전달합니다.
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # 저장 지원 이행 워크플로우
 
@@ -17,7 +17,7 @@ Store Assist 앱에서는 Store Associates와 네 개의 모듈을 함께 제공
 
 - **[선택](#pick-module)**- 모든 주문된 품목과 공구를 전체 가시성을 통해 적합한 품목과 적절한 수량을 선택했는지 확인합니다. Store Associate는 효율성을 높이기 위해 하나 또는 여러 개의 주문을 동시에 선택할 수 있습니다.
 
-- **[단계](#stage-module)**- Store Associates에서 주문 핸드오프에 대한 주문을 쉽게 찾을 수 있도록 고객이 스토어로 이동하는 동안 주문이 이루어지는 위치를 입력합니다
+- **[단계](#stage-module)**- Store Associates에서 주문 핸드오프를 위해 주문을 쉽게 찾을 수 있도록 고객이 스토어로 이동하는 동안 주문이 이루어지는 위치를 입력합니다.
 
 - **[손 끄기](#hand-off-module)**—고객이 스토어에 도착한 후 실시간 알림을 수신하여 대기 시간 및 주문 핸드오프를 원활하게 수행할 수 있습니다
 
@@ -65,3 +65,5 @@ Pick 모듈은 Associate가 고객이 주문한 품목을 검색하고 스캔하
 ## 주문 모듈
 
 주문 모듈은 모든 기존 주문 및 해당 상태를 표시합니다. 고객이 주문 확인을 호출하면 Store Associates에서 주문 모듈에서 번호를 조회하거나 검색하여 정보를 빠르게 찾을 수 있습니다.
+
+Store Associates는 스토어 지원 앱의 주문 페이지에서 주문을 취소할 수도 있습니다.

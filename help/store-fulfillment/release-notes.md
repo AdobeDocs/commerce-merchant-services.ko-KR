@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 정보'
 description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,10 @@ ht-degree: 4%
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
 
-## v1.1.0
-
-![해결된 문제](../assets/fix.svg) <!-- Issue WM-x -->간소화된 [체크인 경험 구성](check-in-experience-setup.md) 기본 자동차 선택 및 모델 선택 사항을 추가하여 스토어 지원 앱에 대한 정보를 제공합니다. 이전 버전에서는 판매자들이 수동으로 자동차 제어와 모델 선택을 구성해야 했습니다.
+<!-- ## v1.1 -->
+<!--
+![Fixed issue](../assets/fix.svg)-->
+<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
 
 ## v1.0.0
 

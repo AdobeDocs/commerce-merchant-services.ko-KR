@@ -4,9 +4,9 @@ description: 설정 [!DNL Store Assist] 온라인 구매를 위한 종단 간 �
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Store Assist 는 Walmart Commerce Technologies에서 제공하는 Faa(Fulfillmen
 
    - **상점의 취소**—저장소에서 주문을 취소할 수 있는지 여부와 취소 권한이 있는 역할을 지정합니다
 
-   - **주문 정리 창**- 선택된 주문이 다시 복원되기 전에 스테이징에 남아 있는 스케줄링된 픽업 시간(예: 3일)을 경과하도록 지정합니다.
+   - **주문 정리 창**- 이전 기간을 지정합니다 [예상 픽업 리드 타임](enable-general.md#delivery-method-title-configuration) 선택된 순서는 복원되기 전에 스테이징에 유지됩니다(예: 3일). 기본값은 7일입니다. 이 구성을 사용하는 경우 이 시간이 만료되면 주문이 자동으로 취소됩니다. 항목이 복원되고 상인이 취소 이메일을 받습니다.
 
    - 앱 지침(선택, 스테이징, 핸드오프)에서 모든 것을 사용자 지정합니다.
 
