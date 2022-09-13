@@ -2,9 +2,9 @@
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법을 알아봅니다.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 아래 설명된 각 Adobe Commerce 이벤트에 대해 태그에서 위의 단계를 반복합니다.
 
-### 사용 가능한 이벤트
+## 사용 가능한 이벤트
 
 다음 각 이벤트에 대해 위의 단계에 따라 Adobe Commerce 이벤트를 XDM에 매핑합니다.
 
@@ -130,6 +130,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - [&#39;placeOrder&#39;](#placeorder)
 
 ### signOut {#signout}
+
+쇼핑객이 로그아웃하려 할 때 트리거됩니다.
 
 #### 데이터 요소
 
@@ -158,6 +160,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - **XDM 데이터**: `%sign-out%`
 
 ### signIn {#signin}
+
+쇼핑객이 로그인하려고 할 때 트리거됩니다.
 
 #### 데이터 요소
 
@@ -216,6 +220,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### createAccount {#createaccount}
 
+쇼핑객이 계정을 만들려고 할 때 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -272,6 +278,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - **XDM 데이터**: `%create account%`
 
 ### editAccount {#editaccount}
+
+쇼핑객이 계정을 편집하려고 할 때 트리거됩니다.
 
 #### 데이터 요소
 
@@ -330,6 +338,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### pageView {#pageview}
 
+페이지가 로드될 때 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -357,6 +367,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### productView {#productview}
 
+제품 페이지가 로드될 때 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -374,6 +386,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.sku`
+
+1. 제품 이미지 URL:
+
+   - **이름**: `product image`
+   - **확장**: `Adobe Client Data Layer`
+   - **데이터 요소 유형**: `Data Layer Computed State`
+   - **[선택 사항입니다] 경로**: `productContext.mainImageUrl`
 
 1. 제품 통화:
 
@@ -432,6 +451,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **가격 합계**: **값** = `%product price%`
    - **필드 그룹**: `productListItems` > `currencyCode`
    - **통화 코드**: **값** = `%currency code%`
+   - **필드 그룹**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **값** = `%product image%`
    - **필드 그룹**: `commerce` > `productViews` > `value`
    - **value**: **값** = `1`
 
@@ -450,6 +471,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - **XDM 데이터**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+&quot;입력할 때 검색&quot; 팝오버와 검색 결과 페이지의 이벤트에 의해 트리거됩니다.
 
 #### 데이터 요소
 
@@ -554,6 +577,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### searchResponseReceived {#searchresponsereceived}
 
+Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 페이지에 대한 결과를 반환하는 경우 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -608,6 +633,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    return suggestions;
    ```
 
+1. 제품 이미지 URL:
+
+   - **이름**: `product image`
+   - **확장**: `Adobe Client Data Layer`
+   - **데이터 요소 유형**: `Data Layer Computed State`
+   - **[선택 사항입니다] 경로**: `productContext.mainImageUrl`
+
 1. 검색 응답:
 
    - **이름**: `search response`
@@ -618,6 +650,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **필드 그룹**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **필드 그룹**: `productListItems`. 선택 **전체 개체 제공**.
+   - **필드 그룹**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **값** = `%product image%`
    - **데이터 요소**: `%search result products%`
    - **필드 그룹**: `searchResponse` > `value`
    - **value**: **값** = `1`
@@ -637,6 +671,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - **XDM 데이터**: `%search response%`
 
 ### addToCart {#addtocart}
+
+장바구니에 제품을 추가할 때 또는 장바구니의 제품 수량이 늘어날 때마다 트리거됩니다.
 
 #### 데이터 요소
 
@@ -669,6 +705,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `productContext.pricing.specialPrice`
+
+1. 제품 이미지 URL:
+
+   - **이름**: `product image`
+   - **확장**: `Adobe Client Data Layer`
+   - **데이터 요소 유형**: `Data Layer Computed State`
+   - **[선택 사항입니다] 경로**: `productContext.mainImageUrl`
 
 1. 제품 정가:
 
@@ -719,6 +762,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **필드 그룹**: `productListItems` > `priceTotal`
    - **가격 합계**: **값** = `%product price%`
    - **필드 그룹**: `productListItems` > `currencyCode`
+   - **필드 그룹**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **값** = `%product image%`
    - **통화 코드**: **값** = `%currency code%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
@@ -741,6 +786,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### viewCart {#viewcart}
 
+장바구니 페이지가 로드될 때 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -752,12 +799,19 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `storefrontInstanceContext`
 
-1. 장바구니:
+1. 제품 이미지 URL:
 
+   - **이름**: `product image`
+   - **확장**: `Adobe Client Data Layer`
+   - **데이터 요소 유형**: `Data Layer Computed State`
+   - **[선택 사항입니다] 경로**: `productContext.mainImageUrl`
+   1. 장바구니:
    - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `shoppingCartContext`
+
+
 
 1. 장바구니 ID:
 
@@ -812,12 +866,14 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 대상 `productListItems`를 채울 때 여러 항목이 있을 수 있습니다. 선택 **productListItems** > **전체 어레이 채우기**.
    - **데이터 요소**: `%product list items%`
+   - **필드 그룹**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **값** = `%product image%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
    - **필드 그룹**: `commerce` > `productListViews` > `value`
    - **value**: **값** = `1`
 
-#### 규칙 
+#### 규칙
 
 - **이름**: `view cart`
 - **확장**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - **XDM 데이터**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+장바구니에서 제품이 제거되거나 장바구니에 있는 제품의 수량이 감소될 때마다 트리거됩니다.
 
 #### 데이터 요소
 
@@ -936,6 +994,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### initiateCheckout {#initiatecheckout}
 
+쇼핑객이 체크아웃 단추를 클릭할 때 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -946,6 +1006,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `storefrontInstanceContext`
+
+1. 제품 이미지 URL:
+
+   - **이름**: `product image`
+   - **확장**: `Adobe Client Data Layer`
+   - **데이터 요소 유형**: `Data Layer Computed State`
+   - **[선택 사항입니다] 경로**: `productContext.mainImageUrl`
 
 1. 장바구니:
 
@@ -1007,6 +1074,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 대상 `productListItems`를 채울 때 여러 항목이 있을 수 있습니다. 선택 **productListItems** > **전체 어레이 채우기**.
    - **데이터 요소**: `%product list items%`
+   - **필드 그룹**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **값** = `%product image%`
    - **필드 그룹**: `commerce` > `cart` > `cartID`
    - **장바구니 ID**: **값** = `%cart id%`
    - **필드 그룹**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 
 ### placeOrder {#placeorder}
 
+쇼핑객이 주문을 할 때 트리거됩니다.
+
 #### 데이터 요소
 
 다음 데이터 요소를 만듭니다.
@@ -1038,6 +1109,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항입니다] 경로**: `storefrontInstanceContext`
+
+1. 제품 이미지 URL:
+
+   - **이름**: `product image`
+   - **확장**: `Adobe Client Data Layer`
+   - **데이터 요소 유형**: `Data Layer Computed State`
+   - **[선택 사항입니다] 경로**: `productContext.mainImageUrl`
 
 1. 장바구니:
 
@@ -1168,6 +1246,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **데이터 요소 유형**: `XDM object`
    - **필드 그룹**: `productListItems`. 대상 `productListItems`를 채울 때 여러 항목이 있을 수 있습니다. 선택 **productListItems** > **전체 어레이 채우기**.
    - **데이터 요소**: `%product list items%`
+   - **필드 그룹**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **값** = `%product image%`
    - **필드 그룹**: `commerce` > `order`
    - **고유 식별자**: **값** = `%commerce order%`
    - **필드 그룹**: `commerce` > `shipping`
