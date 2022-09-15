@@ -1,19 +1,19 @@
 ---
-title: '"온보딩 및 설치"'
-description: '"설치 방법 알아보기 [!DNL Catalog Service]"'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: 온보딩 및 설치
+description: 설치 방법 알아보기 [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # 온보딩 및 설치
 
 파트너와 고객은 Adobe Analytics Mobile Apps 또는 Analytics Premium에서 [!DNL Catalog Service] 2022년 8월 9일에 릴리스된 Adobe Commerce 베타 버전입니다. 참여하려면, Adobe의 [Adobe Commerce 베타 프로그램 용어](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
 
-계약서에 서명하면 다음 사항에 대해 우리 팀에 문의하십시오. [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 공개 Slack 채널. Adobe에서는 을(를) 사용하여 작업하는 데 필요한 모든 정보와 다음 단계를 제공합니다. [!DNL Catalog Service] 베타 버전.
+계약서에 서명하면 다음 사항에 대해 adobe 팀에 문의하십시오. [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 공개 Slack 채널. Adobe에서는 을(를) 사용하여 작업하는 데 필요한 모든 정보와 다음 단계를 제공합니다. [!DNL Catalog Service] 베타 버전.
 
 ## 전제 조건
 
@@ -46,19 +46,19 @@ ht-degree: 0%
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. 종속성을 업데이트하고 확장을 설치합니다.
+1. 로컬에서 새 구성을 테스트하고 종속성을 업데이트합니다.
 
    ```bash
    composer update
@@ -66,7 +66,7 @@ ht-degree: 0%
 
    명령은 모든 종속성을 업데이트합니다.
 
-1. 변경 사항을 커밋하고 푸시합니다.
+1. 변경 내용 커밋 및 푸시 `composer.json` 및 `composer.lock`.
 
 ### 온-프레미스
 
@@ -110,4 +110,8 @@ ht-degree: 0%
 
 설치 후 [!DNL Catalog Service], 다음을 구성해야 합니다. [Commerce Services 커넥터](../landing/saas.md) API 키를 지정하고 SaaS 데이터 공간 선택
 
-카탈로그 내보내기가 올바르게 실행되는지 확인하려면 [직장](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 그리고 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 가 실행 중이며 제품 피드 인덱서가 예약별 업데이트로 설정되어 있습니다.
+카탈로그 내보내기가 올바르게 실행되는지 확인하려면:
+
+- 확인 [직장](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 실행 중입니다.
+- 확인 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 실행 중입니다.
+- 다음을 확인합니다. `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, 및 `Product Variant Feed` 인덱서가 `Update by Schedule`.
