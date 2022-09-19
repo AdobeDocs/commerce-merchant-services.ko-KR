@@ -1,10 +1,10 @@
 ---
-title: '"패싯 관리"'
+title: "패싯 관리"
 description: 기존 관리 방법 알아보기 [!DNL Live Search] 패싯."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -81,4 +81,4 @@ ht-degree: 0%
 ## 변경 사항 게시
 
 1. 변경 사항으로 스토어를 업데이트하려면 **변경 사항 게시**.
-1. 15분 정도 기다리시면 업데이트가 매장에 나타납니다.
+1. 업데이트가 스토어에 표시될 때까지 15분 정도 기다립니다.

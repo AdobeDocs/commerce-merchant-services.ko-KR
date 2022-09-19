@@ -4,9 +4,9 @@ description: 저장 이행 기능을 검증하기 위한 테스트 계획. 테�
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ ht-degree: 0%
 <tr>
 <td><strong>새로운 주문 푸시, API 동기화 - 고객 주문</strong></td>
 <td>고객이 상점 픽업 주문을 제출합니다.</td>
-<td><ul><li>관리자 순서 보기에서 <strong>Adobe Commerce 관리 사용자</strong> 주문 동기화 상태가 <code>Sent</code></li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>관리자 순서 보기에서 <strong>Adobe Commerce 관리 사용자</strong> 주문 동기화 상태가 <code>Sent</code></li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>새로운 주문 푸시, API 동기화 - 관리자가 주문을 제출합니다.</strong></td>
 <td>Adobe Commerce <strong>관리</strong> 픽업 주문을 제출합니다.</td>
-<td><ul><li>관리 주문 보기에서 주문 동기화 상태는 <code>Sent</code>.</li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>관리 주문 보기에서 주문 동기화 상태는 <code>Sent</code>.</li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>새 주문 푸시, 예외 큐<strong></td>
@@ -161,7 +161,7 @@ ht-degree: 0%
 <li>주문 환급 이메일 수신: <code>$x amount was refunded</code></li>
 <li>주문 상태는 <code>Processing</code>.</li>
 <li>Adobe Commerce에서 만든 대변 메모(크론이 작동할 때까지 대기).</li>
-<li>일부 항목을 선택하지 않은 경우 [!UICONTROL Ready for Pickup] 닐피킹 또는 환불 섹션이 포함된 이메일이 표시됩니다. <code>DISPLAY COMMENT HISTORY</code> 표시 <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>일부 항목을 선택하지 않은 경우 [!UICONTROL Ready for Pickup] nil 선택 또는 환급 섹션이 포함된 이메일이 표시됩니다. <code>DISPLAY COMMENT HISTORY</code> 표시 <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> 플래그 <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 <tr>
 <td>
 <strong>단일 주문 피킹—행복한 경로, 커브사이드 픽업</strong></td>
-<td>단일 및 복수 수량 품목을 선택합니다. 밀림 없음 및 커브사이드 픽업(스테이징 포함).
+<td>단일 및 복수 수량 품목을 선택합니다. nil 선택기가 없고, 경사진(스테이징 포함).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>다중 주문 피킹—행복한 경로, 커브사이드 픽업하기</strong></td>
-<td>단일 및 다중 수량 품목. 닐코핑 없음 및 커브사이드 픽업(스테이징 포함)</td>
+<td>단일 및 다중 수량 품목. nil 선택기가 없고, 조정 픽업(스테이징 포함)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>단일 주문 피킹—저장 내 경로 픽업</strong></td>
-<td>단일 및 다중 수량 품목. Nilpick 없음 및 Instore Pick-up(스테이징 포함)</td>
+<td>단일 및 다중 수량 품목. nil 선택기가 없고 픽업(스테이징 포함) 설치</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>다중 주문 선택—행복한 경로, 매장 내 픽업</strong></td>
-<td>단일 및 복수 수량 품목을 선택합니다. 밀림 없음 및 커브사이드 픽업(스테이징 포함).</td>
+<td>단일 및 복수 수량 품목을 선택합니다. nil 선택기가 없고, 경사진(스테이징 포함).</td>
 <td></td>
 </tr>
 <tr>

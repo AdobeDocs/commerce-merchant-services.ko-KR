@@ -2,9 +2,9 @@
 title: 설치 [!DNL Payment Services]
 description: Payments Services 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 확장 설치
 
-을(를) 설치할 수 있습니다 [!DNL Payment Services] 둘 다 확장 [!DNL Adobe Commerce] Magento ID([자이드](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions))가 작성기 키를 사용하여 등록 프로세스에 제공됩니다. [!DNL Magento] 오픈 소스 고객은 온-프레미스 지침을 사용합니다.
+을(를) 설치할 수 있습니다 [!DNL Payment Services] 둘 다 확장 [!DNL Adobe Commerce] 상거래 계정에 연결된 클라우드 인프라 및 온-프레미스 인스턴스에서 액세스 [자이드](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 등록 프로세스에서 제공됩니다. [!DNL Magento Open Source] 고객은 온-프레미스 지침을 사용합니다.
 
 작성기는 초기 설치 중에 이러한 키를 사용합니다 [!DNL Adobe Commerce]또는 작성기 키가 이전에 `auth.json` 파일.
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ### 온-프레미스 및 기타 구성
 
-이 메서드는 을 설치하는 데 사용됩니다 [!DNL Payment Services] 온-프레미스 인스턴스 및 [!DNL Magento] 오픈 소스 고객.
+이 메서드는 을 설치하는 데 사용됩니다 [!DNL Payment Services] 온-프레미스 인스턴스 및 [!DNL Magento Open Source] 고객.
 
 1. 확장을 가져오려면 다음 명령을 실행합니다.
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-작성기 키가 [!DNL Payment Services] 등록.
+작성기 키가 `MageID` 다음 중 사용 [!DNL Payment Services] 등록.
 
 구성된 작성기 키를 보려면 다음을 수행하십시오.
 
@@ -130,7 +130,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. 자세한 내용은 [Magento ID와 연결된 키는 무엇입니까?](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 자세한 내용은 [상거래 계정과 연결된 키는 무엇입니까? `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### PHP에 대한 메모리가 부족합니다.
 

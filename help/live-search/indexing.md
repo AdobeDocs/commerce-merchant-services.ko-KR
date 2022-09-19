@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] 색인 지정"'
-description: '"방법 알아보기 [!DNL Live Search] 제품 속성 속성을 인덱싱합니다."'
+title: "[!DNL Live Search] 색인 지정"
+description: "방법 알아보기 [!DNL Live Search] 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # 색인 지정
 
-제품 속성 속성(메타데이터)은 카탈로그에서 속성을 사용할 수 있는 방법, 저장소에서 속성 모양과 동작, 데이터 전송 작업에 포함된 데이터를 결정합니다. 속성 메타데이터의 범위는 다음과 같습니다 `website/store/store view`.
+제품 속성 속성(메타데이터)이 결정합니다.
+
+* 카탈로그에서 속성을 사용할 수 있는 방법
+* 스토어의 모양과 동작
+* 데이터 전송 작업에 포함된 데이터
+
+속성 메타데이터의 범위는 다음과 같습니다 `website/store/store view`.
 
 다음 [!DNL Live Search] API를 사용하면 클라이언트가 [storefront 속성](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 설정 `Yes` ( Adobe Commerce 관리자) 아래에 그룹화됩니다. 활성화되면, `Search Weight` 및 `Visible in Advanced Search` 속성에 대해 을 설정할 수 있습니다.
 
@@ -61,7 +67,7 @@ When [!DNL Live Search] 가 구성 및 온보딩 중에 동기화되므로 초�
 
 1. 업데이트된 제품은 Adobe Commerce 인스턴스에서 카탈로그 서비스로 동기화됩니다.
 1. 인덱싱 서비스는 카탈로그 서비스에서 제품 업데이트를 계속 찾습니다. 업데이트된 제품은 카탈로그 서비스에 도달하면 색인화됩니다.
-1. 제품 업데이트를 사용할 수 있는 데 최대 15분이 걸릴 수 있습니다. [!DNL Live Search].
+1. 에서 제품 업데이트를 사용할 수 있는 데에는 최대 15분이 걸릴 수 있습니다. [!DNL Live Search].
 
 ## 클라이언트 검색
 

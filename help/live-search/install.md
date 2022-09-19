@@ -1,10 +1,10 @@
 ---
-title: '"설치 [!DNL Live Search]"'
-description: '"설치, 업데이트 및 제거 방법을 알아봅니다. [!DNL Live Search] Adobe Commerce"'
+title: "설치 [!DNL Live Search]"
+description: "설치, 업데이트 및 제거 방법을 알아봅니다. [!DNL Live Search] Adobe Commerce"
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce
 
 ### 향후 제품 업데이트
 
-초기 동기화 후 증분 제품 업데이트를 상점 검색 시 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [색인 지정 - 스트리밍 제품 업데이트](indexing.md).
+초기 동기화 후 증분 제품 업데이트를 상점 검색에 사용할 수 있게 되는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용을 보려면 [색인 지정 - 스트리밍 제품 업데이트](indexing.md).
 
 ## 연결 테스트 {#test-connection}
 

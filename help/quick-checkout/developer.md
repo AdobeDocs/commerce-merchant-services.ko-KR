@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Quick Checkout] Adobe Commerce 개발자 정보용"'
-description: '"[!DNL Quick Checkout] 개발자 정보."'
+title: "[!DNL Quick Checkout] Adobe Commerce 개발자 정보용"
+description: "[!DNL Quick Checkout] 개발자 정보."
 exl-id: 8926eda4-b4de-4938-a86c-b095616f61f6
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
 # [!DNL Quick Checkout] 개발자 정보
 
-이 주제에서는 Adobe Commerce 및 Magento Open Source 코드와 함께 긴밀하게 작업하고 [!DNL Quick Checkout] 확장.
+이 주제에서는 Adobe Commerce과 긴밀하게 협력하는 개발자를 위한 정보를 제공합니다. [!DNL Magento Open Source] 코드를 작성하고 [!DNL Quick Checkout] 확장.
 
 ## 확장 지점
 

@@ -2,9 +2,9 @@
 title: 활성화 [!DNL Payment Services] 프로덕션
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다 [!DNL Payment Services] 제작 관련
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 클릭 **[!UICONTROL Enable Payment Services]**.
 
-   이 옵션은 아직 구성되지 않은 경우 표시됩니다 [!DNL Payment Services] 하나 이상의 Magento 웹 사이트에 대한 결제 방법입니다.
+   이 옵션은 아직 구성되지 않은 경우 표시됩니다 [!DNL Payment Services] 하나 이상의 웹 사이트에 대한 결제 방법입니다.
 
    관련 옵션이 확장되어 홈 보기에서 설정 영역으로 이동됩니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 여기에서 [!DNL Payment Services] 옵션 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
 

@@ -4,9 +4,9 @@ description: 저장 픽업 주문에 대한 이행 프로세스 중에 고객과
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Store Fulfillment 전자 메일 템플릿은 기본 메시징 및 설정으로 �
 </tr>
 <tr>
 <td><strong>주문 전송 준비 이메일 복사 방법</strong></td>
-<td>이메일 "탄소 사본"이 을 사용하도록 전송됩니다.</td>
+<td>사용할 전자 메일 복사 방법(탄소 복사)입니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -136,7 +136,7 @@ Store Fulfillment 전자 메일 템플릿은 기본 메시징 및 설정으로 �
 </tr>
 <tr>
 <td><strong>이메일 복사 방법이 선택되었습니다.</strong></td>
-<td>사용할 이메일 "탄소 사본"을 보내는 방법입니다.</td>
+<td>사용할 전자 메일 복사 방법(탄소 복사)입니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -185,7 +185,7 @@ Store Fulfillment 전자 메일 템플릿은 기본 메시징 및 설정으로 �
 </tr>
 <tr>
 <td><strong>주문 지연 복사 전송 방법</strong></td>
-<td>사용할 이메일 "탄소 사본"을 보내는 방법입니다.</td>
+<td>사용할 전자 메일 복사 방법(탄소 복사)입니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -236,7 +236,7 @@ Store Fulfillment 전자 메일 템플릿은 기본 메시징 및 설정으로 �
 </tr>
 <tr>
 <td><strong>주문 전송 취소 복사 방법</strong></td>
-<td>사용할 이메일 "탄소 사본"을 보내는 방법입니다.</td>
+<td>사용할 전자 메일 복사 방법(탄소 복사)입니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -292,7 +292,7 @@ Store Fulfillment 전자 메일 템플릿은 기본 메시징 및 설정으로 �
 </tr>
 <tr>
 <td><strong>주문 일부 취소된 복사 전송 방법</strong></td>
-<td>사용할 이메일 "탄소 사본"을 보내는 방법입니다.</td>
+<td>사용할 전자 메일 복사 방법(탄소 복사)입니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>

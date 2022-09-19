@@ -1,17 +1,17 @@
 ---
-title: '"규칙"'
-description: '"[!DNL Live Search] 규칙은 논리를 작업과 결합하여 쇼핑 경험을 형성합니다."'
+title: "규칙"
+description: "[!DNL Live Search] 규칙은 논리를 작업과 결합하여 쇼핑 경험을 형성합니다."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
 # 규칙
 
-[!DNL Live Search] 규칙은 논리를 작업과 결합하여 쇼핑객의 검색 경험을 스토어에서 형성합니다. 규칙을 사용하여 비즈니스 목표를 지원하기 위해 제품을 증폭, 매립, 고정 또는 숨길 수 있습니다.
+[!DNL Live Search] 규칙은 논리를 작업과 결합하여 쇼핑객의 검색 경험을 스토어에서 형성합니다. 규칙을 사용하여 제품을 증폭, 매립, 고정 또는 숨겨 비즈니스 목표를 지원하기 위해 실시간으로 검색 결과를 조정할 수 있습니다.
 
 각 규칙에는 다음의 세 가지 기본 구성 요소가 있습니다.
 
