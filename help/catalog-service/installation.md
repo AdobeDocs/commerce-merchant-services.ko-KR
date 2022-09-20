@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
+source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -115,3 +115,9 @@ ht-degree: 0%
 - 확인 [직장](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 실행 중입니다.
 - 확인 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 실행 중입니다.
 - 다음을 확인합니다. `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, 및 `Product Variant Feed` 인덱서가 `Update by Schedule`.
+
+## [!DNL Catalog Service] 데모
+
+자세한 내용은 이 비디오 를 참조하십시오 [!DNL Catalog Service] 설치 및 테스트:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
