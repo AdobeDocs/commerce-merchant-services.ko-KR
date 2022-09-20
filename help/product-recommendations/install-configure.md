@@ -2,9 +2,9 @@
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ composer require magento/module-page-builder-product-recommendations
 ```
 
 사용 [!DNL Product Recommendations] 페이지 빌더에서 활성 상태의 기존 를 추가할 수 있습니다 [추천 단위](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 페이지, 블록 및 동적 블록과 같이 페이지 빌더에서 만든 모든 컨텐츠에 매핑해야 합니다.
+
+>[!NOTE]
+>
+>[!DNL Page Builder] 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다.
 
 ### 시각적 유사성 권장 사항 유형 추가 {#vissimsupport}
 

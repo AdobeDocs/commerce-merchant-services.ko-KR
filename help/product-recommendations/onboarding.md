@@ -1,9 +1,10 @@
 ---
 title: 온보딩
 description: 에서 요구 사항 및 지원되는 플랫폼에 대해 알아봅니다. [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -32,6 +33,10 @@ ht-degree: 0%
 ### Page Builder 지원
 
 [!DNL Product Recommendations] 페이지에 페이지 빌더 컨텐츠 유형으로 추가할 수 있습니다. 제품 Recommendations에 Page Builder 지원을 추가하려면 [설치 및 구성](install-configure.md).
+
+>[!NOTE]
+>
+>[!DNL Page Builder] 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다.
 
 ### B2B 지원 {#b2bsupport}
 
