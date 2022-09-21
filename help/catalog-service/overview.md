@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service]"'
-description: '"[!DNL Catalog Service] Adobe Commerce용 는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다."'
-source-git-commit: eb2242ac99cfaef4ed75936a1b5cc800cc451c83
+title: '`[!DNL Catalog Service]`'
+description: '`[!DNL Catalog Service] Adobe Commerce용 는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다.'''
+exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Adobe Commerce
 
@@ -48,5 +48,3 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 ## 구현
 
 설치 프로세스에는 [Commerce Services 커넥터](../landing/saas.md). 이 작업이 완료되면 시스템 통합자가 상점 코드를 업데이트하여 [!DNL Catalog Service] 쿼리 모두 [!DNL Catalog Service] 쿼리는 GraphQL 게이트웨이로 라우팅됩니다. URL은 온보딩 프로세스 중에 제공됩니다.
-
-[Adobe Commerce Devdocs](https://devdocs.magento.com/catalog-service/index.html) 코어와 의 차이점에 대해 설명합니다. [!DNL Catalog Service] 쿼리 각 쿼리에 대한 참조 정보도 포함됩니다.

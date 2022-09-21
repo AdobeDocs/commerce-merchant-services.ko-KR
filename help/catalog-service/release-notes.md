@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] 릴리스 정보'
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '283'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,6 @@ ht-degree: 0%
 * 번들 및 그룹화된 제품
 * 카탈로그에서 변형을 삭제하면 업데이트가 수신되지 않습니다
 * B2B 가시성 무시: 제품을 검색 또는 특정 고객 그룹의 장바구니에 추가할 수 있습니다
-
 
 ## 베타 릴리스
 

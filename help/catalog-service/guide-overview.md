@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] 안내서 개요"'
-description: '"[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 질의보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 더 빨리 검색하는 방법을 제공합니다."'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: '`[!DNL Catalog Service] 안내서 개요'''
+description: '`[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 질의보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 더 빨리 검색하는 방법을 제공합니다.'
+exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] 안내서 개요
 
@@ -20,8 +20,6 @@ ht-degree: 0%
 * Adobe [!DNL Commerce] 시스템 관리자가 서비스를 설치 및 유지 관리합니다. [!DNL Catalog Service] 에는 표준 관리자 사용자를 위한 관리 UI 또는 기능이 없습니다.
 
 * 통합자는 GraphQL 쿼리를 작성하고 프런트 엔드 클라이언트를 사용하는 상점 전면에 통합합니다.
-
-에서 자세한 통합 정보를 찾을 수 있습니다. [Adobe Commerce용 카탈로그 서비스](https://devdocs.magento.com/catalog-service/index.html).
 
 ## 추가 설명서
 
