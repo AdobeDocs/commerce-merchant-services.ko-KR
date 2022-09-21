@@ -1,9 +1,9 @@
 ---
 title: productSearch 쿼리
 description: '''Adobe Commerce 카탈로그 서비스에 대한 ''productSearch'' GraphQL 쿼리에 대한 참조 안내서입니다.'''
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # productSearch 쿼리
 
-Adobe Commerce용 카탈로그 서비스 `productSearch` query에서는 LiveSearch를 사용하여 입력으로 지정된 SKU에 대한 세부 사항을 반환할 수 있습니다. 이 쿼리는 [`productSearch` 쿼리](https://devdocs.magento.com//live-search/product-search.html), LiveSearch는 `productView` 개체. 자세한 내용은 [`productSearch` 쿼리](https://devdocs.magento.com//live-search/product-search.html) 참조 정보 항목입니다.
+Adobe Commerce용 카탈로그 서비스 `productSearch` query에서는 라이브 검색을 사용하여 입력으로 지정된 SKU에 대한 세부 사항을 반환할 수 있습니다. 이 쿼리는 [`productSearch` 쿼리](https://devdocs.magento.com//live-search/product-search.html), 라이브 검색은 `productView` 개체. 자세한 내용은 [`productSearch` 쿼리](https://devdocs.magento.com//live-search/product-search.html) 참조 정보 항목입니다.
 
 ## 구문
 
@@ -32,7 +32,7 @@ productSearch(
 | Header | 설명 |
 |--- | ---|
 | `Magento-Customer-Group` | 상점 클라이언트의 경우 이 값은 `dataservices_customer_group` 쿠키 . |
-| `Magento-Environment-Id` | 이 값은 다음에 표시됩니다. **시스템** > **Commerce Services 커넥터** > **SaaS 식별자** > **데이터 공간 ID** 또는 를 실행하여 `bin/magento config:show services_connector/services_id/environment_id` 명령. |
+| `Magento-Environment-Id` | 이 값은 `bin/magento config:show services_connector/services_id/environment_id` 명령. 의 &quot;데이터 공간&quot; 필드를 참조하십시오. [상거래 서비스](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | 활성 저장소 보기에 연결된 저장소에 할당된 코드입니다. For example, `main_website_store`. |
 | `Magento-Store-View-Code` | 활성 저장소 보기에 지정된 코드입니다. 예, `default`. |
 | `Magento-Website-Code` | 활성 저장소 보기와 연결된 웹 사이트에 지정된 코드입니다. 예, `base`. |
