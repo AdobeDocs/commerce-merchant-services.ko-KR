@@ -1,7 +1,7 @@
 ---
 title: 제품 쿼리
 description: '''Adobe Commerce 카탈로그 서비스에 대한 ''products'' GraphQL 쿼리에 대한 참조 안내서입니다.'''
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '1226'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 제품 쿼리
 
-Adobe Commerce용 카탈로그 서비스 `products` 쿼리는 입력으로 지정된 SKU에 대한 세부 정보를 반환합니다. 이 쿼리의 이름은 [`products` 쿼리](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) 여기에는 핵심 Adobe Commerce 및 Magento Open Source이 제공되지만, 몇 가지 차이점이 있습니다.
+Adobe Commerce용 카탈로그 서비스 `products` 쿼리는 입력으로 지정된 SKU에 대한 세부 정보를 반환합니다. 이 쿼리의 이름은 [`products` 쿼리](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 여기에는 핵심 Adobe Commerce 및 Magento Open Source이 제공되지만, 몇 가지 차이점이 있습니다.
 
 카탈로그 서비스 쿼리에는 입력으로 하나 이상의 SKU 값이 필요합니다. 쿼리는 주로 다음 유형의 컨텐츠를 렌더링하기 위해 정보를 검색하도록 설계되었습니다.
 

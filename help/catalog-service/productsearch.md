@@ -1,7 +1,7 @@
 ---
 title: productSearch 쿼리
 description: '''Adobe Commerce 카탈로그 서비스에 대한 ''productSearch'' GraphQL 쿼리에 대한 참조 안내서입니다.'''
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 2%
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 # productSearch 쿼리
 
-Adobe Commerce용 카탈로그 서비스 `productSearch` query에서는 라이브 검색을 사용하여 입력으로 지정된 SKU에 대한 세부 사항을 반환할 수 있습니다. 이 쿼리는 [`productSearch` 쿼리](https://devdocs.magento.com//live-search/product-search.html), 라이브 검색은 `productView` 개체. 자세한 내용은 [`productSearch` 쿼리](https://devdocs.magento.com//live-search/product-search.html) 참조 정보 항목입니다.
+Adobe Commerce용 카탈로그 서비스 `productSearch` query에서는 라이브 검색을 사용하여 입력으로 지정된 SKU에 대한 세부 사항을 반환할 수 있습니다. 이 쿼리는 [`productSearch` 쿼리](https://devdocs.magento.com/live-search/product-search.html), 라이브 검색은 `productView` 개체. 자세한 내용은 [`productSearch` 쿼리](https://devdocs.magento.com/live-search/product-search.html) 참조 정보 항목입니다.
 
 ## 구문
 
