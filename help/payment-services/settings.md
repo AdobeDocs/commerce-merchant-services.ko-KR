@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ ht-degree: 0%
 >
 > 다중 저장소 또는 레거시 구성의 경우 다음을 참조하십시오 [관리자에서 구성](configure-admin.md) 주제.
 
-## 결제 서비스 활성화
+## 일반 설정 구성
 
-다음을 활성화할 수 있습니다 [!DNL Payment Services] 웹 사이트에 대해 를 설정하고, [!UICONTROL General] 섹션을 참조하십시오.
+다음 [!UICONTROL General] 설정은 결제 방법으로 Payment Services를 활성화 또는 비활성화하고, 고객 트랜잭션에 정보를 추가하여 웹 사이트 또는 스토어 뷰에 사용자 지정 정보를 표시하거나 접두어 추가하는 기능을 제공합니다.
+
+### 결제 서비스 활성화
+
+다음을 활성화할 수 있습니다 [!DNL Payment Services] 웹 사이트에 대해 샌드박스 테스트 또는 라이브 지급 중 하나를 활성화합니다.
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
    다음 _[!UICONTROL General]_섹션에는 사용 가능한 설정이 포함되어 있습니다. [!DNL Payment Services] 를 결제 방법으로 사용할 수 있습니다.
 
-1. 활성화하려면 [!DNL Payment Services] 매장에 대한 결제 방법으로 _[!UICONTROL General]_섹션, 전환(**[!UICONTROL Enable Payment Services as payment method]**) `Yes`.
+1. 활성화하려면 [!DNL Payment Services] 매장에 대한 결제 방법으로 _[!UICONTROL General]_섹션, 전환&#x200B;**[!UICONTROL Enable Payment Services as payment method]**to `Yes`.
 
 1. 아직 테스트 중인 경우 [!DNL Payment Services] 스토어에 대해 **결제 모드** to `Sandbox`. Live Payments를 사용할 준비가 된 경우 로 설정합니다. `Production`.
 
@@ -49,7 +53,31 @@ ht-degree: 0%
 
 이제 의 기본 설정을 계속 변경할 수 있습니다 [결제 옵션](#configure-payment-options) 함수 및 저장소 표시.
 
-### 일반 구성 옵션
+### 소프트 설명자 추가
+
+을(를) 추가할 수 있습니다 [!UICONTROL Soft Descriptor] 웹 사이트 또는 개별 스토어 보기 구성에 매핑합니다. 소프트 설명자는 고객 거래 은행 명세서에 표시됩니다. 예를 들어 매장/브랜드/카탈로그가 여러 개 있는 경우, 사용자 지정 텍스트를에 추가하여 두 저장소 간에 쉽게 구분할 수 있습니다 [!UICONTROL Soft Descriptor] 필드.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![홈 보기](assets/payment-services-menu-small.png)
+
+1. 클릭 **[!UICONTROL Settings]**. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
+1. 웹 사이트 또는 저장소 보기를 선택합니다. **[!UICONTROL Scope]** 소프트 설명자를 생성할 드롭다운 메뉴 초기 설정의 경우 다음 상태로 둡니다. **[!UICONTROL Default]** 기본값을 설정하려면 다음을 수행하십시오.
+1. 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하고 `Custom descriptor`.
+1. 클릭 **[!UICONTROL Save]**.
+1. 웹 사이트 또는 저장소 보기에 대해 구성된 기본값 이외의 소프트 설명자를 생성하려면 다음을 수행합니다.
+   1. 웹 사이트 또는 저장소 보기를 선택합니다. **[!UICONTROL Scope]** 소프트 설명자를 생성할 드롭다운 메뉴
+   1. 전환 *해제* **[!UICONTROL Use website]** 또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다름).
+   1. 텍스트 필드에 사용자 지정 텍스트를 추가합니다.
+   1. 클릭 **[!UICONTROL Save]**.
+1. 웹 사이트 또는 저장소 보기에 대해 사용하려면 기본 소프트 설명자를 참조하십시오 *또는* 상위 웹 사이트에 사용되는 소프트 설명자:
+   1. 웹 사이트 또는 저장소 보기를 선택합니다. **[!UICONTROL Scope]** 기존 소프트 설명자를 활성화할 드롭다운 메뉴
+   1. 전환 *on* **[!UICONTROL Use website]** 또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다름).
+   1. 클릭 **[!UICONTROL Save]**.
+
+   변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
+
+### 구성 옵션
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
@@ -57,6 +85,7 @@ ht-degree: 0%
 | [!UICONTROL Payment mode] | 저장소 보기 | 스토어에 대한 메서드 또는 환경을 설정합니다. 옵션: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | 저장소 보기 | 샌드박스 온보딩 중에 자동으로 생성되는 샌드박스 머천트 ID입니다. |
 | [!UICONTROL Production Merchant ID] | 저장소 보기 | 샌드박스 온보딩 중에 자동으로 생성되는 프로덕션 머천트 ID입니다. |
+| [!UICONTROL Soft Descriptor] | 웹 사이트 또는 스토어 보기 | 웹 사이트 및 저장소 보기에 소프트 설명자를 추가하여 브랜드, 저장소 또는 제품 라인을 설명하는 고객 트랜잭션에 정보를 추가합니다. 다음 [!UICONTROL Use website] 토글은 웹 사이트 수준에 추가된 소프트 설명자를 적용합니다. 다음 [!UICONTROL Use default] 토글(toggle)은 기본값으로 추가된 소프트 설명자를 적용합니다. |
 
 ## 결제 옵션 구성
 
@@ -144,7 +173,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
 1. 가로 레이아웃에서 태그라인을 활성화하려면 **[!UICONTROL Show tagline]** 선택기.
 1. 를 수정하려면 **[!UICONTROL Color]**&#x200B;원하는 색상 옵션을 선택합니다.
-1. 를 수정하려면 **[!UICONTROL Shape]**, 선택 `Pill` 또는 `Rect`.
+1. 를 수정하려면 **[!UICONTROL Shape]**, 선택 `Pill` 또는 `Rectangle`.
 1. 단추 높이 선택기를 활성화하려면 **[!UICONTROL Responsive button height]** 선택기.
 1. 를 수정하려면 **[!UICONTROL Label]**&#x200B;원하는 레이블 옵션을 선택합니다.
 
