@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -169,3 +169,11 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 | [!UICONTROL Responsive Button Height] | 저장소 보기 | 결제 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | 저장소 보기 | 지급 버튼의 높이를 정의합니다. 기본값: 없음 |
 | [!UICONTROL Label] | 저장소 보기 | 결제 버튼에 표시되는 레이블을 정의합니다. 옵션: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## 여러 PayPal 계정 사용
+
+Payment Services에서 내에서 여러 PayPal 계정을 사용할 수 있습니다 **하나** 웹 사이트 수준의 머천트 계정. 예를 들어, 여러 국가(서로 다른 사용)에서 저장소를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부 부분에 Adobe Commerce을 사용하지만 *모두*&#x200B;여러 PayPal 계정을 사용하도록 머천트 계정을 설정할 수 있습니다.
+
+자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 웹 사이트, 스토어 및 저장소 보기의 계층 구조에 대한 자세한 정보.
+
+영업 담당자가 [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) PayPal을 사용하여 추가 사이트에 머천트 계정을 설정하고 온보딩하는 경우, 사용자가 구성하도록 구성한 PayPal 단추가 사이트에 표시되도록 합니다. 웹 사이트에 대해 여러 PayPal 계정을 사용하는 데 도움이 필요하면 영업 담당자에게 문의하십시오.

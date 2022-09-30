@@ -4,9 +4,9 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -154,9 +154,9 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. 라이브 스토�
 | [!UICONTROL Code] | 대변(*CR*) 또는 차변(*DR*) |
 | [!UICONTROL Reference ID] | 이 이벤트와 관련된 원래 거래 ID |
 | [!UICONTROL Invoice] | 거래의 송장 ID(주문당 하나) |
-| [!UICONTROL Commerce order] | 상거래 주문 ID <br> <br>관련 항목을 보려면 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html)를 클릭한 다음 ID를 클릭합니다. |
-| [!UICONTROL Commerce trans] | 상거래 거래 ID |
-| [!UICONTROL Pay method] | 신용 카드 유형—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—및 관련 카드 공급자(예: *비자* 또는 *마스터 카드*) |
+| [!UICONTROL Commerce order] | 상거래 주문 ID <br> <br>관련 항목을 보려면 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, ID를 클릭합니다. |
+| [!UICONTROL Commerce trans] | 상거래 거래 ID <br> <br>관련 항목을 보려면 [트랜잭션 정보](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, ID를 클릭합니다. |
+| [!UICONTROL Pay method] | 신용 카드 유형—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—및 관련 카드 공급자(예: *비자* 또는 *마스터 카드*) |
 | [!UICONTROL Trans amt] | 거래 금액 |
 | [!UICONTROL Cur] | 거래 금액에 대한 통화 단위 |
 | [!UICONTROL Pending] | 아직 지급되지 않은 금액 |
