@@ -4,9 +4,9 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 저장소의 주문 및 지불을 명확하게 파악할 수 있도록 포괄적인 보고를 제공합니다.
 
-![재무 보고서 보기](assets/reports-view-new.png)
+![재무 보고서 보기](assets/report-view.png)
 
 모든 지불에 대한 심층적인 정보를 볼 수 있도록 사용할 수 있는 Payouts 보고 보기는 두 가지가 있습니다.
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 시간 경과에 따른 크레딧과 차변량 및 이동 평균의 데이터 시각화 차트를 볼 수 있습니다.
 
-![관리에서 지급 데이터 시각화](assets/payouts-data.png)
+![관리에서 지급 데이터 시각화](assets/payouts-report.png)
 
 클릭 **[!UICONTROL View Report]** 세부 테이블 형식으로 이동 [결제 보고서 보기](#payouts-report-view).
 

@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ _2021년 6월 28일_
 
 _2022년 9월 30일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-784 --> 이제 결제 서비스에는 머천트 계정을 [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). 이렇게 하면 머천트가 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나, 비즈니스의 한 부분에 Adobe Commerce을 사용할 수 있습니다.
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-784 --> 이제 결제 서비스에는 머천트 계정을 [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 이렇게 하면 머천트가 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나, 비즈니스의 한 부분에 Adobe Commerce을 사용할 수 있습니다.
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-3231 --> 상인은 다음을 수행할 수 있습니다 [추가 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 고객 거래 은행 명세서에 표시되는 웹 사이트 또는 개별 스토어 보기 구성으로 브랜드, 상점 또는 제품 라인을 디자인합니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 스마트 단추를 활성화 또는 비활성화합니다](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) 을 사용하도록 선택할 수 있습니다.
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 스마트 단추를 활성화 또는 비활성화합니다](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 을 사용하도록 선택할 수 있습니다.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3546 --> 고객이 클릭하면 **[!UICONTROL Edit cart]**&#x200B;로 페이지가 리디렉션되고 빈 장바구니를 표시하는 대신 업데이트된 항목을 표시합니다.
 
