@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,24 @@ ht-degree: 1%
 자세한 내용은 [예정된 릴리스](https://devdocs.magento.com/release/) 릴리스 일정 및 지원에 대해 알아보십시오.
 
 자세한 내용은 [사용 가능](https://devdocs.magento.com/release/availability.html) 개발자 설명서에서 제품 호환성에 대해 알아봅니다.
+
+## 관리 패널 업데이트
+
+이러한 릴리스 노트는 관리 패널에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
+
++++관리 패널 업데이트
+
+_2022년 10월 5일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 관리 패널은 [Gainsight에서 제공하는 기능 투어](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> 다음 **보고서** 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 곧 사용할 수 있는 다이어그램과 보고 정보의 아웃라인이 포함되어 있습니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> 다음 **보고서** 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 곧 사용할 수 있는 다이어그램과 보고 정보에 대한 필터 날짜 범위가 표시됩니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 이제 바닥글에 react 앱 버전이 표시됩니다.
+
++++
 
 ## v1.2.0
 

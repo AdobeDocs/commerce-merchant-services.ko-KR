@@ -1,10 +1,10 @@
 ---
-title: "Adobe Commerce의 체크아웃 흐름"
+title: "Adobe Commerce에서 볼트 사용자의 체크아웃 흐름"
 description: 개요 [!DNL Quick Checkout] Adobe Commerce에서 볼트 사용자에 대한 흐름.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
