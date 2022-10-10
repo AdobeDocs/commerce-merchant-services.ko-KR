@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 4fcab515a816c03320fa035df3e9f6dfdd8643a9
+source-git-commit: 8d36cd54e6e5ca2fe70afd0152c23fa73031aea0
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -87,10 +87,20 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원할 수 있도�
 
 다음 항목은 설명서의 최근 변경 사항입니다.
 
-* *결제 서비스*—에 대한 지침을 추가했습니다. [확장 다운로드](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension)를 업데이트하여 [상거래 서비스 커넥터에 연결](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html), 및 [추가 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) 를 눌러 사용자의 서비스가 이미 연결되어 있는지 여부(그리고 연결되지 않은 경우 어떻게 해야 하는지 확인)
-* 지금 사용 가능합니다!—[카탈로그 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) Adobe Commerce
-* *라이브 검색*—에 새 정보가 추가되었습니다. [라이브 검색 설치](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) 및 [온보딩 개요](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) 새 모듈(Adobe Commerce v2.4.6의 가용성)에 도입된 OpenSearch 검색 엔진에 대한 정보입니다.
-* *Experience Platform 커넥터*- 주제가 추가되었습니다 [태그 사용 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) 그리고 주제 [쇼퍼 프로필 업로드 방법 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) 프로필을 만들고 AEP 태그를 사용하는 방법을 설명하는 항목입니다.
-* *빠른 체크아웃*- 개선 [온보딩 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 단계 순서 조정 및 Admin UI에 있는 최신 제품 변경 사항을 포함하여
-* *결제 서비스*—[Apple Pay 사용 가능](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 결제 서비스에서 사용할 수 있습니다.
-* *Experience Platform 커넥터*- 새 추가 [xdm 스키마 업데이트에 대한 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) (Adobe Commerce 특정 필드 이름 포함).
+* **결제 서비스**<!-- Issue PAY-3483, PAY-3611, PAY-3655, PAY-3705, PAY-3742 -->
+   * *신규* 를 추가했습니다. [사용 가능한 데이터 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) 이 설명에서는 외부 조정을 위해 재무 보고 데이터를 사용하는 방법을 설명합니다.
+   * 를 포함하도록 설명서를 수정했습니다 [새 데이터 시각화 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) ( Payouts 보고)
+   * 다음 정보를 포함하도록 설정 주제를 수정했습니다 [저장소에 표시되는 결제 버튼 미리 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) 구성이 변경되고 다음에 대한 지침이 추가된 시기 [체크아웃을 위해 신용 카드 및 PayPal 스마트 단추 활성화/비활성화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).
+* **빠른 체크아웃**<!-- BOLT-406 -->
+   * *신규* 를 추가했습니다. [관리 패널에 대한 개요 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).
+   * *신규* 를 추가했습니다. [사용자 설정 항목](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) 역할 및 권한 구성에 대한 사용자를 안내합니다.
+
+<!-- 
+|   Service    |    Change   |   Type    |
+|  ---  |  ---  |  ---  |
+|  [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)  |   Added an [Available data topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html) that explains how to use financial reporting data for external reconciliation purposes.    |    New   |
+|       |   Revised documentation to include the [new data visualization view](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#payouts-data-visualization-view) in Payouts reporting.    |    Update   |
+|       |   Revised the Settings topic to include information about [previewing how payment buttons will appear in a store](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) when the configuration is changed and how to [enable/disable credit card and PayPal smart buttons for checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options).    |   Update    |
+|   [**Quick Checkout**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)    |    Added an [overview topic about the Admin Panel](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html).   |   New    |
+|       |   Added a [user setup topic](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) to guide the user in configuring roles and permissions.    |       |
+ -->
