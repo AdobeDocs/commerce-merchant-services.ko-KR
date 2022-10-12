@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 0%
 사용자 지정할 수 있습니다 [!DNL Payment Services] Admin Console에서 유용한 구성 옵션을 사용하여 필요에 맞게 구성할 수 있습니다.
 
 구성 시 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 관리에서 이러한 구성은 _[!UICONTROL Method]_필드_[!UICONTROL General Configuration]_. 구성 필드에서 수행하는 모든 변경 사항은 _[!UICONTROL Method]_선택(selection) - 방법을 전환하면 선택 사항이 재설정되지 않습니다.
-
-자세한 내용은 [[!UICONTROL General Configuration] 섹션](#general-configuration) 추가 정보.
 
 ## 일반 구성
 
@@ -38,6 +36,7 @@ ht-degree: 0%
    >사용자 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_ 샌드박스 및/또는 프로덕션에 대한 온보딩을 완료하면 자동으로 생성되어 해당 분야의 고급 필드에 표시됩니다. 이러한 ID를 제거하거나 변경하지 마십시오.
 
 1. 클릭 **[!UICONTROL Save Config]** 변경 사항을 저장하려면 을 클릭합니다.
+1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;를 클릭한 다음 **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 ### 구성 옵션
 
@@ -64,6 +63,7 @@ ht-degree: 0%
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **권한 부여 및 캡처**.
 1. 대상 **디버그 모드**, 선택 `Yes` 디버그 모드를 활성화하거나 `No` 사용 안 함).
 1. 클릭 **[!UICONTROL Save Config]** 변경 사항을 저장하려면 을 클릭합니다.
+1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;를 클릭한 다음 **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 #### 구성 옵션
 
@@ -92,6 +92,7 @@ ht-degree: 0%
 1. 를 비활성화하려면 [나중에 메시지 결제](payments-options.md#pay-later-button) (원하는 경우) 을 선택합니다. `No` 대상 **[!UICONTROL Display Pay Later Message]**.
 1. 디버그 모드를 활성화하려면 `Yes` 대상 **[!UICONTROL Debug Mode]** (`No` 사용 안 함).
 1. 변경 사항을 저장하려면 **[!UICONTROL Save Config]** .
+1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;를 클릭한 다음 **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
 
 ### 구성 옵션
 
@@ -119,3 +120,7 @@ ht-degree: 0%
 | [!UICONTROL Height] | 저장소 보기 | PayPal 스마트 단추의 높이를 정의합니다. 기본값: 없음 |
 | [!UICONTROL Label] | 저장소 보기 | PayPal 스마트 단추에 표시되는 레이블을 정의합니다. 옵션: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | 저장소 보기 | 태그라인을 활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+
+## 캐시 플러시
+
+구성을 변경하면 [수동으로 캐시 플러시](/help/payment-services/settings.md#flush-the-cache) 따라서 저장소에 최신 구성 설정이 표시됩니다.

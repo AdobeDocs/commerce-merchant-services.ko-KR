@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 사용자 지정할 수 있습니다 [!DNL Payment Services] 의 유용한 설정을 사용하여 [!DNL Payment Services] 집에
 
-구성하려면 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] click **[!UICONTROL Settings]**. 이러한 구성 옵션은 _[!UICONTROL Payment mode]_필드_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+구성하려면 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] click **[!UICONTROL Settings]**. 이러한 구성 옵션은 _[!UICONTROL Payment mode]_필드[_&#x200B;일반&#x200B;_구성 옵션](#general-configuration-options).
 
->[!IMPORTANT]
->
-> 다중 저장소 또는 레거시 구성의 경우 다음을 참조하십시오 [관리자에서 구성](configure-admin.md) 주제.
+다중 저장소 또는 레거시 구성의 경우 다음을 참조하십시오 [관리자에서 구성](configure-admin.md).
 
 ## 일반 설정 구성
 
@@ -106,7 +104,7 @@ ht-degree: 0%
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
 
-1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
+1. [캐시 플러시](#flush-the-cache).
 
 #### 구성 옵션
 
@@ -141,13 +139,13 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
       > Apple Pay를 사용하려면 [Apple 개발자 계정이 있어야 합니다.](test-validate.md#test-in-sandbox-environment) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 *또는* 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md)를 활성화하려면 영업 담당자에게 문의하십시오.
 
       지급 단추나 PayPal 나중에 지급 메시지에 대한 표시/해제를 켜거나 끌 때 해당 구성의 시각적 미리 보기가 설정 페이지 하단에 표시됩니다.
-
+git
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
 
-1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
+1. [캐시 플러시](#flush-the-cache).
 
 #### 구성 옵션
 
@@ -187,7 +185,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
 
-1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 을(를) 클릭합니다. **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
+1. [캐시 플러시](#flush-the-cache).
 
 다음을 구성할 수 있습니다 [!DNL PayPal Smart Buttons] 스타일링 [의 경우](configure-admin.md#configure-paypal-smart-buttons) 또는 여기에서 [!DNL Payment Services Home]. 자세한 내용은 [PayPal 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 를 참조하십시오.
 
@@ -203,6 +201,17 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 | [!UICONTROL Height] | 저장소 보기 | 지급 버튼의 높이를 정의합니다. 기본값: 없음 |
 | [!UICONTROL Label] | 저장소 보기 | 결제 버튼에 표시되는 레이블을 정의합니다. 옵션: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## 캐시 플러시
+
+에서 구성을 변경하는 경우 _설정_&#x200B;예를 들어, Apple Pay, Venmo 또는 PayPal PayLater 단추를 전환하는 경우 스토어에 최신 구성이 표시되도록 캐시를 수동으로 플러시합니다.
+
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. 클릭 **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면
+
+캐시 관리 테이블의 캐시 유형이 `INVALIDATED` 상태, 저장소에 해당 항목에 대한 최신 구성이 표시되지 않을 수 있습니다. 캐시를 플러시하여 스토어를 업데이트하여 최신 구성을 표시합니다.
+
+스토어에 올바른 구성이 표시되는지 확인하려면 를 주기적으로 [캐시 플러시](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## 여러 PayPal 계정 사용
 
 Payment Services에서 내에서 여러 PayPal 계정을 사용할 수 있습니다 **하나** 웹 사이트 수준의 머천트 계정. 예를 들어, 여러 국가(서로 다른 사용)에서 저장소를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부 부분에 Adobe Commerce을 사용하지만 *모두*&#x200B;여러 PayPal 계정을 사용하도록 머천트 계정을 설정할 수 있습니다.
@@ -210,3 +219,4 @@ Payment Services에서 내에서 여러 PayPal 계정을 사용할 수 있습니
 자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 웹 사이트, 스토어 및 저장소 보기의 계층 구조에 대한 자세한 정보.
 
 영업 담당자가 [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) PayPal을 사용하여 추가 사이트에 머천트 계정을 설정하고 온보딩하는 경우, 사용자가 구성하도록 구성한 PayPal 단추가 사이트에 표시되도록 합니다. 웹 사이트에 대해 여러 PayPal 계정을 사용하는 데 도움이 필요하면 영업 담당자에게 문의하십시오.
+
