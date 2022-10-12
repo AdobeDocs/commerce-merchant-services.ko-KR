@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 릴리스 정보"
 description: "에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 1%
 
 * ![버그](../assets/bug.svg) - 고객 그룹에 표시할 수 없는 제품에서 제안이 소싱됩니다.
 * ![버그](../assets/bug.svg) - &quot;기본 공유 카탈로그&quot;에 추가되지 않은 경우 제품이 표시되지 않습니다.
+* ![버그](../assets/bug.svg) - 제품이 속성으로 구성되어 있고 응답에서 &quot;No&quot; 버킷이 반환되더라도 검색 어댑터가 부울 제품 속성에 대한 &quot;No&quot; 버킷을 렌더링하지 않습니다.
+* 일부 제품 및 쿼리는 영어 이외의 결과를 반환할 수 있지만 다국어 쿼리는 현재 지원되지 않습니다.
 * PWA Studio이 PWA Studio에 대한 지원을 추가할 때까지 B2B에 대한 라이브 검색을 사용할 수 없습니다.
 * 제품 무시 및 제품 특성 피드에 관리자가 실행해야 하는 동기화 문제가 있을 수 있습니다 `bin/magento indexer:reset` 및 `bin/magento indexer:reindex` 올바르게 다시 동기화하려면 다음을 수행하십시오.
 * 카탈로그 권한/공유 카탈로그/B2B 기능을 활성화하거나 비활성화하는 경우, `catalog_data_exporter_product_overrides` 인덱서가 업데이트되지 않고 로 잘못 표시 `valid`. 사용 `bin/magento saas:resync --feed=productOverrides` 문제를 해결하기 위해
