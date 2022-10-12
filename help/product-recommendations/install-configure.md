@@ -2,9 +2,9 @@
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
+source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,12 @@ composer update magento/product-recommendations --with-dependencies
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
+```
+
+또는 를 설치한 경우 `magento/module-visual-product-recommendations` 및 `magento/module-page-builder-product-recommendations` 모듈:
+
+```bash
+composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
 ```
 
 >[!NOTE]
