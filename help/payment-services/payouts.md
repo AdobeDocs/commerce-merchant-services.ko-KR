@@ -4,9 +4,9 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 저장소의 주문 및 지불을 명확하게 파악할 수 있도록 포괄적인 보고를 제공합니다.
 
-![재무 보고서 보기](assets/report-view.png)
+![재무 보고서 보기](assets/reports-justpayouts.png)
 
 모든 지불에 대한 심층적인 정보를 볼 수 있도록 사용할 수 있는 Payouts 보고 보기는 두 가지가 있습니다.
 
