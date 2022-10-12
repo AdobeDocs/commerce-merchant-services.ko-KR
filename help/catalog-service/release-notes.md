@@ -2,22 +2,40 @@
 title: '[!DNL Catalog Service] 릴리스 정보'
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] 릴리스 정보
-
-{{catalog-service-beta}}
 
 이러한 릴리스 노트에서는 최신 버전의 [!DNL Catalog Service] 다음을 포함합니다.
 
 * ![새로 만들기](../assets/new.svg) - 새로운 기능
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) - 알려진 문제
+
+## V1.0 릴리스
+
+릴리스 날짜: 2022-10-04(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
+
+![새로 만들기](../assets/new.svg) - 이제 번들 및 그룹화된 제품을 지원합니다.
+![새로 만들기](../assets/new.svg) - B2B 가시성 무시를 추가했습니다. 제품을 이제 검색할 수 있으며 특정 고객 그룹의 장바구니에 추가할 수 있습니다.
+![수정](../assets/fix.svg) - 이제 서비스가 안정되었으며 성능이 향상되었습니다.
+
+### 알려진 제한 사항
+
+이러한 기능은 아직 지원되지 않습니다.
+
+* 계층 가격 책정
+* 카탈로그에서 변형을 삭제하면 업데이트가 수신되지 않습니다
+* 동적 특성 페이로드의 최대 크기는 &lt;9MB입니다
+* 번들 제품의 고정 가격
+* 그룹화된 제품의 총 가격
+* 가상, 다운로드 가능 및 기프트 카드 제품 유형 지원
+* 최소 광고 가격(MAP)
 
 ## 0.3 릴리스 - 베타+
 

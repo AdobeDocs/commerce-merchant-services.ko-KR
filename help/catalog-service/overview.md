@@ -1,17 +1,15 @@
 ---
-title: '`[!DNL Catalog Service]`'
+title: '[!DNL Catalog Service]'
 description: '`[!DNL Catalog Service] Adobe Commerce용 는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Adobe Commerce
-
-{{catalog-service-beta}}
 
 다음 [!DNL Catalog Service] Adobe Commerce 확장의 경우 다음을 포함하여 제품 관련 상점 경험을 빠르고 완전히 렌더링할 수 있도록 풍부한 보기 모델(읽기 전용) 카탈로그 데이터를 제공합니다.
 
