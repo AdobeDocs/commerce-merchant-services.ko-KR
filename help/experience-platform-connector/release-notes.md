@@ -2,10 +2,10 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,14 @@ ht-degree: 6%
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) - 알려진 문제
 
-## Experience Platform 커넥터 1.0.0
+## 2.0.0
+
+* ![새로 만들기](../assets/new.svg) - 새로운 두 개 추가 [storefront 이벤트](events.md): `openCart` 및 `removeFromCart`
+* ![새로 만들기](../assets/new.svg) - 에 대한 지원을 추가했습니다. [AEM storfront](overview.md#aem-support)
+* ![새로 만들기](../assets/new.svg) - 다음과 같은 경우 고유한 AEP 웹 SDK를 지정하는 기능이 추가되었습니다. [연결](connect-data.md) Experience Platform에 대한 Adobe Commerce 인스턴스
+* ![수정](../assets/fix.svg) - 데이터 스트림 ID를 storeview가 아닌 웹 사이트로 범위를 지정하도록 데이터 스트림 범위 요구 사항을 업데이트했습니다
+
+## 1.0.0
 
 * ![새로 만들기](../assets/new.svg) - 일반 출시 릴리스
 

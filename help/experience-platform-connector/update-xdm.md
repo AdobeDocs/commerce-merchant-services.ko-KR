@@ -2,22 +2,21 @@
 title: XDM 스키마에 필드 그룹 추가
 description: XDM 스키마에 Adobe Commerce 관련 필드 그룹을 추가하는 방법을 알아봅니다.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # XDM 스키마에 필드 그룹 추가
 
-다음 중 하나 [전제 조건](overview.md#prereqs) Experience Platform 커넥터를 사용하는 방법은 데이터 스트림 작업 공간에 액세스하고 [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) Adobe Commerce에만 해당됩니다. 해당 데이터 스트림을 만들 때 수집할 데이터를 나타내는 XDM 스키마도 선택해야 합니다. 이 항목에서는 Adobe Commerce storefront에서 제공한 데이터를 성공적으로 수집하기 위해 XDM 스키마에 포함해야 하는 필드 그룹을 제공합니다 [events](events.md).
+다음 중 하나 [온보딩 단계](overview.md#onboarding-steps) Experience Platform 커넥터를 사용하는 방법은 데이터 스트림 작업 공간에 액세스하고 [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) Adobe Commerce에만 해당됩니다. 해당 데이터 스트림을 만들 때 수집할 데이터를 나타내는 XDM 스키마도 선택해야 합니다. 이 항목에서는 Adobe Commerce storefront에서 제공한 데이터를 성공적으로 수집하기 위해 XDM 스키마에 포함해야 하는 필드 그룹을 제공합니다 [events](events.md).
 
-1. XDM 스키마가 없는 경우 [만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#create) 하나 그렇지 않으면, [편집](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#edit) Adobe Experience Platform UI에서 기존 XDM 스키마.
+1. XDM 스키마가 없는 경우 [만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) 하나 그렇지 않으면, [편집](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) Adobe Experience Platform UI에서 기존 XDM 스키마.
 
-1. [추가](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#add-field-groups) 다음 상거래 특정 필드 그룹:
+1. [추가](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) 다음 상거래 특정 필드 그룹:
 
-   - 상거래
    - 사이트 검색
    - 웹 페이지 방문
    - 사용자 로그인 프로세스

@@ -1,10 +1,10 @@
 ---
 title: 이벤트
-description: 각 이벤트가 캡처하는 데이터를 파악하고 전체 스키마 정의를 확인합니다.
+description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 다음은 Experience Platform 커넥터 확장을 설치할 때 사용할 수 있는 상거래 이벤트 목록입니다. 이러한 이벤트가 수집하는 데이터는 Adobe Experience Platform Edge로 전송됩니다. 만들 수도 있습니다 [사용자 지정 이벤트](custom-events.md) 기본적으로 제공되지 않은 추가 데이터를 수집하기 위해
 
-다음 이벤트가 수집하는 데이터 외에도 [추가 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK에서 제공합니다.
+다음 이벤트가 수집하는 데이터 외에도 [기타 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK에서 제공합니다.
 
 >[!NOTE]
 >
->모든 이벤트는 `personID` 필드의 고유 식별자입니다.
+>모든 상점 이벤트에는 `personID` 필드의 고유 식별자입니다.
 
 ## addToCart
 
-장바구니에 제품을 추가하거나 장바구니의 제품 수량이 증가될 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+장바구니에 제품을 추가하거나 장바구니의 제품 수량이 증가될 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.productListAdds`
 
 ### 유형
 
@@ -34,10 +38,71 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `productListAdds` | 제품이 장바구니에 추가되었는지 여부를 나타냅니다. 값 `1` 제품이 추가되었음을 나타냅니다. |
+| `productListItems` | 장바구니에 추가된 일련의 제품 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
-| `priceTotal` | 모든 할인과 세금이 적용된 후 이 주문에 대한 합계입니다. |
-| `quantity` | 고객이 제품을 필요로 한다고 표시한 단위 수 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `quantity` | 장바구니에 추가된 제품 단위 수입니다 |
+| `discountAmount` | 적용된 할인 금액을 나타냅니다 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `productImageUrl` | 제품의 기본 이미지 URL |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드입니다. `attribute` 는 다음과 같이 구성 가능한 제품의 속성을 식별합니다 `size` 또는 `color` 및 `value` 와 같은 속성의 값을 식별합니다. `small` 또는 `black`. |
+| `cartID` | 고객의 장바구니를 식별하는 고유 ID입니다 |
+
+## openCart
+
+새 장바구니가 생성될 때, 즉 제품을 빈 장바구니에 추가할 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.productListOpens`
+
+### 유형
+
+상점
+
+### 수집한 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
+
+| 필드 | 설명 |
+|---|---|
+| `productListOpens` | 장바구니가 만들어졌는지 여부를 나타냅니다. 값 `1` 장바구니가 만들어졌음을 나타냅니다. |
+| `productListItems` | 장바구니에 추가된 일련의 제품 |
+| `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
+| `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `quantity` | 장바구니에 추가된 제품 단위 수입니다 |
+| `discountAmount` | 적용된 할인 금액을 나타냅니다 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `productImageUrl` | 제품의 기본 이미지 URL |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드입니다. `attribute` 는 다음과 같이 구성 가능한 제품의 속성을 식별합니다 `size` 또는 `color` 및 `value` 와 같은 속성의 값을 식별합니다. `small` 또는 `black`. |
+| `cartID` | 고객의 장바구니를 식별하는 고유 ID입니다 |
+
+## removeFromCart
+
+제품이 제거되거나 장바구니의 제품 수량이 감소될 때마다 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.productListRemovals`
+
+### 유형
+
+상점
+
+### 수집한 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
+
+| 필드 | 설명 |
+|---|---|
+| `productListRemovals` | 장바구니에서 제품이 제거되었는지 여부를 나타냅니다. 값 `1` 장바구니에서 제품이 제거되었음을 나타냅니다. |
+| `productListItems` | 장바구니에서 제거된 제품 배열입니다 |
+| `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
+| `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `quantity` | 장바구니에서 제거된 제품 단위 수입니다 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
 | `productImageUrl` | 제품의 기본 이미지 URL |
@@ -46,7 +111,11 @@ ht-degree: 0%
 
 ## shoppingCartView
 
-장바구니 페이지가 로드될 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+장바구니 페이지가 로드될 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.productListViews`
 
 ### 유형
 
@@ -59,11 +128,11 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `productListViews` | 제품 목록을 보았는지 여부를 나타냅니다 |
-| `productListItems` | 장바구니에 추가된 일련의 제품 |
+| `productListItems` | 장바구니에 있는 일련의 제품 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
-| `priceTotal` | 모든 할인과 세금이 적용된 후 이 주문에 대한 합계입니다. |
-| `quantity` | 고객이 제품을 필요로 한다고 표시한 단위 수 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `quantity` | 장바구니에 있는 제품 단위 수입니다 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
 | `productImageUrl` | 제품의 기본 이미지 URL |
@@ -72,7 +141,11 @@ ht-degree: 0%
 
 ## pageView
 
-페이지가 로드될 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+페이지가 로드될 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`web.webpagedetails.pageViews`
 
 ### 유형
 
@@ -88,7 +161,11 @@ ht-degree: 0%
 
 ## productPageView
 
-제품 페이지가 로드될 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+제품 페이지가 로드될 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.productViews`
 
 ### 유형
 
@@ -101,10 +178,10 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `productViews` | 제품을 보았는지 여부를 나타냅니다 |
-| `productListItems` | 장바구니에 추가된 일련의 제품 |
+| `productListItems` | 장바구니에 있는 일련의 제품 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
-| `priceTotal` | 모든 할인과 세금이 적용된 후 이 주문에 대한 합계입니다. |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
 | `productImageUrl` | 제품의 기본 이미지 URL |
@@ -112,7 +189,11 @@ ht-degree: 0%
 
 ## startCheckout
 
-쇼핑객이 체크아웃 단추를 클릭할 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+쇼핑객이 체크아웃 단추를 클릭할 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.checkouts`
 
 ### 유형
 
@@ -125,11 +206,11 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `checkouts` | 체크아웃 프로세스 중에 작업이 발생했는지 여부를 나타냅니다 |
-| `productListItems` | 장바구니에 추가된 일련의 제품 |
+| `productListItems` | 장바구니에 있는 일련의 제품 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
-| `priceTotal` | 모든 할인과 세금이 적용된 후 이 주문에 대한 합계입니다. |
-| `quantity` | 고객이 제품을 필요로 한다고 표시한 단위 수 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `quantity` | 장바구니에 있는 제품 단위 수입니다 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
 | `productImageUrl` | 제품의 기본 이미지 URL |
@@ -138,7 +219,11 @@ ht-degree: 0%
 
 ## completeCheckout
 
-쇼핑객이 주문을 할 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+쇼핑객이 주문을 할 때 트리거됩니다.
+
+### XDM 이벤트 이름
+
+`commerce.order`
 
 ### 유형
 
@@ -163,11 +248,11 @@ ht-degree: 0%
 | `shippingMethod` | 표준 배송, 신속 배송, 매장 선별 등과 같이 고객이 선택한 배송 방법 |
 | `shippingAmount` | 장바구니에 있는 항목의 총 배송 비용 |
 | `promotionID` | 프로모션의 고유 식별자(있는 경우) |
-| `productListItems` | 장바구니에 추가된 일련의 제품 |
+| `productListItems` | 장바구니에 있는 일련의 제품 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
-| `priceTotal` | 모든 할인과 세금이 적용된 후 이 주문에 대한 합계입니다. |
-| `quantity` | 고객이 제품을 필요로 한다고 표시한 단위 수 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `quantity` | 장바구니에 있는 제품 단위 수입니다 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 주문 합계에 사용되는 통화 코드. |
 | `productImageUrl` | 제품의 기본 이미지 URL |
@@ -175,11 +260,15 @@ ht-degree: 0%
 
 ## signIn
 
-쇼핑객이 로그인하려고 할 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+쇼핑객이 로그인하려고 할 때 트리거됩니다.
 
 >[!NOTE]
 >
 > 이 이벤트는 특정 작업이 시도될 때 트리거됩니다. 작업이 성공했음을 나타내지 않습니다.
+
+### XDM 이벤트 이름
+
+`userAccount.login`
 
 ### 유형
 
@@ -201,11 +290,15 @@ ht-degree: 0%
 
 ## signOut
 
-쇼핑객이 로그아웃하려 할 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+쇼핑객이 로그아웃하려 할 때 트리거됩니다.
 
 >[!NOTE]
 >
 > 이 이벤트는 특정 작업이 시도될 때 트리거됩니다. 작업이 성공했음을 나타내지 않습니다.
+
+### XDM 이벤트 이름
+
+`userAccount.logout`
 
 ### 유형
 
@@ -223,11 +316,15 @@ ht-degree: 0%
 
 ## createAccount
 
-쇼핑객이 계정을 만들려고 할 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+쇼핑객이 계정을 만들려고 할 때 트리거됩니다.
 
 >[!NOTE]
 >
 > 이 이벤트는 특정 작업이 시도될 때 트리거됩니다. 작업이 성공했음을 나타내지 않습니다.
+
+### XDM 이벤트 이름
+
+`userAccount.createProfile`
 
 ### 유형
 
@@ -250,11 +347,15 @@ ht-degree: 0%
 
 ## editAccount
 
-쇼핑객이 계정을 편집하려고 할 때 트리거됩니다. [전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+쇼핑객이 계정을 편집하려고 할 때 트리거됩니다.
 
 >[!NOTE]
 >
 > 이 이벤트는 특정 작업이 시도될 때 트리거됩니다. 작업이 성공했음을 나타내지 않습니다.
+
+### XDM 이벤트 이름
+
+`userAccount.updateProfile`
 
 ### 유형
 
@@ -293,11 +394,13 @@ ht-degree: 0%
 - 이전 페이지로 이동합니다
 - 다른 페이지로 이동
 
-[전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >검색 이벤트는 B2B 모듈이 설치된 Adobe Commerce Enterprise Edition에서 지원되지 않습니다.
+
+### XDM 이벤트 이름
+
+`searchRequest`
 
 ### 유형
 
@@ -323,11 +426,13 @@ ht-degree: 0%
 
 Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 페이지에 대한 결과를 반환하는 경우 트리거됩니다.
 
-[전체 스키마](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >검색 이벤트는 B2B 모듈이 설치된 Adobe Commerce Enterprise Edition에서 지원되지 않습니다.
+
+### XDM 이벤트 이름
+
+`searchResponse`
 
 ### 유형
 
@@ -342,4 +447,4 @@ Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 �
 | `searchResponse` | 검색 응답이 수신되었는지 여부를 나타냅니다. |
 | `suggestions` | 검색 쿼리와 유사한 카탈로그에 있는 제품 및 카테고리의 이름을 포함하는 문자열 배열입니다 |
 | `numberOfResults` | 반환된 제품 수 |
-| `productListItems` | 장바구니에 추가된 일련의 제품입니다. 다음을 포함합니다 `SKU`(주식 보유 단위) 및 `name` 제품(표시 이름 또는 사람이 읽을 수 있는 이름) |
+| `productListItems` | 장바구니에 있는 일련의 제품입니다. 다음을 포함합니다 `SKU`(주식 보유 단위) 및 `name` 제품(표시 이름 또는 사람이 읽을 수 있는 이름) |

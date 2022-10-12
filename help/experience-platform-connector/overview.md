@@ -2,9 +2,9 @@
 title: 안내서 개요
 description: Experience Platform 커넥터를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Experience Platform 커넥터를 사용하려면 다음을 수행해야 합니�
 ### PWA Studio 지원
 
 자세한 내용은 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) PWA Studio 저장소 내 Experience Platform 커넥터를 사용하는 방법에 대한 설명서입니다.
+
+### AEM 지원 {#aem-support}
+
+자세한 내용은 [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) CIF - Experience Platform 커넥터를 사용하여 AEM으로 렌더링된 제품 페이지에서 Experience Platform으로 storefront 이벤트 데이터를 전송하는 방법을 알아봅니다.
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
