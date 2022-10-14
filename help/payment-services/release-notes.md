@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,12 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
 
 +++
+
+## v1.4.1
+
+_2022년 10월 14일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3766 --> 고객의 결제 방법이 거부되면 표시되는 오류 메시지는 더 설명적입니다. 고객에게 결제 정보를 다시 입력하고 다시 시도하거나, 다른 결제 방법을 시도하거나, 거래를 거절하는 것에 대해 은행에 문의하도록 권장합니다.
 
 ## v1.4.0
 
