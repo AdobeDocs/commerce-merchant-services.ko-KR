@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] 릴리스 정보'
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 1%
 
 ---
 
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 이러한 릴리스 노트에서는 최신 버전의 [!DNL Catalog Service] 다음을 포함합니다.
 
-* ![새로 만들기](../assets/new.svg) - 새로운 기능
-* ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
-* ![버그](../assets/bug.svg) - 알려진 문제
+* ![새로 만들기](../assets/new.svg) 새로운 기능
+* ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
+* ![버그](../assets/bug.svg) 알려진 문제
 
 ## V1.0 릴리스
 
 릴리스 날짜: 2022-10-04(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
 
-![새로 만들기](../assets/new.svg) - 이제 번들 및 그룹화된 제품을 지원합니다.
-![새로 만들기](../assets/new.svg) - B2B 가시성 무시를 추가했습니다. 제품을 이제 검색할 수 있으며 특정 고객 그룹의 장바구니에 추가할 수 있습니다.
-![수정](../assets/fix.svg) - 이제 서비스가 안정되었으며 성능이 향상되었습니다.
+![새로 만들기](../assets/new.svg) 이제 번들 및 그룹화된 제품을 지원합니다.
+![새로 만들기](../assets/new.svg) B2B 가시성 무시를 추가했습니다. 제품을 이제 검색할 수 있으며 특정 고객 그룹의 장바구니에 추가할 수 있습니다.
+![수정](../assets/fix.svg) 서비스는 이제 더 안정적이고 성능이 개선되었습니다.
 
 ### 알려진 제한 사항
 
@@ -41,10 +41,10 @@ ht-degree: 0%
 
 릴리스 날짜: 2022-09-12(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: Beta
 
-![새로 만들기](../assets/new.svg) - 변형을 지원하는 이미지: 선택한 옵션을 기반으로 제품 이미지가 반환됩니다
-![새로 만들기](../assets/new.svg) - 가격 지원 역할: 특정 고객 그룹의 구성원만 제품 가격을 볼 수 있도록 허용
+![새로 만들기](../assets/new.svg) 변형을 위한 이미지 지원: 선택한 옵션을 기반으로 제품 이미지가 반환됩니다
+![새로 만들기](../assets/new.svg) 가격 지원 역할: 특정 고객 그룹의 구성원만 제품 가격을 볼 수 있도록 허용
 ![수정](../assets/fix.svg) 서비스 안정성 및 성능 향상
-![새로 만들기](../assets/new.svg) - 카탈로그에서 제품이 삭제되면 업데이트를 받습니다
+![새로 만들기](../assets/new.svg) 카탈로그에서 제품이 삭제되면 업데이트가 수신됩니다
 
 ### 알려진 제한 사항
 
@@ -59,7 +59,8 @@ ht-degree: 0%
 
 릴리스 날짜: 2022-08-09(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: Beta
 
-* ![새로 만들기](../assets/new.svg) - `products` 및 `refineProduct` 쿼리는 다음 데이터를 반환합니다.
+![새로 만들기](../assets/new.svg) 다음 `products` 및 `refineProduct` 쿼리는 다음 데이터를 반환합니다.
+
 * 사전 정의된(시스템) 제품 속성입니다.
 * 동적 제품 속성을 역할(제품 표시 페이지/제품 목록 페이지)로 필터링합니다.
 * 제품 옵션.
