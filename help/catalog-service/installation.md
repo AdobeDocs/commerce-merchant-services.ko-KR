@@ -2,18 +2,14 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
+source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # 온보딩 및 설치
-
-파트너와 고객은 Adobe Analytics Mobile Apps 또는 Analytics Premium에서 [!DNL Catalog Service] 2022년 8월 9일에 릴리스된 Adobe Commerce 베타 버전입니다. 참여하려면, Adobe의 [Adobe Commerce 베타 프로그램 용어](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
-
-계약서에 서명하면 다음 사항에 대해 adobe 팀에 문의하십시오. [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 공개 Slack 채널. Adobe에서는 을(를) 사용하여 작업하는 데 필요한 모든 정보와 다음 단계를 제공합니다. [!DNL Catalog Service] 베타 버전.
 
 ## 전제 조건
 
@@ -55,8 +51,6 @@ ht-degree: 0%
     "magento/services-connector": "1.2.1"
     }
    ```
-
-   <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
 1. 로컬에서 새 구성을 테스트하고 종속성을 업데이트합니다.
 
