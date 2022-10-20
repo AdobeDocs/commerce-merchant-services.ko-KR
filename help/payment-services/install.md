@@ -2,9 +2,9 @@
 title: 설치 [!DNL Payment Services]
 description: Payments Services 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ ht-degree: 0%
 1. 종속성을 업데이트하고 확장을 설치합니다.
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   다음 `composer update` 명령은 모든 종속성을 업데이트합니다. 모든 종속성을 동시에 업데이트하지 않으려면 이 명령을 대신 사용하십시오. `composer require magento/payment-services`.
+   를 사용하십시오 `composer update` 모든 루트 종속성을 업데이트하는 명령입니다.
 
 1. 변경 사항을 커밋하고 푸시합니다.
 
@@ -68,10 +68,10 @@ ht-degree: 0%
 1. 종속성을 업데이트하고 확장을 설치합니다.
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   다음 `composer update` 명령은 모든 종속성을 업데이트합니다. 모든 종속성을 동시에 업데이트하지 않으려면 이 명령을 대신 사용하십시오. `composer require magento/payment-services`.
+   를 사용하십시오 `composer update` 모든 루트 종속성을 업데이트하는 명령입니다.
 
 1. 인스턴스 업그레이드:
 
@@ -95,10 +95,10 @@ ht-degree: 0%
 1. 패키지의 최신 버전을 가져오려면 다음을 수행하십시오.
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   다음 `composer update` 명령은 모든 종속성을 업데이트합니다. 모든 종속성을 동시에 업데이트하지 않으려면 이 명령을 대신 사용하십시오. `composer update magento/payment-services`.
+   를 사용하십시오 `composer update` 모든 루트 종속성을 업데이트하는 명령입니다.
 
 1. 변경 사항을 커밋하고 푸시합니다.
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-작성기 키가 `MageID` 다음 중 사용 [!DNL Payment Services] 등록.
+작성기 키가 유효하고 다른 Magento 패키지에 액세스할 수 있는지 확인합니다.
 
 구성된 작성기 키를 보려면 다음을 수행하십시오.
 
