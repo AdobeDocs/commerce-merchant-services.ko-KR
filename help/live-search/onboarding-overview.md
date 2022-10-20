@@ -1,10 +1,10 @@
 ---
-title: '"온보딩 개요"'
-description: '"[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"'
+title: "온보딩 개요"
+description: "[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ ht-degree: 0%
 * Adobe Commerce 데이터베이스의 제품만 인덱싱합니다
 * CMS 페이지를 색인화하지 않습니다
 
-### 동의어
-
-* [!DNL Live Search] 에서는 최대 200개의 동의어를 관리할 수 있습니다 `Data Space ID`.
-
 ### 쿼리
 
 * [!DNL Live Search] 은 카테고리 트리의 전체 분류에 액세스할 수 없으며, 따라서 몇 가지 계층화된 탐색 검색 시나리오를 만들 수 있습니다.
 * [!DNL Live Search] 은 지능형 세그먼트와 사용자 지정 검색 등의 기능을 지원하기 위해 쿼리에 고유한 GraphQL 엔드포인트를 사용합니다. 와 비슷하지만 [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)에는 몇 가지 차이점이 있으며 일부 필드는 현재 완전히 호환되지 않을 수 있습니다.
+
+### 규칙
+
+* 데이터 공간 ID당 최대 규칙 수는 50개입니다.
+* 규칙당 최대 조건 수는 10개입니다.
+* 규칙당 최대 이벤트 수는 25개입니다.
+
+### 동의어
+
+* [!DNL Live Search] 에서는 최대 200개의 동의어를 관리할 수 있습니다 `Data Space ID`.
 
 ### PWA 베타 릴리스
 
