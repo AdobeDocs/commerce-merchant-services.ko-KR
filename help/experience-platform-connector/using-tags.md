@@ -2,9 +2,9 @@
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법을 알아봅니다.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
 - [&#39;searchRequestSent&#39;](#searchrequestsent)
 - [&#39;searchResponseReceived&#39;](#searchresponsereceived)
 - [&#39;addToCart&#39;](#addtocart)
+- [&#39;openCart&#39;](#opencart)
 - [&#39;viewCart&#39;](#viewcart)
 - [&#39;removeFromCart&#39;](#removefromcart)
 - [&#39;initiateCheckout&#39;](#initiatecheckout)
@@ -783,6 +784,39 @@ Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 �
 - **작업 유형**: `Send event`
 - **유형**: `commerce.productListAdds`
 - **XDM 데이터**: `%add to cart%`
+
+### openCart {#opencart}
+
+새 장바구니가 생성될 때 트리거되며, 제품이 빈 장바구니에 추가될 때 발생합니다.
+
+#### 데이터 요소
+
+다음 데이터 요소를 만듭니다.
+
+1. 장바구니 열기:
+
+   - **이름**: `open cart`
+   - **확장**: `Adobe Experience Platform Web SDK`
+   - **데이터 요소 유형**: `XDM object`
+   - **필드 그룹**: `commerce` > `productListOpens` > `value`
+   - **value**: **값** = `1`
+   - **필드 그룹**: `commerce` > `cart` > `cartID`
+   - **장바구니 ID**: **값** = `%cart id%`
+   - **필드 그룹**: `productListItems`. 대상 `productListItems`여러 항목을 미리 계산할 수 있습니다. 선택 **productListItems** > **전체 스토리지 제공**.
+
+#### 규칙 
+
+- **이름**: `open cart`
+- **확장**: `Adobe Client Data Layer`
+- **이벤트 유형**: `Data Pushed`
+- **특정 이벤트**: `open-cart`
+
+##### 작업
+
+- **확장**: `Adobe Experience Platform Web SDK`
+- **작업 유형**: `Send event`
+- **유형**: `commerce.productListOpens`
+- **XDM 데이터**: `%open cart%`
 
 ### viewCart {#viewcart}
 

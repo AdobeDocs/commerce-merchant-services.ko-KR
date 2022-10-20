@@ -2,9 +2,9 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 �
 | `searchResponse` | 검색 응답이 수신되었는지 여부를 나타냅니다. |
 | `suggestions` | 검색 쿼리와 유사한 카탈로그에 있는 제품 및 카테고리의 이름을 포함하는 문자열 배열입니다 |
 | `numberOfResults` | 반환된 제품 수 |
-| `productListItems` | 장바구니에 있는 일련의 제품입니다. 다음을 포함합니다 `SKU`(주식 보유 단위) 및 `name` 제품(표시 이름 또는 사람이 읽을 수 있는 이름) |
+| `productListItems` | 장바구니에 있는 일련의 제품입니다. |
+| `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
+| `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
+| `productImageUrl` | 제품의 기본 이미지 URL |

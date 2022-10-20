@@ -2,7 +2,7 @@
 title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 2.3.x 및 2.4.x
 
-## magento/product-recommendations 4.0.0
+### magento/product-recommendations 4.0.0
 
 * ![새로 만들기](../assets/new.svg) - 추가됨 [준비 지표](create.md) 각 권장 사항 유형의 교육 진행 상황을 시각화하는 데 도움이 됩니다.
 * ![새로 만들기](../assets/new.svg) - 주요 버전 릴리스입니다. 다음을 수행해야 합니다. [편집](install-configure.md#update) 루트 `composer.json` 파일을 만들 수 있습니다. 또한 이 릴리스에서는 Product Recommendations을 설치 및 구성할 때 두 개의 API 키를 제공해야 합니다. [프로덕션 키 및 샌드박스 키](../landing/saas.md).
@@ -36,12 +36,12 @@ ht-degree: 0%
 
 * 다음 `websiteCode` 밑줄(_)이 포함된 경우 값이 잘못 반환됩니다.
 
-## magento/product-recommendations 3.3.7
+### magento/product-recommendations 3.3.7
 
 * ![새로 만들기](../assets/new.svg) - PHP 8.1 지원이 추가되었습니다.
 * ![새로 만들기](../assets/new.svg) - 참조 표시 템플릿에서 다른 크기의 이미지를 더 일관되게 처리하도록 이미지 크기 조정 기능이 개선되었습니다
 
-## magento/product-recommendations 3.3.6
+### magento/product-recommendations 3.3.6
 
 * ![새로 만들기](../assets/new.svg) - 최적화 [!DNL Product Recommendations] 종속성을 명시적으로 나열하여 methoxackage
 
