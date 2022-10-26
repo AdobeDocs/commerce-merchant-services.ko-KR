@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '`[!DNL Catalog Service] Adobe Commerce용 는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
+source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 
 코어 GraphQL 시스템에서 PWA은 상거래 애플리케이션에 요청을 전송하여 각 요청을 수신하고 처리하며 여러 하위 시스템을 통해 요청을 전송한 다음 스토어에 대한 응답을 반환합니다. 이 라운드 트립은 페이지 로드 시간이 느려져 전환율이 낮아질 수 있습니다.
 
-[!DNL Catalog Service] 별도의 GraphQL 게이트웨이에 쿼리를 보냅니다. 이 서비스는 제품 속성, 변형, 가격 및 카테고리와 같은 제품 세부 사항 및 관련 정보가 포함된 별도의 데이터베이스에 액세스합니다. 서비스는 색인을 통해 데이터베이스를 Adobe Commerce과 계속 동기화합니다.
+[!DNL Catalog Service] 는 federated GraphQL 게이트웨이 서비스입니다. 이 서비스는 제품 속성, 변형, 가격 및 카테고리와 같은 제품 세부 사항 및 관련 정보가 포함된 별도의 데이터베이스에 액세스합니다. 서비스는 색인을 통해 데이터베이스를 Adobe Commerce과 계속 동기화합니다.
 서비스는 애플리케이션과 직접 통신을 생략하므로 요청 및 응답 주기의 지연 시간을 줄일 수 있습니다.
 
 >[!NOTE]
 >
->게이트웨이는 향후 제품 Recommendations과 통합하기 위한 것입니다. 이 릴리스에서는 [!DNL Catalog Service] 및 [!DNL Live Search] 두 제품에 유효한 라이선스 키가 있는 경우 동일한 종단점의 페더레이션 쿼리를 사용합니다.
+>게이트웨이는 향후 제품 Recommendations과 통합하기 위한 것입니다. 이 릴리스에서는 [!DNL Catalog Service Federated GraphQL] 그리고 [!DNL Live Search] 두 제품에 유효한 라이선스 키가 있는 경우 동일한 종단점의 페더레이션 쿼리를 사용합니다.
 
 코어 및 서비스 GraphQL 시스템은 서로 직접 통신하지 않습니다. 다른 URL에서 각 시스템에 액세스하면 호출에 다른 헤더 정보가 필요합니다. 두 GraphQL 시스템은 함께 사용하도록 설계되었습니다. 다음 [!DNL Catalog Service] GraphQL 시스템은 핵심 시스템을 확장하여 제품 상점 경험을 더 빠르게 만듭니다.
 
