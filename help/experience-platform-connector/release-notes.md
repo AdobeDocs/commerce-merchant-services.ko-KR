@@ -2,10 +2,10 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,12 +27,14 @@ Experience Platform 커넥터에서 사용하는 확장과 관련된 기능 변�
 
 이러한 릴리스 노트에서는 Experience Platform 커넥터에서 사용하는 확장과 관련된 기능 변경 사항 및 수정 사항을 설명합니다.
 
-+++호스팅된 서비스 업데이트
++++지원되는 서비스 업데이트
 
 _2022년 10월 12일_
 
 * ![새로 만들기](../assets/new.svg) - 2개 추가됨 [storefront 이벤트](events.md): `openCart` 및 `removeFromCart` Adobe Commerce Storefront Events SDK 및 Collector로 업그레이드
 * ![새로 만들기](../assets/new.svg) - 에 대한 지원을 추가했습니다. [AEM storfront](overview.md#aem-support)
+
++++
 
 ## 2.0.0
 
