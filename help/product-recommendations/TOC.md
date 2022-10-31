@@ -2,10 +2,10 @@
 user-guide-title: "[!DNL Product Recommendations] 안내서"
 user-guide-description: 이 안내서에서는 다음에 대한 자세한 지침을 제공합니다 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
 breadcrumb-title: "[!DNL Product Recommendations] 안내서"
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '51'
+ht-degree: 3%
 
 ---
 
@@ -33,5 +33,5 @@ ht-degree: 0%
 - [!DNL Product Recommendations] 개발자 {#developer}
    - [개요](development-overview.md)
    - [데이터 수집](events.md)
-   - [편집](customize.md)
+   - [사용자 지정](customize.md)
    - [쿠키 제한 처리](setting-cookie.md)
