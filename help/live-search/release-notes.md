@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] 릴리스 정보"
 description: "에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ ht-degree: 1%
 * ![새로 만들기](../assets/new.svg) - 새로운 기능
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) - 알려진 문제
+
+## [!DNL Live Search] 2.0.4
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![새로 만들기](../assets/new.svg) - 이제 라이브 검색에서는 관리자의 &#39;재고 부족 제품 표시&#39; 설정에 따른 필터링을 지원합니다. 재고 부족 제품 표시를 false로 설정한 경우 `inStock = true` 가 필터에 추가됩니다.
+* ![수정](../assets/fix.svg) - 성능을 향상시키기 위해 라이브 검색 팝업에서 &#39;제안&#39; 블록이 제거되었습니다. 기능을 바꾸려는 경우 데이터가 여전히 GraphQL을 통해 전달됩니다.
+* ![수정](../assets/fix.svg) - `categories` 및 `categoryPath` 교체됨 `categoryIds` 카테고리 필터링에 사용할 수 있습니다. 자세한 내용은 [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) 주제.
+* ![수정](../assets/fix.svg) - 이전에는 B2B 회사에 연결된 사용자가 검색을 수행할 때 잘못된 고객 그룹 코드를 받게 되었습니다. 이제 Live Search가 올바른 값을 반환합니다.
+* ![수정](../assets/fix.svg) - 이전에는 존재하지 않는 용어를 검색할 때 Live Search에서 오류를 반환합니다. 이제 해당 버그가 수정되었습니다.
+
+가맹점은 Live Search 확장 버전 >= 2.0.4를 업그레이드하여 이러한 기능에 액세스해야 합니다.
+
+프로덕션에 투입하기 전에 업그레이드 및 테스트를 수행하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 비스파이크 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
 ## [!DNL Live Search] 2.0.3
 
