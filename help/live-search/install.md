@@ -2,9 +2,9 @@
 title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법을 알아봅니다. [!DNL Live Search] Adobe Commerce"
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -251,7 +251,7 @@ composer update magento/live-search --with-dependencies
 |--- |--- |
 | `module-live-search` | 상인들은 계면, 동의어, 쿼리 규칙 등에 대한 검색 설정을 구성할 수 있으며, 읽기 전용 GraphQL 놀이터에 액세스하여 *관리*. |
 | `module-live-search-adapter` | 스토어프론트에서 다음으로 검색 요청을 라우팅합니다. [!DNL Live Search] 서비스를 제공하고 결과를 상점 앞에 렌더링합니다. <br />- 범주 찾아보기 - 상점 전면의 요청을 라우팅합니다. [위쪽 탐색](https://docs.magento.com/user-guide/catalog/navigation-top.html) 를 클릭합니다.<br />- 전역 검색 - [빠른 검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 상점 오른쪽 상단의 상자 [!DNL Live Search] 서비스. |
-| `module-live-search-storefront-popover` | &quot;입력할 때 검색&quot; 팝오버는 표준 빠른 검색을 대체하고 상위 검색 결과의 동적 제품 제안 및 미리 보기를 반환합니다. |
+| `module-live-search-storefront-popover` | 입력하는 대로 검색 팝오버는 표준 빠른 검색을 대체하고 상위 검색 결과의 데이터와 미리 보기를 반환합니다. |
 
 ## [!DNL Live Search] 종속성 {#dependencies}
 

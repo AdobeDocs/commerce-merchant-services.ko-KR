@@ -1,10 +1,10 @@
 ---
-title: '"스타일링 [!DNL Popover] 요소"'
-description: '"사용자 지정에 대한 기술 정보 [!DNL Live Search storefront popover]"'
+title: "스타일링 [!DNL Popover] 요소"
+description: "사용자 지정에 대한 기술 정보 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,6 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ### 컨테이너 클래스 선택기
 
-`.livesearch.popover-container`
+#### .livesearch.poover-container
 
 ![[!DNL Popover] 컨테이너](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![모든 바닥글 보기](assets/livesearch-view-all-footer.png)
 
-### 제안 클래스 선택기
-
-`.livesearch.suggestions-container`
-![제안 컨테이너](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![추천 헤더](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![제안](assets/livesearch-suggestion.png)
-
 ### 제품 클래스 선택기
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![제품 컨테이너](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product result
+
 ![제품 결과](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![제품 이름](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product price
+
 ![제품 가격](assets/livesearch-product-price.png)
 
 ## 수정된 테마 작업 {#working-with-modified-theme}
