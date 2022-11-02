@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Quick Checkout] Adobe Commerce 관리 패널용"
 description: "자세한 내용은 [!DNL Quick Checkout] 관리 패널을 사용하면 확장을 성공적으로 온보드, 설정 및 시각화하는 방법에 도움이 될 수 있습니다."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | [!UICONTROL Overview] | 개요 탭에는 사용할 모든 리소스가 표시됩니다 [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | 보고서 탭에는 다음과 같은 포괄적인 [!DNL Quick Checkout] 보고 정보. |
+| [!UICONTROL Reports] | 보고서 탭에는 다음과 같은 포괄적인 [!DNL Quick Checkout] 정보. |
 
 ## 도움말 및 지원
 

@@ -1,8 +1,8 @@
 ---
 title: '"테스트 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
-description: '"테스트 및 유효성 검사를 통해 [!DNL Quick Checkout] 확장은 예상대로 작동합니다."'
+description: "테스트 및 유효성 검사를 통해 [!DNL Quick Checkout] 확장은 예상대로 작동합니다."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -44,15 +44,15 @@ Adobe Analytics Mobile Apps 또는 Analytics Premium이 [!DNL Quick Checkout] Ad
 저장소에서 성공적으로 체크아웃을 완료합니다.
 
 1. 스토어프런트로 이동하여 원하는 항목을 카트에 넣습니다.
-2. 체크아웃을 진행합니다.
-3. 와 연결된 이메일 주소를 입력합니다 [!DNL Bolt] 메시지가 표시되면 계정이 제대로 작동하지 않습니다.
-4. 계정의 전자 메일 주소로 전송된 일회성 암호(OTP)를 입력합니다.
-5. 환경 대시보드를 선택합니다.
+1. 체크아웃을 진행합니다.
+1. 와 연결된 이메일 주소를 입력합니다 [!DNL Bolt] 메시지가 표시되면 계정이 제대로 작동하지 않습니다.
+1. 계정의 전자 메일 주소로 전송된 일회성 암호(OTP)를 입력합니다.
+1. 환경 대시보드를 선택합니다.
 
    - 샌드박스
    - 프로덕션
 
-6. 주문하세요.
+1. 주문하세요.
 
 주문이 제출되면, _주문 그리드_ 보기:
 
