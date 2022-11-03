@@ -2,10 +2,10 @@
 title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '888'
+ht-degree: 0%
 
 ---
 
@@ -27,17 +27,39 @@ ht-degree: 1%
 
 +++관리 패널 업데이트
 
+_2022년 11월 2일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-293 --> 이제, [보고](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 스토어의 체크아웃 경험 통계에 대한 차트 및 보고 정보가 표시됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-422 --> 다음 [_개요_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) 보고서 항목 섹션의 섹션에서는 평균 체크아웃 시간, 체크아웃 중에 생성된 새 계정, 체크아웃 포기 등 저장소의 체크아웃 성능에 대한 자세한 정보를 보여줍니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-423 --> 다음 [_트렌드_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) 보고서 탭의 섹션에는 계정 유형별로 필터링된 체크아웃 경험 트렌드와 체크아웃 중에 생성된 새 계정이 표시됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-439 --> 다음 **보고서** 탭 표시 [기본 필터 사전 설정](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) 특정 데이터 범위를 표시하는 데 사용할 수 있습니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-433 --> 이제 _사용 가능한 데이터 없음_ 요청에 데이터가 반환되지 않는 경우 차트에 대한 경고가 표시됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-473 --> 의 사용자 경험 개선 사항 [!DNL Quick Checkout] 관리 패널에는 [체크아웃 추적](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) Adobe Commerce에서 볼트와 보고 정보를 공유할 수 있도록 해주는 설정입니다.
+
 _2022년 10월 5일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 관리 패널은 [Gainsight에서 제공하는 기능 투어](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-379 --> 이제 새 머천트가 [!DNL Quick Checkout] 처음으로 관리 패널 [Gainsight에서 제공하는 기능 투어](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 이 나타납니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> 다음 **보고서** 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 곧 사용할 수 있는 다이어그램과 보고 정보의 아웃라인이 포함되어 있습니다.
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> 다음 **보고서** 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 차트 및 보고 분석이 표시됩니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> 다음 **보고서** 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 곧 사용할 수 있는 다이어그램과 보고 정보에 대한 필터 날짜 범위가 표시됩니다.
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> 다음 **보고서** 탭에서 다음을 수행합니다. [!DNL Quick Checkout] 관리 패널에는 차트 및 보고 분석에 대한 날짜 범위 및 필터 사전 설정이 표시됩니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 이제 바닥글에 react 앱 버전이 표시됩니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 이제, [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 바닥글에 앱 버전을 표시합니다.
 
 +++
+
+## v1.3.0
+
+_2022년 11월 2일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-293 --> 자, [!DNL Quick Checkout] 에는 [체크아웃 추적](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) Adobe Commerce에서 볼트와 보고 정보를 공유할 수 있도록 해주는 설정입니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-461 --> 이제 경고 메시지가 [!DNL Quick Checkout] 관리 패널인 경우 [체크아웃 추적](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 구성이 비활성화되었습니다.
 
 ## v1.2.0
 
@@ -51,7 +73,7 @@ _2022년 9월 8일_
 
 ![새로 만들기](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] 이제 관리 패널에 다음과 같은 특정 섹션이 포함된 페이지 헤더가 있습니다 **개요**, **보고서**, 및 **설정**.
 
-![새로 만들기](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] 관리 패널에서는 Gainsight에서 제공하는 기능 둘러보기를 제공하는 시작 위젯을 추가합니다.
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-379 --> 새 머천트가 [!DNL Quick Checkout] 기능 둘러보기를 제공하는 시작 위젯이 처음으로 관리 패널에 표시됩니다.
 
 ![새로 만들기](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [관리 패널 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 일체형 **구성** API 및 게시 가능한 키가 [설정](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 보기.
 
