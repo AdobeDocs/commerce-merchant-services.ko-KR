@@ -1,7 +1,8 @@
 ---
 title: 사용자 지정
 description: 제품 권장 사항을 사용자 지정하는 방법을 알아봅니다.
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -110,7 +111,7 @@ ht-degree: 0%
 
 예를 들어 스토어에 일부 유기 제품이 판매되면 해당 제품에 대해 사용자 지정 속성이 있을 수 있습니다 `Organic = Yes`. 이러한 제품이 Recommendations에 표시될 때 특별한 시각적 처리를 제공할 수 있도록 상점 전면에서 이 속성 값에 액세스해야 할 수 있습니다. 마찬가지로, 이러한 사용자 지정 제품 속성 값에 액세스하면 제품의 배지를 지정하거나 사이트의 프레젠테이션 레이어에서 사용자 지정 로직을 수행할 수 있습니다.
 
-![배지 추가](assets/unit.png)
+![배지 추가](assets/unit-custom.png)
 
 페이지에서 권장 사항 단위를 렌더링할 때 사용자 지정 제품 속성을 사용할 수 있도록 하려면 `Used in Product Listing` 속성 대상 `Yes` 에서 [제품 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) 페이지에 있을 수도 있습니다.
 
