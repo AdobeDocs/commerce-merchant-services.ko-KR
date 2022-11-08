@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Adobe은 상거래, 통합 및 데이터 서비스의 컬렉션을 제공하여 
    </tr>
 <tr>
     <td valign="top">
-       <img alt="[!DNL Channel manager]" src="assets/channel-manager.png" width="170px"></td>
+       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>채널 관리자</strong></a> <br><em>(Magento Open Source에 사용 가능)</em>
     <div>Walmart Marketplace와 통합하여 매출을 늘리고, 신규 고객에게 도달하며, 운영을 간소화하고, 시간을 절약할 수 있습니다. 직원이 Commerce에서 Walmart Marketplace 판매, 인벤토리 및 가격 정책을 원활하게 관리할 수 있도록 합니다.</div>
   </td>
