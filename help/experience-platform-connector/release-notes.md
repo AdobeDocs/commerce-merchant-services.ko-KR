@@ -2,10 +2,10 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 3%
 
 ---
 
@@ -35,6 +35,12 @@ _2022년 10월 12일_
 * ![새로 만들기](../assets/new.svg) - 에 대한 지원을 추가했습니다. [AEM storfront](overview.md#aem-support)
 
 +++
+
+## 2.0.1
+
+_2022년 11월 10일_
+
+* ![해결된 문제](../assets/fix.svg) - 이제 Storefront Event Collector 및 Storefront Event SDK가 성공적으로 로드된 후에만 Adobe Experience Platform 컨텍스트이 설정됩니다.
 
 ## 2.0.0
 
