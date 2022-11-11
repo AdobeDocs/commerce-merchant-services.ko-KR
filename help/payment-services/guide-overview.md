@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Payment Services] 안내서 개요"'
+title: "[!DNL Payment Services] 안내서 개요"
 description: 에 대한 포괄적인 정보 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 설치 및 온보딩 등 관리자
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 834faafdc35280908dfd468b3527b9f6cbe5e024
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -40,5 +40,5 @@ ht-degree: 0%
 
 ![도움말 리소스](assets/help-resources.png)
 
-* [도움말 센터](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} - 다음을 참조하십시오. [!DNL Payment Services]- 관련 문제 해결 문서.
-* [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
+* [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)- 다음을 참조하십시오. [!DNL Payment Services]- 기술 자료의 문제 해결 문서
+* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)- 추가 도움말을 보려면 티켓을 제출하십시오.
