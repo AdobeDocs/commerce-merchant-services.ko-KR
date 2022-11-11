@@ -2,9 +2,9 @@
 title: 안내서 개요
 description: Experience Platform 커넥터를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -50,5 +50,5 @@ Experience Platform 커넥터를 사용하려면 다음을 수행해야 합니�
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-- [도움말 센터](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
-- [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
+- [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
+- [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
