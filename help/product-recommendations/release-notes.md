@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 릴리스 노트에는 다음에 대한 업데이트가 포함되어 있습니다 [!DNL Product Recommendations] 모듈:
 
-* 2021년 3월 현재 [!DNL Product Recommendations] 이제에서 지원됩니다. [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) 상점 전구.
 * [!DNL Product Recommendations] mexackage: `magento/product-recommendations`
 * 에서 Page Builder 지원 [!DNL Product Recommendations] (선택 사항) 모듈: `magento/module-page-builder-product-recommendations`
 * 에 대한 시각적 유사성 권장 사항 유형 지원 [!DNL Product Recommendations] (선택 사항) 모듈: `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ ht-degree: 0%
 개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x 및 2.4.x
+
+### magento/product-recommendations 4.0.1
+
+* ![수정](../assets/fix.svg) - 이전에는 표시 통화가 기본이 아닌 통화로 전환되었을 때 제품 Recommendations에 오류가 표시되었습니다. 이제 통화 전환이 제대로 작동합니다.
 
 ### magento/product-recommendations 4.0.0
 
