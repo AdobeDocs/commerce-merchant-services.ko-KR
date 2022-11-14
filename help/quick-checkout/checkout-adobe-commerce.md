@@ -2,9 +2,9 @@
 title: "Adobe Commerce 사용자에 대한 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce 사용자의 흐름."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 체크아웃하기 전에 쇼핑객이 Adobe Commerce에 로그인한 경우에는 [!DNL Bolt] 체크 아웃 중에는 OTP 팝업이 표시되지 않습니다.
 
-기존 Adobe Commerce 사용자로 주문할 때 문제가 발생하는 경우 [빠른 체크아웃 문제 해결](https://support.magento.com/hc/en-us/articles/6909450342541) Adobe Commerce 도움말 센터의 문서.
+기존 Adobe Commerce 사용자로 주문할 때 문제가 발생하는 경우 [빠른 체크아웃 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce 도움말 센터의 문서.
 
 ## 새로 만들기 [!DNL Bolt] account
 

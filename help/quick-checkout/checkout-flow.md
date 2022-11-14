@@ -2,9 +2,9 @@
 title: "Adobe Commerce의 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce의 흐름"
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ ht-degree: 0%
 
 ## 지원 요청
 
-다음을 통해 Adobe Commerce 지원 센터에 문의하십시오 [Adobe Commerce 도움말 센터](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) 도움이 필요하십니까?
+다음을 통해 Adobe Commerce 지원 센터에 문의하십시오 [Adobe Commerce 도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 도움이 필요하십니까?

@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ _2022년 8월 9일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-375 --> 사용자 환경 개선 사항 [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 모든 필수 매개 변수가 제공되면 구성을 저장할 수 있습니다.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue BOLT-342 --> 공통 [문제 해결](https://support.magento.com/hc/en-us/articles/6909450342541) 설치 중 발생하는 문제 [!DNL Quick Checkout].
+![알려진 문제](../assets/bug.svg)<!-- Issue BOLT-342 --> 공통 [문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) 설치 중 발생하는 문제 [!DNL Quick Checkout].
