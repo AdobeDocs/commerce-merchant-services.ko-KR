@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] 릴리스 정보"
 description: "에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
+source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 0%
+source-wordcount: '1166'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,18 @@ ht-degree: 0%
 * ![새로 만들기](../assets/new.svg) - 새로운 기능
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) - 알려진 문제
+
+## [!DNL Live Search] 2.0.5
+
+* Adobe Commerce(EE)와 호환됩니다. 2.4.x
+* Adobe Commerce for Cloud(ECE)와 호환됩니다. 2.4.x
+* 안정성: 안정적인
+
+* ![수정](../assets/fix.svg) - 네트워크 문제로 인해 SDK 리소스를 사용할 수 없을 때 라이브 검색에서 오류가 발생합니다. 이제 이 버그가 수정되었습니다.
+
+가맹점은 이러한 기능에 액세스하려면 라이브 검색 확장 버전 >= 2.0.5를 업그레이드해야 합니다.
+
+프로덕션으로 푸시하기 전에 업그레이드 및 테스트를 수행하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 비스파이크 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
 ## [!DNL Live Search] 2.0.4
 
@@ -30,8 +42,6 @@ ht-degree: 0%
 * ![수정](../assets/fix.svg) - 이전에는 존재하지 않는 용어를 검색할 때 Live Search에서 오류를 반환합니다. 이제 해당 버그가 수정되었습니다.
 
 가맹점은 Live Search 확장 버전 >= 2.0.4를 업그레이드하여 이러한 기능에 액세스해야 합니다.
-
-프로덕션에 투입하기 전에 업그레이드 및 테스트를 수행하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 비스파이크 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
 ## [!DNL Live Search] 2.0.3
 
