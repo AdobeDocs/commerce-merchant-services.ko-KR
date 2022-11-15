@@ -2,9 +2,9 @@
 title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 ### 색인 지정
 
-* 저장소 보기당 최대 300개의 제품 특성을 인덱싱합니다
-* Adobe Commerce 데이터베이스의 제품만 인덱싱합니다
-* CMS 페이지를 색인화하지 않습니다
+* 저장소 보기당 최대 300개의 제품 특성을 인덱싱합니다.
+* Adobe Commerce 데이터베이스의 제품만 인덱싱합니다.
+* CMS 페이지는 인덱싱되지 않습니다.
 
 ### 쿼리
 
@@ -45,13 +45,13 @@ ht-degree: 0%
 
 ### 규칙
 
-* 데이터 공간 ID당 최대 규칙 수는 50개입니다.
+* 저장소 보기당 최대 규칙 수는 50개입니다.
 * 규칙당 최대 조건 수는 10개입니다.
 * 규칙당 최대 이벤트 수는 25개입니다.
 
 ### 동의어
 
-* [!DNL Live Search] 에서는 최대 200개의 동의어를 관리할 수 있습니다 `Data Space ID`.
+* [!DNL Live Search] 저장소 보기당 최대 200개의 동의어를 관리할 수 있습니다.
 
 ### PWA 베타 릴리스
 
