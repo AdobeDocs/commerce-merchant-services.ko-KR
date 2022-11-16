@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
+source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -41,15 +41,11 @@ ht-degree: 0%
 1. 를 엽니다. `<Commerce_root>/composer.json` 파일을 텍스트 편집기에 넣고 `require` 섹션을 다음과 같이 참조하십시오.
 
    ```json
-   "require": {
-    "magento/composer-root-update-plugin": "^2.0.2",
-    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
-    "magento/saas-export": "^101.4.0",
-    "magento/commerce-data-export": "^101.3.1",
-    "magento/commerce-data-export-ee": "^101.3.1",
-    "magento/services-id": "^3.0.1",
-    "magento/services-connector": "1.2.1"
-    }
+   "require":{
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/magento-cloud-metapackage":">=2.4.5 <2.4.6",
+   "magento/catalog-service": "^1.0.0"
+      }
    ```
 
 1. 로컬에서 새 구성을 테스트하고 종속성을 업데이트합니다.
@@ -70,13 +66,8 @@ ht-degree: 0%
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
+   "magento/composer-root-update-plugin":"^2.0.2",
+   "magento/catalog-service": "^1.0.0"
    }
    ```
 
@@ -99,6 +90,23 @@ ht-degree: 0%
    ```bash
    bin/magento cache:clean
    ```
+
+
+## 카탈로그 서비스 및 API Mesh
+
+다음 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 개발자는 Adobe IO를 사용하여 개인 또는 타사 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
+
+API Mesh를 카탈로그 서비스와 함께 사용하는 첫 번째 단계는 API Mesh를 인스턴스에 연결하는 것입니다. 자세한 지침은 [메쉬 만들기](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+
+설정을 완료하려면 [Adobe IO CLI 패키지](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 설치되었습니다.
+
+Adobe IO에 Mesh가 구성되면 다음 명령을 실행하여 새 메쉬를 연결합니다.
+
+```bash
+aio api-mesh:source:install "CommerceCatalogServiceGraph"
+```
+
+이 명령을 실행한 후 카탈로그 서비스가 API Mesh를 통해 실행되어야 합니다.
 
 ## 카탈로그 내보내기 구성
 
