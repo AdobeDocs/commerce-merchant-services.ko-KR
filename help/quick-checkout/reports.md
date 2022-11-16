@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] 보고"
-description: "[!DNL Quick Checkout] 포괄적인 보고 정보를 제공합니다."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '`[!DNL Quick Checkout] 보고'
+description: '`[!DNL Quick Checkout] 포괄적인 보고 정보를 제공합니다.'''
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # 보고서
 
@@ -28,9 +28,9 @@ ht-degree: 0%
 | 차트 | 설명 |
 |---|---|
 | [!UICONTROL Checkout abandonment] | 구매를 완료하지 않고 체크아웃 프로세스를 종료한 방문자의 비율. |
-| [!UICONTROL Checkout abandonment breakdown] | 방문자 유형으로 나눈 체크아웃 포기. 옵션: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | 방문자 유형으로 나눈 체크아웃 포기. 도구 설명에 볼트와 게스트 간의 백분율이 표시됩니다. 옵션: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | 방문자가 체크아웃 프로세스를 완료하는 데 걸리는 평균 시간입니다. |
-| [!UICONTROL Average checkout time breakdown] | 방문자 유형으로 나눈 평균 체크아웃 시간. 옵션: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | 방문자 유형으로 나눈 평균 체크아웃 시간. 도구 설명에 볼트와 게스트 간의 백분율이 표시됩니다. 옵션: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | 방문자 유형으로 나눈 주문입니다. 옵션: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## 트렌드 보고서
@@ -55,4 +55,3 @@ ht-degree: 0%
 |---|---|
 | [!UICONTROL Preset] | 특정 데이터 범위를 표시하는 데 사용할 수 있는 기본 사전 설정을 표시하는 드롭다운입니다. 기본적으로 최근 30일 |
 | [!UICONTROL Date range] | 선택한 날짜에 따라 특정 데이터 범위를 선택할 수 있는 드롭다운입니다. |
-
