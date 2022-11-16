@@ -2,9 +2,9 @@
 title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ ht-degree: 0%
 ### 현재 지원되지 않음
 
 * 다음 [고급 검색](https://docs.magento.com/user-guide/catalog/search-advanced.html) 모듈은 [!DNL Live Search] 가 설치되어 있고, 상점 바닥글의 고급 검색 링크가 제거됩니다.
-* [고객 그룹](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [사용자 지정 가격 그룹](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * 에 사용된 복수 재고 위치 [MCOM](https://docs.magento.com/user-guide/mcom.html) 또는 기타 OMS 확장
-* [통합 B2B 기능](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * 제품 가격은 포함되지 않습니다 [부가세](https://docs.magento.com/user-guide/tax/vat.html) (VAT).
-* 재고 부족 제품이 [스톡 옵션](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) 구성.
