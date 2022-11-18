@@ -2,10 +2,10 @@
 title: '[!DNL Catalog Service] 릴리스 정보'
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
+source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 1%
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,21 @@ ht-degree: 1%
 * ![새로 만들기](../assets/new.svg) 새로운 기능
 * ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) 알려진 문제
+
+## V1.1 릴리스
+
+릴리스 날짜: 2022-11-18(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
+
+![새로 만들기](../assets/new.svg) 이제 카탈로그 서비스가 Adobe의 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
+![수정](../assets/fix.svg) API 확장성과 전반적인 성능이 향상되었습니다.
+
+### 알려진 제한 사항
+
+이러한 기능은 아직 지원되지 않습니다.
+
+* 계층 가격 책정
+* 카탈로그에서 변형을 삭제하면 업데이트가 수신되지 않습니다
+* 동적 특성 페이로드의 최대 크기는 9MB입니다
 
 ## V1.0 릴리스
 

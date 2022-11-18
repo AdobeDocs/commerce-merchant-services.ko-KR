@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
+source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-
 ## 카탈로그 서비스 및 API Mesh
 
 다음 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 개발자는 Adobe IO를 사용하여 개인 또는 타사 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
@@ -103,7 +102,16 @@ API Mesh를 카탈로그 서비스와 함께 사용하는 첫 번째 단계는 A
 Adobe IO에 Mesh가 구성되면 다음 명령을 실행하여 새 메쉬를 연결합니다.
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+여기서 `variables.json` 는 Adobe IO에 일반적으로 사용되는 값을 저장하는 별도의 파일입니다.
+예를 들어 API 키를 파일 내에 저장할 수 있습니다.
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 이 명령을 실행한 후 카탈로그 서비스가 API Mesh를 통해 실행되어야 합니다.
