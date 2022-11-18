@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 사용자 지정할 수 있습니다 [!DNL Payment Services] 의 유용한 설정을 사용하여 [!DNL Payment Services] 집에
 
-구성하려면 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] click **[!UICONTROL Settings]**. 이러한 구성 옵션은 _[!UICONTROL Payment mode]_필드[_&#x200B;일반&#x200B;_구성 옵션](#general-configuration-options).
+구성하려면 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] click **[!UICONTROL Settings]**. 이러한 구성 옵션은 _[!UICONTROL Payment mode]_필드[_&#x200B;일반&#x200B;_구성 옵션](#configure-general-settings).
 
 다중 저장소 또는 레거시 구성의 경우 다음을 참조하십시오 [관리자에서 구성](configure-admin.md).
 
@@ -65,12 +65,12 @@ ht-degree: 0%
 1. 클릭 **[!UICONTROL Save]**.
 1. 웹 사이트 또는 저장소 보기에 대해 구성된 기본값 이외의 소프트 설명자를 생성하려면 다음을 수행합니다.
    1. 웹 사이트 또는 저장소 보기를 선택합니다. **[!UICONTROL Scope]** 소프트 설명자를 생성할 드롭다운 메뉴
-   1. 전환 *해제* **[!UICONTROL Use website]** 또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다름).
+   1. 전환 _해제_ **[!UICONTROL Use website]** 또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다름).
    1. 텍스트 필드에 사용자 지정 텍스트를 추가합니다.
    1. 클릭 **[!UICONTROL Save]**.
-1. 웹 사이트 또는 저장소 보기에 대해 사용하려면 기본 소프트 설명자를 참조하십시오 *또는* 상위 웹 사이트에 사용되는 소프트 설명자:
+1. 웹 사이트 또는 저장소 보기에 대해 사용하려면 기본 소프트 설명자를 참조하십시오 _또는_ 상위 웹 사이트에 사용되는 소프트 설명자:
    1. 웹 사이트 또는 저장소 보기를 선택합니다. **[!UICONTROL Scope]** 기존 소프트 설명자를 활성화할 드롭다운 메뉴
-   1. 전환 *on* **[!UICONTROL Use website]** 또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다름).
+   1. 전환 _on_ **[!UICONTROL Use website]** 또는 **[!UICONTROL Use default]**&#x200B;선택한 범위에 따라 달라짐).
    1. 클릭 **[!UICONTROL Save]**.
 
    변경 사항을 저장하지 않고 이 보기에서 멀리 이동하려고 하면 변경 사항을 취소, 편집 유지 또는 저장하라는 모달이 표시됩니다.
@@ -89,16 +89,28 @@ ht-degree: 0%
 
 웹 사이트에 대해 결제 서비스를 활성화했으므로, 결제 기능 및 상점 표시에 대한 기본 설정을 변경할 수 있습니다.
 
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![홈 보기](assets/payment-services-menu-small.png)
+
+1. 클릭 **[!UICONTROL Settings]**. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
+1. 에 대한 결제 옵션 구성 [신용 카드](#credit-card-fields), [결제 단추](#payment-buttons), 및 [단추 스타일](#button-style)를 설정하는 것이 좋습니다.
+
 ### 신용 카드 필드
 
 다음 _[!UICONTROL Credit Card Fields]_설정은 신용 카드 또는 직불 카드 결제 방법에 대해 간단하고 안전한 체크아웃 옵션을 제공합니다.
 
 자세한 내용은 [결제 옵션](payments-options.md#credit-card-fields) 추가 정보.
 
+1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![홈 보기](assets/payment-services-menu-small.png)
+
 1. 저장소 보기에서 **[!UICONTROL Scope]** 드롭다운 메뉴에서 결제 방법을 사용할 수 있습니다.
 1. 체크아웃 중에 표시되는 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout title]** 필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** to `Authorize` 또는 `Authorize and Capture`.
 1. 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화하려면 **[!UICONTROL Show on checkout page]** 선택기.
+1. 활성화 또는 비활성화하려면 [카드 저장](#card-vaulting), 전환 **[!UICONTROL Vault enabled]** 선택기.
 1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.
 
@@ -113,6 +125,7 @@ ht-degree: 0%
 | [!UICONTROL Title] | 저장소 보기 | 체크아웃하는 동안 결제 방법 보기에서 이 결제 옵션의 제호로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions)지정한 결제 방법에 대한 {target=&quot;_blank&quot;} 입니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에 표시할 신용 카드 필드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 웹 사이트 | 신용 카드 vaulting을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 결제 단추
@@ -136,10 +149,10 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
       >[!NOTE]
       >
-      > Apple Pay를 사용하려면 [Apple 개발자 계정이 있어야 합니다.](test-validate.md#test-in-sandbox-environment) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 *또는* 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md)를 활성화하려면 영업 담당자에게 문의하십시오.
+      > Apple Pay를 사용하려면 [Apple 개발자 계정이 있어야 합니다.](test-validate.md#test-in-sandbox-environment) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 _또는_ 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md)를 활성화하려면 영업 담당자에게 문의하십시오.
 
       지급 단추나 PayPal 나중에 지급 메시지에 대한 표시/해제를 켜거나 끌 때 해당 구성의 시각적 미리 보기가 설정 페이지 하단에 표시됩니다.
-git
+
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.
 
@@ -212,11 +225,18 @@ git
 
 스토어에 올바른 구성이 표시되는지 확인하려면 를 주기적으로 [캐시 플러시](https://docs.magento.com/user-guide/system/cache-management.html).
 
+## 카드 소산
+
+고객이 내 계정에 있는 신용 카드 정보를 향후 구매에 사용할 수 있도록 저장 또는 &quot;저장&quot;할 수 있는 기능을 활성화할 수 있습니다.
+
+에서 카드 볼팅 을 활성화 또는 비활성화합니다 [신용 카드 필드 설정](#credit-card-fields).
+
+자세한 내용은 [신용 카드 저장](vaulting.md) vaulting에 대한 자세한 정보입니다.
+
 ## 여러 PayPal 계정 사용
 
-Payment Services에서 내에서 여러 PayPal 계정을 사용할 수 있습니다 **하나** 웹 사이트 수준의 머천트 계정. 예를 들어, 여러 국가(서로 다른 사용)에서 저장소를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부 부분에 Adobe Commerce을 사용하지만 *모두*&#x200B;여러 PayPal 계정을 사용하도록 머천트 계정을 설정할 수 있습니다.
+Payment Services에서 내에서 여러 PayPal 계정을 사용할 수 있습니다 **하나** 웹 사이트 수준의 머천트 계정. 예를 들어, 여러 국가(서로 다른 사용)에서 저장소를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부 부분에 Adobe Commerce을 사용하지만 _모두_&#x200B;여러 PayPal 계정을 사용하도록 머천트 계정을 설정할 수 있습니다.
 
 자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 웹 사이트, 스토어 및 저장소 보기의 계층 구조에 대한 자세한 정보.
 
 영업 담당자가 [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) PayPal을 사용하여 추가 사이트에 머천트 계정을 설정하고 온보딩하는 경우, 사용자가 구성하도록 구성한 PayPal 단추가 사이트에 표시되도록 합니다. 웹 사이트에 대해 여러 PayPal 계정을 사용하는 데 도움이 필요하면 영업 담당자에게 문의하십시오.
-

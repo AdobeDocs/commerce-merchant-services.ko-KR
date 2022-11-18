@@ -4,9 +4,9 @@ description: 에 대한 포괄적인 정보 [!DNL Payment Services] 대상 [!DNL
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 83040fecfc4f0ffbd3f6b3fc5e098443dadcdb5e
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ ht-degree: 0%
 
 | 안내서 | 설명 |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 사용 안내서](https://docs.magento.com/user-guide/) | 두 가지 모두에 대한 Merchant 중심의 설명서 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4 개발자 안내서](https://devdocs.magento.com/) | 빌드 및 사용자 지정에 사용되는 개발자 중심의 문서 [!DNL Adobe Commerce] 또는 [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 사용 안내서](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | 두 가지 모두에 대한 Merchant 중심의 설명서 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce] 2.4 개발자 안내서](https://developer.adobe.com/commerce/docs) | 빌드 및 사용자 지정에 사용되는 개발자 중심의 문서 [!DNL Adobe Commerce] 또는 [!DNL Magento Open Source] |
 
 ## 지원
 

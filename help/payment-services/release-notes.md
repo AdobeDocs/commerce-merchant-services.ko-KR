@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _2021년 6월 28일_
 
 +++
 
+## v1.5.0
+
+_2022년 11월 18일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3880 --> 이제 쇼핑객은 [체크아웃 중에 신용 카드 정보를 저장(저장)합니다](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 동일한 머천트 계정 내의 동일 또는 다른 스토어에 대해 나중에 구매할 때 사용하기 위해.
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3950 --> 이제 상인들이 [Instant Purchase Commerce 기능](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 쇼핑객이 [저장된 신용 카드 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html))을 클릭하여 체크아웃을 신속하게 처리합니다.
+
 ## v1.4.1
 
 _2022년 10월 14일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3766 --> 고객의 결제 방법이 거부되면 표시되는 오류 메시지는 더 설명적입니다. 고객에게 결제 정보를 다시 입력하고 다시 시도하거나, 다른 결제 방법을 시도하거나, 거래를 거절하는 것에 대해 은행에 문의하도록 권장합니다.
+![수정](../assets/fix.svg)<!-- Issue PAY-3766 --> 고객의 결제 방법이 거부되면 표시되는 오류 메시지는 더 설명적입니다. 고객에게 결제 정보를 다시 입력하고 다시 시도하거나, 다른 결제 방법을 시도하거나, 거래를 거절하는 것에 대해 은행에 문의하도록 권장합니다.
 
 ## v1.4.0
 

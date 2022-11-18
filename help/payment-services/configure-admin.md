@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ ht-degree: 0%
 1. 에서 _[!UICONTROL Payment Services]_섹션에서_[!UICONTROL Credit Card Fields]_ 섹션을 참조하십시오.
 1. 대상 **[!UICONTROL Title]**&#x200B;체크 아웃 중에 표시된 대로 결제 방법의 이름을 변경하려면 텍스트(필요한 경우)를 입력합니다.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **권한 부여 및 캡처**.
+1. 대상 **[!UICONTROL Show on checkout page]**, 선택 `Yes` 를 클릭하거나 탭합니다.
+1. 대상 **[!UICONTROL Vault Enabled]**, 선택 `Yes` 을 클릭하여 체크아웃을 위해 신용 카드 볼팅 을 활성화합니다.
 1. 대상 **디버그 모드**, 선택 `Yes` 디버그 모드를 활성화하거나 `No` 사용 안 함).
 1. 클릭 **[!UICONTROL Save Config]** 변경 사항을 저장하려면 을 클릭합니다.
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;를 클릭한 다음 **[!UICONTROL Flush Cache]** 잘못된 캐시를 모두 새로 고치려면

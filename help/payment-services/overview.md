@@ -4,9 +4,9 @@ description: 설치 및 사용 방법 알아보기 [!DNL Payment Services] 귀�
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 * [**결제 옵션**](payments-options.md)- 결제 옵션을 설정하여 스토어(또는 다중 스토어) 고객에게 사용 가능한 방법을 사용자 정의합니다.
 * **Cash flow Management 재무 보고**—동기화 [결제 세부 사항](order-payment-status.md) 주문 시 처리된 볼륨, 결제 잔액 및 상세 정보를 완벽하게 투명하게 확인 [트랜잭션 수준 보고](payouts.md) 재정 조정을 위해
 * **투명한 가격 책정**—가격이 명확하고 우선합니다. 보이는 것은 여러분이 얻는 것입니다.
+* **효율적인 체크아웃 경험**—빠르고 단순한 체크아웃에 대한 모든 장벽을 제거하고 [카드 저장](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 및 [즉시 구매](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerce에 대해 기본적으로 활성화됨) 기능을 사용할 수 있습니다.
 
 ## 사용 가능
 
