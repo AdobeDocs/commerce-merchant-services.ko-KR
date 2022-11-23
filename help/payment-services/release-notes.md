@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
 
 +++
+
+## v1.5.1
+
+_2022년 11월 23일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue PAY-3923 --> 이제 결제 서비스에는 사용되지 않는 끝점을 추적, 필터링 또는 사용하지 않는 요청에 대한 사용자 에이전트 헤더에 버전 번호가 포함되어 있습니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 스마트 버튼을 사용하여 제품 페이지에서 주문이 배치되면 결제 서비스가 주문 데이터를 올바르게 표시합니다.
 
 ## v1.5.0
 
