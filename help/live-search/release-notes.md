@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] 릴리스 정보"
 description: "에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * ![새로 만들기](../assets/new.svg) - 이제 라이브 검색에서는 관리자의 &#39;재고 부족 제품 표시&#39; 설정에 따른 필터링을 지원합니다. 재고 부족 제품 표시를 false로 설정한 경우 `inStock = true` 가 필터에 추가됩니다.
 * ![수정](../assets/fix.svg) - 성능을 향상시키기 위해 라이브 검색 팝업에서 &#39;제안&#39; 블록이 제거되었습니다. 기능을 바꾸려는 경우 데이터가 여전히 GraphQL을 통해 전달됩니다.
-* ![수정](../assets/fix.svg) - `categories` 및 `categoryPath` 교체됨 `categoryIds` 카테고리 필터링에 사용할 수 있습니다. 자세한 내용은 [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) 주제.
+* ![수정](../assets/fix.svg) - `categories` 및 `categoryPath` 교체됨 `categoryIds` 카테고리 필터링에 사용할 수 있습니다. 자세한 내용은 [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 주제.
 * ![수정](../assets/fix.svg) - 이전에는 B2B 회사에 연결된 사용자가 검색을 수행할 때 잘못된 고객 그룹 코드를 받게 되었습니다. 이제 Live Search가 올바른 값을 반환합니다.
 * ![수정](../assets/fix.svg) - 이전에는 존재하지 않는 용어를 검색할 때 Live Search에서 오류를 반환합니다. 이제 해당 버그가 수정되었습니다.
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 * ![새로 만들기](../assets/new.svg) - 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 호환성 [!DNL Live Search].
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] 설치 프로세스는 고급 프로세스 변경 사항으로 업데이트됩니다.
 * ![수정](../assets/fix.svg) - [고급 검색](https://docs.magento.com/user-guide/catalog/search-advanced.html) 링크가 상점 바닥글에서 제거되었습니다.
-* ![버그](../assets/bug.svg) - 다음 제품 속성은 [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) PWA 베타 릴리스와 관련하여 사용하는 경우: `description`, `name`, `short_description`
+* ![버그](../assets/bug.svg) - 다음 제품 속성은 [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) PWA 베타 릴리스와 관련하여 사용하는 경우: `description`, `name`, `short_description`
 * ![버그](../assets/bug.svg) - PWA 베타 릴리스 [!DNL Live Search] 을 지원하지 않음 [이벤트 처리](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1 {#131}
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 * ![새로 만들기](../assets/new.svg) - [성능](performance.md) 보고 대시보드는 구매자들이 사용하는 검색어에 대한 통찰력을 제공합니다.
 * ![새로 만들기](../assets/new.svg) - [!DNL Live Search] [Storefront 이벤트 SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) 이벤트 게시 및 구독 서비스, 지표 등을 통해 일반 데이터 계층에 대한 액세스 권한을 제공합니다.
-* ![수정](../assets/fix.svg) - [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) 새 항목 있음 `active` 의 클래스 `.search-autocomplete` 가시성을 제어하는 컨테이너입니다.
+* ![수정](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) 새 항목 있음 `active` 의 클래스 `.search-autocomplete` 가시성을 제어하는 컨테이너입니다.
 * ![수정](../assets/fix.svg) - 상점 앞에서 [검색어](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) 바닥글 링크가 제거되고 캐시가 비활성화되어 있습니다. [!DNL Live Search] 설치.
 * ![버그](../assets/bug.svg) - 검색 어댑터용 패치는 중복 제품을 처리합니다.
 * ![버그](../assets/bug.svg) - [!DNL Live Search] 지원 [단일 소스](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (물리적) 복수(가상)가 있는 재고 위치 [주식](https://docs.magento.com/user-guide/catalog/inventory-stock.html). 현재 여러 인벤토리 소스가 지원되지 않습니다.

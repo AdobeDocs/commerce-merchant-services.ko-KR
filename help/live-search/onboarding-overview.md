@@ -2,9 +2,9 @@
 title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 ### 쿼리
 
 * [!DNL Live Search] 은 카테고리 트리의 전체 분류에 액세스할 수 없으며, 따라서 몇 가지 계층화된 탐색 검색 시나리오를 만들 수 있습니다.
-* [!DNL Live Search] 은 지능형 세그먼트와 사용자 지정 검색 등의 기능을 지원하기 위해 쿼리에 고유한 GraphQL 엔드포인트를 사용합니다. 와 비슷하지만 [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)에는 몇 가지 차이점이 있으며 일부 필드는 현재 완전히 호환되지 않을 수 있습니다.
+* [!DNL Live Search] 은 지능형 세그먼트와 사용자 지정 검색 등의 기능을 지원하기 위해 쿼리에 고유한 GraphQL 엔드포인트를 사용합니다. 와 비슷하지만 [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)에는 몇 가지 차이점이 있으며 일부 필드는 현재 완전히 호환되지 않을 수 있습니다.
 
 ### 규칙
 

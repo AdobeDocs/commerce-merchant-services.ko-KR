@@ -2,7 +2,7 @@
 title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법을 알아봅니다. [!DNL Live Search] Adobe Commerce"
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
    다음에 패싯을 추가할 수 있습니다 `cron` 제품 및 속성 피드를 실행하고 속성 메타데이터를 로 내보냅니다. [!DNL Live Search] 서비스.
 
-1. 데이터가 인덱싱되고 동기화될 때까지 최소 1시간 대기합니다. 그런 다음 [GraphQL 놀이터](https://devdocs.magento.com/live-search/graphql-support.html) 기본 쿼리를 사용하여 다음을 확인합니다.
+1. 데이터가 인덱싱되고 동기화될 때까지 최소 1시간 대기합니다. 그런 다음 [GraphQL 놀이터](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 기본 쿼리를 사용하여 다음을 확인합니다.
 
    * 반환된 제품 개수가 저장소 보기에 대해 예상한 개수와 일치합니다.
    * 패싯이 반환됩니다.
