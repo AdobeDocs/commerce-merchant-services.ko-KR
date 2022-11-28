@@ -2,9 +2,9 @@
 title: 결제 옵션
 description: 결제 옵션을 설정하여 스토어 고객에게 사용 가능한 방법을 사용자 정의합니다.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Apple Pay를 사용하려면 영업 담당자에게 문의하여 라이브 스토어에 사용할 수 있도록 하십시오.
+> Apple Pay를 사용하려면 Live Store에서 사용할 수 있도록 영업 담당자 또는 계정 관리자에게 문의하십시오.
 
 ### [!DNL Pay Later] 버튼
 
