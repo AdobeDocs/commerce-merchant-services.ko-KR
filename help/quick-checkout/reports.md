@@ -2,9 +2,9 @@
 title: '`[!DNL Quick Checkout] 보고'
 description: '`[!DNL Quick Checkout] 포괄적인 보고 정보를 제공합니다.'''
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 활성화 [**체크아웃 추적**](../quick-checkout/settings-quick-checkout.md) 을(를) 관리자 패널에서 사용할 수 있으므로 Adobe Commerce은 볼트와 체크아웃 정보를 공유할 수 있습니다. 기본적으로 이 구성 옵션은 **예**. 이 옵션을 비활성화한 경우( **아니요**), 보고에 영향을 줍니다.
+> Adobe Commerce이 볼트와 체크아웃 정보를 공유할 수 있도록 하려면, [**체크아웃 추적**](../quick-checkout/settings-quick-checkout.md)  이 설정은 관리자에서 활성화해야 합니다. 기본적으로 이 구성 옵션은 **예**. 이 옵션을 로 설정한 경우 **아니요**, 보고에 영향을 줍니다. 볼트는 매일 오전 3시(동부 표준시)에 보고 정보를 새로 고칩니다.
 
 ## 개요 보고서
 
