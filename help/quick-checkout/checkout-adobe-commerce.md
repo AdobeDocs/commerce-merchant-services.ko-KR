@@ -2,9 +2,9 @@
 title: "Adobe Commerce 사용자에 대한 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce 사용자의 흐름."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 > Bolt OTP 팝업은 쇼핑객이 체크아웃 페이지에 있을 때만 나타납니다. 쇼핑객은 해당 팝업 창을 닫아서 Bolt에 로그인하는 것을 옵트아웃할 수 있습니다.
 
-체크아웃하기 전에 쇼핑객이 Adobe Commerce에 로그인한 경우에는 [!DNL Bolt] 체크 아웃 중에는 OTP 팝업이 표시되지 않습니다.
+체크아웃하기 전에 쇼핑객이 Adobe Commerce에 로그인한 경우에는 [!DNL Bolt] 체크 아웃 중에는 OTP 팝업이 나타나지 않지만, 쇼핑객이 자신의 볼트 지갑에 액세스하기 위해 로그인하도록 제안하는 메시지가 나타납니다.
 
 기존 Adobe Commerce 사용자로 주문할 때 문제가 발생하는 경우 [빠른 체크아웃 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce 도움말 센터의 문서.
 

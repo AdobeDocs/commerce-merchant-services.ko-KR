@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ ht-degree: 0%
 이러한 릴리스 노트는 관리 패널에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++관리 패널 업데이트
+
+_2022년 11월 30일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-502 --> 이제, [보고](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) 탭에는 새로운 &quot;작년&quot; 사전 설정이 있습니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-471 --> 의 사용자 경험 개선 사항 [!DNL Quick Checkout] 관리 패널에는 의 추가 정보가 표시됩니다. [도구 설명](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-514 --> 의 사용자 경험 개선 사항 [!DNL Quick Checkout] 관리 패널에는 올바른 총 주문 번호, 색상 일관성 및 모든 차트에 대한 올바른 범례가 표시됩니다.
 
 _2022년 11월 2일_
 
@@ -52,6 +60,16 @@ _2022년 10월 5일_
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 이제, [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 바닥글에 앱 버전을 표시합니다.
 
 +++
+
+## v1.4.0
+
+_2022년 11월 30일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-513 --> 이제, Adobe Commerce 고객이 체크아웃 프로세스 중에 스토어에 로그인하여 볼트 계정이 있는 경우 쇼퍼의 볼트 계정에 로그인하는 옵션이 표시됩니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-512 --> 새로운 구성은 로그인한 쇼핑객이 볼트에 로그인할 수 있는지 여부를 자동으로 감지합니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-480 --> 의 새 구성 [!DNL Quick Checkout] 관리 패널에서는 기본 탐색 흐름을 **배송** 볼트 고객이 로그인하면 페이지가 표시됩니다. 기본적으로 다음과 같이 구성됩니다 **결제** 페이지.
 
 ## v1.3.0
 
