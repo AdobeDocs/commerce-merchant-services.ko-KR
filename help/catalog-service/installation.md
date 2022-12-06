@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
+## 카탈로그 내보내기 구성
+
+설치 후 [!DNL Catalog Service], 다음을 구성해야 합니다. [Commerce Services 커넥터](../landing/saas.md) API 키를 지정하고 SaaS 데이터 공간 선택
+
+카탈로그 내보내기가 올바르게 실행되는지 확인하려면:
+
+- 확인 [직장](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 실행 중입니다.
+- 확인 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 실행 중입니다.
+- 다음을 확인합니다. `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, 및 `Product Variant Feed` 인덱서가 `Update by Schedule`.
+
 ## 카탈로그 서비스 및 API Mesh
 
-다음 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 개발자는 Adobe IO를 사용하여 개인 또는 타사 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
+다음 [Adobe Developer App Builder용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 개발자는 Adobe IO를 사용하여 개인 또는 타사 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
 
 API Mesh를 카탈로그 서비스와 함께 사용하는 첫 번째 단계는 API Mesh를 인스턴스에 연결하는 것입니다. 자세한 지침은 [메쉬 만들기](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 설정을 완료하려면 [Adobe IO CLI 패키지](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) 설치되었습니다.
 
-Adobe IO에 Mesh가 구성되면 다음 명령을 실행하여 새 메쉬를 연결합니다.
+Adobe IO에 Mesh가 구성되면 다음 명령을 실행하여 `CommerceCatalogServiceGraph` 메쉬에 대한 소스.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 }
 ```
 
-이 명령을 실행한 후 카탈로그 서비스가 API Mesh를 통해 실행되어야 합니다.
-
-## 카탈로그 내보내기 구성
-
-설치 후 [!DNL Catalog Service], 다음을 구성해야 합니다. [Commerce Services 커넥터](../landing/saas.md) API 키를 지정하고 SaaS 데이터 공간 선택
-
-카탈로그 내보내기가 올바르게 실행되는지 확인하려면:
-
-- 확인 [직장](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 실행 중입니다.
-- 확인 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 실행 중입니다.
-- 다음을 확인합니다. `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, 및 `Product Variant Feed` 인덱서가 `Update by Schedule`.
+이 명령을 실행한 후 카탈로그 서비스가 API Mesh를 통해 실행되어야 합니다. 를 실행할 수 있습니다 `aio api-mesh:get` 업데이트된 메쉬의 구성을 확인하는 명령
 
 ## [!DNL Catalog Service] 데모
 
