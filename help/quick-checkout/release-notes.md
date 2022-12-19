@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 관리 패널에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++관리 패널 업데이트
+
+_2022년 12월 14일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-524 --> 다음 [!DNL Quick Checkout] 이제 관리 패널에 올바른 총 주문 수 및 업데이트된 보고 정보가 표시됩니다.
 
 _2022년 11월 30일_
 
