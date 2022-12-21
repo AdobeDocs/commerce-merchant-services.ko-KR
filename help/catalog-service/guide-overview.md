@@ -1,10 +1,10 @@
 ---
 title: '`[!DNL Catalog Service] 안내서 개요'''
-description: '`[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 질의보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 더 빨리 검색하는 방법을 제공합니다.'
+description: '`[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 내용을 더 빨리 검색하는 방법을 제공합니다.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 * Adobe [!DNL Commerce] 시스템 관리자가 서비스를 설치 및 유지 관리합니다. [!DNL Catalog Service] 에는 표준 관리자 사용자를 위한 관리 UI 또는 기능이 없습니다.
 
-* 통합자는 GraphQL 쿼리를 작성하고 프런트 엔드 클라이언트를 사용하는 상점 전면에 통합합니다.
+* 통합자는 GraphQL 쿼리를 빌드하고 프런트 엔드 클라이언트를 사용하는 스토어에 통합합니다.
 
 ## 추가 설명서
 
@@ -26,6 +26,12 @@ ht-degree: 0%
 | [Adobe Commerce 2.4 사용 안내서](https://docs.magento.com/user-guide/) | Adobe Commerce 및 Magento Open Source 모두를 위한 머천트 중심의 문서 |
 | [Adobe Commerce 2.4 개발자 안내서](https://devdocs.magento.com/) | Adobe Commerce 또는 Magento Open Source을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서입니다 |
 
-## 지원 요청
+## 지원
 
-온보딩 프로세스는 을 설정하고 구현하는 데 필요한 단계를 안내하도록 설계되었습니다 [!DNL Catalog Service] 기능을 사용할 수 있습니다. 의 Adobe Commerce 엔지니어링 팀에 문의하십시오 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 지원을 위한 공개 Slack 채널.
+다음 [온보딩 프로세스](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) 는 를 설정하고 활성화하는 데 필요한 단계를 안내하도록 설계되었습니다 [!DNL Catalog Service] 기능을 사용할 수 있습니다.
+
+이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
+
+* [도움말 센터](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - 카탈로그 서비스 관련 문제 해결 문서를 참조하십시오.
+* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - 추가 도움말을 보려면 티켓을 제출하십시오.
+* Adobe Commerce 엔지니어링 팀에 참여하고, SaaS 상점 서비스 사용자는 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 최신 공개 Slack 채널입니다.
