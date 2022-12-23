@@ -2,10 +2,10 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
@@ -52,6 +52,14 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
 
 +++
+
+## v1.5.2
+
+_2022년 12월 22일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부될 때 지급 서비스의 송장 발행이 개선되었습니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스에는 PayPal 스마트 버튼이 올바르게 표시됩니다. [체크 아웃 실행](https://marketplace.magento.com/swissup-firecheckout.html)체크아웃 페이지에 대한 {target=_blank} 사용자 지정 템플릿입니다.
 
 ## v1.5.1
 
