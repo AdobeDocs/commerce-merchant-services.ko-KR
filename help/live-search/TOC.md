@@ -1,10 +1,10 @@
 ---
-user-guide-title: '"[!DNL Live Search] 안내서"'
-user-guide-description: '"이 안내서에서는 [!DNL Live Search] Adobe Commerce"'
-breadcrumb-title: '"[!DNL Live Search] 안내서"'
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+user-guide-title: "[!DNL Live Search] 안내서"
+user-guide-description: "이 안내서에서는 [!DNL Live Search] Adobe Commerce"
+breadcrumb-title: "[!DNL Live Search] 안내서"
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -39,10 +39,8 @@ ht-degree: 2%
    - 규칙 {#rules}
       - [개요](rules.md)
       - [규칙 작업 공간](rules-workspace.md)
-      - [규칙 구성 요소](rule-components.md)
       - [규칙 추가](rules-add.md)
       - [규칙 관리](rules-manage.md)
-      - [기술 정보](rule-technical-notes.md)
    - [설정](settings.md)
    - [색인 지정](indexing.md)
 - [피드백](feedback.md)
