@@ -2,7 +2,7 @@
 title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -20,9 +20,9 @@ PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모
 샌드박스 온보딩을 완료하려면
 
 1. 로 이동합니다 [PayPal 개발자 계정 페이지](https://developer.paypal.com/developer/accounts/).
-1. 클릭 **[!UICONTROL Log in to Home]** 기존 PayPal Developer Portal 생성 비즈니스 샌드박스 테스트 계정으로 로그인하거나 **등록** 계정을 만들려면
+1. 클릭 **[!UICONTROL Log in to Dashboard]** 기존 PayPal Developer Portal 생성 비즈니스 샌드박스 테스트 계정으로 로그인하거나 **등록** 계정을 만들려면
 1. PayPal 샌드박스 계정을 만듭니다.
-   1. 이동 _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. 이동 _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. 클릭 **[!UICONTROL Create account]**.
 
       샌드박스 PayPal 온보딩 프로세스 중에 PayPal 샌드박스 계정을 만든 경우 다음을 수행해야 합니다 [온보딩 샌드박스 재설정](#reset-your-sandbox-account) 또는 이메일을 확인할 수 없기 때문입니다.
