@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Adobe은 상거래, 통합 및 데이터 서비스의 컬렉션을 제공하여 
   </td>
     </tr>
 <tr>
-    <td valign="top">
+    <td valign="top" width="200px">
        <img alt="저장 이행" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>저장 이행</strong></a> <br><em>(Magento Open Source에 사용 가능)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>저장 이행</strong></a></br>
     <div>모바일 디바이스를 통해 제공되는 포괄적인 주문 처리 워크플로우를 제공하여 온라인 구매와 BOPIS(Store in Customer Experience) 고객 경험을 극대화하고 직원 생산성을 극대화합니다.</div>
   </td>
    </tr>

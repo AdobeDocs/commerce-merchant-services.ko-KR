@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 정보'
 description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '187'
+ht-degree: 3%
 
 ---
 
@@ -17,10 +17,28 @@ ht-degree: 0%
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
 
-<!-- ## v1.1 -->
-<!--
-![Fixed issue](../assets/fix.svg)-->
-<!-- Simplified the [Check-in experience configuration](check-in-experience-setup.md) for the Store Assist app by adding default car make and model selections. In the previous version, merchants had to manually configure the car make and model selections.-->
+## v1.2.0
+
+다음 상거래 버전과 호환합니다.
+
+* Adobe Commerce (EE): 2.4.x
+* ECE(Adobe Commerce for Cloud): 2.4.x
+* 안정성: 안정적인
+
+이 릴리스에는 다음 업데이트가 포함됩니다.
+
+![새로 만들기](../assets/fix.svg) [!DNL Store Fulfillment] is now [호환 [!DNL Adobe Commerce] 2.4.0~2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
+
+## v1.1.0
+
+다음 상거래 버전과 호환합니다.
+
+* Adobe Commerce (EE): 2.4.0 - 2.4.4
+* ECE(Adobe Commerce for Cloud): 2.4.0 - 2.4.4
+* 안정성: 안정적인
+
+![새로 만들기](../assets/fix.svg)<!-- WMTP-731 --> 간소화된 [체크인 경험 구성](check-in-experience-setup.md) 기본 자동차 선택 및 모델 선택 사항을 추가하여 스토어 지원 앱에 대한 정보를 제공합니다. 이전 버전에서는 판매자들이 수동으로 자동차 제어와 모델 선택을 구성해야 했습니다.
 
 ## v1.0.0
 
