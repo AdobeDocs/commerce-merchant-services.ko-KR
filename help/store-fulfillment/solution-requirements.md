@@ -4,9 +4,9 @@ description: 프로비저닝 및 온보딩에 대한 요구 사항 [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ Adobe Commerce용 Store Fulfillment 솔루션을 설치하고 사용하려면 �
 - Adobe Commerce on cloud infrastructure(ECE)
 - Adobe Commerce 온-프레미스(EE)
 
-Store Fulfillment 솔루션은 다음 소프트웨어 버전과 호환됩니다.
+Store Fulfillment 솔루션은 *소프트웨어 호환성* 테이블.
 
 **소프트웨어 호환성**
 
 | **소프트웨어** | **최소 버전** | **최대 버전** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.4 |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | 작성기 | 1.x | 2.x |
 | MariaDB | 10.2 | 10.4 |
 | MySQL | 5.7 | 8.0 |
 | PHP | 7.4 | 8.1 |
 
-자세한 요구 사항은 Adobe Commerce 를 검토하십시오 [시스템 요구 사항](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) 를 개발자 설명서에서 참조하십시오.
+자세한 요구 사항은 Adobe Commerce 를 검토하십시오 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 에서 *Adobe Commerce 설치 안내서*.
 
 ## 스토어 지원 앱 요구 사항
 
