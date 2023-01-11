@@ -1,10 +1,10 @@
 ---
-title: '"동의어"'
-description: '"[!DNL Live Search] 동의어는 카탈로그의 용어와 다른 단어로 쿼리를 확장합니다."'
+title: "동의어"
+description: "[!DNL Live Search] 동의어는 카탈로그의 용어와 다른 단어로 쿼리를 확장합니다."
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->을 사용하는 Adobe Commerce 설치의 경우 [!DNL Live Search] 설치, [!DNL Live Search] 동의어는 표준 Adobe Commerce을 대체합니다 [검색 동의어](https://docs.magento.com/user-guide/marketing/search-synonyms.html) 두 가지 모두 *SEO &amp; Search* 마케팅 메뉴의 섹션을 참조하십시오. 만약 [!DNL Live Search]를 채우기 위한 규칙은 이 섹션의 지침을 따릅니다.
+>을 사용하는 Adobe Commerce 설치의 경우 [!DNL Live Search] 설치, [!DNL Live Search] 동의어는 표준 Adobe Commerce을 대체합니다 [검색 동의어](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) 두 가지 모두 *SEO &amp; Search* 마케팅 메뉴의 섹션을 참조하십시오. 만약 [!DNL Live Search]를 채우기 위한 규칙은 이 섹션의 지침을 따릅니다.

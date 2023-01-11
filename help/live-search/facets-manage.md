@@ -2,9 +2,9 @@
 title: "패싯 관리"
 description: 기존 관리 방법 알아보기 [!DNL Live Search] 패싯."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 패싯 레이블을 편집하려면 다음 중 하나를 수행합니다.
 
-   * 대상 [!DNL Commerce] 상점, 편집 [속성 레이블](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * 대상 [!DNL Commerce] 상점, 편집 [속성 레이블](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * 헤드리스 구현의 경우, 첫 번째 열의 값을 클릭하고 필요에 따라 텍스트를 편집합니다.
 
    ![레이블 편집](assets/facet-edit-label.png)

@@ -1,9 +1,10 @@
 ---
 title: 제품 필터링
 description: 제품을 권장 사항으로 사용하거나 제외하는 조건을 정의합니다.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ Adobe Commerce은 구성 가능한 기본 필터를 권장 사항 단위에 자�
 
 ### 카테고리
 
-제품 카테고리를 기반으로 하는 필터는 직접 카테고리 지정 및 해당 하위 카테고리를 사용합니다. 예를 들어 카테고리에 대한 제외 조건 활성화 `Gear` 에 지정된 제품 제외 `Gear` 및 `Gear/Bags` 또는 `Gear/Fitness Equipment`. B2B 판매자의 경우 카테고리 필터는 모든 항목을 준수합니다 [고객별 제품 카테고리](https://docs.magento.com/user-guide/catalog/category-permissions.html) 구성했습니다.
+제품 카테고리를 기반으로 하는 필터는 직접 카테고리 지정 및 해당 하위 카테고리를 사용합니다. 예를 들어 카테고리에 대한 제외 조건 활성화 `Gear` 에 지정된 제품 제외 `Gear` 및 `Gear/Bags` 또는 `Gear/Fitness Equipment`. B2B 판매자의 경우 카테고리 필터는 모든 항목을 준수합니다 [고객별 제품 카테고리]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 구성했습니다.
 
 Adobe Commerce에서는 페이지 유형에 권장 사항을 배포할 때 다음 카테고리 필터 구성을 사용하는 것이 좋습니다.
 
@@ -67,11 +68,11 @@ Adobe Commerce에서는 페이지 유형에 권장 사항을 배포할 때 다�
 
 ### 가격
 
-제품 가격을 기반으로 하는 필터는 최종 가격을 사용하여 비교를 수행합니다. 최종 가격에는 익명의 쇼핑객들에게 이용 가능한 모든 할인 또는 특별 가격이 포함되어 있습니다. B2B 가맹점을 위해 표시되는 가격은 [고객별 그룹 가격 책정](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) 구성했습니다.
+제품 가격을 기반으로 하는 필터는 최종 가격을 사용하여 비교를 수행합니다. 최종 가격에는 익명의 쇼핑객들에게 이용 가능한 모든 할인 또는 특별 가격이 포함되어 있습니다. B2B 가맹점을 위해 표시되는 가격은 [고객별 그룹 가격 책정](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) 구성했습니다.
 
 ### 재고 상태
 
 다음 제외 필터를 사용하여 재고 상태에 따라 제품을 필터링할 수 있습니다.
 
 - 재고 부족 - (제외 전용) 재고가 없는 제품을 제외합니다.
-- 재고 부족 - (제외 전용) 재고가 낮은 제품을 제외합니다. 낮은 재고 상태는 _왼쪽 X 임계값만_ 값 [인벤토리 구성](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- 재고 부족 - (제외 전용) 재고가 낮은 제품을 제외합니다. 낮은 재고 상태는 _왼쪽 X 임계값만_ 값 [인벤토리 구성](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

@@ -1,10 +1,10 @@
 ---
-title: '"동의어 추가"'
-description: '"추가 [!DNL Live Search] 검색 요청에 대한 응답을 개선하는 동의어입니다."'
+title: "동의어 추가"
+description: "추가 [!DNL Live Search] 검색 요청에 대한 응답을 개선하는 동의어입니다."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 1단계: 동의어 추가
 
 1. 관리에서 **마케팅** > SEO &amp; Search > **[!DNL Live Search]**.
-1. 여러 스토어의 경우 **범위** 변환 후 [저장소 보기](https://docs.magento.com/user-guide/configuration/scope.html) 여기서 동의어 설정이 적용됩니다.
+1. 여러 스토어의 경우 **범위** 변환 후 [저장소 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 여기서 동의어 설정이 적용됩니다.
 1. 을(를) 클릭합니다. **동의어** 탭.
 1. 을(를) 클릭합니다. **동의어 추가** 버튼을 클릭합니다.
 

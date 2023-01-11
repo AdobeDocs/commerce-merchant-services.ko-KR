@@ -2,9 +2,9 @@
 title: 소개 [!DNL Product Recommendations]
 description: '`[!DNL Product Recommendations] 는 전환율을 높이고, 매출을 증대하고, 쇼핑객의 참여를 유도하기 위해 사용할 수 있는 강력한 마케팅 도구입니다.'''
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 제품 권장 사항과 제품 관계
 
-온라인 쇼핑의 복잡성을 감안할 때, 여러분의 상점 앞에서 가장 잘 작동하는 것은 종종 여러 주요 기술의 결합입니다. 둘 다 사용 [!DNL Product Recommendations] 및 [제품 관계](https://docs.magento.com/user-guide/marketing/product-relationships.html) 는 제품 홍보 시 보다 유연하게 대처할 수 있도록 해줍니다. 활용할 수 있습니다 [!DNL Product Recommendations] 규모에 맞게 권장 사항을 지능적으로 자동화할 수 있는 Adobe Sensei 제공. 그런 다음 [관련 제품 규칙](https://docs.magento.com/user-guide/marketing/product-related-rules.html) 을(를) 수동으로 개입하고 target shopper 세그먼트에 특정 권장 사항이 작성되도록 해야 하거나 특정 비즈니스 목표를 충족해야 하는 경우
+온라인 쇼핑의 복잡성을 감안할 때, 여러분의 상점 앞에서 가장 잘 작동하는 것은 종종 여러 주요 기술의 결합입니다. 둘 다 사용 [!DNL Product Recommendations] 및 [제품 관계](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) 는 제품 홍보 시 보다 유연하게 대처할 수 있도록 해줍니다. 활용할 수 있습니다 [!DNL Product Recommendations] 규모에 맞게 권장 사항을 지능적으로 자동화할 수 있는 Adobe Sensei 제공. 그런 다음 [관련 제품 규칙](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) 을(를) 수동으로 개입하고 target shopper 세그먼트에 특정 권장 사항이 작성되도록 해야 하거나 특정 비즈니스 목표를 충족해야 하는 경우
 
 제품 권장 사항을 사용하면 다음 작업을 수행할 수 있습니다.
 

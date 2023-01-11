@@ -1,17 +1,17 @@
 ---
-title: '"패싯"'
-description: '"[!DNL Live Search] 패싯에서는 속성 값의 여러 차원을 검색 기준으로 사용합니다."'
+title: "패싯"
+description: "[!DNL Live Search] 패싯에서는 속성 값의 여러 차원을 검색 기준으로 사용합니다."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # 패싯
 
-검색 기준으로 여러 차원 속성 값을 사용하는 고성능 필터링 방법입니다. 면처리 검색은 비슷하지만 표준보다 상당히 &quot;더 스마트함&quot;입니다 [계층 탐색](https://docs.magento.com/user-guide/catalog/navigation-layered.html). 사용 가능한 필터 목록은 [필터링 가능한 속성](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) 검색 결과에 반환되는 제품 수.
+검색 기준으로 여러 차원 속성 값을 사용하는 고성능 필터링 방법입니다. 면처리 검색은 비슷하지만 표준보다 상당히 &quot;더 스마트함&quot;입니다 [계층 탐색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 사용 가능한 필터 목록은 [필터링 가능한 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 검색 결과에 반환되는 제품 수.
 
 ![필터링된 검색 결과](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 | 설정 | 설명 |
 |--- |--- |
-| [카테고리 표시 설정](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | 앵커 - `Yes` |
-| [속성 속성](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [카탈로그 입력 유형](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [카테고리 표시 설정](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 앵커 - `Yes` |
+| [속성 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [카탈로그 입력 유형](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | 속성 저장소 등록 정보 | 검색 결과에서 계층 탐색 사용 - `Yes` |
 
 ## 기본 속성 값
 
-다음 제품 속성은 다음과 같습니다 [storefront 속성](https://docs.magento.com/user-guide/stores/attributes-product.html) 다음에서 사용 [!DNL Live Search] 기본적으로 활성화되어 있습니다.
+다음 제품 속성은 다음과 같습니다 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 다음에서 사용 [!DNL Live Search] 기본적으로 활성화되어 있습니다.
 
 | 속성 | Storefront 속성 | 속성 |
 |---|---|---|

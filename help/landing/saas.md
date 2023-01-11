@@ -2,16 +2,16 @@
 title: Commerce Services 커넥터
 description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]  SaaS(Software as a service)로 배포됩니다. 이러한 서비스를 사용하려면 [!DNL Commerce] 프로덕션 및 샌드박스 API 키를 사용하여 인스턴스화하고 [구성](https://docs.magento.com/user-guide/configuration/services/saas.html). 이를 한 번만 설정하면 됩니다.
+일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]  SaaS(Software as a service)로 배포됩니다. 이러한 서비스를 사용하려면 [!DNL Commerce] 프로덕션 및 샌드박스 API 키를 사용하여 인스턴스화하고 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 이를 한 번만 설정하면 됩니다.
 
 ## 사용 가능한 서비스 {#availableservices}
 

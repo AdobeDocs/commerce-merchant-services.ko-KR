@@ -2,9 +2,9 @@
 title: '`[!DNL Catalog Service] 안내서 개요'''
 description: '`[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 내용을 더 빨리 검색하는 방법을 제공합니다.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 | 안내서 | 설명 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 사용 안내서](https://docs.magento.com/user-guide/) | Adobe Commerce 및 Magento Open Source 모두를 위한 머천트 중심의 문서 |
-| [Adobe Commerce 2.4 개발자 안내서](https://devdocs.magento.com/) | Adobe Commerce 또는 Magento Open Source을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서입니다 |
+| [Adobe Commerce 2.4 사용 안내서](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce 및 Magento Open Source 모두를 위한 머천트 중심의 문서 |
+| [Adobe Commerce 2.4 개발자 안내서](https://developer.adobe.com/commerce/docs) | Adobe Commerce 또는 Magento Open Source을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서입니다 |
 
 ## 지원
 

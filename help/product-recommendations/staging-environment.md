@@ -1,9 +1,10 @@
 ---
 title: 스테이징 환경에서 테스트
 description: 사용 방법 알아보기 [!DNL Product Recommendations] 테스트 목적으로 스테이징 환경에서 프로덕션 환경에서 사용할 수 있습니다.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Adobe Commerce을 사용하면 프로덕션 환경에서 권장 사항을 가져
 
 1. 배포 `magento/product-recommendations` 모듈이 프로덕션 카탈로그와 유사한 비프로덕션 환경에 매핑됩니다.
 
-1. 비프로덕션 데이터 공간 ID 중 하나를 다음 용도로 사용 [구성](https://docs.magento.com/user-guide/configuration/services/saas.html) 관리자.
+1. 비프로덕션 데이터 공간 ID 중 하나를 다음 용도로 사용 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 관리자.
 
 1. 상점 주변을 클릭하여 데이터를 직접 생성하여 실제 구매자의 행동을 모방하거나 자동화 스크립트를 만듭니다. 테스트를 통해 비프로덕션 환경에서 행동 이벤트를 생성합니다. 이러한 이벤트는 추천을 수행하는 제품 친화성을 만드는 데 사용됩니다. 테스트의 경우, [!DNL Commerce] 는 다음 권장 사항 유형과 상호 작용하는 것을 제안합니다.
 

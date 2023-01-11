@@ -2,9 +2,9 @@
 title: 이벤트 컬렉션 확인
 description: 동작 데이터가 Adobe Commerce으로 전송되고 있는지 확인하는 방법을 알아봅니다.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ _이벤트가 실행 중인지 확인_
 
 1. 표시될 때까지 아래로 스크롤합니다. **컨텍스트 데이터 _n_**. 에서 저장소 인스턴스를 찾습니다.**스키마**.
 
-1. 다음 사항을 확인합니다. [SaaS 데이터 공간 ID](https://docs.magento.com/user-guide/configuration/services/saas.html) 가 올바르게 설정되어 있습니다.
+1. 다음 사항을 확인합니다. [SaaS 데이터 공간 ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) 가 올바르게 설정되어 있습니다.
 
 ![제설기 필터](assets/snowplow-filter.png)
 _제설기 필터_
@@ -62,8 +62,8 @@ _제설기 필터_
 
 ## 이벤트가 올바르게 실행되는지 확인
 
-지표에 사용된 이벤트가 올바르게 실행되는지 확인하려면 `impression-render`, `view`, 및 `rec-click` Snowfall Analytics Debugger의 이벤트. 자세한 내용은 [전체 이벤트 목록](https://devdocs.magento.com/recommendations/events.html).
+지표에 사용된 이벤트가 올바르게 실행되는지 확인하려면 `impression-render`, `view`, 및 `rec-click` Snowfall Analytics Debugger의 이벤트. 자세한 내용은 [전체 이벤트 목록](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> If [쿠키 제한 모드](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) 이 활성화되어 있으면 Adobe Commerce은 쇼핑객이 동의하기 전까지 행동 데이터를 수집하지 않습니다. 쿠키 제한 모드가 비활성화되면 기본적으로 동작 데이터가 수집됩니다.
+> If [쿠키 제한 모드](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) 이 활성화되어 있으면 Adobe Commerce은 쇼핑객이 동의하기 전까지 행동 데이터를 수집하지 않습니다. 쿠키 제한 모드가 비활성화되면 기본적으로 동작 데이터가 수집됩니다.

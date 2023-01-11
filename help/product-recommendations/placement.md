@@ -1,9 +1,10 @@
 ---
 title: 배치 및 레이블
 description: 사이트의 다양한 페이지에 권장 사항을 배치할 수 있는 위치와 각 권장 사항 유형에 대해 자주 사용되는 레이블에 대한 제안을 알아봅니다.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ _검색 결과 상단의 권장 사항_
 | 제품 세부 사항 | 기본 컨텐츠 하단(기본값) | 가장 많이 본 항목<br>가장 많이 구입한 항목<br>장바구니에 가장 많이 추가됨<br>이 항목을 보고 다른 항목도 본 경우<br>이 항목을 보고 다른 항목을 구입했습니다<br>이 항목을 구입하고 다른 항목도 구입한 경우<br>비슷한 항목 더 보기<br>트렌드<br>시각적 유사성 |
 | 장바구니 | 기본 컨텐츠 하단(기본값) | 가장 많이 본 항목<br>가장 많이 구입한 항목<br>장바구니에 가장 많이 추가됨<br>이 항목을 보고 다른 항목도 본 경우<br>이 항목을 보고 다른 항목을 구입했습니다<br>이 항목을 구입하고 다른 항목도 구입한 경우<br>비슷한 항목 더 보기<br>트렌드 |
 | 확인 | 기본 컨텐츠 하단(기본값) | 가장 많이 본 항목<br>가장 많이 구입한 항목<br>장바구니에 가장 많이 추가됨<br>이 항목을 보고 다른 항목도 본 경우<br>이 항목을 보고 다른 항목을 구입했습니다<br>이 항목을 구입하고 다른 항목도 구입한 경우<br>비슷한 항목 더 보기<br>트렌드 |
-| 페이지 빌더 | [드래그 앤 드롭](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) 컨텐츠 유형을 배치합니다. | 가장 많이 본 항목<br>가장 많이 구입한 항목<br>장바구니에 가장 많이 추가됨<br>권장 사항<br>트렌드 |
+| 페이지 빌더 | [드래그 앤 드롭](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 컨텐츠 유형을 배치합니다. | 가장 많이 본 항목<br>가장 많이 구입한 항목<br>장바구니에 가장 많이 추가됨<br>권장 사항<br>트렌드 |

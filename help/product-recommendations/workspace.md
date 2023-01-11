@@ -2,9 +2,9 @@
 title: 작업 공간
 description: 제품 권장 사항 성능을 구성, 관리 및 모니터링하는 방법을 알아봅니다.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations 작업 공간_
 
 ## 범위 설정
 
-처음에는 [범위](https://docs.magento.com/user-guide/stores/websites-stores-views.html) 모든 권장 사항 설정이에 대해 `Default Store View`. 상거래 설치에 여러 저장소 보기가 포함된 경우 **범위** 변환 후 [저장소 보기](https://docs.magento.com/user-guide/configuration/scope.html) 권장 사항이 적용되는 위치.
+처음에는 [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 모든 권장 사항 설정이에 대해 `Default Store View`. 상거래 설치에 여러 저장소 보기가 포함된 경우 **범위** 변환 후 [저장소 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 권장 사항이 적용되는 위치.
 
 ## 지표 날짜 범위 설정
 

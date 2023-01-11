@@ -2,9 +2,9 @@
 title: "규칙 작업 공간"
 description: "EMC IT 솔루션 [!DNL Live Search] 규칙 작업 공간."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 범위 설정
 
-Adobe Commerce 설치에 여러 저장소 보기가 포함된 경우 **범위** 변환 후 [저장소 보기](https://docs.magento.com/user-guide/configuration/scope.html) 규칙이 적용되는 위치.
+Adobe Commerce 설치에 여러 저장소 보기가 포함된 경우 **범위** 변환 후 [저장소 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 규칙이 적용되는 위치.
 
 ## 열 표시/숨기기
 

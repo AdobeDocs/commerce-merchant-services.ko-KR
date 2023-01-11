@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 색인 지정"
 description: "방법 알아보기 [!DNL Live Search] 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 속성 메타데이터의 범위는 다음과 같습니다 `website/store/store view`.
 
-다음 [!DNL Live Search] API를 사용하면 클라이언트가 [storefront 속성](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` 설정 `Yes` ( Adobe Commerce 관리자) 아래에 그룹화됩니다. 활성화되면, `Search Weight` 및 `Visible in Advanced Search` 속성에 대해 을 설정할 수 있습니다.
+다음 [!DNL Live Search] API를 사용하면 클라이언트가 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` 설정 `Yes` ( Adobe Commerce 관리자) 아래에 그룹화됩니다. 활성화되면, `Search Weight` 및 `Visible in Advanced Search` 속성에 대해 을 설정할 수 있습니다.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ When [!DNL Live Search] 가 구성 및 온보딩 중에 동기화되므로 초�
 
 ## 클라이언트 검색
 
-다음 [!DNL Live Search] API를 사용하면 클라이언트가 [storefront 속성](https://docs.magento.com/user-guide/catalog/product-attributes.html), *제품 목록의 정렬에 사용됩니다.* to `Yes`. 이 설정은 테마에 따라 속성을 [정렬 기준](https://docs.magento.com/user-guide/catalog/navigation.html) 카탈로그 페이지의 페이지 매김 제어. 최대 300개의 제품 속성을 [!DNL Live Search], 사용 [storefront 속성](https://docs.magento.com/user-guide/stores/attributes-product.html) 검색 가능하고 필터링 가능한 제품입니다.
+다음 [!DNL Live Search] API를 사용하면 클라이언트가 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *제품 목록의 정렬에 사용됩니다.* to `Yes`. 이 설정은 테마에 따라 속성을 [정렬 기준](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 카탈로그 페이지의 페이지 매김 제어. 최대 300개의 제품 속성을 [!DNL Live Search], 사용 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 검색 가능하고 필터링 가능한 제품입니다.
 인덱스 메타데이터는 색인 파이프라인에 저장되며 검색 서비스에서 액세스할 수 있습니다.
 
 ![[!DNL Live Search] 인덱스 메타데이터 API 다이어그램](assets/index-metadata-api.svg)

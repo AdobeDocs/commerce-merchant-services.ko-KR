@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 * ![새로 만들기](../assets/new.svg) - 새로운 기능
 * ![수정](../assets/fix.svg) - 수정 사항 및 향상된 기능
 
-개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://devdocs.magento.com/release/availability.html).
+개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x 및 2.4.x
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 ### magento/product-recommendations 3.5
 
 * ![새로 만들기](../assets/new.svg) - 추가됨 [B2B 지원](onboarding.md#b2bsupport) 제품 Recommendations
-* ![새로 만들기](../assets/new.svg) - 새 피드가 추가됨 [카탈로그 데이터 동기화](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 명령줄에서 Commerce Services로
+* ![새로 만들기](../assets/new.svg) - 새 피드가 추가됨 [카탈로그 데이터 동기화](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 명령줄에서 Commerce Services로
 
 ### magento/product-recommendations 3.3
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ### magento/product-recommendations 3.2.5
 
-* ![새로 만들기](../assets/new.svg) - Magento 서비스 이름이 [상거래 서비스](https://docs.magento.com/user-guide/system/saas.html) 및 관리자의 유용성 개선
+* ![새로 만들기](../assets/new.svg) - Magento 서비스 이름이 [상거래 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) 및 관리자의 유용성 개선
 
 ### magento/product-recommendations 3.2.4
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 ### magento/product-recommendations 3.2.2
 
 * ![새로 만들기](../assets/new.svg) - 다음 기능이 추가되었습니다. [추천 결과 미리 보기](create.md) 생성 시. 따라서 모듈을 최신 버전으로 업데이트해야 할 수 있습니다.
-* ![새로 만들기](../assets/new.svg) - 다음 기능이 추가되었습니다. [모니터링 및 관리](https://docs.magento.com/user-guide/system/catalog-sync.html) 관리자의 카탈로그 동기화 프로세스입니다.
+* ![새로 만들기](../assets/new.svg) - 다음 기능이 추가되었습니다. [모니터링 및 관리](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 관리자의 카탈로그 동기화 프로세스입니다.
 * ![새로 만들기](../assets/new.svg) - 추가됨 [필터](filters.md) 를 눌러 권장 사항에 표시되는 제품을 제어합니다.
 * ![새로 만들기](../assets/new.svg) - 을 추가했습니다. [시각적 유사성](type.md#visualsim) 권장 사항 유형.
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 ### magento/product-recommendations 3.1.0
 
-* ![새로 만들기](../assets/new.svg) - 다음 기능이 추가되었습니다. [다시 동기화](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) 명령줄 을 통해 SaaS 서비스에 대한 카탈로그
+* ![새로 만들기](../assets/new.svg) - 다음 기능이 추가되었습니다. [다시 동기화](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) 명령줄 을 통해 SaaS 서비스에 대한 카탈로그
 * ![새로 만들기](../assets/new.svg) - 데이터베이스 테이블 접두사에 대한 지원이 추가됨
 * ![수정](../assets/fix.svg) - PHP 7.1 지원이 제거됨
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 ### Page Builder용 magento/module-page-builder-product-recommendations 1.0.3
 
-* ![새로 만들기](../assets/new.svg) - Page Builder 지원. Page Builder 통합을 사용하면 Page Builder가 작성된 컨텐츠의 임의의 위치에 권장 사항 단위를 정확하고 세부적으로 배치할 수 있습니다. 제목 및 권장 사항 단위 자체를 스타일을 지정할 수도 있습니다. 이동 [페이지 빌더](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 추가 정보.
+* ![새로 만들기](../assets/new.svg) - Page Builder 지원. Page Builder 통합을 사용하면 Page Builder가 작성된 컨텐츠의 임의의 위치에 권장 사항 단위를 정확하고 세부적으로 배치할 수 있습니다. 제목 및 권장 사항 단위 자체를 스타일을 지정할 수도 있습니다. 이동 [페이지 빌더](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 추가 정보.
 
 ### magento/product-recommendations 2.0.0
 
@@ -164,4 +164,4 @@ ht-degree: 0%
 에 대해 자세히 알아보려면 [!DNL Product Recommendations] 및 [!DNL Product Recommendations] 개발:
 
 * [사용 안내서](overview.md)
-* [개발자 설명서](https://devdocs.magento.com/recommendations/product-recs.html)
+* [개발자 설명서](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

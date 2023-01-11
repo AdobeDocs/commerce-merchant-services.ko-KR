@@ -2,9 +2,9 @@
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-사용 [!DNL Product Recommendations] 페이지 빌더에서 활성 상태의 기존 를 추가할 수 있습니다 [추천 단위](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) 페이지, 블록 및 동적 블록과 같이 페이지 빌더에서 만든 모든 컨텐츠에 매핑해야 합니다.
+사용 [!DNL Product Recommendations] 페이지 빌더에서 활성 상태의 기존 를 추가할 수 있습니다 [추천 단위](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 페이지, 블록 및 동적 블록과 같이 페이지 빌더에서 만든 모든 컨텐츠에 매핑해야 합니다.
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ composer require magento/module-visual-product-recommendations
 
 ## Configure [!DNL Product Recommendations] {#configure}
 
-를 설치한 후 `magento/product-recommendations` 모듈, 구성 [Commerce Services 커넥터](https://docs.magento.com/user-guide/configuration/services/saas.html) API 키를 지정하고 SaaS 데이터 공간 선택
+를 설치한 후 `magento/product-recommendations` 모듈, 구성 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) API 키를 지정하고 SaaS 데이터 공간 선택
 
-카탈로그 내보내기가 올바르게 실행되는지 확인하려면 [cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 작업 및 [인덱서](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 실행 중이며 `Product Feed` 인덱서가 `Update by Schedule`.
+카탈로그 내보내기가 올바르게 실행되는지 확인하려면 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 작업 및 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) 실행 중이며 `Product Feed` 인덱서가 `Update by Schedule`.
 
 API 키를 통해 Commerce Services에 연결하고 SaaS 데이터 공간을 지정하면 카탈로그 동기화가 시작됩니다. 그러면 다음 작업을 수행할 수 있습니다 [확인](verify.md) 해당 행동 데이터가 스토어에 전송됩니다.
 
@@ -104,4 +104,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 제거 [!DNL Product Recommendations] {#uninstall}
 
-필요한 경우 다음을 수행할 수 있습니다 [제거](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) 제품-권장 사항 모듈.
+필요한 경우 다음을 수행할 수 있습니다 [제거](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) 제품-권장 사항 모듈.

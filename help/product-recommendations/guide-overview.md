@@ -1,11 +1,12 @@
 ---
-title: '"[!DNL Product Recommendations] 안내서 개요"'
+title: '`[!DNL Product Recommendations] 안내서 개요'''
 description: 에 대한 포괄적인 정보 [!DNL Product Recommendations] Adobe Commerce 관리자(설치 및 온보딩 포함)
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
-source-git-commit: 46b27458ec7105692cacfca91a62938fd25c8095
+exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,12 +31,12 @@ ht-degree: 0%
 
 | 안내서 | 설명 |
 |------ | ----------- |
-| [Adobe Commerce 2.4 사용 안내서](https://docs.magento.com/user-guide/) | Adobe Commerce 및 Magento Open Source 모두를 위한 머천트 중심의 문서 |
-| [Adobe Commerce 2.4 개발자 안내서](https://devdocs.magento.com/) | Adobe Commerce 또는 Magento Open Source을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서입니다 |
+| [Adobe Commerce 2.4 사용 안내서](https://experienceleague.adobe.com/docs/commerce.html) | Adobe Commerce 및 Magento Open Source 모두를 위한 머천트 중심의 문서 |
+| [Adobe Commerce 2.4 개발자 안내서](https://developer.adobe.com/commerce/docs) | Adobe Commerce 또는 Magento Open Source을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서입니다 |
 
 ## 지원
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
 * [도움말 센터](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} - 다음을 참조하십시오. [!DNL Product Recommendations]- 관련 문제 해결 문서.
-* [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
+* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.

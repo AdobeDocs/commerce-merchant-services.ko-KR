@@ -2,9 +2,9 @@
 title: "스타일링 [!DNL Popover] 요소"
 description: "사용자 지정에 대한 기술 정보 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 .search-autocomplete          /* not visible */
 ```
 
-storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스타일 시트)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) 에서 [프런트 엔드 개발자 안내서](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스타일 시트)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 에서 [프런트 엔드 개발자 안내서](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## 클래스 선택기
 
@@ -75,7 +75,7 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ## 수정된 테마 작업 {#working-with-modified-theme}
 
-다음 [!DNL storefront popover] 사용자 지정된 [테마](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) 에서 필요한 파일을 상속함 *루마*. 다음 `top.search` 블록 `header-wrapper` 의 `Magento_Search` 모듈을 수정할 수 없습니다.
+다음 [!DNL storefront popover] 사용자 지정된 [테마](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 에서 필요한 파일을 상속함 *루마*. 다음 `top.search` 블록 `header-wrapper` 의 `Magento_Search` 모듈을 수정할 수 없습니다.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ## 비활성화 [!DNL popover]
 
-를 비활성화하려면 [!DNL popover] 표준 [빠른 검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 기능을 사용하려면 다음 명령을 입력합니다.
+를 비활성화하려면 [!DNL popover] 표준 [빠른 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 기능을 사용하려면 다음 명령을 입력합니다.
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

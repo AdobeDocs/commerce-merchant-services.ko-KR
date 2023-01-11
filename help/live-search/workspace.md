@@ -2,9 +2,9 @@
 title: 작업 공간
 description: 라이브 검색 작업 공간은 검색 성능을 구성, 관리 및 모니터링하는 데 사용됩니다.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 범위 설정
 
-처음에는 [범위](https://docs.magento.com/user-guide/configuration/scope.html) 모두 [!DNL Live Search] 설정이 `Default Store View`. 만약 [!DNL Commerce] 설치에는 여러 저장소 보기가 포함됩니다. **범위** 변환 후 [저장소 보기](https://docs.magento.com/user-guide/stores/websites-stores-views.html) 패싯 설정이 적용되는 위치.
+처음에는 [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 모두 [!DNL Live Search] 설정이 `Default Store View`. 만약 [!DNL Commerce] 설치에는 여러 저장소 보기가 포함됩니다. **범위** 변환 후 [저장소 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 패싯 설정이 적용되는 위치.
 
 ## 메뉴 옵션
 

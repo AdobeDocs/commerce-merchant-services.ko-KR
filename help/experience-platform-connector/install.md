@@ -2,9 +2,9 @@
 title: Adobe Commerce에서 Adobe Experience Platform 커넥터 설치 및 구성
 description: Adobe Commerce에서 Adobe Experience Platform 커넥터를 설치, 구성, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ composer update magento/experience-platform-connector --with-dependencies
 
 ## Experience Platform 커넥터 제거 {#uninstall}
 
-Experience Platform 커넥터를 제거하려면 다음을 참조하십시오. [모듈 제거](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Experience Platform 커넥터를 제거하려면 다음을 참조하십시오. [모듈 제거](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

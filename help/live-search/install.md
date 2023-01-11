@@ -2,9 +2,9 @@
 title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법을 알아봅니다. [!DNL Live Search] Adobe Commerce"
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
 다음을 수행합니다.
 
-1. 확인 [직장](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) 및 [인덱서](https://docs.magento.com/user-guide/system/index-management.html) 실행 중입니다.
+1. 확인 [직장](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 및 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 실행 중입니다.
 
 1. 요구 사항을 충족하는 온보딩 방법을 선택하고 지침을 따르십시오.
 
@@ -68,7 +68,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
    >
    > 데이터가 색인화되고 동기화되는 동안 검색 및 범주 찾아보기 작업은 상점 전면에서 사용할 수 없습니다. 카탈로그의 크기에 따라 프로세스가 시간에서 최소 1시간이 소요될 수 있습니다 `cron` 를 실행하여 데이터 동기화 [!DNL Live Search] 서비스.
 
-1. 다음을 확인합니다 [인덱서](https://docs.magento.com/user-guide/system/index-management.html) 가 로 설정되어 있습니다. `Update by Schedule`:
+1. 다음을 확인합니다 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 가 로 설정되어 있습니다. `Update by Schedule`:
 
    * 제품 피드
    * 제품 변형 피드
@@ -116,7 +116,7 @@ Live Search는 Marketplace에서 확장으로 설치됩니다. 다음 이후 [!D
 
    [!DNL Elasticsearch] 는 [!DNL Live Search] 서비스는 카탈로그 데이터와 인덱스 제품을 백그라운드에서 동기화합니다.
 
-1. 다음을 확인합니다 [인덱서](https://docs.magento.com/user-guide/system/index-management.html) 가 로 설정되어 있습니다. `Update by Schedule`:
+1. 다음을 확인합니다 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 가 로 설정되어 있습니다. `Update by Schedule`:
 
    * 제품 피드
    * 제품 변형 피드
@@ -243,14 +243,14 @@ composer update magento/live-search --with-dependencies
 
 ## 제거 [!DNL Live Search] {#uninstall}
 
-제거하려면 [!DNL Live Search]를 참조하려면 [모듈 제거](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+제거하려면 [!DNL Live Search]를 참조하려면 [모듈 제거](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] 패키지 {#packages}
 
 | 패키지 | 설명 |
 |--- |--- |
-| `module-live-search` | 상인들은 계면, 동의어, 쿼리 규칙 등에 대한 검색 설정을 구성할 수 있으며, 읽기 전용 GraphQL 놀이터에 액세스하여 *관리*. |
-| `module-live-search-adapter` | 스토어프론트에서 다음으로 검색 요청을 라우팅합니다. [!DNL Live Search] 서비스를 제공하고 결과를 상점 앞에 렌더링합니다. <br />- 범주 찾아보기 - 상점 전면의 요청을 라우팅합니다. [위쪽 탐색](https://docs.magento.com/user-guide/catalog/navigation-top.html) 를 클릭합니다.<br />- 전역 검색 - [빠른 검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 상점 오른쪽 상단의 상자 [!DNL Live Search] 서비스. |
+| `module-live-search` | 판매자가 설정, 동의어, 쿼리 규칙 등에 대한 검색 설정을 구성할 수 있고, 읽기 전용 GraphQL 놀이터에 액세스하여 *관리*. |
+| `module-live-search-adapter` | 스토어프론트에서 다음으로 검색 요청을 라우팅합니다. [!DNL Live Search] 서비스를 제공하고 결과를 상점 앞에 렌더링합니다. <br />- 범주 찾아보기 - 상점 전면의 요청을 라우팅합니다. [위쪽 탐색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) 를 클릭합니다.<br />- 전역 검색 - [빠른 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 상점 오른쪽 상단의 상자 [!DNL Live Search] 서비스. |
 | `module-live-search-storefront-popover` | 입력하는 대로 검색 팝오버는 표준 빠른 검색을 대체하고 상위 검색 결과의 데이터와 미리 보기를 반환합니다. |
 
 ## [!DNL Live Search] 종속성 {#dependencies}

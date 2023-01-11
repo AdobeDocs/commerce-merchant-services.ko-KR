@@ -1,9 +1,10 @@
 ---
 title: 구현 워크플로우
 description: 성공적으로 구현하는 단계를 알아봅니다. [!DNL Product Recommendations] 가게 앞에서요
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 0%
 
    배포 [!DNL Product Recommendations] 주 2개 필요 [데이터 소스](type.md): 카탈로그 및 행동 프로덕션은 구매자의 작업을 캡처하고 분석하는 유일한 환경이므로 가능한 한 빨리 프로덕션에 대한 데이터 수집을 시작하는 것이 가장 좋습니다. [학습](behavioral-data.md) Adobe Sensei이 어떻게 기계 학습 모델을 훈련시켜 더 높은 품질의 추천을 생성하는지 보여줍니다. 프로덕션 환경에서 행동 데이터를 수집하기 시작할 때 다음과 같은 이점을 얻을 수 있습니다 [권장 사항 가져오기](verify.md) 비프로덕션 환경에서 작업하는 동안 이 프로덕션 데이터를 기반으로 합니다. 그런 다음 프로덕션에서 수집된 실제 구매자 데이터를 기반으로 계산되는 다양한 추천을 테스트하고 실험할 수 있습니다.
 
-   데이터 수집을 프로덕션에 배포하려면 다음을 수행해야 합니다 [설치 및 구성](install-configure.md) a [!DNL Product Recommendations] 모듈 제공 [API 키](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   데이터 수집을 프로덕션에 배포하려면 다음을 수행해야 합니다 [설치 및 구성](install-configure.md) a [!DNL Product Recommendations] 모듈 제공 [API 키](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ ht-degree: 0%
    >
    > 템플릿을 사용자 지정하여 스타일시트를 지정하고 페이지에 권장 사항 단위가 나타나는 위치를 덮어쓸 수 있습니다.
 
-   자세한 내용은 [사용자 지정](https://devdocs.magento.com/recommendations/customize.html) 개발자 설명서에서 이 단계를 완료하는 방법을 알아봅니다.
+   자세한 내용은 [사용자 지정](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) 개발자 설명서에서 이 단계를 완료하는 방법을 알아봅니다.
 
 1. **비프로덕션 환경에서 권장 사항 테스트**
 

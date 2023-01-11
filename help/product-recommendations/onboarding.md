@@ -2,9 +2,9 @@
 title: 온보딩
 description: 에서 요구 사항 및 지원되는 플랫폼에 대해 알아봅니다. [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ ht-degree: 0%
 
 ### B2B 지원 {#b2bsupport}
 
-B2B 스토어프런트에서는 각 구매자나 고객 그룹에 대한 제품 가시성과 가격을 지시하는 복잡한 로직을 필요로 하는 경우가 많습니다. [!DNL Product Recommendations] now [지원](release-notes.md) 이 기능은 [카테고리 권한](https://docs.magento.com/user-guide/catalog/category-permissions.html), [공유 카탈로그](https://docs.magento.com/user-guide/catalog/catalog-shared.html), 및 [고객 그룹별 가격 책정](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). 예를 들어, 소매 고객 세그먼트에서 특정 카테고리를 숨긴 경우 해당 세그먼트의 쇼핑객에게 해당 카테고리의 제품에 대한 권장 사항이 표시되지 않습니다. 또한 특정 고객 그룹 및 회사에 대한 공유 카탈로그를 정의할 때 해당 구매자는 액세스할 수 있는 제품에 대한 권장 사항만 봅니다. 모든 권장 제품은 각 구매자의 고객 그룹을 기준으로 올바른 고객 그룹별 가격을 반영합니다.
+B2B 스토어프런트에서는 각 구매자나 고객 그룹에 대한 제품 가시성과 가격을 지시하는 복잡한 로직을 필요로 하는 경우가 많습니다. [!DNL Product Recommendations] now [지원](release-notes.md) 이 기능은 [카테고리 권한](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [공유 카탈로그](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), 및 [고객 그룹별 가격 책정](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). 예를 들어, 소매 고객 세그먼트에서 특정 카테고리를 숨긴 경우 해당 세그먼트의 쇼핑객에게 해당 카테고리의 제품에 대한 권장 사항이 표시되지 않습니다. 또한 특정 고객 그룹 및 회사에 대한 공유 카탈로그를 정의할 때 해당 구매자는 액세스할 수 있는 제품에 대한 권장 사항만 봅니다. 모든 권장 제품은 각 구매자의 고객 그룹을 기준으로 올바른 고객 그룹별 가격을 반영합니다.

@@ -2,9 +2,9 @@
 title: 새 권장 사항 만들기
 description: 제품 추천 단위를 만드는 방법을 알아봅니다.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ _추천 단위_
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **마케팅** > _프로모션_ > **제품 Recommendations** 를 _제품 Recommendations_ 작업 공간.
 
-1. 을(를) 지정합니다. [저장소 보기](https://docs.magento.com/user-guide/configuration/scope.html) 권장 사항을 표시할 위치입니다.
+1. 을(를) 지정합니다. [저장소 보기](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 권장 사항을 표시할 위치입니다.
 
    >[!NOTE]
    >
-   > Page Builder 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다. 페이지 빌더를 사용하여 제품 권장 사항을 만드는 방법에 대한 자세한 내용은 [컨텐츠 추가 - 제품 Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > Page Builder 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다. 페이지 빌더를 사용하여 제품 권장 사항을 만드는 방법에 대한 자세한 내용은 [컨텐츠 추가 - 제품 Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. 클릭 **권장 사항 만들기**.
 
@@ -37,7 +37,7 @@ _추천 단위_
    - 제품 세부 사항
    - 장바구니
    - 확인
-   - [페이지 빌더](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [페이지 빌더](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    각 페이지 유형에 대해 최대 5개의 활성 권장 사항 단위를 만들고 Page Builder에 대해 최대 25개의 활성 권장 사항 단위를 만들 수 있습니다. 페이지 유형이 회색으로 표시됩니다. 제한에 도달하면
 

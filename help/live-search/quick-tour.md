@@ -1,10 +1,10 @@
 ---
-title: '"빠른 여행"'
+title: "빠른 여행"
 description: '"간단한 여행으로 [!DNL Live Search] "창고에서"'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 입력하는 대로 검색
 
-[!DNL Live Search] 에서 제안된 제품 및 상위 검색 결과의 축소판 이미지에 응답합니다. [poover](storefront-popover.md) 쇼핑객이 [검색](https://docs.magento.com/user-guide/catalog/search-quick.html) 상자. 다음 [제품 세부 사항](https://docs.magento.com/user-guide/quick-tour/product-page.html) 쇼핑객이 추천 또는 추천 제품을 클릭하면 페이지가 표시됩니다. A _모두 보기_ 팝업 바닥글에 있는 링크에 검색 결과 페이지가 표시됩니다.
+[!DNL Live Search] 에서 제안된 제품 및 상위 검색 결과의 축소판 이미지에 응답합니다. [poover](storefront-popover.md) 쇼핑객이 [검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 상자. 다음 [제품 세부 사항](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 쇼핑객이 추천 또는 추천 제품을 클릭하면 페이지가 표시됩니다. A _모두 보기_ 팝업 바닥글에 있는 링크에 검색 결과 페이지가 표시됩니다.
 
 [!DNL Live Search] 두 자 이상의 쿼리에 대한 &quot;입력할 때 검색&quot; 결과를 반환합니다. 부분 일치의 경우 단어당 최대 문자 수는 20자입니다. 쿼리의 문자 수는 구성할 수 없습니다. 팝오버에는 다음 필드가 포함됩니다. `name`, `sku`, 및 `category_ids`.
 

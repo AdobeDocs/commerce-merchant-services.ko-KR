@@ -1,10 +1,10 @@
 ---
-title: '"동의어 유형"'
+title: "동의어 유형"
 description: '"일방, 양방향" [!DNL Live Search] 동의어는 키워드 정의를 확장합니다."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Stop words는 동의어를 더 의미 있게 만들지 않지만 처리해야 �
 
 ### 키워드 매핑
 
-이 기법은 동의어 대신 검색 가능한 제품 속성을 사용하여 제품 간에 키워드 기반 연결을 만듭니다. 따라서 다른 제품의 검색 결과에 매핑된 제품이 나타날 수 있습니다. 자세한 내용은 [검색 결과](https://docs.magento.com/user-guide/catalog/search-results.html).
+이 기법은 동의어 대신 검색 가능한 제품 속성을 사용하여 제품 간에 키워드 기반 연결을 만듭니다. 따라서 다른 제품의 검색 결과에 매핑된 제품이 나타날 수 있습니다. 자세한 내용은 [검색 결과](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

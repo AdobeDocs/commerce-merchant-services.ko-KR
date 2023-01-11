@@ -1,10 +1,10 @@
 ---
-title: '"패싯 유형"'
-description: '"[!DNL Live Search] 패싯은 동적으로 변하며 관련 있는 경우 필터 목록에 표시됩니다."'
+title: "패싯 유형"
+description: "[!DNL Live Search] 패싯은 동적으로 변하며 관련 있는 경우 필터 목록에 표시됩니다."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 에 대해 렌더링되는 패싯 [!DNL Commerce] storefront는 검색 어댑터에서 처리되며, 이 경우 요청을 라우팅하고 결과를 상점 전면에서 렌더링합니다. 모두 [!DNL Commerce] storefront 패싯은 해당 속성에 할당된 입력 유형에 관계없이 단일 선택 옵션을 사용하여 알파벳순으로 정렬됩니다. 스토어프런트에서 사용할 수 있는 패싯은 현재 테마에 따라 렌더링되며 레이어 탐색 프레젠테이션에 대한 사용자 정의를 반영합니다.
 
-반대로, [헤드리스](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/webapi-vision.html) 구현은 API에 의해 처리되며 추가 옵션을 지원합니다. 헤드리스 패싯은 알파벳순 또는 카운트로 정렬할 수 있으며 단일 또는 다중 선택 옵션을 사용할 수 있습니다.
+반대로, [헤드리스](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) 구현은 API에 의해 처리되며 추가 옵션을 지원합니다. 헤드리스 패싯은 알파벳순 또는 카운트로 정렬할 수 있으며 단일 또는 다중 선택 옵션을 사용할 수 있습니다.
 
 ### 유형 선택
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### 패싯 레이블
 
-대상 [!DNL Commerce] 스토어프런트에서 패싯 레이블은 [*속성 속성*](https://docs.magento.com/user-guide/stores/attribute-product-create.html). 여러 보기가 있는 저장소의 경우 *레이블 관리*. 헤드리스 구현의 경우 레이블은 [작업 공간 구성](faceting-workspace.md).
+대상 [!DNL Commerce] 스토어프런트에서 패싯 레이블은 [*속성 속성*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). 여러 보기가 있는 저장소의 경우 *레이블 관리*. 헤드리스 구현의 경우 레이블은 [작업 공간 구성](faceting-workspace.md).
 
 ### 정렬 유형
 

@@ -2,16 +2,16 @@
 title: 설정
 description: 소스 변경 방법 알아보기 [!DNL Product Recommendations] 데이터 및 시각적 권장 사항을 활성화하는 방법.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
 # 설정
 
-다음 경우에 [SaaS 데이터 공간 구성](https://docs.magento.com/user-guide/configuration/services/saas.html) Recommendations의 경우 SaaS 데이터 공간은 카탈로그 데이터와 상점-행동 데이터를 수집합니다. [Adobe Sensei](https://www.adobe.com/sensei.html) 는 해당 데이터를 분석하고 제품 Recommendations을 제공하는 데 사용되는 제품 연결을 계산합니다.
+다음 경우에 [SaaS 데이터 공간 구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) Recommendations의 경우 SaaS 데이터 공간은 카탈로그 데이터와 상점-행동 데이터를 수집합니다. [Adobe Sensei](https://www.adobe.com/sensei.html) 는 해당 데이터를 분석하고 제품 Recommendations을 제공하는 데 사용되는 제품 연결을 계산합니다.
 
 일반적으로 테스트 또는 스테이징을 위한 비프로덕션 환경에는 실제 제품 추천을 제공하는 storefront 행동 데이터의 수량이나 품질이 없습니다. 규모에 맞는 실제 쇼핑객은 프로덕션 환경에서만 캡처할 수 있습니다. 이 문제를 해결하기 위해 Adobe Commerce에서는 프로덕션 환경의 제품 권장 사항을 다른 비프로덕션 SaaS 데이터 공간과 함께 사용할 수 있습니다. 비프로덕션 환경에서 실제 상점 전면 데이터를 사용하면 구매자가 보는 권장 사항을 미리 보고 다양한 권장 사항 유형 및 배치 위치를 실험할 수 있습니다. 다른 SaaS 데이터 공간의 Recommendations을 구매자가 미리 볼 수 있지만 클릭할 수는 없습니다.
 
