@@ -4,30 +4,32 @@ description: 일반 설정을 구성하여 활성화 [!DNL Store Fulfillment] �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
 
 # 서비스 및 판매 구성 저장
 
-구성[!DNL Store Fulfillment] 확장을 활성화하려면 확장 설정을 지정하고, 스토어 지원 앱 사용자에 대한 보안 설정을 구성하고, 배달 방법에 대한 옵션을 설정합니다.
+구성 [!DNL Store Fulfillment] 에서 [!DNL Commerce] 관리자는 확장을 활성화하고, 확장 설정을 지정하고, Store Assist 앱 사용자에 대한 보안 설정을 구성하고, 배달 방법에 대한 옵션을 설정합니다.
 
 >[!IMPORTANT]
 >
 >Store Fulfillment 서비스 구성은 Adobe Commerce 인스턴스 및 [!DNL Store Fulfillment] 앱. 자세한 내용은 [저장소 이행 연결](connect-set-up-service.md).
 
-Adobe Commerce의 Admin Store 구성 메뉴에서 Store Fulfillment 서비스 설정을 구성합니다.
+## 저장소 이행 서비스 설정 관리
 
-설정에 액세스하여 확장을 활성화하고, 전역 설정을 구성하고, Store Assist 앱 사용자 연결 및 계정에 대한 보안 옵션을 지정합니다 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+다음 위치에서 Store Fulfillment 서비스의 설정을 관리합니다. [!DNL Commerce Admin Store Configuration] 메뉴 아래의 제품에서 사용할 수 있습니다.
 
-![저장소 Fulfillment에 대한 Admin Store 서비스 구성](assets/store-services-admin-sf-config.png)
+- 확장을 활성화하고, 전역 설정을 구성하고, 를 선택하여 Store Assist 앱 사용자 연결 및 계정에 대한 보안 옵션을 지정합니다 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-설정을 액세스하여 다음 선택을 통해 게재 방법을 구성합니다 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+   ![저장소 Fulfillment에 대한 Admin Store 서비스 구성](assets/store-services-admin-sf-config.png)
 
-![저장소 이행 관리 저장소 판매 구성](assets/store-sales-admin-sf-deliver-config.png)
+- 을(를) 선택하여 게재 방법을 구성합니다 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+   ![저장소 이행 관리 저장소 판매 구성](assets/store-sales-admin-sf-deliver-config.png)
 
 ## 기본 설정
 
@@ -55,7 +57,7 @@ Adobe Commerce의 Admin Store 구성 메뉴에서 Store Fulfillment 서비스 �
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>고객이 매장 내 픽업을 선택하지만 게재 방법을 사용할 수 없을 때 표시되는 메시지입니다. 필요한 경우 기본 텍스트를 사용자 지정할 수 있습니다.
+<td>고객이 매장 내 픽업용으로 사용할 수 없는 항목에 대한 매장 내 픽업을 선택할 때 표시되는 메시지입니다. 필요한 경우 기본 텍스트를 사용자 지정할 수 있습니다.
 </td>
 <td>저장소 보기</td>
 <td>아니요</td>
@@ -83,7 +85,7 @@ Adobe Commerce의 Admin Store 구성 메뉴에서 Store Fulfillment 서비스 �
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>솔루션을 활성화하거나 비활성화합니다. 활성화되면 Store Fulfillment 기능을 구성 및 사용하고 Adobe Commerce 스토어와 Store Fulfillment 서비스 간의 연결을 설정합니다. 비활성화되면 모든 Store Fulfillment 기능이 비활성화되며 Adobe Commerce과 Store Fulfillment 서비스 간에 통신이 이루어지지 않습니다. 주문 정보를 처리하거나 수신할 수 없습니다.</td>
+<td>솔루션을 활성화하거나 비활성화합니다. 활성화되면 Store Fulfillment 기능을 구성 및 사용하고 Adobe Commerce 스토어와 [!DNL Store Fulfillment] 서비스. 비활성화되면 모든 Store Fulfillment 기능이 비활성화되며 Adobe Commerce과 Store Fulfillment 서비스 간에 통신이 이루어지지 않습니다. 주문 정보를 처리하거나 수신할 수 없습니다.</td>
 <td>글로벌</td>
 <td>예</td>
 </tr>
@@ -98,52 +100,58 @@ Adobe Commerce의 Admin Store 구성 메뉴에서 Store Fulfillment 서비스 �
 <td><strong>설명</strong></td>
 <td><strong>범위</strong></td>
 <td><strong>필수 여부</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>다음 중 하나를 선택합니다 <i>샌드박스</i> 또는 <i>프로덕션</i><br></br> Sandbox는 테스트의 이행 서비스와 통신합니다.프로덕션은 라이브 환경과 통신합니다. 사용 <strong>전용</strong> 제작 중입니다.<br></br>각 환경에 대한 자격 증명 세트가 제공되며 동일한 설치에서 두 세트를 관리할 수 있습니다. <br></br>연결을 검증하기 전에 자격 증명을 저장합니다.</td>
+<td>다음 중 하나를 선택합니다 <i>[!UICONTROL Sandbox]</i> 또는 <i>[!UICONTROL Production]</i><br></br>선택 [!UICONTROL Sandbox] 테스트 환경에서 이행 서비스와 통신할 수 있습니다.<br></br>선택 [!UICONTROL Production] 라이브 환경에서 이행 서비스와 통신할 수 있습니다.<br></br>각 환경에 대한 자격 증명 세트가 제공되며 동일한 설치에서 두 세트를 관리할 수 있습니다. <br></br>연결을 검증하기 전에 자격 증명을 저장합니다.</td>
 <td>글로벌</td>
 <td>예</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>Walmart Store Fulfillment API 끝점의 URL입니다. 온보딩 프로세스 중에 제공되는 정규화된 URL이어야 합니다. Store Fulfillment 고객은 샌드박스 및 프로덕션 URL을 모두 받습니다. 후행 슬래시 "/"를 포함하여 전체 URL을 복사/붙여넣으십시오.</td>
+<td>Walmart Store Fulfillment API 끝점의 URL입니다. 온보딩 프로세스 중에 제공되는 정규화된 URL이어야 합니다. Store Fulfillment 고객은 샌드박스 및 프로덕션 URL을 모두 받습니다. 값을 추가할 때 후행 슬래시 "/"를 포함하여 전체 URL을 복사하여 붙여 넣습니다.</td>
 <td>글로벌</td>
 <td>예</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>Walmart Store Fulfillment Authentication 끝점의 URL입니다. 값은 온보딩 프로세스 중에 제공되는 정규화된 URL이어야 합니다. 샌드박스 및 프로덕션 URL을 모두 받습니다. 후행 슬래시 '/'"를 포함하여 전체 URL을 복사/붙여넣으십시오.</td>
+<td>Walmart Store Fulfillment Authentication 끝점의 URL입니다. 값은 온보딩 프로세스 중에 제공되는 정규화된 URL이어야 합니다. 샌드박스 및 프로덕션 URL을 모두 받습니다. 값을 추가할 때 후행 슬래시 "/"를 포함하여 전체 URL을 복사하여 붙여 넣습니다.</td>
 <td>글로벌</td>
 <td>예</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>온보딩 프로세스 중에 제공한 고유한 머천트(테넌트) ID입니다. ID는 주문 경로를 지정하는 데 사용되며, 머천트 지점에서 주문을 수신합니다.</td>
+<td>온보딩 프로세스 중에 제공된 고유한 머천트(테넌트) ID입니다. 이 ID는 머천트 스토어에서 수신하도록 주문을 라우팅하는 데 사용됩니다.</td>
 <td>글로벌</td>
 <td>예</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>고유한 통합 ID입니다. 이것은 온보딩 프로세스 중에 제공됩니다. 변하지 않아요 이행 서비스와의 모든 통신을 인증하는 데 사용됩니다.</td>
+<td>온보딩 프로세스 중에 제공된 고유 통합 ID입니다. 이 ID는 Adobe Commerce과 저장소 이행 서비스 간의 모든 통신을 인증하는 데 사용됩니다</td>
 <td>글로벌</td>
 <td>예</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>고유한 통합 키입니다. 이것은 온보딩 프로세스 중에 제공됩니다. 이행 서비스와의 모든 통신을 인증하는 데 사용됩니다.</td>
+<td>온보딩 프로세스 중에 제공된 고유한 통합 키입니다. 이 키는 Adobe Commerce 및 저장소 이행 서비스 간의 모든 통신을 인증하는 데 사용됩니다.</td>
 <td>글로벌</td>
 <td>예</td>
-    </tr>
+</tr>
 </table>
 
-계정 자격 증명을 구성한 후 <strong>[!UICONTROL Validate Credentials]</strong> 이행 웹 서비스에 대한 연결을 처음으로 확인하고 설정하려면
+구성 후 [!UICONTROL Account Credentials], 선택 <strong>[!UICONTROL Validate Credentials]</strong> 처음으로 저장소 이행 서비스에 대한 연결을 확인하고 설정하려면
 
 ## 로깅 구성
 
-로깅이 활성화되면 로그 파일을 빠르게 확장할 수 있습니다. 프로덕션 환경에서 응답 시간 문제를 방지하려면 로깅 활성화에 유의하고 필요한 경우 단시간 동안만 활성화하십시오.
+저장소 이행 서비스에 대한 로그는 로그 파일에서 사용할 수 있습니다 `var/log/walmart-bopis.log`.
 
-방화벽 또는 캐시를 통해 API 관련 예외를 캡처할 수 있도록 예외 처리를 허용하도록 환경을 구성할 것을 시스템 관리자에게 요청합니다. 시스템 관리자에게 이 파일에 대한 로그 회전을 설정하여 크기를 최소화하도록 요청할 수도 있습니다.
+방화벽 또는 캐시를 통해 API 관련 예외를 캡처할 수 있도록 예외 처리를 허용하도록 환경을 구성할 것을 시스템 관리자에게 요청합니다.
+
+응용 프로그램 로그 파일이 빠르게 확장될 수 있으므로 필요할 때만 응용 프로그램에 대한 로깅을 사용하여 [!DNL Commerce] 주문. 이 구성은 큰 로그 파일로 인해 프로덕션 환경에서 응답 시간 문제를 방지합니다.
+
+>[!TIP]
+>
+>Adobe Commerce 온-프레미스 설치의 경우 시스템 관리자에게 `var/log/walmart-bopis.log` 파일을 사용하여 크기를 최소화합니다. Adobe Commerce 온-프레미스 설치에 대해서는 [로그 순환](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) 에서 _Adobe Commerce 설치 안내서_. 클라우드 인프라 프로젝트에 대한 Adobe Commerce의 경우 다음을 참조하십시오. [로그 보기 및 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -157,7 +165,7 @@ Adobe Commerce의 Admin Store 구성 메뉴에서 Store Fulfillment 서비스 �
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>디버그 모드는 통합 내에서 로그된 활동을 늘리는 데 사용됩니다. 비활성화하면 디버그 정보가 기록되지 않습니다. 활성화되면 모든 디버그 정보가 기록됩니다. 기록된 모든 데이터는 파일에서 찾을 수 있습니다. 'var/log/walmart-bopis.log'</td>
+<td>디버그 모드는 통합 내에서 로그된 활동을 늘리는 데 사용됩니다. 비활성화하면 디버그 정보가 기록되지 않습니다. 활성화되면 모든 디버그 정보가 기록됩니다 <br></br>기록된 모든 데이터는 파일에서 찾을 수 있습니다. <pre>var/log/walmart-bopis.log</pre>
 <td>글로벌</td>
 <td>아니요</td>
 </tr>
@@ -322,7 +330,7 @@ Store Fulfillment 앱 사용자 계정 및 암호 보안 및 2단계 인증에 �
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>사용자 암호를 변경해야 하는지 여부를 결정합니다.<br></br>'예': 계정 설정 후 사용자가 암호를 변경해야 합니다.'아니요': 계정 설정 후 사용자가 암호를 변경할 것을 권장합니다.</td>
+<td><em>[!UICONTROL Yes]</em>: 계정 설정 후 사용자가 암호를 변경해야 합니다.<br></br><em>[!UICONTROL No]</em>: 계정 설정 후 사용자가 암호를 변경할 것을 권장합니다.</td>
 <td>글로벌</td>
 <td>아니요</td>
 </tr>
@@ -370,18 +378,17 @@ Store Fulfillment 앱 사용자 계정 및 암호 보안 및 2단계 인증에 �
 
 ## 배달 방법
 
-Store Fulfillment는 기본 Adobe Commerce을 확장하여 작동합니다 [!DNL In-Store Delivery] 기능.
-확장을 설치한 후에 매장 내 게재 방법에 추가 관리 구성 옵션을 사용할 수 있습니다. 관리자에서 다음 추가 옵션을 선택하여 구성합니다 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-Store Fulfillment 설정에서 In-Store Pickup 주문에 대해 다음 배달 방법을 구성할 수 있습니다.
+Store Fulfillment는 기본 Adobe Commerce을 확장하여 작동합니다 [!DNL In-Store Delivery] 기능. 확장을 설치한 후에 관리자에게 추가된 다음 확장 설정을 사용하여 매장 내 게재 방법을 구성할 수 있습니다.
 
 - **매장 내 픽업**- 체크아웃 프로세스 동안 매장 내 게재에 대한 오퍼 옵션 BOPIS 주문에 대한 가장 일반적인 배달 시나리오입니다.
 
-- **커브사이드 픽업**&quot;고객이 매장 위치에 주차할 수 있는 옵션을 제공하며, 이 옵션은 매장 직원이 직접 주문해 배송하도록 합니다.
+- **[!UICONTROL Curbside pick up]**&quot;고객이 매장 위치에 주차할 수 있는 옵션을 제공하며, 이 옵션은 매장 직원이 직접 주문해 배송하도록 합니다.
+
+관리자에서 다음 설정을 선택하여 구성합니다 <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->매장 내 게재 옵션 구성에 대한 자세한 내용은 [스토어 내 게재](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) ( Adobe Commerce 사용 안내서).
+>매장 내 게재 옵션 구성에 대한 자세한 내용은 [스토어 내 게재](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) 에서 _Adobe Commerce 사용 안내서_.
 
 
 ### 배달 방법 구성
@@ -426,7 +433,7 @@ Store Fulfillment 설정에서 In-Store Pickup 주문에 대해 다음 배달 �
 </thead>
 <tbody><tr>
 <td><strong>홈 게재 제목</strong></td>
-<td>제품, 장바구니 및 체크아웃 영역에서 홈 배달 옵션에 표시할 제목을 지정합니다. 홈 게재는 창고에서 운송회사별로 또는 고객이 제공한 배송 주소로 직접 Adobe Commerce의 표준 배송 기능을 의미합니다.</br></br>이 레이블은 선택한 운송 회사 또는 사용 가능한 운송 방법 레이블에 영향을 주지 않습니다.</td>
+<td>제품, 장바구니 및 체크아웃 영역에서 홈 배달 옵션에 표시할 제목을 지정합니다. 홈 게재는 창고에서 운송회사별로 또는 고객이 제공한 배송 주소로 직접 Adobe Commerce의 표준 배송 기능을 의미합니다. </br></br>이 레이블은 선택한 운송 회사의 운송 방법 레이블에 영향을 주지 않습니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -438,7 +445,7 @@ Store Fulfillment 설정에서 In-Store Pickup 주문에 대해 다음 배달 �
 </tr>
 <tr>
 <td><strong>저장소 픽업 제목</strong></td>
-<td>고객에게 배달 옵션이 표시되고 매장 내 픽업 서비스를 사용할 수 있는 경우 이 레이블이 표시됩니다.</br></br>제품, 장바구니 및 체크아웃 영역에 표시되는 이 레이블을 사용자 지정할 수 있습니다.</td>
+<td>고객에게 배달 옵션이 표시되고 매장 내 픽업 서비스를 사용할 수 있는 경우 이 레이블이 표시됩니다. </br></br>제품, 장바구니 및 체크아웃 영역에 표시되는 이 레이블을 사용자 지정할 수 있습니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -462,25 +469,25 @@ Store Fulfillment 설정에서 In-Store Pickup 주문에 대해 다음 배달 �
 </tr>
 <tr>
 <td><strong>매장 내 픽업 지침</strong></td>
-<td>소매점에서 주문을 받을 준비가 되면 고객에게 이메일로 통지합니다. 고객이 선택된 경우 [!DNL In-Store Pickup] 체크아웃 중에 여기서 픽업 지침을 사용자 지정할 수 있습니다.</br></br>모든 소매점 위치에 적용되는 전역 설정입니다. 소매 스토어 위치 수준에서 지침을 사용자 지정할 수도 있습니다.</td>
+<td>소매점에서 주문을 받을 준비가 되면 고객에게 이메일로 통지합니다. 고객이 선택된 경우 [!DNL In-Store Pickup] 체크아웃 중에 여기서 픽업 지침을 사용자 지정할 수 있습니다. </br></br>모든 소매점 위치에 적용되는 전역 설정입니다. 소매 스토어 위치 수준에서 지침을 사용자 지정할 수도 있습니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
 <tr>
 <td><strong>커브사이드 픽업 지침</strong></td>
-<td>현재 픽업 주문에 대한 고객 이메일 알림에 포함할 사용자 지정된 주문 픽업 지침을 지정합니다.</br></br>모든 소매점 위치에 적용되는 전역 설정입니다. 소매 스토어 위치 수준에서 지침을 사용자 지정할 수도 있습니다.</td>
+<td>현재 픽업 주문에 대한 고객 이메일 알림에 포함할 사용자 지정된 주문 픽업 지침을 지정합니다. </br></br>모든 소매점 위치에 적용되는 전역 설정입니다. 소매 스토어 위치 수준에서 지침을 사용자 지정할 수도 있습니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
 <tr>
 <td><strong>예상 픽업 리드 타임</strong></td>
-<td>주문이 접수되고 이행되며 주문할 준비가 되기 전에 필요한 시간(분)입니다. 이 정보는 스토어의 픽업 배달 옵션을 위한 소매점 위치를 선택할 때 고객에게 표시됩니다.</br></br>글로벌 설정이며 모든 소매점 위치에 적용됩니다. 소매점 위치 수준에서 리드 타임을 사용자 지정할 수도 있습니다.</td>
+<td>주문이 접수되고 이행되며 주문할 준비가 되기 전에 필요한 시간(분)입니다. 이 정보는 스토어의 픽업 배달 옵션을 위한 소매점 위치를 선택할 때 고객에게 표시됩니다. 글로벌 설정이며 모든 소매점 위치에 적용됩니다. 소매점 위치 수준에서 리드 타임을 사용자 지정할 수도 있습니다.</td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
 <tr>
 <td><strong>예상 픽업 시간 레이블</strong></td>
-<td>고객 픽업 시 주문을 사용할 수 있을 때까지 예상되는 시간을 표시합니다. 이 정보는 스토어의 픽업 배달 옵션을 위한 소매점 위치를 선택할 때 고객에게 표시됩니다.</br></br>이 레이블을 사용자 지정할 때 코드를 사용할 수 있습니다 <code>%1</code> 를 삽입하려면 <strong>예상 픽업 리드 타임</strong>.예:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>모든 소매점 위치에 적용되는 전역 설정입니다. 소매점 위치 수준에서 리드 타임을 사용자 지정할 수도 있습니다.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>고객 픽업 시 주문을 사용할 수 있을 때까지 예상되는 시간을 표시합니다. 이 정보는 고객이 [!DNL In-Store Pickup] 배달 옵션. </br></br>이 레이블을 사용자 지정할 때 코드를 사용할 수 있습니다 <code>%1</code> 를 삽입하려면 <strong>예상 픽업 리드 타임</strong>. 예:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>모든 소매점 위치에 적용되는 전역 설정입니다. 소매점 위치 수준에서 리드 타임을 사용자 지정할 수도 있습니다.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
 <td>저장소 보기</td>
 <td>아니요</td>
 <tr>
@@ -505,8 +512,8 @@ Store Fulfillment 설정에서 In-Store Pickup 주문에 대해 다음 배달 �
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>N-Stock</strong></td>
-<td>고객이 소매점 보관처를 사용하는 경우, 각 위치에 대해 현재가 아닌 품목에 대한 재고 가용성이 표시됩니다.</br></br>여기에서 "재고 내" 상태 레이블을 사용자 지정할 수 있습니다.</td>
+<td><strong>인스톡</strong></td>
+<td>고객이 소매점 보관처를 사용하는 경우, 각 위치에 대해 현재 품목에 대한 재고 가용성이 표시됩니다. </br></br>을(를) 사용자 지정할 수 있습니다 <em>[!UICONTROL in-stock]</em> 여기에 상태 레이블이 있습니다.</br></br></td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
@@ -518,7 +525,7 @@ Store Fulfillment 설정에서 In-Store Pickup 주문에 대해 다음 배달 �
 </tr>
 <tr>
 <td><strong>일부 재고</strong></td>
-<td>고객이 소매점 보관처를 사용하는 경우, 각 위치에 대해 표시된 모든 현재 품목에 대한 재고 가용성입니다.</br></br>여기에서 "부분 재고" 상태 레이블을 사용자 지정할 수 있습니다.</td>
+<td>고객이 소매점 보관처를 사용하는 경우, 각 위치에 대해 표시된 모든 현재 품목에 대한 재고 가용성입니다. </br></br>을(를) 사용자 지정할 수 있습니다 <em>[!UICONTROL partially in-stock]</em> 여기에 상태 레이블이 있습니다.</br></br></td>
 <td>저장소 보기</td>
 <td>아니요</td>
 </tr>
