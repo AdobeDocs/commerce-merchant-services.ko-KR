@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] 릴리스 정보'
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,34 @@ ht-degree: 0%
 * ![새로 만들기](../assets/new.svg) 새로운 기능
 * ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
 * ![버그](../assets/bug.svg) 알려진 문제
+
+## V1.3 릴리스
+
+릴리스 날짜: 2023-1-17(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
+
+![새로 만들기](../assets/new.svg) 온보딩 경험을 간소화하고 개선했습니다.
+![새로 만들기](../assets/new.svg) 새 고객 샌드박스 엔드포인트는 사전 프로덕션 테스트에 사용할 수 있습니다.
+![새로 만들기](../assets/new.svg) 가상 제품에 대한 지원이 추가되었습니다.
+![수정](../assets/fix.svg) API 확장성 및 성능 개선 사항.
+
+### 알려진 제한 사항
+
+이러한 기능은 아직 지원되지 않습니다.
+
+* 고정된 가격으로 제품 번들
+* 카탈로그에서 변형을 삭제하면 업데이트가 수신되지 않습니다.
+* 동적 특성 페이로드의 최대 크기는 9MB입니다.
+* 그룹 제품 가격. 간단한 제품 가격으로 계산될 수 있습니다.
+* 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
+* 색상 견본
+* 제품 URL을 통해 제품 세부 사항 페이지 로드.
+
+다음 제한 사항은 GraphQL API를 사용하여 해결될 수 있습니다.
+
+* 최소 광고된 가격
+* 계층 가격 책정
+* 다운로드 가능한 제품 및 선물 카드
+* 카테고리 (`categories` 및 `categoryList`)
 
 ## V1.1 릴리스
 
@@ -36,7 +64,7 @@ ht-degree: 0%
 * 색상 견본
 * 제품 URL을 통해 제품 세부 사항 페이지 로드.
 
-GraphQL API를 사용하여 다음 제한 사항을 해결할 수 있습니다.
+다음 제한 사항은 GraphQL API를 사용하여 해결될 수 있습니다.
 
 * 최소 광고된 가격
 * 계층 가격 책정

@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Catalog Service]'
-description: '`[!DNL Catalog Service] Adobe Commerce용 는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다.'''
+description: '`[!DNL Catalog Service] Adobe Commerce용 에서는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 55036065c686553bc530bb7a4fe46fcec1bd9ee8
+source-git-commit: 489de0f56cba06620c334e2b17040b32a72968ef
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 * 제품 비교 페이지
 * 장바구니, 주문 및 위시 목록 페이지와 같이 제품 데이터를 렌더링하는 다른 모든 페이지
 
-다음 [!DNL Catalog Service] 사용 [GraphQL](https://graphql.org/) 제품 데이터를 요청 및 수신하기 위해. GraphQL은 프런트 엔드 클라이언트가 Adobe Commerce과 같은 백엔드에 정의된 API(애플리케이션 프로그래밍 인터페이스)와 통신하는 데 사용하는 쿼리 언어입니다. GraphQL은 가볍고 시스템 통합자가 각 응답의 내용과 순서를 지정할 수 있으므로 널리 사용되는 통신 방법입니다.
+다음 [!DNL Catalog Service] 사용 [GraphQL](https://graphql.org/) 제품 데이터를 요청 및 수신하기 위해. GraphQL은 프런트 엔드 클라이언트가 Adobe Commerce과 같은 백엔드에 정의된 API(애플리케이션 프로그래밍 인터페이스)와 통신하는 데 사용하는 쿼리 언어입니다. GraphQL은 가볍고 시스템 통합자가 각 응답의 내용과 순서를 지정할 수 있도록 해주므로 일반적으로 사용되는 통신 방법입니다.
 
-Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQL 시스템은 쇼핑객이 제품, 고객 계정, 장바구니, 체크아웃 등을 비롯하여 다양한 유형의 페이지와 상호 작용할 수 있도록 다양한 쿼리(읽기 작업) 및 돌연(쓰기 작업)을 제공합니다. 그러나 제품 정보를 반환하는 쿼리는 속도에 최적화되지 않습니다. 서비스 GraphQL 시스템은 제품 및 관련 정보에 대해서만 쿼리를 수행할 수 있습니다. 이러한 쿼리는 유사한 핵심 쿼리보다 성능이 더 좋습니다.
+Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQL 시스템에서는 쇼핑객이 제품, 고객 계정, 장바구니, 체크아웃 등을 비롯하여 다양한 유형의 페이지와 상호 작용할 수 있도록 다양한 쿼리(읽기 작업) 및 돌연(쓰기 작업)을 제공합니다. 그러나 제품 정보를 반환하는 쿼리는 속도에 최적화되지 않습니다. 서비스 GraphQL 시스템은 제품 및 관련 정보에 대한 쿼리만 수행할 수 있습니다. 이러한 쿼리는 유사한 핵심 쿼리보다 성능이 더 좋습니다.
 
 이러한 쿼리는 https://catalog-service.adobe.io/graphql에서 게이트웨이로 보내 실행합니다.
 
@@ -32,22 +32,22 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 
 ![카탈로그 아키텍처 다이어그램](assets/catalog-service-architecture.png)
 
-코어 GraphQL 시스템에서 PWA은 상거래 애플리케이션에 요청을 전송하여 각 요청을 수신하고 처리하며 여러 하위 시스템을 통해 요청을 전송한 다음 스토어에 대한 응답을 반환합니다. 이 라운드 트립은 페이지 로드 시간이 느려져 전환율이 낮아질 수 있습니다.
+코어 GraphQL 시스템에서 PWA은 Commerce 애플리케이션에 요청을 전송하며, 이 애플리케이션은 각 요청을 수신하고 처리하고, 여러 하위 시스템을 통해 요청을 전송하고, 스토어에 대한 응답을 반환합니다. 이 라운드 트립은 페이지 로드 시간이 느려져 전환율이 낮아질 수 있습니다.
 
-[!DNL Catalog Service] 는 federated GraphQL 게이트웨이 서비스입니다. 이 서비스는 제품 속성, 변형, 가격 및 카테고리와 같은 제품 세부 사항 및 관련 정보가 포함된 별도의 데이터베이스에 액세스합니다. 서비스는 색인을 통해 데이터베이스를 Adobe Commerce과 계속 동기화합니다.
+[!DNL Catalog Service] 는 Storefront Services 게이트웨이입니다. 이 서비스는 제품 속성, 변형, 가격 및 카테고리와 같은 제품 세부 사항 및 관련 정보가 포함된 별도의 데이터베이스에 액세스합니다. 서비스는 색인을 통해 데이터베이스를 Adobe Commerce과 계속 동기화합니다.
 서비스는 애플리케이션과 직접 통신을 생략하므로 요청 및 응답 주기의 지연 시간을 줄일 수 있습니다.
 
 >[!NOTE]
 >
->게이트웨이는 향후 제품 Recommendations과 통합하기 위한 것입니다. 이 릴리스에서는 [!DNL Catalog Service Federated GraphQL] 그리고 [!DNL Live Search] 두 제품에 유효한 라이선스 키가 있는 경우 동일한 종단점의 페더레이션 쿼리를 사용합니다.
+>게이트웨이는 향후 제품 Recommendations과 통합하기 위한 것입니다. 이 릴리스에서는 [!DNL Catalog Service GraphQL] 그리고 [!DNL Live Search] 두 제품에 유효한 라이선스 키가 있는 경우 동일한 종단점의 쿼리를 쿼리합니다.
 
-코어 및 서비스 GraphQL 시스템은 서로 직접 통신하지 않습니다. 다른 URL에서 각 시스템에 액세스하면 호출에 다른 헤더 정보가 필요합니다. 두 GraphQL 시스템은 함께 사용하도록 설계되었습니다. 다음 [!DNL Catalog Service] GraphQL 시스템은 핵심 시스템을 확장하여 제품 상점 경험을 더 빠르게 만듭니다.
+핵심 및 서비스 GraphQL 시스템은 서로 직접 통신하지 않습니다. 다른 URL에서 각 시스템에 액세스하면 호출에 다른 헤더 정보가 필요합니다. 두 GraphQL 시스템은 함께 사용하도록 설계되었습니다. 다음 [!DNL Catalog Service] GraphQL 시스템은 제품 상점 경험을 더 빠르게 만들기 위해 핵심 시스템을 강화합니다.
 
-원할 경우 구현할 수 있습니다 [Adobe Developer App Builder용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/) Adobe Developer을 사용하여 두 Adobe Commerce GraphQL 시스템을 개인 및 타사 API 및 기타 소프트웨어 인터페이스와 통합합니다. 각 종단점으로 라우팅된 호출에 헤더에 올바른 인증 정보가 포함되도록 메쉬를 구성할 수 있습니다.
+원할 경우 구현할 수 있습니다 [Adobe Developer App Builder용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/) Adobe Developer을 사용하여 두 Adobe Commerce GraphQL 시스템을 개인 및 타사 API 및 기타 소프트웨어 인터페이스와 통합하려면 다음을 수행하십시오. 각 종단점으로 라우팅된 호출에 헤더에 올바른 인증 정보가 포함되도록 메쉬를 구성할 수 있습니다.
 
 ## 아키텍처 세부 사항
 
-다음 섹션에서는 두 GraphQL 시스템 간의 몇 가지 차이점을 설명합니다.
+다음 섹션에서는 두 GraphQL 시스템 간의 몇 가지 차이점에 대해 설명합니다.
 
 ### 스키마 관리
 
