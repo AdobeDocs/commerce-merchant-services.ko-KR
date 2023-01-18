@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _2022년 10월 5일_
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 이제, [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 바닥글에 앱 버전을 표시합니다.
 
 +++
+
+## v1.5.0
+
+_2023년 1월 18일_
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-522 --> 새 구성을 활성화/비활성화하여 [쇼핑객](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) 은 볼트에 자동으로 로그인할 수 있습니다.
+
+![새로 만들기](../assets/new.svg)<!-- Issue BOLT-523 --> 새로운 구성을 활성화/비활성화하여 상인들이 쇼핑객이 두 네트워크에 자동으로 로그인되는지 아니면 볼트 네트워크에만 자동으로 로그인할 수 있는지를 지정할 수 있습니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-542 --> 다음과 같은 경우의 사용자 경험 개선 사항 [볼트 계정에 카드 또는 주소 저장](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 쇼핑객이 이메일을 제공할 때.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-550 --> 사용자 환경 개선 사항 [자동 로그인](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) 볼트 사용자가 이메일을 제공할 때.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-544 --> 용 호환성 개선 [콜백 URL](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) with [다중 사이트](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) 볼트에요
 
 ## v1.4.0
 

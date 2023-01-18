@@ -1,22 +1,19 @@
 ---
-title: "[!DNL Quick Checkout] Adobe Commerce 관리 패널용"
-description: "자세한 내용은 [!DNL Quick Checkout] 관리 패널을 사용하면 확장을 성공적으로 온보드, 설정 및 시각화하는 방법에 도움이 될 수 있습니다."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '`[!DNL Quick Checkout] Adobe Commerce 관리 패널용'
+description: 방법 알아보기 [!DNL Quick Checkout] 관리 패널을 사용하면 확장을 성공적으로 온보드, 설정 및 시각화하는 방법을 사용할 수 있습니다.
+exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # 소개 [!DNL Quick Checkout] 관리 패널
 
 [!DNL Quick Checkout] Adobe Commerce 및 Magento Open Source용 은 확장을 설정하고 사용하는 데 필요한 모든 정보를 포함하는 관리 패널 보기를 제공합니다.
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-
-   ![메뉴 빠른 체크아웃](assets/sales-quickcheckout.png)
-
 1. 이 보기에서 _관리 패널_ 개요, _리소스_ 정보 [!DNL Quick Checkout], get _도움말 및 지원_&#x200B;또는 를 통해 확장 구성 _설정_.
 
    ![메뉴 빠른 체크아웃](assets/admin-panel-view.png)

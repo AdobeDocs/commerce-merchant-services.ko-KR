@@ -2,9 +2,9 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: "자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행합�
 
 ## 계정 만들기 [!DNL Bolt]
 
-구성하기 전에 [!DNL Quick Checkout] Adobe Commerce 관리자에서 다음을 만들어야 합니다. [샌드박스](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} 및 [production](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} 머천트 계정 [!DNL Bolt]. 에서 계정을 만드는 데 필요한 모든 세부 정보를 제공합니다. [!DNL Bolt].
+구성하기 전에 [!DNL Quick Checkout] Adobe Commerce 관리자에서 다음을 만들어야 합니다. [샌드박스](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  머천트 계정 [!DNL Bolt]. 에서 계정을 만드는 데 필요한 모든 세부 정보를 제공합니다. [!DNL Bolt].
 
 자세한 내용은 [테스트 및 유효성 검사](../quick-checkout/testing.md) 주제 를 참조하십시오.
 
@@ -70,7 +70,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행합�
 
    ![빠른 체크아웃](assets/account-credentials.png)
 
-자세한 내용은 [[!DNL Bolt] 환경 세부 사항](https://help.bolt.com/developers/references/environment-details/#about-keys)다음 페이지에서 키 및 서명 비밀에 대해 알아보려면 {target=&quot;_blank&quot;} 페이지를 참조하십시오. [!DNL Bolt] 대상 [!DNL Quick Checkout] 확장.
+자세한 내용은 [[!DNL Bolt] 환경 세부 사항](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 페이지에서 키 및 서명 비밀에 대해 알아봅니다. [!DNL Bolt] 대상 [!DNL Quick Checkout] 확장.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행합�
 
 ## 결제 공급자 구성
 
-결제 서비스 공급자를 연결하려면 [프로세서 설정](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} 개발자 [!DNL Bolt] 페이지.
+결제 서비스 공급자를 연결하려면 [프로세서 설정](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} 개발자 [!DNL Bolt] 페이지.
 
 ## 확장 활성화
 
@@ -99,7 +99,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행합�
 
 1. 고유 API를 제공한 후 자격 증명을 확인하고 [!DNL Publishable keys].
 
-![빠른 체크아웃](assets/quick-checkout-main-view-react.png)
+![빠른 체크아웃](assets/quick-checkout-main-view.png)
 
 자세한 내용은 [설정](../quick-checkout/settings-quick-checkout.md) 구성 옵션에 대한 자세한 내용은 를 참조하십시오. [!DNL Quick Checkout] Adobe Commerce 확장
 
@@ -109,7 +109,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행합�
 
 ## 관리 구성 완료
 
-1. 설정 _관리_ 사이드바, 탐색 **스토어** > **구성** > **체크아웃** 를 눌러 일반 체크아웃 관리 구성 페이지에 액세스합니다.
+1. 설정 _관리_ 사이드바, 탐색 **스토어** > **구성** > **체크아웃** 일반 체크아웃 관리 구성 페이지에 액세스하려면
 1. 에서 _서비스 설정_ 섹션에서 확장을 활성화하는 데 필요한 모든 세부 사항을 제공합니다.
 1. 설정 _결제 조치_ 다음 중 하나를 선택합니다.
 
@@ -136,7 +136,7 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
    >
    > 범위를 로 전환 **기본 웹 사이트** 는 적절한 URL이 설정되었는지 확인합니다. 각 웹 사이트에는 여러 도메인이 있을 수 있습니다.
 
-자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Adobe Commerce의 범위에 대한 자세한 내용은 {target=&quot;_blank&quot;} 항목을 참조하십시오.
+자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} Adobe Commerce의 범위에 대한 자세한 내용은 항목을 참조하십시오.
 
 ## 서비스 설정 구성
 
@@ -149,6 +149,7 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
    > Adobe Commerce은 볼트와 체크아웃 추적 정보를 공유할 수 없으므로 이 옵션을 비활성화하면 보고에 영향을 줍니다.
 
 1. 을(를) 선택합니다 **로그인 후 다음 단계** 고객이 로그인한 후 탐색 흐름을 변경하는 옵션입니다. 기본적으로 **결제** 페이지.
+1. 다음을 정의합니다 [!DNL Quick Checkout] 는 **자동 로그인** 체크아웃 중에. 기본적으로 [!DNL Bolt] 네트워크.
 
 ## 지원 요청
 

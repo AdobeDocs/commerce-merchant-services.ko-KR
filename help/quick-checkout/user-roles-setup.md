@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] 사용자 설정"
-description: "을 표시할 사용자 역할 및 권한 설정 [!DNL Quick Checkout] 관리자 패널."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+title: '`[!DNL Quick Checkout] 사용자 설정'
+description: 을 표시할 사용자 역할 및 권한 설정 [!DNL Quick Checkout] 관리 패널.
+exl-id: 76393840-8312-41bb-8447-412849815169
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Quick Checkout] 사용자 설정
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL System]** > 권한 > **[!UICONTROL User Roles]**.
 
-   ![사용자 역할](assets/user-roles.png)
+   ![사용자 역할](assets/user-roles-small.png)
 
 1. 에서 _역할_ 보기, **새 역할 추가**
 1. 을(를) 선택합니다 [!DNL Quick Checkout] 리소스:

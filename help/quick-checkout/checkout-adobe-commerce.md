@@ -2,9 +2,9 @@
 title: "Adobe Commerce 사용자에 대한 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce 사용자의 흐름."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ ht-degree: 0%
 체크아웃하기 전에 쇼핑객이 Adobe Commerce에 로그인한 경우에는 [!DNL Bolt] 체크 아웃 중에는 OTP 팝업이 나타나지 않지만, 쇼핑객이 자신의 볼트 지갑에 액세스하기 위해 로그인하도록 제안하는 메시지가 나타납니다.
 
 기존 Adobe Commerce 사용자로 주문할 때 문제가 발생하는 경우 [빠른 체크아웃 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce 도움말 센터의 문서.
+
+### 자동 로그인
+
+에 대한 자동 로그인을 구성할 수 있습니다 [!DNL Quick Checkout] 사용자 참조. 구성을 활성화하여 체크아웃 중에 사용자를 자동으로 로그인할 수 있습니다.
+
+1. 설정 _관리_ 사이드바, 탐색 **스토어** > **구성** > **체크아웃** 일반 체크아웃 관리 구성 페이지에 액세스하려면
+1. 에서 _서비스 설정_ 섹션 [!DNL Quick Checkout]자동 로그인을 설정하는 데 필요한 모든 세부 정보를 제공합니다.
+
+자세한 내용은 [[!DNL Quick Checkout] 서비스 설정 구성](../quick-checkout/onboarding.md#configure-service-settings) 주제 를 참조하십시오.
+
+>[!NOTE]
+>
+> 처음 로그인 시기 **자동 로그인** 이 활성화되면 팝업 창을 수락하여 사용자의 동의를 받아야 합니다.
 
 ## 새로 만들기 [!DNL Bolt] account
 
