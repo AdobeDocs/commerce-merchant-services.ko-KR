@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: e11b4e86efe3483717cf4484a7fcce6e23015f4c
+source-git-commit: 55c35e7775505ab9f6a61a458b6cd6fa4c7f1702
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ bin/magento cache:clean
 
 ### 서비스 및 데이터 내보내기 구성
 
-카탈로그 서비스를 설치한 후 다음을 구성해야 합니다 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/install.html?lang=en) API 키를 지정하고 SaaS 데이터 공간을 선택하여 데이터를 삭제합니다.
+카탈로그 서비스를 설치한 후 다음을 구성해야 합니다 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) API 키를 지정하고 SaaS 데이터 공간을 선택하여 데이터를 삭제합니다.
 
 SaaS 구성이 완료되면 카탈로그 동기화 가이드에 따라 초기 데이터 동기화를 수행합니다.
 
