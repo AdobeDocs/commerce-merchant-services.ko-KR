@@ -2,9 +2,9 @@
 title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 > 를 사용하려면 _카탈로그 동기화_ 대시보드 또는 명령줄 인터페이스는 반드시 [API 키 및 구성된 SaaS 데이터 공간](saas.md).
 
 ## 카탈로그 동기화 대시보드 액세스
+
+>[!NOTE]
+>
+> 다음 _카탈로그 동기화_ 대시보드는 제품 Recommendations 서비스가 설치된 경우에만 사용할 수 있습니다.
 
 카탈로그 동기화 대시보드에 액세스하려면 다음을 선택합니다 **시스템** > _데이터 전송_ > **카탈로그 동기화**.
 
