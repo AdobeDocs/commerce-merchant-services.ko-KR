@@ -1,9 +1,10 @@
 ---
 title: Adobe Experience Platform에 쇼퍼 프로필 업로드
 description: 쇼퍼 프로필을 Adobe Experience Platform에 업로드하는 방법을 알아봅니다.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Adobe Commerce 가맹점은 고객 프로필 데이터를 [실시간 고객 프�
 
 1. 고객 데이터를 저장하는 위치를 결정합니다. 일부 판매자의 경우 이 데이터는 Adobe Commerce에 저장되며 [내보낸](https://docs.magento.com/user-guide/system/data-export.html) CSV 파일로 내보낼 때 시간별 세부기간이 작동하지 않는 문제를 해결했습니다. 다른 사용자의 경우 별도의 CRM(고객 관계 관리) 시스템에 있을 수 있습니다.
 
-1. 고객 데이터를 저장하는 위치를 결정한 후 적절한 를 찾습니다 [소스 커넥터](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) 고객 데이터가 저장되는 위치를 기반으로 합니다. 적절한 소스 커넥터가 표시되지 않으면 [로컬 파일 업로드](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) 커넥터를 사용하여 CSV 파일에서 쇼퍼 프로필을 가져옵니다.
+1. 고객 데이터를 저장하는 위치를 결정한 후 적절한 를 찾습니다 [소스 커넥터](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) 고객 데이터가 저장되는 위치를 기반으로 합니다. 적절한 소스 커넥터가 표시되지 않으면 [로컬 파일 업로드](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) 커넥터를 사용하여 CSV 파일에서 쇼퍼 프로필을 가져옵니다.
 
    >[!NOTE]
    >

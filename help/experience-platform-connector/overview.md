@@ -2,9 +2,9 @@
 title: 안내서 개요
 description: Experience Platform 커넥터를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,16 @@ Experience Platform 커넥터를 사용하려면 다음을 수행해야 합니�
 ## 온보딩 단계
 
 1. [설치](install.md) Experience Platform 커넥터 확장.
-1. [로그인](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe 계정 및 [보기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 조직 ID입니다. 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 그 뒤에 오는 (및 는 포함해야 함)입니다 `@AdobeOrg`.
+1. [로그인](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe 계정 및 [보기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 조직 ID입니다. 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 그 뒤에 오는 (및 는 포함해야 함)입니다 `@AdobeOrg`.
 1. [Connect](connect-data.md) Adobe Experience Platform에 Adobe Commerce 인스턴스를 추가합니다.
 1. [만들기 또는 업데이트](update-xdm.md) 상거래 관련 필드 그룹을 사용하는 XDM 스키마.
-1. [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) 및 상거래 관련 필드 그룹을 포함하는 XDM 스키마를 선택합니다.
+1. [데이터 집합 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 만들거나 업데이트한 스키마를 기반으로 합니다.
+1. [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 및 상거래 관련 필드 그룹을 포함하는 XDM 스키마를 선택합니다.
 1. (선택 사항) [쇼퍼 프로필 업로드](profile.md) Adobe Experience Platform에 연결하여 상점 데이터를 제공하는 것은 특정 쇼핑객이 쇼핑 경험을 향상시키는 데 도움이 될 수 있습니다.
 
 ## Audience
 
-이 안내서는 Adobe Commerce 상점 데이터를 다른 Adobe DX 제품에 연결하려는 Adobe Commerce 매상을 위해 설계되었습니다.
+이 안내서는 Adobe Commerce 데이터를 다른 Adobe DX 제품에 연결하려는 Adobe Commerce 머천트용으로 설계되었습니다.
 
 ### PWA Studio 지원
 
@@ -50,5 +51,5 @@ Experience Platform 커넥터를 사용하려면 다음을 수행해야 합니�
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-- [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
-- [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
+- [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}- 추가 도움말을 보려면 티켓을 제출하십시오.
