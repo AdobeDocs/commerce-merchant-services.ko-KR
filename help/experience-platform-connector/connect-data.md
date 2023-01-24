@@ -2,7 +2,7 @@
 title: Adobe Experience Platform에 상거래 데이터 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하려면 조�
 >
 >백 오피스 베타 프로그램에 이미 등록된 판매자의 경우 백 오피스 이벤트를 활성화하는 확인란이 표시됩니다. 백오피스 베타 프로그램에 참여하시려면 [drios@adobe.com](mailto:drios@adobe.com).
 
-![베타 Experience Platform 커넥터 구성](assets/epc-config-beta.png)
-
 에서 **데이터 수집** 섹션에서 수집하여 Experience Platform 에지로 전송할 데이터 유형을 지정합니다. 기본적으로 storefront 이벤트는 AEP 웹 SDK 및 조직 ID가 유효한 한 자동으로 전송됩니다. 자세한 내용은 이벤트 항목을 참조하십시오 [상점](events.md#storefront-events) 및 [사무실](events.md#beta-order-status-events) events.
+
+![베타 Experience Platform 커넥터 구성](assets/epc-config-beta.png)
 
 >[!NOTE]
 >
