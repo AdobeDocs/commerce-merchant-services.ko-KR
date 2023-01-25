@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2023년 1월 25일_
+
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-4102 --> Payment Services를 새로 설치하면 Commerce Services를 구성할 수 없어 Payment Services가 작동하지 않습니다. 이 문제를 해결하려면 결제 서비스 확장을 버전 1.5.3으로 업데이트하십시오.
 
 _2022년 9월 12일_
 
@@ -53,13 +57,19 @@ _2021년 6월 28일_
 
 +++
 
+## v1.5.3
+
+_2022년 1월 25일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 호환되지 않는 알려진 이전 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스에서는 서비스 ID 확장 버전을 최신 안정적인 버전으로 잠급니다. 이 경우 새 Payment Services 설치에서 Commerce Services를 다시 구성할 수 있습니다.
+
 ## v1.5.2
 
 _2022년 12월 22일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부될 때 지급 서비스의 송장 발행이 개선되었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스에는 다음을 사용하는 상인의 PayPal 스마트 단추가 올바르게 표시됩니다. [체크 아웃 실행](https://marketplace.magento.com/swissup-firecheckout.html)체크아웃 페이지에 대한 {target=_blank} 사용자 지정 템플릿입니다. 이전에는 minicart가 간헐적으로 버튼을 표시했습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스에는 다음을 사용하는 상인의 PayPal 스마트 단추가 올바르게 표시됩니다. [체크 아웃 실행](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 minicart가 간헐적으로 버튼을 표시했습니다.
 
 ## v1.5.1
 
