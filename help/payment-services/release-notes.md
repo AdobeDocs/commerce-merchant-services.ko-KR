@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
+source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 1%
@@ -59,7 +59,7 @@ _2021년 6월 28일_
 
 ## v1.5.3
 
-_2022년 1월 25일_
+_2023년 1월 25일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 호환되지 않는 알려진 이전 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스에서는 서비스 ID 확장 버전을 최신 안정적인 버전으로 잠급니다. 이 경우 새 Payment Services 설치에서 Commerce Services를 다시 구성할 수 있습니다.
 
