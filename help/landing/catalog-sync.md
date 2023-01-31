@@ -2,9 +2,9 @@
 title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 
 ### 동기화가 실행되고 있지 않음
 
-동기화가 일정에서 실행되고 있지 않거나 아무 것도 동기화되지 않는 경우 [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
+동기화가 일정에서 실행되고 있지 않거나 아무 것도 동기화되지 않는 경우 [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### 동기화 실패
 
-카탈로그 동기화 상태가 **실패**, 제출 [지원 티켓](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+카탈로그 동기화 상태가 **실패**, 제출 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 명령줄 인터페이스 {#resynccmdline}
 

@@ -4,9 +4,9 @@ description: 인스턴스 연결 [!DNL Payment Services] 몇 가지 온보딩 �
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ API 키를 만들거나 액세스하는 방법에 대해 알아보려면 [API �
 
 ## 문제 해결
 
-* [문제 해결 [!DNL Payment Services] 설치](https://support.magento.com/hc/en-us/articles/4406603542541)
-* [PayPal 샌드박스 계정이 확인되지 않음](https://support.magento.com/hc/en-us/articles/4406954952461)
-* [지연 [!DNL Payment Services] 보고서 데이터](https://support.magento.com/hc/en-us/articles/4406114741517)
-* [샌드박스 환경에서 지급을 처리할 때 PayPal에서 신용 카드 테스트가 실패합니다](https://support.magento.com/hc/en-us/articles/5201041963917)
+* [문제 해결 [!DNL Payment Services] 설치](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [PayPal 샌드박스 계정이 확인되지 않음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [지연 [!DNL Payment Services] 보고서 데이터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [샌드박스 환경에서 지급을 처리할 때 PayPal에서 신용 카드 테스트가 실패합니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

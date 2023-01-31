@@ -4,9 +4,9 @@ description: 에 대한 포괄적인 정보 [!DNL Product Recommendations] Adobe
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,5 @@ ht-degree: 0%
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-* [도움말 센터](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} - 다음을 참조하십시오. [!DNL Product Recommendations]- 관련 문제 해결 문서.
-* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} - 추가 도움말을 받으려면 티켓을 제출하십시오.
+* [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}- 다음을 참조하십시오. [!DNL Product Recommendations]- 관련 문제 해결 문서.
+* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}- 추가 도움말을 보려면 티켓을 제출하십시오.

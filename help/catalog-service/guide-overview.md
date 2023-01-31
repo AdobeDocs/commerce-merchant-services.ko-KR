@@ -2,9 +2,9 @@
 title: '`[!DNL Catalog Service] 안내서 개요'''
 description: '`[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 내용을 더 빨리 검색하는 방법을 제공합니다.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ ht-degree: 0%
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-* [도움말 센터](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - 카탈로그 서비스 관련 문제 해결 문서를 참조하십시오.
-* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - 추가 도움말을 보려면 티켓을 제출하십시오.
+* [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) 문제 해결 문서
+* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - 추가 도움말을 보려면 티켓을 제출하십시오.
 * Adobe Commerce 엔지니어링 팀에 참여하고, SaaS 상점 서비스 사용자는 [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) 최신 공개 Slack 채널입니다.

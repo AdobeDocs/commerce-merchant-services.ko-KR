@@ -2,9 +2,9 @@
 title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법을 알아봅니다. [!DNL Live Search] Adobe Commerce"
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ API 키 및 개인 키를 생성하려면 다음을 참조하십시오 [Commerce
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-자세한 도움말은 [[!DNL Live Search] 카탈로그가 동기화되지 않음](https://support.magento.com/hc/en-us/articles/4405637804301-Live-search-catalog-not-synchronized) 지원 기술 자료에서
+자세한 도움말은 [[!DNL Live Search] 카탈로그가 동기화되지 않음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) 지원 기술 자료에서
 
 ### 향후 제품 업데이트
 

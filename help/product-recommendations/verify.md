@@ -2,16 +2,16 @@
 title: 이벤트 컬렉션 확인
 description: 동작 데이터가 Adobe Commerce으로 전송되고 있는지 확인하는 방법을 알아봅니다.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # 이벤트 컬렉션 확인
 
-다음에 [설치 및 구성](install-configure.md) a `magento/product-recommendations` 모듈에서는 동작 데이터가 Adobe Commerce으로 전송되고 있는지 확인할 수 있습니다. Chrome에서 사용할 수 있는 개발자 도구를 사용하거나 Snowfaul Chrome 확장을 설치할 수 있습니다. 추가 도움이 필요한 경우 [문제 해결 [!DNL Product Recommendations] 모듈](https://support.magento.com/hc/en-us/articles/360042224851) 지원 기술 자료에서
+다음에 [설치 및 구성](install-configure.md) a `magento/product-recommendations` 모듈에서는 동작 데이터가 Adobe Commerce으로 전송되고 있는지 확인할 수 있습니다. Chrome에서 사용할 수 있는 개발자 도구를 사용하거나 Snowfaul Chrome 확장을 설치할 수 있습니다. 추가 도움이 필요한 경우 [문제 해결 [!DNL Product Recommendations] 모듈](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 지원 기술 자료에서
 
 ## Chrome에서 개발자 도구를 사용하여 확인
 

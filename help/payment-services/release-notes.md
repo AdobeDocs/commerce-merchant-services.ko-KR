@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
+source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ _2022년 3월 31일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2561 --> 이전에 제거한 제품이 _검토 순서_ 페이지.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2842 --> 신용 카드 거래 테스트 [PayPal에서 실패할 수 있음](https://support.magento.com/hc/en-us/articles/5201041963917) 샌드박스 환경에서 지급을 처리할 때.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2842 --> 신용 카드 거래 테스트 [PayPal에서 실패할 수 있음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 샌드박스 환경에서 지급을 처리할 때.
 
 ## v1.0.0
 
@@ -187,8 +187,8 @@ _2021년 11월 29일_
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-1443 --> 쉽게 할 수 있습니다 [모양 및 느낌 사용자 지정](payments-options.md) PayPal 스마트 버튼과 신용 카드 필드의 [!DNL Payment Services] 확장.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 사용 [잘못된 작성기 키](https://support.magento.com/hc/en-us/articles/4406603542541) 확장을 설치하는 동안 사용자가 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 올바른 `MAGEID`.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 사용 [잘못된 작성기 키](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 확장을 설치하는 동안 사용자가 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 올바른 `MAGEID`.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 보고서 [즉시 동기화되지 않음](https://support.magento.com/hc/en-us/articles/4406114741517).
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 보고서 [즉시 동기화되지 않음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2475 --> 사용자 [PayPal 샌드박스 계정](https://support.magento.com/hc/en-us/articles/4406954952461) 대상 [!DNL Payment Services] 온보딩 중에 해당 계정을 만든 경우에는 을 확인할 수 없습니다.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2475 --> 사용자 [PayPal 샌드박스 계정](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 대상 [!DNL Payment Services] 온보딩 중에 해당 계정을 만든 경우에는 을 확인할 수 없습니다.

@@ -4,9 +4,9 @@ description: 일반 설정을 구성하여 활성화 [!DNL Store Fulfillment] �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Adobe Commerce 온-프레미스 설치의 경우 시스템 관리자에게 `var/log/walmart-bopis.log` 파일을 사용하여 크기를 최소화합니다. Adobe Commerce 온-프레미스 설치에 대해서는 [로그 순환](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) 에서 _Adobe Commerce 설치 안내서_. 클라우드 인프라 프로젝트에 대한 Adobe Commerce의 경우 다음을 참조하십시오. [로그 보기 및 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Adobe Commerce 온-프레미스 설치의 경우 시스템 관리자에게 `var/log/walmart-bopis.log` 파일을 사용하여 크기를 최소화합니다. Adobe Commerce 온-프레미스 설치에 대해서는 [로그 순환](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) 에서 _Adobe Commerce 설치 안내서_. 클라우드 인프라 프로젝트에 대한 Adobe Commerce의 경우 다음을 참조하십시오. [로그 보기 및 관리](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
