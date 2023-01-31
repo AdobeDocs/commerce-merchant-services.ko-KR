@@ -1,15 +1,15 @@
 ---
-title: "[!DNL Payment Services] 릴리스 정보"
+title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
+source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 1%
+source-wordcount: '1476'
+ht-degree: 0%
 
 ---
 
-# 릴리스 정보
+# 릴리스 노트
 
 이러한 릴리스 노트는 [!DNL Payment Services] 다음을 포함합니다.
 
@@ -56,6 +56,12 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
 
 +++
+
+## v1.5.4
+
+_2023년 1월 29일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4110 --> 구매자가 제품 페이지, 미니 장바구니 및 장바구니에서 스마트 버튼을 사용하여 주문을 하지 못하는 문제를 수정했습니다. 이제 구매자는 주문을 성공적으로 완료할 수 있습니다.
 
 ## v1.5.3
 
