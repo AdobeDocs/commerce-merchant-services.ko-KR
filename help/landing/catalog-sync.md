@@ -2,9 +2,9 @@
 title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 
 >[!NOTE]
 >
-> 명령줄에서 데이터 재동기화를 트리거하면 데이터가 업데이트되는 데 최대 1시간이 걸릴 수 있습니다.
+> 처음으로 데이터 동기화를 실행할 때는 `productattributes` 먼저 피드, 그 다음 `productoverrides`를 실행하기 전에 `products` 피드.
 
 명령 옵션:
 
@@ -130,6 +130,8 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `variants`— 색상 및 크기와 같은 구성 가능한 제품의 제품 변형
 - `productattributes`— 다음과 같은 제품 속성 `activity`, `gender`, `tops`, `bottoms`, 기타 등
 - `productoverrides`— 카테고리 권한을 기반으로 하는 규칙과 같은 고객별 가격 및 카탈로그 가시성 규칙
+
+명령줄에서 데이터 재동기화를 트리거하면 데이터가 업데이트되는 데 최대 1시간이 걸릴 수 있습니다.
 
 ### 예
 

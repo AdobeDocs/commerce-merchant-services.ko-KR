@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 안내서 개요"
 description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 30acf619c8e46562fb83f2288c324feda0387e05
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Live Search에는 관리자를 위한 세 개의 영역이 있습니다.
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-[도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - 라이브 검색 관련 문제 해결 문서를 참조하십시오.
+[기술 자료](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - 라이브 검색 관련 문제 해결 문서를 참조하십시오.
 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - 추가 도움말을 보려면 티켓을 제출하십시오.
 
 지원 티켓을 제출하기 전에 명령줄에서 다음을 실행하여 현재 설치된 라이브 검색 버전을 확인합니다.
