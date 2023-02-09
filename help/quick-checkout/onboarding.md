@@ -2,9 +2,9 @@
 title: '"온보드 [!DNL Quick Checkout] Adobe Commerce 확장 프로그램'
 description: "자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
 
 1. 을(를) 선택합니다 **로그인 후 다음 단계** 고객이 로그인한 후 탐색 흐름을 변경하는 옵션입니다. 기본적으로 **결제** 페이지.
 1. 다음을 정의합니다 [!DNL Quick Checkout] 는 **자동 로그인** 체크아웃 중에. 기본적으로 [!DNL Bolt] 네트워크.
+
+   >[!NOTE]
+   >
+   > 자세한 내용은 [볼트의 자동 로그인 사용 설명서](https://help.bolt.com/products/embedded/direct-api/auto-login/) 추가 정보.
 
 ## 지원 요청
 

@@ -2,9 +2,9 @@
 title: "Adobe Commerce의 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce의 흐름"
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 1. 체크아웃을 진행합니다.
 
 ![체크아웃](assets/proceed-checkout.png)
+
+>[!NOTE]
+>
+> 상인에 대해 자동 로그인을 활성화할 수 있습니다. 자세한 내용은 [볼트의 자동 로그인 활성화 항목](https://help.bolt.com/products/embedded/direct-api/auto-login/) 추가 정보.
 
 1. 메시지가 표시되면 연결된 이메일 주소를 입력합니다 [!DNL Bolt] 계정이 필요합니다.
 1. 보낸 OTP(일회용 암호)를 입력합니다 [!DNL Bolt] 계정의 이메일 주소 또는 전화 번호입니다.

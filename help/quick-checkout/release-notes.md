@@ -1,15 +1,15 @@
 ---
-title: '[!DNL Quick Checkout] 릴리스 정보'
+title: '`[!DNL Quick Checkout] 릴리스 노트'''
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
 
-# 릴리스 정보
+# 릴리스 노트
 
 이러한 릴리스 노트는 [!DNL Quick Checkout] 다음을 포함합니다.
 
@@ -64,6 +64,14 @@ _2022년 10월 5일_
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 이제, [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 바닥글에 앱 버전을 표시합니다.
 
 +++
+
+## v1.6.0
+
+_2023년 2월 9일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-567 --> 다음과 같은 경우의 사용자 경험 개선 사항 [주문 배치](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) 사용 [스토어 내 게재](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) 메서드 [!DNL Quick Checkout] 비활성화되어 있습니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-569 --> 쇼핑객이 다음을 수행할 수 있는 로그아웃 기능 개선 사항 [볼트 네트워크에서 로그아웃](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 

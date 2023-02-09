@@ -2,9 +2,9 @@
 title: "Adobe Commerce에서 볼트 사용자의 체크아웃 흐름"
 description: 개요 [!DNL Quick Checkout] Adobe Commerce에서 볼트 사용자에 대한 흐름.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # 게스트 사용자
 
 게스트 체크아웃 경험은 Adobe 사용자 경험과 다릅니다. 쇼핑객이 체크아웃에 이메일 주소를 입력하면 [!DNL Quick Checkout] 검증 후 기존 [!DNL Bolt] 계정이 필요합니다.
+
+>[!WARNING]
+>
+> 다음 [!DNL In-Store Pickup] (ISPU) 기능은 [!DNL Quick Checkout] 이 활성화되어 있습니다.
 
 ## 등록 [!DNL Bolt] account
 

@@ -2,9 +2,9 @@
 title: "Adobe Commerce 사용자에 대한 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce 사용자의 흐름."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ ht-degree: 0%
 
 기존 Adobe Commerce 사용자로 주문할 때 문제가 발생하는 경우 [빠른 체크아웃 문제 해결](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) Adobe Commerce 도움말 센터의 문서.
 
-### 자동 로그인
+## 자동 로그인
+
+자동 로그인 구성 요소는 쇼핑객이 활성 볼트 세션을 갖는 시점을 감지하여 자동으로 쇼핑객에 로그인합니다. 이렇게 하면 쇼핑객이 이전 세션에서 계정 감지 및 OTP(일회성 암호) 단계를 완료했으므로 이 단계를 건너뜁니다.
 
 에 대한 자동 로그인을 구성할 수 있습니다 [!DNL Quick Checkout] 사용자 참조. 구성을 활성화하여 체크아웃 중에 사용자를 자동으로 로그인할 수 있습니다.
 
