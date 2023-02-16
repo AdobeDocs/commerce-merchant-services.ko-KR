@@ -2,9 +2,9 @@
 title: '`[!DNL Catalog Service] 안내서 개요'''
 description: '`[!DNL Catalog Service for Adobe Commerce] 에서는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 내용을 더 빨리 검색하는 방법을 제공합니다.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: c1b95c2298f1a1039ede6b43b77097d299a34e12
+source-git-commit: 242060d94700efc018a520d2d680c0f47a0cb915
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -17,18 +17,6 @@ ht-degree: 0%
 
 * Adobe [!DNL Commerce] 시스템 관리자가 서비스를 설치 및 유지 관리합니다. [!DNL Catalog Service] 에는 표준 관리자 사용자를 위한 관리 UI 또는 기능이 없습니다.
 * 통합자는 GraphQL 쿼리를 빌드하고 프런트 엔드 클라이언트를 사용하는 스토어에 통합합니다.
-
-## 온보딩 및 설치 비디오
-
-카탈로그 서비스에 대한 연습 참조 [온보딩 및 설치](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) 프로세스.
-
-1부:
-
->[!VIDEO](https://video.tv.adobe.com/v/3415599)
-
-2부:
-
->[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
 ## 추가 설명서
 
