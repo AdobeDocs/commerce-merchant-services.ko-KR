@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 0%
 1. 활성화하려면 [3DS 보안 인증](security.md#3ds) (`Off` 기본적으로 ) 토글 **[!UICONTROL 3DS Secure authentication]** 선택할 대상 `Always` 또는 `When required`.
 1. 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화하려면 **[!UICONTROL Show on checkout page]** 선택기.
 1. 활성화 또는 비활성화하려면 [카드 저장](#card-vaulting), 전환 **[!UICONTROL Vault enabled]** 선택기.
+1. 활성화 또는 비활성화하려면 [관리자의 결제 방법 저장](#card-vaulting) (가맹점이 관리자 내에서 고객이 자신의 결제 방법을 사용하여 주문을 완료하도록 하려면), **[!UICONTROL Show vaulted methods in Admin]** 선택기.
 1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ ht-degree: 0%
 | [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 설명합니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | 웹 사이트 | 활성화 또는 비활성화 [3DS 보안 인증](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에 표시할 신용 카드 필드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 웹 사이트 | 활성화 또는 비활성화 [신용 카드 소산](#card-vaulting). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 저장소 보기 | 활성화 또는 비활성화 [신용 카드 소산](vaulting.md). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 저장소 보기 | 머천트가 관리자에서 고객에 대한 주문을 완료할 수 있도록 활성화 또는 비활성화합니다 [저장된 결제 방법 사용](vaulting.md). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 결제 단추
@@ -230,6 +232,8 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 ## 카드 소산
 
 고객이 내 계정에 있는 신용 카드 정보를 향후 구매에 사용할 수 있도록 저장 또는 &quot;저장&quot;할 수 있는 기능을 활성화할 수 있습니다.
+
+관리자의 카드 볼팅(vaulting)을 사용하여 기존 고객에 대한 후속 주문을 완료할 수도 있습니다.
 
 에서 카드 볼팅 을 활성화 또는 비활성화합니다 [신용 카드 필드 설정](#credit-card-fields).
 

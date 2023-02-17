@@ -1,9 +1,10 @@
 ---
 title: 신용 카드 저장
 description: 구매자는 향후 구매에 대한 신용 카드 세부 사항을 저장(저장)할 수 있습니다.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ ht-degree: 0%
 
 ## 저장 활성화
 
-결제 서비스에서 귀하의 스토어에 대해 신용 카드 소산을 활성화할 수 있습니다 [설정](settings.md#card-vaulting).
+고객에 대해 신용 카드 볼팅(vaulting)을 활성화할 수 있습니다. _및_ 관리 도구 모음의 저장소 [!DNL Payment Services] [설정](settings.md#card-vaulting).
+
+## 관리에서 저장 사용
+
+고객이 이전에 저장한 신용 카드를 보유한 경우, 머천트는 관리자 내에서 저장된 결제 방법을 사용하여 해당 고객에 대한 후속 주문을 생성할 수 있습니다.
+
+고객이 이전에 완료된 결제에서 시스템에 저장된 기존 계정과 유효한 토큰이 모두 있는 경우에만 관리에서 저장된 카드를 사용할 수 있습니다.
+
+저장된 신용 카드를 사용하여 고객에 대한 관리자에게 주문을 받으려면:
+
+1. [주문 만들기 및 제품 추가](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. in _[!UICONTROL Payment & Shipping Information]_, 선택&#x200B;**[!UICONTROL Stored Cards]**를 결제 방법으로 사용할 수 있습니다.
+1. 원하는 저장된 신용 카드 결제 방법을 선택합니다.
+1. 주문에 필요한 기타 단계를 완료한 후, [제출](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![고객에 대해 관리자에서 저장된 신용 카드 사용](assets/admin-vaultedcard.png)
 
 ## 보안
 

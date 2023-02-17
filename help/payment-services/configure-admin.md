@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **권한 부여 및 캡처**.
 1. 대상 **[!UICONTROL Show on checkout page]**, 선택 `Yes` 을 눌러 체크아웃 페이지에서 신용 카드 필드를 활성화합니다.
 1. 대상 **[!UICONTROL Vault Enabled]**, 선택 `Yes` 을 클릭하여 체크아웃을 위해 신용 카드 볼팅 을 활성화합니다.
+1. 대상 **[!UICONTROL Vault Enabled in Admin]**, 선택 `Yes` 상인이 저장된 신용 카드를 사용하여 고객에 대한 주문을 생성할 수 있도록 합니다.
 1. 대상 **[!UICONTROL Debug Mode]**, 선택 `Yes` 디버그 모드를 활성화하거나 `No` 사용 안 함).
 1. 활성화하려면 **[!UICONTROL 3DS Secure authentication]** (`Off` 기본적으로 을(를) 선택합니다. `Always` 또는 `When required`.
 1. 클릭 **[!UICONTROL Save Config]** 변경 사항을 저장하려면 을 클릭합니다.
@@ -73,9 +74,10 @@ ht-degree: 0%
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 저장소 보기 | 체크아웃하는 동안 결제 방법 보기에서 이 결제 옵션의 제호로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 설명합니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 지정된 결제 방법에 대해 설명합니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | 웹 사이트 | 신용 카드 vaulting을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 저장소 보기 | 활성화 또는 비활성화 [신용 카드 소산](vaulting.md). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | 저장소 보기 | 기능 활성화 또는 비활성화 [머천트로부터 관리자의 고객 주문 완료](vaulting.md) 저장된 결제 방법을 사용합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | 웹 사이트 | 활성화 또는 비활성화 [3DS 보안 인증](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 
