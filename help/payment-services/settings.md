@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ## 결제 옵션 구성
 
-웹 사이트에 대해 결제 서비스를 활성화했으므로, 결제 기능 및 상점 표시에 대한 기본 설정을 변경할 수 있습니다.
+이제 사용자가 [!UICONTROL Payment Services] 웹 사이트의 경우 결제 기능 및 상점 표시에 대한 기본 설정을 변경할 수 있습니다.
 
 1. 설정 _관리_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -109,6 +109,7 @@ ht-degree: 0%
 1. 저장소 보기에서 **[!UICONTROL Scope]** 드롭다운 메뉴에서 결제 방법을 사용할 수 있습니다.
 1. 체크아웃 중에 표시되는 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout title]** 필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** to `Authorize` 또는 `Authorize and Capture`.
+1. 활성화하려면 [3DS 보안 인증](security.md#3ds) (`Off` 기본적으로 ) 토글 **[!UICONTROL 3DS Secure authentication]** 선택할 대상 `Always` 또는 `When required`.
 1. 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화하려면 **[!UICONTROL Show on checkout page]** 선택기.
 1. 활성화 또는 비활성화하려면 [카드 저장](#card-vaulting), 전환 **[!UICONTROL Vault enabled]** 선택기.
 1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
@@ -123,9 +124,10 @@ ht-degree: 0%
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 저장소 보기 | 체크아웃하는 동안 결제 방법 보기에서 이 결제 옵션의 제호로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions)지정한 결제 방법에 대한 {target=&quot;_blank&quot;} 입니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 설명합니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | 웹 사이트 | 활성화 또는 비활성화 [3DS 보안 인증](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에 표시할 신용 카드 필드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 웹 사이트 | 신용 카드 vaulting을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | 웹 사이트 | 활성화 또는 비활성화 [신용 카드 소산](#card-vaulting). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 결제 단추
@@ -165,7 +167,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 저장소 보기 | 체크아웃하는 동안 결제 방법 보기에서 이 결제 옵션의 제호로 표시할 텍스트를 추가합니다. 옵션: 텍스트 필드 |
-| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions)지정한 결제 방법에 대한 {target=&quot;_blank&quot;} 입니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [결제 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 설명합니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | 저장소 보기 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 를 클릭하여 제품에서 사용할 수 있습니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 저장소 보기 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 를 클릭합니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | 저장소 보기 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 를 클릭합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -231,12 +233,21 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
 에서 카드 볼팅 을 활성화 또는 비활성화합니다 [신용 카드 필드 설정](#credit-card-fields).
 
-자세한 내용은 [신용 카드 저장](vaulting.md) vaulting에 대한 자세한 정보입니다.
+자세한 내용은 [신용 카드 저장](vaulting.md) 추가 정보.
+
+## 3DS
+
+3DS는 고객과 상인이 매장에서 부정 행위를 하지 못하도록 보호하고 유럽 연합(EU) 표준을 준수하도록 합니다.
+
+에서 3DS 활성화 또는 비활성화 [신용 카드 필드 설정](#credit-card-fields).
+
+자세한 내용은 [3DS 보안](security.md#3ds) 추가 정보.
 
 ## 여러 PayPal 계정 사용
 
-Payment Services에서 내에서 여러 PayPal 계정을 사용할 수 있습니다 **하나** 웹 사이트 수준의 머천트 계정. 예를 들어, 여러 국가(서로 다른 사용)에서 저장소를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부 부분에 Adobe Commerce을 사용하지만 _모두_&#x200B;여러 PayPal 계정을 사용하도록 머천트 계정을 설정할 수 있습니다.
+in [!UICONTROL Payment Services]에서는 여러 PayPal 계정을 **하나** 웹 사이트 수준의 머천트 계정. 예를 들어, 여러 국가(서로 다른 사용)에서 저장소를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부 부분에 Adobe Commerce을 사용하지만 _모두_&#x200B;여러 PayPal 계정을 사용하도록 머천트 계정을 설정할 수 있습니다.
 
 자세한 내용은 [사이트, 저장 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 웹 사이트, 스토어 및 저장소 보기의 계층 구조에 대한 자세한 정보.
 
 영업 담당자가 [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) PayPal을 사용하여 추가 사이트에 머천트 계정을 설정하고 온보딩하는 경우, 사용자가 구성하도록 구성한 PayPal 단추가 사이트에 표시되도록 합니다. 웹 사이트에 대해 여러 PayPal 계정을 사용하는 데 도움이 필요하면 영업 담당자에게 문의하십시오.
+
