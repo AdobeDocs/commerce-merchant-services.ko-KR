@@ -2,9 +2,9 @@
 title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ PayPal 샌드박스 계정을 사용하면 [!DNL Payment Services] 테스트 모
 
    지급 수락을 시작하기 위해 PayPal 계정을 연결하는 PayPal 창이 표시됩니다.
 
-1. PayPal 비즈니스 계정(PayPal 샌드박스 계정 아님)과 국가 또는 지역의 전자 메일을 입력하고 를 클릭합니다. **[!UICONTROL Next]**.
+1. 3단계에서 생성한 PayPal 샌드박스 계정의 전자 메일 및 암호를 입력하고(PayPal 비즈니스 계정 정보가 아님) 해당 국가 또는 지역을 입력합니다.
+1. 클릭 **[!UICONTROL Next]**.
 
    ![PayPal - 지급 PayPal 계정 연결](assets/paypal-connectacct.png)
 

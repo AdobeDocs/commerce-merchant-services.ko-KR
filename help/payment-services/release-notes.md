@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
+source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
 workflow-type: tm+mt
-source-wordcount: '1488'
+source-wordcount: '1564'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,14 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
 
 +++
+
+## v1.6.0
+
+_2023년 2월 17일_
+
+![새로 만들기](../assets/fix.svg)<!-- Issue PAY-3540 --> 추가됨 [유럽 연합(EU)과 영국에서 판매점을 대상으로 하는 PCI 3DS 규정 준수 기능](security.md#3ds). 구매자가 신용 카드 발급자를 인증해야 하는 이러한 추가 보안 계층은 온라인 사기를 방지하는 데 도움이 되며 유럽 연합(EU) 규정 준수 규정의 일부로 필요합니다.
+
+![새로 만들기](../assets/fix.svg)<!-- Issue PAY-3609 --> 에 기능이 추가되었습니다. [관리자에서 카드 vaulting 활성화](vaulting.md##use-vaulting-in-the-admin). 이를 통해 판매자는 관리자 내에서 자신의 결제 방법을 사용하여 고객을 위한 주문을 만들 수 있습니다.
 
 ## v1.5.4
 

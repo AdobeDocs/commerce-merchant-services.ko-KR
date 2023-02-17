@@ -2,7 +2,7 @@
 title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 상거래 인스턴스를 연결하고 구성에 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -51,4 +51,4 @@ API 키가 손실된 경우 새 API 키 쌍은 [생성](https://experienceleague
 
    관리자의 구성 영역으로 이동됩니다. **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**를 입력하여 Commerce Services Connector를 구성하십시오.
 
-1. 상거래 서비스를 구성하려면 다음 단계에 설명된 단계를 수행합니다. [SaaS 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. 상거래 서비스를 구성하려면 다음 단계에 설명된 단계를 수행합니다. [SaaS 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
