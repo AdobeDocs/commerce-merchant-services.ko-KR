@@ -2,9 +2,9 @@
 title: 활성화 [!DNL Payment Services] 프로덕션
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다 [!DNL Payment Services] 제작 관련
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
    이 옵션은 아직 구성되지 않은 경우 표시됩니다 [!DNL Payment Services] 하나 이상의 웹 사이트에 대한 결제 방법입니다.
 
-   관련 옵션이 확장되어 홈 보기에서 설정 영역으로 이동됩니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 여기에서 [!DNL Payment Services] 옵션 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   관련 옵션이 확장되어 홈 보기에서 설정 영역으로 이동됩니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 여기에서 [!DNL Payment Services] 옵션 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. in _[!UICONTROL General Configuration]_, 설정&#x200B;**[!UICONTROL Enable]**to `Yes`.
 1. 설정 **[!UICONTROL Payment Action]**, 두 가지 모두에 대해 _[!UICONTROL Credit Card Fields]_및_[!UICONTROL PayPal Smart Buttons]_&#x200B;를 다음 중 한 곳에 추가합니다.
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 1. 클릭 **[!UICONTROL Save]**.
 1. 클릭 **[!UICONTROL Go to Payment Services]** 다시 [!DNL Payment Services] 집에
-1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    구성 변경이 있을 때마다 선택을 취소해야 합니다.
 
@@ -107,7 +107,7 @@ Live Payments를 사용하려면
 1. 홈에서 **[!UICONTROL Settings]** 을 클릭합니다. 자세한 내용은 [홈](payments-home.md) 추가 정보.
 1. 에서 _[!UICONTROL General Configuration]_섹션 세트&#x200B;**[!UICONTROL Payment mode]**to `Production`.
 1. 클릭 **[!UICONTROL Save]**.
-1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

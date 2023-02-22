@@ -3,9 +3,10 @@ title: 사용 가능한 데이터
 description: Financial Reporting 데이터를 사용하여 비상거래 시스템과 보고를 조정합니다.
 role: User
 level: Intermediate
-source-git-commit: ed471f363546f1d337e85568dc5079cae4507840
+exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

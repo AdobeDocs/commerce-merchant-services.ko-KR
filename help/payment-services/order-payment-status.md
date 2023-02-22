@@ -1,17 +1,17 @@
 ---
-title: 주문 결제 상태 보고서
+title: 주문 지급 상태 보고서
 description: 주문 지급 상태 보고서를 사용하여 주문의 지급 상태를 확인하고 잠재적 문제를 파악합니다.
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
 
-# 주문 결제 상태 보고서
+# 주문 지급 상태 보고서
 
 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 저장소의 주문 및 지불을 명확하게 파악할 수 있도록 포괄적인 보고를 제공합니다.
 
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 다음 [!DNL Payment Services] 모듈은 주문 데이터를 사용하고 다른 출처(PayPal 포함)의 합계된 결제 데이터와 결합하여 의미 있고 매우 유용한 보고서를 제공합니다.
 
-주문 데이터를 내보내고 결제 서비스에서 유지됩니다. 다음 경우에 [주문 상태 변경 또는 추가](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} 또는 [저장소 보기 편집](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [스토어](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;} 또는 웹 사이트 이름에 해당 데이터가 결제 데이터와 결합되고 주문 결제 상태 보고서가 결합된 정보로 채워집니다.
+주문 데이터를 내보내고 결제 서비스에서 유지됩니다. 다음 경우에 [주문 상태 변경 또는 추가](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}또는 웹 사이트명, 해당 데이터가 결제 데이터와 결합되고 주문 결제 상태 보고서가 결합된 정보로 채워집니다.
 
 이 프로세스에는 다음의 두 단계가 있습니다.
 
-1. 인덱스가 변경된 데이터도 있습니다 `ON SAVE` (주문 정보나 스토어 정보가 변경될 때마다) 또는 `BY SCHEDULE` (사전 구성된 cron 예약에서) [인덱스 관리](https://docs.magento.com/user-guide/system/index-management.html)관리자의 {target=&quot;_blank&quot;}.
+1. 인덱스가 변경된 데이터도 있습니다 `ON SAVE` (주문 정보나 스토어 정보가 변경될 때마다) 또는 `BY SCHEDULE` (사전 구성된 cron 예약에서) [인덱스 관리](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 관리자.
 
    기본적으로 데이터 인덱스는 발생합니다 `ON SAVE`즉, 순서, 주문 상태, 스토어 보기, 스토어 또는 웹 사이트가 변경될 때마다 재지정 프로세스가 즉시 수행됩니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 기본적으로 재색인화가 `ON SAVE` mode에서 `BY SCHEDULE` 모드. 다음 `BY SCHEDULE` 색인은 1분의 cron 예약에서 실행되며, 변경된 데이터는 데이터 변경 후 2분 내에 주문 상태 보고서에 표시됩니다. 이렇게 예약된 재색인화는 대량 들어오는 주문이 있는 경우(각 주문이 배치되지 않은 일정에 따라 발생함), 특히 게재 시 발생하는 스트레인을 줄이는 데 도움이 됩니다.
 
-인덱스 모드를 변경할 수 있습니다.`ON SAVE` 또는 `BY SCHEDULE`—[관리자](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+인덱스 모드를 변경할 수 있습니다.`ON SAVE` 또는 `BY SCHEDULE`—[관리자](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 데이터 내보내기를 구성하는 방법에 대한 자세한 내용은 [명령줄 구성](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ These order payment status timeframes are currently available in [!DNL Payment S
 
 | 열 | 설명 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | 상거래 주문 ID<br> <br>관련 항목을 보려면 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, ID를 클릭합니다. |
+| [!UICONTROL Order ID] | 상거래 주문 ID<br> <br>관련 항목을 보려면 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 클릭한 다음 ID를 클릭합니다. |
 | [!UICONTROL Order Date] | 주문 날짜 타임스탬프 |
 | [!UICONTROL Authorized Date] | 지급 승인 날짜 타임스탬프 |
-| [!UICONTROL Order Status] | 현재 상거래 [주문 상태](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | 현재 상거래 [주문 상태](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | 주문 송장 상태—*[!UICONTROL No]*, *[!UICONTROL Partial]*, 또는 *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 주문 배송 상태—*[!UICONTROL No]*, *[!UICONTROL Partial]*, 또는 *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 주문의 총 금액 |

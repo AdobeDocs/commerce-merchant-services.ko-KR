@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >명령에 인덱서를 지정하지 않으면 모든 인덱서가 동일한 값으로 업데이트됩니다. 특정 색인을 변경하려면 명령에 나열해야 합니다.
 
-인덱서의 모드를 수동으로 변경하는 방법에 대한 자세한 내용은 [인덱서 구성](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)개발자 설명서의 {target=&quot;_blank&quot;}. 관리자에서 변경하는 방법에 대해 알아보려면 [인덱스 관리](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode)핵심 사용 안내서의 {target=&quot;_blank&quot;}.
+인덱서의 모드를 수동으로 변경하는 방법에 대한 자세한 내용은 [인덱서 구성](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} 를 참조하십시오.
 
 ### 수동으로 데이터 다시 색인화
 
-데이터가 자동으로 재색인화되기를 기다리는 대신 수동으로 다시 색인화할 수 있습니다. 자세한 내용은 [다시 색인화](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;}의 [인덱서 관리](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html)자세한 내용은 {target=&quot;_blank&quot;} 를 참조하십시오.
+데이터가 자동으로 재색인화되기를 기다리는 대신 수동으로 다시 색인화할 수 있습니다. 자세한 내용은 [다시 색인화](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 추가 정보.
 
 When `BY SCHEDULE` 모드가 설정되면, 시스템에서 변경된 엔티티를 추적하고 cron 작업은 설정된 일정에 따라 인덱스를 업데이트합니다. 자세한 내용은 [명령줄에서 cron 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [크론 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) cron 작업을 사용하여 색인을 수동으로 트리거하는 방법을 알아봅니다.
 

@@ -4,9 +4,9 @@ description: 지급 금액, 처리된 볼륨 및 재무 조정을 위한 거래 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1335'
 ht-degree: 0%
 
 ---
@@ -154,8 +154,8 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. 라이브 스토�
 | [!UICONTROL Code] | 대변(*CR*) 또는 차변(*DR*) |
 | [!UICONTROL Reference ID] | 이 이벤트와 관련된 원래 거래 ID |
 | [!UICONTROL Invoice] | 거래의 송장 ID(주문당 하나) |
-| [!UICONTROL Commerce order] | 상거래 주문 ID <br> <br>관련 항목을 보려면 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, ID를 클릭합니다. |
-| [!UICONTROL Commerce trans] | 상거래 거래 ID <br> <br>관련 항목을 보려면 [트랜잭션 정보](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, ID를 클릭합니다. |
+| [!UICONTROL Commerce order] | 상거래 주문 ID <br> <br>관련 항목을 보려면 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 클릭한 다음 ID를 클릭합니다. |
+| [!UICONTROL Commerce trans] | 상거래 거래 ID <br> <br>관련 항목을 보려면 [트랜잭션 정보](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}를 클릭한 다음 ID를 클릭합니다. |
 | [!UICONTROL Pay method] | 신용 카드 유형—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—및 관련 카드 공급자(예: *비자* 또는 *마스터 카드*) |
 | [!UICONTROL Trans amt] | 거래 금액 |
 | [!UICONTROL Cur] | 거래 금액에 대한 통화 단위 |
@@ -184,19 +184,19 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스입니다. 라이브 스토�
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | 구매자와 판매자 간에 주문하기 위해 돈이 이동했다 |
 | [!UICONTROL AUTH] | 승인 및 승인 무효 거래 |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | 채권갱신 요금 및 채권갱신 요금 취소 거래 |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | 파트너 수수료, 결제 수수료 및 요금 취소 거래 |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | 은행 또는 손실 계좌에서 회수 |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

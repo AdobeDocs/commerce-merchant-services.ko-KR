@@ -4,14 +4,14 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
 
-# 기존 결제 서비스 구성
+# 기존 [!DNL Payment Services] 구성
 
 사용자 지정할 수 있습니다 [!DNL Payment Services] Admin Console에서 유용한 구성 옵션을 사용하여 필요에 맞게 구성할 수 있습니다.
 
