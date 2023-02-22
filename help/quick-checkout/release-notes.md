@@ -2,9 +2,9 @@
 title: '`[!DNL Quick Checkout] 릴리스 노트'''
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _2022년 10월 5일_
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 이제, [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 바닥글에 앱 버전을 표시합니다.
 
 +++
+
+## v1.7.0
+
+_2023년 2월 22일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue AC-8002 --> 를 사용하여 주문 배치 시 사용자 경험 개선 사항 [다중 배송](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) 메서드를 사용합니다. 이 기능을 사용하면 체크아웃 중에 결제 방법을 표시할 수 있습니다. [!DNL Quick Checkout] 이 활성화되어 있습니다.
 
 ## v1.6.0
 
