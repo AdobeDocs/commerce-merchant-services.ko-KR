@@ -2,16 +2,16 @@
 title: '"[!DNL Quick Checkout] 전제 조건'
 description: "시스템이 [!DNL Quick Checkout] Adobe Commerce 확장을 위한"
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 696aa03404fe270f13835b451b56759675d49778
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
 
 # [!DNL Quick Checkout] 전제 조건
 
-다음 [!DNL Quick Checkout] 는 두 가지 모두와 호환됩니다 [!DNL Magento Open Source] 및 Adobe Commerce. 자세한 내용은 [라이프사이클 정책](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)지원되는 버전에 대한 자세한 내용은 {target=_blank} 를 참조하십시오.
+다음 [!DNL Quick Checkout] 는 두 가지 모두와 호환됩니다 [!DNL Magento Open Source] 및 Adobe Commerce. 자세한 내용은 [라이프사이클 정책](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html){target=_blank} 지원되는 버전에 대한 자세한 내용은 를 참조하십시오.
 
 자세한 내용은 [온보딩](../quick-checkout/onboarding.md) 주제 를 참조하십시오.
 

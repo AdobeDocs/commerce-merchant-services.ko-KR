@@ -1,8 +1,8 @@
 ---
 title: '`[!DNL Quick Checkout] Adobe Commerce 관리 패널용'
-description: 방법 알아보기 [!DNL Quick Checkout] 관리 패널을 사용하면 확장을 성공적으로 온보드, 설정 및 시각화하는 방법을 사용할 수 있습니다.
+description: 방법 알아보기 [!DNL Quick Checkout] Admin Panel을 사용하면 확장을 성공적으로 온보드, 설정 및 시각화하는 방법에 도움이 될 수 있습니다.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

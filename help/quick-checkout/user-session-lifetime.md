@@ -2,16 +2,16 @@
 title: 사용자 세션 라이프타임
 description: 관리자는 [!DNL Quick Checkout] 확장.
 exl-id: 32cf5d70-9a50-49ca-8b40-5f04bc1e24b7
-source-git-commit: 2f14cd437be6d48e24e56b3b31a1c640357b27e3
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 # 사용자 세션 라이프타임
 
-쇼퍼 세션의 수명은 Adobe Commerce 관리자에서 구성할 수 있는 몇 가지 요인에 의해 결정됩니다. 자세한 내용은 [쿠키 라이프타임 구성](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html)자세한 내용은 {target=_blank}.
+쇼퍼 세션의 수명은 Adobe Commerce 관리자에서 구성할 수 있는 몇 가지 요인에 의해 결정됩니다. 자세한 내용은 [쿠키 라이프타임 구성](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} 추가 정보.
 
 구성된 쿠키 라이프타임은 [!DNL Quick Checkout] if:
 

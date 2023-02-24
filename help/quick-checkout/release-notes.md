@@ -2,9 +2,9 @@
 title: '`[!DNL Quick Checkout] 릴리스 노트'''
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _2022년 10월 5일_
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-369 --> 이제, [[!DNL Quick Checkout] 관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) 바닥글에 앱 버전을 표시합니다.
 
 +++
+
+## v1.8.0
+
+_2023년 2월 24일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-592 --> 주문 시 사용자 환경 개선 사항 [관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) 사용 [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 결제 방법으로 사용 이 기능을 통해 고객은 체크아웃 중에 결제 방법으로 Braintree을 사용하여 주문을 할 수 있습니다. [!DNL Quick Checkout] 이 활성화되어 있습니다.
 
 ## v1.7.0
 
