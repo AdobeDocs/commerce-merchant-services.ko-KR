@@ -1,15 +1,15 @@
 ---
-title: 작업 공간
+title: '`[!DNL Product Recommendations] 작업 공간'''
 description: 제품 권장 사항 성능을 구성, 관리 및 모니터링하는 방법을 알아봅니다.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# 작업 공간
+# [!DNL Product Recommendations] 작업 공간
 
 다음 [!DNL Product Recommendations] workspace에는 각 권장 사항의 성공을 추적하는 데 도움이 되는 지표와 함께 이전에 구성된 권장 사항 목록이 표시됩니다. 지난 일, 주 또는 월에 대한 지표를 계산하도록 목록을 구성할 수 있습니다. 지표를 사용하여 권장 사항 단위를 보거나 클릭한 빈도를 기반으로 실행 가능한 통찰력을 만들거나 권장 사항 수행 빈도를 분석할 수 있습니다.
 

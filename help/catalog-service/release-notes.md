@@ -2,9 +2,9 @@
 title: '`[!DNL Catalog Service] 릴리스 노트'''
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
+source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,20 @@ ht-degree: 0%
 
 이러한 릴리스 노트에서는 최신 버전의 [!DNL Catalog Service] 다음을 포함합니다.
 
-* ![새로 만들기](../assets/new.svg) 새로운 기능
-* ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
-* ![버그](../assets/bug.svg) 알려진 문제
+![새로 만들기](../assets/new.svg) 새로운 기능
+![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
+![버그](../assets/bug.svg) 알려진 문제
 
-## V1.4 릴리스
+## 현재 주요 버전
+
+### V1.4 릴리스
 
 릴리스 날짜: 2023-2-7(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
 
 ![새로 만들기](../assets/new.svg) 설치 단계를 단순화하기 위해 카탈로그 서비스 메타패키지를 게시했습니다.
 ![수정](../assets/fix.svg) API 확장성 및 성능 개선 사항.
 
-
-### 알려진 제한 사항
+#### 알려진 제한 사항
 
 이러한 기능은 아직 지원되지 않습니다.
 
@@ -44,7 +45,7 @@ ht-degree: 0%
 * 다운로드 가능한 제품 및 선물 카드
 * 카테고리 (`categories` 및 `categoryList`)
 
-## V1.3 릴리스
+### V1.3 릴리스
 
 릴리스 날짜: 2023-1-17(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
 
@@ -53,7 +54,7 @@ ht-degree: 0%
 ![새로 만들기](../assets/new.svg) 가상 제품에 대한 지원이 추가되었습니다.
 ![수정](../assets/fix.svg) API 확장성 및 성능 개선 사항.
 
-### 알려진 제한 사항
+#### 알려진 제한 사항
 
 이러한 기능은 아직 지원되지 않습니다.
 
@@ -72,14 +73,14 @@ ht-degree: 0%
 * 다운로드 가능한 제품 및 선물 카드
 * 카테고리 (`categories` 및 `categoryList`)
 
-## V1.1 릴리스
+### V1.1 릴리스
 
 릴리스 날짜: 2022-11-18(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
 
 ![새로 만들기](../assets/new.svg) 이제 카탈로그 서비스가 Adobe의 [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/).
 ![수정](../assets/fix.svg) API 확장성과 전반적인 성능이 향상되었습니다.
 
-### 알려진 제한 사항
+#### 알려진 제한 사항
 
 이러한 기능은 아직 지원되지 않습니다.
 
@@ -98,7 +99,7 @@ ht-degree: 0%
 * 다운로드 가능한 제품 및 선물 카드
 * 카테고리 (`categories` 및 `categoryList`)
 
-## V1.0 릴리스
+### V1.0 릴리스
 
 릴리스 날짜: 2022-10-04(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: 일반 공급
 
@@ -106,7 +107,7 @@ ht-degree: 0%
 ![새로 만들기](../assets/new.svg) B2B 가시성 무시를 추가했습니다. 제품을 이제 검색할 수 있으며 특정 고객 그룹의 장바구니에 추가할 수 있습니다.
 ![수정](../assets/fix.svg) 서비스는 이제 더 안정적이고 성능이 개선되었습니다.
 
-### 알려진 제한 사항
+#### 알려진 제한 사항
 
 이러한 기능은 아직 지원되지 않습니다.
 
@@ -118,7 +119,11 @@ ht-degree: 0%
 * 가상, 다운로드 가능 및 기프트 카드 제품 유형 지원
 * 최소 광고 가격(MAP)
 
-## 0.3 릴리스 - 베타+
+## 이전 버전
+
++++베타 릴리스
+
+### 0.3 릴리스 - 베타+
 
 릴리스 날짜: 2022-09-12(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: Beta
 
@@ -127,7 +132,7 @@ ht-degree: 0%
 ![수정](../assets/fix.svg) 서비스 안정성 및 성능 향상
 ![새로 만들기](../assets/new.svg) 카탈로그에서 제품이 삭제되면 업데이트가 수신됩니다
 
-### 알려진 제한 사항
+#### 알려진 제한 사항
 
 이러한 기능은 아직 지원되지 않습니다.
 
@@ -136,7 +141,7 @@ ht-degree: 0%
 * 카탈로그에서 변형을 삭제하면 업데이트가 수신되지 않습니다
 * B2B 가시성 무시: 제품을 검색 또는 특정 고객 그룹의 장바구니에 추가할 수 있습니다
 
-## 베타 릴리스
+### 베타 릴리스
 
 릴리스 날짜: 2022-08-09(Adobe Commerce EE)와 호환됩니다. 2.4.x가 Adobe Commerce for Cloud(ECE)와 호환됨: 2.4.x 안정성: Beta
 
@@ -150,10 +155,12 @@ ht-degree: 0%
 * 고객 그룹 가격 및 가격 범위입니다. 고객 그룹 없이 구매자에게 기본 폴백 가격을 반환합니다.
 * B2B 고객별 가격을 사용하는 제품 유형.
 
-### 알려진 제한 사항
+#### 알려진 제한 사항
 
 * 번들 및 그룹화된 제품은 지원되지 않습니다.
 * 계층 가격이 지원되지 않습니다.
 * 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
 * 변형에 대한 이미지를 검색할 수 없습니다.
 * 카탈로그에서 제품이나 변형을 삭제하면 업데이트가 수신되지 않습니다.
+
++++
