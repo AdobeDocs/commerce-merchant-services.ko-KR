@@ -1,12 +1,12 @@
 ---
-user-guide-title: '"[!DNL Store FulFillment Guide]"'
+user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Adobe Commerce 스토어의 Store Fulfillment 설치, 구성 및 사용에 대한 자세한 정보입니다.
 breadcrumb-title: Adobe Commerce에 대한 주문 처리 저장
 index: true
-source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 2%
+source-wordcount: '84'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 - [소개 [!DNL Store Fulfillment]](introduction.md)
 - [저장 지원 워크플로우](store-assist-modules.md)
 - [요구 사항](solution-requirements.md)
-- [릴리스 정보](release-notes.md)
+- [릴리스 노트](release-notes.md)
 - 온보드 저장소 이행 {#onboarding}
    - [온보딩 개요](onboard.md)
    - [확장 설치](install.md)
@@ -26,8 +26,8 @@ ht-degree: 2%
 - [구성 개요](service-config-settings-overview.md)
 - 저장소 구성 {#store-configuration}
    - [일반 구성](enable-general.md)
-   - [영업 이메일](sales-emails.md)
-   - [Merchant Store(소스)](merchant-store-configuration.md)
+   - [영업 이메일 템플릿](sales-emails.md)
+   - [머천트 스토어(소스)](merchant-store-configuration.md)
    - [제품 스톡 관리](product-stock.md)
    - [Inventory management 소스 전송](inventory-stock-transfer.md)
    - [여러 웹 사이트/범위](multi-site-and-scope-config.md)
@@ -37,5 +37,4 @@ ht-degree: 2%
    - [Experience Cloud 체크인 설정](check-in-experience-setup.md)
    - [사용자 설정](user-setup.md)
    - [앱 설정](app-setup.md)
-
 

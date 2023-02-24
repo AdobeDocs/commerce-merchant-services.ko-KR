@@ -4,14 +4,14 @@ description: 일반 설정을 구성하여 활성화 [!DNL Store Fulfillment] �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
 
 ---
 
-# 서비스 및 판매 구성 저장
+# 저장소 서비스 및 판매 구성
 
 구성 [!DNL Store Fulfillment] 에서 [!DNL Commerce] 관리자는 확장을 활성화하고, 확장 설정을 지정하고, Store Assist 앱 사용자에 대한 보안 설정을 구성하고, 배달 방법에 대한 옵션을 설정합니다.
 
@@ -420,7 +420,7 @@ Store Fulfillment는 기본 Adobe Commerce을 확장하여 작동합니다 [!DNL
 </tbody>
 </table>
 
-### 전달 방법 제목 구성
+### 배달 방법 제목 구성
 
 <table>
 <thead>
@@ -500,7 +500,7 @@ Store Fulfillment는 기본 Adobe Commerce을 확장하여 작동합니다 [!DNL
 </tr>
 </tbody></table>
 
-### Stock Availability 제목 구성
+### Stock Availability Titles 구성
 
 <table>
 <thead>
@@ -530,3 +530,4 @@ Store Fulfillment는 기본 Adobe Commerce을 확장하여 작동합니다 [!DNL
 <td>아니요</td>
 </tr>
 </tbody></table>
+

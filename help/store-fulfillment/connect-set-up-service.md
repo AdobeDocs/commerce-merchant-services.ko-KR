@@ -3,16 +3,17 @@ title: 저장소 이행 솔루션 연결
 description: Adobe Commerce 통합을 만들고 인증하고 Store Fulfillment 계정 자격 증명을 Adobe Commerce 서비스 구성에 추가하여 Adobe Commerce과 Store Fulfillment 솔루션 간의 연결을 설정합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # 저장소 이행 솔루션 연결
 
-필요한 인증 자격 증명과 관리자의 연결 데이터를 구성하여 Adobe Commerce과 Store Fulfillment 서비스 간의 연결을 설정하십시오.
+필요한 인증 자격 증명 및 연결 데이터를 Adobe Commerce Admin에 추가하여 Store Fulfillment Services와 Adobe Commerce을 연결합니다.
 
 - **[구성 [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Store Fulfillment Services에 대한 Adobe Commerce 통합을 만들고 액세스 토큰을 생성하여 Store Fulfillment 서버에서 들어오는 요청을 인증합니다.
 
@@ -47,7 +48,7 @@ Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합
 
 ## 저장소 이행 계정 자격 증명 구성
 
-흡입 양식을 완료하면 Walmart Store Fulfillment 계정이 생성됩니다. 자격 증명이 있으면 다음 자격 증명을 받게 됩니다.
+흡입 양식을 완료하면 Walmart Store Fulfillment 계정이 생성됩니다. 자격 증명이 있으면 다음 자격 증명을 받을 수 있습니다.
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
@@ -59,7 +60,7 @@ Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합
 
 >[!NOTE]
 >
->계정 생성 프로세스를 완료하는 데 시간이 걸릴 수 있습니다. 자격 증명을 기다리는 동안 [amd를 검토하여 Store Fulfillment 솔루션에 대한 다른 설정을 구성합니다.](service-config-settings-overview.md).
+>계정 생성 프로세스를 완료하는 데 시간이 걸릴 수 있습니다. 자격 증명을 기다리는 동안 [저장소 이행 솔루션의 다른 설정을 검토하고 구성합니다.](service-config-settings-overview.md).
 
 ### 자격 증명을 추가하여 저장 이행
 
@@ -76,11 +77,3 @@ Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합
 >[!NOTE]
 >
 >자격 증명이 올바르지 않으면 각 환경에 올바른 값을 입력했는지 확인하고 유효성을 다시 확인합니다. 연결에 문제가 있으면 계정 담당자에게 문의하십시오.
-
-
-
-
-
-
-
-

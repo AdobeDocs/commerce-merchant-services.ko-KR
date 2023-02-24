@@ -1,10 +1,10 @@
 ---
-title: Store Fulfillment 서비스에 대한 온보딩 개요
+title: Store Fulfillment Services에 대한 온보딩 개요
 description: '`[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항'''
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

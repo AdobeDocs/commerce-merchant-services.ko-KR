@@ -4,9 +4,9 @@ description: 스토어 지원 앱에서 사용할 수 있는 선택, 단계, 핸
 role: User
 level: Intermediate
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

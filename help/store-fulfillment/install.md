@@ -4,9 +4,9 @@ description: '"설치 [!DNL Store Fulfillment solution] PHP용 Composer를 사�
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Store Fulfillment Services 확장을 설치하기 위한 Composer 패키지가 �
 
 1. 아카이브 파일을 새 디렉토리에 추출합니다.
 
-1. 파일 목록을 검토하여 추출된 파일을 확인합니다.
+1. 파일 목록을 검토하여 파일이 성공적으로 추출되었는지 확인합니다.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ php bin/magento setup:static-content:deploy -f
 
 >[!NOTE]
 >
->자세한 내용은 [Adobe Commerce에서 정적 콘텐츠 배포 우수 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) ( Adobe Commerce 도움말 센터)
+>자세한 내용은 [Adobe Commerce에서 정적 콘텐츠 배포 우수 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Adobe Commerce 도움말 센터의 문서.
+

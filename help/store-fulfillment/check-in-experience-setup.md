@@ -1,17 +1,17 @@
 ---
-title: Experience Cloud 체크인 설정
+title: 체크인 Experience Setup
 description: 고객이 픽업 주문 양식을 완료할 때 조정 가능한 차제조 및 모델 선택을 구성합니다.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Experience Cloud 체크인 설정
+# 체크인 Experience Setup
 
 고객이 경차 픽업을 위해 도착하면, 그들은 픽업 주문 양식을 사용하여 그들의 위치, 자동차 제조 및 자동차 모델에 대한 정보를 확인하고 제공한다. 이 정보는 스토어 지원 앱을 통해 Store Associates로 전송되므로 빠른 속도로 픽업 주문을 전달할 수 있습니다.
 

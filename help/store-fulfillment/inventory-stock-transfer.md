@@ -1,10 +1,10 @@
 ---
 title: Inventory management 소스 전송
-description: '"에 대한 주식 구성 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management 사용. Store Fulfillment 솔루션에서 필요한 Store Pickup 기능을 사용하도록 구성된 출처에 할당할 수 있도록 새 재고를 설정하고 기본 재고로부터 재고를 이전합니다."'
+description: "에 대한 주식 구성 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management 사용. Store Fulfillment 솔루션에서 필요한 Store Pickup 기능을 사용하도록 구성된 출처에 할당할 수 있도록 새 재고를 설정하고 기본 재고로부터 재고를 이전합니다."
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%

@@ -4,9 +4,9 @@ description: "방법 알아보기 [!DNL Store Fulfillment for Adobe Commerce by 
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Walmart Commerce Technologies의 Store Fulfillment for Adobe Commerce은 사용�
 
 * **모바일 편의**-고객은 매 단계마다 주문 알림을 받습니다. 주문 확인에서 주문 픽업까지, 주문 상태를 추적하고, 체크인 지침을 얻고, 상점 도착 시 매장 동료들과 연락할 수 있습니다.
 
-* **운영 가시성**- 저장 수준 재고 할당을 개선하여 적시에 로컬 이행
+* **운영 가시성**- 저장 수준 재고 할당을 개선하여 적시에 로컬 이행 가능
 
 ## 저장 이행 확장
 
@@ -78,4 +78,5 @@ Store Fulfillment는 향상된 쇼핑 경험과 간소화된 주문 처리 워�
 >[!TIP]
 >
 > Store Fulfillment 솔루션에 대한 빠른 데모는 다음을 참조하십시오. [저장 이행 개요](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) 사용 가능 _Adobe Commerce 비디오 및 Tutorials_.
+
 

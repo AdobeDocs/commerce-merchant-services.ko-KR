@@ -1,18 +1,18 @@
 ---
-title: 영업 이메일
+title: 영업 이메일 템플릿
 description: 저장 픽업 주문에 대한 이행 프로세스 중에 고객과 통신하고 저장소 관리자에게 연락하기 위한 트랜잭션 전자 메일 템플릿을 구성합니다.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
 
-# 영업 이메일
+# 영업 이메일 템플릿
 
 Store Fulfillment는 주문 및 이행 워크플로우를 지원하기 위해 확장된 트랜잭션 전자 메일 템플릿 세트를 제공합니다. 이 솔루션은 채널 간에 일관되고 자동화된 커뮤니케이션 및 메시지를 제공하여 고객 및 저장소 관리자에게 주문 상태 변경, 매장 내 픽업 주문에 대한 지침 등을 알려줍니다.
 

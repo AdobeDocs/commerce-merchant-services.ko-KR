@@ -3,7 +3,7 @@ title: 시스템 구성 개요
 description: Store Fulfillment 솔루션에서 사용할 수 있는 관리 구성 설정 범주 및 구성 방법에 대해 알아봅니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -38,3 +38,4 @@ Adobe Commerce 관리에서 Walmart Commerce Technologies의 Store Fulfillment S
 - **필수 여부** 값은 필드에 값을 설정해야 하는지 여부를 나타냅니다.
 
 기술 참조의 경우 각 필드에 대한 내부 구성 경로를 찾을 수도 있습니다.
+

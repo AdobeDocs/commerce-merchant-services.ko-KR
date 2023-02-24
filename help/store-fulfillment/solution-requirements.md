@@ -4,16 +4,16 @@ description: 프로비저닝 및 온보딩에 대한 요구 사항 [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 2%
 
 ---
 
 # Adobe Commerce에 대한 주문 처리 요구 사항 저장
 
-Adobe Commerce용 Store Fulfillment 솔루션을 설치하고 사용하려면 다음 기술 및 비즈니스 요구 사항을 충족해야 합니다.
+다음 섹션에서는 Adobe Commerce용 Store Fulfillment 솔루션을 설치 및 활성화하기 위한 기술 및 비즈니스 요구 사항에 대해 자세히 설명합니다.
 
 ## 플랫폼 및 소프트웨어 버전 요구 사항
 
@@ -56,7 +56,7 @@ Store Fulfillment 솔루션을 구현하려면 다음과 같은 최소 기준을
 
 - 미국 기반 기업만
 
-- B2C 소매업자, D2C를 판매하는 CPG 제조업체 또는 D2C를 판매하거나 소기업에 판매하는 유통업체
+- B2C(Business to Consumer) 소매업자, CPG(Consumer Packaged Product) 소비자에게 직접 판매(D2C) 또는 소비자 또는 소규모 기업에 직접 판매하는 배포자
 
 - 하나 이상의 물리적 스토어 또는 창고
 

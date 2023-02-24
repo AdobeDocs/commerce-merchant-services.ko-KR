@@ -4,9 +4,9 @@ description: 설정 [!DNL Store Assist] 온라인 구매를 위한 종단 간 �
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -63,11 +63,11 @@ Store Assist 는 Walmart Commerce Technologies에서 제공하는 Faa(Fulfillmen
 
 - 모바일 장치가 를 충족하는지 확인합니다 [하드웨어 및 소프트웨어 요구 사항](solution-requirements.md#store-assist-app-requirements) Store Fulfillment 솔루션에 대해 설명합니다.
 
-- 에서 스토어 지원 앱을 다운로드합니다. [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} 또는 [Google Play 스토어](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- 에서 스토어 지원 앱을 다운로드합니다. [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates에서 로그인하려면 다음 정보가 필요합니다.
 
    - **[!UICONTROL Company name]** 스토어 지원 계정에 연결됨
 
    - **저장소 지원 계정 자격 증명**—사용자 이름 및 해당 계정의 암호 자격 증명입니다.
-   Adobe Commerce 관리자는 사용자 계정을 만들고 [!DNL Store Assist app] 저장소 위치의 사용자 계정 [매장 내 픽업](merchant-store-configuration.md#pickup-location-configuration) 관리자 저장소 설정에서 활성화했습니다.
+   Adobe Commerce 관리자는 을 만들고 관리할 수 있습니다 [!DNL Store Assist app] 사용자 계정 [매장 내 픽업](merchant-store-configuration.md#pickup-location-configuration) 관리자 저장소 설정에서 활성화했습니다.

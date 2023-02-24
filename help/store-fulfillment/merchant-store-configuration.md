@@ -1,9 +1,10 @@
 ---
 title: Merchant Store 구성
-description: 'Merchant Store로 향상된 Inventory management 소스를 설정합니다. '
+description: Merchant Store로 향상된 Inventory management 소스를 설정합니다.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -141,10 +142,3 @@ Merchant Store 구성을 관리자로부터 관리합니다. **[!UICONTROL Store
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | 체크인 중에 고객에게 차량 식별이 필요한지 여부를 지정합니다.</br></br>활성화된 경우 도착 시 차량 제조 상태를 지정하라는 메시지가 표시됩니다. 비활성화하면 고객이 이 입력을 건너뛸 수 있습니다. | 글로벌 | 아니요 |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | 체크인 중에 고객의 추가 정보 수집을 지원할지 여부를 지정합니다. | 글로벌 | 아니요 |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | 체크인 중에 고객에게 추가 정보가 필요한지 여부를 지정합니다. </br></br>활성화된 경우 도착 시 추가 정보를 입력하라는 메시지가 표시됩니다. 비활성화하면 고객이 이 입력을 건너뛸 수 있습니다. | 글로벌 | 아니요 |
-
-
-
-
-
-
-
