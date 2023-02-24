@@ -1,7 +1,8 @@
 ---
 title: 데이터 수집
 description: 이벤트가 제품 권장 사항에 대한 데이터를 수집하는 방법을 알아봅니다.
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: b827d88c-327f-4986-8239-8f1921d8383c
+source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 다음 [Adobe Commerce Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) storefront에 배포된 모든 이벤트를 나열합니다. 그러나 이 목록에는 제품 Recommendations과 관련된 이벤트의 하위 세트가 있습니다. 이러한 이벤트는 구매자가 상점 내 권장 사항 단위와 상호 작용할 때 데이터를 수집하고 추천이 얼마나 잘 수행되고 있는지 분석하는 데 사용되는 지표에 전원을 줍니다.
 
-| Event | 설명 | [지표에 사용됩니까?](workspace.md) |
+| 이벤트 | 설명 | [지표에 사용됩니까?](workspace.md) |
 | --- | --- | --- |
 | `impression-render` | 권장 사항 단위가 페이지에 렌더링됩니다. | 예 |
 | `rec-add-to-cart-click` | 고객이 **장바구니에 추가** 추천 단위에 있는 항목의 단추입니다. | 예, **장바구니에 추가** 단추가 권장 사항 템플릿에 있습니다. |
