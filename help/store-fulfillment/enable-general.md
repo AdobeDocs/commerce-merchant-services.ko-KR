@@ -4,7 +4,7 @@ description: 일반 설정을 구성하여 활성화 [!DNL Store Fulfillment] �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>솔루션을 활성화하거나 비활성화합니다. 활성화되면 Store Fulfillment 기능을 구성 및 사용하고 Adobe Commerce 스토어와 [!DNL Store Fulfillment] 서비스. 비활성화되면 모든 Store Fulfillment 기능이 비활성화되며 Adobe Commerce과 Store Fulfillment 서비스 간에 통신이 이루어지지 않습니다. 주문 정보를 처리하거나 수신할 수 없습니다.</td>
-<td>글로벌</td>
+<td>웹 사이트</td>
 <td>예</td>
 </tr>
 </tbody>

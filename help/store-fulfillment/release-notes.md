@@ -1,21 +1,25 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 정보'
+title: '`[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 노트'''
 description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 3%
+source-wordcount: '180'
+ht-degree: 2%
 
 ---
 
-# 릴리스 정보
+# 릴리스 노트
 
 이러한 릴리스 노트는 [!DNL Store Fulfillment Services by Walmart Commerce Technologies] 다음을 포함합니다.
 
 ![새로 만들기](../assets/new.svg) 새로운 기능
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
+
+## v1.3.0
+
+<!-- Add release notes when version 1.3.0 is released -->
 
 ## v1.2.0
 
@@ -50,4 +54,4 @@ ht-degree: 3%
 
 ## 스토어 지원 앱
 
-스토어 지원 앱의 새 릴리스에 대한 자세한 내용은 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} 또는 [Google Play 스토어](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+스토어 지원 앱의 새 릴리스에 대한 자세한 내용은 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
