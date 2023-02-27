@@ -2,9 +2,9 @@
 title: 새 권장 사항 만들기
 description: 제품 추천 단위를 만드는 방법을 알아봅니다.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ _추천 단위_
 
    >[!NOTE]
    >
-   > Page Builder 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다. 페이지 빌더를 사용하여 제품 권장 사항을 만드는 방법에 대한 자세한 내용은 [컨텐츠 추가 - 제품 Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > Page Builder 권장 사항 단위는 기본 저장소 보기에서 만들어야 하지만, 그 다음 어디서나 사용할 수 있습니다. 페이지 빌더를 사용하여 제품 권장 사항을 만드는 방법에 대한 자세한 내용은 [컨텐츠 추가 - 제품 Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. 클릭 **권장 사항 만들기**.
 

@@ -2,9 +2,9 @@
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 배포 [!DNL Product Recommendations] 를 설치 및 구성하려면 모듈을 설치하고 [Commerce Services 커넥터](../landing/saas.md). 업데이트가 릴리스되면 최신 버전으로 설치를 쉽게 업데이트할 수 있습니다.
 
 - [설치](#install)
-- [Configure](#configure)
+- [구성](#configure)
 - [업데이트](#update)
 - [제거](#uninstall)
 
@@ -38,9 +38,7 @@ composer require magento/module-page-builder-product-recommendations
 
 사용 [!DNL Product Recommendations] 페이지 빌더에서 활성 상태의 기존 를 추가할 수 있습니다 [추천 단위](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) 페이지, 블록 및 동적 블록과 같이 페이지 빌더에서 만든 모든 컨텐츠에 매핑해야 합니다.
 
->[!NOTE]
->
->[!DNL Page Builder] 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다.
+자세한 내용은 [사용 [!DNL Product Recommendations] Page Builder 컨텐츠 사용](page-builder.md) 추가 지침
 
 ### 시각적 유사성 권장 사항 유형 추가 {#vissimsupport}
 
@@ -50,7 +48,7 @@ composer require magento/module-page-builder-product-recommendations
 composer require magento/module-visual-product-recommendations
 ```
 
-## Configure [!DNL Product Recommendations] {#configure}
+## 구성 [!DNL Product Recommendations] {#configure}
 
 를 설치한 후 `magento/product-recommendations` 모듈, 구성 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) API 키를 지정하고 SaaS 데이터 공간 선택
 

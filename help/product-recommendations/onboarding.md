@@ -2,9 +2,9 @@
 title: 온보딩
 description: 에서 요구 사항 및 지원되는 플랫폼에 대해 알아봅니다. [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,14 @@ ht-degree: 0%
 
 ### 지원되는 플랫폼
 
-- Adobe Commerce on prem (EE) : 2.4.x
+- Adobe Commerce 온-프레미스(EE) : 2.4.x
 - Adobe Commerce on Cloud (ECE) : 2.4.x
 
 ### Page Builder 지원
 
 [!DNL Product Recommendations] 페이지에 페이지 빌더 컨텐츠 유형으로 추가할 수 있습니다. 제품 Recommendations에 Page Builder 지원을 추가하려면 [설치 및 구성](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] 권장 사항 단위는 기본 저장소 보기에 대해서만 만들 수 있습니다.
+자세한 내용은 [[!DNL Page Builder] 통합](page-builder.md) 추가 방법에 대한 지침 [!DNL Product Recommendations] 변환 [!DNL Page Builder] 컨텐츠 배포.
 
 ### B2B 지원 {#b2bsupport}
 
