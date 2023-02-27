@@ -4,9 +4,9 @@ description: 일반 설정을 구성하여 활성화 [!DNL Store Fulfillment] �
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Store Fulfillment 앱 사용자 계정 및 암호 보안 및 2단계 인증에 �
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>필요한 암호를 변경하기 전에 암호가 유효한 기간(일)입니다. 이 옵션을 비활성화하려면 비워 둡니다.</td>
-<td>글로벌</td>
-<td>아니요</td>
-</tr>
-</tbody>
-</table>
-
-### 이중 인증
-
-<table>
-<thead>
-<tr>
-<td><strong>필드</strong></td>
-<td><strong>설명</strong></td>
-<td><strong>범위</strong></td>
-<td><strong>필수 여부</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>스토어 연결에 대해 2단계 인증을 활성화하거나 비활성화합니다. 활성화되면 저장소 연결에 인증 공급자가 생성한 일회성 암호를 제공하라는 메시지가 표시됩니다.</td>
-<td>글로벌</td>
-<td>아니요</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>이중 인증에 대한 적용 정책을 설정합니다.<br></br><strong>[!UICONTROL Optional]</strong>: 공급자가 설정되지 않은 경우 저장소 연결이 이중 인증을 무시할 수 있습니다.<br></br><strong>[!UICONTROL Mandatory]</strong>: 2단계 인증을 완료하려면 저장소 연결이 필요합니다.</td>
-<td>글로벌</td>
-<td>아니요</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>저장소 연결을 제공할 인증 공급자 서비스를 하나 이상 선택합니다. 2단계 인증을 설정하고 인증하려면 store associates가 모바일 장치에 설치된 사용 가능한 공급자 중 하나에서 인증 앱을 설치해야 합니다.</td>
 <td>글로벌</td>
 <td>아니요</td>
 </tr>

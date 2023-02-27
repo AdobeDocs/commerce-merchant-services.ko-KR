@@ -4,9 +4,9 @@ description: "에 대한 주식 구성 [!DNL Store Fulfillment solution] Adobe C
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management 소스 전송
 
 다음 [!DNL Store Fulfillment] 솔루션은 기본 Adobe Commerce Inventory management을 사용합니다. 기본적으로 [!DNL Commerce] 구성은 모든 웹 인벤토리를 기본 스톡에 할당하며, 추가 소스는 할당할 수 없습니다. 웹 사이트에는 단일 스톡 하나만 지정할 수 있으므로, 머천트는 새 스톡 구성 및 선택적으로 기본 소스 인벤토리를 적절한 범위에 지정된 출처로 전송해야 합니다. 그런 다음 소스를 새 주식에 지정할 수 있습니다.
+
+>[!IMPORTANT]
+>
+>상인은 그룹 및 번들 제품 유형에 포함된 모든 제품에 대한 기본 소스를 유지 관리해야 합니다. 이러한 제품에는 재고 품목에 대한 최소 수량 임계값을 충족하고 재고 상태를 포함하는 재고 수량이 필요합니다 [!UICONTROL In Stock].
 
 이러한 구성 변경 사항은 다음 세 가지 사항을 수행하는 데 도움이 됩니다.
 

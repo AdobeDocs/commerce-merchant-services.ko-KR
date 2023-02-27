@@ -4,9 +4,9 @@ description: Adobe Commerce 통합을 만들고 인증하고 Store Fulfillment �
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 필요한 인증 자격 증명 및 연결 데이터를 Adobe Commerce Admin에 추가하여 Store Fulfillment Services와 Adobe Commerce을 연결합니다.
 
-- **[구성 [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Store Fulfillment Services에 대한 Adobe Commerce 통합을 만들고 액세스 토큰을 생성하여 Store Fulfillment 서버에서 들어오는 요청을 인증합니다.
+- **[구성 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-Store Fulfillment Services에 대한 Adobe Commerce 통합을 만들고 액세스 토큰을 생성하여 Store Fulfillment 서버에서 들어오는 요청을 인증합니다.
 
 - **[Store Fulfillment Services에 대한 계정 자격 증명 구성](#configure-store-fulfillment-account-credentials)**-자격 증명을 추가하여 Adobe Commerce을 저장소 이행 계정에 연결합니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 통합 만들기
 
-Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합을 생성하고 Store Fulfillment 서버의 요청을 인증하는 데 사용할 수 있는 액세스 토큰을 생성합니다.
+Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합을 생성하고 Store Fulfillment 서버의 요청을 인증하는 데 사용할 수 있는 액세스 토큰을 생성합니다. Adobe Commerce도 업데이트해야 합니다 [!UICONTROL Consumer Settings] 방지 옵션 `The consumer isn't authorized to access %resources.` Adobe Commerce에서 로의 요청에 대한 응답 오류 [!DNL Store Fulfillment] 서비스.
 
 1. 관리자에서 Store Fulfillment용 통합을 만듭니다.
 
@@ -41,10 +41,16 @@ Adobe Commerce을 Store Fulfillment 서비스와 통합하려면 Commerce 통합
 
 1. 계정 관리자와 함께 저장소 이행 측에서 구성을 완료하고 통합을 승인합니다.
 
+1. Adobe Commerce 활성화 [!UICONTROL Consumer Settings] 옵션 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - 관리자에서 로 이동합니다. **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - 설정 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 옵션 **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->자세한 지침은 [통합](https://docs.magento.com/user-guide/system/integrations.html) 에서 _Adobe Commerce 사용 안내서_.
+> 통합 토큰은 환경별로 다릅니다. 다른 환경의 소스 데이터를 사용하여 환경의 데이터베이스를 복원하는 경우(예: 스테이징 환경에서 프로덕션 데이터 복원) `oauth_token` 복원 작업 중에 통합 토큰 세부 정보를 덮어쓰지 않도록 데이터베이스 내보내기의 테이블입니다.
+
 
 ## 저장소 이행 계정 자격 증명 구성
 
