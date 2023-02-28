@@ -1,11 +1,11 @@
 ---
-user-guide-title: Adobe Commerce용 서비스
-user-guide-description: Adobe Commerce 및 Magento Open Source에 확장 기능을 제공하는 호스트 서비스에 대한 설명서 및 리소스입니다.
-title: Adobe Commerce용 서비스
+user-guide-title: Adobe Commerce 서비스
+user-guide-description: Adobe Commerce 및 Magento Open Source에 확장된 기능을 제공하는 호스팅 서비스에 대한 설명서 및 리소스입니다.
+title: Adobe Commerce 서비스
 source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 23%
+ht-degree: 0%
 
 ---
 
