@@ -1,15 +1,15 @@
 ---
-title: 릴리스 정보
+title: 릴리스 노트
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 2%
+source-wordcount: '325'
+ht-degree: 1%
 
 ---
 
-# 릴리스 정보
+# 릴리스 노트
 
 이러한 릴리스 노트에는 Experience Platform 커넥터에 대한 업데이트가 포함되어 있으며 다음을 포함합니다.
 
@@ -35,6 +35,12 @@ _2022년 10월 12일_
 * ![새로 만들기](../assets/new.svg) - 에 대한 지원을 추가했습니다. [AEM storfront](overview.md#aem-support)
 
 +++
+
+## 2.1.1
+
+_2023년 2월 28일_
+
+* ![새로 만들기](../assets/new.svg) - 모든 Experience Platform 커넥터 모듈에 대한 PHP 8.2에 대한 지원이 추가되었습니다.
 
 ## 2.1.0
 
