@@ -1,59 +1,59 @@
 ---
 title: "[!DNL Payment Services] 릴리스 노트"
-description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Payment Services] 릴리스.
+description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 09d79c80a53355ac113067b1b7ae3dca68a98f20
+source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
 
 ---
 
-# 릴리스 노트
+# 릴리스 정보
 
-이러한 릴리스 노트는 [!DNL Payment Services] 다음을 포함합니다.
+이 릴리스 노트는 의 초기 릴리스에 대해 설명합니다. [!DNL Payment Services] 및 포함:
 
-![새로 만들기](../assets/new.svg) 새로운 기능
+![신규](../assets/new.svg) 새로운 기능
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
 
-일반 버전이 지정된 기능 릴리스 외부에서 릴리스된 기능 변경 사항 및 수정 사항에 대해서는 호스팅된 서비스 업데이트 섹션을 참조하십시오.
+버전 관리된 정기적인 기능 릴리스 외부에서 릴리스된 기능 변경 및 수정 사항에 대해서는 호스팅된 서비스 업데이트 섹션을 참조하십시오.
 
-자세한 내용은 [예정된 릴리스](https://devdocs.magento.com/release/) 릴리스 일정 및 지원에 대해 알아보십시오.
+다음을 참조하십시오 [예정된 릴리스](https://devdocs.magento.com/release/) 릴리스 일정 및 지원에 대해 알아봅니다.
 
-자세한 내용은 [사용 가능](https://devdocs.magento.com/release/availability.html) 개발자 설명서에서 제품 호환성에 대해 알아봅니다.
+다음을 참조하십시오 [사용 가능](https://devdocs.magento.com/release/availability.html) 제품 호환성에 대해 알아보려면 개발자 설명서에서 를 참조하십시오.
 
 ## 호스팅된 서비스 업데이트
 
-이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
+이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
 
 _2023년 1월 25일_
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-4102 --> Payment Services를 새로 설치하면 Commerce Services를 구성할 수 없어 Payment Services가 작동하지 않습니다. 이 문제를 해결하려면 결제 서비스 확장을 버전 1.5.3으로 업데이트하십시오.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-4102 --> 새로 설치한 결제 서비스에서 상거래 서비스를 구성할 수 없어 결제 서비스를 사용할 수 없습니다. 이 문제를 해결하려면 결제 서비스 확장을 버전 1.5.3으로 업데이트하십시오.
 
 _2022년 9월 12일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3705 --> 다음 `increment_id` 이제 외부 ERP 시스템의 페이아웃 조정에 사용할 수 있습니다. 이 파일은 로 전파됩니다 [`custom_id` _및_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)PayPal 웹 후크 및 머천트 활동 세부 사항 둘 다에 표시되며, 지급 목적으로 제공됩니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3705 --> 다음 `increment_id` 는 이제 외부 ERP 시스템에서 급여 조정에 사용할 수 있습니다. 이 변수는 [`custom_id` _및_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system)페이팔 웹훅 및 지급의 판매자 활동 세부 정보에 모두 표시됩니다.
 
 _2022년 8월 31일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3629 --> 새 머천트가 처음으로 Payment Services 홈에 액세스하면 이제 페이지를 새로 고치지 않고 컨텐츠를 표시하기 위해 페이지가 즉시 로드됩니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3629 --> 새 판매자가 결제 서비스 홈에 처음 액세스하면 이제 페이지가 즉시 로드되어 페이지를 새로 고치지 않고 콘텐츠를 표시합니다.
 
 _2021년 8월 9일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay는 이제 PayPal 스마트 단추로 사용할 수 있습니다. 이 [결제 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 고객이 iOS 또는 macOS 장치에서 터치 ID 기능을 사용하여 Apple 페이을 선택할 수 있도록 합니다. Apple Pay는 장치에 저장된 신용 카드 및 차변 카드 결제 인증서를 사용하여 지급을 처리합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3420 --> 이제 Apple Pay를 PayPal 스마트 버튼으로 사용할 수 있습니다. 이 [지불 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) 고객이 iOS 또는 macOS 장치에서 Touch ID 기능을 사용하여 Apple Pay를 선택할 수 있도록 합니다. Apple Pay는 디바이스에 저장된 신용 및 직불 카드 결제 자격 증명을 사용하여 결제를 처리합니다.
 
 _2021년 6월 28일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-1720 --> 이제 매장주문에대한 분쟁은 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). PayPal Resolution Center로 직접 이동하여 분쟁에 대해 조치를 취할 수 있습니다. [!DNL Payment Services].
+![신규](../assets/new.svg)<!-- Issue PAY-1720 --> 스토어 주문에 대한 분쟁은 이제 다음에서 사용할 수 있습니다. [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). 다음에서 PayPal 해결 센터로 직접 이동하여 분쟁에 대한 조치를 취할 수 있습니다. [!DNL Payment Services].
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2854 --> 사용자 환경 개선 사항 [!DNL Payment Services] 홈에는 현재 상속 수준에서 구성을 수정하는 기능과 헤더 및 탐색 표시에 대한 개선 사항이 포함됩니다.
+![신규](../assets/new.svg)<!-- Issue PAY-2854 --> 의 사용자 경험 개선 사항 [!DNL Payment Services] 홈에는 현재 상속 수준에서 구성을 수정하는 기능과 헤더 및 탐색 표시에 대한 개선 사항이 포함되어 있습니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2854 --> 이제 샌드박스 모드에서 프로덕션 모드로 전환하고 저장되지 않은 업데이트가 있는 보기에서 탐색하려고 하면 경고가 표시됩니다.
+![신규](../assets/new.svg)<!-- Issue PAY-2854 --> 이제 샌드박스 모드에서 프로덕션 모드로 전환하고 저장되지 않은 업데이트가 있는 보기에서 나가려고 하면 경고가 표시됩니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 그리고 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨길 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
 
@@ -61,142 +61,142 @@ _2021년 6월 28일_
 
 _2023년 2월 17일_
 
-![새로 만들기](../assets/fix.svg)<!-- Issue PAY-3540 --> 추가됨 [유럽 연합(EU)과 영국에서 판매점을 대상으로 하는 PCI 3DS 규정 준수 기능](security.md#3ds). 구매자가 신용 카드 발급자를 인증해야 하는 이러한 추가 보안 계층은 온라인 사기를 방지하는 데 도움이 되며 유럽 연합(EU) 규정 준수 규정의 일부로 필요합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3540 --> 추가됨 [유럽 연합(EU) 및 영국에서 거래하는 판매자를 위한 PCI 3DS 규정 준수 기능](security.md#3ds). 구매자가 신용 카드 발급자를 인증해야 하는 이 추가 보안 계층은 온라인 사기 예방에 도움이 되며 유럽 연합(EU) 규정 준수 규칙의 일부로 필요합니다.
 
-![새로 만들기](../assets/fix.svg)<!-- Issue PAY-3609 --> 에 기능이 추가되었습니다. [관리자에서 카드 vaulting 활성화](vaulting.md#use-vaulting-in-the-admin). 이를 통해 판매자는 관리자 내에서 자신의 결제 방법을 사용하여 고객을 위한 주문을 만들 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3609 --> 에 기능을 추가했습니다. [관리자에서 카드 보관 사용](vaulting.md#use-vaulting-in-the-admin). 이를 통해 판매자는 저장된 결제 방법을 사용하여 관리자에서 고객에 대한 주문을 생성할 수 있습니다.
 
 ## v1.5.4
 
 _2023년 1월 29일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4110 --> 구매자가 제품 페이지, 미니 장바구니 및 장바구니에서 스마트 버튼을 사용하여 주문을 하지 못하는 문제를 수정했습니다. 이제 구매자는 주문을 성공적으로 완료할 수 있습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4110 --> 구매자가 제품 페이지, 미니 장바구니 및 장바구니에서 스마트 버튼을 사용하여 주문할 수 없는 문제를 해결했습니다. 이제 구매자가 주문을 성공적으로 완료할 수 있습니다.
 
 ## v1.5.3
 
 _2023년 1월 25일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 호환되지 않는 알려진 이전 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스에서는 서비스 ID 확장 버전을 최신 안정적인 버전으로 잠급니다. 이 경우 새 Payment Services 설치에서 Commerce Services를 다시 구성할 수 있습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 이전에 호환되지 않은 알려진 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스에서는 서비스 ID 확장 버전을 최신 안정된 버전으로 잠가서 새 결제 서비스 설치를 통해 Commerce Services를 구성할 수 있습니다.
 
 ## v1.5.2
 
 _2022년 12월 22일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부될 때 지급 서비스의 송장 발행이 개선되었습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부된 경우 결제 서비스의 송장 발행을 개선했습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스에는 다음을 사용하는 상인의 PayPal 스마트 단추가 올바르게 표시됩니다. [체크 아웃 실행](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 minicart가 간헐적으로 버튼을 표시했습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스 에서는 를 사용하는 가맹점을 위한 PayPal 스마트 단추를 올바르게 표시합니다. [체크아웃 실행](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
 
 ## v1.5.1
 
 _2022년 11월 23일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3923 --> 이제 결제 서비스에는 사용되지 않는 끝점을 추적, 필터링 또는 사용하지 않는 요청에 대한 사용자 에이전트 헤더에 버전 번호가 포함되어 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3923 --> 이제 결제 서비스에는 사용하지 않는 끝점을 추적, 필터링 또는 사용하지 않을 수 있는 요청에 대한 버전 번호가 사용자 에이전트 헤더에 포함됩니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 스마트 버튼을 사용하여 제품 페이지에서 주문이 배치되면 결제 서비스가 주문 데이터를 올바르게 표시합니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 스마트 버튼을 사용하여 제품 페이지에서 주문을 하면 결제 서비스에 주문 데이터가 올바르게 표시됩니다.
 
 ## v1.5.0
 
 _2022년 11월 18일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3880 --> 이제 쇼핑객은 [체크아웃 중에 신용 카드 정보를 저장(저장)합니다](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 동일한 머천트 계정 내의 동일 또는 다른 스토어에 대해 나중에 구매할 때 사용하기 위해.
+![신규](../assets/new.svg)<!-- Issue PAY-3880 --> 이제 쇼핑객은 [체크아웃 중에 신용 카드 정보를 저장(저장)합니다.](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 동일한 판매자 계정 내에서 동일한 또는 다른 스토어의 이후 구매에서 사용.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3950 --> 이제 상인들이 [Instant Purchase Commerce 기능](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 쇼핑객이 [저장된 신용 카드 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html))을 클릭하여 체크아웃을 신속하게 처리합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3950 --> 판매자가 이제 [즉시 구매 상거래 기능](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 쇼핑객이 사용할 수 있도록 상점 용 [저장된 신용 카드 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) 신속하게 체크아웃할 수 있습니다.
 
 ## v1.4.1
 
 _2022년 10월 14일_
 
-![수정](../assets/fix.svg)<!-- Issue PAY-3766 --> 고객의 결제 방법이 거부되면 표시되는 오류 메시지는 더 설명적입니다. 고객에게 결제 정보를 다시 입력하고 다시 시도하거나, 다른 결제 방법을 시도하거나, 거래를 거절하는 것에 대해 은행에 문의하도록 권장합니다.
+![수정](../assets/fix.svg)<!-- Issue PAY-3766 --> 고객의 결제 방법이 거부된 경우 표시되는 오류 메시지가 더 설명적입니다. 고객이 결제 정보를 다시 입력하고 다시 시도하거나 다른 결제 수단을 시도하거나 거래 거절에 대해 해당 은행에 문의하라고 조언한다.
 
 ## v1.4.0
 
 _2022년 9월 30일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-784 --> 이제 결제 서비스에는 머천트 계정을 [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 이렇게 하면 머천트가 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나, 비즈니스의 한 부분에 Adobe Commerce을 사용할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-784 --> 이제 결제 서비스에는 다음과 같은 가맹점 계정을 설정할 수 있는 기능이 포함됩니다. [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 이를 통해 판매자는 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나 비즈니스의 일부로 Adobe Commerce을 사용할 수 있습니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3231 --> 상인은 다음을 수행할 수 있습니다 [추가 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 고객 거래 은행 명세서에 표시되는 웹 사이트 또는 개별 스토어 보기 구성으로 브랜드, 상점 또는 제품 라인을 디자인합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3231 --> 판매자는 [추가 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 브랜드, 스토어 또는 제품 라인을 설명하기 위해 고객 거래 은행 거래 명세서에 표시되는 웹 사이트 또는 개별 스토어 조회수 구성
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 스마트 단추를 활성화 또는 비활성화합니다](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 을 사용하도록 선택할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 스마트 단추 활성화 또는 비활성화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 결제 서비스 설정에서 체크아웃할 경우.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3546 --> 고객이 클릭하면 **[!UICONTROL Edit cart]**&#x200B;로 페이지가 리디렉션되고 빈 장바구니를 표시하는 대신 업데이트된 항목을 표시합니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3546 --> 고객이 클릭 시 **[!UICONTROL Edit cart]**: 페이지가 장바구니 페이지로 리디렉션되고 빈 장바구니를 표시하는 대신 업데이트된 항목이 표시됩니다.
 
 ## v1.3.1
 
 _2022년 9월 6일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3663 --> 이제 머천트의 저장소가 비글로벌 통화로 승인된 주문을 캡처하는 경우 캡처 프로세스가 완료되고 오류가 표시되지 않습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3663 --> 이제 머천트 스토어에서 비글로벌 통화로 승인된 주문을 캡처할 때 캡처 프로세스가 완료되고 오류가 표시되지 않습니다.
 
 ## v1.3.0
 
 _2022년 8월 9일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-XX --> 일반 공급 릴리스—[!DNL Payment Services] is now [호환 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0~2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![신규](../assets/new.svg)<!-- Issue PAY-XX --> 일반 가용성 릴리스—[!DNL Payment Services] 현재 [호환 가능 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.5로](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay는 이제 모바일 및 데스크탑의 Safari 브라우저 v15.5와 호환됩니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay는 이제 모바일 및 데스크탑에서 Safari 브라우저 v15.5와 호환됩니다.
 
 ## v1.2.0
 
 _2022년 6월 29일_
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay는 모바일 및 데스크탑의 Safari 브라우저 v15.5와 호환되지 않습니다. Safari 버전 15.5를 사용하는 경우 Apple Pay를 사용하여 체크아웃을 완료할 수 없습니다.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay는 모바일 및 데스크탑에서 Safari 브라우저 v15.5와 호환되지 않습니다. Safari 버전 15.5를 사용하는 경우 Apple Pay로 체크아웃을 완료할 수 없습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3264 --> 이전에는 로그인한 사용자가 계정의 기본 주소 이외의 다른 청구/배송 주소를 선택한 경우 체크아웃에 실패했습니다. 이 문제를 해결했으며, 이제 선택한 청구/배송 주소가 기본 저장된 주소 대신 전송되고 체크아웃이 성공적으로 완료되었습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3264 --> 이전에는 로그인한 사용자가 계정에 대한 기본 주소가 아닌 다른 청구/배송 주소를 선택한 경우 체크아웃하지 못했습니다. 이 문제가 해결되었으며 이제 선택한 청구/배송 주소가 (저장된 기본 주소 대신) 전송되고 체크아웃이 정상적으로 완료되었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3314 --> 체크아웃을 위해 PayPal 스마트 단추를 비활성화하면 오류가 표시되지 않습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3314 --> 체크아웃을 위해 PayPal 스마트 단추를 사용하지 않도록 설정하면 오류가 표시되지 않습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3330 --> 게스트 사용자가 대시를 포함하는 전화 번호를 입력하면 체크아웃 중에 더 이상 지급이 실패하지 않습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3330 --> 게스트 사용자가 대시가 포함된 전화 번호를 입력하면 체크아웃 중에 결제가 더 이상 실패하지 않습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services 자격 증명이 올바르지 않으면 [!DNL Payment Services] 이제 Home 이 Admin Console에 표시됩니다. 자격 증명이 잘못되었음을 알리는 자격 증명 오류가 나타납니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services 자격 증명이 유효하지 않으면 [!DNL Payment Services] 이제 Home이 Admin에 나타납니다. 자격 증명이 유효하지 않다는 것을 알려주는 자격 증명 오류가 나타납니다.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 은 현재 과 호환되지 않습니다. `commerce-data-export` v101.20 이상에서는 호환되지 않습니다. [[!DNL Channel manager] 확장](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 은(는) 현재 과(와) 호환되지 않습니다. `commerce-data-export` v101.20 이상: 와 호환되지 않음 [[!DNL Channel manager] 확장](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 
 _2022년 3월 31일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 공급 릴리스—[!DNL Payment Services] is now [호환 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0~2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![신규](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[!DNL Payment Services] 현재 [호환 가능 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.4로](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2682 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 현재 캐나다 상인들이 이용할 수 있습니다. 상인은 다음 중 하나에서 결제 구성을 볼 수 있습니다 [프랑스어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 또는 [영어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
+![신규](../assets/new.svg)<!-- Issue PAY-2682 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 는 이제 캐나다 상인들이 이용할 수 있습니다. 판매자는 다음 중 하나에서 결제 구성을 볼 수 있습니다. [프랑스어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 또는 [영어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 지원 [캐나다 달러(CAD)](overview.md#accepted-credit-cards-and-currencies) 신용 카드 및 PayPal 거래의 경우
+![신규](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] 지원 [캐나다 달러(CAD)](overview.md#accepted-credit-cards-and-currencies) 신용 카드 및 PayPal 거래.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2680 --> 상인은 다음을 수행할 수 있습니다 [온보드 [!DNL Payment Services]](onboard.md) 확장 프로그램(영어 또는 프랑스어)을 사용할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-2680 --> 판매자는 [온보드 [!DNL Payment Services]](onboard.md) 영어 또는 프랑스어 확장.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2678 --> 상인들은 이제 두 가지 모두 재무 보고서를 볼 수 있습니다 [주문 결제 상태](order-payment-status.md) 및 [페이아웃 보고서](payouts.md): 캐나다 달러(CAD)입니다.
+![신규](../assets/new.svg)<!-- Issue PAY-2678 --> 상인은 이제 재무 보고서를 볼 수 있습니다. [주문 결제 상태](order-payment-status.md) 및 [지급 보고서](payouts.md), 캐나다 달러(CAD) 단위.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] 는 이제 와 호환됩니다. [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] 은(는) 이제 과(와) 호환됩니다. [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3017 --> 여러 스토어가 있는 적절한 경고를 표시하도록 샌드박스 모드 경고를 개선했습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3017 --> 여러 스토어에 적절한 경고를 표시하도록 샌드박스 모드 경고가 개선되었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2742 --> 이제 저장소 보기 수준에서 벤 등의 사용 가능한 결제 방법을 활성화하고 비활성화할 수 있습니다. 이전에는 웹 사이트당 결제 방법을 구성할 수만 있었습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2742 --> 이제 스토어 보기 수준에서 Venmo와 같은 사용 가능한 결제 방법을 활성화 및 비활성화할 수 있습니다. 이전에는 웹 사이트당 결제 방법만 구성할 수 있었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2277 --> 이제 선택적으로 사용할 수 있습니다 [개별 PayPal 스마트 단추 활성화 또는 비활성화](settings.md#payment-buttons).
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2277 --> 이제 선택적으로 [개별 PayPal 스마트 단추 활성화 또는 비활성화](settings.md#payment-buttons).
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2561 --> 이전에 제거한 제품이 _검토 순서_ 페이지.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2561 --> 이전에 제거된 제품은 의 장바구니에 표시되지 않습니다. _주문 검토_ 페이지를 가리키도록 업데이트하는 중입니다.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2842 --> 신용 카드 거래 테스트 [PayPal에서 실패할 수 있음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 샌드박스 환경에서 지급을 처리할 때.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2842 --> 신용 카드 거래 테스트 [PayPal 실패](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) 샌드박스 환경에서 결제를 처리하는 경우.
 
 ## v1.0.0
 
 _2021년 11월 29일_
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 공급 릴리스—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 는 이제 와 호환됩니다. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.3-p1
+![신규](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 은(는) 이제 과(와) 호환됩니다. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0부터 2.4.3-p1까지.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-124 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 다음 중 한 방법으로 설치할 수 있습니다. [[!DNL Adobe Commerce] 클라우드 인프라](install.md#adobe-commerce-on-cloud-infrastructure) 또는 [온-프레미스](install.md#on-premises) 인스턴스. 이러한 메서드를 사용하려면 명령줄 인터페이스를 사용해야 합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-124 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 다음 기간 동안 설치할 수 있습니다 [[!DNL Adobe Commerce] 클라우드 인프라에서](install.md#adobe-commerce-on-cloud-infrastructure) 또는 [온-프레미스](install.md#on-premises) 인스턴스. 이러한 메서드는 명령줄 인터페이스를 사용해야 합니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] 은 [샌드박스 계정](sandbox.md) 판매자는 테스트 모드에서 확장을 평가할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] 지원: [샌드박스 계정](sandbox.md) 상인이 테스트 모드에서 확장을 평가할 수 있도록 해줍니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-666 --> 상인은 다음을 수행할 수 있습니다 [결제 서비스 구성](settings.md) 활용 등과 같은 기본 지급 동작으로 확장 [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) 샌드박스 또는 프로덕션 환경 간 전환.
+![신규](../assets/new.svg)<!-- Issue PAY-666 --> 판매자는 [결제 서비스 구성](settings.md) 사용 등 기본 결제 행동을 사용한 확장 [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) 샌드박스 또는 프로덕션 환경 간 전환.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-780 --> 쇼핑하시는 분들께서 체크아웃하실 수 있습니다 [!DNL Payment Services] 또는 [수동 주문 생성](create-order.md).
+![신규](../assets/new.svg)<!-- Issue PAY-780 --> 쇼핑객은 다음으로 체크아웃할 수 있습니다 [!DNL Payment Services] 또는 를 통해 [수동 주문 생성](create-order.md).
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-1856 --> 을 통해 포괄적인 보고 [주문 결제 상태](order-payment-status.md) 및 [페이아웃 보고서](payouts.md)에 대해 를 사용할 수 있습니다. [!DNL Payment Services] 가게 주문과 관련된 지불을 명확하게 보기 위해.
+![신규](../assets/new.svg)<!-- Issue PAY-1856 --> 다음을 통해 포괄적인 보고 [주문 결제 상태](order-payment-status.md) 및 [지급 보고서](payouts.md), 다음에 사용 가능: [!DNL Payment Services] 스토어의 주문 및 관련 결제에 대해 명확하게 보기 위해.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 모든 매상에 맞게 총 처리 볼륨을 기반으로 유연한 계층형 가격을 지원합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 는 모든 판매자에게 적용되는 총 처리 용량을 기반으로 유연한 계층형 가격 정책을 지원합니다.
 
-![새로 만들기](../assets/new.svg)<!-- Issue PAY-1443 --> 쉽게 할 수 있습니다 [모양 및 느낌 사용자 지정](payments-options.md) PayPal 스마트 버튼과 신용 카드 필드의 [!DNL Payment Services] 확장.
+![신규](../assets/new.svg)<!-- Issue PAY-1443 --> 쉽게 할 수 있습니다 [모양 및 느낌 맞춤화](payments-options.md) 의 PayPal 스마트 단추 및 신용 카드 필드 [!DNL Payment Services] 확장명.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 사용 [잘못된 작성기 키](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 확장을 설치하는 동안 사용자가 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 올바른 `MAGEID`.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 사용 [잘못된 작성기 키](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 확장을 설치하는 동안 사용자가 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 를 정확히 `MAGEID`.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 보고서 [즉시 동기화되지 않음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] 보고서 [즉시 동기화할 수 없음](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2475 --> 사용자 [PayPal 샌드박스 계정](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 대상 [!DNL Payment Services] 온보딩 중에 해당 계정을 만든 경우에는 을 확인할 수 없습니다.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2475 --> 사용자 [PayPal 샌드박스 계정](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) 대상 [!DNL Payment Services] 온보딩 중에 해당 계정을 만든 경우 확인할 수 없습니다.
