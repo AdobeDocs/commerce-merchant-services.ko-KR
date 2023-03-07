@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,6 @@ ht-degree: 0%
 ![신규](../assets/new.svg) 추가됨 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL 기능.
 ![수정](../assets/fix.svg) 향상된 성능 및 API 확장성.
 
-### V1.4 릴리스
-
-릴리스 날짜: 2023-2-7 Adobe Commerce 호환(EE): 2.4.x Adobe Commerce for Cloud(ECE) 호환: 2.4.x 안정성: 일반 출시
-
-![신규](../assets/new.svg) 설치 단계를 간소화하기 위한 카탈로그 서비스 메타패키지가 게시되었습니다.
-![수정](../assets/fix.svg) API 확장성 및 성능 개선.
-
 #### 알려진 제한 사항
 
 다음 기능은 아직 지원되지 않습니다.
@@ -50,7 +43,13 @@ ht-degree: 0%
 * 최소 광고 가격
 * 계층 가격
 * 다운로드 가능한 제품 및 기프트 카드
-* 범주 (`categories` 및 `categoryList`)
+
+### V1.4 릴리스
+
+릴리스 날짜: 2023-2-7 Adobe Commerce 호환(EE): 2.4.x Adobe Commerce for Cloud(ECE) 호환: 2.4.x 안정성: 일반 출시
+
+![신규](../assets/new.svg) 설치 단계를 간소화하기 위한 카탈로그 서비스 메타패키지가 게시되었습니다.
+![수정](../assets/fix.svg) API 확장성 및 성능 개선.
 
 ### V1.3 릴리스
 
