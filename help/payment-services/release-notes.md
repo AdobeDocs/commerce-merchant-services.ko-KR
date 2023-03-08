@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
+source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ _2021년 6월 28일_
 
 _2023년 2월 17일_
 
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
 ![신규](../assets/new.svg)<!-- Issue PAY-3540 --> 추가됨 [유럽 연합(EU) 및 영국에서 거래하는 판매자를 위한 PCI 3DS 규정 준수 기능](security.md#3ds). 구매자가 신용 카드 발급자를 인증해야 하는 이 추가 보안 계층은 온라인 사기 예방에 도움이 되며 유럽 연합(EU) 규정 준수 규칙의 일부로 필요합니다.
 
 ![신규](../assets/new.svg)<!-- Issue PAY-3609 --> 에 기능을 추가했습니다. [관리자에서 카드 보관 사용](vaulting.md#use-vaulting-in-the-admin). 이를 통해 판매자는 저장된 결제 방법을 사용하여 관리자에서 고객에 대한 주문을 생성할 수 있습니다.
@@ -69,17 +71,23 @@ _2023년 2월 17일_
 
 _2023년 1월 29일_
 
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4110 --> 구매자가 제품 페이지, 미니 장바구니 및 장바구니에서 스마트 버튼을 사용하여 주문할 수 없는 문제를 해결했습니다. 이제 구매자가 주문을 성공적으로 완료할 수 있습니다.
 
 ## v1.5.3
 
 _2023년 1월 25일_
 
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 이전에 호환되지 않은 알려진 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스에서는 서비스 ID 확장 버전을 최신 안정된 버전으로 잠가서 새 결제 서비스 설치를 통해 Commerce Services를 구성할 수 있습니다.
 
 ## v1.5.2
 
 _2022년 12월 22일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부된 경우 결제 서비스의 송장 발행을 개선했습니다.
 
@@ -89,6 +97,8 @@ _2022년 12월 22일_
 
 _2022년 11월 23일_
 
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
 ![신규](../assets/new.svg)<!-- Issue PAY-3923 --> 이제 결제 서비스에는 사용하지 않는 끝점을 추적, 필터링 또는 사용하지 않을 수 있는 요청에 대한 버전 번호가 사용자 에이전트 헤더에 포함됩니다.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 스마트 버튼을 사용하여 제품 페이지에서 주문을 하면 결제 서비스에 주문 데이터가 올바르게 표시됩니다.
@@ -96,6 +106,8 @@ _2022년 11월 23일_
 ## v1.5.0
 
 _2022년 11월 18일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg)<!-- Issue PAY-3880 --> 이제 쇼핑객은 [체크아웃 중에 신용 카드 정보를 저장(저장)합니다.](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 동일한 판매자 계정 내에서 동일한 또는 다른 스토어의 이후 구매에서 사용.
 
@@ -105,11 +117,15 @@ _2022년 11월 18일_
 
 _2022년 10월 14일_
 
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
 ![수정](../assets/fix.svg)<!-- Issue PAY-3766 --> 고객의 결제 방법이 거부된 경우 표시되는 오류 메시지가 더 설명적입니다. 고객이 결제 정보를 다시 입력하고 다시 시도하거나 다른 결제 수단을 시도하거나 거래 거절에 대해 해당 은행에 문의하라고 조언한다.
 
 ## v1.4.0
 
 _2022년 9월 30일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg)<!-- Issue PAY-784 --> 이제 결제 서비스에는 다음과 같은 가맹점 계정을 설정할 수 있는 기능이 포함됩니다. [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 이를 통해 판매자는 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나 비즈니스의 일부로 Adobe Commerce을 사용할 수 있습니다.
 
@@ -123,11 +139,15 @@ _2022년 9월 30일_
 
 _2022년 9월 6일_
 
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3663 --> 이제 머천트 스토어에서 비글로벌 통화로 승인된 주문을 캡처할 때 캡처 프로세스가 완료되고 오류가 표시되지 않습니다.
 
 ## v1.3.0
 
 _2022년 8월 9일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg)<!-- Issue PAY-XX --> 일반 가용성 릴리스—[!DNL Payment Services] 현재 [호환 가능 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.5로](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -136,6 +156,8 @@ _2022년 8월 9일_
 ## v1.2.0
 
 _2022년 6월 29일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay는 모바일 및 데스크탑에서 Safari 브라우저 v15.5와 호환되지 않습니다. Safari 버전 15.5를 사용하는 경우 Apple Pay로 체크아웃을 완료할 수 없습니다.
 
@@ -152,6 +174,8 @@ _2022년 6월 29일_
 ## v1.1.0
 
 _2022년 3월 31일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[!DNL Payment Services] 현재 [호환 가능 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.4로](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -178,6 +202,8 @@ _2022년 3월 31일_
 ## v1.0.0
 
 _2021년 11월 29일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 은(는) 이제 과(와) 호환됩니다. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0부터 2.4.3-p1까지.
 
