@@ -3,7 +3,7 @@ user-guide-title: "[!DNL Catalog Service] 안내서"
 user-guide-description: "이 안내서에서는 사용에 대한 자세한 지침을 제공합니다. [!DNL Catalog Service] Adobe Commerce용"
 breadcrumb-title: "[!DNL Catalog Service] 안내서"
 hide: true
-source-git-commit: 2914110e28d618455eeade6bb93e9382fbbccf10
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 - [안내서 개요](guide-overview.md)
 - [소개 [!DNL Catalog Service]](overview.md)
 - [온보딩 및 설치](installation.md)
+- [카탈로그 서비스 및 API 메쉬](mesh.md)
 - GraphQL 쿼리 {#graphql}
    - [카테고리 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
    - [products 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
    - [productSearch 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
    - [refineProduct 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
-- [카탈로그 서비스 및 API 메쉬](mesh.md)
 - [릴리스 정보](release-notes.md)

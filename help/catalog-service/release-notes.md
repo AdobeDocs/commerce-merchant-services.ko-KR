@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ ht-degree: 0%
 
 ### V1.5 릴리스
 
-릴리스 날짜: 2023-3-6 Adobe Commerce 호환(EE): 2.4.4+ Adobe Commerce for Cloud(ECE) 호환: 2.4.4+ 안정성: 일반 공급
+_2023년 3월 6일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 추가됨 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL 기능.
 ![수정](../assets/fix.svg) 향상된 성능 및 API 확장성.
@@ -46,14 +48,18 @@ ht-degree: 0%
 
 ### V1.4 릴리스
 
-릴리스 날짜: 2023-2-7 Adobe Commerce 호환(EE): 2.4.x Adobe Commerce for Cloud(ECE) 호환: 2.4.x 안정성: 일반 출시
+_2023년 2월 7일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 설치 단계를 간소화하기 위한 카탈로그 서비스 메타패키지가 게시되었습니다.
 ![수정](../assets/fix.svg) API 확장성 및 성능 개선.
 
 ### V1.3 릴리스
 
-릴리스 날짜: 2023-1-17 Adobe Commerce 호환(EE): 2.4.x Adobe Commerce for Cloud(ECE) 호환: 2.4.x 안정성: 일반 출시
+_2023년 1월 17일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 온보딩 경험을 단순화하고 개선했습니다.
 ![신규](../assets/new.svg) 새 고객 샌드박스 엔드포인트는 사전 프로덕션 테스트에 사용할 수 있습니다.
@@ -62,14 +68,18 @@ ht-degree: 0%
 
 ### V1.1 릴리스
 
-릴리스 날짜: 2022-11-18 Adobe Commerce Adobe Commerce 호환 가능(EE): 2.4.x 호환 가능(ECE): 2.4.x 안정성: 일반 공급
+_2022년 11월 18일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 카탈로그 서비스가 이제 Adobe의 [API 메쉬](https://developer.adobe.com/graphql-mesh-gateway/).
 ![수정](../assets/fix.svg) API 확장성과 전반적인 성능이 향상되었습니다.
 
 ### V1.0 릴리스
 
-릴리스 날짜: 2022-10-04 Adobe Commerce 호환 가능(EE): 2.4.x Compatible with Adobe Commerce for Cloud(ECE): 2.4.x 안정성: 일반 공급
+_2022년 10월 4일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 이제 번들 및 그룹화된 제품을 지원합니다.
 ![신규](../assets/new.svg) B2B 가시성 재정의가 추가되었습니다. 이제 제품을 검색할 수 있으며 특정 고객 그룹을 위해 장바구니에 추가할 수 있습니다.
@@ -81,7 +91,9 @@ ht-degree: 0%
 
 ### 0.3 릴리스 - Beta+
 
-릴리스 날짜: 2022-09-12 Adobe Commerce 호환 가능(EE): 2.4.x Compatible with Adobe Commerce for Cloud(ECE): 2.4.x 안정성: 베타
+_2022년 9월 12일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 변형 이미지 지원: 제품 이미지는 선택한 옵션에 따라 반환됩니다
 ![신규](../assets/new.svg) 가격 지원에 대한 역할: 특정 고객 그룹의 구성원만 제품 가격을 볼 수 있도록 허용
@@ -90,7 +102,9 @@ ht-degree: 0%
 
 ### 베타 릴리스
 
-릴리스 날짜: 2022-08-09 Adobe Commerce 호환(EE): 2.4.x Compatible with Adobe Commerce for Cloud(ECE): 2.4.x Stability: Beta
+_2022년 8월 9일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![신규](../assets/new.svg) 다음 `products` 및 `refineProduct` 쿼리는 다음 데이터를 반환합니다.
 
