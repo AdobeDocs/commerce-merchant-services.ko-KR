@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _2021년 6월 28일_
 ![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
+
+## v2.0.0
+
+_2023년 3월 10일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![신규](../assets/new.svg)<!-- Issue PAY-4152 --> PHP 8.2 및 Adobe Commerce 2.4.6에 대한 지원이 추가되었습니다. PHP 7.x와 호환되지 않습니다.
+
+## v1.6.1
+
+_2023년 3월 10일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![수정](../assets/fix.svg)<!-- Issue PAY-4226 --> 새 결제 서비스 판매자가 관리자에서 체크아웃을 사용할 수 없는 문제를 해결했습니다. 결제 서비스는 이전에 새 고객에 대해 존재하지 않는 상거래 고객 ID를 사용했습니다.
+
+![수정](../assets/fix.svg)<!-- Issue PAY-4205 --> 를 사용하여 체크아웃하는 동안 지정된 배송 주소 상태가 기본 세금 설정의 상태로 대체되는 문제를 해결했습니다. [PayPal 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 이제 고객은 머천트의 세금 설정에서 기본값으로 구성된 상태 이외의 상태로 주문을 출하할 수 있습니다.
+
+![수정](../assets/fix.svg)<!-- Issue PAY-4202 --> 고객이 카드 보관을 사용하여 구매를 완료하거나 스토어에 대해 보관된 결제 방법을 삭제하지 못하는 문제를 해결했습니다 [사용 `Authorize and Capture` 지불 조치](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). 이전에는 고객이 저장된 신용 카드를 사용하거나 수정하려고 할 때 &quot;Provider Vault ID를 찾을 수 없음&quot; 오류가 표시되었습니다.
 
 ## v1.6.0
 
