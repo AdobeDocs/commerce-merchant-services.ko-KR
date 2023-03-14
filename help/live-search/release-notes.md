@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,17 @@ _2023년 3월 14일_
 
 ## 이전 버전
 
-+++2.0.4 및 이전
++++2.0.5 및 이전
+
+## [!DNL Live Search] 2.0.5 {#205}
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+* ![수정](../assets/fix.svg) - 네트워크 문제로 인해 SDK 리소스를 사용할 수 없으면 라이브 검색에서 오류가 발생합니다. 이 버그는 수정되었습니다.
+
+이러한 기능에 액세스하려면 Live Search 확장 버전 >= 2.0.5를 업그레이드해야 합니다.
+
+프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
