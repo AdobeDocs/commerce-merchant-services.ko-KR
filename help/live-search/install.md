@@ -2,16 +2,16 @@
 title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # 설치 [!DNL Live Search]
 
-Live Search는 Adobe 마켓플레이스에서 확장으로 설치됩니다. 다음 이후 [!DNL Live Search] 모듈(카탈로그 모듈을 종속성으로 사용)이 설치되고 구성된 경우 [!DNL Commerce] 는 SaaS 서비스와 검색 및 카탈로그 데이터 공유를 시작합니다. 이 시점에서 *관리자* 사용자는 검색 패싯, 동의어, 머천다이징 규칙을 설정, 사용자 지정 및 관리할 수 있습니다.
+[!DNL Live Search] 는 Adobe 마켓플레이스에서 확장으로 설치됩니다. 다음 이후 [!DNL Live Search] 모듈(카탈로그 모듈을 종속성으로 사용)이 설치되고 구성된 경우 [!DNL Commerce] 는 SaaS 서비스와 검색 및 카탈로그 데이터 공유를 시작합니다. 이 시점에서 *관리자* 사용자는 검색 패싯, 동의어, 머천다이징 규칙을 설정, 사용자 지정 및 관리할 수 있습니다.
 
 이 항목에서는 다음 작업을 수행하는 방법에 대한 지침을 제공합니다.
 
@@ -56,8 +56,7 @@ Live Search는 Adobe 마켓플레이스에서 확장으로 설치됩니다. 다�
 1. 다음 명령을 실행하여 비활성화합니다. [!DNL Elasticsearch] 및 관련 모듈 및 설치 [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -86,15 +85,15 @@ Live Search는 Adobe 마켓플레이스에서 확장으로 설치됩니다. 다�
 
 ## 방법 2: Elasticsearch과 함께 설치 {#method-2}
 
+>[!IMPORTANT]
+>
+>2023년 8월의 Elasticsearch 7 지원 종료 발표로 인해 모든 Adobe Commerce 고객은 OpenSearch 2.x 검색 엔진으로 마이그레이션하는 것이 좋습니다. 제품 업그레이드 중 검색 엔진 마이그레이션에 대한 자세한 내용은 [OpenSearch로 마이그레이션](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 다음에서 _업그레이드 안내서_.
+
 설치할 때 이 온보딩 방법이 권장됩니다 [!DNL Live Search] 끝:
 
 * 기존 프로덕션 [!DNL Commerce] 설치
 
 이 시나리오에서는 [!DNL Elasticsearch] 이(가) 다음을 수행하는 동안 상점의 검색 요청을 일시적으로 관리합니다. [!DNL Live Search] 서비스는 정상적인 상점 운영을 중단하지 않고 백그라운드에 있는 모든 제품을 색인화합니다. [!DNL Elasticsearch] 이(가) 비활성화되어 있고 [!DNL Live Search] 모든 카탈로그 데이터가 인덱싱되고 동기화된 후 활성화됩니다.
-
->[!TIP]
->
->입력 오류를 방지하려면 코드 상자의 오른쪽 맨 위로 마우스를 가져간 후 [!UICONTROL **복사**] 를 연결하고 명령줄에 붙여넣습니다.
 
 1. 다운로드하려면 `live-search` package, 명령줄에서 다음을 실행합니다.
 
@@ -209,9 +208,9 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-1.0.0에서 2.0.0으로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
+2.0.0에서 3.0.1로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
 
-1. 현재 설치된 경우 `magento/live-search` 버전: `1.3.1` 또는 그 이하이며 버전으로 업그레이드 중입니다. `2.0.0` 또는 업그레이드 전에 다음 명령을 실행하십시오.
+1. 현재 설치된 경우 `magento/live-search` 버전: `2.0.3` 또는 그 이하이며 버전으로 업그레이드 중입니다. `3.0.0` 또는 업그레이드 전에 다음 명령을 실행하십시오.
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +229,7 @@ composer update magento/live-search --with-dependencies
    ```json
    "require": {
       ...
-      "magento/live-search": "^2.0",
+      "magento/live-search": "^3.0",
       ...
     }
    ```
@@ -259,6 +258,6 @@ composer update magento/live-search --with-dependencies
 
 | 종속성 | 설명 |
 |--- |--- |
-| 모듈 내보내기 | 다음 모듈은 카탈로그 데이터를 수집하고 동기화합니다.<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
-| `services-connector` | 상거래 서비스에 대한 연결을 구성하는 데 필요합니다. |
-| `module-services-id` | 상거래 서비스에 대한 연결을 구성하는 데 필요합니다. |
+| 모듈 내보내기 | 다음 모듈은 카탈로그 데이터를 수집하고 동기화합니다.<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
+| `data-services` | 상거래 서비스에 대한 연결을 구성하는 데 필요합니다. |
+| `services-id` | 상거래 서비스에 대한 연결을 구성하는 데 필요합니다. |

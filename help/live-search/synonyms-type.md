@@ -1,56 +1,56 @@
 ---
 title: "동의어 유형"
-description: '"일방, 양방향" [!DNL Live Search] 동의어는 키워드 정의를 확장합니다."'
+description: "일방향 및 양방향 [!DNL Live Search] 동의어는 키워드의 정의를 확장합니다."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # 동의어 유형
 
-단방향 및 양방향 동의어는 키워드의 정의를 확장합니다. 일부는 키워드와 상호 바꿔서 사용할 수 있고, 다른 항목은 키워드의 하위 집합을 나타냅니다.
+단방향 및 양방향 동의어는 키워드의 정의를 확장합니다. 일부는 키워드와 교환되는 반면, 일부는 키워드의 하위 집합을 나타냅니다.
 
 ## 양방향
 
-양방향 동의어는 같은 의미를 가지고 동일한 검색 결과를 반환합니다. 다음 예에서 굵게 표시된 첫 번째 단어는 카탈로그에서 사용되는 키워드이고 그 뒤에는 원래 키워드와 같은 의미를 갖는 단어가 옵니다. 단순 양방향 동의어 쌍 또는 동일한 키워드에 대해 여러 양방향 동의어의 체인을 생성할 수 있습니다.
+양방향 동의어는 의미가 같고 동일한 검색 결과를 반환합니다. 다음 예제에서는 굵게 표시된 첫 번째 단어가 카탈로그에 사용된 키워드이고 그 뒤에 원래 키워드와 동일한 의미를 갖는 단어가 옵니다. 동일한 키워드에 대해 간단한 양방향 동의어 쌍이나 여러 양방향 동의어 체인을 만들 수 있습니다.
 
 **재킷** ![양방향 선택기](assets/btn-two-way.png) 코트
 **바지** ![양방향 선택기](assets/btn-two-way.png) 슬랙스 ![양방향 선택기](assets/btn-two-way.png) 바지
 
 ## 단방향
 
-단방향 동의어는 키워드의 하위 집합이지만 더 구체적인 의미가 있습니다. 예를 들어, 카피스와 반바지는 팬티지만 모든 바지가 카피나 반바지는 아닙니다. 바지 검색에는 카피스와 반바지가 포함됩니다. 그러나 반바지를 검색해도 캡이 반환되지 않습니다.
+단방향 동의어는 키워드의 하위 집합이지만 보다 구체적인 의미가 있습니다. 예를 들어, 캐프리와 반바지는 바지이지만 모든 바지가 캐프리나 반바지는 아닙니다. 바지 검색에 카프리와 반바지가 포함됩니다. 그러나 반바지를 검색하면 캐퍼리가 반환되지 않습니다.
 
-**스웨터** ![단방향 선택기](assets/btn-one-way.png) 후드
-**바지** ![단방향 선택기](assets/btn-one-way.png) capris ![여러 단방향 선택기](assets/btn-multiple-one-way.png) 종아리 길이 바지 ![여러 단방향 선택기](assets/btn-multiple-one-way.png) 고추
+**스웨트 셔츠** ![단방향 선택기](assets/btn-one-way.png) 후드
+**바지** ![단방향 선택기](assets/btn-one-way.png) 카프리스 ![다중 단방향 선택기](assets/btn-multiple-one-way.png) 종아리 길이 바지 ![다중 단방향 선택기](assets/btn-multiple-one-way.png) 자루 던지기 선수
 
 ## 우수 사례
 
-라이브 검색 동의어를 최대한 활용하려면 다음 모범 사례를 기억하십시오.
+을 최대한 활용하기 위해 다음 모범 사례를 염두에 두십시오. [!DNL Live Search] 동의어
 
-### &quot;stop words&quot; 방지
+### &quot;정지어&quot; 사용 안 함
 
-라이브 검색은 다음과 같은 동의어에서 일반적인 영어 &quot;stop words&quot;를 필터링합니다.
+[!DNL Live Search] 다음과 같이 동의어에서 일반적인 영어 &quot;stop words&quot;를 필터링합니다.
 
-a, an 및, is, as, as, be, but, for, if, in, in, into, is, it, no, not, on, or, that, the, the, their, then, 이것들, 이것들, is, to, is, with,
+a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will, with
 
-Stop words는 동의어를 더 의미 있게 만들지 않지만 처리해야 하는 데이터의 양을 증가시킵니다.
+정지어는 동의어를 더 의미 있게 만들지 않고, 반드시 처리해야 하는 데이터의 양을 늘린다.
 
 ### 단일 단어 사용
 
-동의어 용어에 여러 단어가 포함된 경우 단어 사이의 빈 공백이 해당 단어를 별도의 동의어로 처리합니다. 예를 들어 &quot;time pies&quot;를 &quot;watch&quot;의 동의어로 정의하는 경우 &quot;time&quot; 및 &quot;piece&quot;라는 단어는 별도의 동의어로 처리됩니다.
+동의어 용어에 여러 단어가 들어 있으면 단어 사이에 공백이 있으면 별개의 동의어로 취급된다. 예를 들어 &quot;time piece&quot;를 &quot;watch&quot;의 동의어로 정의하는 경우 &quot;time&quot;과 &quot;piece&quot;는 별도의 동의어로 처리됩니다.
 
-### 단일 및 복수 사용
+### 단수 및 복수의 사용
 
-단수형, 복수형 모두 동의어로 정의할 필요는 없다. 카탈로그에 단일 및 여러 용어가 혼합되어 있는 경우 Search는 올바른 제품 세트를 찾습니다. 예를 들어 제품 이름에 &quot;pant&quot;라는 단어를 사용하고 쇼핑객이 &quot;pants&quot;를 검색하는 경우 올바른 제품 세트가 반환되고 단일 단어 &quot;pant&quot;가 제안으로 제공됩니다. &quot;팬트&quot; 라는 단수는 패션 업계에서 종종 사용되고, 때로는 소매에서도 사용되지만, 몇몇 지역에서는 &quot;팬츠&quot; 형태가 더 흔하다. &#39;반트&#39;라는 단어는 한쪽 다리를 덮는 옷의 부분을 의미하는데, 이것이 두 다리를 덮을 때 &quot;바지 한 벌&quot;이 필요한 이유이다.
+단어의 단수 형태와 복수 형태를 모두 동의어로 정의할 필요는 없다. 카탈로그에 단수 용어와 복수 용어가 혼합되어 있는 경우 검색 결과 올바른 제품 세트를 찾습니다. 예를 들어 제품 이름에 &quot;pant&quot;라는 단어를 사용하고 쇼핑객이 &quot;pants&quot;를 검색하면 올바른 제품 세트가 반환되고 &quot;pant&quot;라는 단수가 제안으로 제공됩니다. 단수형인 &quot;바지&quot;는 패션 산업에서 종종 사용되며 때로는 소매업에서 사용되기도 하지만, 복수형인 &quot;바지&quot;가 일부 영역에서 더 일반적으로 사용됩니다. (&quot;바지&quot;라는 단어는 엄밀히 말하면 한쪽 다리를 덮는 의류의 부분을 말하는데, 이 때문에 양쪽 다리를 덮는 &quot;바지 한 벌&quot;이 필요합니다.)
 
 ### 일관성
 
-카탈로그에서 용어가 사용되는 방식과 일치하십시오. 사용량에 지역적 차이점과 산업 내 차이점이 있을 수 있음을 명심하십시오.
+카탈로그에서 용어가 사용되는 방식을 일관하십시오. 사용량에 있어 지역적 차이가 있을 수 있으며 때로는 업계 내에서도 차이가 있을 수 있습니다.
 
 ### 키워드 매핑
 
-이 기법은 동의어 대신 검색 가능한 제품 속성을 사용하여 제품 간에 키워드 기반 연결을 만듭니다. 따라서 다른 제품의 검색 결과에 매핑된 제품이 나타날 수 있습니다. 자세한 내용은 [검색 결과](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
+이 기술은 제품 간에 키워드 기반 연관을 만들기 위해 동의어가 아닌 검색 가능한 제품 속성을 사용합니다. 그 결과 매핑된 제품이 다른 제품의 검색 결과에 나타날 수 있습니다. 자세한 내용은 다음을 참조하십시오. [검색 결과](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
