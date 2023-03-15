@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Quick Checkout] Adobe Commerce용"
-user-guide-description: "다음 방법 알아보기 [!DNL Quick Checkout] 는 Adobe Commerce 인스턴스와 확장을 성공적으로 온보딩하고 설정하는 방법에 도움이 될 수 있습니다."
-breadcrumb-title: 판매자 서비스 안내서
+user-guide-title: "[!DNL Quick Checkout] for Adobe Commerce"
+user-guide-description: "자세한 내용은 [!DNL Quick Checkout] Adobe Commerce 인스턴스 및 확장을 성공적으로 온보드 및 설정하는 방법을 활용할 수 있습니다."
+breadcrumb-title: Merchant Services 안내서
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '76'
@@ -10,10 +10,10 @@ ht-degree: 0%
 ---
 
 
-# [!DNL Quick Checkout] Adobe Commerce용 {#quick-checkout}
+# [!DNL Quick Checkout] Adobe Commerce {#quick-checkout}
 
 - [소개 [!DNL Quick Checkout]](overview.md)
-- [릴리스 정보](release-notes.md)
+- [릴리스 노트](release-notes.md)
 - 온보드 [!DNL Quick Checkout] {#getting-started}
    - [전제 조건](prerequisites.md)
    - [설치](install.md)
@@ -31,8 +31,8 @@ ht-degree: 0%
    - [체크아웃 페이지](checkout-page.md)
    - 체크아웃 옵션 {#checkout-options}
       - [체크아웃 흐름](checkout-flow.md)
-      - [Bolt 사용자 체크아웃](checkout-bolt.md)
+      - [볼트 사용자 체크아웃](checkout-bolt.md)
       - [Adobe Commerce 사용자 체크아웃](checkout-adobe-commerce.md)
    - [결제 방법](payment-methods.md)
-- [사용자 세션 수명](user-session-lifetime.md)
+- [사용자 세션 라이프타임](user-session-lifetime.md)
 - [관리자에서 주문 만들기](create-order-admin.md)
