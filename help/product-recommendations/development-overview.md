@@ -1,9 +1,10 @@
 ---
 title: 제품 Recommendations 관리자 개발
 description: 제품 Recommendations 아키텍처 및 개발 기능에 대한 개요입니다.
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

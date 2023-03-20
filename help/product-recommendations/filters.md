@@ -2,9 +2,9 @@
 title: 제품 필터링
 description: 제품을 권장 사항으로 사용하거나 제외하는 조건을 정의합니다.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Adobe Commerce은 구성 가능한 기본 필터를 권장 사항 단위에 자�
 
 ### 카테고리
 
-제품 카테고리를 기반으로 하는 필터는 직접 카테고리 지정 및 해당 하위 카테고리를 사용합니다. 예를 들어 카테고리에 대한 제외 조건 활성화 `Gear` 에 지정된 제품 제외 `Gear` 및 `Gear/Bags` 또는 `Gear/Fitness Equipment`. B2B 판매자의 경우 카테고리 필터는 모든 항목을 준수합니다 [고객별 제품 카테고리]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 구성했습니다.
+제품 카테고리를 기반으로 하는 필터는 직접 카테고리 지정 및 해당 하위 카테고리를 사용합니다. 예를 들어 카테고리에 대한 제외 조건 활성화 `Gear` 에 지정된 제품 제외 `Gear` 및 `Gear/Bags` 또는 `Gear/Fitness Equipment`. B2B 판매자의 경우 카테고리 필터는 모든 항목을 준수합니다 [고객별 제품 카테고리](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) 구성했습니다.
 
 Adobe Commerce에서는 페이지 유형에 권장 사항을 배포할 때 다음 카테고리 필터 구성을 사용하는 것이 좋습니다.
 

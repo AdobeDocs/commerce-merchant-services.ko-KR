@@ -2,7 +2,7 @@
 title: 데이터 수집
 description: 이벤트가 제품 권장 사항에 대한 데이터를 수집하는 방법을 알아봅니다.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 0392077939436f0d2b1c37f403f5365c87f3215e
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

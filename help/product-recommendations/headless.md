@@ -2,7 +2,7 @@
 title: 헤드리스
 description: 통합 방법 알아보기 [!DNL Product Recommendations] 헤드리스 상점.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    반환할 최소 필수 이벤트 [!DNL Product Recommendations] 결과:
 
-   | Event | 카테고리 |
+   | 이벤트 | 카테고리 |
    |--- | ---|
    | `view` | product |
    | `add-to-cart` | product |
@@ -37,12 +37,12 @@ ht-degree: 0%
 
    활성화하려면 [지표 보고](workspace.md), 다음 추가 이벤트가 필요합니다.
 
-   | Event | 카테고리 |
+   | 이벤트 | 카테고리 |
    |--- | ---|
    | `impression-render` | 추천 단위 |
    | `view` | 추천 단위 |
    | `rec-click` | 추천 단위 |
-   | `rec-add-to-cart-click` | 권장 사항 단위(장바구니에 추가 단추가 권장 사항 템플릿에 있는 경우) |
+   | `rec-add-to-cart-click` | 권장 사항 단위(권장 사항 템플릿에 &quot;장바구니에 추가&quot; 단추가 있는 경우) |
 
 1. 이벤트가 실행되면 [Adobe Commerce Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 를 사용하여 이벤트를 처리하고 Adobe Sensei으로 보냅니다.
 

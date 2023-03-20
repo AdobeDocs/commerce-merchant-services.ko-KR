@@ -2,9 +2,9 @@
 title: 설치 및 구성
 description: 설치, 업데이트 및 제거 방법을 알아봅니다 [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> 제품 Recommendations 버전 3.x.x에서는 단일 API 키만 필요했습니다. 4.x.x 이상에서는 프로덕션 공용 및 개인 API 키와 Sandbox 공용 및 개인 API 키를 제공해야 합니다. 두 API 키 쌍을 모두 제공하지 않으면 관리자의 제품 Recommendations 기능에 액세스할 수 없습니다. 그러나 데이터 수집은 상점 앞에서 계속 진행될 것이며 기존 권장 사항은 계속해서 고객에게 표시됩니다.
+> 제품 Recommendations 버전 3.x.x에서는 단일 API 키만 필요했습니다. 4.x.x 이상에서는 프로덕션 공용 및 개인 API 키와 Sandbox 공용 및 개인 API 키를 제공해야 합니다. 두 API 키 쌍을 모두 제공하지 않는 경우 관리자의 제품 Recommendations 기능에 액세스할 수 없습니다. 그러나 데이터 수집은 상점 앞에서 계속 진행될 것이며 기존 권장 사항은 계속해서 고객에게 표시됩니다.
 
 ## 제거 [!DNL Product Recommendations] {#uninstall}
 

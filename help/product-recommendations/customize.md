@@ -2,7 +2,7 @@
 title: 사용자 지정
 description: 제품 권장 사항을 사용자 지정하는 방법을 알아봅니다.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
    >
    >파일 이름 `layout` 저장소가 타사 확장을 사용하는 경우 디렉터리가 다를 수 있습니다.
 
-1. 수정 `catalog_product_view.xml` 제품 세부 사항 페이지의 제품 이미지 뒤에 권장 사항 단위가 표시되도록 파일을 지정합니다. 이 XML 파일을 사용자 지정하기 전에 파일을 살펴보고 수정해야 하는 섹션을 이해하겠습니다.
+1. 수정 `catalog_product_view.xml` 제품 세부 사항 페이지의 제품 이미지 뒤에 권장 사항 단위가 표시되도록 파일을 지정합니다. 이 XML 파일을 사용자 지정하기 전에 파일을 보고 수정해야 하는 섹션을 이해합니다.
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 1. 다른 콘텐츠 블록을 지정하여 이 파일을 수정하겠습니다.
 
-   참조 블록을 변경합니다 `name` 변환 전: `main.content` to `product.info.media`.
+   참조 블록 변경 `name` 변환 전: `main.content` to `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>
