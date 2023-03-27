@@ -2,10 +2,10 @@
 title: '`[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 노트'''
 description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
+source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ ht-degree: 1%
 
 ## v1.3.0
 
-릴리스 날짜: 2023-02-27(Adobe Commerce EE)와 호환됩니다. 2.4.x와 Adobe Commerce(ECE) 호환: 2.4.x 안정성: 일반 공급
+*2023년 2월 27일*
+[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.5
 
 이 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -27,7 +28,8 @@ ht-degree: 1%
 
 ## v1.2.0
 
-릴리스 날짜: 2022-09-27(Adobe Commerce EE)와 호환됩니다. 2.4.x와 Adobe Commerce(ECE) 호환: 2.4.x 안정성: 일반 공급
+*2022년 9월 27일*
+[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.5
 
 이 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -36,13 +38,19 @@ ht-degree: 1%
 
 ## v1.1.0
 
-릴리스 날짜: 2022-07-15(Adobe Commerce EE)와 호환됩니다. 2.4.0 - 2.4.4 Adobe Commerce(ECE)와 호환: 2.4.0 - 2.4.4 안정성: 일반 공급
+*2022년 7월 15일*
+[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.4
+
+안정성: 일반 공급
 
 ![새로 만들기](../assets/fix.svg)<!-- WMTP-731 --> 간소화된 [체크인 경험 구성](check-in-experience-setup.md) 기본 자동차 선택 및 모델 선택 사항을 추가하여 스토어 지원 앱에 대한 정보를 제공합니다. 이전 버전에서는 판매자들이 수동으로 자동차 제어와 모델 선택을 구성해야 했습니다.
 
 ## v1.0.0
 
-릴리스 날짜: 2022-03-04(Adobe Commerce EE)와 호환됩니다. 2.4.0 - 2.4.4 Adobe Commerce(ECE)와 호환: 2.4.0 - 2.4.4 안정성: 일반 공급
+*2022년 3월 4일*
+[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.4
+
+안정성: 일반 공급
 
 ## 스토어 지원 앱
 
