@@ -2,9 +2,9 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '4039'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->모든 상점 이벤트에는 `identityMap` 필드의 고유 식별자입니다.
+>모든 상점 이벤트에는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 필드에는 구매자의 이메일 주소, 사용 가능한 경우 및 ECID가 포함됩니다. 각 이벤트에 이 프로필 데이터를 포함하면 Adobe Commerce에서 별도의 사용자 계정 가져오기가 필요하지 않습니다.
 
 ### addToCart
 
@@ -216,7 +216,6 @@ ht-degree: 0%
 | `productImageUrl` | 제품의 기본 이미지 URL |
 | `selectedOptions` | 구성 가능한 제품에 사용되는 필드입니다. `attribute` 는 다음과 같이 구성 가능한 제품의 속성을 식별합니다 `size` 또는 `color` 및 `value` 와 같은 속성의 값을 식별합니다. `small` 또는 `black`. |
 
-
 ## 프로필 이벤트
 
 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `signIn`, `signOut`, `createAccount`, 및 `editAccount`. 이 데이터는 New York에 거주하는 구매자를 타겟팅하려는 경우와 같이 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 사항을 채우는 데 사용됩니다.
@@ -318,7 +317,9 @@ ht-degree: 0%
 
 ## 이벤트 검색
 
-검색 이벤트는 구매자의 의도와 관련된 데이터를 제공합니다. 쇼핑객의 의도에 대한 통찰력은 쇼핑객이 어떻게 항목을 검색하고, 무엇을 클릭하며, 궁극적으로 구매하거나 포기하는 지를 상인이 확인하는 데 도움이 됩니다. 이 데이터를 사용하는 방법의 예는 최상위 제품을 검색하지만 제품을 구매하지 않는 기존 구매자를 타겟팅하려는 경우입니다.
+검색 이벤트는 구매자의 의도와 관련된 데이터를 제공합니다. 쇼핑객의 의도에 대한 통찰력은 쇼핑객이 어떻게 항목을 검색하고, 무엇을 클릭하며, 궁극적으로 구매하거나 포기하는 지를 상인이 확인하는 데 도움이 됩니다. 이 데이터를 사용하는 방법의 예는 상위 제품을 검색하지만 제품을 구매하지 않는 기존 구매자를 타겟팅하려는 경우입니다.
+
+를 사용하십시오 `uniqueIdentifier` 두 필드 모두에 있는 필드 `searchRequestSent` 및 `searchResponseReceived` 이벤트를 상호 참조하여 해당 검색 응답에 대한 검색 요청을 참조합니다.
 
 ### searchRequestSent
 
@@ -337,6 +338,7 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `searchRequest` | 검색 요청이 전송되었는지 여부를 나타냅니다 |
+| `uniqueIdentifier` | 이 특정 검색 요청에 대한 고유 ID입니다 |
 | `filter` | 검색 결과를 제한하는 필터가 적용되었는지 여부를 나타냅니다 |
 | `attribute` (필터) | 검색 결과에 항목을 포함할지 여부를 결정하는 데 사용되는 항목의 패싯 |
 | `value` | 검색 결과에 포함할 항목을 결정하는 데 사용되는 속성 값 |
@@ -363,6 +365,7 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `searchResponse` | 검색 응답이 수신되었는지 여부를 나타냅니다. |
+| `uniqueIdentifier` | 이 특정 검색 응답에 대한 고유 ID입니다 |
 | `suggestions` | 검색 쿼리와 유사한 카탈로그에 있는 제품 및 카테고리의 이름을 포함하는 문자열 배열입니다 |
 | `numberOfResults` | 반환된 제품 수 |
 | `productListItems` | 장바구니에 있는 일련의 제품입니다. |
@@ -370,19 +373,89 @@ ht-degree: 0%
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
 | `productImageUrl` | 제품의 기본 이미지 URL |
 
-## (베타) 백오피스 이벤트
+## B2B 이벤트
+
+![Adobe Commerce용 B2B](../assets/b2b.svg) B2B 판매자의 경우 [설치](install.md#install-the-b2b-extension) a `experience-platform-connector-b2b` 확장을 사용하여 이러한 이벤트를 활성화할 수 있습니다.
+
+B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) 구매요청 목록이 생성, 추가 또는 삭제되는 경우와 같은 정보. 구매요청 목록과 관련된 이벤트를 추적하면 고객이 자주 구매하는 제품을 확인하고 해당 데이터를 기반으로 캠페인을 만들 수 있습니다.
+
+### createQuisitionList
+
+| 설명 | XDM 이벤트 이름 |
+|---|---|
+| 쇼핑객이 새 구매요청 목록을 생성할 때 트리거됩니다. | `commerce.requisitionListOpens` |
+
+#### createQuisitionList에서 수집된 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
+
+| 필드 | 설명 |
+|---|---|
+| `requisitionListOpens` | 값 `1` 구매요청 목록이 열렸음을 나타냅니다 |
+| `requisitionList` | 고유한 포함 `ID` , `name`, 및 `description` 구매 요청 목록 |
+
+### addToQuisitionList
+
+| 설명 | XDM 이벤트 이름 |
+|---|---|
+| 쇼핑객이 기존 요구 사항 목록에 제품을 추가하거나 새 목록을 만드는 동안 트리거됩니다. | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
->이미 백오피스 베타 프로그램에 등록한 상인의 경우 백오피스 이벤트에 액세스할 수 있습니다. 백오피스 베타 프로그램에 참여하시려면 [drios@adobe.com](mailto:drios@adobe.com).
+>`addToRequisitionList` 은 카테고리 보기 페이지 또는 구성 가능한 제품에서 지원되지 않습니다. 제품 보기 페이지 및 간단한 제품에 대해 지원됩니다.
 
-백 오피스 이벤트에는 주문, 취소, 환불 또는 배송과 같은 주문 상태에 대한 정보가 포함되어 있습니다. 이러한 서버측 이벤트가 수집하는 데이터는 쇼퍼 순서에 대한 360 보기를 표시합니다. 이를 통해 마케터는 마케팅 캠페인을 개발할 때 전체 주문 상태를 더 잘 타깃팅하거나 분석할 수 있습니다. 예를 들어, 한 해의 다른 시간대에 잘 수행하는 특정 제품 카테고리의 트렌드를 파악할 수 있습니다. 추운 달 동안 더 잘 팔리는 겨울 옷이나 몇 년 동안 쇼핑하는 사람들이 관심이 있는 특정한 상품색들 같은 것입니다. 또한 주문 상태 데이터는 이전 주문을 기반으로 전환하려는 구매자의 성향을 파악하여 라이프타임 고객 값을 계산하는 데 도움이 될 수 있습니다.
+#### addToQuisitionList에서 수집된 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
+
+| 필드 | 설명 |
+|---|---|
+| `requisitionListAdds` | 값 `1` 제품이 구매요청 목록에 추가되었음을 나타냅니다 |
+| `requisitionList` | 고유한 포함 `ID`,  `name`, 및 `description` 구매 요청 목록 |
+| `productListItems` | 구매요청 목록에 추가된 제품의 배열입니다 |
+| `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
+| `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
+| `quantity` | 추가된 제품 단위 수입니다 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `discountAmount` | 적용된 할인 금액을 나타냅니다 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 지급 항목에 사용된 통화 코드 |
+
+### removeFromQuisitionList
+
+| 설명 | XDM 이벤트 이름 |
+|---|---|
+| 구매자가 구매 요청 목록에서 제품을 제거할 때 트리거됩니다. | `commerce.requisitionListRemovals` |
+
+#### removeFromQuisitionList에서 수집한 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
+
+| 필드 | 설명 |
+|---|---|
+| `requisitionListRemovals` | 값 `1` 제품이 구매요청 목록에서 제거되었음을 나타냅니다. |
+| `requisitionList` | 고유한 포함 `ID`, 및 `description` 구매 요청 목록 |
+| `productListItems` | 구매요청 목록에 추가된 제품의 배열입니다 |
+| `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
+| `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
+| `quantity` | 추가된 제품 단위 수입니다 |
+| `priceTotal` | 제품 라인 항목의 총 가격 |
+| `discountAmount` | 적용된 할인 금액을 나타냅니다 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 지급 항목에 사용된 통화 코드 |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드입니다. `attribute` 는 다음과 같이 구성 가능한 제품의 속성을 식별합니다 `size` 또는 `color` 및 `value` 와 같은 속성의 값을 식별합니다. `small` 또는 `black`. |
+
+## 백오피스 이벤트
+
+백 오피스 이벤트에는 주문 처리, 취소, 환불, 배송 또는 완료와 같은 주문 상태에 대한 정보가 포함되어 있습니다. 이러한 서버측 이벤트가 수집하는 데이터는 쇼퍼 순서에 대한 360개의 보기를 표시합니다. 이 보기는 마케팅 캠페인을 개발할 때 판매자가 전체 주문 상태를 더 잘 타깃팅하거나 분석하도록 도와줍니다. 예를 들어, 한 해의 다른 시간대에 잘 수행하는 특정 제품 카테고리의 트렌드를 파악할 수 있습니다. 추운 달 동안 더 잘 팔리는 겨울 옷이나 몇 년 동안 쇼핑하는 사람들이 관심이 있는 특정한 상품색들 같은 것입니다. 또한 주문 상태 데이터는 이전 주문을 기반으로 전환하려는 구매자의 성향을 파악하여 라이프타임 고객 값을 계산하는 데 도움이 될 수 있습니다.
+
+>[!NOTE]
+>
+>모든 백오피스 이벤트는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 쇼핑객의 이메일 주소를 제공하는 필드입니다. 각 이벤트에 이 프로필 데이터를 포함하면 Adobe Commerce에서 별도의 사용자 계정 가져오기가 필요하지 않습니다.
 
 ### orderPlaced
 
 | 설명 | XDM 이벤트 이름 |
 |---|---|
-| 쇼핑객이 주문을 할 때 트리거됩니다. | `commerce.orderPlaced` |
+| 쇼핑객이 주문을 할 때 트리거됩니다. | `commerce.backofficeOrderPlaced` |
 
 #### orderPlaced에서 수집한 데이터
 
@@ -390,9 +463,8 @@ ht-degree: 0%
 
 | 필드 | 설명 |
 |---|---|
-| `identityMap` | 고객을 식별하는 이메일 주소를 포함합니다 |
 | `address` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
-| `eventType` | `commerce.orderPlaced` |
+| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | 순서의 제품 배열입니다 |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
@@ -406,6 +478,8 @@ ht-degree: 0%
 | `paymentType` | 이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다. |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 지급 항목에 사용된 통화 코드 |
 | `paymentAmount` | 지급 값 |
+| `taxAmount` | 최종 지급의 일부로 구매자가 지급한 세액 |
+| `createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜입니다. 예, `2022-10-15T20:20:39+00:00` |
 | `shipping` | 하나 이상의 제품에 대한 배송 세부 사항 |
 | `shippingMethod` | 표준 배송, 신속 배송, 매장 선별 등과 같이 고객이 선택한 배송 방법 |
 | `shippingAddress` | 실제 배송 주소 |
@@ -419,35 +493,46 @@ ht-degree: 0%
 | `postalCode` | 위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다. |
 | `country` | 정부 관리 지역의 명칭. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다. |
 
-### orderShipped
+### orderItemsShipped
 
 | 설명 | XDM 이벤트 이름 |
 |---|---|
-| 주문이 출하될 때 트리거됩니다. | `commerce.orderLineItemShipped` |
+| 주문이 출하될 때 트리거됩니다. | `commerce.backofficeOrderItemsShipped` |
 
-#### orderShipped에서 수집한 데이터
+#### orderItemsShipped에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`identityMap`|고객을 식별하는 전자 메일 주소를 포함합니다.| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`shippingAddress`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식 필드입니다.|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`trackingNumber`|주문 품목 선적에 대해 운송 회사가 제공한 추적 번호| |`trackingURL`|주문 항목의 배송 상태를 추적할 URL| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`shippingAddress`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식 필드입니다.|
 
 ### orderCanceled
 
 | 설명 | XDM 이벤트 이름 |
 |---|---|
-| 쇼핑객이 주문을 취소할 때 트리거됩니다. | `commerce.orderCancelled` |
+| 쇼핑객이 주문을 취소할 때 트리거됩니다. | `commerce.backofficeOrderCancelled` |
 
 #### orderCanceled에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`identityMap`|고객을 식별하는 전자 메일 주소를 포함합니다.| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.orderCancelled`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`cancelDate`|쇼핑객이 주문을 취소하는 날짜 및 시간| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간|
 
-### orderRevoked
+### creditMemoIssued
 
 | 설명 | XDM 이벤트 이름 |
 |---|---|
-| 쇼핑객이 항목을 순서대로 반환할 때 트리거됩니다. | `commerce.creditMemoIssued` |
+| 쇼핑객이 항목을 순서대로 반환할 때 트리거됩니다. | `commerce.backofficeCreditMemoIssued` |
 
-#### orderRevoed에서 수집한 데이터
+#### creditMemoIssued에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`identityMap`|고객을 식별하는 전자 메일 주소를 포함합니다.| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|순서대로 제품 배열| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|순서대로 제품 배열| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간|
+
+### orderShippingCompleted
+
+| 설명 | XDM 이벤트 이름 |
+|---|---|
+| 쇼핑객이 항목을 순서대로 반환할 때 트리거됩니다. | `commerce.backofficeOrderShipmentCompleted` |
+
+#### orderShippingCompleted에서 수집한 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`taxAmount`|최종 지급의 일부로 구매자가 지급한 세액.| |`createdDate`|상거래 시스템에서 새 주문을 만들 시간 및 날짜입니다. 예, `2022-10-15T20:20:39+00:00`| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`shippingAddress`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`personalEmail`|개인 전자 메일 주소를 지정합니다.| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 이 데이터가 우편 번호의 일부만 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식 필드입니다.|

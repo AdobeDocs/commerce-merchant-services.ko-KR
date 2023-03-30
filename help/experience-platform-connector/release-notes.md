@@ -2,9 +2,9 @@
 title: 릴리스 노트
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Experience Platform 커넥터에서 사용하는 확장과 관련된 기능 변�
 
 자세한 내용은 [예정된 릴리스](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) 릴리스 일정 및 지원에 대해 알아보십시오.
 
-자세한 내용은 [사용 가능](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) 제품 호환성에 대해 자세히 알아보십시오.
+개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 지원되는 서비스 업데이트
 
@@ -29,12 +29,24 @@ Experience Platform 커넥터에서 사용하는 확장과 관련된 기능 변�
 
 +++지원되는 서비스 업데이트
 
+_2023년 3월 30일_
+
+* ![새로 만들기](../assets/new.svg) - 새 확장을 추가했습니다. `data-services-b2b` 여기에는 [요청 목록 이벤트](events.md#b2b-events) B2B 가맹점
+* ![새로 만들기](../assets/new.svg) - 을 추가했습니다. `uniqueIdentifier` 필드 대상 [검색](events.md#search-events) events. 이 새 필드를 통해 판매자는 검색 응답에 해당하는 검색 요청을 상호 참조할 수 있습니다.
+
 _2022년 10월 12일_
 
 * ![새로 만들기](../assets/new.svg) - 2개 추가됨 [storefront 이벤트](events.md): `openCart` 및 `removeFromCart` Adobe Commerce Storefront Events SDK 및 Collector로 업그레이드
 * ![새로 만들기](../assets/new.svg) - 에 대한 지원을 추가했습니다. [AEM storfront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_2023년 3월 30일_
+
+* ![새로 만들기](../assets/new.svg) - 번들 `commerce-data-export` 및 `saas-export` 에 대한 종속성 `experience-platform-connector` 확장. 이전에는 이러한 종속성을 별도로 설치해야 했습니다. 이러한 종속성은 머천트 구성과 함께 서버 측 처리를 가능하게 합니다. [사무실 이벤트](events.md#back-office-events).
+* ![새로 만들기](../assets/new.svg) - 새 백오피스 이벤트를 추가했습니다. [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _2023년 2월 28일_
 
 _2023년 1월 17일_
 
-* ![새로 만들기](../assets/new.svg) - 업데이트 날짜: [Experience Platform 커넥터 관리](connect-data.md) 고유한 AEP 웹 SDK(alloy)를 지정할 수 있습니다. 또한, 백오피스 베타 프로그램에 등록한 상인들을 위한 전송 옵션을 추가했습니다 [office 이벤트 데이터](connect-data.md#data-collection) 끝. 이러한 이벤트는 다음과 같습니다 [주문 상태 정보](events.md#beta-order-status-events) 주문, 취소, 환불 또는 출하가 이루어진 경우와 같은 주문 정보. 백오피스 베타 프로그램에 참여하시려면 [drios@adobe.com](mailto:drios@adobe.com).
+* ![새로 만들기](../assets/new.svg) - 업데이트 날짜: [Experience Platform 커넥터 관리](connect-data.md) 고유한 AEP 웹 SDK(alloy)를 지정할 수 있습니다. 또한, 백오피스 베타 프로그램에 등록한 상인들을 위한 전송 옵션을 추가했습니다 [office 이벤트 데이터](connect-data.md#data-collection) 끝. 이러한 이벤트는 다음과 같습니다 [주문 상태 정보](events.md#beta-order-status-events) 주문, 취소, 환불 또는 출하가 이루어진 경우와 같은 주문 정보.
 * ![수정](../assets/fix.svg) 을 사용 `identityMap` 대신 `personID` 에지에 푸시된 데이터의 기본 ID를 설정할 때.
 
 ## 2.0.1

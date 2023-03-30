@@ -2,9 +2,9 @@
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법을 알아봅니다.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **value**: 아직 사용할 수 없음
    - **필드 그룹**: `siteSearch` > `sort`. 선택 **전체 개체 제공**.
    - **필드 그룹**: `siteSearch` > `filter`. 선택 **전체 개체 제공**.
+   - **필드 그룹**: `searchRequest` > `id`
+   - **고유 식별자**: **값** = `%search request ID%`
    - **필드 그룹**: `searchRequest` > `value`
    - **value**: **값** = `1`
 
@@ -654,6 +656,8 @@ Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 �
    - **필드 그룹**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **값** = `%product image%`
    - **데이터 요소**: `%search result products%`
+   - **필드 그룹**: `searchResponse` > `id`
+   - **고유 식별자**: **값** = `%search response ID%`
    - **필드 그룹**: `searchResponse` > `value`
    - **value**: **값** = `1`
 
@@ -1361,7 +1365,7 @@ Experience Platform 커넥터 프로파일은 `identityMap` 그리고 `personalE
 
 ## 동의 설정
 
-Adobe Commerce 및 Experience Platform 커넥터 데이터 수집 동의가 기본적으로 활성화됩니다. 옵트아웃은 [`mg_dnt` 쿠키](https://docs.magento.com/user-guide/stores/cookie-reference.html). 를 사용하도록 선택하는 경우 여기에 설명된 단계를 따를 수 있습니다 `mg_dnt` 동의를 관리하기 위해 다음 [Adobe Experience Platform 웹 SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) 에는 동의 관리를 위한 몇 가지 추가 옵션이 있습니다.
+Adobe Commerce 및 Experience Platform 커넥터 데이터 수집 동의가 기본적으로 활성화됩니다. 옵트아웃은 [`mg_dnt` 쿠키](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). 를 사용하도록 선택하는 경우 여기에 설명된 단계를 따를 수 있습니다 `mg_dnt` 동의를 관리하기 위해 다음 [Adobe Experience Platform 웹 SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) 에는 동의 관리를 위한 몇 가지 추가 옵션이 있습니다.
 
 1. 만들기 **코어 사용자 지정 코드** 데이터 요소(`%do not track cookie%`) `mg_dnt` 쿠키:
 
