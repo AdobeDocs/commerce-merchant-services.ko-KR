@@ -1,9 +1,9 @@
 ---
 title: '`[!DNL Page Builder] 통합'''
 description: '''사용 방법 알아보기 [!DNL Product Recommendations] Page Builder''의 단위입니다.'
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] 통합
 
 제품 Recommendations은 사이트에서 배포하는 모든 Page Builder 컨텐츠 내에 통합할 수 있습니다.
+
+>[!NOTE]
+>
+> 기본 페이지 빌더 페이지에는 최대 25개의 권장 사항 단위가 있을 수 있습니다. 비네이티브 Page Builder 페이지에는 최대 5개의 권장 사항 단위가 있을 수 있습니다. 자세한 내용은 [새 권장 사항 만들기](create.md) 추가 정보.
 
 ## Page Builder 콘텐츠에서 제품 Recommendations 사용
 
