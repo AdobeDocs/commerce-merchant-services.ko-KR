@@ -2,9 +2,9 @@
 title: '`[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 노트'''
 description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
+source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '178'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 2%
 ## v1.3.0
 
 *2023년 2월 27일*
-[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.5
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 이 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -29,7 +30,8 @@ ht-degree: 2%
 ## v1.2.0
 
 *2022년 9월 27일*
-[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.5
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 이 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -39,7 +41,8 @@ ht-degree: 2%
 ## v1.1.0
 
 *2022년 7월 15일*
-[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.4
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 안정성: 일반 공급
 
@@ -48,7 +51,8 @@ ht-degree: 2%
 ## v1.0.0
 
 *2022년 3월 4일*
-[!BADGE 호환성]{type=Informative tooltip="호환성"}<br>Adobe Commerce 버전 2.4.0 - 2.4.4
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 안정성: 일반 공급
 
