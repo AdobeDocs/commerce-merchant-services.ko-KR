@@ -2,9 +2,9 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `searchRequest` | 검색 요청이 전송되었는지 여부를 나타냅니다 |
-| `uniqueIdentifier` | 이 특정 검색 요청에 대한 고유 ID입니다 |
+| `id` | 이 특정 검색 요청에 대한 고유 ID입니다 |
 | `filter` | 검색 결과를 제한하는 필터가 적용되었는지 여부를 나타냅니다 |
 | `attribute` (필터) | 검색 결과에 항목을 포함할지 여부를 결정하는 데 사용되는 항목의 패싯 |
 | `value` | 검색 결과에 포함할 항목을 결정하는 데 사용되는 속성 값 |
@@ -365,7 +365,7 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `searchResponse` | 검색 응답이 수신되었는지 여부를 나타냅니다. |
-| `uniqueIdentifier` | 이 특정 검색 응답에 대한 고유 ID입니다 |
+| `id` | 이 특정 검색 응답에 대한 고유 ID입니다 |
 | `suggestions` | 검색 쿼리와 유사한 카탈로그에 있는 제품 및 카테고리의 이름을 포함하는 문자열 배열입니다 |
 | `numberOfResults` | 반환된 제품 수 |
 | `productListItems` | 장바구니에 있는 일련의 제품입니다. |
@@ -391,8 +391,10 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 
 | 필드 | 설명 |
 |---|---|
-| `requisitionListOpens` | 값 `1` 구매요청 목록이 열렸음을 나타냅니다 |
-| `requisitionList` | 고유한 포함 `ID` , `name`, 및 `description` 구매 요청 목록 |
+| `requisitionList` | 고객이 생성한 구매요청 목록의 등록 정보 |
+| `ID` | 구매요청 목록의 고유 식별자 |
+| `name` | 고객이 지정한 구매요청 목록명 |
+| `description` | 고객이 지정한 구매요청 목록 설명 |
 
 ### addToQuisitionList
 
@@ -410,8 +412,10 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 
 | 필드 | 설명 |
 |---|---|
-| `requisitionListAdds` | 값 `1` 제품이 구매요청 목록에 추가되었음을 나타냅니다 |
-| `requisitionList` | 고유한 포함 `ID`,  `name`, 및 `description` 구매 요청 목록 |
+| `requisitionList` | 고객이 생성한 구매요청 목록의 등록 정보 |
+| `ID` | 구매요청 목록의 고유 식별자 |
+| `name` | 고객이 지정한 구매요청 목록명 |
+| `description` | 고객이 지정한 구매요청 목록 설명 |
 | `productListItems` | 구매요청 목록에 추가된 제품의 배열입니다 |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
@@ -419,6 +423,7 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 | `priceTotal` | 제품 라인 항목의 총 가격 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 지급 항목에 사용된 통화 코드 |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드입니다. `attribute` 는 다음과 같이 구성 가능한 제품의 속성을 식별합니다 `size` 또는 `color` 및 `value` 와 같은 속성의 값을 식별합니다. `small` 또는 `black`. |
 
 ### removeFromQuisitionList
 
@@ -432,8 +437,10 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 
 | 필드 | 설명 |
 |---|---|
-| `requisitionListRemovals` | 값 `1` 제품이 구매요청 목록에서 제거되었음을 나타냅니다. |
-| `requisitionList` | 고유한 포함 `ID`, 및 `description` 구매 요청 목록 |
+| `requisitionList` | 고객이 생성한 구매요청 목록의 등록 정보 |
+| `ID` | 구매요청 목록의 고유 식별자 |
+| `name` | 고객이 지정한 구매요청 목록명 |
+| `description` | 고객이 지정한 구매요청 목록 설명 |
 | `productListItems` | 구매요청 목록에 추가된 제품의 배열입니다 |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
