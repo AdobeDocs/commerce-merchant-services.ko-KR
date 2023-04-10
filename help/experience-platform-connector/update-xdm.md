@@ -2,9 +2,9 @@
 title: XDM 스키마에 필드 그룹 추가
 description: XDM 스키마에 Adobe Commerce 관련 필드 그룹을 추가하는 방법을 알아봅니다.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
    - 참조 키
    - 개인 연락처 세부 정보
    - 상거래 세부 사항
-   - Adobe Analytics Experience Event Commerce (Adobe Analytics에 데이터를 전송하려는 경우)
+   - Adobe Analytics ExperienceEvent Commerce (Adobe Analytics에 데이터를 전송하려는 경우)
    - ID 맵
 
    >[!NOTE]
