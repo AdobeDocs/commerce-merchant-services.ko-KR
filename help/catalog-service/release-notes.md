@@ -2,9 +2,9 @@
 title: '`[!DNL Catalog Service] 릴리스 노트'''
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ ht-degree: 0%
 
 ## 현재 주 버전
 
-### V1.6 릴리스
+### V1.7 릴리스
 
-_2023년 3월 28일_
+_2023년 4월 12일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![새로 만들기](../assets/new.svg) 에 색상 견본이 추가되었습니다 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 쿼리를 클릭합니다.
-![새로 만들기](../assets/new.svg) 다음을 가져올 수 있는 기능이 추가되었습니다 `entityId` 사용 [API Mesh](mesh.md).
+![새로 만들기](../assets/new.svg) 이제 카탈로그 서비스에서 삭제된 제품 변형을 정리합니다.
+![수정](../assets/fix.svg) 인프라 확장성 및 성능 향상
 
 #### 알려진 제한 사항
 
 이러한 기능은 아직 지원되지 않습니다.
 
 * 고정된 가격으로 제품 번들
-* 카탈로그에서 변형을 삭제하면 업데이트가 수신되지 않습니다.
 * 동적 특성 페이로드의 최대 크기는 9MB입니다.
 * 그룹 제품 가격. 간단한 제품 가격으로 계산될 수 있습니다.
 * 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
@@ -43,6 +42,15 @@ _2023년 3월 28일_
 * 최소 광고된 가격
 * [계층 가격 책정](mesh.md)
 * 다운로드 가능한 제품 및 선물 카드
+
+### V1.6 릴리스
+
+_2023년 3월 28일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![새로 만들기](../assets/new.svg) 에 색상 견본이 추가되었습니다 [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 쿼리를 클릭합니다.
+![새로 만들기](../assets/new.svg) 다음을 가져올 수 있는 기능이 추가되었습니다 `entityId` 사용 [API Mesh](mesh.md).
 
 ### V1.5 릴리스
 
