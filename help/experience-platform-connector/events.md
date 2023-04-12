@@ -2,9 +2,9 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
+source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4592'
 ht-degree: 0%
 
 ---
@@ -471,8 +471,8 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 | 필드 | 설명 |
 |---|---|
 | `address` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
-| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | 순서의 제품 배열입니다 |
+| `id` | 이 제품 항목에 대한 라인 항목 식별자입니다. 제품 자체는 `product` 필드. |
 | `name` | 제품의 표시 이름 또는 사람이 읽을 수 있는 이름 |
 | `SKU` | 주식 보유 단위입니다. 제품의 고유 식별자입니다. |
 | `quantity` | 장바구니에 있는 제품 단위 수입니다 |
@@ -480,6 +480,8 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 | `discountAmount` | 적용된 할인 금액을 나타냅니다 |
 | `order` | 주문에 대한 정보를 포함합니다 |
 | `purchaseID` | 이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다 |
+| `priceTotal` | 모든 할인과 세금이 적용된 후 이 주문의 총 가격 |
+| `currencyCode` | 주문 합계에 사용되는 ISO 4217 통화 코드 |
 | `purchaseOrderNumber` | 이 구매 또는 계약에 대해 구매자가 할당한 고유 식별자입니다 |
 | `payments` | 이 주문에 대한 지급 목록 |
 | `paymentType` | 이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다. |
@@ -489,9 +491,14 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 | `createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜입니다. 예, `2022-10-15T20:20:39+00:00` |
 | `shipping` | 하나 이상의 제품에 대한 배송 세부 사항 |
 | `shippingMethod` | 표준 배송, 신속 배송, 매장 선별 등과 같이 고객이 선택한 배송 방법 |
-| `shippingAddress` | 실제 배송 주소 |
-| `street1` | 1차 거리 레벨 정보, 아파트 번호, 거리 번호 및 거리 이름 |
 | `shippingAmount` | 고객이 배송비를 지불해야만 했던 금액입니다. |
+| `address` | 실제 배송 주소 |
+| `street1` | 1차 거리 레벨 정보, 아파트 번호, 거리 번호 및 거리 이름 |
+| `street2` | 거리 수준 정보에 대한 추가 필드 |
+| `city` | 시의 이름 |
+| `state` | 상태의 이름입니다. 자유형이에요. |
+| `postalCode` | 위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다. |
+| `country` | 정부 관리 지역의 명칭. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다. |
 | `billingAddress` | 청구 우편 주소 |
 | `street1` | 1차 거리 레벨 정보, 아파트 번호, 거리 번호 및 거리 이름 |
 | `street2` | 거리 수준 정보에 대한 추가 필드 |
@@ -499,6 +506,8 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 | `state` | 상태의 이름입니다. 자유형이에요. |
 | `postalCode` | 위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다. |
 | `country` | 정부 관리 지역의 명칭. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다. |
+| `personalEmail` | 개인 이메일 주소 |
+| `address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 &#39;name@domain.com&#39;) |
 
 ### orderItemsShipped
 
@@ -509,7 +518,7 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 #### orderItemsShipped에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`trackingNumber`|주문 품목 선적에 대해 운송 회사가 제공한 추적 번호| |`trackingURL`|주문 항목의 배송 상태를 추적할 URL| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`shippingAddress`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식 필드입니다.|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자입니다. 제품 자체는 `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`priceTotal`|모든 할인 및 세금이 적용된 후 이 주문의 총 가격| |`currencyCode`|주문 합계에 사용된 ISO 4217 통화 코드| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`trackingNumber`|주문 품목 선적에 대해 운송 회사가 제공한 추적 번호| |`trackingURL`|주문 항목의 배송 상태를 추적할 URL| |`shipDate`|주문에서 하나 이상의 항목이 배송되는 날짜입니다.| |`address`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다.| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다.| |`personalEmail`|개인 전자 메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 &#39;name@domain.com&#39;)|
 
 ### orderCanceled
 
@@ -520,7 +529,7 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 #### orderCanceled에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`cancelDate`|쇼핑객이 주문을 취소하는 날짜 및 시간| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자입니다. 제품 자체는 `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`cancelDate`|쇼핑객이 주문을 취소하는 날짜 및 시간| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`personalEmail`|개인 전자 메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 &#39;name@domain.com&#39;)|
 
 ### creditMemoIssued
 
@@ -531,7 +540,7 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 #### creditMemoIssued에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|순서대로 제품 배열| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자입니다. 제품 자체는 `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`personalEmail`|개인 전자 메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 &#39;name@domain.com&#39;)|
 
 ### orderShippingCompleted
 
@@ -542,4 +551,4 @@ B2B 이벤트는 다음을 포함합니다 [요청 목록](https://experiencelea
 #### orderShippingCompleted에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터를 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|순서대로 제품 배열| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`taxAmount`|최종 지급의 일부로 구매자가 지급한 세액.| |`createdDate`|상거래 시스템에서 새 주문을 만들 시간 및 날짜입니다. 예, `2022-10-15T20:20:39+00:00`| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`shippingAddress`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`personalEmail`|개인 전자 메일 주소를 지정합니다.| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 이 데이터가 우편 번호의 일부만 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식 필드입니다.|
+|필드|설명| |—|—| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자입니다. 제품 자체는 `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 읽을 수 있는 이름| |`SKU`|재고 유지 단위. 제품의 고유 식별자입니다.| |`quantity`|장바구니에 있는 제품 단위 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용된 할인 금액을 나타냅니다.| |`order`|주문에 대한 정보를 포함합니다.| |`purchaseID`|이 구매 또는 계약에 대해 판매자가 지정한 고유 식별자입니다. ID가 고유하다는 보장이 없습니다.| |`priceTotal`|모든 할인 및 세금이 적용된 후 이 주문의 총 가격| |`currencyCode`|주문 합계에 사용된 ISO 4217 통화 코드| |`purchaseOrderNumber`|이 구매 또는 계약에 대해 구매자가 지정한 고유 식별자| |`taxAmount`|최종 지급의 일부로 구매자가 지급한 세액.| |`createdDate`|상거래 시스템에서 새 주문을 만들 시간 및 날짜입니다. 예, `2022-10-15T20:20:39+00:00`| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거된 사용자 지정 값이 허용됩니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등과 같이 고객이 선택한 배송 방법| |`address`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만을 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다.| |`shippingAmount`|고객이 배송비를 지불해야 하는 금액입니다.| |`address`|기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름입니다. 자유형이에요.| |`postalCode`|위치의 우편 번호입니다. 모든 국가에서는 우편 번호를 사용할 수 없습니다. 일부 국가에서는 이 데이터가 우편 번호의 일부만 포함합니다.| |`country`|정부 관리 구역의 이름입니다. 기타 `xdm:countryCode`, 모든 언어로 국가 이름을 가질 수 있는 자유 형식 필드입니다.| |`personalEmail`|개인 전자 메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 &#39;name@domain.com&#39;)|
