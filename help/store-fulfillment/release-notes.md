@@ -2,9 +2,9 @@
 title: '`[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 노트'''
 description: "릴리스 노트에서 모든 항목에 대한 정보 검토 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스"
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
+source-git-commit: f506412726449f438ca42dc3f1ef6c7fe08b306a
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '194'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 2%
 ![새로 만들기](../assets/new.svg) 새로운 기능
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
+
+## v1.4.0
+
+*2023년 4월 13일*
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![새로 만들기](../assets/fix.svg) [!DNL Store Fulfillment] is now [호환 [!DNL Adobe Commerce] 2.4.0~2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
 
 ## v1.3.0
 
