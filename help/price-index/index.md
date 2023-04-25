@@ -3,9 +3,10 @@ title: SaaS 가격 인덱싱
 description: SaaS 가격 인덱싱 기능을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-source-git-commit: c13e836541c8f04c9621802e482754a483ef0a21
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -43,9 +44,11 @@ SaaS 가격 색인을 사용하려면 다음 사항이 필요합니다.
 
 SaaS 가격 인덱싱은 모듈 집합을 사용하여 기능을 제공합니다. 필요한 모듈 목록은 저장소 설정에 따라 약간 다를 수 있습니다.
 
-이 두 모듈은 새 피드를 관리자에게 추가합니다. 이러한 피드는 가격 계산에 필요한 데이터를 SaaS 인덱서로 전송하고 PHP 코어 가격 인덱서를 무시합니다.
+이러한 모듈은 새 피드를 관리자에게 추가합니다. 이러한 피드는 가격 계산에 필요한 데이터를 SaaS 인덱서로 전송하고 PHP 코어 가격 인덱서를 무시합니다.
 
 ```
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
