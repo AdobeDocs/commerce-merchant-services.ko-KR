@@ -2,9 +2,9 @@
 title: '`[!DNL Product Recommendations] 릴리스 노트'''
 description: 에 대한 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ ht-degree: 0%
 개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 현재 주 버전
+
+_2023년 4월 25일_
+
+![새로 만들기](../assets/new.svg) 제품 Recommendations 고객은 이제 다음을 활용할 수 있습니다 [SaaS 가격 인덱싱](../price-index/index.md).
 
 ### magento/product-recommendations 5.0.0
 

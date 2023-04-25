@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '`[!DNL Catalog Service] Adobe Commerce용 에서는 기본 Adobe Commerce GraphQL 쿼리보다 제품 표시 페이지 및 제품 목록 페이지의 컨텐츠를 훨씬 빠르게 검색하는 방법을 제공합니다.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 0%
 다음 [!DNL Catalog Service] 사용 [GraphQL](https://graphql.org/) 제품 데이터를 요청 및 수신하기 위해. GraphQL은 프런트 엔드 클라이언트가 Adobe Commerce과 같은 백엔드에 정의된 API(애플리케이션 프로그래밍 인터페이스)와 통신하는 데 사용하는 쿼리 언어입니다. GraphQL은 가볍고 시스템 통합자가 각 응답의 내용과 순서를 지정할 수 있도록 해주므로 일반적으로 사용되는 통신 방법입니다.
 
 Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQL 시스템에서는 쇼핑객이 제품, 고객 계정, 장바구니, 체크아웃 등을 비롯하여 다양한 유형의 페이지와 상호 작용할 수 있도록 다양한 쿼리(읽기 작업) 및 돌연(쓰기 작업)을 제공합니다. 그러나 제품 정보를 반환하는 쿼리는 속도에 최적화되지 않습니다. 서비스 GraphQL 시스템은 제품 및 관련 정보에 대한 쿼리만 수행할 수 있습니다. 이러한 쿼리는 유사한 핵심 쿼리보다 성능이 더 좋습니다.
+
+카탈로그 서비스 고객은 새 [SaaS 가격 인덱서](../price-index/index.md)- 더 빠른 가격 변경 업데이트 및 동기화 시간을 제공합니다.
 
 ## 아키텍처
 
@@ -66,6 +68,10 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 단순 제품은 가격이 있는 기본 판매 단위를 나타냅니다. Catalog Service는 할인 전 일반 가격과 할인 후 최종 가격을 계산합니다. 가격책정 계산에는 고정 제품세가 포함될 수 있습니다. 개인화된 프로모션은 제외합니다.
 
 복잡한 제품에는 정가가 없습니다. 대신, 카탈로그 서비스는 연결된 샘플의 가격을 반환합니다. 예를 들어, 머천트는 처음에 구성 가능한 제품의 모든 변형에 동일한 가격을 지정할 수 있습니다. 특정 크기나 색상이 인기가 없는 경우 상인은 그러한 변형의 가격을 낮출 수 있습니다. 따라서, 상기 복합(구성 가능) 제품의 가격은, 상기 표준 및 비인기 변형의 가격을 모두 반영한 가격 범위를 먼저 표시한다. 쇼핑객이 사용 가능한 모든 옵션에 대한 값을 선택한 후, 스토어에 단일 가격이 표시됩니다.
+
+>[!NOTE]
+>
+> 을 사용하는 상거래 고객 [!DNL Catalog Service] 보다 빠른 가격 변경 업데이트 및 웹 사이트의 동기화 시간을 활용하여 [SaaS 가격 인덱서](../price-index/index.md).
 
 ## 구현
 

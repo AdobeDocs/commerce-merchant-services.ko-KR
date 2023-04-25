@@ -2,9 +2,9 @@
 title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 1. 에서 _데이터 다시 동기화_ 섹션을 클릭합니다. [!UICONTROL Resync].
 
    [!DNL Commerce] 다음 예약된 동기화 기간 동안 카탈로그를 동기화합니다. 카탈로그 크기에 따라 이 작업은 시간이 오래 걸릴 수 있습니다.
+
 
 ## 동기화된 카탈로그 제품
 
@@ -132,6 +133,14 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 - `productoverrides`— 카테고리 권한을 기반으로 하는 규칙과 같은 고객별 가격 및 카탈로그 가시성 규칙
 
 명령줄에서 데이터 재동기화를 트리거하면 데이터가 업데이트되는 데 최대 1시간이 걸릴 수 있습니다.
+
+사용 중인 경우 [SaaS 가격 인덱싱](../price-index/index.md) 다시 동기화해야 하는 경우 다음 명령을 실행합니다.
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### 예
 

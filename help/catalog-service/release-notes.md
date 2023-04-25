@@ -2,9 +2,9 @@
 title: '`[!DNL Catalog Service] 릴리스 노트'''
 description: 에 대한 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![버그](../assets/bug.svg) 알려진 문제
 
 ## 현재 주 버전
+
+_2023년 4월 25일_
+
+![새로 만들기](../assets/new.svg) 이제 카탈로그 서비스 고객이 새로운 [SaaS 가격 인덱서](../price-index/index.md).
 
 ### V1.7 릴리스
 
