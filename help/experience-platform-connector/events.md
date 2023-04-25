@@ -2,9 +2,9 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ ht-degree: 0%
 
 | 필드 | 설명 |
 |---|---|
-| `eventType` | 다음과 같은 이 시계열 레코드의 기본 이벤트 유형: `userAccount.login` |
 | `person` | 개별 배우, 연락처 또는 소유자 |
 | `accountID` | 사용자 계정 ID 캡처 |
-| `personalEmailID` | 개인 전자 메일의 고유 식별자를 지정합니다 |
+| `accountType` | 다음과 같은 사용자 계정 유형을 캡처합니다. `Personal` 또는 `Company`, 해당되는 경우 |
+| `personalEmailID` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
+| `personalEmail` | 연락처 정보 캡처 - 전자 메일 및 관련 정보 |
 | `address` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
 | `userAccount` | 충성도 세부 사항, 환경 설정, 로그인 프로세스 및 기타 계정 기본 설정을 나타냅니다 |
 | `login` | 방문자가 로그인하려고 했는지 여부를 나타냅니다 |
@@ -260,7 +261,6 @@ ht-degree: 0%
 
 | 필드 | 설명 |
 |---|---|
-| `eventType` | 다음과 같은 이 시계열 레코드의 기본 이벤트 유형: `userAccount.logout` |
 | `userAccount` | 충성도 세부 사항, 환경 설정, 로그인 프로세스 및 기타 계정 기본 설정을 나타냅니다 |
 | `logout` | 방문자가 로그아웃하려고 했는지 여부를 나타냅니다 |
 
@@ -280,11 +280,11 @@ ht-degree: 0%
 
 | 필드 | 설명 |
 |---|---|
-| `eventType` | 다음과 같은 이 시계열 레코드의 기본 이벤트 유형: `account.createProfile` |
 | `person` | 개별 배우, 연락처 또는 소유자 |
 | `accountID` | 사용자 계정 ID 캡처 |
 | `accountType` | 다음과 같은 사용자 계정 유형을 캡처합니다. `Personal` 또는 `Company`, 해당되는 경우 |
-| `personalEmailID` | 개인 전자 메일의 고유 식별자를 지정합니다 |
+| `personalEmailID` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
+| `personalEmail` | 연락처 정보 캡처 - 전자 메일 및 관련 정보 |
 | `address` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
 | `userAccount` | 충성도 세부 사항, 환경 설정, 로그인 프로세스 및 기타 계정 기본 설정을 나타냅니다 |
 | `createProfile` | 사용자가 계정 프로필을 만들었는지 여부를 나타냅니다 |
@@ -305,12 +305,11 @@ ht-degree: 0%
 
 | 필드 | 설명 |
 |---|---|
-| `eventType` | 다음과 같은 이 시계열 레코드의 기본 이벤트 유형: `account.updateProfile` |
 | `person` | 개별 배우, 연락처 또는 소유자 |
 | `accountID` | 사용자 계정 ID 캡처 |
 | `accountType` | 다음과 같은 사용자 계정 유형을 캡처합니다. `Personal` 또는 `Company`, 해당되는 경우 |
-| `personalEmailID` | 개인 전자 메일의 고유 식별자를 지정합니다 |
-| `personalEmail` | 개인 전자 메일 주소를 지정합니다 |
+| `personalEmailID` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
+| `personalEmail` | 연락처 정보 캡처 - 전자 메일 및 관련 정보 |
 | `address` | 기술 주소(예: `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의된 바와 같습니다. |
 | `userAccount` | 충성도 세부 사항, 환경 설정, 로그인 프로세스 및 기타 계정 기본 설정을 나타냅니다 |
 | `updateProfile` | 사용자가 계정 프로필을 업데이트했는지 여부를 나타냅니다 |
