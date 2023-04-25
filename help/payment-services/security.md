@@ -2,9 +2,9 @@
 title: 보안 및 규정 준수
 description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검토합니다.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ PCI 3D Secure(3DS)는 온라인 신용 카드 구매 시 신용 카드 발급자
 [!UICONTROL Payment Services] 에서는 상인이 EU 규정을 준수하고, 고객과 상인이 자신의 스토어에서 사기 행위를 하지 못하도록 할 수 있는 3DS 기능을 제공합니다.
 
 3DS 규정 준수를 요구하는 EU 또는 영국 내 판매자인 경우 3DS를 수동으로 설정해야 합니다. `Off` 기본적으로 [설정](settings.md#credit-card-fields).
+
+>[!NOTE]
+>
+>3DS 요구 사항은 비즈니스 및 카드 소지자의 은행이 있는 [유럽 경제 지역](https://www.efta.int/eea) (EEA) 및 영국. 미국 상인들은 3DS를 필요로 하지 않지만, 원하는 경우 거래를 가능하게 할 수 있습니다.
 
 상거래/매장 직원이 구매자에 대해 수행한 주문은 3DS 규정 준수 조치로 구성되지 않습니다.
 
