@@ -2,7 +2,7 @@
 user-guide-title: Adobe Commerce 서비스
 user-guide-description: Adobe Commerce 및 Magento Open Source에 확장된 기능을 제공하는 호스팅 서비스에 대한 설명서 및 리소스입니다.
 title: Adobe Commerce 서비스
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Adobe Commerce 서비스 설명서 {#user-guides}
 
 - [개요](home.md)
+- 릴리스 정보 {#release-information}
+   - [릴리스 노트](/help/landing/release-notes-all.md)
+   - [문서의 새로운 기능](/help/landing/whats-new.md)
 - 상거래 서비스 {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
@@ -26,6 +29,3 @@ ht-degree: 0%
    - [서비스 커넥터](/help/landing/saas.md)
 - 데이터 서비스 {#data-services}
    - [카탈로그 동기화](/help/landing/catalog-sync.md)
-- 릴리스 정보 {#release-information}
-   - [릴리스 노트](/help/landing/release-notes-all.md)
-   - [문서의 새로운 기능](/help/landing/whats-new.md)

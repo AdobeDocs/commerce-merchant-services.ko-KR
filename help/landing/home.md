@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
+source-git-commit: 63f6b5f33e3a8457420703d292d1eb341949af04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,13 @@ ht-degree: 0%
 # Adobe Commerce 서비스 안내서
 
 Adobe은 상거래, 통합 및 데이터 서비스의 컬렉션을 제공하여 상인이 비즈니스의 주요 구성 요소를 지원할 수 있도록 합니다.
+
+>[!BEGINSHADEBOX &quot;릴리스 정보&quot;]
+
+자세한 내용은 [설명서의 새로운 기능](whats-new.md) 또는 [릴리스 노트](release-notes-all.md) 참조하십시오.
+>[!ENDSHADEBOX]
+
+## 상거래 서비스
 
 <table>
 <tr>
@@ -76,6 +83,34 @@ Adobe은 상거래, 통합 및 데이터 서비스의 컬렉션을 제공하여 
    </tr>
 </table>
 
-## 서비스에 연결
+## 데이터 서비스
 
-다음 [Commerce Services 커넥터](saas.md) api 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce만 해당)의 경우 구성에 데이터 공간을 지정할 수도 있습니다.
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+    <div>Adobe Commerce과 Adobe Experience Platform Edge 간의 연결을 활용하여 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에 상거래 데이터를 활용하십시오.</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
+    <div>Commerce Services Connector는 API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce만 해당)의 경우 구성에 데이터 공간을 지정할 수도 있습니다.</div>
+  </td>
+   </tr>
+</table>
+
+## 통합 서비스
+
+<table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
+    <div>카탈로그 동기화는 서비스를 최신 상태로 유지하기 위해 상거래 서버에서 상거래 서비스로 제품 데이터를 내보냅니다. 제품 가격 또는 재고 수준 변경과 같은 이벤트에 의해 트리거되는 인덱서는 카탈로그 데이터를 컴파일합니다. *카탈로그 동기화* 대시보드 또는 명령줄 인터페이스를 통해 이 프로세스를 관찰하고 관리할 수 있습니다.</div>
+  </td>
+</tr>
+</table>
