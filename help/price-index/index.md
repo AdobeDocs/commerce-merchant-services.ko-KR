@@ -4,16 +4,16 @@ description: SaaS 가격 인덱싱 기능을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # SaaS 가격 인덱싱
 
-SaaS 가격 인덱싱 기능은 고객이 제출한 후에 가격 변경이 고객의 웹 사이트에 반영되는 데 걸리는 시간을 단축합니다. 이 선택적 모듈을 사용하면 크고 복잡한 카탈로그 또는 여러 웹 사이트 또는 고객 그룹이 있는 판매자가 가격 변경 사항을 보다 빠르고 지속적으로 처리할 수 있습니다.
+SaaS 가격 인덱싱 기능은 가격 변경이 필요한 시간을 단축시켜 SaaS 고객의 웹 사이트에 제출한 후 반영됩니다. 이 선택적 모듈을 사용하면 크고 복잡한 카탈로그 또는 여러 웹 사이트 또는 고객 그룹이 있는 판매자가 가격 변경 사항을 보다 빠르고 지속적으로 처리할 수 있습니다.
 
 파이프라인의 가장 큰 병목 현상: 색인 및 가격 계산과 같은 계산 중량이 많은 프로세스가 PHP 코어에서 Adobe의 클라우드 인프라로 이동되었습니다. 이를 통해 가맹점은 신속하게 리소스를 확장하여 가격 색인화 시간을 향상시키고 이러한 변경 사항을 훨씬 빠른 속도로 웹 사이트에 반영할 수 있습니다.
 
@@ -47,8 +47,8 @@ SaaS 가격 인덱싱은 모듈 집합을 사용하여 기능을 제공합니다
 이러한 모듈은 새 피드를 관리자에게 추가합니다. 이러한 피드는 가격 계산에 필요한 데이터를 SaaS 인덱서로 전송하고 PHP 코어 가격 인덱서를 무시합니다.
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```

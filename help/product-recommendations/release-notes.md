@@ -2,9 +2,9 @@
 title: '`[!DNL Product Recommendations] 릴리스 노트'''
 description: 에 대한 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서 가져옵니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,12 @@ ht-degree: 0%
 * 에서 Page Builder 지원 [!DNL Product Recommendations] (선택 사항) 모듈: `magento/module-page-builder-product-recommendations`
 * 에 대한 시각적 유사성 권장 사항 유형 지원 [!DNL Product Recommendations] (선택 사항) 모듈: `magento/module-visual-product-recommendations`
 
+현재 릴리스된 주요 버전에 대한 지원이 제공됩니다. 이전 버전에 대한 릴리스 노트는 참조할 수 있도록 제공됩니다.
 릴리스 노트는 다음과 같습니다.
 
 ![새로 만들기](../assets/new.svg) 새로운 기능
 ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
+![버그](../assets/bug.svg) 알려진 문제
 
 개발자 설명서에서 다음 작업을 참조하십시오. [제품 호환성에 대해 알아보기](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 

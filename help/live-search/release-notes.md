@@ -2,16 +2,18 @@
 title: '`[!DNL Live Search] 릴리스 노트'''
 description: "에 대한 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce"
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] 릴리스 노트
 
-이러한 릴리스 노트에서는 최신 버전의 [!DNL Live Search] 다음을 포함합니다.
+이러한 릴리스 노트에서는 최신 버전의 [!DNL Live Search].
+현재 릴리스된 주요 버전에 대한 지원이 제공됩니다. 이전 버전에 대한 릴리스 노트는 참조할 수 있도록 제공됩니다.
+업데이트 내용은 다음과 같습니다.
 
 ![새로 만들기](../assets/new.svg) 새로운 기능
 ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
