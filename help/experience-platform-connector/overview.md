@@ -2,18 +2,18 @@
 title: 안내서 개요
 description: Experience Platform 커넥터를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # Experience Platform 커넥터 개요
 
-Experience Platform 커넥터 확장을 사용하면 Adobe Commerce 가맹점이 Adobe Experience Platform 에지로 데이터를 전송할 수 있으므로 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 해당 상거래 데이터를 사용할 수 있습니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고 AB 테스트를 수행하고 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
+Experience Platform 커넥터 확장을 사용하면 Adobe Commerce 가맹점이 메시지를 보낼 수 있습니다 [상점](events.md#storefront-events) 및 [사무실](events.md#back-office-events) Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품이 해당 상거래 데이터를 사용할 수 있도록 Adobe Experience Platform Edge에 데이터를 보냅니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고 AB 테스트를 수행하고 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
-[Storefront 이벤트](events.md) 와 같은 고객 상호 작용 캡처 `View Page`, `View Product`, `Add to Cart`등 캡처된 데이터에는 PII(개인 식별 정보)가 포함되지 않습니다. 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명 처리됩니다. [추가 정보](https://www.adobe.com/privacy/experience-cloud.html).
+[Storefront 이벤트](events.md#storefront-events) 와 같은 고객 상호 작용 캡처 `View Page`, `View Product`, `Add to Cart`, 및 [요청 목록](events.md#b2b-events) 정보(B2B 가맹점) [백오피스](events.md#back-office-events) 이벤트는 주문 배치, 취소, 환급, 출하 또는 완료와 같은 주문 상태에 대한 정보를 캡처합니다. 캡처된 데이터에는 PII(개인 식별 정보)가 포함되지 않습니다. 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명 처리됩니다. [추가 정보](https://www.adobe.com/privacy/experience-cloud.html).
 
 Experience Platform 커넥터가 상거래 관리자에 나타납니다 **시스템** > 서비스 > **Experience Platform 커넥터**.
 
@@ -25,6 +25,7 @@ Experience Platform 커넥터를 사용하려면 다음을 수행해야 합니�
 
 - Adobe Commerce 2.4.3 이상
 - Adobe ID 및 조직 ID
+- [Adobe 클라이언트 데이터 레이어(ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). 상점 이벤트 데이터를 수집하려면 ACDL이 필요합니다.
 - 다른 Adobe DX 제품에 대한 권한 부여
 
 ## 온보딩 단계

@@ -2,9 +2,9 @@
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법을 알아봅니다.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Live Search가 &quot;입력한 대로 검색&quot; 팝업 또는 검색 결과 �
 - **유형**: `commerce.order`
 - **XDM 데이터**: `%place order%`
 
-## ID 설정
+## storefront 이벤트에서 ID 설정
 
-Experience Platform 커넥터 프로파일은 `identityMap` 그리고 `personalEmail` xdm Experience 이벤트의 id 필드. 
+Storefront 이벤트는 `personalEmail` (계정 이벤트의 경우) 및 `identityMap` (기타 모든 storfront 이벤트에 대해) 필드를 생성할 수 있습니다. Experience Platform 커넥터는 이 두 필드를 기반으로 프로필을 조인하고 생성합니다. 그러나 각 필드에는 프로필을 만드는 여러 단계가 있습니다.
 
-다른 필드를 사용하는 이전 설정이 있는 경우 해당 필드를 계속 사용할 수 있습니다. Experience Platform 커넥터 프로파일 ID 필드를 설정하려면 다음 필드를 설정해야 합니다.
+>[!NOTE]
+>
+>다른 필드를 사용하는 이전 설정이 있는 경우 해당 필드를 계속 사용할 수 있습니다.
 
-- `personalEmail` - 계정 이벤트만 해당 - 위에 설명된 절차를 따르십시오 [계정 이벤트](#createaccount)
-- `identityMap` - 기타 모든 이벤트. 다음 예를 참조하십시오.
+- `personalEmail` - 계정 이벤트에만 적용됩니다. 요약된 단계, 규칙 및 작업을 따릅니다 [위](#createaccount)
+- `identityMap` - 다른 모든 상점 이벤트에도 적용됩니다. 다음 예를 참조하십시오.
 
 ### 예
 
@@ -1337,7 +1339,7 @@ Experience Platform 커넥터 프로파일은 `identityMap` 그리고 `personalE
    ![사용자 지정 코드로 데이터 요소 구성](assets/set-custom-code-ecid.png)
    _사용자 지정 코드로 데이터 요소 구성_
 
-1. ECID 사용자 지정 코드 추가:
+1. 선택 [!UICONTROL Open Editor] 다음 사용자 지정 코드를 추가합니다.
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ Experience Platform 커넥터 프로파일은 `identityMap` 그리고 `personalE
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ Experience Platform 커넥터 프로파일은 `identityMap` 그리고 `personalE
 
    ![ECID 검색](assets/rule-retrieve-ecid.png)
    _ECID 검색_
+
+## 백오피스 이벤트에서 ID 설정
+
+ECID를 사용하여 프로필 정보를 식별하고 연결하는 상점 전면 이벤트와 달리, 백 오피스 이벤트 데이터는 SaaS 기반이므로 ECID를 사용할 수 없습니다. 백오피스 이벤트의 경우, 고객을 고유하게 식별하려면 이메일을 사용해야 합니다. 이 섹션에서는 이메일을 사용하여 office 이벤트 데이터를 ECID에 연결하는 방법을 알아봅니다.
+
+1. ID 맵 요소를 만듭니다.
+
+   ![백 오피스 ID 맵](assets/custom-code-backoffice.png)
+   _백 오피스 ID 맵 만들기_
+
+1. 선택 [!UICONTROL Open Editor] 다음 사용자 지정 코드를 추가합니다.
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. 이 새 요소를 각 `identityMap` 필드.
+
+   ![각 idMap 업데이트](assets/add-element-back-office.png)
+   _각 idMap 업데이트_
 
 ## 동의 설정
 

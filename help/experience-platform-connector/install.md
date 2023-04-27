@@ -2,9 +2,9 @@
 title: Adobe Commerce에서 Adobe Experience Platform 커넥터 설치 및 구성
 description: Adobe Commerce에서 Adobe Experience Platform 커넥터를 설치, 구성, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ ht-degree: 0%
 
 ## 확장 설치
 
-Experience Platform 커넥터 확장은 서버의 명령줄에서 설치되며 Adobe Commerce 설치에 다음으로 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 **Experience Platform 커넥터** 에 표시됩니다. **시스템** 메뉴 아래의 **서비스** 상거래 _관리_.
+Experience Platform 커넥터 확장은 [Adobe 마켓플레이스](https://marketplace.magento.com/magento-experience-platform-connector.html). 서버의 명령줄에서 이 확장을 설치하면 Adobe Commerce 설치으로 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 **Experience Platform 커넥터** 및 **Commerce Services 커넥터** 에 나타납니다. **시스템** 메뉴 아래의 **서비스** 상거래 _관리_.
 
-Experience Platform 커넥터는 [Adobe 마켓플레이스](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![Adobe Commerce용 B2B](../assets/b2b.svg) B2B 가맹점의 경우 설치해야 하는 별도의 확장이 있습니다. 이 확장은 B2B 특정 이벤트에 대한 지원을 추가합니다. [추가 정보](#install-the-b2b-extension).
 
-![Adobe Commerce용 B2B](../assets/b2b.svg) B2B 가맹점의 경우 설치해야 하는 별도의 확장이 있습니다. 이 확장은 B2B 특정 이벤트에 대한 지원을 추가합니다. [추가 정보](#install-the-b2b-extension).
 
 1. 를 다운로드하려면 `experience-platform-connector` package에서 다음 명령을 실행합니다.
 
@@ -80,11 +81,11 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-또는, B2B 가맹점:
+   또는, B2B 가맹점:
 
-```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
-```
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ## Experience Platform 커넥터 제거 {#uninstall}
 
