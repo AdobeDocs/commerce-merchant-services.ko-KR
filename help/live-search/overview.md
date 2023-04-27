@@ -2,9 +2,9 @@
 title: 소개 [!DNL Live Search]
 description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 126cc4e050d8b37e784d1a5d925374fbd686af55
+source-git-commit: 5319c1474346ed3eb3cd2cf097813b00d8f56503
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 0%
 자세한 내용은 이 비디오 를 참조하십시오 [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+라이브 검색을 사용하고 구성하는 방법에 대한 자세한 내용은 [전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) 주제.
