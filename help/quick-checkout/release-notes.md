@@ -2,9 +2,9 @@
 title: '`[!DNL Quick Checkout] 릴리스 노트'''
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
