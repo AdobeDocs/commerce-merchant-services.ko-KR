@@ -2,9 +2,9 @@
 title: '`[!DNL Quick Checkout] 릴리스 노트'''
 description: 모든 정보에 대해서는 릴리스 노트 를 검토하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ ht-degree: 0%
 이러한 릴리스 노트는 관리 패널에 대한 일반 버전 관리 기능 릴리스 외부에서 발생하였거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++관리 패널 업데이트
+
+_2023년 4월 25일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-452 --> 다음 [!DNL Quick Checkout] **둘러보기** 이제 마우스로 가리키면 버튼에 클릭 가능한 손 커서가 표시됩니다.
+
+_2023년 4월 19일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-596 --> 다음 [!DNL Quick Checkout] 이제 보고서 페이지에 날짜를 ISO 8601 형식으로 구문 분석할 때 새 계정 차트가 올바로 표시됩니다.
 
 _2022년 12월 14일_
 
