@@ -2,9 +2,9 @@
 title: 소개 [!DNL Product Recommendations]
 description: '`[!DNL Product Recommendations] 는 전환율을 높이고, 매출을 증대하고, 쇼핑객의 참여를 유도하기 위해 사용할 수 있는 강력한 마케팅 도구입니다.'''
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 
 제품 권장 사항은 &quot;이 제품을 본 고객도 본 것&quot;과 같이 레이블이 있는 단위로 상점 앞에 표시됩니다. Adobe Commerce 관리자에서 직접 스토어 보기 간에 권장 사항을 만들고, 관리하고 배포할 수 있습니다.
 
+PWA Studio을 사용하여 스토어를 구현한 경우 [PWA 설명서](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React 또는 Value JS와 같은 사용자 지정 프런트 엔드 기술을 사용하는 경우 다음 방법을 배웁니다. [통합](headless.md) [!DNL Product Recommendations] 헤드리스 가게 앞쪽에
+
 >[!NOTE]
 >
-> PWA Studio을 사용하여 스토어를 구현한 경우 [PWA 설명서](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React 또는 Value JS와 같은 사용자 지정 프런트 엔드 기술을 사용하는 경우 다음 방법을 배웁니다. [통합](headless.md) [!DNL Product Recommendations] 헤드리스 가게 앞쪽에
+>헤드리스 또는 사용자 지정 구현을 개발하는 방법에는 여러 가지가 있습니다. 이 안내서에서는 PWA Studio을 사용하여 하는 한 가지 방법을 설명합니다. 모든 시나리오와 상황에 대해서는 다루지 않습니다.
 
 ## 개인 정보 보호
 

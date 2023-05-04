@@ -2,9 +2,9 @@
 title: 데이터 수집
 description: 이벤트가 제품 권장 사항에 대한 데이터를 수집하는 방법을 알아봅니다.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ ht-degree: 0%
 
 스토어가 PWA Studio으로 구현된 경우 [PWA 설명서](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React 또는 Value JS와 같은 사용자 지정 프런트 엔드 기술을 사용하는 경우 사용 안내서 를 참조하여 Product Recommendations을 [헤드리스](headless.md) 환경.
 
+## 경고
+
 광고 차단 및 개인 정보 설정은 `magento/product-recommendations` 이벤트 캡처를 통한 모듈 및 이로 인해 참여 및 매출 발생 가능 [지표](workspace.md) 자세한 보고가 필요합니다.
+
+이벤트는 머천트 사이트에서 발생하는 모든 거래를 캡처하지 않습니다. 이벤트는 상인에게 사이트에서 발생하는 이벤트에 대한 일반적인 아이디어를 주기 위한 것입니다.
+
+헤드리스 구현은 제품 Recommendations 대시보드를 사용하려면 이벤트를 구현해야 합니다.
 
 >[!NOTE]
 >

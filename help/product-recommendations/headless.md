@@ -2,9 +2,9 @@
 title: 헤드리스
 description: 통합 방법 알아보기 [!DNL Product Recommendations] 헤드리스 상점.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 통합할 수 있습니다 [!DNL Product Recommendations] 헤드리스 상점 안에 [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) 또는 React 또는 Value JS와 같은 사용자 지정 프런트 엔드 기술입니다.
 
+사용자 지정 및 헤드리스 통합자는 이러한 Luma 및 PWA 지침을 제안된 구현으로 참조해야 합니다. Product Recommendations을 헤드리스 솔루션으로 구현하는 방법에는 여러 가지가 있으며 이 설명서에는 모든 시나리오가 포함되어 있지 않습니다. 통합자는 구현에 대한 이벤트, 디자인 및 테스트를 다룹니다.
+
 [!DNL Product Recommendations] 필요 [행동 및 카탈로그 데이터](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) 작동됩니다. 카탈로그 데이터 동기화 프로세스는 헤드리스 구현에서 변경되지 않은 상태로 유지되지만 행동 데이터 수집을 위해 변경 사항이 필요합니다.
+
+>[!NOTE]
+>
+>헤드리스 인스턴스는 Product Recommendations 대시보드를 사용하려면 이벤트를 구현해야 합니다.
 
 통합하려면 [!DNL Product Recommendations] 헤드리스 스토어프런트에서 다음을 수행해야 합니다.
 

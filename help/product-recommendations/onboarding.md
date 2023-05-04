@@ -2,7 +2,7 @@
 title: 온보딩
 description: 에서 요구 사항 및 지원되는 플랫폼에 대해 알아봅니다. [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 1bc15171e4e7402d808af3631b8b6d000d4fd3f2
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 자세한 내용은 [[!DNL Page Builder] 통합](page-builder.md) 추가 방법에 대한 지침 [!DNL Product Recommendations] 변환 [!DNL Page Builder] 컨텐츠 배포.
 
-## SaaS 가격 인덱싱
+### SaaS 가격 인덱싱
 
 고객이 사용할 수 있는 제품 권장 사항 [SaaS 가격 인덱싱](../price-index/index.md): 더 빠른 가격 변경 업데이트 및 동기화 시간을 제공합니다.
 

@@ -2,9 +2,9 @@
 title: 제품 Recommendations 관리자 개발
 description: 제품 Recommendations 아키텍처 및 개발 기능에 대한 개요입니다.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->PWA Studio을 사용하여 스토어를 구현한 경우 [PWA 설명서](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React 또는 Value JS와 같은 사용자 지정 프런트 엔드 기술을 사용하는 경우 사용 안내서 를 참조하여 Product Recommendations을 [헤드리스](headless.md) 환경.
+>PWA Studio을 사용하여 스토어를 구현한 경우 [PWA 설명서](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). React 또는 Value JS와 같은 사용자 지정 프런트 엔드 기술을 사용하는 경우 사용 안내서 를 참조하여 Product Recommendations을 [헤드리스](headless.md) 환경. 헤드리스 인스턴스는 제품 권장 사항 작업 공간을 활용하려면 이벤트를 구현해야 합니다.
 
 ## 아키텍처 개요
 
