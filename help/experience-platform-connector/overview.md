@@ -2,9 +2,9 @@
 title: 안내서 개요
 description: Experience Platform 커넥터를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,12 @@ Experience Platform 커넥터를 사용하려면 다음을 수행해야 합니�
 ## 온보딩 단계
 
 1. [설치](install.md) Experience Platform 커넥터 확장.
-1. [로그인](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe 계정 및 [보기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 조직 ID입니다. 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 그 뒤에 오는 (및 는 포함해야 함)입니다 `@AdobeOrg`.
-1. [Connect](connect-data.md) Adobe Experience Platform에 Adobe Commerce 인스턴스를 추가합니다.
+1. [로그인](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe 계정 및 [확인할 보기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 조직 ID입니다. 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 그 뒤에 오는 (및 는 포함해야 함)입니다 `@AdobeOrg`.
 1. [만들기 또는 업데이트](update-xdm.md) 상거래 관련 필드 그룹을 사용하는 XDM 스키마.
-1. [데이터 집합 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 만들거나 업데이트한 스키마를 기반으로 합니다.
+1. [데이터 집합 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 만들거나 업데이트한 스키마를 기반으로 합니다. 이 데이터 세트에는 전송하는 상거래 데이터가 포함됩니다.
 1. [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) 및 상거래 관련 필드 그룹을 포함하는 XDM 스키마를 선택합니다.
+1. [Commerce Services에 연결](../landing/saas.md).
+1. [Adobe Experience Platform에 연결](connect-data.md).
 
 ## Audience
 

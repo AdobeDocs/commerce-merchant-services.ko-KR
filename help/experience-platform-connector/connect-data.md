@@ -2,9 +2,9 @@
 title: Adobe Experience Platform에 상거래 데이터 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Experience Platform 커넥터를 설치하면 **시스템** 메뉴 아래의 **�
 - Commerce Services 커넥터
 - Experience Platform 커넥터
 
-Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하려면 Commerce Services 커넥터로 시작하여 두 커넥터를 구성한 다음 Experience Platform 커넥터로 완료해야 합니다.
+Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하려면 Commerce Services 커넥터로 시작한 다음 Experience Platform 커넥터로 완료하면서 두 커넥터를 구성해야 합니다.
 
 ## Commerce Services 커넥터 업데이트
 
@@ -56,7 +56,11 @@ Commerce Services 커넥터를 구성한 후 Experience Platform 커넥터를 �
 
 ## 데이터 수집
 
-에서 **데이터 수집** 섹션에서 저장소 및/또는 백 오피스 데이터를 선택하여 Experience Platform 에지로 보냅니다. Adobe Commerce 인스턴스에서 데이터 수집을 시작하려면 다음을 검토하십시오 [전제 조건](overview.md#prerequisites).
+이 섹션에서는 Experience Platform 에지에 전송할 데이터 유형을 지정합니다. 데이터에는 두 가지 유형이 있습니다. 클라이언트측 및 서버측
+
+클라이언트측 데이터는 상점 앞에서 캡처된 데이터입니다. 여기에는 다음과 같은 쇼퍼 상호 작용이 포함됩니다. `View Page`, `View Product`, `Add to Cart`, 및 [요청 목록](events.md#b2b-events) 정보(B2B 가맹점) 서버측 데이터 또는 백오피스 데이터는 상거래 서버에 캡처된 데이터입니다. 주문시, 취소, 환불, 출하 또는 완료와 같은 주문 상태에 대한 정보가 포함됩니다.
+
+에서 **데이터 수집** 섹션에서 Experience Platform 에지로 전송할 데이터 유형을 선택합니다. Adobe Commerce 인스턴스에서 데이터 수집을 시작하려면 다음을 검토하십시오 [전제 조건](overview.md#prerequisites).
 
 자세한 내용은 이벤트 항목을 참조하십시오 [상점](events.md#storefront-events) 및 [사무실](events.md#back-office-events) events.
 
@@ -110,11 +114,32 @@ Commerce Services 커넥터를 구성한 후 Experience Platform 커넥터를 �
 | 백 오피스 이벤트 | 이 확인란을 선택하면 이벤트 페이로드에 주문 주문 처리, 취소, 환급 또는 배송과 같은 익명 처리된 주문 상태 정보가 포함됩니다. |
 | 데이터 스트림 ID(웹 사이트) | Adobe Experience Platform에서 다른 Adobe DX 제품으로 데이터를 전송할 수 있는 ID입니다. 이 ID는 특정 Adobe Commerce 인스턴스 내의 특정 웹 사이트에 연결되어 있어야 합니다. 고유한 Experience Platform Web SDK를 지정하는 경우 이 필드에 데이터 스트림 ID를 지정하지 마십시오. Experience Platform 커넥터는 해당 SDK와 연결된 데이터 스트림 ID를 사용하고 이 필드에 지정된 모든 데이터 스트림 ID를 무시합니다(있는 경우). |
 
-## 데이터가 Experience Platform으로 전송되고 있는지 확인
+>[!NOTE]
+>
+>온보딩 후 상점 전면 데이터가 Experience Platform 에지로 이동하기 시작합니다. 백 오피스 데이터는 가장자리에 나타나는 데 약 5분이 걸립니다. 이후에 업데이트되는 내용은 크론 스케줄에 따라 에지에서 볼 수 있습니다.
 
-온보딩 후 상점 전면 데이터가 Experience Platform 에지로 이동하기 시작합니다. 백 오피스 데이터는 온보딩 후 5분 이내에 데이터가 가장자리에 표시됩니다. 이후에 업데이트되는 내용은 크론 스케줄에 따라 에지에서 볼 수 있습니다.
+## 이벤트 데이터가 수집되는지 확인
 
-상거래 데이터가 Experience Platform 에지로 전송되면 다음과 같은 보고서를 작성할 수 있습니다.
+상거래 저장소에서 데이터가 수집되고 있는지 확인하려면 [Adobe Experience Platform 디버거](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 를 입력하여 상거래 사이트를 검사합니다. 데이터가 수집되고 있음을 확인한 후, [만든 데이터 세트](overview.md#prerequisites).
 
-![Adobe Experience Platform의 상거래 데이터](assets/aem-data-1.png)
-_Adobe Experience Platform의 상거래 데이터_
+1. 선택 **쿼리** Experience Platform의 왼쪽 탐색에서 를 클릭하고 [!UICONTROL Create Query].
+
+   ![쿼리 편집기](assets/query-editor.png)
+
+1. 쿼리 편집기가 열리면 데이터 집합에서 데이터를 선택하는 쿼리를 입력합니다.
+
+   ![쿼리 만들기](assets/create-query.png)
+
+   예를 들어 쿼리가 다음과 같을 수 있습니다.
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. 쿼리가 실행되면 **결과** 탭, 옆에 있습니다. **콘솔** 탭. 이 보기는 쿼리의 테이블 형식 출력을 표시합니다.
+
+   ![쿼리 편집기](assets/query-results.png)
+
+이 예제에서는 [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)등 이 보기에서는 상거래 데이터가 가장자리에 도달했는지 확인할 수 있습니다.
+
+결과가 예상과 다른 경우 데이터 세트를 열고 실패한 배치 가져오기를 찾습니다. 추가 정보 [배치 가져오기 문제 해결](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
