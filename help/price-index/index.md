@@ -4,9 +4,9 @@ description: SaaS 가격 인덱싱 기능을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 0%
 SaaS 가격 인덱싱 기능은 가격 변경이 필요한 시간을 단축시켜 SaaS 고객의 웹 사이트에 제출한 후 반영됩니다. 이 선택적 모듈을 사용하면 크고 복잡한 카탈로그 또는 여러 웹 사이트 또는 고객 그룹이 있는 판매자가 가격 변경 사항을 보다 빠르고 지속적으로 처리할 수 있습니다.
 
 파이프라인의 가장 큰 병목 현상: 색인 및 가격 계산과 같은 계산 중량이 많은 프로세스가 PHP 코어에서 Adobe의 클라우드 인프라로 이동되었습니다. 이를 통해 가맹점은 신속하게 리소스를 확장하여 가격 색인화 시간을 향상시키고 이러한 변경 사항을 훨씬 빠른 속도로 웹 사이트에 반영할 수 있습니다.
+
+SaaS 서비스에 대한 핵심 인덱싱 데이터 흐름은 다음과 같습니다.
+
+![기본 데이터 흐름](assets/old_way.png)
+
+SaaS 가격 색인화를 통해 플로우는 다음과 같습니다.
+
+![SaaS 가격 인덱싱 데이터 흐름](assets/new_way.png)
 
 이러한 요구 사항을 충족하는 모든 가맹점은 이러한 개선 사항의 혜택을 누릴 수 있지만, 다음과 같은 혜택을 누릴 수 있는 고객도 있습니다.
 
