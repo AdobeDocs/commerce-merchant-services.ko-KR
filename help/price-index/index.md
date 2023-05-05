@@ -4,9 +4,9 @@ description: SaaS 가격 인덱싱 기능을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Luma 및 Adobe Commerce Core GraphQL을 사용하는 고객은 Luma 호환성을 제공하고 PHP 코어 가격 색인을 비활성화하는 모듈을 설치할 수 있습니다.
+Luma 및 Adobe Commerce Core GraphQL을 사용하는 고객은 Luma 및 Core GraphQL 호환성을 제공하고 PHP 코어 가격 색인을 비활성화하는 모듈을 설치할 수 있습니다.
 
 ```
 adobe-commerce/catalog-adapter
@@ -68,16 +68,6 @@ adobe-commerce/catalog-adapter
 
 현재 SaaS 가격 인덱싱은 Simple, Grouped, Virtual, Configurable 및 Bundle Dynamic 제품 유형을 지원합니다.
 다운로드 가능, 기프트 카드 및 번들 고정 제품 유형에 대한 지원이 곧 제공될 예정입니다.
-
-SaaS 가격 인덱싱은 기본 가격을 지원합니다.
-
-* 최소/최대 정규 가격
-* 최소/최대 최종 가격
-* 특별 가격
-* 고객 그룹 가격
-* 카탈로그 규칙 가격
-
-새 가격 책정 피드를 사용하기 위해 옵트인하면 [지원](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) 실행 취소를 돕기 위해.
 
 새 피드는 를 사용하여 수동으로 동기화해야 합니다. `resync` [CLI 명령](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 그렇지 않으면 표준 동기화 프로세스에서 데이터가 새로 고쳐집니다. 에 대한 자세한 정보 받기 [카탈로그 동기화](../landing/catalog-sync.md) 프로세스.
 

@@ -3,9 +3,10 @@ title: SaaS 가격 인덱싱 설치
 description: SaaS 가격 인덱싱 설치
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-source-git-commit: 077be6d893b800b9571a869237501e58accc01e8
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,9 @@ SaaS 가격 색인을 설정하려면 새 모듈을 설치하고 CLI 명령을 �
 필요에 따라 위의 인덱스를 수동으로 실행합니다. 그렇지 않으면 표준 동기화 프로세스에서 데이터가 새로 고쳐집니다. 자세한 내용 [카탈로그 동기화](../landing/catalog-sync.md) 서비스.
 
 Luma 및 Adobe Commerce Core GraphQL 사용자는 `catalog-adapter` Luma 및 Core GraphQl 호환성을 제공하고 PHP 코어 가격 색인을 비활성화하는 모듈입니다.
-를 사용하려면 `catalog-adapter` 모듈, [!DNL Live Search] 먼저 설치해야 합니다. 다음을 수행합니다 [설치 [!DNL Live Search]](../live-search/install.md) 지침을 따르십시오.
+를 사용하려면 `catalog-adapter` 모듈, [!DNL Live Search] 및 [!DNL Catalog Service] 먼저 설치 및 구성해야 합니다. 다음을 수행합니다 [설치 [!DNL Live Search]](../live-search/install.md) 및 [카탈로그 서비스 설치](../catalog-service/installation.md) 지침을 따르십시오.
+
+라이브 검색 및 카탈로그 어댑터를 구성하려면 다음을 수행합니다 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 지침
 
 ```bash
 composer require adobe-commerce/catalog-adapter
