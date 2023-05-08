@@ -2,9 +2,9 @@
 title: 결제 옵션
 description: 결제 옵션을 설정하여 스토어 고객에게 사용 가능한 방법을 사용자 정의합니다.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Apple Pay를 사용하려면 영업 담당자 또는 Adobe 계정 팀에 문의하여 라이브 스토어에 대해 활성화하십시오.
+> 를 사용하려면 [!DNL Apple Pay] 상점들을 위해 [자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션에 해당) 및 [에서 스토어에 대해 구성합니다. [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### [!DNL Pay Later] 버튼
 

@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다 [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
+source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
       >[!NOTE]
       >
-      > Apple Pay를 사용하려면 [Apple 샌드박스 테스터 계정이 있어야 합니다.](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 _또는_ 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md#test-in-sandbox-environment)를 활성화하려면 영업 담당자에게 문의하십시오.
+      > Apple Pay를 사용하려면 [Apple 샌드박스 테스터 계정이 있어야 합니다.](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (가짜 신용 카드 및 결제 정보 포함)를 테스트해 보십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 _또는_ 프로덕션 모드 [테스트 및 유효성 검사](test-validate.md#test-in-sandbox-environment), 완료 [자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션에 해당) 및 [에서 스토어에 대해 구성합니다. [!DNL Payment Services]](settings.md#payment-buttons).
 
       지급 단추나 PayPal 나중에 지급 메시지에 대한 표시/해제를 켜거나 끌 때 해당 구성의 시각적 미리 보기가 설정 페이지 하단에 표시됩니다.
 
