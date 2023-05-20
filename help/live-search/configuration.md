@@ -1,7 +1,8 @@
 ---
-title: "상거래 구성 설정 및 [!DNL Live Search] "
-description: "다음과 같은 Adobe Commerce 구성 설정에 대해 설명합니다. [!DNL Live Search] 읽을 수 있습니다."
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+title: '상거래 구성 설정 및 [!DNL Live Search] '
+description: 다음과 같은 Adobe Commerce 구성 설정에 대해 설명합니다. [!DNL Live Search] 읽을 수 있습니다.
+exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%

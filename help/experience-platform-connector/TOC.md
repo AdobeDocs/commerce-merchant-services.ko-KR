@@ -12,7 +12,7 @@ ht-degree: 0%
 # Adobe Commerce용 Adobe Experience Platform 커넥터 {#experience-platform-connector}
 
 - [안내서 개요](overview.md)
-- [릴리스 노트](release-notes.md)
+- [릴리스 정보](release-notes.md)
 - 기본 사항 {#fundamentals}
    - [Experience Platform 커넥터 설치](install.md)
    - [Experience Platform 커넥터 구성](connect-data.md)

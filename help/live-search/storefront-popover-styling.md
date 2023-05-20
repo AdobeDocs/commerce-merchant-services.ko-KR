@@ -1,6 +1,6 @@
 ---
 title: "스타일링 [!DNL Popover] 요소"
-description: "사용자 지정에 대한 기술 정보 [!DNL Live Search storefront popover]"
+description: "사용자 정의에 대한 기술 참고 사항 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 스타일링 [!DNL Popover] 요소
 
-다음 [[!DNL storefront popover]](storefront-popover.md) 항상 제품 표시 `name` 및 `price`, 그리고 필드 선택을 구성할 수 없습니다. 하지만, [!DNL popover] 요소는 CSS 클래스를 사용하여 스타일을 지정할 수 있습니다. 예를 들어 다음 선언에서는 [!DNL popover] 컨테이너 및 바닥글.
+다음 [[!DNL storefront popover]](storefront-popover.md) 항상 제품 표시 `name` 및 `price`및 필드 선택은 구성할 수 없습니다. 그러나 [!DNL popover] 요소는 CSS 클래스를 사용하여 스타일을 지정할 수 있습니다. 예를들어, 다음 선언은 [!DNL popover] 컨테이너 및 바닥글.
 
 ```css
 .livesearch.popover-container {
@@ -25,18 +25,18 @@ ht-degree: 0%
 
 ## 컨테이너 가시성
 
-의 상위 구성 요소입니다 `.livesearch.popover-container` is `.search-autocomplete`.  다음 `.active` 클래스는 컨테이너의 가시성을 나타냅니다. 다음 `.active` 클래스는 조건부로 추가되면 [!DNL popover] 가 열려 있습니다.
+의 상위 구성 요소 `.livesearch.popover-container` 은(는) `.search-autocomplete`.  다음 `.active` 클래스는 컨테이너의 가시성을 나타냅니다. 다음 `.active` 클래스는 [!DNL popover] 열려 있습니다.
 
 ```css
 .search-autocomplete.active   /* visible */
 .search-autocomplete          /* not visible */
 ```
 
-storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스타일 시트)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 에서 [프런트 엔드 개발자 안내서](https://developer.adobe.com/commerce/frontend-core/guide/).
+storefront 요소 스타일링에 대한 자세한 내용은 다음을 참조하십시오. [CSS(계단식 스타일 시트)](https://developer.adobe.com/commerce/frontend-core/guide/css/) 다음에서 [프론트엔드 개발자 안내서](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## 클래스 선택기
 
-다음 클래스 선택기를 사용하여 [!DNL popover].
+다음 클래스 선택기를 사용하여 의 컨테이너 및 제품 요소를 스타일링할 수 있습니다. [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -47,7 +47,7 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ### 컨테이너 클래스 선택기
 
-#### .livesearch.poover-container
+#### .livesearch.popover-container
 
 ![[!DNL Popover] 컨테이너](assets/livesearch-popover-container.png)
 
@@ -61,7 +61,7 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ![제품 컨테이너](assets/livesearch-product-container.png)
 
-#### .livesearch.product result
+#### .livesearch.product-result
 
 ![제품 결과](assets/livesearch-product-result.png)
 
@@ -69,13 +69,13 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ![제품 이름](assets/livesearch-product-name.png)
 
-#### .livesearch.product price
+#### .livesearch.product-price
 
 ![제품 가격](assets/livesearch-product-price.png)
 
-## 수정된 테마 작업 {#working-with-modified-theme}
+## 수정된 테마로 작업 {#working-with-modified-theme}
 
-다음 [!DNL storefront popover] 사용자 지정된 [테마](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 에서 필요한 파일을 상속함 *루마*. 다음 `top.search` 블록 `header-wrapper` 의 `Magento_Search` 모듈을 수정할 수 없습니다.
+다음 [!DNL storefront popover] 맞춤화된 와 함께 사용할 수 있습니다. [테마](https://developer.adobe.com/commerce/frontend-core/guide/themes/) 에서 필요한 파일을 상속합니다. *Luma*. 다음 `top.search` 의 블록 `header-wrapper` / `Magento_Search` 모듈을 수정해서는 안 됩니다.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ storefront 요소 스타일링에 대한 자세한 내용은 [CSS(계단식 스�
 
 ## 비활성화 [!DNL popover]
 
-를 비활성화하려면 [!DNL popover] 표준 [빠른 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 기능을 사용하려면 다음 명령을 입력합니다.
+을(를) 비활성화하려면 [!DNL popover] 및 표준 복원 [빠른 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 기능을 사용하려면 다음 명령을 입력합니다.
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

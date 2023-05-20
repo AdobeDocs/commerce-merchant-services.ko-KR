@@ -1,6 +1,6 @@
 ---
 title: 카탈로그 동기화
-description: 에서 제품 데이터를 내보내는 방법을 알아봅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 서비스를 최신 상태로 유지하기 위해 지속적으로.
+description: 에서 제품 데이터를 내보내는 방법 알아보기 [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 지속적으로 서비스를 최신 상태로 유지하기 위해.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
@@ -11,46 +11,46 @@ ht-degree: 0%
 
 # 카탈로그 동기화
 
-Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그 데이터를 테이블에 컴파일합니다. 이 프로세스는 자동으로 [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 제품 가격 또는 재고 수준 변경과 같은 변경.
+Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그 데이터를 표로 컴파일합니다. 프로세스는 다음 사용자에 의해 자동으로 트리거됩니다. [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 제품 가격 또는 재고 수준 변경 등.
 
-카탈로그 동기화 프로세스는 시간별로 실행되어 [!DNL Commerce] 카탈로그 데이터를 사용할 서비스. 카탈로그 동기화에서 제품 데이터를 내보냅니다. [!DNL Commerce] 서버 대상 [!DNL Commerce] 서비스를 최신 상태로 유지하기 위한 지속적인 서비스 제공 예, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 올바른 이름, 가격 및 가용성을 가진 권장 사항을 정확하게 반환하려면 현재 카탈로그 정보가 필요합니다. 를 사용할 수 있습니다 _카탈로그 동기화_ 대시보드 를 사용하여 동기화 프로세스 또는 [명령줄 인터페이스](#resynccmdline) 카탈로그 동기화를 트리거하고 다음을 통해 소비할 제품 데이터를 다시 색인화합니다. [!DNL Commerce] 서비스.
+카탈로그 동기화 프로세스는 허용 시간별로 실행됩니다. [!DNL Commerce] 카탈로그 데이터를 사용하는 서비스입니다. 카탈로그 동기화에서 제품 데이터 내보내기 [!DNL Commerce] 서버 대상 [!DNL Commerce] 서비스를 최신 상태로 유지하기 위해 지속적으로 서비스를 제공합니다. 예를 들어, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 은(는) 올바른 이름, 가격 및 가용성으로 권장 사항을 정확하게 반환하기 위해 현재 카탈로그 정보가 필요합니다. 다음을 사용할 수 있습니다. _카탈로그 동기화_ 동기화 프로세스를 관찰하고 관리하는 대시보드 [명령줄 인터페이스](#resynccmdline) 카탈로그 동기화를 트리거하고 소비할 제품 데이터를 다시 색인화하려면 [!DNL Commerce] 서비스.
 
 >[!NOTE]
 >
-> 를 사용하려면 _카탈로그 동기화_ 대시보드 또는 명령줄 인터페이스는 반드시 [API 키 및 구성된 SaaS 데이터 공간](saas.md).
+> 을(를) 사용하려면 _카탈로그 동기화_ 대시보드 또는 명령줄 인터페이스에는 [API 키 및 SaaS 데이터 공간 구성](saas.md).
 
 ## 카탈로그 동기화 대시보드 액세스
 
 >[!NOTE]
 >
-> 다음 _카탈로그 동기화_ 대시보드는 다음과 같은 경우에만 사용할 수 있습니다 _제품 Recommendations_ 모듈은 설치되며 해당 기능과 관련된 데이터 예측만 반영합니다. 과 같은 다른 Commerce Services 지원 _라이브 검색_ 및 _카탈로그 서비스_ 향후 계획을 세울 예정입니다.
+> 다음 _카탈로그 동기화_ 대시보드는 _제품 Recommendations_ 모듈이 설치되고 해당 기능과 관련된 데이터 프로젝션만 반영합니다. 과 같은 기타 상거래 서비스 지원 _라이브 검색_ 및 _카탈로그 서비스_ 은(는) 미래를 위해 계획됩니다.
 
-카탈로그 동기화 대시보드에 액세스하려면 다음을 선택합니다 **시스템** > _데이터 전송_ > **카탈로그 동기화**.
+카탈로그 동기화 대시보드에 액세스하려면 다음을 선택합니다. **시스템** > _데이터 전송_ > **카탈로그 동기화**.
 
-사용 **카탈로그 동기화** 대시보드 를 사용하면 다음 작업을 수행할 수 있습니다.
+포함 **카탈로그 동기화** 대시보드 다음과 같은 작업을 수행할 수 있습니다.
 
 - 동기화 상태 보기(**진행 중**, **성공**, **실패**)
 - 성공한 경우 동기화된 총 제품 수 보기
-- 동기화된 제품을 검색하여 현재 상태를 확인합니다
-- 이름, SKU 등을 기준으로 스토어 카탈로그 검색
-- 동기화 불일치를 진단하는 데 도움이 되도록 JSON에서 동기화된 제품 세부 사항을 봅니다
+- 동기화된 제품을 검색하여 현재 상태 보기
+- 이름, SKU 등을 기준으로 한 검색 스토어 카탈로그
+- 동기화 불일치를 진단하는 데 도움이 되도록 JSON에서 동기화된 제품 세부 정보 보기
 - 동기화 프로세스 다시 시작
 
 ### 마지막 동기화
 
-다음과 같은 동기화 상태를 보고합니다.
+다음의 동기화 상태를 보고합니다.
 
-- **성공** - 동기화가 성공한 날짜 및 시간과 업데이트된 제품 수를 표시합니다
-- **실패** - 동기화를 시도한 날짜 및 시간을 표시합니다
-- **진행 중** - 마지막으로 성공한 동기화 날짜와 시간을 표시합니다
+- **성공** - 동기화가 성공한 날짜와 시간, 업데이트한 제품 수를 표시합니다.
+- **실패** - 동기화를 시도한 날짜와 시간을 표시합니다.
+- **진행 중** - 마지막으로 성공한 동기화 날짜와 시간을 표시합니다.
 
 >[!NOTE]
 >
-> 카탈로그 동기화 프로세스는 매시간마다 자동으로 실행됩니다. 그러나 스토어에 제품이 보이지 않거나 최근에 변경한 내용이 제품에 반영되지 않으면 문제를 해결할 수 있습니다 [카탈로그 동기화 문제](#resolvesync).
+> 카탈로그 동기화 프로세스는 매시간 자동으로 실행됩니다. 그러나 상점에 제품이 없거나 제품이 최근 변경 사항을 반영하지 않는 경우 해결할 수 있습니다 [카탈로그 동기화 문제](#resolvesync).
 
-### 동기화된 제품
+### 제품 동기화됨
 
-에서 동기화된 총 제품 수를 표시합니다 [!DNL Commerce] 카탈로그 초기 동기화 후에는 변경된 제품만 동기화되어야 합니다.
+에서 동기화된 총 제품 수를 표시합니다. [!DNL Commerce] 카탈로그. 초기 동기화 후에는 변경된 제품만 동기화되어야 합니다.
 
 ## 다시 동기화 {#resync}
 
@@ -58,13 +58,13 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 
 >[!NOTE]
 >
-> 재동기화를 수행하면 전체 제품 카탈로그의 재동기화가 트리거되어 하드웨어 리소스에 대한 로드가 늘어날 수 있습니다.
+> 재동기화를 강제로 수행하면 전체 제품 카탈로그가 재동기화되어 하드웨어 리소스에 대한 부하가 증가할 수 있습니다.
 
-1. 에서 _카탈로그 동기화_ 대시보드, 선택 **설정**.
+1. 다음에서 _카탈로그 동기화_ 대시보드, 선택 **설정**.
 
    다음 _카탈로그 동기화 설정_ 페이지가 나타납니다.
 
-1. 에서 _데이터 다시 동기화_ 섹션을 클릭합니다. [!UICONTROL Resync].
+1. 다음에서 _데이터 재동기화_ 섹션, 클릭 [!UICONTROL Resync].
 
    [!DNL Commerce] 다음 예약된 동기화 기간 동안 카탈로그를 동기화합니다. 카탈로그 크기에 따라 이 작업은 시간이 오래 걸릴 수 있습니다.
 
@@ -75,41 +75,41 @@ Adobe Commerce 및 Magento Open Source은 인덱서를 사용하여 카탈로그
 
 | 필드 | 설명 |
 |---|---|
-| ID | 제품의 고유 식별자입니다 |
-| 이름 | 제품의 저장소 이름 |
+| ID | 제품에 대한 고유 식별자 |
+| 이름 | 제품의 상점 이름 |
 | 유형 | 단순, 구성 가능, 다운로드 가능 등과 같은 제품 유형을 식별합니다 |
-| 마지막으로 내보낸 날짜 | 카탈로그에서 제품을 마지막으로 내보낸 날짜 |
-| 마지막 수정 날짜 | 카탈로그에서 제품이 마지막으로 수정된 날짜 |
-| SKU | 제품에 대한 재고 유지 단위를 표시합니다 |
+| 마지막으로 내보냄 | 제품을 카탈로그에서 마지막으로 성공적으로 내보낸 날짜 |
+| 마지막 수정일 | 카탈로그에서 제품이 마지막으로 수정된 날짜 |
+| SKU | 제품에 대한 재고 유지 단위를 표시합니다. |
 | 가격 | 제품 가격 |
-| 가시성 | 에 정의된 대로 제품의 가시성 설정 [!DNL Commerce] 카탈로그 |
+| 가시성 | 에 정의된 제품의 가시성 설정 [!DNL Commerce] 카탈로그 |
 
 ## 카탈로그 동기화 문제 해결 {#resolvesync}
 
-데이터 재동기화를 트리거할 때 데이터가 업데이트되고 권장 사항 단위와 같은 UI 구성 요소에 반영되는 데 최대 1시간이 걸릴 수 있습니다. 그러나 한 시간을 기다린 후에도 카탈로그와 스토어에 표시되는 내용 간의 불일치를 여전히 감지하거나 카탈로그 동기화가 실패한 경우 다음을 참조하십시오.
+데이터 재동기화를 트리거할 때 데이터를 업데이트하고 추천 단위와 같은 UI 구성 요소에 반영되기까지 최대 1시간이 걸릴 수 있습니다. 그러나 한 시간 동안 기다린 후에도 여전히 카탈로그와 상점에 표시되는 항목 사이에 불일치가 있거나 카탈로그 동기화가 실패한 경우 다음을 참조하십시오.
 
 ### 데이터 불일치
 
-1. 해당 제품의 세부 보기를 검색 결과에 표시합니다.
-1. JSON 출력을 복사하고에 있는 콘텐츠와 일치하는지 확인합니다 [!DNL Commerce] 카탈로그
-1. 컨텐츠가 일치하지 않는 경우 공백이나 기간 추가 등 카탈로그의 제품을 약간 변경합니다.
-1. 재동기화 또는 [수동 재동기화 트리거](#resync).
+1. 검색 결과에 해당 제품에 대한 세부 보기를 표시합니다.
+1. JSON 출력을 복사하고 콘텐츠가 의 내용과 일치하는지 확인합니다. [!DNL Commerce] 카탈로그.
+1. 콘텐츠가 일치하지 않으면 공백 또는 마침표 추가와 같이, 카탈로그의 제품에 약간의 변경 작업을 수행합니다.
+1. 재동기화 대기 또는 [수동 재동기화 트리거](#resync).
 
 ### 동기화가 실행되고 있지 않음
 
-동기화가 일정에서 실행되고 있지 않거나 아무 것도 동기화되지 않는 경우 [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+동기화가 일정에 따라 실행되고 있지 않거나 동기화되지 않은 경우 [기술 자료](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### 동기화 실패
 
-카탈로그 동기화 상태가 **실패**, 제출 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+카탈로그 동기화 상태가 인 경우 **실패**, 제출 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## 명령줄 인터페이스 {#resynccmdline}
 
-다음 `saas:resync` 명령은 다음 중 일부입니다. `magento/saas-export` 패키지. 다음 중 하나를 사용하여 이 패키지를 설치할 수 있습니다 [!DNL Commerce Services] 와 같은 제품 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 또는 [[!DNL Live Search]](/help/live-search/install.md).
+다음 `saas:resync` 명령은 의 일부임 `magento/saas-export` 패키지. 다음 중 하나를 사용하여 이 패키지를 설치할 수 있습니다. [!DNL Commerce Services] 다음과 같은 제품 [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) 또는 [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
-> 처음으로 데이터 동기화를 실행할 때는 `productattributes` 먼저 피드, 그 다음 `productoverrides`를 실행하기 전에 `products` 피드.
+> 데이터 동기화를 처음 실행할 때 `productattributes` 먼저 피드, 그 다음 `productoverrides`, 를 실행하기 전에 `products` 피드.
 
 명령 옵션:
 
@@ -121,20 +121,20 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 
 | 매개 변수 | 설명 | 필수? |
 |---| ---| ---|
-| `feed` | 다시 동기화할 엔터티(예: `products` | 예 |
-| `no-reindex` | 기존 카탈로그 데이터를에 다시 제출 [!DNL Commerce Services] 다시 색인화하지 않습니다. 이 매개 변수를 지정하지 않으면 데이터를 동기화하기 전에 명령이 전체 재색인을 실행합니다. | 아니요 |
+| `feed` | 재동기화할 엔터티(예: ) 지정 `products` | 예 |
+| `no-reindex` | 기존 카탈로그 데이터를 (으)로 다시 제출 [!DNL Commerce Services] 색인 재지정 없이 이 매개 변수를 지정하지 않으면 명령은 데이터를 동기화하기 전에 전체 색인 재지정을 실행합니다. | 아니요 |
 
 피드 이름은 다음 중 하나일 수 있습니다.
 
 - `products`— 카탈로그의 제품
-- `categories`— 카탈로그의 카테고리
-- `variants`— 색상 및 크기와 같은 구성 가능한 제품의 제품 변형
-- `productattributes`— 다음과 같은 제품 속성 `activity`, `gender`, `tops`, `bottoms`, 기타 등
-- `productoverrides`— 카테고리 권한을 기반으로 하는 규칙과 같은 고객별 가격 및 카탈로그 가시성 규칙
+- `categories`— 카탈로그의 범주
+- `variants`— 구성 가능한 제품의 색상 및 크기와 같은 제품 변형
+- `productattributes`— 다음과 같은 제품 속성 `activity`, `gender`, `tops`, `bottoms`등
+- `productoverrides`— 고객별 가격 책정 및 카탈로그 표시 규칙(예: 범주 권한에 따른 규칙)
 
-명령줄에서 데이터 재동기화를 트리거하면 데이터가 업데이트되는 데 최대 1시간이 걸릴 수 있습니다.
+명령줄에서 데이터 재동기화를 트리거할 때 데이터를 업데이트하는 데 최대 1시간이 걸릴 수 있습니다.
 
-사용 중인 경우 [SaaS 가격 인덱싱](../price-index/index.md) 다시 동기화해야 하는 경우 다음 명령을 실행합니다.
+을 사용하는 경우 [SaaS 가격 인덱싱](../price-index/index.md) 다시 동기화해야 하는 경우 다음 명령을 실행합니다.
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -144,13 +144,13 @@ bin/magento saas:resync --feed=prices
 
 ### 예
 
-다음 예제에서는 [!DNL Commerce] 카탈로그 및 재동기화:
+다음 예제에서는 의 제품 데이터를 다시 인덱싱합니다 [!DNL Commerce] 카탈로그를 만들고 Commerce 서비스에 다시 동기화합니다.
 
 ```bash
 bin/magento saas:resync --feed products
 ```
 
-제품의 전체 재색인을 실행하지 않으려면 이미 생성된 제품 데이터를 대신 동기화할 수 있습니다.
+제품의 전체 색인 재지정을 실행하지 않으려면 대신 이미 생성된 제품 데이터를 동기화할 수 있습니다.
 
 ```bash
 bin/magento saas:resync --feed products --no-reindex
