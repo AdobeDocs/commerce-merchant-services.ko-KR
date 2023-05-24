@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 관리 패널의 일반 버전 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++관리 패널 업데이트
+
+2023년 5월 23일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-489 --> 이제 **새 계정** 의 구성 요소 [!DNL Quick Checkout] 보고 페이지에 Spectrum 포함 [워크플로 아이콘](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _2023년 4월 25일_
 
