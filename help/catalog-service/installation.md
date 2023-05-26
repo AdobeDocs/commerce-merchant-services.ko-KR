@@ -2,7 +2,7 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 3d7a38fc81265897615896812d49a164a21d1d84
+source-git-commit: 742af84407943e7df47f986717b6dc31dc067863
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Commerce Cloud 인스턴스에 대한 카탈로그 서비스 확장을 설치하
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.1.0"
+  "magento/catalog-service": "^2.2.0"
 }
 ```
 
@@ -91,7 +91,7 @@ composer update
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.1.0"
+    "magento/catalog-service": "^2.2.0"
 }
 ```
 
