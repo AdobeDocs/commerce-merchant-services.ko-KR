@@ -2,7 +2,7 @@
 title: "패싯"
 description: "[!DNL Live Search] 패싯은 속성 값의 여러 차원을 검색 기준으로 사용합니다."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
+source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 [!DNL Live Search] 는 최대 다음 지원:
 
-* 패싯으로 구성된 200개 속성
+* 패싯으로 구성된 100개 속성
 * 정렬 가능한 속성 50개
 * 필터링 가능한 특성 200개
 * 검색 가능한 속성 200개
