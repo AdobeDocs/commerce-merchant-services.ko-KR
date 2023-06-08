@@ -4,9 +4,9 @@ description: SaaS 가격 색인을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ PHP 코어 가격 인덱서는 타사 확장 프로그램 또는 기타 다른 �
 
 제품 유형, 가격 복잡성, 카탈로그 크기 등의 요소에 따라 SaaS 가격 색인화가 스토어에 적합한 솔루션이 될 수 있습니다. 다음 제한 사항을 읽고 이것이 사이트에 적합한 솔루션인지 확인하십시오.
 
-현재 SaaS 가격 색인화는 단순, 그룹, 가상, 구성 및 번들 동적 제품 유형을 지원합니다.
-다운로드 가능, 기프트 카드 및 번들 고정 제품 유형에 대한 지원이 곧 제공됩니다.s
+현재 SaaS 가격 인덱싱은 단순, 그룹화, 가상, 구성 및 [동적 번들](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) 제품 유형.
+다운로드 가능, 기프트 카드 및 번들 고정 제품 유형에 대한 지원이 곧 제공될 예정입니다.
 
 새 피드를 와 수동으로 동기화해야 함 `resync` [CLI 명령](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 그렇지 않으면 표준 동기화 프로세스에서 데이터가 새로 고쳐집니다. 에 대한 자세한 정보 보기 [카탈로그 동기화](../landing/catalog-sync.md) 프로세스.
 
