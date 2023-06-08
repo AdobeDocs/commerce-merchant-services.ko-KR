@@ -2,9 +2,9 @@
 title: Commerce Services 커넥터
 description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하려면 Adob
 
 ## 카탈로그 동기화
 
-다음의 경우 [!DNL Commerce] 인스턴스가 성공적으로 연결 [!DNL Commerce Services], 카탈로그 동기화 프로세스가 [!DNL Commerce] 서버 대상 [!DNL Commerce Services]. [자세히 알아보기](catalog-sync.md) 카탈로그 동기화 프로세스 정보.
+다음의 경우 [!DNL Commerce] 인스턴스가 성공적으로 연결 [!DNL Commerce Services], 카탈로그 동기화 프로세스가 [!DNL Commerce] 서버 대상 [!DNL Commerce Services]. 현재 Recommendations 제품만 카탈로그 동기화 서비스를 사용합니다. [자세히 알아보기](catalog-sync.md) 카탈로그 동기화 프로세스 정보.
