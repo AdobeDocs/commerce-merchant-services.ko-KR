@@ -4,9 +4,9 @@ description: 설치 후 다음을 구성할 수 있습니다. [!DNL Payment Serv
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: f14b4a1abe9c0f85dc9f070467f94819c1fe89e6
+source-git-commit: c28b86f3a0ff0aae06a4ee8a60b2b9f304295ff8
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 1. 체크아웃 시 표시된 대로 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout Title]** 필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
 1. 토글 선택기를 사용하여 활성화 또는 비활성화 [!DNL PayPal smart button] 기능 표시:
+
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
@@ -150,12 +151,13 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
    - **[!UICONTROL Show PayPal Pay Later message]**
    - **[!UICONTROL Show Venmo button]**
    - **[!UICONTROL Show Apple Pay button]**
+   - **[!UICONTROL Show PayPal Credit and Debit Card button]**
 
-      >[!NOTE]
-      >
-      > Apple을 사용하려면 다음 작업을 수행하십시오 [은(는) Apple 샌드박스 테스터 계정이 있어야 합니다.](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (가짜 신용 카드 및 청구 정보로 완료) 테스트하십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 _또는_ 프로덕션 모드, 완료 후 [테스트 및 유효성 검사](test-validate.md#test-in-sandbox-environment), 완료 [을 사용한 자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션만 해당) 및 [스토어에 맞게 구성 [!DNL Payment Services]](settings.md#payment-buttons).
+     >[!NOTE]
+     >
+     > Apple을 사용하려면 다음 작업을 수행하십시오 [은(는) Apple 샌드박스 테스터 계정이 있어야 합니다.](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (가짜 신용 카드 및 청구 정보로 완료) 테스트하십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 _또는_ 프로덕션 모드, 완료 후 [테스트 및 유효성 검사](test-validate.md#test-in-sandbox-environment), 완료 [을 사용한 자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션만 해당) 및 [스토어에 맞게 구성 [!DNL Payment Services]](settings.md#payment-buttons).
 
-      가시성을 결제 버튼 또는 PayPal 나중에 결제 메시지로 전환하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다.
+     가시성을 결제 버튼 또는 PayPal 나중에 결제 메시지로 전환하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다.
 
 1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
 1. 클릭 **[!UICONTROL Save]**.
@@ -178,6 +180,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 | [!UICONTROL Show PayPal Pay Later Message] | 웹 사이트 | 장바구니, 제품 페이지, 미니 장바구니에서, 그리고 체크아웃 흐름 동안 나중에 결제 메시지를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Venmo button] | 스토어 뷰 | 결제 버튼이 표시되는 Venmo 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show Apple Pay button] | 스토어 뷰 | 결제 버튼이 표시되는 Apple 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | 스토어 뷰 | 결제 버튼이 표시되는 신용 및 직불 카드 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### 단추 스타일
@@ -198,6 +201,8 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
    레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다.
 
+   ![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="500"}
+
 1. 클릭 **[!UICONTROL Save]**.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
@@ -217,6 +222,19 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 | [!UICONTROL Responsive Button Height] | 스토어 뷰 | 결제 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | 스토어 뷰 | 결제 버튼의 높이를 정의합니다. 기본값: 없음 |
 | [!UICONTROL Label] | 스토어 뷰 | 결제 버튼에 표시되는 레이블을 정의합니다. 옵션: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## 역할 구성
+
+관리자 사용자가 상거래 관리자에서 주문을 만들고 관리할 수 있도록 하려면 다음을 활성화합니다 [!DNL Payment Services]- 사용자 역할별 리소스.
+
+다음을 참조하십시오 [사용자 역할](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) 역할 관리 방법을 알아봅니다.
+
+역할에 리소스를 할당할 때 다음을 선택해야 합니다.
+
+- **결제 방법[!DNL Payment Services]**—이 리소스는 관리에서 주문을 만들 때 [!DNL Payment Services] 신용 카드는 결제 방법으로 사용할 수 있습니다. 을(를) 선택하는 경우 **작업** 상위 리소스. 이 리소스도 선택됩니다.
+- **[!DNL Payment Services]**—이 리소스에는 **대시보드** 및 **SaaS 서비스 프록시** 리소스. 또한 선택해야 합니다. 다음을 확인합니다. [!DNL Payment Services] 에 표시 _판매_ 메뉴 아래의 제품에서 사용할 수 있습니다.
+
+  ![결제 서비스 리소스](assets/roles-payments.png)
 
 ## 캐시 초기화
 

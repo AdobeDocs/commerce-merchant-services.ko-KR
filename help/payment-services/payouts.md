@@ -4,9 +4,9 @@ description: 지급 보고서를 사용하여 재무 조정을 위해 결제 금
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # 지급 보고서
 
 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 에서는 상점의 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
-
-![재무 보고서 보기](assets/reports-justpayouts.png)
 
 사용 가능한 두 가지 지급 보고 보기를 통해 모든 지급 횟수에 대한 자세한 정보를 볼 수 있습니다.
 
@@ -34,7 +32,7 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 데이터 시각화 차트(크레딧 대 차변) 및 시간 경과에 따른 이동 평균 보기.
 
-![관리자의 지급 데이터 시각화](assets/payouts-report.png)
+![관리자의 지급 데이터 시각화](assets/payouts-report.png){zoomable=yes}
 
 클릭 **[!UICONTROL View Report]** 자세한 표 형식으로 이동 [지급 보고서 보기](#payouts-report-view).
 
@@ -70,13 +68,13 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** 자세한 테이블 형식 일시 중단 보고서 보기를 보려면 다음과 같이 하십시오.
 
-![관리자의 지급 거래](assets/payouts-report-new.png)
+![관리자의 지급 거래](assets/payouts-report-new.png){zoomable=yes}
 
 이 항목의 섹션에 따라 이 보기를 구성하여 보려는 데이터를 가장 잘 표시할 수 있습니다.
 
 관리자의 지급 보고서 내에서 연결된 상거래 주문 및 거래 ID, 거래 금액, 거래당 결제 방법 등을 모두 참조하십시오.
 
-기존 회계 또는 주문 관리 소프트웨어에서 사용할 수 있도록 지급 트랜잭션을 .csv 파일 형식으로 다운로드할 수 있습니다.
+다음을 수행할 수 있습니다. [지급 거래 다운로드](#download-transactions) 기존 회계 또는 order management 소프트웨어에서 사용할 .csv 파일 형식으로.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ ht-degree: 0%
 
 지급액 보고서 보기에서 데이터 소스를 선택할 수 있습니다—_[!UICONTROL Live]_또는_[!UICONTROL Sandbox]_- 보고서 결과를 보려는 경우
 
-![데이터 소스 선택](assets/datasource.png)
+![데이터 소스 선택](assets/datasource.png){width=400px}
 
-If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며 라이브 스토어에 대한 보고서 정보를 볼 수 있습니다. If [!UICONTROL Sandbox]은(는) 선택한 데이터 소스이며, 샌드박스 환경에 대한 보고서 정보를 볼 수 있습니다.
+If _[!UICONTROL Live]_는 선택한 데이터 소스이며, 프로덕션 모드에서 저장소에 대한 보고서 정보를 볼 수 있습니다. If_[!UICONTROL Sandbox]_ 은 선택한 데이터 소스이며 샌드박스 모드에서 보고서 정보 저장소를 볼 수 있습니다.
 
 데이터 소스 선택은 다음과 같이 작동합니다.
 
@@ -154,27 +152,27 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며 라이브 스토
 | [!UICONTROL Code] | 크레딧(*CR*) 또는 차변 (*DR*) |
 | [!UICONTROL Reference ID] | 이 이벤트와 관련된 원래 거래 ID |
 | [!UICONTROL Invoice] | 거래의 송장 ID(주문당 하나) |
-| [!UICONTROL Commerce order] | 상거래 주문 ID <br> <br>관련 항목 보기 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 클릭하고 ID를 클릭합니다. |
-| [!UICONTROL Commerce trans] | 상거래 거래 ID <br> <br>관련 항목 보기 [거래 정보](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}를 클릭하고 ID를 클릭합니다. |
-| [!UICONTROL Pay method] | 신용 카드 유형—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—및 연결된 카드 공급자(예: *비자* 또는 *MasterCard*) |
-| [!UICONTROL Trans amt] | 거래 금액 |
-| [!UICONTROL Cur] | 거래 금액에 대한 통화 단위 |
-| [!UICONTROL Pending] | 아직 지불되지 않은 금액 |
-| [!UICONTROL Cur] | 보류 중인 금액에 대한 통화 단위 |
-| [!UICONTROL Seller amt] | 고객에게 이전되거나 고객으로부터 이전된 자금 금액 <br> <br>판매자 계정에서 이동하는 자금은 대시(-) 접두사를 보여 줍니다. |
-| [!UICONTROL Cur] | 판매자 금액에 대한 통화 단위 |
-| [!UICONTROL Partner fee] | 거래와 연계된 파트너 수수료 <br> <br>파트너 수수료 계정에서 이동하는 자금은 대시(-) 접두사를 보여 줍니다. |
-| [!UICONTROL Cur] | 파트너 비용에 대한 통화 단위 |
-| [!UICONTROL Prov fees] | 거래와 연계된 수수료 <br> <br>공급자의 수수료 계정에서 이동하는 자금은 대시(-) 접두사를 보여 줍니다. |
-| [!UICONTROL Cur] | 제공업체 수수료에 대한 통화 단위 |
-| [!UICONTROL Fee %] | 수수료로 청구된 거래 금액의 백분율 |
-| [!UICONTROL Fixed fee] | 고정 공급자 수수료 금액 |
-| [!UICONTROL Chbk fee] | 거래와 연계된 비용 청구 수수료 <br> <br>대시(-) 접두사는 비용 산출 비용이 반전되었음을 나타냅니다. |
-| [!UICONTROL Cur] | 비용 청구 요금에 대한 통화 단위 |
-| [!UICONTROL Hold amt] | 보류 또는 보류 해제 금액 <br> <br>대시(-) 접두사는 보류 중인 자금이 해제되고 있음을 나타냅니다. |
-| [!UICONTROL Cur] | 보류 금액에 대한 통화 단위 |
-| [!UICONTROL Recoup amt] | 회수 계정에서 회수된 금액 <br> <br>수취 계좌에서 빠져나가는 자금은 대시(-) 접두사를 보여 줍니다. |
-| [!UICONTROL Cur] | 배상 금액에 대한 통화 단위 |
+| [!UICONTROL Commerce order] | 상거래 주문 ID <br> <br>관련 항목 보기 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html)를 클릭하고 ID를 클릭합니다. |
+| [!UICONTROL Commerce trans] | 상거래 거래 ID |
+| [!UICONTROL Pay method] | 신용 카드 유형—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—및 연결된 카드 공급자(예: *비자* 또는 *MasterCard*) |
+| [!UICONTROL TRANS AMT] | 거래 금액 |
+| [!UICONTROL CUR] | 거래 금액에 대한 통화 단위 |
+| [!UICONTROL PENDING] | 아직 지불되지 않은 금액 |
+| [!UICONTROL CUR] | 보류 중인 금액에 대한 통화 단위 |
+| [!UICONTROL SELLER AMT] | 고객에게 이전되거나 고객으로부터 이전된 자금 금액 <br> <br>판매자 계정에서 이동하는 자금은 대시(-) 접두사를 보여 줍니다. |
+| [!UICONTROL CUR] | 판매자 금액에 대한 통화 단위 |
+| [!UICONTROL PARTNER FEE] | 거래와 연계된 파트너 수수료 <br> <br>파트너 수수료 계정에서 이동하는 자금은 대시(-) 접두사를 보여 줍니다. |
+| [!UICONTROL CUR] | 파트너 비용에 대한 통화 단위 |
+| [!UICONTROL PROV FEES] | 거래와 연계된 수수료 <br> <br>공급자의 수수료 계정에서 이동하는 자금은 대시(-) 접두사를 보여 줍니다. |
+| [!UICONTROL CUR] | 제공업체 수수료에 대한 통화 단위 |
+| [!UICONTROL FEE %] | 수수료로 청구된 거래 금액의 백분율 |
+| [!UICONTROL FIXED FEE] | 고정 공급자 수수료 금액 |
+| [!UICONTROL CHBK FEE] | 거래와 연계된 비용 청구 수수료 <br> <br>대시(-) 접두사는 비용 산출 비용이 반전되었음을 나타냅니다. |
+| [!UICONTROL CUR] | 비용 청구 요금에 대한 통화 단위 |
+| [!UICONTROL HOLD AMT] | 보류 또는 보류 해제 금액 <br> <br>대시(-) 접두사는 보류 중인 자금이 해제되고 있음을 나타냅니다. |
+| [!UICONTROL CUR] | 보류 금액에 대한 통화 단위 |
+| [!UICONTROL RECOUP AMT] | 회수 계정에서 회수된 금액 <br> <br>수취 계좌에서 빠져나가는 자금은 대시(-) 접두사를 보여 줍니다. |
+| [!UICONTROL CUR] | 배상 금액에 대한 통화 단위 |
 
 ### 거래 유형
 

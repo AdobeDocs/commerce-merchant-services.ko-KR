@@ -2,9 +2,9 @@
 title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 [!DNL PayPal Smart Buttons]: PayPal을 사용하여 구매를 완료하고 나중에 사용할 수 있도록 쇼핑객의 배송 주소, 청구 주소 및 결제 세부 정보를 저장합니다. 쇼핑객은 PayPal에서 이전에 저장하거나 제공하는 결제 방법을 사용할 수 있습니다.
 
-![[!DNL PayPal Smart Buttons] 옵션](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="500"}
 
 다음을 구성할 수 있습니다. [!UICONTROL PayPal Smart Buttons] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
 
@@ -67,6 +67,14 @@ ht-degree: 0%
 >
 > 사용 [!DNL Apple Pay] 스토어의 경우, 완료 [을 사용한 자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션만 해당) 및 [스토어에 맞게 구성 [!DNL Payment Services]](settings.md#payment-buttons).
 
+### PayPal 직불 또는 신용카드 단추
+
+고객은 PayPal 직불 또는 신용카드 버튼을 사용하여 체크아웃할 수 있습니다.
+
+PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 수 있습니다.
+
+이 옵션은 대체 신용 카드 공급자가 없을 때 쇼핑객에게 PayPal 직불 또는 신용 카드 결제 옵션을 제공하는 데 사용할 수 있습니다.
+
 ### [!DNL Pay Later] 단추
 
 고객에게 단기, 무이자 결제 및 기타 금융 옵션을 제공하여 지금 구입하고 나중에 다음과 같이 결제할 수 있도록 하십시오. [!DNL Pay Later] 단추를 클릭합니다.
@@ -76,9 +84,9 @@ ht-degree: 0%
 * **고객이 $30에서 $600 사이의 제품을 선택할 때**, PayPal 및 [!DNL Pay Later] 단추는 고객에게 다음에 대한 자세한 정보를 제공합니다. [!DNL Pay in 4] 결제 옵션. 고객은 다음을 클릭할 수 있습니다 **자세히 알아보기** 에 대해 알아보려면[!DNL Pay in 4]&quot; 옵션 _또는_ 팝업에서 &quot;또는 6개월 특별 자금 조달&quot; 텍스트를 클릭하여 PayPal 크레딧 옵션에 대해 알아보고 신청합니다.
 * **고객이 $98.99를 초과하는 제품을 선택할 때**, PayPal 및 [!DNL Pay Later] 버튼은 고객에게 PayPal 신용 결제 옵션에 대한 자세한 정보를 제공합니다. 고객은 다음을 클릭할 수 있습니다 **자세히 알아보기** payPal 크레딧 옵션에 대해 알아보고 신청하려면 _또는_ 팝업에서 &quot;또는 4로 결제&quot; 텍스트를 클릭하여 [!DNL Pay in 4] 옵션을 선택합니다.
 
-   >[!NOTE]
-   >
-   >위에 나열된 금액은 변경될 수 있습니다.
+  >[!NOTE]
+  >
+  >위에 나열된 금액은 변경될 수 있습니다.
 
 다음을 참조하십시오 [설정](settings.md#payment-buttons) 을(를) 비활성화/활성화하는 방법에 대해 알아보려면 [!DNL Pay Later] 메시지.
 
@@ -93,6 +101,29 @@ ht-degree: 0%
 
 최종 주문 금액을 아직 알 수 없고(예: 배송 주소 정보가 없는 경우) 고객이 제품 페이지, 미니 장바구니 또는 장바구니에서 체크아웃을 진행 중인 경우 _계속_ 버튼을 대신 사용할 수 있습니다. 고객이 클릭 시 _계속_, 결제 방법을 확인한 후 체크아웃을 완료하기 전에 필요한 세부 정보를 수집하기 위한 주문 검토 페이지로 이동합니다.
 
+## PayPal 결제 버튼만 사용
+
+스토어를 프로덕션 모드로 빠르게 전환하려면 다음을 구성할 수 있습니다. _전용_ PayPal 결제 버튼(Venmo, PayPal 등)—PayPal 신용카드 결제 옵션을 사용하지 않습니다.
+
+이를 통해 다음을 수행할 수 있습니다.
+
+* PayPal을 통해 신용카드 승인을 신청하지 않고도 고객을 위한 다양한 결제 옵션을 제공합니다.
+* PayPal의 다른 결제 옵션을 활용하면서 신용 카드 결제를 위해 기존 신용카드 제공업체를 이용하십시오.
+* PayPal이 신용 카드를 지원하지 않는 지역에서 PayPal의 결제 버튼을 결제 옵션으로 사용합니다.
+
+종료 **다음을 사용하여 결제 캡처 _전용_ PayPal 결제 단추(_아님_ payPal 신용카드 결제 옵션)**:
+
+1. 저장소가 다음과 같은지 확인합니다. [프로덕션 모드에서](settings.md#enable-payment-services).
+1. [원하는 PayPal 결제 버튼 구성](settings.md#payment-buttons) 설정 을 참조하십시오.
+1. 회전 _끔_ 다음 **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** 의 옵션 _[!UICONTROL Payment buttons]_섹션.
+
+종료 **기존 신용 카드 공급자로 결제 캡처 _및_ PayPal 결제 단추**:
+
+1. 저장소가 다음과 같은지 확인합니다. [프로덕션 모드에서](settings.md#enable-payment-services).
+1. [원하는 PayPal 결제 버튼 구성](settings.md#payment-buttons).
+1. 회전 _끔_ 다음 **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** 의 옵션 _[!UICONTROL Payment buttons]_섹션.
+1. 회전 _끔_ 다음 **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** 의 옵션 _[!UICONTROL Credit card fields]_섹션 및 사용 [기존 신용카드 제공업체 계정](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## 주문 다시 계산
 
 고객이 미니 장바구니, 장바구니 또는 제품 페이지에서 체크아웃 플로우를 입력하면 PayPal 팝업 창에서 선택한 배송 주소를 볼 수 있는 주문 검토 페이지로 이동합니다. 고객이 배송 방법을 선택한 후 주문 금액이 적절하게 재계산되어 배송비와 세금을 볼 수 있습니다.
@@ -100,14 +131,6 @@ ht-degree: 0%
 고객이 체크아웃 페이지에서 체크아웃 플로우를 입력하면 시스템에서 배송 주소와 최종 계산된 금액을 이미 알고 있으며 합계가 적절히 표시됩니다.
 
 납세의무자, 운송비, 판매세는 장소마다 매우 다양할 수 있다. 다음 이후 [!DNL Payment Services] 배송 주소 및 요금을 받으면 적용 가능한 모든 비용을 빠르게 다시 계산하고 체크아웃 마지막 단계에서 적절하게 표시합니다.
-
-## 제품 페이지에서 체크아웃
-
-고객이 제품 페이지에서 직접 체크아웃할 때 PayPal 또는 [!DNL Pay Later] 단추는 현재 제품 페이지에 표시된 항목만 구매합니다. 고객의 장바구니에 이미 있는 항목은 체크아웃 플로우에 추가되지 않으며 구매되지 않습니다.
-
-고객이 주문을 취소하면 현재 제품 페이지의 항목이 고객의 장바구니에 추가되어 장바구니에 있는 다른 항목과 연결됩니다. 이 기능을 사용하면 고객이 현재 보고 있는 항목을 빠르게 구매하는 동시에 이전에 제품을 탐색할 때 장바구니에 추가한 다른 항목도 유지할 수 있습니다.
-
-고객이 제품 페이지에서 체크아웃 플로우를 입력하면 체크아웃 페이지가 간소화되며 보기에는 주문 관련 데이터와 옵션만 표시됩니다.
 
 ## 신용 카드 보관
 

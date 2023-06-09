@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ ht-degree: 0%
 이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2023년 6월 9일_
+
+![신규](../assets/new.svg)<!-- Issue PAY-4288 --> 상인들은 이제 [구성 _전용_ PayPal 결제 단추](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)- 및 _아님_ PayPal 신용카드 결제 옵션을 사용하여 PayPal 신용카드 승인을 신청하지 않고 다양한 결제 옵션을 제공합니다.
+
+![신규](../assets/new.svg)<!-- Issue PAY-4050 --> 을(를) 추가함 [데이터 시각화 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)주문 결제 상태 보고서에 대해 결제 서비스 홈에 표시됩니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4486--> 이전에는 PayPal PayLater 단추가 영국 상인의 체크아웃에 표시되지 않았습니다. 해당 문제는 해결되었습니다.
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4485--> 이제 결제 서비스를 사용하지 않도록 설정한 경우 보고서 데이터 시각화 보기가 결제 서비스 홈에 표시됩니다.
 
 _2023년 1월 25일_
 
@@ -56,6 +66,22 @@ _2021년 6월 28일_
 ![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
+
+## v2.1.0
+
+_2023년 6월 9일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![신규](../assets/new.svg)<!-- Issue xxx --> Adobe Commerce 2.4.7-beta1에 대한 지원이 추가되었습니다.
+
+![신규](../assets/new.svg)<!-- Issue xxx --> 추가됨 [다음 국가 및 관련 통화의 가용성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): 호주, 프랑스, 영국.
+
+![신규](../assets/new.svg)<!-- Issue PAY-4296 --> 추가됨 [관리자 역할을 위한 리소스 확장](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 를 사용하면 관리자가 고객에 대한 주문을 만들고 관리할 수 있으며 판매 메뉴에서 결제 서비스를 볼 수 있습니다.
+
+![신규](../assets/new.svg)<!-- Issue PAY-4236 --> 추가됨 [체크아웃 중에 오류가 발생하는 주문에 대한 자동 무효화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![신규](../assets/new.svg)<!-- Issue PAY-4183 --> 이(가) 기능을 만든 대상: [신용/직불 카드 결제 옵션 버튼 표시](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) 체크아웃 페이지에서 확인할 수 있습니다.
 
 ## v2.0.0
 
