@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ Experience Platform 커넥터에서 사용하는 확장과 관련된 기능 변�
 이러한 릴리스 노트는 Experience Platform 커넥터에서 사용하는 확장과 관련된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++지원되는 서비스 업데이트
+
+_2023년 6월 10일_
+
+* ![수정](../assets/fix.svg) - 다음과 같은 경우 문제가 해결되었습니다. `orderId` 상거래 주문 식별자의 접두사로 인해 이(가) 컨텍스트에서 전달되지 않았습니다.
+* ![수정](../assets/fix.svg) - 콘텐츠 보안 정책 구성을 업데이트했습니다.
 
 _2023년 3월 30일_
 
