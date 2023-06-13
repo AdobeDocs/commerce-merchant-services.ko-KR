@@ -2,9 +2,9 @@
 title: "규칙 추가"
 description: "만드는 방법 알아보기 [!DNL Live Search] 규칙."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ ht-degree: 0%
 * 없음: 관련성을 기준으로 제품 주문
 
 1. 규칙에 대한 전략 유형을 선택합니다. 규칙 테스트 창에 예상 결과가 표시됩니다.
+
+>[!NOTE]
+>
+>쿼리에서 아포스트로피와 인용 부호를 사용하면 일부 언어에서 순위 및 관련성과 관련된 사소한 문제가 발생할 수 있습니다.
 
 ## 이벤트 추가
 

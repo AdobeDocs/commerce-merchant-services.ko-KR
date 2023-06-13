@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ ht-degree: 0%
 ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![버그](../assets/bug.svg) 알려진 문제
 
+
+_2023년 6월 13일_
+
+![신규](../assets/new.svg) 이제 라이브 검색에서 5개 더 지원 [구성 값](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![수정](../assets/fix.svg) 따옴표나 아포스트로피와 같은 일부 문자로 인해 순위 문제가 발생하는 문제가 해결되었습니다. 리인덱싱하면 이러한 문제가 해결됩니다.
 
 _2023년 4월 25일_
 

@@ -2,9 +2,9 @@
 title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+source-git-commit: 8f842732334dc8b1f8ebdf76310e16abe4e6b1b6
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,31 @@ ht-degree: 0%
 
 ### PWA 지원
 
-모든 PWA이 로 테스트되지 않았으므로 라이브 검색 지원은 Beta 상태로 간주됩니다. [!DNL Live Search]. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다.
+[!DNL Live Search] 은 PWA Studio에서 작동하지만 다른 Commerce 구현에 비해 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
 
-* 의 현재 베타 PWA 구현 [!DNL Live Search] 검색 결과를 반환하는 데 보다 많은 처리 시간이 필요합니다. [!DNL Live Search] 기본 Commerce 상점 포함.
-* [!DNL Live Search] PWA에서 을(를) 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* 의 현재 PWA 구현 [!DNL Live Search] 검색 결과를 반환하는 데 보다 많은 처리 시간이 필요합니다. [!DNL Live Search] 기본 Commerce 상점 포함.
+* [!DNL Live Search] PWA에서 을(를) 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 이로 인해 지능형 머천다이징이 작동하지 않습니다.
 * 바로 필터링 `description`, `name`, `short_description` 과 함께 사용할 경우 GraphQL에서 지원되지 않음 [PWA](https://developer.adobe.com/commerce/pwa-studio/), 하지만 더 일반적인 필터와 함께 반환됩니다.
+
+사용 [!DNL Live Search] PWA Studio을 사용하는 통합자는 다음 작업도 수행해야 합니다.
+
+1. 설치 [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. 설정 `environmentId` 다음에서 `storeDetails` 개체.
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
 
 ### 현재 지원되지 않음
 

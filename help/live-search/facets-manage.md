@@ -2,9 +2,9 @@
 title: "Facet 관리"
 description: "기존 항목 관리 방법 알아보기 [!DNL Live Search] 패싯."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ ht-degree: 0%
 핀이 회색으로 바뀌고 패싯이 로 이동합니다. *동적 패싯* 섹션.
 
    ![고정 및 동적 패싯](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>이름이 같은 레이블이 두 개 있는 경우 고정된 패싯 순서가 일치하지 않을 수 있습니다.
 
 ## 고정 패싯 이동
 
