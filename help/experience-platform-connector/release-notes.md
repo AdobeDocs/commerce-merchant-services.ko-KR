@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
+source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,14 @@ _2022년 10월 12일_
 * ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support)
 
 +++
+
+## 3.0.0-Beta1
+
+_2023년 6월 13일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+* ![신규](../assets/new.svg) - (Beta) 다음에 대한 기능 추가됨 [이전 주문 보내기](connect-data.md#beta-send-historical-order-data) Experience Platform에 대한 데이터 및 상태.
 
 ## 2.2.0
 
