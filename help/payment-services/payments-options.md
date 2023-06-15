@@ -2,9 +2,9 @@
 title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 �
 
 이를 통해 다음을 수행할 수 있습니다.
 
-* PayPal을 통해 신용카드 승인을 신청하지 않고도 고객을 위한 다양한 결제 옵션을 제공합니다.
+* Venmo 및 PayPal 결제 버튼을 포함하여 고객을 위한 다양한 결제 옵션을 제공하고, PayPal 호스팅 카드 필드를 끄고 기존 신용카드 제공업체를 이용할 수 있는 옵션을 제공합니다.
 * PayPal의 다른 결제 옵션을 활용하면서 신용 카드 결제를 위해 기존 신용카드 제공업체를 이용하십시오.
 * PayPal이 신용 카드를 지원하지 않는 지역에서 PayPal의 결제 버튼을 결제 옵션으로 사용합니다.
 

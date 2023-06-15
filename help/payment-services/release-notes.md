@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 _2023년 6월 9일_
 
-![신규](../assets/new.svg)<!-- Issue PAY-4288 --> 상인들은 이제 [구성 _전용_ PayPal 결제 단추](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)- 및 _아님_ PayPal 신용카드 결제 옵션을 사용하여 PayPal 신용카드 승인을 신청하지 않고 다양한 결제 옵션을 제공합니다.
+![신규](../assets/new.svg)<!-- Issue PAY-4288 --> 상인들은 이제 [구성 _전용_ PayPal 결제 단추](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)- 및 _아님_ payPal 신용카드 결제 옵션을 사용합니다. 이를 통해 가맹점은 벤모, 페이팔 결제 버튼 등 다양한 결제 옵션을 제공하고, 페이팔 신용카드 결제 옵션 대신 기존 신용카드 제공업체를 이용할 수 있다.
 
 ![신규](../assets/new.svg)<!-- Issue PAY-4050 --> 을(를) 추가함 [데이터 시각화 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view)주문 결제 상태 보고서에 대해 결제 서비스 홈에 표시됩니다.
 
