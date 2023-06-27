@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ ht-degree: 0%
 
 ## 현재 메이저 버전
 
-_2023년 4월 25일_
+### V1.10 릴리스
 
-![신규](../assets/new.svg) Catalog Service 고객은 이제 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
-
-### V1.7 릴리스
-
-_2023년 4월 12일_
+_2023년 6월 27일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![신규](../assets/new.svg) 이제 카탈로그 서비스가 삭제된 제품 변형을 정리합니다.
-![수정](../assets/fix.svg) 인프라 확장성 및 성능 향상
+![신규](../assets/new.svg) 이제 카탈로그 서비스가 제품 세부 사항 페이지 위젯에 관련 제품을 표시할 수 있습니다.
 
 #### 알려진 제한 사항
 
@@ -48,6 +43,15 @@ API Mesh 및 Core GraphQL API를 사용하면 다음 제한 사항을 해결할 
 * 최소 광고 가격
 * [계층 가격](mesh.md)
 * 다운로드 가능한 제품 및 기프트 카드
+
+### V1.7 릴리스
+
+_2023년 4월 12일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![신규](../assets/new.svg) 이제 카탈로그 서비스가 삭제된 제품 변형을 정리합니다.
+![수정](../assets/fix.svg) 인프라 확장성 및 성능 향상
 
 ### V1.6 릴리스
 
