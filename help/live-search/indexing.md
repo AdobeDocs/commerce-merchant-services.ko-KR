@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 색인화"
 description: "방법 알아보기 [!DNL Live Search] 는 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### 전체 색인
 
-날짜 [!DNL Live Search] 온보딩 중에 가 구성되고 동기화되므로 초기 인덱스를 만드는 데 최대 8시간이 걸릴 수 있습니다. 이 프로세스는 다음 이후에 시작됩니다. `cron` 피드를 제출하고 실행을 완료합니다.
+날짜 [!DNL Live Search] 온보딩 중에 가 구성되고 동기화되므로 초기 색인을 작성하는 데 최대 30분이 걸릴 수 있습니다. 큰 카탈로그는 색인화하는 데 시간이 더 걸릴 수 있습니다. 이 프로세스는 다음 이후에 시작됩니다. `cron` 피드를 제출하고 실행을 완료합니다.
 
 다음 이벤트는 전체 동기화 및 색인 빌드를 트리거합니다.
 
