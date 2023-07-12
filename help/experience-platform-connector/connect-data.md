@@ -2,7 +2,7 @@
 title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Beta에 대한 이전 주문 데이터 수집을 활성화하려면 프로젝트
 
 ### 이전 주문 Beta 구성
 
-고객 주문 내역을 Experience Platform에 전송하려면 상거래 인스턴스를 Experience Platform에 연결하는 자격 증명을 지정해야 합니다. 을(를) 이미 설치하고 활성화한 경우 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 모듈에서 필요한 자격 증명을 이미 지정했으므로 이 단계를 건너뛸 수 있습니다. Audience Activation 모듈을 아직 설치하고 활성화하지 않은 경우 다음 단계를 완료하십시오.
+고객 주문 내역을 Experience Platform에 전송하려면 상거래 인스턴스를 Experience Platform에 연결하는 자격 증명을 지정해야 합니다. 을(를) 이미 설치하고 활성화한 경우 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 확장에서 필요한 자격 증명을 이미 지정했으므로 이 단계를 건너뛸 수 있습니다. Audience Activation 확장을 아직 설치하고 활성화하지 않은 경우 다음 단계를 완료하십시오.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: 사용자 지정 이벤트 만들기
 description: 사용자 지정 이벤트를 만들어 Adobe Commerce 데이터를 다른 Adobe DX 제품에 연결하는 방법에 대해 알아봅니다.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 2e1a0b2a79449562a2716929084f12eeee55a159
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---

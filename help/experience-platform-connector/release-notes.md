@@ -2,9 +2,9 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _2023년 6월 10일_
 
 _2023년 3월 30일_
 
-* ![신규](../assets/new.svg) - 라는 새 확장이 추가되었습니다. `data-services-b2b` 다음을 포함 [구매요청 목록 이벤트](events.md#b2b-events) B2B 판매자용
+* ![신규](../assets/new.svg) - 라는 새 확장이 추가되었습니다. `data-services-b2b` 다음을 포함 [구매요청 목록 이벤트](events.md#b2b-events) B2B 판매자용.
 * ![신규](../assets/new.svg) - 이(가) 을(를) 추가함 `uniqueIdentifier` 필드 대상 [검색](events.md#search-events) 이벤트. 이 새 필드를 사용하면 판매자는 검색 응답에 해당하는 검색 요청을 상호 참조할 수 있습니다.
 
 _2022년 10월 12일_
 
-* ![신규](../assets/new.svg) - 2개 추가됨 [storefront 이벤트](events.md): `openCart` 및 `removeFromCart` Adobe Commerce Storefront 이벤트 SDK 및 컬렉터에 연결
-* ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support)
+* ![신규](../assets/new.svg) - 2개 추가됨 [storefront 이벤트](events.md): `openCart` 및 `removeFromCart` Adobe Commerce Storefront 이벤트 SDK 및 수집기에 연결합니다.
+* ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support).
 
 +++
 
-## 3.0.0-Beta1
+## 2.3.0
+
+_2023년 6월 27일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+* ![신규](../assets/new.svg) - 에 추가된 기능 [상점 이벤트 보내기 끄기](connect-data.md#data-collection) Experience Platform.
+* ![수정](../assets/fix.svg) - 콘텐츠 보안 정책 구성을 업데이트했습니다.
+* ![수정](../assets/fix.svg) - Commerce 2.4.7 버전의 백오피스 이벤트에 대한 지원이 수정되었습니다.
+* ![신규](../assets/new.svg) - Experience Platform 커넥터 양식에 변경 사항을 저장할 때 캐시 무효화에 대한 알림 메시지가 추가되었습니다.
+
+
+## 3.0.0-beta1(내부용)
 
 _2023년 6월 13일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-* ![신규](../assets/new.svg) - (Beta) 다음에 대한 기능 추가됨 [이전 주문 보내기](connect-data.md#beta-send-historical-order-data) Experience Platform에 대한 데이터 및 상태.
+* ![신규](../assets/new.svg) - (Beta) 다음에 대한 기능 추가됨 [이전 주문 보내기](connect-data.md#beta-send-historical-order-data) Experience Platform에 대한 데이터 및 상태. 이 기능은 Beta 사용자만 사용할 수 있습니다. 다음 주소로 이메일을 보내 Beta에 가입할 수 있습니다. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _2023년 2월 28일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-* ![신규](../assets/new.svg) - 모든 Experience Platform 커넥터 모듈에 대해 PHP 8.2에 대한 지원을 추가했습니다.
+* ![신규](../assets/new.svg) - 모든 Experience Platform 커넥터 확장에 대해 PHP 8.2에 대한 지원을 추가했습니다.
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _2022년 10월 12일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-* ![신규](../assets/new.svg) - 다음과 같은 경우 자체 AEP 웹 SDK를 지정할 수 있는 기능이 추가되었습니다. [연결 중](connect-data.md) Experience Platform에 대한 Adobe Commerce 인스턴스
-* ![수정](../assets/fix.svg) - 데이터 스트림 ID의 범위가 storeview가 아닌 웹 사이트로 지정되도록 데이터 스트림 범위 요구 사항이 업데이트되었습니다.
+* ![신규](../assets/new.svg) - 다음과 같은 경우 자체 AEP 웹 SDK를 지정할 수 있는 기능이 추가되었습니다. [연결 중](connect-data.md) Adobe Commerce 인스턴스를 Experience Platform에 추가합니다.
+* ![수정](../assets/fix.svg) - 데이터스트림 ID의 범위가 storeview가 아닌 웹 사이트로 지정되도록 데이터스트림 범위 요구 사항이 업데이트되었습니다.
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _2022년 8월 9일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-* ![신규](../assets/new.svg) - 일반 가용성 릴리스
+* ![신규](../assets/new.svg) - 일반 공급 릴리스.

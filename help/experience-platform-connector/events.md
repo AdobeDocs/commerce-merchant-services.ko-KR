@@ -2,7 +2,7 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -324,11 +324,11 @@ ht-degree: 0%
 
 | 설명 | XDM 이벤트 이름 |
 |---|---|
-| &quot;입력할 때 검색&quot; 팝오버에서 다음 이벤트에 의해 트리거됩니다.<br><br>Enter 키를 누르고 _모두 보기_<br><br>&#x200B;검색 결과 페이지에서 다음 이벤트에 의해 트리거됨:<br><br>필터 선택, 정렬 순서 변경(_정렬 기준:_), 정렬 방향 변경(오름차순 또는 내림차순), 페이지당 결과 수 변경(_페이지당 # 표시_), 다음 페이지로 이동, 이전 페이지로 이동, 다른 페이지로 이동 | `searchRequest` |
+| &quot;입력할 때 검색&quot; 팝오버의 다음 이벤트에 의해 트리거됩니다.<br><br>Enter 키를 누르고 _모두 보기_<br><br>&#x200B;검색 결과 페이지에서 다음 이벤트에 의해 트리거됨:<br><br>필터 선택, 정렬 순서 변경(_정렬 기준:_), 정렬 방향 변경(오름차순 또는 내림차순), 페이지당 결과 수 변경(_페이지당 # 표시_), 다음 페이지로 이동, 이전 페이지로 이동, 다른 페이지로 이동 | `searchRequest` |
 
 >[!NOTE]
 >
->B2B 모듈이 설치된 Adobe Commerce Enterprise Edition에서는 검색 이벤트가 지원되지 않습니다.
+>B2B 확장이 설치된 Adobe Commerce Enterprise Edition에서는 검색 이벤트가 지원되지 않습니다.
 
 #### searchRequestSent에서 수집된 데이터
 
@@ -355,7 +355,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->B2B 모듈이 설치된 Adobe Commerce Enterprise Edition에서는 검색 이벤트가 지원되지 않습니다.
+>B2B 확장이 설치된 Adobe Commerce Enterprise Edition에서는 검색 이벤트가 지원되지 않습니다.
 
 #### searchResponseReceived에서 수집한 데이터
 
