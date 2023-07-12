@@ -4,9 +4,9 @@ description: Adobe Commerce 통합을 생성 및 인증하고 Adobe Commerce 서
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ Adobe Commerce을 스토어 이행 서비스와 통합하려면 상거래 통합
    - 이메일 주소 입력
    - 관리자 계정 암호 입력
 
-1. 구성 [!UICONTROL API Resource Access permissions] 통합에 대해 - 다음을 선택합니다. `[!UICONTROL All]`
+1. 다음과 통합하기 위한 API 리소스 액세스 권한을 구성합니다.
+
+   - 판매 > BOPIS 주문 업데이트
+   - 시스템 > 스토어 이행 앱 권한
 
 1. 통합을 저장하고 활성화하여 인증용 액세스 토큰을 생성합니다.
 

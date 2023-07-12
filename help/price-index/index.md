@@ -4,7 +4,7 @@ description: SaaS 가격 색인을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -83,16 +83,16 @@ PHP 코어 가격 인덱서는 타사 확장 프로그램 또는 기타 다른 �
 
 ### 확장 종속성 없는 Luma
 
-* 필수 서비스(라이브 검색, 제품 Recommendations, 카탈로그 서비스)가 설치된 Luma 또는 Abode Commerce Core GraphQL 판매자
+* 필요한 서비스(라이브 검색, 제품 Recommendations, 카탈로그 서비스)를 설치한 Luma 또는 Adobe Commerce 핵심 GraphQL 판매자
 * PHP 코어 가격 인덱서에 의존하는 타사 확장 없음
 * 간편한 구성, 그룹화, 가상 및 번들 동적 제품 판매
 
 1. 새 피드를 활성화합니다.
 1. 카탈로그 어댑터를 설치합니다.
 
-### PHP 핵심 가격 인덱서 종속성이 있는 Luma 및 Abode Commerce 핵심 GraphQl
+### PHP 핵심 가격 인덱서 종속성이 있는 Luma 및 Adobe Commerce 핵심 GraphQl
 
-* 지원 서비스(라이브 검색, 제품 Recommendations, 카탈로그 서비스)가 설치된 Luma 또는 Abode Commerce Core GraphQL 판매자
+* 지원 서비스(라이브 검색, 제품 Recommendations, 카탈로그 서비스)가 설치된 Luma 또는 Adobe Commerce 핵심 GraphQL 판매자
 * PHP 코어 가격 인덱서에 의존하는 타사 확장 포함
 * 간편한 구성, 그룹화, 가상 및 번들 동적 제품 판매
 
