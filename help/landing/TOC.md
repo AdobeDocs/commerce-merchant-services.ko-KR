@@ -2,7 +2,10 @@
 user-guide-title: Adobe Commerce용 서비스
 user-guide-description: Adobe Commerce 및 Magento Open Source에 확장된 기능을 제공하는 호스팅 서비스에 대한 설명서 및 리소스입니다.
 title: Adobe Commerce용 서비스
-source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
+role: Admin, Leader, User
+feature: Personalization, Integration
+recommendations: noDisplay
+source-git-commit: 1858e450d635105d4655ec24a01d2e23ae2e1244
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%

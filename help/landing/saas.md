@@ -2,9 +2,11 @@
 title: Commerce Services 커넥터
 description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
+feature: Services, Saas
+role: Admin, User
+source-git-commit: 541655aa268223959bb43e741bbd4b2615acddb1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---

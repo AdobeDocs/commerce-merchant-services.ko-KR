@@ -2,7 +2,8 @@
 title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법 알아보기 [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 지속적으로 서비스를 최신 상태로 유지하기 위해.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
+feature: Catalogs, Data Import/Export, Catalog Service
+source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
