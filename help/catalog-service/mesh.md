@@ -2,7 +2,9 @@
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] for Adobe Commerce은 공통 GraphQL 엔드포인트를 통해 여러 데이터 소스를 통합하는 방법을 제공합니다."'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+role: Admin, Developer
+feature: Services, API Mesh, Catalog Service
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%

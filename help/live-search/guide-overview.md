@@ -2,7 +2,8 @@
 title: "[!DNL Live Search] 안내서 개요"
 description: "[!DNL Live Search] Adobe Commerce에서는 매우 빠르고, 관련성이 높고, 직관적인 검색 환경을 제공합니다."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+recommendations: noCatalog
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 0%
