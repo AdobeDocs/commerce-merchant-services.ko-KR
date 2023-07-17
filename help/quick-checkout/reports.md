@@ -2,7 +2,8 @@
 title: '[!DNL Quick Checkout] 보고'
 description: '[!DNL Quick Checkout] 포괄적인 보고 정보를 제공합니다.'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%

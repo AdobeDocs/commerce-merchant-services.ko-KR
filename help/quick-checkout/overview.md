@@ -2,7 +2,8 @@
 title: "[!DNL Quick Checkout] Adobe Commerce용"
 description: "다음 방법 알아보기 [!DNL Quick Checkout] 는 Adobe Commerce 인스턴스와 확장을 성공적으로 온보딩하고 설정하는 방법에 도움이 될 수 있습니다."
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Adobe Commerce용
 
-다음 [!DNL Quick Checkout] for Adobe Commerce 확장 은 일회성 게스트 구매자를 단골 계정 소유자로 전환하도록 설계된 원활한 체크아웃 경험을 제공합니다. 쇼핑객들은 빠른 쇼핑 경험을 기대한다. 그러나 체크아웃 시 마찰이 여전히 쇼핑객이 구매를 완료하지 않는 가장 큰 이유로 남아 있습니다. 체크아웃을 간소화하고 전환율을 향상시킬 때 진정으로 영향력 있는 일에 집중할 수 있습니다.
+다음 [!DNL Quick Checkout] for Adobe Commerce 확장 은 일회성 게스트 구매자를 단골 계정 소유자로 전환하도록 설계된 원활한 체크아웃 경험을 제공합니다. 쇼핑객들은 빠른 쇼핑 경험을 기대한다. 하지만, 계산대에서 마찰은 여전히 쇼핑객들이 구매를 완료하지 않는 가장 큰 이유로 남아있다. 체크아웃을 간소화하고 전환율을 향상시킬 때 진정으로 영향력 있는 일에 집중할 수 있습니다.
 
 이 안내서에서는 Adobe Commerce의 일반적인 체크아웃 환경과 [!DNL Quick Checkout] 이점 및 해당 여정을 따르는 모범 사례.
 

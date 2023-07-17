@@ -2,7 +2,8 @@
 title: '[!DNL Quick Checkout] Adobe Commerce 관리 패널용'
 description: 다음 방법을 알아봅니다. [!DNL Quick Checkout] 관리 패널은 확장을 성공적으로 온보딩하고, 설정하고, 시각화하는 방법에 도움이 될 수 있습니다.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

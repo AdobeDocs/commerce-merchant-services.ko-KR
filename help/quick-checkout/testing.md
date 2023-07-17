@@ -2,7 +2,8 @@
 title: "테스트 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "테스트 및 유효성 검사를 통해 [!DNL Quick Checkout] 확장은 예상대로 작동합니다."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

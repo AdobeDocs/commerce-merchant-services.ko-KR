@@ -2,7 +2,8 @@
 title: '''[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
+feature: Release Notes, Services, Checkout
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -197,7 +198,7 @@ _2022년 8월 9일_
 
 ![신규](../assets/new.svg)<!-- Issue BOLT-780 --> 쇼핑객은 다음을 통해 체크아웃할 수 있습니다. [[!DNL Quick Checkout]](checkout-page.md) 확장 또는 를 통해 [수동 주문 생성](create-order-admin.md).
 
-![신규](../assets/new.svg)<!-- Issue BOLT-666 --> 판매자는 다음을 구성할 수 있습니다. [!DNL Quick Checkout] 다음과 같은 기본 지급 조치 사용 [`Authorize and Capture` 또는 `Authorize` ](onboarding.md#complete-admin-configuration), 또는 샌드박스와 프로덕션 환경 간 전환.
+![신규](../assets/new.svg)<!-- Issue BOLT-666 --> 판매자는 다음을 구성할 수 있습니다. [!DNL Quick Checkout] 다음과 같은 기본 지급 조치 사용 [`Authorize and Capture` 또는 `Authorize`](onboarding.md#complete-admin-configuration), 또는 샌드박스와 프로덕션 환경 간 전환.
 
 ![신규](../assets/new.svg)<!-- Issue BOLT-288 --> 사용자 정의 [사용자 세션 수명](user-session-lifetime.md) 대상 [!DNL Quick Checkout] Adobe Commerce용
 

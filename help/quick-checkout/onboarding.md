@@ -2,7 +2,8 @@
 title: "온보드 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "다음 방법 알아보기 [!DNL Quick Checkout] 는 Adobe Commerce 인스턴스와 확장을 성공적으로 온보딩하고 설정하는 방법에 도움이 될 수 있습니다."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -68,7 +69,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행하�
 - [!DNL Publishable key]: 프론트엔드가 상호 작용하는 데 사용하는 키 [!DNL Bolt] API.
 - [!DNL Signing secret]: 다음 위치에서 받은 요청에 대한 서명 확인에 사용됩니다. [!DNL Bolt].
 
-   ![빠른 체크아웃](assets/account-credentials.png)
+  ![빠른 체크아웃](assets/account-credentials.png)
 
 다음을 참조하십시오. [[!DNL Bolt] 환경 세부 정보](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 키 및 서명 암호에 대해 알아볼 수 있는 페이지 [!DNL Bolt] 대상: [!DNL Quick Checkout] 확장명.
 

@@ -2,7 +2,9 @@
 user-guide-title: "[!DNL Quick Checkout] Adobe Commerce용"
 user-guide-description: "다음 방법 알아보기 [!DNL Quick Checkout] 는 Adobe Commerce 인스턴스와 확장을 성공적으로 온보딩하고 설정하는 방법에 도움이 될 수 있습니다."
 breadcrumb-title: 판매자 서비스 안내서
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+role: Admin, Leader, User
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%

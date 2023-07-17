@@ -2,7 +2,8 @@
 title: "Adobe Commerce 사용자에 대한 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce 사용자용 흐름입니다."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -64,4 +65,4 @@ ht-degree: 0%
 - 결제 방법 검토
 - 에 등록하는 옵션 [!DNL Bolt] 주문 전에 더 빠른 체크아웃 기능이 표시됩니다. 구매자는 구매자를 만들기 위한 약관에 동의할 수 있습니다. [!DNL Bolt] 계정입니다.
 
-   ![기억 [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![기억 [!DNL Bolt]](assets/checkbox-remember-bolt.png)

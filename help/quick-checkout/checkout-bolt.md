@@ -2,7 +2,8 @@
 title: "Adobe Commerce에서 Bolt 사용자의 체크아웃 흐름"
 description: 개요 [!DNL Quick Checkout] Adobe Commerce의 Bolt 사용자에 대한 흐름.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%

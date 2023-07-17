@@ -2,9 +2,10 @@
 title: "Adobe Commerce의 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce에서 흘러갑니다."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

@@ -2,7 +2,8 @@
 title: 다음을 사용하여 주문 만들기 [!DNL Quick Checkout] 관리자
 description: 관리자는 을 사용하여 주문할 수 있는 기능을 제공합니다. [!DNL Quick Checkout] 지원이 필요한 고객을 위해 상인이 관리자로부터 직접 제공합니다.
 exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%

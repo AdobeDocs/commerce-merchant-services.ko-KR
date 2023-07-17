@@ -2,7 +2,8 @@
 title: 구성 [!DNL Quick Checkout] Adobe Commerce 확장
 description: 에 대한 구성 옵션 알아보기 [!DNL Quick Checkout] 확장을 성공적으로 온보딩하고 설정하는 방법.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
