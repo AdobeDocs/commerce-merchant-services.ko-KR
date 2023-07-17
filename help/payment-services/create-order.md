@@ -2,7 +2,8 @@
 title: 다음을 사용하여 주문 만들기 [!DNL Payment Services]
 description: 관리자는 을 사용하여 주문을 이행할 수 있는 기능을 제공합니다. [!DNL Payment Services] 지원이 필요한 고객을 위해 상인이 관리자로부터 직접 제공합니다.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%

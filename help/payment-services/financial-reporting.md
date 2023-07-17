@@ -2,11 +2,11 @@
 title: 재무 보고
 description: "[!DNL Payment Services] 에서는 스토어의 주문과 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다."
 role: User
-feature: Payments
+feature: Payments, Checkout
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f90e508e6cbb8d7a119587dabd86e709c08d508
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 ![재무 보고서 보기](assets/reports-view.png)
 
-현금 흐름 관리 보고서(지급 및 주문 지급 상태)는 지급 상세내역을 주문 정보와 동기화하여 처리된 거래량, 지급 잔액 및 재무 조정을 위한 거래 레벨에 대한 상세 보고를 완전히 투명화합니다.
+Cash Flow Management 보고서(지급, 거래 및 주문 지급 상태)는 지급 상세내역을 주문 정보와 동기화하여 처리된 거래량, 지급 잔액 및 재무 조정을 위한 거래 레벨에 대한 상세 보고를 완전히 투명하게 제공합니다.

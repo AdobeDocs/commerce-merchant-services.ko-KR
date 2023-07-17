@@ -2,7 +2,8 @@
 title: 빈 공간
 description: Void를 사용하면 구매 금액에 대한 승인이 차단되거나 보류된 신용 카드 또는 직불 카드 계정의 자금을 확보할 수 있습니다.
 exl-id: 029a7038-2812-46ce-b188-929a7a758d89
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%

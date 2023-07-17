@@ -2,7 +2,8 @@
 title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 상거래 인스턴스를 연결하고 구성에 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Configuration, Saas
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%

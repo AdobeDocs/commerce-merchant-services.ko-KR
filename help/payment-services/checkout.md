@@ -1,7 +1,8 @@
 ---
 title: 체크아웃
 description: 고객의 요구 사항에 맞게 체크아웃을 사용자 정의합니다.
-source-git-commit: b57c1e2b9d18ba3b843d18df7219efe3bade65e6
+feature: Payments, Checkout
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

@@ -4,7 +4,8 @@ description: 재무 보고 데이터를 사용하여 보고를 비상거래 시�
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+feature: Payments, Checkout, Data Import/Export
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%

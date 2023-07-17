@@ -4,7 +4,8 @@ description: 주문 결제 상태 보고서를 사용하여 주문 결제 상태
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
+feature: Payments, Checkout, Orders
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%

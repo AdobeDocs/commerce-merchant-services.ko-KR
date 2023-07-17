@@ -2,7 +2,8 @@
 title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
+feature: Payments, Checkout, Configuration
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 0%

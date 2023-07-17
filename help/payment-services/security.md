@@ -2,7 +2,8 @@
 title: 보안 및 규정 준수
 description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검토합니다.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
+feature: Payments, Checkout, Compliance
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
