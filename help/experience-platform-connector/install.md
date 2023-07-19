@@ -2,7 +2,9 @@
 title: Adobe Commerce에서 Adobe Experience Platform 커넥터 설치 및 구성
 description: Adobe Commerce에서 Adobe Experience Platform Connector를 설치, 구성, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 052b9fe32797e62d5802241c7b3420decf593fc1
+role: Admin, Developer
+feature: Install
+source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

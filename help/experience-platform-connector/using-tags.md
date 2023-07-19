@@ -2,7 +2,9 @@
 title: Adobe Experience Platform 태그를 사용하여 상거래 데이터 수집
 description: Adobe Experience Platform 태그를 사용하여 상거래 데이터를 수집하는 방법에 대해 알아봅니다.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ _태그를 사용한 Experience Platform 커넥터 데이터 흐름_
 
 - 설치 [Adobe Commerce 이벤트 SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). PHP 상점 앞면은 [설치](install.md) 주제. PWA Studio 상점 앞면에 대해서는 [PWA Studio 안내서](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > 실행 **아님** [구성](connect-data.md) 조직 ID 및 데이터 스트림 ID입니다.
+  >[!NOTE]
+  >
+  > 실행 **아님** [구성](connect-data.md) 조직 ID 및 데이터 스트림 ID입니다.
 
 ## Commerce 상점 데이터를 Adobe Experience Platform에 매핑
 
@@ -843,13 +845,13 @@ Adobe Experience Platform 태그의 데이터 요소와 규칙을 Adobe Commerce
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항] 경로**: `productContext.mainImageUrl`
+
    1. 카트:
+
    - **이름**: `cart`
    - **확장**: `Adobe Client Data Layer`
    - **데이터 요소 유형**: `Data Layer Computed State`
    - **[선택 사항] 경로**: `shoppingCartContext`
-
-
 
 1. 장바구니 ID:
 

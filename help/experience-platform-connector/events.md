@@ -2,7 +2,9 @@
 title: 이벤트
 description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e8818893d90f91df5b281905eb6bc30df34723ec
+role: Admin, Developer
+feature: Personalization, Integration, Eventing
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '4779'
 ht-degree: 0%

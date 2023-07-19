@@ -2,7 +2,8 @@
 title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
+feature: Personalization, Integration, Release Notes
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
