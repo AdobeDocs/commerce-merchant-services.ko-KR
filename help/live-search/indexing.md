@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] 색인화"
 description: "방법 알아보기 [!DNL Live Search] 는 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ## 클라이언트 검색
 
-다음 [!DNL Live Search] API를 사용하면 클라이언트는 다음을 설정하여 정렬 가능한 제품 속성별로 정렬할 수 있습니다. [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *제품 목록에서 정렬하는 데 사용됨* 끝 `Yes`. 이 설정은 테마에 따라 속성이 의 옵션으로 포함됩니다. [정렬 기준:](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 카탈로그 페이지의 페이지 매김 제어. 최대 300개의 제품 속성을으로 인덱싱할 수 있음 [!DNL Live Search], 포함 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 검색과 필터링이 가능합니다.
+다음 [!DNL Live Search] API를 사용하면 클라이언트는 다음을 설정하여 정렬 가능한 제품 속성별로 정렬할 수 있습니다. [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *제품 목록에서 정렬하는 데 사용됨* 끝 `Yes`. 이 설정은 테마에 따라 속성이 의 옵션으로 포함됩니다. [정렬 기준:](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) 카탈로그 페이지의 페이지 매김 제어. 최대 200개의 제품 속성을으로 인덱싱할 수 있음 [!DNL Live Search], 포함 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) 검색과 필터링이 가능합니다.
 인덱스 메타데이터는 인덱싱 파이프라인에 저장되고 검색 서비스에서 액세스할 수 있습니다.
 
 ![[!DNL Live Search] 인덱스 메타데이터 API 다이어그램](assets/index-metadata-api.svg)

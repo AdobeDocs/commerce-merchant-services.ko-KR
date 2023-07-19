@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 개발자 설명서 를 참조하여 다음을 수행합니다 [제품 호환성에 대해 알아보기](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## 현재 메이저 버전
+
+_2023년 7월 18일_
+
+![신규](../assets/new.svg) 제품 Recommendations에 이제 GraphQL이 포함됨 [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) 쿼리.
 
 _2023년 4월 25일_
 

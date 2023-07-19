@@ -3,9 +3,9 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -192,6 +192,8 @@ API 키 및 개인 키를 생성하려면 다음을 참조하십시오. [Commerc
 모든 것이 올바르게 작동한다면, 축하합니다! [!DNL Live Search] 가 설치되었으며 연결되어 있고 사용할 준비가 되었습니다.
 
 상점 앞에서 문제가 발생하면 `var/log/system.log` 서비스 측에서 API 통신 오류 또는 오류에 대한 파일입니다.
+
+방화벽을 통한 라이브 검색을 허용하려면 다음을 추가하십시오. `commerce.adobe.io` 허용 목록.
 
 ## 설치된 버전 확인
 
