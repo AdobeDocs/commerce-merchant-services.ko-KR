@@ -3,8 +3,9 @@ title: 스토어 이행 테스트 및 배포
 description: 저장소 이행 기능을 확인하는 테스트 계획입니다. 테스트에서는 재고 동기화 API, 취소된 주문에 대한 엔드 투 엔드 이행 워크플로, 스토어 이행 앱 사용자 관리 및 고객 체크인 경험을 다룹니다.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ ht-degree: 0%
 <td>실시간 동기화 작업은 5분 내에 Walmart GIF에 세부 사항을 전송합니다</td>
 </tr>
 <tr>
-<td><strong>픽업 스톡 소스</br><code>Is Synced</code> 상태</br><code>Is Synced</code></strong></td>
+<td><strong>픽업 스톡 소스</br><code>Is Synced</code> 상태</strong></td>
 <td>기존 픽업 스톡 소스에 대한 업데이트를 저장합니다.</td>
 <td>성공적으로 작업한 후 <code>Is Synced</code> 다음에서 소스 관리 페이지 업데이트 열의 열: <code>No</code> 끝 <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ ht-degree: 0%
 </ul>
 </td>
 </tr>
-<td><strong>픽업 준비</br></br>전체 취소</br>(모든 제품은 0 수량으로 피킹됨으로 설정됨)</br></strong></td>
+<td><strong>픽업 준비</br></br>전체 취소</br>(모든 제품은 0 수량으로 피킹됨으로 설정됨)</strong></td>
 <td>
 <ol>
 <li>주문하십시오.</li>
@@ -250,7 +251,7 @@ ht-degree: 0%
 </tr>
 <tr>
 <td><strong>조제(조제 중)</br></br>부분 취소</br>(일부 제품은 분배되고 일부는 거부됩니다.)</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>주문하십시오.</li>
@@ -469,7 +470,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </tr>
 <tr>
 <td><strong>대체 픽업 연락처</br>
-체크인</br><strong>
+체크인<strong>
 </td>
 <td>
 고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다.</td>

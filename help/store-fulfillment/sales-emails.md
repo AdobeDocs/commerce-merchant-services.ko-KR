@@ -1,10 +1,11 @@
 ---
 title: 영업 이메일 템플릿
 description: 스토어 픽업 주문 이행 프로세스 중에 고객 및 스토어 관리자와 통신하기 위한 트랜잭션 이메일 템플릿을 구성합니다.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ ht-degree: 0%
 <tbody><tr>
 <td><strong>주문은 납품처 저장 제품 이메일 발신자입니다.</strong></td>
 <td>재고를 사용할 수 있을 때까지 머천트 스토어에서 선택할 수 없는 모든 개설 주문의 집계 보고서로 지정된 머천트 담당자에게 전송된 이메일. </br></br> 판매자는 이 보고서를 사용하여 매장 간 재고 이전 또는 보충을 시작하고 관리할 수 있습니다. </br></br>이 알림은 다음 경우에만 적용됩니다. [!DNL Ship-to-Store] 기능이 활성화되어 있습니다.
-</br></br>이 레이블은 선택한 운송 회사 또는 사용 가능한 운송 방법 레이블에 영향을 주지 않습니다.</br></br></td>
+</br></br>이 레이블은 선택한 운송 회사 또는 사용 가능한 운송 방법 레이블에 영향을 주지 않습니다.</td>
 <td>스토어 뷰</td>
 <td>아니요</td>
 </tr>

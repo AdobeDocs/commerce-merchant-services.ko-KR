@@ -3,7 +3,10 @@ user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Adobe Commerce 스토어를 위한 스토어 이행 기능의 설치, 구성 및 사용에 대한 자세한 정보입니다.
 breadcrumb-title: Adobe Commerce에 대한 스토어 이행
 index: true
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+feature: Shipping/Delivery
+role: Admin, User
+recommendations: noDisplay
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%

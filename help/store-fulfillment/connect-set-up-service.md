@@ -1,12 +1,13 @@
 ---
 title: 스토어 이행 솔루션 연결
-description: Adobe Commerce 통합을 생성 및 인증하고 Adobe Commerce 서비스 구성에 스토어 이행 계정 자격 증명을 추가하여 Adobe Commerce과 스토어 이행 솔루션 간 연결을 설정합니다.
-role: User, Admin
+description: Adobe Commerce과 스토어 이행 솔루션 간의 연결을 설정합니다. Adobe Commerce 통합을 만들고 권한을 부여한 다음 Adobe Commerce 서비스 구성에 스토어 이행 계정 자격 증명을 추가합니다.
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install, Configuration, User Account, Tools and External Services
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: 체크인 경험 설정
 description: 픽업 주문 양식을 작성할 때 픽업 고객이 선택할 수 있는 자동차 제조 및 모델] 선택 사항을 구성합니다.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

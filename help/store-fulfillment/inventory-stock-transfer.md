@@ -1,10 +1,11 @@
 ---
 title: Inventory management 소스 전송
 description: "다음에 대한 스톡 구성 [!DNL Store Fulfillment solution] Adobe Commerce Inventory management 사용. 새 재고를 설정하고 기본 재고에서 재고를 이전하여 스토어 이행 솔루션에 필요한 스토어 픽업 기능을 사용하도록 구성된 소스에 할당할 수 있습니다."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 1. [소스 일괄 할당](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) 을 클릭하여 모든 제품에 대한 새 소스를 추가합니다.
 
-1. [제품 속성에 대한 전체 벌크 업데이트](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 을(를) 추가하려면 `Allow Store Pickup` 및 `Allow Home Delivery` 기존 제품에 대한 속성. 솔루션이 설치되면 속성에 최적의 상태가 표시됩니다 *기본값* 값. 그러나 이러한 속성은 벌크 업데이트 프로세스를 완료할 때까지 기존 제품에 적용되지 않습니다.
+1. [제품 속성에 대한 전체 벌크 업데이트](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) 을(를) 추가하려면 `Allow Store Pickup` 및 `Allow Home Delivery` 기존 제품에 대한 속성. 솔루션이 설치되면 속성에 최적의 상태가 표시됩니다 *기본값* 값. 그러나 이러한 속성은 일괄 updaContes 프로세스를 완료할 때까지 기존 제품에 적용되지 않습니다.
 
 재고는 선택한 출처(소매점 위치 또는 전자 상거래 창고)에서 공제됩니다. 전자 상거래 창고로 사용되는 출처는 매장 픽업 위치와 동일한 재고에 할당되어야 하고 소매 위치보다 우선 순위가 지정되어야 한다. 자세한 내용은 [재고에 대한 소스 우선 순위 지정](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

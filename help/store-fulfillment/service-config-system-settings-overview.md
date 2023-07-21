@@ -1,9 +1,10 @@
 ---
 title: 시스템 구성 개요
 description: 스토어 이행 솔루션에 사용할 수 있는 관리자 구성 설정 범주와 구성 방법에 대해 알아봅니다.
-role: User, Admin
+role: Admin
+feature: Shipping/Delivery, System, Configuration
 level: Intermediate
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%

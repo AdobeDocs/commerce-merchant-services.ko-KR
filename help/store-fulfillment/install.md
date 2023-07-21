@@ -1,10 +1,11 @@
 ---
 title: 설치
 description: "설치 [!DNL Store Fulfillment solution] PHP용 Composer를 사용하는 Adobe Commerce 상점 용."
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # 설치
 
-의 초기 설치를 완료합니다 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 예외 처리를 허용하도록 큐 관리자가 실행 중이고 캐싱이 구성된 비프로덕션 환경의 확장. 개발 환경에 Adobe Commerce 인스턴스 운영 및 유지 관리에 대한 우수 사례를 확인할 수 있는 개발 도구가 포함되어 있는지 확인합니다.
+의 초기 설치를 완료합니다 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 예외 처리를 허용하도록 큐 관리자가 실행 중이고 캐싱이 구성된 비프로덕션 환경의 확장. 개발 환경에 Adobe Commerce 인스턴스의 운영 및 유지 관리에 대한 우수 사례를 확인할 수 있는 개발 도구가 포함되어 있는지 확인합니다.
 
 ## 전제 조건
 

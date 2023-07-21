@@ -1,10 +1,11 @@
 ---
 title: 스토어 이행 구성 개요
 description: 스토어 이행 솔루션에서 제공하는 확장 이행 기능을 사용자 지정하는 데 사용할 수 있는 관리자 구성 설정 유형에 대해 알아보고, 구성을 완료하기 위한 지침에 연결합니다.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Configuration
 exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

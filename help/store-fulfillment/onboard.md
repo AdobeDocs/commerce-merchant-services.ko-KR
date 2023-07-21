@@ -1,10 +1,11 @@
 ---
 title: 스토어 이행 서비스에 대한 온보딩 개요
 description: '[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ ht-degree: 0%
 
 - **스토어 이행 확장**-Adobe Commerce 인스턴스에 이 타사 확장을 설치하고 구성합니다. 설치 후 관리자로부터 저장소 이행 솔루션을 구성하고 관리하여 지원할 수 있습니다. [!DNL buys online, pickup in store] (BOPIS) Commerce 상점 첫 화면의 시나리오.
 
-   ![[!DNL Store Fulfillment Service] 관리자 보기의 구성](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] 관리자 보기의 구성](assets/store-fulfillment-admin-home.png)
 
 - **주문 처리 계정 저장**-활성화 프로세스 중에 계정 관리자는 스토어 이행 계정을 만들고 계정 정보와 자격 증명을 제공합니다. Adobe Commerce과 스토어 이행 솔루션 간 연결을 활성화하려면 이러한 자격 증명이 필요합니다.
 
 - **스토어 지원 앱**—스토어 관련 서비스를 전체 스토어 이행 워크플로우와 함께 제공하여 모바일 디바이스에서 BOPI 주문을 관리합니다. Store Associates는 Walmart를 다운로드하여 설치할 수 있습니다. [!DNL Store Assist] iOS 및 Android™ 디바이스용. 앱 온보딩 프로세스는 Walmart Commerce Technologies 클라이언트 센터에서 별도의 프로세스로 관리합니다. 그러나 [일부 앱 구성 설정](user-setup.md) Adobe Commerce 관리에서 작성합니다.
 
-   | 스토어 지원 앱 - 시작 보기 | 스토어 지원 앱 - 모듈 보기 |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] 모바일 장치에서 보기](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 모바일 장치에서](assets/store-assist-orders-small.png) |
+  | 스토어 지원 앱 - 시작 보기 | 스토어 지원 앱 - 모듈 보기 |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] 모바일 장치에서 보기](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] 모바일 장치에서](assets/store-assist-orders-small.png) |
 
 ## 프로비저닝 단계
 

@@ -1,10 +1,11 @@
 ---
 title: 지원 풀필먼트 워크플로 저장
 description: Store Assist 앱에서 사용할 수 있는 Pick, Stage, Hand-Off 및 Orders 모듈에 대해 알아봅니다. 이러한 모듈을 사용하면 BOPIS 주문에 대한 전체 스토어 이행 워크플로우를 사용할 수 있습니다. Store Associates 는 이러한 모듈을 사용하여 매장 픽업 주문을 관리하고 고객에게 전달합니다.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Store Assist 앱은 Store Associates에 4개의 모듈을 제공하여 온라인
 
 - **[단계](#stage-module)**—고객이 스토어로 이동하는 동안 주문이 접수되는 위치를 입력하면 Store Associates에서 주문 처리를 위해 해당 주문을 쉽게 찾을 수 있습니다.
 
-- **[핸드 오프](#hand-off-module)**—고객이 스토어에 도착한 후 실시간 알림을 통해 대기 시간을 최소화하고 원활하게 주문 전달
+- **[핸드 오프](#hand-off-module)**—고객이 스토어에 도착한 후 실시간 알림을 받아 대기 시간을 최소화하고 원활하게 주문을 전달할 수 있습니다.
 
 - **[주문 수](#orders-module)**- 모든 사람이 각 주문의 주문 수와 상태를 알 수 있도록 스토어에 대해 수행한 모든 주문 목록을 봅니다.
 
@@ -44,7 +45,7 @@ Store Assist 앱은 Store Associates에 4개의 모듈을 제공하여 온라인
 
 ## 스테이지 모듈
 
-스테이지 모듈에는 고객이 도착하여 수령할 때까지 포장된 주문이 배치되는 위치가 표시됩니다. 이 위치를 설정하는 것은 고객이 도착하기 전에 store associates가 교대를 완료하거나 주문이 많을 때 주문 손실을 방지하는 주요 단계입니다. 어느 경우에나, 이것은 당신이 그것에 대한 모든 관련 정보와 함께 올바른 주문을 신속하게 찾을 수 있도록 설계되었습니다.
+스테이지 모듈에는 고객이 도착하여 수령할 때까지 포장된 주문이 배치되는 위치가 표시됩니다. 이 위치를 설정하는 것은 고객이 도착하기 전에 store associates가 교대를 완료하거나 주문이 많을 경우 주문 손실을 방지하는 주요 단계입니다. 어느 경우에나, 이것은 당신이 그것에 대한 모든 관련 정보와 함께 올바른 주문을 신속하게 찾을 수 있도록 설계되었습니다.
 
 자유 형식 텍스트 막대를 사용하여 카운터 아래, 뒷방 또는 위치 B3과 같은 주문이 배치되는 위치를 지정할 수 있습니다. 모두 작업에 따라 다릅니다.
 

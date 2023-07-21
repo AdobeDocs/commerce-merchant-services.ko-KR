@@ -1,12 +1,13 @@
 ---
 title: 앱 설정
 description: 다음을 설정합니다. [!DNL Store Assist] 앱에서 온라인 구매, 스토어 주문 픽업을 위한 전체 스토어 이행 워크플로우 및 프로세스를 관리합니다.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Store Assist 앱은 주문 세부 사항에서 시간을 선택하는 데 이르
 
 >[!NOTE]
 >
->다음을 참조하십시오 [지원 이행 워크플로우 저장](store-assist-modules.md) Store Assist 앱에 대해 자세히 알아보세요.
+>다음을 검토하여 Store Assist 앱에 대해 자세히 알아보세요. [지원 이행 워크플로우 저장](store-assist-modules.md) 주제.
 
 ## 스토어 지원 앱 구성
 
@@ -55,7 +56,8 @@ Store Assist 앱은 주문 세부 사항에서 시간을 선택하는 데 이르
    - **핸드 오프 프로세스**—Store Associate에서 고객에게 주문을 전달할 때 선택적 프로세스를 사용할 수 있습니다. 예를 들어 고객 서명이 필요하거나 담당자에게 고객 ID를 확인하라는 메시지가 표시됩니다.
 
    - **제출 시 항목 거부 활성화**- 주문 전달 중에 고객이 주문 항목을 반환하거나 취소할 수 있습니다.
-   Walmart Commerce Technologies Client Services 팀과 함께 스토어 지원 앱에 대한 프론트엔드 구성을 완료합니다.
+
+  Walmart Commerce Technologies Client Services 팀과 함께 스토어 지원 앱에 대한 프론트엔드 구성을 완료합니다.
 
 ## 앱 다운로드 및 설치
 
@@ -70,4 +72,5 @@ Store Assist 앱을 설정하고 구성한 후 Store Associates는 모바일 장
    - **[!UICONTROL Company name]** 스토어 지원 계정과 연결됨
 
    - **지원 계정 자격 증명 저장**—해당 계정의 사용자 이름 및 암호 자격 증명.
-   Adobe Commerce 관리자는 을 만들고 관리할 수 있습니다 [!DNL Store Assist app] 다음을 보유한 모든 스토어 위치에 대한 사용자 계정 [매장 픽업](merchant-store-configuration.md#pickup-location-configuration) 관리자 저장소 설정에서 활성화됩니다.
+
+  Adobe Commerce 관리자는 을 만들고 관리할 수 있습니다 [!DNL Store Assist app] 다음을 보유한 모든 스토어 위치에 대한 사용자 계정 [매장 픽업](merchant-store-configuration.md#pickup-location-configuration) 관리자 저장소 설정에서 활성화됩니다.

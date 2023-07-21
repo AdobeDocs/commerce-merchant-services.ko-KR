@@ -1,12 +1,12 @@
 ---
 title: 백그라운드 프로세스 구성
 description: "다음에 대한 일정 구성 [!DNL Store Fulfillment] 데이터를 이행 서비스와 동기화하는 데 사용되는 백그라운드 프로세스입니다."
-role: User, Admin
+role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,4 @@ Store Fulfillment 통합에서는 최적의 성능과 확장을 위해 백그라
 
 관리에서 로 이동합니다. **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
-스토어 이행 서비스에 대한 기본 구성을 검토하십시오. 주문 처리 볼륨 및 리소스 가용성에 따라 이러한 설정을 조정해야 할 수 있습니다.
+스토어 이행 서비스에 대한 기본 구성을 검토하십시오. 주문 처리 볼륨 및 리소스 가용성에 따라 이러한 설정을 사용자 지정할 수 있습니다.

@@ -1,12 +1,13 @@
 ---
 title: 판매점 구성
 description: 향상된 Inventory management 소스를 판매점으로 설정합니다.
-role: User, Admin
-level: Intermediate
+role: Admin
+level: Experienced
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1224'
 ht-degree: 0%
 
 ---
@@ -94,7 +95,13 @@ ht-degree: 0%
 <td>아니요</td>
 </tr>
 <tr>
-<td><strong>[!UICONTROL Enable Ship From Store]</strong><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td><td></td><td></td><td></td></tr></tbody></table>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong><code></br><code>Extension Attribute: [!DNL use_as_shipping_source]</code></td>
+<td>소스 수준에서 출고처(Ship-from-Store) 기능을 구성합니다. 자세한 내용은 [일반 구성](enable-general.md) 옵션을 참조하십시오. [!UICONTROL Enable Ship From Store].</td>
+<td>글로벌</td>
+<td>아니요</td>
+</tr>
+</tbody>
+</table>
 
 
 
