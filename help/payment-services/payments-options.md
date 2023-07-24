@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 
 다음을 구성할 수 있습니다. [!UICONTROL PayPal Smart Buttons] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
 
+PayPal의 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/payment-methods/) 각 결제 방법을 현재 사용할 수 있는 국가를 알아봅니다.
+
 ### [!DNL PayPal] 단추
 
 고객은 PayPal 버튼을 사용하여 쉽고 안전하게 체크아웃할 수 있습니다.
@@ -80,21 +82,11 @@ PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 �
 
 고객에게 단기, 무이자 결제 및 기타 금융 옵션을 제공하여 지금 구입하고 나중에 다음과 같이 결제할 수 있도록 하십시오. [!DNL Pay Later] 단추를 클릭합니다.
 
-다음 [!DNL Pay Later] 버튼은 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 볼 수 있습니다.
+다음 [!DNL Pay Later] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
 
-* **고객이 $30에서 $600 사이의 제품을 선택할 때**, PayPal 및 [!DNL Pay Later] 단추는 고객에게 다음에 대한 자세한 정보를 제공합니다. [!DNL Pay in 4] 결제 옵션. 고객은 다음을 클릭할 수 있습니다 **자세히 알아보기** 에 대해 알아보려면[!DNL Pay in 4]&quot; 옵션 _또는_ 팝업에서 &quot;또는 6개월 특별 자금 조달&quot; 텍스트를 클릭하여 PayPal 크레딧 옵션에 대해 알아보고 신청합니다.
-* **고객이 $98.99를 초과하는 제품을 선택할 때**, PayPal 및 [!DNL Pay Later] 버튼은 고객에게 PayPal 신용 결제 옵션에 대한 자세한 정보를 제공합니다. 고객은 다음을 클릭할 수 있습니다 **자세히 알아보기** payPal 크레딧 옵션에 대해 알아보고 신청하려면 _또는_ 팝업에서 &quot;또는 4로 결제&quot; 텍스트를 클릭하여 [!DNL Pay in 4] 옵션을 선택합니다.
-
-  >[!NOTE]
-  >
-  >위에 나열된 금액은 변경될 수 있습니다.
+다음에서 나중에 결제 오퍼에 대한 정보를 참조하십시오. [PayPal의 Pay Later 오퍼 설명서](https://developer.paypal.com/docs/checkout/pay-later/us/). 사용 **국가 또는 지역** 드롭다운을 통해 관심 영역을 선택합니다.
 
 다음을 참조하십시오 [설정](settings.md#payment-buttons) 을(를) 비활성화/활성화하는 방법에 대해 알아보려면 [!DNL Pay Later] 메시지.
-
-다음과 같은 두 가지 결제 옵션이 있습니다. [!DNL Pay Later] 단추:
-
-* **종량 4**- 고객은 최초 계약금 지급 후 4회 무이자 지급(2주마다)으로 주문 잔고를 지급할 수 있습니다. 다음을 참조하십시오. [4 문서 지불](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) 추가 정보.
-* **PayPal 신용**—고객은 6개월 동안 무이자로 주문 잔고를 완납할 수 있습니다. 다음을 참조하십시오. [PayPal 크레딧 설명서](https://www.paypal.com/us/webapps/mpp/paypal-credit) 추가 정보.
 
 ### [!DNL Pay Now] 단추
 

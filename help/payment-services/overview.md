@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,15 @@ ht-degree: 0%
 * 프랑스 (FR)
 * 영국 (UK)
 
-다음을 참조하십시오 [라이프사이클 정책](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} 및 [[!DNL Payment Services] 릴리스 정보](release-notes.md) 페이지를 참조하십시오.
+다음을 참조하십시오 [라이프사이클 정책](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) 및 [[!DNL Payment Services] 릴리스 정보](release-notes.md) 페이지를 참조하십시오.
 
 ### 허용된 신용 카드 및 통화
 
 [!DNL Payment Services] 국가의 통화를 수락합니다. [사용 가능한](#availability).
 
-다음을 참조하십시오. [PayPal 통화 가용성](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) 설명서 를 참조하십시오.
+PayPal이 지원하는 통화를 확인하려면 다음을 참조하십시오. [지원되는 통화 설명서](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+
+PayPal이 지원하는 결제 방법을 보려면 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## 시작
 
