@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -84,7 +84,7 @@ _2023년 2월 24일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![신규](../assets/new.svg)<!-- Issue BOLT-520 --> 일반 가용성 릴리스—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 는 이제 Adobe Commerce Cloud 버전 2.4.6 이상에 사전 설치됩니다.
+![신규](../assets/new.svg)<!-- Issue BOLT-520 --> 일반 가용성 릴리스—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) 는 이제 Adobe Commerce Cloud 버전 2.4.6 이상에 사전 설치됩니다.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue BOLT-592 --> 에서 주문 시 사용자 경험 개선 사항 [관리 패널](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) 사용 [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) 결제 수단으로 사용됩니다. 이 기능을 사용하면 체크아웃 시 결제 수단으로 Braintree을 주문할 수 있습니다. [!DNL Quick Checkout] 이(가) 활성화되었습니다.
 
@@ -150,7 +150,7 @@ _2022년 9월 8일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![신규](../assets/new.svg)<!-- Issue BOLT-341 --> 일반 가용성 릴리스—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 는 이제 Adobe Commerce 버전 2.4.5와 호환됩니다.
+![신규](../assets/new.svg)<!-- Issue BOLT-341 --> 일반 가용성 릴리스—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) 는 이제 Adobe Commerce 버전 2.4.5와 호환됩니다.
 
 ![신규](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] Adobe Commerce 및 Magento Open Source의 경우 [관리 패널 보기](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) 확장을 설정하고 사용하는 데 필요한 모든 정보를 제공합니다.
 
@@ -184,7 +184,7 @@ _2022년 8월 9일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![신규](../assets/new.svg)<!-- Issue BOLT-341 --> 일반 가용성 릴리스—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) 는 이제 Adobe Commerce 버전 2.4.1 ~ 2.4.4와 호환됩니다.
+![신규](../assets/new.svg)<!-- Issue BOLT-341 --> 일반 가용성 릴리스—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) 는 이제 Adobe Commerce 버전 2.4.1 ~ 2.4.4와 호환됩니다.
 
 ![신규](../assets/new.svg)<!-- Issue BOLT-340 --> 다음 [!DNL Quick Checkout] Adobe Commerce용 은 Adobe Commerce에 대해 설치할 수 있습니다 [클라우드 인프라에서](install.md#adobe-commerce-on-cloud-infrastructure) 또는 [온-프레미스](install.md#on-premises) 인스턴스. 이러한 메서드는 명령줄 인터페이스를 사용해야 합니다.
 

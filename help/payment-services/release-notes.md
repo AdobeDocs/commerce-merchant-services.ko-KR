@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 0%
@@ -138,7 +138,7 @@ _2022년 12월 22일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부된 경우 결제 서비스의 송장 발행을 개선했습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스 에서는 를 사용하는 가맹점을 위한 PayPal 스마트 단추를 올바르게 표시합니다. [체크아웃 실행](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스 에서는 를 사용하는 가맹점을 위한 PayPal 스마트 단추를 올바르게 표시합니다. [체크아웃 실행](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
 
 ## v1.5.1
 
@@ -252,7 +252,7 @@ _2021년 11월 29일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![신규](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) 은(는) 이제 과(와) 호환됩니다. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0부터 2.4.3-p1까지.
+![신규](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) 은(는) 이제 과(와) 호환됩니다. [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 버전 2.4.0부터 2.4.3-p1까지.
 
 ![신규](../assets/new.svg)<!-- Issue PAY-124 --> 다음 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 다음 기간 동안 설치할 수 있습니다 [[!DNL Adobe Commerce] 클라우드 인프라에서](install.md#adobe-commerce-on-cloud-infrastructure) 또는 [온-프레미스](install.md#on-premises) 인스턴스. 이러한 메서드는 명령줄 인터페이스를 사용해야 합니다.
 

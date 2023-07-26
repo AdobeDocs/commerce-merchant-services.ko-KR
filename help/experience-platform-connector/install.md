@@ -4,7 +4,7 @@ description: Adobe Commerce에서 Adobe Experience Platform Connector를 설치,
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 확장 설치
 
-Experience Platform 커넥터 확장은 [Adobe 마켓플레이스](https://marketplace.magento.com/magento-experience-platform-connector.html). 서버의 명령줄에서 이 확장을 설치하면 Adobe Commerce 설치에 다음과 같이 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 **Experience Platform 커넥터** 및 **Commerce Services 커넥터** 다음에 표시: **시스템** 아래 메뉴 **서비스** 상거래 내 _관리자_.
+Experience Platform 커넥터 확장은 [Adobe 마켓플레이스](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). 서버의 명령줄에서 이 확장을 설치하면 Adobe Commerce 설치에 다음과 같이 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 **Experience Platform 커넥터** 및 **Commerce Services 커넥터** 다음에 표시: **시스템** 아래 메뉴 **서비스** 상거래 내 _관리자_.
 
 >[!NOTE]
 >

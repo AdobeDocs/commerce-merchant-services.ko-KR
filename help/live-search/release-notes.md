@@ -3,7 +3,7 @@ title: '''[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -176,4 +176,4 @@ _2023년 3월 14일_
 
 * [Adobe Commerce 개발자 설명서](https://developer.adobe.com/commerce/docs)
 * [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/docs/commerce.html)
-* [[!DNL Live Search] 마켓플레이스에서](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] 마켓플레이스에서](https://commercemarketplace.adobe.com/magento-live-search.html)

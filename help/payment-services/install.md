@@ -4,7 +4,7 @@ description: 결제 서비스 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 먼저 다음에서 확장을 다운로드해야 합니다. [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) 설치하기 전에.
 
-1. 다음 위치로 이동 [Commerce Marketplace의 결제 서비스 확장](https://marketplace.magento.com/magento-payment-services.html).
+1. 다음 위치로 이동 [Commerce Marketplace의 결제 서비스 확장](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. 버전 및 버전을 선택하려면 **[!UICONTROL Edition]** 및 **[!UICONTROL Your store version]** 원하는 대로 선택할 수 있습니다.
 1. 클릭 **[!UICONTROL Add to Cart]**.
 1. 체크아웃을 완료하고 클릭 **[!UICONTROL Place Order]**.
