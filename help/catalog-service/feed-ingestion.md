@@ -1,7 +1,7 @@
 ---
 title: 피드 수집 서비스
 description: Adobe Commerce용 피드 수집 서비스에 대해 알아보기
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ Adobe Commerce 구성에 따라 데이터 저장소 및 데이터 흐름은 서�
 * 크고 복잡한 카탈로그를 보유한 고객
 * 카탈로그 데이터를 관리하기 위해 ERP 또는 서드파티 시스템을 사용하는 대신, Adobe Commerce 관리자를 사용하여 카탈로그 데이터를 관리하지 않는 고객
 
-Beta 프로그램에 참여하고자 하는 경우 XXXXX@adobe.com으로 팀에 문의하십시오.
+Beta 프로그램에 참여하고자 하는 경우 sagonzal@adobe.com으로 팀에 문의하십시오.
