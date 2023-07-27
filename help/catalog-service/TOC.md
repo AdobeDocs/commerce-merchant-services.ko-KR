@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Catalog Service] 안내서"
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: c256252ea58b61e511034cd33d81e004acff96d2
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 - [소개 [!DNL Catalog Service]](overview.md)
 - [온보딩 및 설치](installation.md)
 - [카탈로그 서비스 및 API 메쉬](mesh.md)
+- [피드 수집 서비스(베타)](feed-ingestion.md)
 - GraphQL 쿼리 {#graphql}
    - [카테고리 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)
    - [products 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
