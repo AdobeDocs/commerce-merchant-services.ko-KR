@@ -2,9 +2,9 @@
 title: "빠른 둘러보기"
 description: '"간단히 살펴보기 [!DNL Live Search] 가게 앞에서요.'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ ht-degree: 0%
 ## 패싯으로 필터링된 검색
 
 필터링된 검색은 속성 값의 여러 차원을 사용하거나 [패싯](facets.md)을 검색 기준으로 사용합니다. 필터 선택은 판매자에 의해 정의되며 반환되는 제품에 따라 변경되며, 가장 일반적으로 사용되는 패싯은 목록의 맨 위에 고정됩니다.
+
+패싯을 URL 매개 변수로 사용:`http://yourwebsite.com?color=red`, 및 라이브 검색 필터는 이러한 속성 값을 기반으로 결과를 필터링합니다.
 
 ## 동의어
 

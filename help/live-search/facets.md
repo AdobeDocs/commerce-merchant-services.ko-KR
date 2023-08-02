@@ -2,9 +2,9 @@
 title: "패싯"
 description: "[!DNL Live Search] 패싯은 속성 값의 여러 차원을 검색 기준으로 사용합니다."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 페이스팅은 속성 값의 여러 차원을 검색 기준으로 사용하는 고성능 필터링 방법입니다. 패싯형 검색은 유사하지만 표준보다 상당히 &quot;똑똑하다&quot; [계층화된 탐색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 사용 가능한 필터 목록은 다음을 통해 결정됩니다. [필터링 가능한 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 검색 결과에서 반환된 제품
 
 ![필터링된 검색 결과](assets/storefront-search-results-run.png)
+
+정의된 모든 패싯은 URL 매개 변수로 사용할 수 있으며 결과는 매개 변수 값을 기반으로 필터링됩니다. `http://yourstore.com?brand=acme&color=red`.
 
 ## 요구 사항 충족
 
