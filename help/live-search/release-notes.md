@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ ht-degree: 0%
 ![수정](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![버그](../assets/bug.svg) 알려진 문제
 
+## 호스팅된 서비스 업데이트
+
+이 참고 사항에서는 버전 관리된 릴리스 외부에 게시된 업데이트 또는 호스팅된 서비스에 대한 개선 사항에 대해 설명합니다.
+
++++호스팅된 서비스 업데이트
 
 _2023년 6월 13일_
 
-![신규](../assets/new.svg) 이제 라이브 검색에서 5개 더 지원 [구성 값](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![수정](../assets/fix.svg) 따옴표나 아포스트로피와 같은 일부 문자로 인해 순위 문제가 발생하는 문제가 해결되었습니다. 리인덱싱하면 이러한 문제가 해결됩니다.
 
 _2023년 4월 25일_
 
 ![신규](../assets/new.svg) 이제 라이브 검색 고객이 새로운 기능을 이용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_2023년 8월 7일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+### 새로운 기능
+
+다음 값이 `storeDetails` 개체:
+
+* &quot;페이지당 모든 제품 허용&quot;
+* 통화 비율
+* &quot;그리드 허용 값의 페이지당 제품&quot;
+* &quot;그리드 기본값의 페이지당 제품&quot;
+* 언어 저장
+
+### 업데이트
+
+* 고급 데이터 검색을 지원하기 위해 카탈로그 서비스 모듈이 메타패키지에 추가되었습니다.
+
+판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.2 를 사용하여 이러한 기능에 액세스할 수 있습니다.
+
+프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
+
+## 이전 버전
+
++++3.0.1 및 이전
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _2023년 3월 14일_
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.1 을 사용하여 이러한 기능에 액세스할 수 있습니다.
 
 프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
-
-## 이전 버전
-
-+++2.0.5 및 이전
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
