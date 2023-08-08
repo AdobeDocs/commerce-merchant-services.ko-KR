@@ -3,9 +3,9 @@ title: Adobe Experience Platform Mobile SDK와 Commerce 통합
 description: Headless 또는 사용자 지정 Commerce 상점 앞에서 Adobe Experience Platform Mobile SDK를 사용하는 방법에 대해 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
+source-git-commit: c5d618788a58109e124a1774b3860cf9c41abb8a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -40,32 +40,33 @@ Experience Platform에 대한 SDK 구성을 완료한 후 SDK 구성을 Commerce
 
 1. SDK를 통해 Experience Platform에게 상거래 이벤트 데이터를 전송하려면 애플리케이션 코드에 XDM 스키마를 제공해야 합니다. 이 스키마는 스키마와 일치해야 합니다. [구성됨](https://developer.adobe.com/client-sdks/documentation/getting-started/set-up-schemas-and-datasets/) Experience Platform의 SDK용입니다.
 
-다음 예제에서는 를 추적하는 방법을 보여 줍니다. `web.webpagedetails.pageViews` 이벤트 및 설정 `identityMap` 이메일 필드 사용.
+   다음 예제에서는 를 추적하는 방법을 보여 줍니다. `web.webpagedetails.pageViews` 이벤트 및 설정 `identityMap` 이메일 필드 사용.
 
-    &quot;javascript
-    let stateName = &quot;luma: content: ios: us: en: home&quot;
-    var xdmData: [문자열: 모두] = [
-    &quot;eventType&quot;: &quot;web.webpagedetails.pageViews&quot;,
-    &quot;web&quot;: [
-    &quot;webPageDetails&quot;: [
-    &quot;pageViews&quot;: [
-    &quot;value&quot;: 1
-    ],
-    &quot;name&quot;: &quot;홈 페이지&quot;
-    ]
-    ]
-    ]
-    
-    let experienceEvent = ExperienceEvent(xdm: xdmData)
-    Edge.sendEvent(experienceEvent: experienceEvent)
-    
-    // Adobe Experience Platform - ID 업데이트
-    let emailLabel = &quot;mobileuser@example.com&quot;
-    
-    identityMap: IdentityMap = IdentityMap() 허용
-    identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: &quot;Email&quot;)
-    Identity.updateIdentities(with: identityMap)
-    &quot;
+   ```swift
+   let stateName = "luma: content: ios: us: en: home"
+   var xdmData: [String: Any] = [
+       "eventType": "web.webpagedetails.pageViews",
+       "web": [
+           "webPageDetails": [
+               "pageViews": [
+                   "value": 1
+               ],
+               "name": "Home page"
+           ]
+       ]
+   ]
+   
+   let experienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: experienceEvent)
+   
+   // Adobe Experience Platform - Update Identity
+   
+   let emailLabel = "mobileuser@example.com"
+   
+   let identityMap: IdentityMap = IdentityMap()
+   identityMap.add(item: IdentityItem(id: emailLabel), withNamespace: "Email")
+   Identity.updateIdentities(with: identityMap)
+   ```
 
 1. Commerce Cloud 환경에 연결합니다.
 
@@ -82,7 +83,7 @@ Experience Platform에 대한 SDK 구성을 완료한 후 SDK 구성을 Commerce
 
       이렇게 하면 `apollo-codegen-configuration.json` 파일.
 
-   1. 콘텐츠를 대체하여 프로젝트에서 필요한 GraphQL 파일 및 디렉터리를 생성합니다. `apollo-codegen-configuration.json` 파일이 포함된 파일:
+   1. 의 컨텐츠를 대체하여 프로젝트에서 필요한 GraphQL 파일 및 디렉토리를 생성합니다. `apollo-codegen-configuration.json` 파일이 포함된 파일:
 
       ```json
       {
