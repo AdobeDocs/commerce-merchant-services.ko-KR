@@ -3,7 +3,7 @@ title: Adobe Experience Platform Mobile SDK와 Commerce 통합
 description: Headless 또는 사용자 지정 Commerce 상점 앞에서 Adobe Experience Platform Mobile SDK를 사용하는 방법에 대해 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f06020fd6bea6dbb73476f91f359987b3f61cd95
+source-git-commit: cae4d26d389376476b9b6a567841a847cc9c9732
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Experience Platform에 대한 SDK 구성을 완료한 후 SDK 구성을 Commerce
 
 다음 예제에서는 를 추적하는 방법을 보여 줍니다. `web.webpagedetails.pageViews` 이벤트 및 설정 `identityMap` 이메일 필드 사용.
 
-    &quot;swift
+    &quot;javascript
     let stateName = &quot;luma: content: ios: us: en: home&quot;
     var xdmData: [문자열: 모두] = [
     &quot;eventType&quot;: &quot;web.webpagedetails.pageViews&quot;,
