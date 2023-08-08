@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ _2023년 8월 7일_
 ### 업데이트
 
 * 고급 데이터 검색을 지원하기 위해 카탈로그 서비스 모듈이 메타패키지에 추가되었습니다.
+
+### 수정 사항
+
+* 다음 **내 계정** 제품 목록 페이지 위젯을 사용할 때 페이지 탐색이 더 이상 사라지지 않습니다.
 
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.2 를 사용하여 이러한 기능에 액세스할 수 있습니다.
 
