@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ PayPal의 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/p
 
 PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 수 있습니다.
 
-이 옵션은 대체 신용 카드 공급자가 없을 때 쇼핑객에게 PayPal 직불 또는 신용 카드 결제 옵션을 제공하는 데 사용할 수 있습니다.
+이 옵션은 신용카드 통합에 대한 대안으로 PayPal 호스팅 버튼을 사용하여 구매자에게 직불 또는 신용카드 결제 옵션을 제공하는 데 사용할 수 있습니다.
 
 ### [!DNL Pay Later] 단추
 
@@ -100,7 +100,7 @@ PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 �
 
 이를 통해 다음을 수행할 수 있습니다.
 
-* Venmo 및 PayPal 결제 버튼을 포함하여 고객을 위한 다양한 결제 옵션을 제공하고, PayPal 호스팅 카드 필드를 끄고 기존 신용카드 제공업체를 이용할 수 있는 옵션을 제공합니다.
+* Venmo 및 PayPal 결제 버튼을 포함하여 고객을 위한 다양한 결제 옵션을 제공하고, PayPal 호스팅 카드 필드를 끄고 기존 신용카드 제공업체를 사용할 수 있는 옵션을 제공합니다.
 * PayPal의 다른 결제 옵션을 활용하면서 신용 카드 결제를 위해 기존 신용카드 제공업체를 이용하십시오.
 * PayPal이 신용 카드를 지원하지 않는 지역에서 PayPal의 결제 버튼을 결제 옵션으로 사용합니다.
 
