@@ -25,7 +25,7 @@ ht-degree: 0%
 
 - 를 선택하여 확장을 활성화하고, 전역 설정을 구성하고, Store Assist 앱 사용자 연결 및 계정에 대한 보안 옵션을 지정합니다. **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-  ![스토어 이행 관리를 위한 Admin Store Services 구성](assets/store-services-admin-sf-config.png)
+  ![스토어 이행 관리를 위한 Admin Store 서비스 구성](assets/store-services-admin-sf-config.png)
 
 - 을 선택하여 게재 방법 구성 **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 

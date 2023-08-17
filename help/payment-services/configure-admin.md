@@ -88,7 +88,7 @@ ht-degree: 0%
 
 다음을 참조하십시오 [결제 옵션](payments-options.md#paypal-smart-buttons) 추가 정보.
 
-### 구성 [!DNL PayPal Smart Buttons]
+### Configure [!DNL PayPal Smart Buttons]
 
 관리자 내에서 PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니다.
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 1. Apple Pay as a payment 옵션을 활성화하려면 다음을 선택합니다. `Yes` 대상 **[!UICONTROL Apple Pay Enabled]**.
 1. PayPal 신용 카드 및 직불 카드를 결제 옵션으로 사용하려면(PayPal 스마트 단추) 다음을 선택합니다. `Yes` 대상 **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
 1. 활성화/비활성화하려면 [PayPal 나중에 결제](payments-options.md#pay-later-button) 결제 옵션, 선택 `Yes`/`No` 대상 **[!UICONTROL PayPal Pay Later Enabled]**.
-1. 디버그 모드를 활성화하려면 `Yes` 대상: **[!UICONTROL Debug Mode]** (`No` 사용 안 함)입니다.
+1. 디버그 모드를 사용하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Debug Mode]** (`No` 사용 안 함)입니다.
 1. 변경 사항을 저장하려면 를 클릭합니다. **[!UICONTROL Save Config]** .
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL Flush Cache]** 잘못된 모든 캐시를 새로 고칩니다.
 

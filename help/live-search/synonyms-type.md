@@ -37,7 +37,7 @@ ht-degree: 0%
 
 a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will, with
 
-정지어는 동의어를 더 의미 있게 만들지 않고, 반드시 처리해야 하는 데이터의 양을 늘린다.
+정지어는 동의어를 더 의미 있게 만드는 것이 아니라 반드시 처리해야 하는 데이터의 양을 늘린다.
 
 ### 단일 단어 사용
 

@@ -494,7 +494,7 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드 |
 | `paymentAmount` | 결제 값 |
 | `taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액 |
-| `createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예를 들어, `2022-10-15T20:20:39+00:00` |
+| `createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. For example, `2022-10-15T20:20:39+00:00` |
 | `shipping` | 하나 이상의 제품에 대한 배송 세부 정보 |
 | `shippingMethod` | 표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법 |
 | `shippingAmount` | 고객이 배송비로 지불해야 했던 금액. |

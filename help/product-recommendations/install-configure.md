@@ -15,7 +15,7 @@ ht-degree: 0%
 배포 [!DNL Product Recommendations] storefront 및 관리자에게 모듈을 설치하고 [Commerce Services 커넥터](../landing/saas.md). 업데이트가 릴리스되면 설치를 최신 버전으로 쉽게 업데이트할 수 있습니다.
 
 - [설치](#install)
-- [구성](#configure)
+- [Configure](#configure)
 - [업데이트](#update)
 - [제거](#uninstall)
 
@@ -49,7 +49,7 @@ composer require magento/module-page-builder-product-recommendations
 composer require magento/module-visual-product-recommendations
 ```
 
-## 구성 [!DNL Product Recommendations] {#configure}
+## Configure [!DNL Product Recommendations] {#configure}
 
 를 설치한 후 `magento/product-recommendations` 모듈에서는 다음을 구성해야 합니다 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) api 키를 지정하고 SaaS 데이터 공간을 선택합니다.
 

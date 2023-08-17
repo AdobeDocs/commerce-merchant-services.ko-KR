@@ -30,7 +30,7 @@ Storefront가 PWA Studio을 사용하여 구현된 경우 다음을 참조하십
 
 온라인 쇼핑의 변화무쌍한 복잡성을 고려할 때, 상점에 가장 적합한 것은 종종 여러 주요 기술의 조합입니다. 두 가지 모두 사용 [!DNL Product Recommendations] 및 [제품 관계](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) 는 제품을 홍보할 때 더 많은 유연성을 제공합니다. 다음을 활용할 수 있습니다 [!DNL Product Recommendations] Adobe Sensei을 통해 규모에 맞게 권장 사항을 지능적으로 자동화합니다. 그런 다음 을 [관련 제품 규칙](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) 대상 쇼핑객 세그먼트에 특정 권장 사항이 작성되고 있는지 수동으로 개입해야 하거나 특정 비즈니스 목표가 충족되어야 하는 경우.
 
-제품 추천을 통해 다음을 수행할 수 있습니다.
+제품 권장 사항을 사용하면 다음 작업을 수행할 수 있습니다.
 
 - 쇼핑객 기반, 항목 기반, 인기도 기반, 트렌드 및 유사성 기반의 9가지 지능형 추천 유형 중에서 선택합니다
 - 행동 데이터를 사용하여 쇼핑객의 상점 여정 전체에서 권장 사항을 개인화합니다

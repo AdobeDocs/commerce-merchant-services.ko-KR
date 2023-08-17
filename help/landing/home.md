@@ -80,7 +80,7 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도�
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>채널 관리자</strong></a> <br><em>(Magento Open Source 가능)</em>
-    <div>월마트 마켓플레이스와 통합하여 매출 증대, 신규 고객 유치, 운영 효율화, 시간 절약 등의 효과를 누릴 수 있습니다. 직원들이 Walmart Marketplace 매출, 재고, 가격 등을 모두 Commerce에서 원활하게 관리할 수 있습니다.</div>
+    <div>월마트 마켓플레이스와 통합하여 매출 증대, 신규 고객 유치, 운영 효율화, 시간 절약 등의 효과를 누릴 수 있습니다. 직원들이 Commerce에서 Walmart Marketplace 판매, 재고 및 가격을 원활하게 관리할 수 있습니다.</div>
   </td>
    </tr>
 </table>

@@ -19,18 +19,18 @@ Adobe Commerce과 Magento Open Source 모두 데이터가 브라우저 쿠키에
 
 - 쿠키 이름:
 
-   ```text
-   `const DNT_COOKIE = "mg_dnt";`
-   ```
+  ```text
+  `const DNT_COOKIE = "mg_dnt";`
+  ```
 
 - 데이터 수집을 비활성화하려면 추적 안 함 쿠키를 설정하십시오.
 
-   ```text
-   `$.mage.cookies.set(DNT_COOKIE, true);`
-   ```
+  ```text
+  `$.mage.cookies.set(DNT_COOKIE, true);`
+  ```
 
 - 사용자가 쿠키를 수락했을 때 쿠키를 지우려면 다음을 수행하십시오.
 
-   ```text
-   `$.mage.cookies.clear(DNT_COOKIE);`
-   ```
+  ```text
+  `$.mage.cookies.clear(DNT_COOKIE);`
+  ```

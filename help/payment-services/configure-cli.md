@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 데이터 내보내기 구성
 
-[!DNL Payment Services] 에서 내보낸 주문 데이터 결합 [!DNL Magento Open Source] 및 [!DNL Adobe Commerce] 유용한 보고서를 작성하기 위해 결제 공급자의 집계 결제 데이터를 사용합니다. 다음 [!DNL Payment Services] 확장은 인덱서를 사용하여 보고서에 필요한 모든 데이터를 효율적으로 수집합니다.
+[!DNL Payment Services] 에서 내보낸 주문 데이터 결합 [!DNL Magento Open Source] 및 [!DNL Adobe Commerce] 유용한 보고서를 작성하기 위해 결제 공급자의 결제 데이터를 집계한 경우 다음 [!DNL Payment Services] 확장은 인덱서를 사용하여 보고서에 필요한 모든 데이터를 효율적으로 수집합니다.
 
 에 사용된 데이터에 대해 알아보려면 [!DNL Payment Services] 보고, 참조 [주문 결제 상태 보고서](order-payment-status.md#data-used-in-the-report).
 

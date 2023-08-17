@@ -5,8 +5,8 @@ exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 feature: Checkout, Services
 source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 

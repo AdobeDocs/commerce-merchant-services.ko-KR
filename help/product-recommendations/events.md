@@ -26,7 +26,7 @@ ht-degree: 0%
 
 다음 [Adobe Commerce Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) 상점에 배포된 모든 이벤트를 나열합니다. 그러나 이 목록에는 제품 Recommendations과 관련된 이벤트의 하위 집합이 있습니다. 이러한 이벤트는 쇼핑객이 상점 위의 추천 단위와 상호 작용할 때 데이터를 수집하여 추천 실적을 분석하는 데 사용되는 지표에 전원을 공급합니다.
 
-| 이벤트 | 설명 | [지표에 사용됩니까?](workspace.md) |
+| Event | 설명 | [지표에 사용됩니까?](workspace.md) |
 | --- | --- | --- |
 | `impression-render` | 권장 사항 단위는 페이지에 렌더링됩니다. | 예 |
 | `rec-add-to-cart-click` | 고객이 클릭 **장바구니에 추가** 추천 단위의 항목에 대한 단추입니다. | 예, 다음과 같은 경우: **장바구니에 추가** 단추가 권장 사항 템플릿에 있습니다. |

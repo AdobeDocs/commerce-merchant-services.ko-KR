@@ -16,7 +16,7 @@ ht-degree: 0%
 ![추천 단위](assets/unit.png)
 _추천 단위_
 
-권장 사항 단위를 활성화하면 Adobe Commerce이 [데이터 수집](workspace.md) 노출, 보기, 클릭 수 등을 측정합니다. 다음 [!DNL Product Recommendations] 테이블에는 정보에 입각한 비즈니스 결정을 내리는 데 도움이 되는 각 권장 사항 단위에 대한 지표가 표시됩니다.
+권장 사항 단위를 활성화하면 Adobe Commerce이 [데이터 수집](workspace.md) 노출, 보기, 클릭 수 등을 측정합니다. 다음 [!DNL Product Recommendations] 표에는 정보에 입각한 비즈니스 결정을 내리는 데 도움이 되는 각 권장 사항 단위에 대한 지표가 표시됩니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **마케팅** > _프로모션_ > **제품 Recommendations** 을(를) 표시하려면 _제품 Recommendations_ 작업 영역.
 

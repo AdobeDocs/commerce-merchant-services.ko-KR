@@ -65,7 +65,7 @@ Store Assist 앱을 설정하고 구성한 후 Store Associates는 모바일 장
 
 - 모바일 장치가 [하드웨어 및 소프트웨어 요구 사항](solution-requirements.md#store-assist-app-requirements) Store Fulfillment 솔루션용
 
-- 에서 Store Assist 앱 다운로드 [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+- 에서 Store Assist 앱을 다운로드합니다. [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Store Associates에서 로그인하려면 다음 정보가 필요합니다.
 

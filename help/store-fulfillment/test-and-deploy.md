@@ -209,7 +209,7 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>픽업 준비 - 부분 취소</br></br>어떤 제품은 고르고 어떤 제품은 함께 고릅니다 <code>0 qty</code>)</strong>
+<td><strong>픽업 준비 - 부분 취소</br></br>어떤 제품은 고르고 어떤 제품은 따로 고릅니다 <code>0 qty</code>)</strong>
 </td>
 <td><ol>
 <li>주문하십시오.</li>

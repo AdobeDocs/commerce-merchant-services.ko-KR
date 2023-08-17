@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ### 운영 및 개발 팀
 
-이 안내서는 이러한 팀이 을 구성하는 데 필요한 기술 단계를 학습하는 데 도움이 됩니다 [!DNL Quick Checkout] Adobe Commerce 확장을 통해 프로세스를 보다 쉽고 빠르고 경제적으로 수행할 수 있습니다.
+이 안내서는 이러한 팀이 을 구성하는 데 필요한 기술 단계를 학습하는 데 도움이 됩니다 [!DNL Quick Checkout] Adobe Commerce 확장 을 통해 프로세스를 보다 쉽고 빠르며 경제적으로 수행할 수 있습니다.
 
 Adobe Commerce [체크아웃](https://glossary.magento.com/checkout) 는 다음의 두 가지 기본 단계로 구성됩니다.
 

@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] 릴리스 정보'
+title: '[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes

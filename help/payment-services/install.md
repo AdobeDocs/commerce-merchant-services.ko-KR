@@ -146,7 +146,7 @@ Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocat
 
 또는 다음 명령을 사용하여 메모리 제한을 지정할 수 있습니다. `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services`.
 
-예:
+For example:
 
 ```bash
 php -d memory_limit=-1 vendor/bin/composer require magento/payment-services

@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Quick Checkout] 릴리스 정보'
+title: '[!DNL Quick Checkout] 릴리스 정보'
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Quick Checkout] 릴리스.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout

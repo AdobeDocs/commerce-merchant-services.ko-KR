@@ -35,7 +35,7 @@ ht-degree: 0%
 
    반환에 필요한 최소 이벤트 [!DNL Product Recommendations] 결과:
 
-   | 이벤트 | 범주 |
+   | Event | 범주 |
    |--- | ---|
    | `view` | 제품 |
    | `add-to-cart` | 제품 |
@@ -43,7 +43,7 @@ ht-degree: 0%
 
    활성화하려면 [지표 보고](workspace.md)를 사용하려면 다음 추가 이벤트가 필요합니다.
 
-   | 이벤트 | 범주 |
+   | Event | 범주 |
    |--- | ---|
    | `impression-render` | recommendation-unit |
    | `view` | recommendation-unit |

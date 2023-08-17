@@ -183,7 +183,7 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스이며, 프로덕션 모드�
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | 주문하기 위해 구매자와 판매자 간에 돈이 이동했다 |
 | [!UICONTROL AUTH] | 인증 및 인증 무효 트랜잭션 |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | 차지백 수수료 및 차지백 수수료 취소 거래 |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |
