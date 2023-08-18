@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Store Assist 앱은 Store Associates에 4개의 모듈을 제공하여 온라인
 
 - **[선택](#pick-module)**- 모든 주문 품목 및 적합한 품목과 수량이 선택되었는지 확인할 수 있는 도구를 완벽하게 표시합니다. 스토어 동료는 효율성을 높이기 위해 한 개 또는 여러 개의 주문을 동시에 선택할 수 있습니다.
 
-- **[단계](#stage-module)**—고객이 스토어로 이동하는 동안 주문이 접수되는 위치를 입력하면 Store Associates에서 주문 처리를 위해 해당 주문을 쉽게 찾을 수 있습니다.
+- **[단계](#stage-module)**—Store Associates에서 보다 신속하게 주문을 찾아서 전달할 수 있도록 고객이 상점으로 이동하는 동안 주문이 처리되는 위치를 입력합니다.
 
 - **[핸드 오프](#hand-off-module)**—고객이 스토어에 도착한 후 실시간 알림을 받아 대기 시간을 최소화하고 원활하게 주문을 전달할 수 있습니다.
 

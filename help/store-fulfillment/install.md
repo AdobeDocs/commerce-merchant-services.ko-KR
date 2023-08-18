@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 의 초기 설치를 완료합니다 [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 예외 처리를 허용하도록 큐 관리자가 실행 중이고 캐싱이 구성된 비프로덕션 환경의 확장. 개발 환경에 Adobe Commerce 인스턴스의 운영 및 유지 관리에 대한 우수 사례를 확인할 수 있는 개발 도구가 포함되어 있는지 확인합니다.
 
+>[!TIP]
+>
+>다음을 수행하여 Adobe Commerce 온-프레미스에 대한 스토어 이행 확장 업그레이드 [업그레이드 지침](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) 다음에서 _Adobe Commerce 업그레이드 안내서_. 클라우드 인프라의 Adobe Commerce에 대해서는 다음을 참조하십시오. [확장 업그레이드](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) 다음에서 *클라우드 인프라의 Commerce 안내서*.
+
 ## 전제 조건
 
-리뷰 [요구 사항](solution-requirements.md) Store Fulfillment 솔루션의 경우 및 설치 전에 필요한 정보 수집 [!DNL Store Fulfillment] Adobe Commerce용 확장.
+리뷰 [요구 사항](solution-requirements.md) Store Fulfillment 솔루션의 경우, 다음을 설치하거나 업그레이드하기 전에 필요한 정보를 수집합니다. [!DNL Store Fulfillment] Adobe Commerce용 확장.
 
 Adobe Commerce용 스토어 이행 확장 기능의 프리릴리스 또는 베타 버전을 설치한 경우 현재 버전을 설치하기 전에 다음 명령을 사용하여 제거하십시오.
 
@@ -196,4 +200,5 @@ php bin/magento setup:static-content:deploy -f
 >[!NOTE]
 >
 >자세한 내용은 [Adobe Commerce의 정적 콘텐츠 배포 우수 사례](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) Adobe Commerce 도움말 센터의 문서입니다.
+
 

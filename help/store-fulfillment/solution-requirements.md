@@ -5,10 +5,10 @@ role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +23,14 @@ ht-degree: 2%
 - ECE(클라우드 인프라)의 Adobe Commerce
 - Adobe Commerce 온-프레미스 (EE)
 
-Store Fulfillment 솔루션은 *소프트웨어 호환성* 테이블.
+설치 또는 업그레이드 전에 릴리스 노트 및 Adobe Commerce 시스템 요구 사항 을 검토하여 버전 호환성, 업데이트 또는 설치 또는 업그레이드 요구 사항에 영향을 줄 수 있는 변경 사항에 대한 최신 정보를 확인하십시오.
 
-**소프트웨어 호환성**
+- [이행 릴리스 정보 저장](release-notes.md)
 
-| **소프트웨어** | **최소 버전** | **최대 버전** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.5 |
-| 작성기 | 1.x | 2.x |
-| 마리아DB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
+- [Adobe Commerce 릴리스 노트](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) 다음에서 *Adobe Commerce 릴리스 정보*.
 
-자세한 요구 사항은 Adobe Commerce 를 검토하십시오 [시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 다음에서 *Adobe Commerce 설치 안내서*.
+- [Adobe Commerce 시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 다음에서 *Adobe Commerce 설치 안내서*.
+
 
 ## 스토어 지원 앱 요구 사항
 

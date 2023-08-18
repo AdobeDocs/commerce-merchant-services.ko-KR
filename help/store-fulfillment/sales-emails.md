@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 </thead>
 <tbody><tr>
 <td><strong>비동기 전송</strong></td>
-<td>이 기능을 비활성화합니다. 비동기 이메일 전송은 지원되지 않습니다. 스토어 픽업을 위한 가장 빠른 통신 및 응답 시간을 위해 일괄 처리하는 대신 이메일을 즉시 보내십시오. </td>
+<td>영업 이메일이 비동기적으로 전송되는지 여부를 결정합니다. 옵션: <br/>**`Disable`** - (기본값) 이벤트에 의해 트리거되면 판매 이메일이 전송됩니다. 스토어 픽업에서 가장 빠른 통신 및 응답 시간을 보려면 기본 설정을 사용하십시오. <br/>**`Enable`** - 이 옵션을 활성화하면 체크아웃 및 주문 처리 이메일 알림을 처리하는 프로세스가 사전 결정된 일정한 간격으로 백그라운드로 이동합니다.</td>
 <td>스토어 뷰</td>
 <td>아니요</td>
 </tr>
