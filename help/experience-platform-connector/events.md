@@ -4,9 +4,9 @@ description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
 workflow-type: tm+mt
-source-wordcount: '4779'
+source-wordcount: '6126'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,17 @@ ht-degree: 0%
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `quantity` | 장바구니에 추가된 제품 단위 수 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 | `cartID` | 고객의 장바구니를 식별하는 고유 ID |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### openCart
 
@@ -68,10 +75,17 @@ ht-degree: 0%
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `quantity` | 장바구니에 추가된 제품 단위 수 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 | `cartID` | 고객의 장바구니를 식별하는 고유 ID |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### removeFromCart
 
@@ -92,10 +106,17 @@ ht-degree: 0%
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `quantity` | 장바구니에서 제거된 제품 단위 수 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 | `cartID` | 고객의 장바구니를 식별하는 고유 ID |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### shoppingCartView
 
@@ -116,10 +137,17 @@ ht-degree: 0%
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `quantity` | 장바구니에 있는 제품 단위의 수 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 | `cartID` | 고객의 장바구니를 식별하는 고유 ID |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### pageView
 
@@ -134,6 +162,11 @@ ht-degree: 0%
 | 필드 | 설명 |
 |---|---|
 | `pageViews` | 페이지가 로드되었는지 보여 줍니다. A `value` / `1` 페이지가 로드되었음을 나타냅니다. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### 제품 페이지 보기
 
@@ -153,9 +186,16 @@ ht-degree: 0%
 | `name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름 |
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### startCheck
 
@@ -176,10 +216,17 @@ ht-degree: 0%
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `quantity` | 장바구니에 있는 제품 단위의 수 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 제품에 대한 통화 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 | `cartID` | 고객의 장바구니를 식별하는 고유 ID |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### completeCheckout
 
@@ -198,13 +245,14 @@ ht-degree: 0%
 | `purchaseID` | 판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다고 보장할 수는 없습니다. |
 | `orderType` | 체크아웃 또는 즉시 구매와 같이 주문된 주문 유형을 나타냅니다. |
 | `payments` | 이 주문에 대한 결제 목록 |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드. 예를 들어, `USD` 또는 `EUR`. |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `paymentAmount` | 결제 값 |
 | `paymentType` | 해당 주문에 대한 결제 방법. 옵션은 다음과 같습니다. `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | 해당 결제 항목에 대한 고유 거래 식별자 |
 | `shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `shippingMethod` | 표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법 |
 | `shippingAmount` | 장바구니에 있는 항목의 총 배송 비용 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `promotionID` | 프로모션에 대한 고유 식별자(있는 경우) |
 | `personalEmail` | 개인 이메일 주소를 지정합니다. |
 | `address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의됨 |
@@ -214,9 +262,16 @@ ht-degree: 0%
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `quantity` | 장바구니에 있는 제품 단위의 수 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 주문 합계에 사용되는 통화 코드입니다. |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `productImageUrl` | 제품의 기본 이미지 URL |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ## 프로필 이벤트
 
@@ -246,6 +301,11 @@ ht-degree: 0%
 | `address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의됨 |
 | `userAccount` | 고객 충성도 세부 정보, 환경 설정, 로그인 프로세스 및 기타 계정 환경 설정을 나타냅니다. |
 | `login` | 방문자가 로그인을 시도했는지 여부를 나타냅니다. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### 로그아웃
 
@@ -265,6 +325,11 @@ ht-degree: 0%
 |---|---|
 | `userAccount` | 고객 충성도 세부 정보, 환경 설정, 로그인 프로세스 및 기타 계정 환경 설정을 나타냅니다. |
 | `logout` | 방문자가 로그아웃을 시도했는지 여부를 나타냅니다. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### createAccount
 
@@ -290,6 +355,11 @@ ht-degree: 0%
 | `address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의됨 |
 | `userAccount` | 고객 충성도 세부 정보, 환경 설정, 로그인 프로세스 및 기타 계정 환경 설정을 나타냅니다. |
 | `createProfile` | 사용자가 계정 프로필을 만들었는지 여부를 나타냅니다. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### editAccount
 
@@ -315,6 +385,11 @@ ht-degree: 0%
 | `address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에서 일반적으로 정의됨 |
 | `userAccount` | 고객 충성도 세부 정보, 환경 설정, 로그인 프로세스 및 기타 계정 환경 설정을 나타냅니다. |
 | `updateProfile` | 사용자가 계정 프로필을 업데이트했는지 보여 줍니다. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ## 이벤트 검색
 
@@ -348,6 +423,11 @@ ht-degree: 0%
 | `attribute` (정렬) | 검색 결과에서 항목을 정렬하는 데 사용되는 속성 |
 | `order` | 검색 결과를 반환하는 순서 |
 | `query` | 검색어 |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### searchResponseReceived
 
@@ -373,6 +453,11 @@ ht-degree: 0%
 | `SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름 |
 | `productImageUrl` | 제품의 기본 이미지 URL |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ## B2B 이벤트
 
@@ -396,6 +481,11 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `ID` | 구매요청 목록의 고유 식별자 |
 | `name` | 고객이 지정한 구매요청 목록의 이름 |
 | `description` | 고객이 지정한 구매요청 목록에 대한 설명 |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### addToRequisitionList
 
@@ -423,8 +513,15 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `quantity` | 추가된 제품 단위 수 |
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드 |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ### removeFromRequisitionList
 
@@ -448,8 +545,15 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `quantity` | 추가된 제품 단위 수 |
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
 | `discountAmount` | 적용된 할인 금액을 나타냅니다. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드 |
-| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. `attribute` 는 구성 가능한 제품의 속성을 식별합니다. 예: `size` 또는 `color` 및 `value` 는 다음과 같은 속성 값을 식별합니다. `small` 또는 `black`. |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 
 ## 백오피스 이벤트
 
@@ -478,7 +582,12 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `quantity` | 장바구니에 있는 제품 단위의 수 |
 | `priceTotal` | 제품 라인 항목에 대한 총 가격 |
-| `discountAmount` | 적용된 할인 금액을 나타냅니다. |
+| `discountAmount` | 항목에 적용되는 할인 금액을 나타냅니다. |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
+| `productImageUrl` | 제품의 기본 이미지 URL |
+| `selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
+| `attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color` |
+| `value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 | `commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
 | `environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
 | `storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
@@ -487,17 +596,19 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `order` | 주문에 대한 정보 포함 |
 | `purchaseID` | 판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다고 보장할 수는 없습니다 |
 | `priceTotal` | 할인과 세금이 모두 적용된 후 이 주문의 총 가격 |
-| `currencyCode` | 주문 합계에 사용되는 ISO 4217 통화 코드 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `purchaseOrderNumber` | 구매자가 해당 구매 또는 계약에 할당한 고유 식별자 |
 | `payments` | 이 주문에 대한 결제 목록 |
 | `paymentType` | 해당 주문에 대한 결제 방법. 열거됨, 사용자 정의 값이 허용됨. |
-| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드 |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `paymentAmount` | 결제 값 |
 | `taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액 |
+| `discountAmount` | 전체 주문에 적용되는 할인 금액을 나타냅니다. |
 | `createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. For example, `2022-10-15T20:20:39+00:00` |
 | `shipping` | 하나 이상의 제품에 대한 배송 세부 정보 |
 | `shippingMethod` | 표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법 |
 | `shippingAmount` | 고객이 배송비로 지불해야 했던 금액. |
+| `currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR` |
 | `address` | 실제 배송 주소 |
 | `street1` | 기본 도로 정보, 아파트 번호, 도로 번호 및 도로명 |
 | `street2` | 거리 수준 정보를 위한 추가 필드 |
@@ -524,7 +635,7 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 #### orderItemsShipped에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터에 대해 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`commerceScope`|이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다.| |`environmentID`|환경 ID. 하이픈으로 구분된 32자리 영숫자 ID.| |`storeCode`|고유한 스토어 코드입니다. 웹사이트당 많은 매장이 있을 수 있습니다.| |`storeViewCode`|고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다.| |`websiteCode`|고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다.| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`priceTotal`|모든 할인 및 세금이 적용된 후 이 주문의 총 가격| |`currencyCode`|주문 합계에 사용되는 ISO 4217 통화 코드| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거됨, 사용자 정의 값이 허용됨.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법| |`trackingNumber`|주문 항목 배송에 대해 배송 회사가 제공한 추적 번호| |`trackingURL`|주문 항목의 배송 상태를 추적할 URL| |`shipDate`|주문에서 하나 이상의 품목이 배송된 날짜| |`address`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`shippingAmount`|고객이 배송비로 지불해야 했던 금액입니다.| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|
+|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`productImageUrl`|제품의 기본 이미지 URL| |`selectedOptions`|구성 가능한 제품에 사용되는 필드.| |`attribute`|구성 가능한 제품의 특성을 식별합니다. 예: `size` 또는 `color`| |`value`|특성 값(예: ) 식별 `small` 또는 `black`.| |`commerceScope`|이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다.| |`environmentID`|환경 ID. 하이픈으로 구분된 32자리 영숫자 ID.| |`storeCode`|고유한 스토어 코드입니다. 웹사이트당 많은 매장이 있을 수 있습니다.| |`storeViewCode`|고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다.| |`websiteCode`|고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다.| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`priceTotal`|모든 할인 및 세금이 적용된 후 이 주문의 총 가격| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거됨, 사용자 정의 값이 허용됨.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`paymentAmount`|결제 값| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`trackingNumber`|주문 항목 배송에 대해 배송 회사가 제공한 추적 번호| |`trackingURL`|주문 항목의 배송 상태를 추적할 URL| |`shipDate`|주문에서 하나 이상의 품목이 배송된 날짜| |`address`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`shippingAmount`|고객이 배송비로 지불해야 했던 금액입니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|
 
 ### orderCanceled
 
@@ -535,7 +646,7 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 #### orderCanceled에서 수집된 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터에 대해 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`commerceScope`|이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다.| |`environmentID`|환경 ID. 하이픈으로 구분된 32자리 영숫자 ID.| |`storeCode`|고유한 스토어 코드입니다. 웹사이트당 많은 매장이 있을 수 있습니다.| |`storeViewCode`|고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다.| |`websiteCode`|고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다.| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`cancelDate`|구매자가 주문을 취소한 날짜 및 시간| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|
+|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`productImageUrl`|제품의 기본 이미지 URL| |`selectedOptions`|구성 가능한 제품에 사용되는 필드.| |`attribute`|구성 가능한 제품의 특성을 식별합니다. 예: `size` 또는 `color`| |`value`|특성 값(예: ) 식별 `small` 또는 `black`.| |`commerceScope`|이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다.| |`environmentID`|환경 ID. 하이픈으로 구분된 32자리 영숫자 ID.| |`storeCode`|고유한 스토어 코드입니다. 웹사이트당 많은 매장이 있을 수 있습니다.| |`storeViewCode`|고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다.| |`websiteCode`|고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다.| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`cancelDate`|구매자가 주문을 취소한 날짜 및 시간| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|
 
 ### 대변 메모 발행됨
 
@@ -546,7 +657,7 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 #### creditMemoIssued에서 수집된 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터에 대해 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|
+|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`productImageUrl`|제품의 기본 이미지 URL| |`selectedOptions`|구성 가능한 제품에 사용되는 필드.| |`attribute`|구성 가능한 제품의 특성을 식별합니다. 예: `size` 또는 `color`| |`value`|특성 값(예: ) 식별 `small` 또는 `black`.| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`lastUpdatedDate`|특정 주문 레코드가 상거래 시스템에서 마지막으로 업데이트된 시간| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`taxAmount`|최종 지급의 일부로 구매자가 지불한 세액| |`refunds`|이 주문에 대한 환불 목록| |`refundPaymentType`|이 주문에 대한 결제 방법입니다. 열거됨, 사용자 정의 값이 허용됨.| |`refundAmount`|환불 값.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로|
 
 ### orderShipmentCompleted
 
@@ -557,4 +668,4 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 #### orderShipmentCompleted에서 수집한 데이터
 
 다음 표에서는 이 이벤트에 대해 수집된 데이터에 대해 설명합니다.
-|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`priceTotal`|모든 할인 및 세금이 적용된 후 이 주문의 총 가격| |`currencyCode`|주문 합계에 사용되는 ISO 4217 통화 코드| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`taxAmount`|최종 지급의 일부로 구매자가 지불한 세액| |`createdDate`|상거래 시스템에서 새 주문이 생성된 시간과 날짜입니다. 예를 들어, `2022-10-15T20:20:39+00:00`| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거됨, 사용자 정의 값이 허용됨.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 이 결제 항목에 사용된 통화 코드| |`paymentAmount`|결제 값| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법| |`address`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`shippingAmount`|고객이 배송비로 지불해야 했던 금액입니다.| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 이 데이터에 우편 번호 일부만 포함되어 있습니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|
+|필드|설명| |—|—| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`productListItems`|순서대로 제품 배열| |`id`|이 제품 항목에 대한 라인 항목 식별자. 제품 자체는 를 통해 식별됩니다. `product` 필드.| |`name`|제품의 표시 이름 또는 사람이 인식할 수 있는 이름| |`SKU`|재고 유지 단위. 제품에 대한 고유 식별자.| |`quantity`|장바구니에 있는 제품 수| |`priceTotal`|제품 라인 항목의 총 가격| |`discountAmount`|적용되는 할인 금액을 나타냅니다| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`productImageUrl`|제품의 기본 이미지 URL| |`selectedOptions`|구성 가능한 제품에 사용되는 필드.| |`attribute`|구성 가능한 제품의 특성을 식별합니다. 예: `size` 또는 `color`| |`value`|특성 값(예: ) 식별 `small` 또는 `black`.| |`order`|주문에 대한 정보 포함| |`purchaseID`|판매자가 해당 구매 또는 계약에 할당한 고유 식별자. ID가 고유하다는 보장은 없습니다| |`priceTotal`|모든 할인 및 세금이 적용된 후 이 주문의 총 가격| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`purchaseOrderNumber`|구매자가 해당 구매 또는 계약에 할당한 고유 식별자| |`taxAmount`|최종 지급의 일부로 구매자가 지불한 세액| |`createdDate`|상거래 시스템에서 새 주문이 생성된 시간과 날짜입니다. 예를 들어, `2022-10-15T20:20:39+00:00`| |`payments`|이 주문에 대한 결제 목록| |`paymentType`|이 주문에 대한 결제 방법입니다. 열거됨, 사용자 정의 값이 허용됨.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`paymentAmount`|결제 값| |`shipping`|하나 이상의 제품에 대한 배송 세부 정보| |`shippingMethod`|표준 배송, 신속 배송, 매장 픽업 등 고객이 선택한 배송 방법| |`address`|실제 배송 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`shippingAmount`|고객이 배송비로 지불해야 했던 금액입니다.| |`currencyCode`|다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`| |`address`|기술 주소(예: ) `name@domain.com` RFC2822 및 후속 표준에 정의된 대로| |`billingAddress`|청구 우편 주소| |`street1`|기본 거리 수준 정보, 아파트 번호, 거리 번호 및 거리 이름| |`street2`|거리 수준 정보를 위한 추가 필드| |`city`|도시 이름| |`state`|상태 이름. 자유 형식의 필드입니다.| |`postalCode`|위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 이 데이터에 우편 번호 일부만 포함되어 있습니다.| |`country`|정부에서 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다.| |`personalEmail`|개인 이메일 주소| |`address`|기술 주소(예: RFC2822 및 후속 표준에 정의된 &#39;name@domain.com&#39;)|

@@ -3,9 +3,9 @@ title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있도록 하�
 
 >[!NOTE]
 >
->이 기능은 Beta 사용자만 사용할 수 있습니다. 다음 주소로 이메일을 보내 Beta에 가입할 수 있습니다. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+>이 기능은 Beta 사용자만 사용할 수 있습니다. 다음 주소로 이메일을 보내 Beta에 가입할 수 있습니다. `dataconnection@adobe.com`.
 
 Adobe Commerce은 최대 5년간의 과거 주문 데이터와 상태를 수집합니다. Experience Platform 커넥터를 사용하여 이전 데이터를 Experience Platform으로 전송하여 그러한 이전 주문을 기반으로 고객 프로필을 보강할 수 있습니다. 데이터는 Experience Platform 내의 데이터 세트에 저장됩니다.
 
