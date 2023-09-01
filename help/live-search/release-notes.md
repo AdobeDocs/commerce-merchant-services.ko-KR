@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
+source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,25 @@ _2023년 4월 25일_
 
 +++
 
+## [!DNL Live Search] 3.1.0 {#310}
+
+_2023년 9월 1일_
+
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
+
+### 업데이트
+
+* 제품 목록 위젯이 [카탈로그 서비스 API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+
+## 이전 버전
+
++++3.0.2 및 이전
+
 ## [!DNL Live Search] 3.0.2 {#302}
 
 _2023년 8월 7일_
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ### 새로운 기능
 
@@ -62,17 +76,11 @@ _2023년 8월 7일_
 
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.2 를 사용하여 이러한 기능에 액세스할 수 있습니다.
 
-프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
-
-## 이전 버전
-
-+++3.0.1 및 이전
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _2023년 3월 14일_
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ### 새로운 기능
 
@@ -114,7 +122,7 @@ _2023년 3월 14일_
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 * ![수정](../assets/fix.svg) - 네트워크 문제로 인해 SDK 리소스를 사용할 수 없으면 라이브 검색에서 오류가 발생합니다. 이 버그는 수정되었습니다.
 
@@ -124,7 +132,7 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![신규](../assets/new.svg) 이제 라이브 검색은 관리자의 &#39;재고 부족 제품 표시&#39; 설정에 의한 필터링을 지원합니다. &#39;재고 부족 제품 표시&#39;가 false로 설정된 경우 `inStock = true` 가 필터에 추가됩니다.
 ![수정](../assets/fix.svg) 성능을 개선하기 위해 &#39;제안&#39; 블록이 라이브 검색 팝업에서 제거되었습니다. 기능을 교체하려는 경우 데이터는 여전히 GraphQL을 통해 전달됩니다.
@@ -138,7 +146,7 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![신규](../assets/new.svg) 이제 Live Search는 범주 권한, 공유 카탈로그 및 고객 그룹별 가격을 준수하여 B2B 기능을 지원합니다.
 
@@ -148,14 +156,14 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 기존 항목 [!DNL Live Search] 설치를으로 업그레이드해야 합니다. [!DNL Live Search] 2.0.0을 통해 다음과 같은 새로운 기능, 수정 사항 및 개선 사항을 활용할 수 있습니다.
 
 ![신규](../assets/new.svg) [!DNL Live Search] 는 이제 Adobe Commerce 2.4.4를 실행하는 설치용 PHP 8.1을 지원합니다.
 ![신규](../assets/new.svg) 다음 `Magento_ElasticsearchCatalogPermissionsGraphQl` 설치 중에 비활성화된 모듈 목록에 모듈이 추가됩니다.
 ![신규](../assets/new.svg) 에서 사용 가능한 라인 수 [[!DNL storefront popover]](quick-tour.md) 에서 구성할 수 있습니다. *관리자*.
-![신규](../assets/new.svg) 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 호환성 [!DNL Live Search].
+![신규](../assets/new.svg) 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 다음에 대해 지원됨 [!DNL Live Search].
 ![신규](../assets/new.svg) 다음 [!DNL Live Search] 설치 프로세스가 고급 프로세스 변경 사항으로 업데이트됩니다.
 ![수정](../assets/fix.svg) [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 상점 첫 번째 바닥글에서 링크가 제거되었습니다.
 ![버그](../assets/bug.svg) 다음 제품 속성은에서 지원하지 않습니다. [상거래 GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) PWA의 베타 릴리스와 관련하여 사용할 경우: `description`, `name`, `short_description`
@@ -163,7 +171,7 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![수정](../assets/fix.svg) [사용자 지정 가격 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) 로 구성된 경우 가 더 이상 오류를 반환하지 않습니다. [facet]({% 링크 live-search/facets-add.md %}).
 ![수정](../assets/fix.svg) 없을 때 오류가 발생하던 문제를 수정했습니다. [통화 기호](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`)을 사용할 수 있습니다.
@@ -171,7 +179,7 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![신규](../assets/new.svg) [성능](performance.md) 보고 대시보드는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다.
 ![신규](../assets/new.svg) [!DNL Live Search] [Storefront 이벤트 SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) 이벤트 게시 및 구독 서비스와 지표를 사용하여 공통 데이터 계층에 액세스할 수 있습니다.
@@ -182,7 +190,7 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![신규](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) 쇼핑객이 검색 상자에 쿼리를 입력할 때 추천 제품 및 상위 검색 결과의 썸네일 이미지를 표시합니다.
 ![신규](../assets/new.svg) 상거래 *관리자* 키보드가 작동하지 않는 기간이 길어지면 세션이 열린 상태로 유지됩니다
@@ -195,7 +203,7 @@ _2023년 3월 14일_
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE 호환성]{type="정보" tooltip="호환성"}
+[!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![버그](../assets/bug.svg) 다음 [!DNL Live Search] 서비스는 [기본 통화](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) Adobe Commerce 설치
 ![버그](../assets/bug.svg) Facet을 추가할 때으로 설정하면 제품 속성 피드가 올바르게 업데이트되지 않습니다. `Update on Save`. 이 문제를 방지하려면 [색인 관리](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 및 제품 속성 피드 설정 `Update by Schedule`.
