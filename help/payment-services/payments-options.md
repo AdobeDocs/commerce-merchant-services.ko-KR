@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
+source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,18 @@ ht-degree: 0%
 
 신용 카드 필드의 레이아웃, 너비, 높이 및 외부 스타일을 변경할 수도 있습니다. 다음을 참조하십시오 [PayPal 설명서](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 추가 정보.
 
+## [!DNL Apple Pay] 단추
+
+고객은 다음을 사용할 수 있습니다 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/): iOS 또는 macOS 장치에 저장된 신용 카드 및 직불 카드 결제 자격 증명을 사용하여 구매합니다.
+
+다음 [!DNL Apple Pay] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
+
+>[!NOTE]
+>
+> 사용 [!DNL Apple Pay] 스토어의 경우, 완료 [을 사용한 자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션만 해당) 및 [스토어에 맞게 구성 [!DNL Payment Services]](settings.md#payment-buttons).
+
+다음을 구성할 수 있습니다. [!UICONTROL Apple Pay] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](settings.md#apple-pay) 추가 정보.
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons]: PayPal을 사용하여 구매를 완료하고 나중에 사용할 수 있도록 쇼핑객의 배송 주소, 청구 주소 및 결제 세부 정보를 저장합니다. 쇼핑객은 PayPal에서 이전에 저장하거나 제공하는 결제 방법을 사용할 수 있습니다.
@@ -59,16 +71,6 @@ PayPal의 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/p
 고객은 다음을 사용하여 체크아웃할 수 있습니다 [벤모](https://venmo.com/) 단추를 클릭합니다.
 
 다음 [!DNL Venmo] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
-
-### [!DNL Apple Pay] 단추
-
-고객은 장치에서 Touch ID를 사용하여 사용할 수 있습니다. [[!DNL Apple Pay]](https://www.apple.com/apple-pay/): iOS 또는 macOS 장치에 저장된 신용 카드 및 직불 카드 결제 자격 증명을 사용합니다.
-
-다음 [!DNL Apple Pay] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
-
->[!NOTE]
->
-> 사용 [!DNL Apple Pay] 스토어의 경우, 완료 [을 사용한 자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션만 해당) 및 [스토어에 맞게 구성 [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal 직불 또는 신용카드 단추
 

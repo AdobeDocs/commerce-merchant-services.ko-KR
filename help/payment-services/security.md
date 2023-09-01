@@ -3,9 +3,10 @@ title: 보안 및 규정 준수
 description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검토합니다.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ PayPal 스마트 버튼을 사용하면 PCI 규제 데이터가 서비스에 전
 보안상의 이유로 PayPal은 체크아웃 시 청구 주소를 전달하지 않습니다(국가, 이메일 및 이름 만이 사용되는 청구 정보임). PayPal에 연락하고 검사 프로세스를 완료하여 사이트의 PayPal 체크아웃이 전체 청구 주소를 반환하도록 선택적으로 활성화할 수 있습니다.
 
 또한 PayPal은 머신 러닝을 사용하여 사기 행위를 방지하는 통합된 사기 방지 기능을 제공합니다. PayPal의 [판매자 보호 설명서](https://www.paypal.com/us/webapps/mpp/security/seller-protection) 추가 정보.
+
+## 사기 방지
+
+다음을 사용하여 결제 서비스에 대해 자동화된 사기 방지를 활성화할 수 있습니다. [Signifyd 확장](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+다음을 참조하십시오 [상당한 사기 방지](fraud-protection.md) 추가 정보.
+

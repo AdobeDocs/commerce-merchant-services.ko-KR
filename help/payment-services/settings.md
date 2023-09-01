@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
-| [!UICONTROL Enable] | 웹 사이트 | 활성화 또는 비활성화 [!DNL Payment Services] 웹 사이트용. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Enable] | 웹 사이트 | 활성화 또는 비활성화 [!DNL Payment Services] 웹 사이트용. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | 스토어 뷰 | 스토어에 대한 메서드 또는 환경을 설정합니다. 옵션: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 샌드박스 판매자 ID입니다. |
 | [!UICONTROL Production Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 프로덕션 판매자 ID입니다. |
@@ -108,8 +108,9 @@ ht-degree: 0%
    ![홈 보기](assets/payment-services-menu-small.png)
 
 1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
-1. 체크아웃 중에 표시되는 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout title]** 필드.
+1. 다음에서 **[!UICONTROL Credit card fields]** 섹션에서 값을 편집합니다. **[!UICONTROL Checkout title]** 체크아웃 중에 표시되는 결제 방법의 이름을 변경하는 필드입니다.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
+1. 체크아웃 페이지에서 결제 방법의 우선 순위를 정하려면 `Numeric Only` 의 값 **[!UICONTROL Sort order]** 필드.
 1. 활성화하려면 [3DS 보안 인증](security.md#3ds) (`Off` 기본적으로) **[!UICONTROL 3DS Secure authentication]** 선택기 `Always` 또는 `When required`.
 1. 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화하려면 **[!UICONTROL Show on checkout page]** 선택기.
 1. 활성화 또는 비활성화하기 [카드 보관](#card-vaulting), 전환 **[!UICONTROL Vault enabled]** 선택기.
@@ -127,11 +128,47 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
 | [!UICONTROL 3DS Secure authentication] | 웹 사이트 | 활성화 또는 비활성화 [3DS 보안 인증](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
-| [!UICONTROL Show on checkout page] | 웹 사이트 | 신용 카드 필드가 체크아웃 페이지에 표시되도록 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | 스토어 뷰 | 활성화 또는 비활성화 [신용 카드 소산](vaulting.md). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show vaulted payment methods in Admin] | 스토어 뷰 | 관리자가 판매자가 고객에 대한 주문을 완료할 수 있는 기능을 활성화 또는 비활성화합니다. [적립된 결제 방법 사용](vaulting.md). 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | 웹 사이트 | 신용 카드 필드가 체크아웃 페이지에 표시되도록 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Vault enabled] | 스토어 뷰 | 활성화 또는 비활성화 [신용 카드 소산](vaulting.md). 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 스토어 뷰 | 관리자가 판매자가 고객에 대한 주문을 완료할 수 있는 기능을 활성화 또는 비활성화합니다. [적립된 결제 방법 사용](vaulting.md). 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+
+### Apple 페이
+
+다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] 스토어 체크아웃 내 결제 버튼.
+
+다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-buttob) 추가 정보.
+
+다음을 활성화하고 구성할 수 있습니다. [!UICONTROL Apple Pay] 단추 결제 옵션:
+
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
+1. 다음에서 **[!UICONTROL Apple Pay]** 섹션에서 값을 편집합니다. _[!UICONTROL Checkout title]_체크아웃 중에 표시되는 결제 방법의 이름을 변경하는 필드입니다.
+1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
+1. 체크아웃 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on checkout page]** 선택기.
+1. 제품 세부 사항 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on product detail page]** 선택기.
+1. 미니 장바구니 미리 보기에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on the mini cart preview]** 선택기.
+1. 장바구니 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on cart page]** 선택기.
+1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
+1. 클릭 **[!UICONTROL Save]**.
+
+   변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
+
+1. [캐시 초기화](#flush-the-cache).
+
+#### 구성 옵션
+
+| 필드 | 범위 | 설명 |
+|---|---|---|
+| [!UICONTROL Checkout title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on checkout page] | 웹 사이트 | 제품 세부 사항 페이지에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on mini cart preview] | 웹 사이트 | 미니 장바구니 미리 보기에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show on cart page] | 웹 사이트 | Apple 결제 버튼이 장바구니 페이지에 표시되도록 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### 결제 버튼
 
@@ -142,6 +179,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
 1. 체크아웃 시 표시된 대로 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout Title]** 필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
+1. 체크아웃 페이지에서 결제 방법의 우선 순위를 정하려면 `Numeric Only` 의 값 **[!UICONTROL Sort order]** 필드.
 1. 토글 선택기를 사용하여 활성화 또는 비활성화 [!DNL PayPal smart button] 기능 표시:
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
@@ -173,26 +211,27 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 |---|---|---|
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: 텍스트 필드 |
 | [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
 | [!UICONTROL Show PayPal buttons on checkout page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 체크아웃 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 제품 세부 사항 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] ( 미니 장바구니 미리 보기) 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 장바구니 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later button] | 스토어 뷰 | 지급 버튼이 표시되는 나중에 지급 옵션 표시를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Pay Later Message] | 웹 사이트 | 장바구니, 제품 페이지, 미니 장바구니에서, 그리고 체크아웃 흐름 동안 나중에 결제 메시지를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Venmo button] | 스토어 뷰 | 결제 버튼이 표시되는 Venmo 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show Apple Pay button] | 스토어 뷰 | 결제 버튼이 표시되는 Apple 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal Credit and Debit card button] | 스토어 뷰 | 결제 버튼이 표시되는 신용 및 직불 카드 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] ( 미니 장바구니 미리 보기) 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 장바구니 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later button] | 스토어 뷰 | 지급 버튼이 표시되는 나중에 지급 옵션 표시를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Pay Later Message] | 웹 사이트 | 장바구니, 제품 페이지, 미니 장바구니에서, 그리고 체크아웃 흐름 동안 나중에 결제 메시지를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Venmo button] | 스토어 뷰 | 결제 버튼이 표시되는 Venmo 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show Apple Pay button] | 스토어 뷰 | 결제 버튼이 표시되는 Apple 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal Credit and Debit card button] | 스토어 뷰 | 결제 버튼이 표시되는 신용 및 직불 카드 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### 단추 스타일
 
-다음을 구성할 수도 있습니다 _[!UICONTROL Button style]_payPal 스마트 단추 옵션:
+다음을 구성할 수도 있습니다 _[!UICONTROL Button style]_결제 버튼 옵션:
 
 1. 을(를) 변경하려면 **[!UICONTROL Layout]**, 선택 `Vertical` 또는 `Horizontal`.
 
    >[!NOTE]
    >
-   > 단추 스타일이 다음으로 구성된 경우 `Horizontal` 또한 스토어는 여러 개의 PayPal 스마트 단추를 표시하도록 구성되어 있으므로 제품 페이지, 체크아웃 페이지 및 미니 카트에 표시된 두 개의 단추와 카트에 표시된 하나의 단추만 볼 수 있습니다.
+   > 단추 스타일이 다음으로 구성된 경우 `Horizontal` 또한 스토어는 여러 개의 결제 버튼을 표시하도록 구성되어 있으므로 제품 페이지, 체크아웃 페이지 및 미니 카트에 2개의 버튼만 표시되고 장바구니에 1개의 버튼만 표시될 수 있습니다.
 
 1. 가로 레이아웃에서 태그 라인을 활성화하려면 **[!UICONTROL Show tagline]** 선택기.
 1. 을 수정하려면 다음을 수행합니다 **[!UICONTROL Color]**&#x200B;원하는 색상 옵션을 선택합니다.
@@ -210,17 +249,17 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
 1. [캐시 초기화](#flush-the-cache).
 
-다음을 구성할 수 있습니다. [!DNL PayPal Smart Buttons] 스타일링 [관리자 의 레거시 구성에서](configure-admin.md#configure-paypal-smart-buttons) 또는 여기 위치 [!DNL Payment Services Home]. 다음을 참조하십시오 [PayPal의 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) 옵션에 대한 자세한 내용을 보려면 를 참조하십시오.
+결제 버튼 스타일을 구성할 수 있습니다 [관리자 의 레거시 구성에서](configure-admin.md#configure-paypal-smart-buttons) 또는 여기 위치 [!DNL Payment Services Home]. 다음을 참조하십시오 [PayPal의 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) PayPal 결제 단추 스타일에 대한 자세한 정보.
 
 #### 구성 옵션
 
 | 필드 | 범위 | 설명 |
 |--- |--- |--- |
 | [!UICONTROL Layout] | 스토어 뷰 | 결제 버튼에 대한 레이아웃 스타일을 정의합니다. 옵션: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
-| [!UICONTROL Tagline] | 스토어 뷰 | 태그 라인 활성화/비활성화. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Tagline] | 스토어 뷰 | 태그 라인 활성화/비활성화. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Color] | 스토어 뷰 | 결제 버튼의 색상을 정의합니다. 옵션: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | 스토어 뷰 | 결제 버튼의 모양을 정의합니다. 옵션: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
-| [!UICONTROL Responsive Button Height] | 스토어 뷰 | 결제 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Responsive Button Height] | 스토어 뷰 | 결제 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Height] | 스토어 뷰 | 결제 버튼의 높이를 정의합니다. 기본값: 없음 |
 | [!UICONTROL Label] | 스토어 뷰 | 결제 버튼에 표시되는 레이블을 정의합니다. 옵션: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 

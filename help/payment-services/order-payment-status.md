@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
 
 # 주문 결제 상태 보고서
 
-[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 에서는 상점의 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 에서는 스토어의 내용을 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다 [트랜잭션](transactions.md), 주문 및 결제
 
 두 가지 주문 결제 상태 보고 보기를 사용하여 주문의 결제 상태를 신속하게 볼 수 있습니다.
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 주문 결제 상태 보기를 통해 주문-현금화 프로세스 흐름 내에서 특정 주문이 어디에 있는지 쉽게 파악할 수 있습니다. 이러한 보고서를 사용하면 결제 상태 및 결제 날짜에 따라 신속하게 주문을 조회하고 잠재적인 문제를 파악할 수 있습니다.
 
-기존 회계 또는 주문 관리 소프트웨어에서 사용할 수 있도록 주문 결제 상태 트랜잭션을 .csv 파일 형식으로 다운로드할 수 있습니다.
+다음을 수행할 수 있습니다. [주문 결제 상태 다운로드](#download-order-payment-statuses) 기존 회계 또는 order management 소프트웨어에서 사용할 .csv 파일 형식으로.
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ ht-degree: 0%
 
 주문 결제 상태 데이터 시각화 보기는 결제 서비스 홈에서 사용할 수 있습니다. 상세 테이블 형식으로 일별 총괄 지급 상태를 시각적으로 나타낸 것입니다 [주문 결제 상태 보고서 보기](#order-payment-status-report-view).
 
-다음에서 _관리자_ 사이드바, 이동 **판매** > **결제 서비스** 데이터 시각화를 보려면 [결제 상태 차트](#statuses-information).
+다음에서 _관리자_ 사이드바, 이동 **판매** > **결제 서비스** > _주문 수_ 데이터 시각화를 보려면 [결제 상태 차트](#statuses-information).
 
 ![관리자의 지급 데이터 시각화](assets/orderpayment-dataviz.png){zoomable=yes}
 
-클릭 **보고서 보기** 자세한 표 형식으로 이동 [주문 결제 상태 보고서 보기](#order-payment-status-report-view).
+클릭 **[!UICONTROL View Report]** 자세한 표 형식으로 이동 [주문 결제 상태 보고서 보기](#order-payment-status-report-view).
 
 ### 일정 기간 상태 사용자 지정
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 주문 지급 상태 시각화 보기에서 날짜 범위를 선택하여 보려는 지급 상태에 대한 시간대를 사용자 정의할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 주문 결제 상태 데이터 시각화 보기는 주문 결제 상태 섹션에 표시됩니다.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. 주문 결제 상태 데이터 시각화 보기는 _주문 수_ 섹션.
 1. 다음을 클릭합니다. **[!UICONTROL Range]** 선택기 필터.
 1. 적용 가능한 날짜 범위(30일, 15일 또는 7일)를 선택합니다.
 1. 지정한 날짜의 상태 정보를 봅니다.
@@ -69,9 +69,9 @@ ht-degree: 0%
 
 ## 주문 결제 상태 보고서 보기
 
-주문 결제 상태 보고서 보기는 결제 서비스의 주문 결제 상태 보기에서 사용할 수 있습니다. 여기에는 모든 거래에 대한 결제, 송장 발행, 배송, 환불, 분쟁 등의 세부 상태가 포함됩니다. 다음 [주문 결제 상태 데이터 시각화 보기](#order-payment-status-data-visualization-view) 지급 서비스 홈은 주문 지급 상태 보고서 보기에서 일별 총괄 지급 상태를 시각적으로 표시한 것입니다.
+주문 결제 상태 보고서 보기는 결제 서비스의 홈 보기에서 사용할 수 있습니다. 여기에는 모든 거래에 대한 결제, 송장 발행, 배송, 환불, 분쟁 등의 세부 상태가 포함됩니다.
 
-다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** 자세한 테이블 형식 주문 결제 상태 보고서 보기를 확인합니다.
+다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**자세한 테이블 형식 주문 결제 상태 보고서 보기를 확인합니다.
 
 ![관리자의 주문 결제 상태 트랜잭션](assets/orders-report-data.png)
 
@@ -87,11 +87,11 @@ ht-degree: 0%
 
 다음 [!DNL Payment Services] 모듈은 주문 데이터를 사용하여 다른 소스(PayPal 포함)의 결제 데이터와 결합하여 의미 있고 유용한 보고서를 제공합니다.
 
-주문 데이터를 내보내고 결제 서비스에서 유지합니다. 다음을 수행하는 경우 [주문 상태 변경 또는 추가](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}또는 웹 사이트 이름으로, 이 데이터는 결제 데이터와 결합되고 주문 결제 상태 보고서는 결합된 정보로 채워집니다.
+주문 데이터를 내보내고 결제 서비스에서 유지합니다. 다음을 수행하는 경우 [주문 상태 변경 또는 추가](https://docs.magento.com/user-guide/sales/order-status-custom.html) 또는 [스토어 보기 편집](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [스토어](https://docs.magento.com/user-guide/stores/store-information.html)또는 웹 사이트 이름으로, 이 데이터는 결제 데이터와 결합되고 주문 결제 상태 보고서는 결합된 정보로 채워집니다.
 
 이 프로세스에는 두 가지 단계가 있습니다.
 
-1. 색인이 다음 중 하나의 데이터로 변경되었습니다. `ON SAVE` (주문 정보 또는 스토어 정보가 변경될 때마다) 또는 `BY SCHEDULE` (사전 구성된 cron 일정에 따라), 구성 방법에 따라 [색인 관리](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} 관리에서.
+1. 색인이 다음 중 하나의 데이터로 변경되었습니다. `ON SAVE` (주문 정보 또는 스토어 정보가 변경될 때마다) 또는 `BY SCHEDULE` (사전 구성된 cron 일정에 따라), 구성 방법에 따라 [색인 관리](https://docs.magento.com/user-guide/system/index-management.html) 관리에서.
 
    기본적으로 데이터 인덱싱이 발생합니다 `ON SAVE`즉, 주문, 주문 상태, 스토어 보기, 스토어 또는 웹 사이트에서 변경 사항이 있을 때마다 색인 재지정 프로세스가 즉시 수행됩니다.
 
@@ -107,13 +107,13 @@ ht-degree: 0%
 
 기본적으로 리인덱싱이 수행되지만 `ON SAVE` 모드,에서 색인화하는 것이 좋습니다. `BY SCHEDULE` 모드. 다음 `BY SCHEDULE` 색인은 1분의 cron 일정에 따라 실행되며, 변경된 데이터는 데이터 변경 후 2분 이내에 Order status 보고서에 표시됩니다. 이러한 예약된 리인덱싱은 특히 들어오는 주문량이 많은 경우 각 주문이 아닌 일정에 따라 발생하므로 스토어에 대한 부담을 줄이는 데 도움이 됩니다.
 
-인덱스 모드를 변경할 수 있습니다—`ON SAVE` 또는 `BY SCHEDULE`—[관리자](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+인덱스 모드를 변경할 수 있습니다—`ON SAVE` 또는 `BY SCHEDULE`—[관리자](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 데이터 내보내기를 구성하는 방법에 대해 알아보려면 다음을 참조하십시오. [명령줄 구성](configure-cli.md#configure-data-export).
 
 ### 데이터 소스 선택
 
-주문 결제 상태 보고서 보기에서 데이터 소스를 선택할 수 있습니다._[!UICONTROL Live]_또는_[!UICONTROL Sandbox]_- 보고서 결과를 보려는 경우
+주문 결제 상태 보고서 보기에서 데이터 소스를 선택할 수 있습니다.**[!UICONTROL Live]** _ 또는 **[!UICONTROL Sandbox]**- 보고서 결과를 보려는 경우
 
 ![데이터 소스 선택](assets/datasource.png){width=400px}
 
@@ -127,8 +127,8 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 에 대한 데이터 소스를 선택하려면 다음을 수행하십시오. [!UICONTROL Order Payment Status] 보고서:
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 클릭 **[!UICONTROL Data source]** 및 선택 _[!UICONTROL Live]_또는_[!UICONTROL Sandbox]_.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. 다음을 클릭합니다. _[!UICONTROL Data source]_선택기 필터 및 선택&#x200B;**[!UICONTROL Live]**또는&#x200B;**[!UICONTROL Sandbox]**.
 
    선택한 데이터 소스를 기반으로 보고서 결과가 재생성됩니다.
 
@@ -136,16 +136,26 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 주문 지급 상태 보고서 보기에서, 특정 일자를 선택하여 보려는 상태의 시간대를 사용자 정의할 수 있습니다. 기본적으로 30일의 주문 결제 상태가 그리드에 표시됩니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. 다음을 클릭합니다. **[!UICONTROL Order dates]** 달력 선택기 필터.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. 다음을 클릭합니다. _[!UICONTROL Order dates]_달력 선택기 필터.
 1. 적용 가능한 날짜 범위를 선택합니다.
 1. 그리드에서 지정한 일자에 대한 주문 지급 상태를 조회합니다.
+
+### 보고서 정보 필터링
+
+주문 지급 상태 보고서 보기에서 필터 기준을 선택하여 조회할 상태 결과를 필터링할 수 있습니다.
+
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. 다음을 클릭합니다. **[!UICONTROL Filter]** 선택기.
+1. 전환 _지불 상태_ 선택한 주문 지급 상태에 대해서만 보고서 결과를 보는 옵션.
+1. 입력 _최소 주문 금액_ 또는 _최대 주문 금액_ 주문 금액 범위 내에서 보고서 결과를 봅니다.
+1. 클릭 **[!UICONTROL Hide filters]** 필터를 숨깁니다.
 
 ### 열 표시 및 숨기기
 
 주문 결제 상태 보고서에는 기본적으로 사용 가능한 모든 정보 열이 표시됩니다. 그러나 보고서에 표시되는 열을 사용자 지정할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 다음을 클릭합니다. _열 설정_ 아이콘(![열 설정 아이콘](assets/column-settings.png)).
 1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
 
@@ -153,9 +163,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 ### 상태 보기
 
-주문 지급 상태 보고서 뷰에는 각 지급 서비스 주문에 대한 포괄적인 거래 상태 및 지급 상태 정보가 표시됩니다.
-
-#### 거래 상태
+주문 지급 상태 보고서 보기에는 각 주문에 대한 포괄적인 지급 상태 정보가 표시됩니다.
 
 기본적으로 30일의 주문 결제 상태가 그리드에 표시됩니다.
 
@@ -177,7 +185,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 주문 지급 상태 보고서 데이터를 수동으로 새로 고쳐 최신 보고서 정보를 볼 수도 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 다음을 클릭합니다. _새로 고침_ 아이콘(![새로 고침 아이콘](assets/refresh-button-med.png)).
 
    주문 결제 상태 보고서 데이터가 새로 고쳐졌습니다. *[!UICONTROL Update complete]* 확인이 나타나고 최신 정보가 표에 표시됩니다.
@@ -186,7 +194,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 주문 결제 상태 보고서에서 스토어의 주문에 대한 모든 분쟁을 조회하고 PayPal 해결 센터로 이동하여 이에 대한 조치를 취할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 다음 위치로 이동 **[!UICONTROL Disputes column]**.
 1. 특정 주문에 대한 모든 분쟁을 조회하고 다음을 참조하십시오. [분쟁 상태](#order-payment-status-information).
 1. 분쟁 ID 링크(다음으로 시작)를 클릭합니다 _PP-D-_)으로 이동합니다. [PayPal 해결 센터](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -198,28 +206,13 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 기본 30일 상태 또는 사용자 정의된 기간을 보는지 여부에 관계없이 주문 결제 상태 보기 그리드에 모든 상태가 표시되는 .csv 파일을 다운로드할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 지난 30일 이외의 다른 기간에 대한 상태를 보려면 [상태에 대한 날짜 범위 일정 사용자 정의](#customize-dates-timeframe).
 1. 다음을 클릭합니다. _다운로드_ (![다운로드 아이콘](assets/icon-download.png)) 아이콘.
 
 주문 결제 상태는 .csv 형식으로 다운로드됩니다.
 
-<!-- ## Default order payment status timeframes
-
-These order payment status timeframes are currently available in [!DNL Payment Services].
-
-| Report       | Description          |
-| ------------ | -------------------- |
-| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
-| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
-| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
-| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
-| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
-| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
-| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
--->
-
-#### 상태 정보
+### 열 설명
 
 주문 결제 상태 보고서에는 다음 정보가 포함됩니다.
 

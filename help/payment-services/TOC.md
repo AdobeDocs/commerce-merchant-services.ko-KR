@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '85'
 ht-degree: 3%
 
 ---
@@ -37,10 +37,13 @@ ht-degree: 3%
 - [테스트 및 유효성 검사](test-validate.md)
 - [주문 만들기](create-order.md)
 - 재무 보고 {#reporting}
+   - [거래 보고서](transactions.md)
    - [주문 결제 상태 보고서](order-payment-status.md)
    - [지급 보고서](payouts.md)
    - [사용 가능한 데이터](data.md)
 - 결제 관리 {#manage}
    - [환불](refunds.md)
    - [빈 공간](voids.md)
-- [보안 및 규정 준수](security.md)
+- 보안 {#security-compliance}
+   - [보안 및 규정 준수](security.md)
+   - [상당한 사기 방지](fraud-protection.md)
