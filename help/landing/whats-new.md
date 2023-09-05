@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: ee5749025860a31ac1b4433d0b497f27342f803d
 workflow-type: tm+mt
-source-wordcount: '66'
+source-wordcount: '134'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,8 @@ ht-degree: 0%
 
 | 서비스 | 변경 | 유형 |
 | -- | -- | -- |
-| [**카탈로그 서비스**](../catalog-service/overview.md) | 에 대한 새 주제가 추가되었습니다. [피드 수집 서비스](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/feed-ingestion.html) 베타 프로그램. | 새 주제 |
-
+| [**Experience Platform 커넥터**](../experience-platform-connector/overview.md) | 다음 방법에 대한 컨텐츠가 추가되었습니다. [통합](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/mobile-sdk-epc.html) Adobe Experience Platform Mobile SDK와 Commerce 앱 | 새 주제 |
+| [**결제 서비스**](../payment-services/guide-overview.md) | 새 주제에 대한 새 주제가 추가되었습니다. [상당한 사기 방지](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html#security-compliance) 기능. | 새 주제 |
+| [**결제 서비스**](../payment-services/guide-overview.md) | 업데이트됨 [레거시](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure) 및 [설정](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html?lang=en#apple-pay) 항목은 PayPal 스마트 단추의 Apple Pay 분할을 반영합니다. | 주요 업데이트 |
 
 이 테이블은 매월 첫 번째 월요일에 업데이트됩니다.
