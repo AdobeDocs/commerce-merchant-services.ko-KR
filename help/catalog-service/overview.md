@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] for Adobe Commerce은 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 
 [!DNL Catalog Service] 은(는) Storefront Services 게이트웨이입니다. 이 서비스는 제품 세부 사항 및 관련 정보(예: 제품 속성, 변형, 가격 및 카테고리)가 포함된 별도의 데이터베이스에 액세스합니다. 이 서비스는 인덱싱을 통해 데이터베이스를 Adobe Commerce과 계속 동기화합니다.
 이 서비스는 애플리케이션과의 직접 통신을 우회하기 때문에 요청 및 응답 주기의 지연을 줄일 수 있습니다.
-
->[!NOTE]
->
->이 게이트웨이는 향후 Recommendations 제품과 통합하기 위한 것입니다. 이번 릴리스에서는 [!DNL Catalog Service GraphQL] 및 [!DNL Live Search] 두 제품에 대해 유효한 라이선스 키가 있는 경우 동일한 끝점의 쿼리
 
 핵심 및 서비스 GraphQL 시스템은 서로 직접 통신하지 않습니다. 다른 URL에서 각 시스템에 액세스하고 호출에는 다른 헤더 정보가 필요합니다. 두 GraphQL 시스템은 함께 사용하도록 설계되었습니다. 다음 [!DNL Catalog Service] GraphQL 시스템은 제품 상점 경험을 더 빠르게 만들기 위해 핵심 시스템을 보완합니다.
 
