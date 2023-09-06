@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **판매** > **결제 서비스** > _주문 수_ 데이터 시각화를 보려면 [결제 상태 차트](#statuses-information).
 
-![관리자의 지급 데이터 시각화](assets/orderpayment-dataviz.png){zoomable=yes}
+![관리자의 지급 데이터 시각화](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 클릭 **[!UICONTROL View Report]** 자세한 표 형식으로 이동 [주문 결제 상태 보고서 보기](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**자세한 테이블 형식 주문 결제 상태 보고서 보기를 확인합니다.
 
-![관리자의 주문 결제 상태 트랜잭션](assets/orders-report-data.png)
+![관리자의 주문 결제 상태 트랜잭션](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 이 항목의 섹션에 따라 이 보기를 구성하여 보려는 데이터를 가장 잘 표시할 수 있습니다.
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 주문 결제 상태 보고서 보기에서 데이터 소스를 선택할 수 있습니다.**[!UICONTROL Live]** _ 또는 **[!UICONTROL Sandbox]**- 보고서 결과를 보려는 경우
 
-![데이터 소스 선택](assets/datasource.png){width=400px}
+![데이터 소스 선택](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사용하는 스토어에 대한 보고서 정보를 볼 수 있습니다. [!DNL Payment Services] 프로덕션 모드에서. If_[!UICONTROL Sandbox]_ 은 선택한 데이터 소스이며 샌드박스 모드에 대한 보고서 정보를 볼 수 있습니다.
 
@@ -156,7 +156,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 주문 결제 상태 보고서에는 기본적으로 사용 가능한 모든 정보 열이 표시됩니다. 그러나 보고서에 표시되는 열을 사용자 지정할 수 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 다음을 클릭합니다. _열 설정_ 아이콘(![열 설정 아이콘](assets/column-settings.png)).
+1. 다음을 클릭합니다. _열 설정_ 아이콘(![열 설정 아이콘](assets/column-settings.png){width="20" zoomable="yes"}).
 1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
 
    주문 결제 상태 보고서에는 열 설정 메뉴에서 변경한 사항이 즉시 표시됩니다. 열 환경 설정이 저장되며 보고서 보기에서 나가면 적용됩니다.
@@ -186,7 +186,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 주문 지급 상태 보고서 데이터를 수동으로 새로 고쳐 최신 보고서 정보를 볼 수도 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. 다음을 클릭합니다. _새로 고침_ 아이콘(![새로 고침 아이콘](assets/refresh-button-med.png)).
+1. 다음을 클릭합니다. _새로 고침_ 아이콘(![새로 고침 아이콘](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    주문 결제 상태 보고서 데이터가 새로 고쳐졌습니다. *[!UICONTROL Update complete]* 확인이 나타나고 최신 정보가 표에 표시됩니다.
 
@@ -208,7 +208,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 지난 30일 이외의 다른 기간에 대한 상태를 보려면 [상태에 대한 날짜 범위 일정 사용자 정의](#customize-dates-timeframe).
-1. 다음을 클릭합니다. _다운로드_ (![다운로드 아이콘](assets/icon-download.png)) 아이콘.
+1. 다음을 클릭합니다. _다운로드_ (![다운로드 아이콘](assets/icon-download.png){width="20" zoomable="yes"}) 아이콘.
 
 주문 결제 상태는 .csv 형식으로 다운로드됩니다.
 

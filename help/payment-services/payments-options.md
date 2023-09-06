@@ -3,7 +3,7 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 [!DNL PayPal Smart Buttons]: PayPal을 사용하여 구매를 완료하고 나중에 사용할 수 있도록 쇼핑객의 배송 주소, 청구 주소 및 결제 세부 정보를 저장합니다. 쇼핑객은 PayPal에서 이전에 저장하거나 제공하는 결제 방법을 사용할 수 있습니다.
 
-![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="500"}
+![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 다음을 구성할 수 있습니다. [!UICONTROL PayPal Smart Buttons] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
 

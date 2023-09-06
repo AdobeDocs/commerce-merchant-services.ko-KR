@@ -3,7 +3,7 @@ title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모
    1. 다음에서 _[!UICONTROL Sandbox Accounts]_섹션에서_[!UICONTROL Manage accounts]_ 만든 샌드박스 계정에 대한 열입니다.
    1. 클릭 **[!UICONTROL View/edit account]**.
 
-      ![PayPal - 샌드박스 계정 보기/편집](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - 샌드박스 계정 보기/편집](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. 나중에 사용할 수 있도록 이메일 ID 및 시스템 생성 암호를 복사하여 저장합니다.
 
@@ -48,7 +48,7 @@ PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모
 1. 3단계에서 생성한 PayPal 샌드박스 계정의 이메일 및 암호(PayPal 비즈니스 계정 정보가 아님)와 국가 또는 지역을 입력합니다.
 1. 클릭 **[!UICONTROL Next]**.
 
-   ![PayPal - 결제를 위한 PayPal 계정 연결](assets/paypal-connectacct.png)
+   ![PayPal - 결제를 위한 PayPal 계정 연결](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. 이전에 저장한 샌드박스 계정 자격 증명을 사용하여 PayPal 흐름을 계속 따릅니다.
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

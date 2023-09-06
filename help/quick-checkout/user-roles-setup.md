@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] 사용자 설정'
 description: 다음을 표시할 사용자 역할 및 권한 설정 [!DNL Quick Checkout] 관리 패널.
 exl-id: 76393840-8312-41bb-8447-412849815169
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 다음 위치로 이동 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![메뉴 빠른 체크아웃](assets/overview-admin-panel.png)
+   ![메뉴 빠른 체크아웃](assets/overview-admin-panel.png){width="600" zoomable="yes"}
 
 다음을 참조하십시오. [온보딩](../quick-checkout/onboarding.md) 항목 을 참조하십시오. [!DNL Quick Checkout] Adobe Commerce용
 
@@ -26,12 +26,12 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL System]** > 권한 > **[!UICONTROL User Roles]**.
 
-   ![사용자 역할](assets/user-roles-small.png)
+   ![사용자 역할](assets/user-roles-small.png){width="300" zoomable="yes"}
 
 1. 다음에서 _역할_ 보기, 클릭 **새 역할 추가**
 1. 다음 항목 선택 [!DNL Quick Checkout] 리소스:
 
-   ![빠른 체크아웃 역할 및 권한](assets/role-resource-quick-checkout.png)
+   ![빠른 체크아웃 역할 및 권한](assets/role-resource-quick-checkout.png){width="300" zoomable="yes"}
 
 1. 클릭 **역할 저장**.
 

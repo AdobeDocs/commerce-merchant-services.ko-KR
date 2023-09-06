@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ID는 지불에 대한 판매자 활동 세부 사항과 PayPal 웹후크에서 
 
 다음 `invoice_id` 및 `custom_id` 지불에 대한 판매자 활동 세부 정보 하단 근처에 표시됩니다.
 
-![`custom_id` 판매자 활동 세부 사항](assets/merchant-activity-ids.png)
+![`custom_id` 판매자 활동 세부 사항](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` 및 `invoice_id` PayPal 웹후크의 세부 정보에서:
 

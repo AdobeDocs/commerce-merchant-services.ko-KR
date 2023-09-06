@@ -3,7 +3,7 @@ title: 구성 [!DNL Quick Checkout] Adobe Commerce 확장
 description: 에 대한 구성 옵션 알아보기 [!DNL Quick Checkout] 확장을 성공적으로 온보딩하고 설정하는 방법.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 1%
@@ -19,13 +19,13 @@ ht-degree: 1%
 1. 다음에서 _관리자_ 사이드바, 이동 **스토어** > _설정_ > **구성**.
 1. 왼쪽 패널에서 를 확장합니다. **판매** 및 선택 **체크아웃**.
 
-   ![빠른 체크아웃](assets/config-new-logo-view.png)
+   ![빠른 체크아웃](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 다음을 참조하십시오. [온보딩](../quick-checkout/onboarding.md) 항목 을 참조하십시오. [!DNL Quick Checkout] Adobe Commerce용
 
 ## 확장 사용
 
-![빠른 체크아웃](assets/enable-method.png)
+![빠른 체크아웃](assets/enable-method.png){width="500" zoomable="yes"}
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 계정 자격 증명
 
-![빠른 체크아웃](assets/account-creds.png)
+![빠른 체크아웃](assets/account-creds.png){width="500" zoomable="yes"}
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ## 서비스 설정
 
-![빠른 체크아웃](assets/service-settings.png)
+![빠른 체크아웃](assets/service-settings.png){width="500" zoomable="yes"}
 
 | 필드 | 범위 | 설명 |
 |---|---|---|

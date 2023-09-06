@@ -3,7 +3,7 @@ title: "Adobe Commerce에서 Bolt 사용자의 체크아웃 흐름"
 description: 개요 [!DNL Quick Checkout] Adobe Commerce의 Bolt 사용자에 대한 흐름.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. 전송된 OTP(일회용 암호)를 입력하십시오. [!DNL Bolt] 다음에 따라 계정의 이메일 주소 또는 모바일 [에서 사용자 환경 설정 [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![OTP 팝업](assets/new-logo-otp-email.png)
+![OTP 팝업](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. (으)로 로그인한 후 [!DNL Bolt] 계정, 세부 사항이 자동으로 추가됩니다.
 

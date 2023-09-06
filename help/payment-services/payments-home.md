@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![홈 보기](assets/home-view.png)
+   ![홈 보기](assets/home-view.png){width="700" zoomable="yes"}
 
 1. 이 홈 보기에서 다음에 액세스할 수 있습니다. _홈_ 보기, _학습_ 정보 [!DNL Payment Services], 확장 구성 _설정_&#x200B;또는 get _도움말_.
 

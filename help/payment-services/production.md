@@ -3,7 +3,7 @@ title: 사용 [!DNL Payment Services] 프로덕션용
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다. [!DNL Payment Services] 프로덕션용
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -78,7 +78,7 @@ ht-degree: 0%
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 클릭 **[!UICONTROL Get Live Payments]** (으)로 [!DNL Payment Services] 집.
 
-   ![권한 요청](assets/request-entitlements.png)
+   ![권한 요청](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. 양식을 작성합니다.
 1. 영업팀 직원이 연락을 드릴 것입니다.

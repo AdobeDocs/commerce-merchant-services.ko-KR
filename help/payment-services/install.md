@@ -4,7 +4,7 @@ description: 결제 서비스 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 다운로드 및 설치 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 은(는) 을 사용하기 위한 사전 요구 단계입니다. [!DNL Payment Services].
 
-![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png)
+![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png){width="300" zoomable="yes"}
 
 ## 확장 다운로드
 

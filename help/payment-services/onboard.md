@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 온보딩 플로우
 
-![온보딩 플로우](assets/onboarding-diagram.svg)
+![온보딩 플로우](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
 이 온보딩 흐름 다이어그램은 온보딩에 대한 일반적인 프로세스를 보여 줍니다 [!DNL Payment Services].
 

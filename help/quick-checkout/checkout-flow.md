@@ -3,7 +3,7 @@ title: "Adobe Commerce의 체크아웃 흐름"
 description: "개요 [!DNL Quick Checkout] Adobe Commerce에서 흘러갑니다."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 1. 상점을 열고 장바구니에 항목을 추가합니다.
 1. 체크아웃을 진행합니다.
 
-![체크아웃](assets/proceed-checkout.png)
+![체크아웃](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 0%
 1. 메시지가 표시되면 와 연결된 이메일 주소를 입력합니다. [!DNL Bolt] 계정입니다.
 1. 전송된 OTP(일회용 암호)를 입력하십시오. [!DNL Bolt] 계정의 이메일 주소 또는 전화번호.
 
-![OTP 팝업](assets/new-logo-otp-email.png)
+![OTP 팝업](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. (으)로 로그인한 후 [!DNL Bolt] 계정, 체크아웃 세부 사항이 자동으로 채워집니다.
 

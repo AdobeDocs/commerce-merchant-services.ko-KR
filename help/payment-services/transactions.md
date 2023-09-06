@@ -3,7 +3,7 @@ title: 거래 보고서
 description: 거래 보고서를 사용하여 거래 승인 비율과 거래 추세를 볼 수 있습니다.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 에서는 상점의 거래, 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
 
-![거래 보고서](assets/transactions-report.png){width="600" zoomable="yes"}
+![거래 보고서](assets/transactions-report.png){width="700" zoomable="yes"}
 
 거래 보고서는 거래 승인 비율과 부정적인 거래 추세를 볼 수 있도록 하여 점포의 상태를 효과적으로 모니터링하고 거래 문제를 선제적으로 식별하고 해결할 수 있습니다.
 
@@ -91,7 +91,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 트랜잭션 보고서에는 기본적으로 사용 가능한 모든 정보 열이 표시됩니다. 그러나 보고서에 표시되는 열을 사용자 지정할 수 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 다음을 클릭합니다. **[!UICONTROL Column settings]** 아이콘 ![열 설정 아이콘](assets/column-settings.png){width="25"}.
+1. 다음을 클릭합니다. **[!UICONTROL Column settings]** 아이콘 ![열 설정 아이콘](assets/column-settings.png){width="20" zoomable="yes"}.
 1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
 
    트랜잭션 보고서는 열 설정 메뉴에서 변경한 내용을 즉시 표시합니다. 열 기본 설정은 저장되며 보고서 보기에서 멀리 이동하는 경우에도 계속 적용됩니다.
@@ -103,7 +103,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 보고서 데이터를 수동으로 새로 고쳐 최신 보고서 정보를 볼 수도 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. 다음을 클릭합니다. _새로 고침_ 아이콘(![새로 고침 아이콘](assets/refresh-button-med.png)).
+1. 다음을 클릭합니다. _새로 고침_ 아이콘(![새로 고침 아이콘](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    트랜잭션 보고서 데이터가 새로 고쳐집니다. *[!UICONTROL Update complete]* 확인이 나타나고 최신 정보가 표에 표시됩니다.
 
@@ -113,7 +113,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. 지난 30일 이외의 기간에 대한 트랜잭션을 보려면 [상태에 대한 날짜 범위 일정 사용자 정의](#customize-dates-timeframe).
-1. 다음을 클릭합니다. _다운로드_ ![다운로드 아이콘](assets/icon-download.png){width="25"} 아이콘.
+1. 다음을 클릭합니다. _다운로드_ ![다운로드 아이콘](assets/icon-download.png){width="20" zoomable="yes"} 아이콘.
 
 트랜잭션이 .csv 형식으로 다운로드됩니다.
 

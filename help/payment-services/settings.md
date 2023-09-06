@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![홈 보기](assets/payment-services-menu-small.png)
+   ![홈 보기](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. 클릭 **[!UICONTROL Settings]**. 다음을 참조하십시오 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
 
@@ -57,9 +57,6 @@ ht-degree: 0%
 다음을 추가할 수 있습니다. [!UICONTROL Soft Descriptor] 웹 사이트 또는 개별 스토어 뷰 구성. 고객 거래 은행 거래 명세서에 소프트 설명자가 표시됩니다. 예를 들어 여러 스토어/브랜드/카탈로그가 있는 경우 [!UICONTROL Soft Descriptor] 필드.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![홈 보기](assets/payment-services-menu-small.png)
-
 1. 클릭 **[!UICONTROL Settings]**. 다음을 참조하십시오 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
 1. 에서 웹 사이트 또는 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 여기에 사용할 소프트 설명자를 만듭니다. 초기 설정의 경우 다음과 같이 둡니다. **[!UICONTROL Default]** 을 클릭하여 기본값을 설정합니다.
 1. 텍스트 필드에 사용자 정의 텍스트(최대 22자)를 추가하고 을 바꿉니다 `Custom descriptor`.
@@ -91,9 +88,6 @@ ht-degree: 0%
 활성화했으므로 [!UICONTROL Payment Services] 웹 사이트의 경우 결제 기능 및 상점 표시에 대한 기본 설정을 변경할 수 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![홈 보기](assets/payment-services-menu-small.png)
-
 1. 클릭 **[!UICONTROL Settings]**. 다음을 참조하십시오 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
 1. 다음에 대한 결제 옵션 구성 [신용 카드](#credit-card-fields), [결제 버튼](#payment-buttons), 및 [단추 스타일](#button-style), 다음 섹션에 따라 사용하십시오.
 
@@ -104,9 +98,6 @@ ht-degree: 0%
 다음을 참조하십시오 [결제 옵션](payments-options.md#credit-card-fields) 추가 정보.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![홈 보기](assets/payment-services-menu-small.png)
-
 1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
 1. 다음에서 **[!UICONTROL Credit card fields]** 섹션에서 값을 편집합니다. **[!UICONTROL Checkout title]** 체크아웃 중에 표시되는 결제 방법의 이름을 변경하는 필드입니다.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
@@ -241,7 +232,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 
    레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다.
 
-   ![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. 클릭 **[!UICONTROL Save]**.
 
@@ -274,7 +265,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 - **결제 방법[!DNL Payment Services]**—이 리소스는 관리에서 주문을 만들 때 [!DNL Payment Services] 신용 카드는 결제 방법으로 사용할 수 있습니다. 을(를) 선택하는 경우 **작업** 상위 리소스. 이 리소스도 선택됩니다.
 - **[!DNL Payment Services]**—이 리소스에는 **대시보드** 및 **SaaS 서비스 프록시** 리소스. 또한 선택해야 합니다. 다음을 확인합니다. [!DNL Payment Services] 에 표시 _판매_ 메뉴 아래의 제품에서 사용할 수 있습니다.
 
-  ![결제 서비스 리소스](assets/roles-payments.png)
+  ![결제 서비스 리소스](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## 캐시 초기화
 

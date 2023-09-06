@@ -2,7 +2,7 @@
 title: 체크아웃
 description: 고객의 요구 사항에 맞게 체크아웃을 사용자 정의합니다.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Adobe Commerce에 대한 체크아웃을 구성할 수 있습니다 [!DNL Paymen
 
 구매자의 체크아웃 페이지에 오류 메시지가 표시됩니다. 메시지는 다를 수 있습니다.
 
-![확인하는 중 오류 발생](assets/user-checkout-error.png "체크아웃 도중 오류 발생")
+![확인하는 중 오류 발생](assets/user-checkout-error.png "체크아웃 도중 오류 발생"){width="600" zoomable="yes"}
 
 취소된 주문에 대한 댓글도 특정 의 관리자에 표시됩니다 [주문](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![주문에 대한 관리자의 취소된 주문 댓글](assets/admin-checkout-error.png "주문에 대한 관리자의 취소된 주문 댓글")
+![주문에 대한 관리자의 취소된 주문 댓글](assets/admin-checkout-error.png "주문에 대한 관리자의 취소된 주문 댓글"){width="600" zoomable="yes"}
 
 구매자가 주문에 대한 인증을 받았지만 주문이 생성되지 않고 로 변환된 경우 `Capture`: 주문이 자동 무효화됩니다. 이 프로세스는 구매자의 신용 카드에 크레딧이 예약되지 않도록 하며 표준 29일 기간이 끝날 때 승인이 무효화될 때 발생하는 결제 제공업체 수수료를 방지합니다.
 

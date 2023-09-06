@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] Adobe Commerce 관리 패널용'
 description: 다음 방법을 알아봅니다. [!DNL Quick Checkout] 관리 패널은 확장을 성공적으로 온보딩하고, 설정하고, 시각화하는 방법에 도움이 될 수 있습니다.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. 이 보기에서 _관리 패널_ 개요, _리소스_ 정보 [!DNL Quick Checkout], 가져오기 _도움말 및 지원_&#x200B;또는 를 통해 확장 구성 _설정_.
 
-   ![메뉴 빠른 체크아웃](assets/admin-panel-view.png)
+   ![메뉴 빠른 체크아웃](assets/admin-panel-view.png){width="600" zoomable="yes"}
 
 사용자에게 다음에 대한 적절한 역할 및 권한이 부여되었는지 확인합니다. [!DNL Quick Checkout] 표시할 관리 패널입니다. 다음을 참조하십시오. [사용자 역할 및 권한](../quick-checkout/user-roles-setup.md) 항목 을 참조하십시오.
 

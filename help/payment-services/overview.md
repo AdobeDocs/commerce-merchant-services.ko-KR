@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 은 상거래 웹 사이트에 강력하고 안전한 결제 처리를 제공하기 위한 샌드박스 테스트 및 간단한 설정을 포함한 턴키 셀프서비스 솔루션입니다.
 
-![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png)
+![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png){width="300" zoomable="yes"}
 
 중소기업, 미드마켓 경쟁사, 대기업 등 어디에 있든 이 결제 솔루션을 사용하면 운영 비용을 절감하고 수익을 증대할 수 있을 뿐만 아니라 전체 구매자 경험을 향상시킬 수 있는 유용한 도구를 제공할 수 있습니다.
 

@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** 데이터 시각화 차트(크레딧 대 차변) 및 시간 경과에 따른 이동 평균 보기.
 
-![관리자의 지급 데이터 시각화](assets/payouts-report.png){zoomable=yes}
+![관리자의 지급 데이터 시각화](assets/payouts-report.png){width="800" zoomable="yes"}
 
 클릭 **[!UICONTROL View Report]** 자세한 표 형식으로 이동 [지급 보고서 보기](#payouts-report-view).
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**자세한 테이블 형식 일시 중단 보고서 보기를 보려면 다음과 같이 하십시오.
 
-![관리자의 지급 거래](assets/payouts-report-new.png){zoomable=yes}
+![관리자의 지급 거래](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 이 항목의 섹션에 따라 이 보기를 구성하여 보려는 데이터를 가장 잘 표시할 수 있습니다.
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 지급액 보고서 보기에서 데이터 소스를 선택할 수 있습니다—**[!UICONTROL Live]** 또는 **[!UICONTROL Sandbox]**- 보고서 결과를 보려는 경우
 
-![데이터 소스 선택](assets/datasource.png){width=400px}
+![데이터 소스 선택](assets/datasource.png){width="300" zoomable="yes"}
 
 If _[!UICONTROL Live]_는 선택한 데이터 소스이며, 프로덕션 모드에서 저장소에 대한 보고서 정보를 볼 수 있습니다. If_[!UICONTROL Sandbox]_ 은 선택한 데이터 소스이며 샌드박스 모드에서 보고서 정보 저장소를 볼 수 있습니다.
 
@@ -126,7 +126,7 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스이며, 프로덕션 모드�
 지급 보고서 보기에는 기본적으로 사용 가능한 대부분의 정보 열이 표시됩니다. 그러나 보고서에 표시되는 열을 사용자 지정할 수 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. 다음을 클릭합니다. _열 설정_ 아이콘(![열 설정 아이콘](assets/column-settings.png)).
+1. 다음을 클릭합니다. _열 설정_ 아이콘(![열 설정 아이콘](assets/column-settings.png){width="20" zoomable="yes"}).
 1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
 
    일시 중지 보고서 보기에는 열 설정 메뉴에서 변경한 사항이 즉시 표시됩니다. 열 환경 설정이 저장되며 보고서 보기에서 나가면 적용됩니다.
@@ -137,7 +137,7 @@ If _[!UICONTROL Live]_는 선택한 데이터 소스이며, 프로덕션 모드�
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [트랜잭션에 대한 날짜 범위 일정 사용자 지정](#customize-transactions-timeframe).
-1. 다음을 클릭합니다. _다운로드_ (![](assets/icon-download.png)) 아이콘.
+1. 다음을 클릭합니다. _다운로드_ (![](assets/icon-download.png){width="20" zoomable="yes"}) 아이콘.
 
 지급 트랜잭션은 .csv 형식으로 다운로드됩니다.
 

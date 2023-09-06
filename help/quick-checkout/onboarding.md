@@ -3,7 +3,7 @@ title: "온보드 [!DNL Quick Checkout] for Adobe Commerce extension"
 description: "다음 방법 알아보기 [!DNL Quick Checkout] 는 Adobe Commerce 인스턴스와 확장을 성공적으로 온보딩하고 설정하는 방법에 도움이 될 수 있습니다."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 을(를) 사용하려면 [!DNL Quick Checkout] Adobe Commerce 확장의 경우 인스턴스를 체크아웃 기능과 연결하려면 몇 가지 온보딩 단계를 완료해야 합니다.
 
-![빠른 체크아웃](assets/overview-admin-panel.png)
+![빠른 체크아웃](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [확장 가져오기](#get-extension).
 1. [다음을 사용하여 프로덕션 또는 샌드박스 판매자 계정 만들기 [!DNL Bolt]](#create-account-with-bolt). 신원을 확인하는 데 필요한 모든 정보를 제공하십시오.
@@ -29,7 +29,7 @@ Gainsight가 활성화되면 **둘러보기** 의 단추 [!DNL Quick Checkout] �
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > 고급:
 
-   ![빠른 체크아웃](assets/gainsight-admin.png)
+   ![빠른 체크아웃](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행하십시오.
 
@@ -69,7 +69,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행하�
 - [!DNL Publishable key]: 프론트엔드가 상호 작용하는 데 사용하는 키 [!DNL Bolt] API.
 - [!DNL Signing secret]: 다음 위치에서 받은 요청에 대한 서명 확인에 사용됩니다. [!DNL Bolt].
 
-  ![빠른 체크아웃](assets/account-credentials.png)
+  ![빠른 체크아웃](assets/account-credentials.png){width="500" zoomable="yes"}
 
 다음을 참조하십시오. [[!DNL Bolt] 환경 세부 정보](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} 키 및 서명 암호에 대해 알아볼 수 있는 페이지 [!DNL Bolt] 대상: [!DNL Quick Checkout] 확장명.
 
@@ -87,7 +87,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행하�
 1. 왼쪽 패널에서 를 확장합니다. **판매** 및 선택 **체크아웃**.
 1. 다음에서 [!DNL Quick Checkout] 보기, 설정 **사용** 끝 `Yes`.
 
-![빠른 체크아웃](assets/quick-checkout-view-no-enable.png)
+![빠른 체크아웃](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Gainsight가 활성화되지 않은 경우 온보딩 단계를 계속 진행하�
 
 1. 고유 API 및 를 제공한 후 자격 증명의 유효성 검사 [!DNL Publishable keys].
 
-![빠른 체크아웃](assets/quick-checkout-main-view.png)
+![빠른 체크아웃](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 다음을 참조하십시오. [설정](../quick-checkout/settings-quick-checkout.md) 항목 을 참조하십시오. [!DNL Quick Checkout] Adobe Commerce 확장.
 
@@ -141,7 +141,7 @@ Adobe Commerce 표준 체크아웃 옵션에 대한 자세한 내용은 [체크�
 
 ## 서비스 설정 구성
 
-![빠른 체크아웃](assets/service-settings.png)
+![빠른 체크아웃](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. 설정 **체크아웃 추적 활성화** 끝 `Yes`.
 

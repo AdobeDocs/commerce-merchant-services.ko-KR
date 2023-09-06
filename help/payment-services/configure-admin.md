@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
 
-   ![메서드 보기](assets/methods-view.png)
+   ![메서드 보기](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
 1. 다음에서 _[!UICONTROL [!DNL Payment Services]]_섹션을 확장합니다._[!UICONTROL General Configuration]_ 섹션.

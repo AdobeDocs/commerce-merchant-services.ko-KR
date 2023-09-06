@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] 보고'
 description: '[!DNL Quick Checkout] 포괄적인 보고 정보를 제공합니다.'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] Adobe Commerce 및 Magento Open Source의 경우 스토어의 체크아웃 경험 통계에 대한 자세한 정보를 얻을 수 있도록 포괄적인 보고를 제공합니다.
 
-![보고서 보기](assets/reports-view-big-checkout.png)
+![보고서 보기](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 개요 섹션의 차트에는 평균 체크아웃 시간, 체크아웃 또는 체크아웃 포기 중에 생성된 새 계정 등 스토어의 체크아웃 성능에 대한 자세한 정보가 표시됩니다.
 
-![보고서 개요](assets/overview-report-checkout.png)
+![보고서 개요](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | 차트 | 설명 |
 |---|---|
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 트렌드 섹션의 차트에는 계정 유형별로 필터링된 체크아웃 경험 트렌드 또는 체크아웃 중에 생성된 새 계정이 표시됩니다.
 
-![보고서 트렌드](assets/trends-report-checkout.png)
+![보고서 트렌드](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | 차트 | 설명 |
 |---|---|
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 날짜 또는 과 같은 기존 사전 설정으로 표시된 결과를 필터링할 수 있습니다 **지난 30일**.
 
-![필터 보기](assets/filter-view.png)
+![필터 보기](assets/filter-view.png){width="300" zoomable="yes"}
 
 | 필드 | 설명 |
 |---|---|
