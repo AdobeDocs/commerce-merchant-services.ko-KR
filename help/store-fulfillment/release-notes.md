@@ -4,10 +4,10 @@ description: "릴리스 정보에서 모든 항목에 대한 정보를 검토하
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ ht-degree: 2%
 ![해결된 문제](../assets/fix.svg) 수정 사항 및 향상된 기능
 ![알려진 문제](../assets/bug.svg) 알려진 문제
 
+다음을 참조하십시오 [예정된 릴리스](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) 릴리스 일정 및 지원에 대해 알아봅니다.
+
+다음을 참조하십시오 [제품 가용성](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) 이 확장을 지원하는 Adobe Commerce 버전을 알아봅니다.
+
 ## v1.5.0
 
 *2023년 8월 3일*
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}[Adobe Commerce 2.4.4~2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), 2.4.6-p1, 2.4.5-p3 및 2.4.4-p4 보안 패치 릴리스 포함.
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}[Adobe Commerce 2.4.4~2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), 2.4.6-p1, 2.4.5-p3 및 2.4.4-p4 보안 패치 릴리스 포함
 
 이번 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -63,7 +67,7 @@ ht-degree: 2%
 
 *2023년 4월 13일*
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![신규](../assets/fix.svg) [!DNL Store Fulfillment] 현재 [호환 가능 [!DNL Adobe Commerce] 2.4.4~2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ ht-degree: 2%
 
 *2023년 2월 27일*
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 이번 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -82,7 +86,7 @@ ht-degree: 2%
 
 *2022년 9월 27일*
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 이번 릴리스에는 다음 업데이트가 포함됩니다.
 
@@ -93,7 +97,7 @@ ht-degree: 2%
 
 *2022년 7월 15일*
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 안정성: 일반 가용성
 
@@ -103,7 +107,7 @@ ht-degree: 2%
 
 *2022년 3월 4일*
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 안정성: 일반 가용성
 
