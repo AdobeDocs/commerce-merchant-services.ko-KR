@@ -3,7 +3,7 @@ title: 테스트 및 유효성 검사
 description: 테스트 및 유효성 검사는 다음을 수행하는 데 도움이 됩니다. [!DNL Payment Services] 기능은 예상대로 작동하며 고객에게 최상의 결제 옵션을 제공합니다.
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%

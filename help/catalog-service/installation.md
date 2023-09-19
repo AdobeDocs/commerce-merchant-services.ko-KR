@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ ht-degree: 0%
 - 클라우드 인프라의 Adobe Commerce: 2.4.4+
 - Adobe Commerce 온프레미스: 2.4.4+
 
-## 환경
+## 엔드포인트
 
-카탈로그 서비스에는 온보딩에 사용할 수 있는 두 가지 환경이 있습니다.
+카탈로그 서비스에는 온보딩에 사용할 수 있는 두 개의 엔드포인트가 있습니다.
 
 - 샌드박스(https://catalog-service-sandbox.adobe.io/graphql) - 시작하기 전 테스트 및 유효성 검사에 사용됨
 - 프로덕션(https://catalog-service.adobe.io/graphql)- 상거래 판매자 및 웹 사이트의 라이브 트래픽에 사용됨)
 
-로드 테스트는 샌드박스 환경에서만 수행해야 합니다. 권장 사항: [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 서비스 팀이 추가 서버 트래픽을 예측할 수 있도록 로드 테스트 시 를 엽니다.
+Commerce의 모든 테스트 인스턴스는 Sanbox 끝점을 사용해야 합니다.
+
+로드 테스트는 샌드박스 엔드포인트에서만 수행해야 합니다. 권장 사항: [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 서비스 팀이 추가 서버 트래픽을 예측할 수 있도록 로드 테스트 시 를 엽니다.
 
 ## 설치 및 구성
 

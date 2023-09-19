@@ -3,9 +3,9 @@ title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법 알아보기 [!DNL Commerce] 서버 대상 [!DNL Commerce Services] 지속적으로 서비스를 최신 상태로 유지하기 위해.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 4326daafecc08c758aa05bf2d59fc69eca913155
+source-git-commit: 1fd5f25b88fa129cc136b93fdf88b981624f0678
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -127,20 +127,36 @@ bin/magento saas:resync --feed <feed name> [no-reindex]
 
 피드 이름은 다음 중 하나일 수 있습니다.
 
-- `products`— 카탈로그의 제품
 - `categories`— 카탈로그의 범주
-- `variants`— 구성 가능한 제품의 색상 및 크기와 같은 제품 변형
+- `categoryPermissions` - 각 범주에 대한 권한
+- `products`— 카탈로그의 제품
 - `productattributes`— 다음과 같은 제품 속성 `activity`, `gender`, `tops`, `bottoms`등
 - `productoverrides`— 고객별 가격 책정 및 카탈로그 표시 규칙(예: 범주 권한에 따른 규칙)
+- `variants`— 구성 가능한 제품의 색상 및 크기와 같은 제품 변형
 
 명령줄에서 데이터 재동기화를 트리거할 때 데이터를 업데이트하는 데 최대 1시간이 걸릴 수 있습니다.
+
+### SaaS 가격 인덱싱 동기화
 
 을 사용하는 경우 [SaaS 가격 인덱싱](../price-index/index.md) 다시 동기화해야 하는 경우 다음 명령을 실행합니다.
 
 ```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+```
+
+### 카탈로그 서비스 동기화 중
+
+카탈로그 서비스에 대해 다시 동기화하려면 다음 순서로 명령을 실행해야 합니다.
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions 
 ```
 
 ### 예

@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ _2023년 8월 7일_
 * 다음 **내 계정** 제품 목록 페이지 위젯을 사용할 때 페이지 탐색이 더 이상 사라지지 않습니다.
 
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.2 를 사용하여 이러한 기능에 액세스할 수 있습니다.
+
+프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
+
+### 제한 사항
+
+라이브 검색 제품 목록 페이지 위젯을 사용하면 Google Tag Manager가 실패합니다. Google 태그 관리자가 필요한 경우 기본 검색 어댑터를 사용합니다.
+
+## 이전 버전
+
++++3.0.1 및 이전
 
 ## [!DNL Live Search] 3.0.1 {#301}
 

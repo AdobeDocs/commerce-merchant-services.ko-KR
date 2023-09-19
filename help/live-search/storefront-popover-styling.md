@@ -2,7 +2,7 @@
 title: "스타일링 [!DNL Popover] 요소"
 description: "사용자 정의에 대한 기술 참고 사항 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 0%
