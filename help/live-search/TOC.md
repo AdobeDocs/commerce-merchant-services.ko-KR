@@ -4,9 +4,9 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,8 +25,8 @@ ht-degree: 9%
    - [상점 첫 화면 [!DNL Popover]](storefront-popover.md)
    - [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md)
 - [!DNL Live Search] 관리자{#live-search-admin}
-   - [작업 영역](workspace.md)
-   - [성능](performance.md)
+   - [카테고리 머천다이징](category-merch.md)
+   - [상거래 구성 설정](configuration.md)
    - 패싯 {#facets}
       - [개요](facets.md)
       - [작업 영역 구성](faceting-workspace.md)
@@ -34,19 +34,20 @@ ht-degree: 9%
       - [패싯 추가](facets-add.md)
       - [Facet 관리](facets-manage.md)
       - [기술 참고 사항](facet-technical-notes.md)
-   - 동의어 {#synonyms}
-      - [개요](synonyms.md)
-      - [동의어 유형](synonyms-type.md)
-      - [동의어 추가](synonyms-add.md)
-      - [동의어 관리](synonyms-manage.md)
+   - [색인화](indexing.md)
+   - [성능](performance.md)
    - 규칙 {#rules}
       - [개요](rules.md)
       - [규칙 작업 영역](rules-workspace.md)
       - [규칙 추가](rules-add.md)
       - [규칙 관리](rules-manage.md)
-   - [상거래 구성 설정](configuration.md)
    - [설정](settings.md)
-   - [색인화](indexing.md)
+   - 동의어 {#synonyms}
+      - [개요](synonyms.md)
+      - [동의어 유형](synonyms-type.md)
+      - [동의어 추가](synonyms-add.md)
+      - [동의어 관리](synonyms-manage.md)
+   - [작업 영역](workspace.md)
 - GraphQL 쿼리 {#graphql}
    - [attributeMeta](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

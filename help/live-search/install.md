@@ -3,9 +3,9 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ ht-degree: 0%
    * 제품 피드
    * 제품 변형 피드
    * 카탈로그 속성 피드
+   * 제품 가격 피드
+   * 범위 웹 사이트 데이터 피드
+   * Scopes 고객 그룹 데이터 피드
 
 1. 구성 [API 키](#configure-api-keys) 카탈로그 데이터가 [동기화됨](#synchronize-catalog-data) 포함 [!DNL Live Search] 서비스.
 
@@ -121,6 +124,9 @@ ht-degree: 0%
    * 제품 피드
    * 제품 변형 피드
    * 카탈로그 속성 피드
+   * 제품 가격 피드
+   * 범위 웹 사이트 데이터 피드
+   * 고객 그룹 데이터 피드 범위 지정
 
 1. 구성 [API 키](#configure-api-keys) 카탈로그 데이터가 [동기화됨](#synchronize-catalog-data) 포함 [!DNL Live Search] 서비스.
 
@@ -211,7 +217,7 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-2.0.0에서 3.0.1로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
+2.0.0에서 3.1.1로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
 
 1. 현재 설치된 경우 `magento/live-search` 버전: `2.0.3` 또는 그 이하이며 버전으로 업그레이드 중입니다. `3.0.0` 또는 업그레이드 전에 다음 명령을 실행하십시오.
 

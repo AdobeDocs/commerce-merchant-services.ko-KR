@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "다음 [!DNL Live Search storefront popover] 제안 제품 및 썸네일을 동적으로 반환합니다."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -49,10 +49,13 @@ ht-degree: 0%
 
 판매자는 카탈로그 서비스를 사용하여 위젯 또는 상점 요소를 사용자 정의하고 확장할 수 있지만 이는 Adobe 지원 팀의 범위를 벗어납니다.
 
+## Headless 구현
+
+Headless 구현이 있는 사용자의 경우 [npm 패키지](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+
 ## 제한 사항
 
 * 다음 [!DNL Live Search] [!DNL storefront popover] 는 를 사용하는 스토어에 대해서만 사용할 수 있습니다. *Luma* 테마 또는 를 기반으로 하는 맞춤화된 테마 *Luma*. 검색 결과 페이지의 경로에는 이 없습니다. *Lume* 스타일링.
 * 다음 [!DNL popover] 은(는) 을 지원하지 않습니다. *비어 있음* 테마. 다음을 참조하십시오 [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md) 자세히 알아보십시오.
 * 다음 [!DNL popover] 은(는) 빠른 주문 양식에서 지원되지 않습니다.
 * 위시리스트 및 제품 비교는 지원되지 않습니다.
-* 기본 통화만 지원됩니다.

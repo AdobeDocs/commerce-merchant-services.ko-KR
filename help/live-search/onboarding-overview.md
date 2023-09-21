@@ -3,9 +3,9 @@ title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 
 * Adobe Commerce 온-프레미스 (EE) : 2.4.4+
 * ECE(Adobe Commerce on Cloud) : 2.4.4+
+
+## 엔드포인트
+
+[!DNL Live Search] 은 의 끝점을 통해 통신합니다. `https://catalog-service.adobe.io/graphql`.
 
 ## 경계 및 임계값
 
