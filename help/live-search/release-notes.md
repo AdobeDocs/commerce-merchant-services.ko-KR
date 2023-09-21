@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 릴리스 정보'
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _2023년 9월 15일_
 
 ### 새로운 기능
 
-* 새 카테고리 머천다이징 탭이 추가되었습니다. 이제 카테고리당 지능형 순위 및 수동 순위(고정, 증폭, 파기, 숨기기)를 추가할 수 있습니다.
-* 사용자는 지능적 또는 수동 등급으로 단일 카테고리 규칙을 추가할 수 있습니다
-* 이제 사용자가 지능형 등급 규칙을 하위 범주에 추가할 수 있습니다.
-* 지적인 순위가 있는 하위 범주를 삭제할 때 자세한 정보가 제공됩니다
-* 상속된 순위 전략에 대한 규칙을 삭제하는 기능이 추가되었습니다
-* 단일 카테고리에 대한 규칙을 삭제하는 기능이 추가되었습니다
-* 사용자는 이제 규칙을 추가할 때 카테고리 이름으로 검색할 수 있습니다
-* 이제 카테고리 트리 보기를 통해 규칙이 적용된 카테고리를 볼 수 있습니다.
-* 범주 미리 보기에는 선택한 범주만 표시됩니다.
+![신규](../assets/new.svg) 새 카테고리 머천다이징 탭이 추가되었습니다. 이제 카테고리당 지능형 순위 및 수동 순위(고정, 증폭, 파기, 숨기기)를 추가할 수 있습니다.
+![신규](../assets/new.svg) 사용자는 지능적 또는 수동 등급으로 단일 카테고리 규칙을 추가할 수 있습니다
+![신규](../assets/new.svg) 이제 사용자가 지능형 등급 규칙을 하위 범주에 추가할 수 있습니다.
+![신규](../assets/new.svg) 지적인 순위가 있는 하위 범주를 삭제할 때 자세한 정보가 제공됩니다
+![신규](../assets/new.svg) 상속된 순위 전략에 대한 규칙을 삭제하는 기능이 추가되었습니다
+![신규](../assets/new.svg) 단일 카테고리에 대한 규칙을 삭제하는 기능이 추가되었습니다
+![신규](../assets/new.svg) 사용자는 이제 규칙을 추가할 때 카테고리 이름으로 검색할 수 있습니다
+![신규](../assets/new.svg) 이제 카테고리 트리 보기를 통해 규칙이 적용된 카테고리를 볼 수 있습니다.
+![신규](../assets/new.svg) 범주 미리 보기에는 선택한 범주만 표시됩니다.
 
 ### 업데이트
 
-* &#39;규칙&#39; 탭의 이름이 &#39;검색 규칙&#39;으로 바뀝니다.
-* 이제 &#39;트렌드&#39;로 순위를 지정할 때 다음 중 하나를 선택할 수 있습니다.
-   * 3일(기본값)
-   * 14일
-   * 30일
-* &#39;이벤트&#39;(증폭/고정/버리/숨기기)의 이름이 &#39;수동 순위&#39;로 변경되었습니다.
-* &#39;순위 유형&#39;의 이름이 &#39;지능형 순위&#39;로 변경되었습니다.
-
-### 수정 사항
-
-* 사소한 버그 수정
+![수정](../assets/fix.svg) &#39;규칙&#39; 탭의 이름이 &#39;검색 규칙&#39;으로 바뀝니다.
+![수정](../assets/fix.svg) 이제 &#39;트렌드&#39;별로 순위를 지정할 때 다음 중 하나를 선택할 수 있습니다. * 3일 (기본값) * 14일 * 30일
+![수정](../assets/fix.svg) &#39;이벤트&#39;(증폭/고정/버리/숨기기)의 이름이 &#39;수동 순위&#39;로 변경되었습니다.
+![수정](../assets/fix.svg) &#39;순위 유형&#39;의 이름이 &#39;지능형 순위&#39;로 변경되었습니다.
+![수정](../assets/fix.svg) 사소한 버그 수정
 
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.1.1 을 사용하여 이러한 기능에 액세스할 수 있습니다.
 
@@ -90,7 +84,7 @@ _2023년 9월 1일_
 
 ### 업데이트
 
-* 제품 목록 위젯이 [카탈로그 서비스 API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![수정](../assets/fix.svg) 제품 목록 위젯이 [카탈로그 서비스 API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _2023년 8월 7일_
 
 ### 새로운 기능
 
-다음 값이 `storeDetails` 개체:
+![신규](../assets/new.svg) 다음 값이 `storeDetails` 개체:
 
 * &quot;페이지당 모든 제품 허용&quot;
 * 통화 비율
@@ -110,11 +104,8 @@ _2023년 8월 7일_
 
 ### 업데이트
 
-* 고급 데이터 검색을 지원하기 위해 카탈로그 서비스 모듈이 메타패키지에 추가되었습니다.
-
-### 수정 사항
-
-* 다음 **내 계정** 제품 목록 페이지 위젯을 사용할 때 페이지 탐색이 더 이상 사라지지 않습니다.
+![수정](../assets/fix.svg) 고급 데이터 검색을 지원하기 위해 카탈로그 서비스 모듈이 메타패키지에 추가되었습니다.
+![수정](../assets/fix.svg) 다음 **내 계정** 제품 목록 페이지 위젯을 사용할 때 페이지 탐색이 더 이상 사라지지 않습니다.
 
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.2 를 사용하여 이러한 기능에 액세스할 수 있습니다.
 
@@ -124,10 +115,6 @@ _2023년 8월 7일_
 
 라이브 검색 제품 목록 페이지 위젯을 사용하면 Google Tag Manager가 실패합니다. Google 태그 관리자가 필요한 경우 기본 검색 어댑터를 사용합니다.
 
-## 이전 버전
-
-+++3.0.1 및 이전
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _2023년 3월 14일_
@@ -136,37 +123,33 @@ _2023년 3월 14일_
 
 ### 새로운 기능
 
-* 규칙 미리보기의 제품 항목 카드
-* [제품 목록 페이지 위젯](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [범주 필터링 옵션](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* 끌어서 놓아 고정 이벤트를 만드는 기능이 추가되었습니다.
-* 새 고정 작업:
-   * 위치에 고정 - 한 번의 클릭으로 고정 이벤트를 만들기 위한 고정 단추
-   * 맨 위에 고정 - 제품을 첫 번째 위치에 배치합니다.
-   * 맨 아래에 고정 - 제품을 결과의 맨 아래에 배치합니다.
-   * 한 번의 클릭으로 이벤트 고정 해제
-* [규칙에 대한 지능형 순위](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![신규](../assets/new.svg) 규칙 미리보기의 제품 항목 카드
+![신규](../assets/new.svg) [제품 목록 페이지 위젯](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![신규](../assets/new.svg) [범주 필터링 옵션](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![신규](../assets/new.svg) 끌어서 놓아 고정 이벤트를 만드는 기능이 추가되었습니다.
+![신규](../assets/new.svg) 새 고정 작업: * 위치에 고정 - 한 번의 클릭으로 고정 이벤트 만들기 고정 * 상단에 고정 - 첫 번째 위치에 제품 배치 * 하단에 고정 - 결과의 하단에 제품 배치 * 한 번의 클릭으로 이벤트 고정 해제
+![신규](../assets/new.svg) [규칙에 대한 지능형 순위](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### 업데이트
 
-* 이제 규칙 구성에서 위치를 고유하게 자동으로 정렬합니다.
-* 기존 이벤트를 삭제하면 이제 미리보기가 업데이트됩니다.
-* 이벤트가 없는 규칙은 저장할 수 있습니다.
-* 얼굴 &quot;유형 선택&quot; 선택기 제거
-* 저장되지 않은 규칙에 대해 새 &quot;편집 중&quot; 상태 추가됨
+![수정](../assets/fix.svg) 이제 규칙 구성에서 위치를 고유하게 자동으로 정렬합니다.
+![수정](../assets/fix.svg) 기존 이벤트를 삭제하면 이제 미리보기가 업데이트됩니다.
+![수정](../assets/fix.svg) 이벤트가 없는 규칙은 저장할 수 있습니다.
+![수정](../assets/fix.svg) 얼굴 &quot;유형 선택&quot; 선택기 제거
+![수정](../assets/fix.svg) 저장되지 않은 규칙에 대해 새 &quot;편집 중&quot; 상태 추가됨
 
 ### 수정 사항
 
-* 저장하는 동안 완료되지 않은 이벤트가 있을 때 서버 오류를 수정했습니다.
-* 여러 이벤트가 있는 경우 특정 이벤트를 올바르게 삭제하는 문제가 해결되었습니다.
-* 새 이벤트가 추가되었을 때 기존 규칙 이벤트가 업데이트되지 않는 문제를 해결했습니다
-* 세부 정보에서 두 번째 &quot;편집&quot; 클릭을 수정했습니다. [!DNL Live Search] 다시 로드해야 하는 페이지
-* 동의어: 사용자가 입력을 클릭했을 때 필드에 포커스를 반환할 수 없는 문제가 해결되었습니다.
-* 기타 사소한 버그 수정 및 성능 업데이트
+![수정](../assets/fix.svg) 저장하는 동안 완료되지 않은 이벤트가 있을 때 서버 오류를 수정했습니다.
+![수정](../assets/fix.svg) 여러 이벤트가 있는 경우 특정 이벤트를 올바르게 삭제하는 문제가 해결되었습니다.
+![수정](../assets/fix.svg) 새 이벤트가 추가되었을 때 기존 규칙 이벤트가 업데이트되지 않는 문제를 해결했습니다
+![수정](../assets/fix.svg) 세부 정보에서 두 번째 &quot;편집&quot; 클릭을 수정했습니다. [!DNL Live Search] 다시 로드해야 하는 페이지
+![수정](../assets/fix.svg) 동의어: 사용자가 입력을 클릭했을 때 필드에 포커스를 반환할 수 없는 문제가 해결되었습니다.
+![수정](../assets/fix.svg) 기타 사소한 버그 수정 및 성능 업데이트
 
 
-* ![버그](../assets/bug.svg) - &quot;추천&quot;별 순위는 라이브 검색 위젯 내에서만 지원됩니다. 기본 Luma 및 PWA 검색 기능에서는 지원되지 않습니다.
-* ![버그](../assets/bug.svg) - 사용자 지정 가격 속성 패싯이 Luma에서 올바르게 렌더링되지 않지만 API가 해당 패싯을 제대로 필터링합니다.
+![버그](../assets/bug.svg) - &quot;추천&quot;별 순위는 라이브 검색 위젯 내에서만 지원됩니다. 기본 Luma 및 PWA 검색 기능에서는 지원되지 않습니다.
+![버그](../assets/bug.svg) - 사용자 지정 가격 속성 패싯이 Luma에서 올바르게 렌더링되지 않지만 API가 해당 패싯을 제대로 필터링합니다.
 
 판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 확장 버전 >= 3.0.1 을 사용하여 이러한 기능에 액세스할 수 있습니다.
 
@@ -176,7 +159,7 @@ _2023년 3월 14일_
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
-* ![수정](../assets/fix.svg) - 네트워크 문제로 인해 SDK 리소스를 사용할 수 없으면 라이브 검색에서 오류가 발생합니다. 이 버그는 수정되었습니다.
+![수정](../assets/fix.svg) - 네트워크 문제로 인해 SDK 리소스를 사용할 수 없으면 라이브 검색에서 오류가 발생합니다. 이 버그는 수정되었습니다.
 
 이러한 기능에 액세스하려면 Live Search 확장 버전 >= 2.0.5를 업그레이드해야 합니다.
 

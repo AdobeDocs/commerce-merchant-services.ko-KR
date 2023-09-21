@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: "다음 [!DNL Live Search storefront popover] 제안 제품 및 썸네일을 동적으로 반환합니다."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Headless 구현이 있는 사용자의 경우 [npm 패키지](https://www.npmjs.
 
 ## 제한 사항
 
-* 다음 [!DNL Live Search] [!DNL storefront popover] 는 를 사용하는 스토어에 대해서만 사용할 수 있습니다. *Luma* 테마 또는 를 기반으로 하는 맞춤화된 테마 *Luma*. 검색 결과 페이지의 경로에는 이 없습니다. *Lume* 스타일링.
+* 다음 [!DNL Live Search] [!DNL storefront popover] 는 를 사용하는 스토어에 대해서만 사용할 수 있습니다. *Luma* 테마 또는 를 기반으로 하는 맞춤화된 테마 *Luma*. 검색 결과 페이지의 경로에는 이 없습니다. *Luma* 스타일링.
 * 다음 [!DNL popover] 은(는) 을 지원하지 않습니다. *비어 있음* 테마. 다음을 참조하십시오 [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md) 자세히 알아보십시오.
 * 다음 [!DNL popover] 은(는) 빠른 주문 양식에서 지원되지 않습니다.
 * 위시리스트 및 제품 비교는 지원되지 않습니다.

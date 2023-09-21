@@ -2,7 +2,7 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 - 샌드박스(https://catalog-service-sandbox.adobe.io/graphql) - 시작하기 전 테스트 및 유효성 검사에 사용됨
 - 프로덕션(https://catalog-service.adobe.io/graphql)- 상거래 판매자 및 웹 사이트의 라이브 트래픽에 사용됨)
 
-Commerce의 모든 테스트 인스턴스는 Sanbox 끝점을 사용해야 합니다.
+Commerce의 모든 테스트 인스턴스는 샌드박스 엔드포인트를 사용해야 합니다.
 
 로드 테스트는 샌드박스 엔드포인트에서만 수행해야 합니다. 권장 사항: [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) 서비스 팀이 추가 서버 트래픽을 예측할 수 있도록 로드 테스트 시 를 엽니다.
 
