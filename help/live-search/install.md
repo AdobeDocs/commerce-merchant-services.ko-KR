@@ -3,9 +3,9 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
    >
    > 데이터가 색인화되고 동기화되는 동안 상점에서는 검색 및 카테고리 찾아보기 작업을 사용할 수 없습니다. 카탈로그의 크기에 따라 프로세스는 최소 한 시간 정도 소요될 수 있습니다 `cron` 를 실행하여 데이터를 와 동기화합니다. [!DNL Live Search] 서비스.
 
-1. 다음을 확인하십시오 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 이(가) (으)로 설정됩니다. `Update by Schedule`:
+1. 다음을 확인하십시오 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) &quot;일정별 업데이트&quot;로 설정된 경우:
 
    * 제품 피드
    * 제품 변형 피드
@@ -119,7 +119,7 @@ ht-degree: 0%
 
    [!DNL Elasticsearch] 은(는) 다음 기간 동안 상점 첫 화면의 검색 요청을 계속 관리합니다. [!DNL Live Search] 서비스는 카탈로그 데이터를 동기화하고 백그라운드에서 제품을 인덱싱합니다.
 
-1. 다음을 확인하십시오 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) 이(가) (으)로 설정됩니다. `Update by Schedule`:
+1. 다음을 확인하십시오 [인덱서](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) &quot;일정별 업데이트&quot;로 설정된 경우:
 
    * 제품 피드
    * 제품 변형 피드
@@ -263,10 +263,21 @@ composer update magento/live-search --with-dependencies
 
 ## [!DNL Live Search] 종속성 {#dependencies}
 
-다음 [!DNL Live Search] 종속성 캡처 대상: [!DNL Composer]:
+다음 [!DNL Live Search] 종속성 캡처 대상: [!DNL Composer].
 
-| 종속성 | 설명 |
-|--- |--- |
-| 모듈 내보내기 | 다음 모듈은 카탈로그 데이터를 수집하고 동기화합니다.<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | 상거래 서비스에 대한 연결을 구성하는 데 필요합니다. |
-| `services-id` | 상거래 서비스에 대한 연결을 구성하는 데 필요합니다. |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
