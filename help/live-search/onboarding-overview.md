@@ -3,9 +3,9 @@ title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 0%
 
 * 스토어 보기당 최대 300개의 제품 속성을 인덱싱합니다.
 * Adobe Commerce 데이터베이스의 제품만 인덱싱합니다.
-* 기본 공유 카탈로그에 제품이 있어야 합니다.
 * CMS 페이지가 인덱싱되지 않았습니다.
 
 ### 쿼리
@@ -74,7 +73,7 @@ ht-degree: 0%
 [!DNL Live Search] 은 PWA Studio에서 작동하지만 다른 Commerce 구현에 비해 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
 
 * 의 현재 PWA 구현 [!DNL Live Search] 검색 결과를 반환하는 데 보다 많은 처리 시간이 필요합니다. [!DNL Live Search] 기본 Commerce 상점 포함.
-* [!DNL Live Search] PWA에서 을(를) 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 이로 인해 지능형 머천다이징이 작동하지 않습니다.
+* [!DNL Live Search] PWA에서 을(를) 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 따라서 지능형 머천다이징은 작동하지 않습니다.
 * 바로 필터링 `description`, `name`, `short_description` 과 함께 사용할 경우 GraphQL에서 지원되지 않음 [PWA](https://developer.adobe.com/commerce/pwa-studio/), 하지만 더 일반적인 필터와 함께 반환됩니다.
 
 사용 [!DNL Live Search] PWA Studio을 사용하는 통합자는 다음 작업도 수행해야 합니다.
@@ -100,7 +99,6 @@ ht-degree: 0%
 ### 현재 지원되지 않음
 
 * 다음 [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 다음 경우에 모듈이 비활성화됩니다. [!DNL Live Search] 가 설치되고 상점 첫 번째 바닥글의 고급 검색 링크가 제거됩니다.
-* 에서 사용하는 여러 재고 위치 [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) 또는 기타 OMS 확장
 * 제품 가격에는 다음이 포함되지 않습니다. [부가 가치세](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)
 * [계층 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 는 라이브 검색 팝오버 및 제품 목록 페이지 위젯에서 지원되지 않습니다.
 

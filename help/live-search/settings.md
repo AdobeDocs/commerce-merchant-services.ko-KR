@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 설정"
 description: "다음에 대한 설정 구성: [!DNL Live Search] 서비스."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
+source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 0%
 | 선택 항목 수 | 상점 첫 화면에서 검색 필터로 사용할 수 있는 가격 범위 그룹화 수를 지정합니다. 기본값: 8, 최대값: 50 |
 | 간격 값 | 각 그룹의 가격 범위 간격을 지정합니다. 예를 들어 간격 값이 20인 5개의 선택 항목을 선택하면 0-20, 20-40, 40-60, 60-80 및 >80의 5개 그룹이 생성됩니다. 기본값: 5, 최대값: 10,000 |
 
-## 언어
+<!-- ## Language
 
-언어 설정은 [!DNL Live Search] 카탈로그를 읽고 색인을 작성할 때 예상할 언어입니다.
+The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
 
-언어는 문법에 대한 다양한 규칙 세트, 예를 들어 단어 분리 방법, 동사 주장 및 동의어 등이 있습니다.
-언어 설정을 사용하면 색인화 메커니즘에 올바른 규칙 집합이 적용됩니다.
+Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
 
-언어 설정은 카탈로그의 기본 언어로 설정되어야 합니다.
+The Language settings should be set to the primary language of the catalog. -->

@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] 릴리스 정보'
+title: "[!DNL Live Search] 릴리스 정보"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _2023년 3월 14일_
 ![신규](../assets/new.svg) 끌어서 놓아 고정 이벤트를 만드는 기능이 추가되었습니다.
 ![신규](../assets/new.svg) 새 고정 작업: * 위치에 고정 - 한 번의 클릭으로 고정 이벤트 만들기 고정 * 상단에 고정 - 첫 번째 위치에 제품 배치 * 하단에 고정 - 결과의 하단에 제품 배치 * 한 번의 클릭으로 이벤트 고정 해제
 ![신규](../assets/new.svg) [규칙에 대한 지능형 순위](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![신규](../assets/new.svg) [!DNL Live Search] 이제에서 다중 소스 인벤토리(MSI)를 지원합니다. MSI를 사용하려면 다음을 수행해야 합니다 [설치](install.md#update) 다음 `commerce-data-export` 102.2.0+ 모듈. 다음 명령을 사용하여 버전을 확인합니다. `composer update magento/live-search --with-dependencies`.
 
 ### 업데이트
 
