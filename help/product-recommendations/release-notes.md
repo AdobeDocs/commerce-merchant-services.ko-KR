@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ _2023년 4월 25일_
 
 ![신규](../assets/new.svg) 추가됨 [준비 지표](create.md) 각 추천 유형의 교육 진행률을 시각화하는 데 도움이 됩니다.
 ![신규](../assets/new.svg) 주요 버전 릴리스입니다. [편집](install-configure.md#update) 루트 `composer.json` 프로젝트용 파일입니다. 또한 이 릴리스에서는 Product Recommendations을 설치 및 구성할 때 두 개의 API 키를 제공해야 합니다. [프로덕션 키 및 샌드박스 키](../landing/saas.md).
+![신규](../assets/new.svg) [!DNL Product Recommendations] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install-configure.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
 #### 알려진 제한 사항
 
