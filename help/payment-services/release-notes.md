@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _2021년 6월 28일_
 ![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
+
+## v2.2.1
+
+_2023년 9월 27일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4870 --> 확장 버전을 최신 릴리스로 보낼 때 Storefront에서 새 헤더 속성을 올바르게 잘못 입력하던 문제를 수정했습니다. 이전에는 `1.3.0` 상거래 서비스 커넥터의 릴리스이므로 를 확장할 수 없습니다. `User-Agent header` 결제 서비스 확장.
 
 ## v2.2.0
 
