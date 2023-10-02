@@ -1,20 +1,21 @@
 ---
-title: SaaS 가격 인덱싱 설치
-description: SaaS 가격 색인화 설치
+title: SaaS 가격 인덱싱 수동 설치
+description: 이전 버전에 대한 SaaS 가격 색인화 설치
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# SaaS 가격 인덱싱 설치
+# SaaS 가격 인덱싱 수동 설치
 
-SaaS 가격 색인을 설정하려면 새로운 모듈을 설치하고 CLI 명령을 실행해야 합니다. 이 설치를 완료하려면 관리자가 명령줄 액세스 권한이 필요합니다.
+SaaS 가격 색인화는 즉시 사용할 수 있습니다. [최신 버전](index.md#Requirements) 상거래 서비스.
+최신 버전이 없고 Adobe Commerce 인스턴스에 대해 SaaS 가격 색인화를 활성화하려는 경우 이 미니 안내서를 사용하십시오.
 
 ## 전제 조건
 
@@ -33,10 +34,10 @@ SaaS 가격 색인을 설정하려면 새로운 모듈을 설치하고 CLI 명�
 1. 에 다음 모듈을 추가합니다. `composer.json` 파일:
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. upgrade 명령을 실행합니다.
@@ -68,17 +69,12 @@ SaaS 가격 색인을 설정하려면 새로운 모듈을 설치하고 CLI 명�
 
 필요에 따라 위의 인덱서를 수동으로 실행합니다. 그렇지 않으면 표준 동기화 프로세스에서 데이터가 새로 고쳐집니다. 자세한 내용 [카탈로그 동기화](../landing/catalog-sync.md) 서비스.
 
-Luma 및 Adobe Commerce 핵심 GraphQL 사용자는 `catalog-adapter` luma 및 Core GraphQl 호환성을 제공하고 PHP 핵심 가격 인덱서를 비활성화하는 모듈입니다.
-을(를) 사용하려면 `catalog-adapter` 모듈, [!DNL Live Search] 및 [!DNL Catalog Service] 먼저 을(를) 설치하고 구성해야 합니다. 다음 [설치 [!DNL Live Search]](../live-search/install.md) 및 [카탈로그 서비스 설치](../catalog-service/installation.md) 계속하기 전 지침
 
-라이브 검색 및 카탈로그 어댑터를 구성하려면 다음을 수행합니다 [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) 지침.
+Luma 및 Adobe Commerce 핵심 GraphQL 사용자는 [`Catalog Adapter`](catalog-adapter.md) Luma 및 Core GraphQl 호환성을 제공하고 Adobe Commerce 제품 가격 인덱서를 비활성화하는 확장입니다.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## 주의 사항
 
-필요한 경우 다음 명령을 사용하여 PHP 코어 가격 인덱서를 다시 활성화할 수 있습니다.
+다음 이전 `103.0.0` 버전, SaaS 가격 색인화는 단순, 그룹, 가상, 구성 및 번들 동적 제품 유형을 지원합니다.
+다운로드 가능, 기프트 카드 및 번들 고정 제품 유형에 대한 지원은 다음부터 제공됩니다. `magento/module-saas-price:103.0.0` 버전 및 지원되는 Commerce Services에서 즉시 사용할 수 있습니다.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+새 피드를 와 수동으로 동기화해야 함 `resync` [CLI 명령](../landing/catalog-sync.md#resynccmdline). 그렇지 않으면 표준 동기화 프로세스에서 데이터가 새로 고쳐집니다. 에 대한 자세한 정보 보기 [카탈로그 동기화](../landing/catalog-sync.md) 프로세스.

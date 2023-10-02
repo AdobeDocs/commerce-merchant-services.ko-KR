@@ -5,15 +5,16 @@ breadcrumb-title: "Saas price indexer 안내서"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 243c1e3c096f01fe0b46eba8f80f89d3f82ba246
 workflow-type: tm+mt
-source-wordcount: '25'
-ht-degree: 8%
+source-wordcount: '27'
+ht-degree: 7%
 
 ---
 
 # Saas 가격 인덱서 {#price-indexer}
 
 - [안내서 개요](index.md)
+- [카탈로그 어댑터](catalog-adapter.md)
 - [설치](installation.md)
 
