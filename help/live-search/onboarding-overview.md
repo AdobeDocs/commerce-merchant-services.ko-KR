@@ -3,9 +3,9 @@ title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,19 @@ ht-degree: 0%
 
 * [!DNL Live Search] 스토어 조회당 최대 200개의 동의어를 관리할 수 있습니다.
 
+## 카테고리 머천다이징
+
+카테고리 머천다이징을 사용하여 다음을 구성할 수 있습니다. [!DNL Live Search] 제품 범주 수준에서 작업합니다.
+
+이 비디오는 카테고리 머천다이징에 대해 소개합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
 ## 가격 인덱서
 
 라이브 검색 고객은 새 [SaaS 가격 인덱서](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
 
-### PWA 지원
+## PWA 지원
 
 [!DNL Live Search] 은 PWA Studio에서 작동하지만 다른 Commerce 구현에 비해 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
 
@@ -96,7 +104,7 @@ ht-degree: 0%
        };
    ```
 
-### 현재 지원되지 않음
+## 현재 지원되지 않음
 
 * 다음 [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 다음 경우에 모듈이 비활성화됩니다. [!DNL Live Search] 가 설치되고 상점 첫 번째 바닥글의 고급 검색 링크가 제거됩니다.
 * 제품 가격에는 다음이 포함되지 않습니다. [부가 가치세](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)
