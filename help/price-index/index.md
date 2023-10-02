@@ -4,9 +4,9 @@ description: SaaS 가격 색인을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: af57acec1208204128feec6c523e3745a9948d51
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -51,10 +51,13 @@ Luma 및 Adobe Commerce 핵심 GraphQL 사용자는 [`catalog-adapter`](catalog-
 
 SaaS 가격 색인화 지원을 사용하여 Adobe Commerce 인스턴스를 업그레이드한 후 새 피드를 동기화합니다.
 
-```bash
-bin/magento saas:resync --feed=scopesCustomerGroup
-bin/magento saas:resync --feed=scopesWebsite
-bin/magento saas:resync --feed=prices
+```
+magento/module-saas-price
+magento/module-saas-scopes
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
+magento/module-bundle-product-override-data-exporter
+magento/module-gift-card-product-data-exporter
 ```
 
 ## 사용자 정의 제품 유형에 대한 가격
@@ -63,33 +66,109 @@ bin/magento saas:resync --feed=prices
 
 특정 공식을 사용하여 최종 가격을 계산하는 사용자 정의 제품 유형이 있는 경우 제품 가격 피드의 동작을 확장할 수 있습니다.
 
+## 사용
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+    </type>
+</config>
+```
+
+새 피드를 와 수동으로 동기화해야 함 `resync` [CLI 명령](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). 그렇지 않으면 표준 동기화 프로세스에서 데이터가 새로 고쳐집니다. 에 대한 자세한 정보 보기 [카탈로그 동기화](../landing/catalog-sync.md) 프로세스.
+
+## 사용 시나리오
+
+### 확장 종속성 없는 Luma
+
+* 필요한 서비스(라이브 검색, 제품 Recommendations, 카탈로그 서비스)를 설치한 Luma 또는 Adobe Commerce 핵심 GraphQL 판매자
+* PHP 코어 가격 인덱서에 의존하는 타사 확장 없음
+* 간편한 구성, 그룹화, 가상 및 번들 동적 제품 판매
+
+1. 새 피드를 활성화합니다.
+1. 카탈로그 어댑터를 설치합니다.
+
+### PHP 핵심 가격 인덱서 종속성이 있는 Luma 및 Adobe Commerce 핵심 GraphQl
+
+* 지원 서비스(라이브 검색, 제품 Recommendations, 카탈로그 서비스)가 설치된 Luma 또는 Adobe Commerce 핵심 GraphQL 판매자
+* PHP 코어 가격 인덱서에 의존하는 타사 확장 포함
+* 간편한 구성, 그룹화, 가상 및 번들 동적 제품 판매
+
+1. 새 피드 활성화
+1. 카탈로그 어댑터를 설치합니다.
+1. PHP 코어 가격 인덱서를 다시 사용하도록 설정합니다.
+1. 에서 새 피드 및 Luma 호환성 코드 사용 `catalog-adapter` 모듈.
+
+### 헤드리스 판매자
+
+* 지원 서비스(Live Search, Product Recommendations, Catalog Service)가 설치된 Headless 판매업체
+* PHP 핵심 가격 인덱서에 의존하지 않음
+* 간편한 구성, 그룹화, 가상 및 번들 동적 제품 판매
+
+1. 새 피드 사용
+1. PHP 코어 가격 인덱서를 비활성화하는 카탈로그 어댑터를 설치합니다.
+
+## 사용자 정의 가격
+
+SaaS 가격 인덱서는 특별 가격, 그룹 가격 및 카탈로그 규칙 가격과 같이 Adobe Commerce에서 사용할 수 있는 사용자 정의 제품 유형 가격 기능을 지원합니다.
+
+예: 사용자 정의 제품 유형이 있습니다  `custom_type` SKU &quot;사용자 정의 유형 제품&quot;을 사용하는 제품입니다.
+
+기본적으로 Commerce 데이터 내보내기 확장은 가격 인덱서로 다음 가격 피드를 보냅니다.
+
+```json
+{
+    "sku": "Custom Type Product",
+    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
+    "customerGroupCode": "0",
+    "websiteCode": "base",
+    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
+    "discounts":    // list of discounts: special_price, group, catalog_rule
+    [
+        {
+            "code": "catalog_rule",
+            "price": 102.09
+        }
+    ],
+    "deleted": false,
+    "updatedAt": "2023-07-31T13:07:54+00:00"
+}
+```
+
+&quot;사용자 정의 제품 유형&quot;이 제품 가격을 계산하기 위해 고유한 공식을 사용하는 경우 시스템 통합자는 Commerce 데이터 내보내기 확장 기능을 확장하여 가격 및 할인 필드를 재정의할 수 있습니다.
+
 1. 에서 플러그인 만들기 `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` 클래스.
 
-   ```xml
-   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-       </type>
-   </config>
-   ```
+`di.xml` 파일:
+
+```xml
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
+    </type>
+</config>
+```
 
 1. 사용자 지정 수식으로 메서드를 만듭니다.
 
-   ```php
-   class UpdatePriceFromFeed
-   {
-       /**
-       * @param ProductPrice $subject
-       * @param array $result
-       * @param array $values
-       *
-       * @return array
-       */
-       public function afterGet(ProductPrice $subject, array $result, array $values) : array
-       {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
-           return $result;
-       }
-   }
-   ```
+```php
+class UpdatePriceFromFeed
+{
+    /**
+    * @param ProductPrice $subject
+    * @param array $result
+    * @param array $values
+    *
+    * @return array
+    */
+    public function afterGet(ProductPrice $subject, array $result, array $values) : array
+    {
+        // Get all custom products, prices and discounts per website and customer groups
+        // Override the output $result with your data for the corresponding products
+        return $result;
+    }
+}
+```
