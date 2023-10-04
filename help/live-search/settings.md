@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] 설정"
 description: "다음에 대한 설정 구성: [!DNL Live Search] 서비스."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
+source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -37,12 +37,3 @@ ht-degree: 0%
 |--- |--- |
 | 선택 항목 수 | 상점 첫 화면에서 검색 필터로 사용할 수 있는 가격 범위 그룹화 수를 지정합니다. 기본값: 8, 최대값: 50 |
 | 간격 값 | 각 그룹의 가격 범위 간격을 지정합니다. 예를 들어 간격 값이 20인 5개의 선택 항목을 선택하면 0-20, 20-40, 40-60, 60-80 및 >80의 5개 그룹이 생성됩니다. 기본값: 5, 최대값: 10,000 |
-
-<!-- ## Language
-
-The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
-
-Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
-The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
-
-The Language settings should be set to the primary language of the catalog. -->
