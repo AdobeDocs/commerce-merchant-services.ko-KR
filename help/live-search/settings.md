@@ -2,20 +2,18 @@
 title: "[!DNL Live Search] 설정"
 description: "다음에 대한 설정 구성: [!DNL Live Search] 서비스."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # 설정
 
-사용 *설정* 가격 패싯 범위 및 간격과 인덱스의 기본 언어를 구성하는 탭입니다.
+사용 *설정* 가격 Facet 범위 및 간격을 구성하는 탭입니다.
 
 가격 팩시팅은 가격 범위 그룹의 수와 가격 값이 이들 그룹 간에 분배되는 방식을 지정합니다.
-
-언어 설정은 다음을 알려줍니다. [!DNL Live Search] 색인을 작성할 때 예상할 언어를 제공합니다.
 
 ![설정](assets/settings.png)
 
