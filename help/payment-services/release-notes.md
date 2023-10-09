@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2023년 10월 10일_
+
+![새 문제](../assets/fix.svg)<!-- Issue PAY-4888 --> 이제 가맹점은 신용카드 및 직불카드 거래를 카드 번호의 마지막 네 자리까지 필터링할 수 있습니다. [거래 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _2023년 7월 12일_
 
