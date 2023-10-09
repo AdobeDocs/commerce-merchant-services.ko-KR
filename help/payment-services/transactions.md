@@ -3,9 +3,10 @@ title: 거래 보고서
 description: 거래 보고서를 사용하여 거래 승인 비율과 거래 추세를 볼 수 있습니다.
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 이 보고서에서 연결된 상거래 주문 및 공급자 거래 ID, 거래 금액, 거래당 결제 방법 등을 모두 참조하십시오.
 
-모든 결제 방법이 동일한 세부 정보를 제공하는 것은 아닙니다. 예를 들어 신용 카드 거래는 거래 보고서에 응답, AVS 및 CCV 코드를 제공하고 PayPal 스마트 단추는 제공하지 않습니다.
+모든 결제 방법이 동일한 세부 정보를 제공하는 것은 아닙니다. 예를 들어 신용 카드 거래는 응답, AVS 및 CCV 코드를 제공하며 거래 보고서에서 카드의 마지막 네 자리를 제공합니다. PayPal 스마트 단추는 그렇지 않습니다.
 
 다음을 수행할 수 있습니다. [트랜잭션 다운로드](#download-transactions) 기존 회계 또는 order management 소프트웨어에서 사용할 .csv 파일 형식으로.
 
@@ -84,6 +85,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 1. 전환 _[!UICONTROL Payment Method]_선택한 결제 방법에 대해서만 보고서 결과를 볼 수 있는 옵션.
 1. 입력 _최소 주문 금액_ 또는 _최대 주문 금액_ 주문 금액 범위 내에서 보고서 결과를 봅니다.
 1. 다음을 입력하십시오. _[!UICONTROL Order ID]_특정 트랜잭션을 검색합니다.
+1. 다음을 입력합니다. _[!UICONTROL Card Last Four Digits]_특정 신용 카드 또는 직불 카드를 검색합니다.
 1. 클릭 **[!UICONTROL Hide filters]** 필터를 숨깁니다.
 
 ### 열 표시 및 숨기기
@@ -126,7 +128,8 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 | [!UICONTROL Order ID] | 상거래 주문 ID(성공적인 트랜잭션에 대한 값만 포함되고, 거부된 트랜잭션에 대해서는 비어 있음)<br> <br>관련 항목 보기 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 클릭하고 ID를 클릭합니다. |
 | [!UICONTROL Provider Transaction ID] | 결제 제공자가 제공한 거래 ID. 성공적인 거래에 대한 값만 포함되고 거부된 거래에 대한 대시가 포함됩니다. |
 | [!UICONTROL Transaction Date] | 트랜잭션 날짜 타임스탬프 |
-| [!UICONTROL Payment Method] | 거래의 결제 방법. 결제 서비스 버전 1.6.0 이상에서 사용 가능 |
+| [!UICONTROL Payment Method] | 브랜드 및 카드 종류에 대한 자세한 정보가 포함된 거래 결제 방법. 다음을 참조하십시오 [카드 유형](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 자세한 내용은 결제 서비스 버전 1.6.0 이상에서 사용 가능합니다. |
+| [!UICONTROL Card Last Four Digits] | 거래에 사용된 신용 카드 또는 직불 카드의 마지막 4자리 |
 | [!UICONTROL Result] | 트랜잭션의 결과—*[!UICONTROL OK]* (트랜잭션 성공), *[!UICONTROL Rejected by Payment Provider]* (PayPal에 의해 거부됨), *[!UICONTROL Rejected by Bank]* (카드를 발급한 은행에서 거부) |
 | [!UICONTROL Response Code] | 결제 제공업체 또는 은행에서 거부 사유를 제공하는 오류 코드. 가능한 응답 코드 목록 및 설명 참조 [`Rejected by Bank` 상태](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 및 [`Rejected by Payment Provider` 상태](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | 주소 확인 서비스 코드, 결제 요청에 대한 프로세서 응답 정보. 다음을 참조하십시오 [가능한 코드 및 설명 목록](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 추가 정보. |
@@ -147,4 +150,3 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 * `5650`—은행이 강력한 고객 인증을 요구하기 때문에 관련 은행이 거래를 거절했습니다. ([3DS](security.md#3ds)).
 
 실패한 트랜잭션에 대한 자세한 오류 응답 코드는 2023년 6월 1일 이상의 트랜잭션에 사용할 수 있습니다. 2023년 6월 1일 이전에 발생한 거래에 대해 부분 보고서 데이터가 표시됩니다.
-
