@@ -3,9 +3,9 @@ title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있도록 하�
 
 ## 이전 주문 데이터 보내기
 
-Adobe Commerce은 최대 5년의 [내역 주문 데이터 및 상태](events.md#back-office-events). Experience Platform 커넥터를 사용하여 이전 데이터를 Experience Platform으로 전송하여 그러한 이전 주문을 기반으로 고객 프로필을 보강할 수 있습니다. 데이터는 Experience Platform 내의 데이터 세트에 저장됩니다.
+Adobe Commerce은 최대 5년의 [내역 주문 데이터 및 상태](events.md#back-office-events). Experience Platform 커넥터를 사용하여 내역 데이터를 Experience Platform으로 전송하여 고객 프로필을 보강하고 과거 주문을 기반으로 고객 경험을 개인화할 수 있습니다. 데이터는 Experience Platform 내의 데이터 세트에 저장됩니다.
 
 Commerce에서 이미 이전 주문 데이터를 수집하는 동안 해당 데이터를 Experience Platform으로 보내려면 몇 가지 단계를 완료해야 합니다.
+
+이 비디오를 통해 이전 주문에 대해 자세히 알아본 후 다음 단계를 완료하여 이전 주문 수집 및 구성을 구현합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### 1단계: 내역 주문 데이터 수집 설치
 
@@ -248,12 +252,6 @@ Experience Platform으로 전송할 과거 주문의 날짜 범위를 지정합�
 | 출처: | 주문 내역 데이터 수집을 시작할 시작 날짜. |
 | 종료 | 주문 내역 데이터 수집을 종료할 날짜. |
 | 동기화 시작 | 주문 내역 데이터를 Experience Platform 에지와 동기화하는 프로세스를 시작합니다. 이 단추는 다음 경우에 비활성화됩니다. **[!UICONTROL Dataset ID]** 필드가 비어 있거나 데이터 세트 ID가 잘못되었습니다. |
-
-### 이전 순서 데모
-
-다음 비디오를 통해 이전 주문에 대해 자세히 알아보십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## 이벤트 데이터 수집 확인
 
