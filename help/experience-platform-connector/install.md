@@ -4,9 +4,9 @@ description: Adobe Commerce에서 Adobe Experience Platform Connector를 설치,
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ Experience Platform 커넥터 확장은 [Adobe 마켓플레이스](https://comme
 >
 >![Adobe Commerce용 B2B](../assets/b2b.svg) B2B 판매자의 경우 별도의 확장을 설치해야 합니다. 이 확장은 B2B 관련 이벤트에 대한 지원을 추가합니다. [자세히 알아보기](#install-the-b2b-extension).
 
-
 1. 다운로드하려면 `experience-platform-connector` package, 명령줄에서 다음을 실행합니다.
 
    ```bash
@@ -35,9 +34,42 @@ Experience Platform 커넥터 확장은 [Adobe 마켓플레이스](https://comme
    * `module-experience-connector-admin` - 특정 Adobe Commerce 인스턴스에 대한 데이터 스트림 ID를 선택할 수 있도록 관리 UI를 업데이트합니다.
    * `module-experience-connector` - 를 설정합니다. `Organization ID` 및 `datastreamId` Storefront Events SDK에서
    * `data-services` - storefront 이벤트에 대한 특성 컨텍스트를 제공합니다. 예를 들어 체크아웃 이벤트가 발생하면 장바구니에 들어 있는 항목 수에 대한 정보와 해당 항목에 대한 제품 속성 데이터가 포함됩니다.
-   * `services-id` - Adobe Commerce 인스턴스를 [Adobe Commerce SaS](../landing/saas.md) 샌드박스 및 프로덕션 API 키와 Adobe Experience Platform을 사용하여 IMS 조직 ID 검색
+   * `services-id` - Adobe Commerce 인스턴스를 [Adobe Commerce SaS](../landing/saas.md) 샌드박스 및 프로덕션 API 키와 Adobe Experience Platform을 사용하여 IMS 조직 ID를 검색합니다.
+   * `orders-connector` - 주문 상태 서비스를 Adobe Commerce 인스턴스에 연결합니다.
 
-1. (선택 사항) [!DNL Live Search] 검색 이벤트를 구성하는 데이터 [[!DNL Live Search]](../live-search/install.md) 확장명.
+1. (선택 사항) [!DNL Live Search] 데이터: 다음을 포함 [이벤트 검색](events.md#search-events), 설치 [[!DNL Live Search]](../live-search/install.md) 확장명.
+
+### 주문 커넥터 구성
+
+를 설치한 후 `experience-platform-connector`, 설치를 완료해야 합니다. `orders-connector` 배포 유형 기반의 모듈: 온프레미스 또는 Adobe Commerce on Cloud 인프라.
+
+#### 온-프레미스
+
+온-프레미스 환경에서는 코드 생성 및 Adobe Commerce 이벤트를 수동으로 활성화해야 합니다.
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### 클라우드 인프라
+
+클라우드 인프라의 Adobe Commerce에서 `ENABLE_EVENTING` 의 전역 변수 `.magento.env.yaml`. [자세히 알아보기](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+```bash
+stage:
+   global:
+      ENABLE_EVENTING: true
+```
+
+업데이트된 파일을 커밋하고 클라우드 환경으로 푸시합니다. 배포가 완료되면 다음 명령을 사용하여 이벤트 전송을 활성화합니다.
+
+```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
 
 ### B2B 확장 설치
 
