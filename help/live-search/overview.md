@@ -3,20 +3,30 @@ title: 소개 [!DNL Live Search]
 description: "[!DNL Live Search] Adobe Commerce에서는 매우 빠르고, 관련성이 높고, 직관적인 검색 환경을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
 # 소개 [!DNL Live Search]
 
-[!DNL Live Search] 는 표준 검색 기능을 대체하는 Adobe Commerce용 독립 실행형 패키지 세트입니다. 다음 [!DNL Live Search] 모듈은 서버의 명령줄에서 설치되고 Commerce 설치에 다음으로 연결합니다. [서비스](../landing/saas.md). 프로세스가 완료되면 [!DNL Live Search] 다음 화면에 나타남: *마케팅* 아래 메뉴 *SEO 및 검색* 다음에서 [!DNL Commerce] *관리자*.
+[!DNL Live Search] 는 표준 검색 기능을 대체하는 Adobe Commerce용 서비스입니다. 다음 [!DNL Live Search] 모듈이 Composer와 함께 설치되고 [!DNL Commerce] 에 설치 [!DNL Live Search] [서비스](../landing/saas.md). 구성되면 기본 검색 텍스트 필드가 로 바뀝니다. [!DNL Live Search] 텍스트 필드.
 
-아키텍처의 Adobe Commerce 측에는 검색 호스팅이 포함됩니다 *관리자*, 카탈로그 데이터 동기화 및 쿼리 서비스 실행. 다음 이후 [!DNL Live Search] 가 설치되고 구성되면 Adobe Commerce은 SaaS 서비스와 검색 및 카탈로그 데이터 공유를 시작합니다. 이때 관리자는 검색 패싯, 동의어 및 머천다이징 규칙을 설정, 사용자 지정 및 관리할 수 있습니다.
+[!DNL Live Search] 다음 화면에 나타남: *마케팅* 아래 메뉴 *SEO 및 검색* 다음에서 [!DNL Commerce] *관리자*.
+
+아키텍처의 Adobe Commerce 측에는 검색 호스팅이 포함됩니다 *관리자*, 카탈로그 데이터 동기화 및 쿼리 서비스 실행. 다음 이후 [!DNL Live Search] 가 설치되고 구성되면 Adobe Commerce은 SaaS 서비스와 검색 및 카탈로그 데이터 공유를 시작합니다. 이 시점에서 관리자는 검색을 설정, 사용자 지정 및 관리할 수 있습니다 [패싯](facets.md), [동의어](synonyms.md), 및 [머천다이징 규칙](category-merch.md).
 
 ![라이브 검색 아키텍처 다이어그램](assets/architecture-diagram.svg)
+
+## 라이브 검색 구성 요소
+
+* [!DNL Live Search] [팝오버](storefront-popover.md) 은 검색 결과가 포함된 검색 필드 아래에 열리는 상자입니다.
+* [제품 목록 페이지 위젯](plp-styling.md) 패싯 및 동의어 지원이 포함된 검색 가능한 제품 목록 페이지를 제공합니다.
+* 더 AEM [CIF 구성 요소](https://github.com/adobe/aem-cif-guides-venia/pull/319) AEM 사이트에서 다음을 활용할 수 있습니다. [!DNL Live Search].
+* [[!DNL Live Search] 관리자](workspace.md) 는 규칙, 패싯 및 동의어가 구성되는 위치입니다.
+* 검색 어댑터는 의 기본 구현입니다 [!DNL Live Search].
 
 ## [!DNL Live Search] 데모
 

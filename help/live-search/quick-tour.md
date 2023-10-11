@@ -2,9 +2,9 @@
 title: "빠른 둘러보기"
 description: '"간단히 살펴보기 [!DNL Live Search] 가게 앞에서요.'
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ ht-degree: 0%
 ## 머천다이징 규칙
 
 머천다이징 [규칙](rules.md) 검색할 논리 및 이벤트를 추가하는 if-then 문을 사용하여 쇼핑 경험을 구체화합니다. 프로모션, 계절 또는 기타 기간 동안 제품을 쉽게 부스트하거나 묻을 수 있습니다.
+
+## 검색어 지원
+
+[!DNL Live Search] 상거래 지원 [검색어 리디렉션](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 예를 들어 &quot;배송비&quot;와 같은 용어를 검색하여 배송비 페이지로 바로 이동할 수 있습니다.

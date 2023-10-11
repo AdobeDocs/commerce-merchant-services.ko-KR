@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 정보"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ _2023년 9월 15일_
 
 ### 업데이트
 
+![수정](../assets/fix.svg) 제품 및 가격 피드의 테이블 크기가 크게 줄었습니다. 표 `catalog_data_exporter_products` 및 `catalog_data_exporter_product_prices` 크기를 상당히 줄여야 합니다.
 ![수정](../assets/fix.svg) &#39;규칙&#39; 탭의 이름이 &#39;검색 규칙&#39;으로 바뀝니다.
 ![수정](../assets/fix.svg) 이제 &#39;트렌드&#39;별로 순위를 지정할 때 다음 중 하나를 선택할 수 있습니다. * 3일 (기본값) * 14일 * 30일
 ![수정](../assets/fix.svg) &#39;이벤트&#39;(증폭/고정/버리/숨기기)의 이름이 &#39;수동 순위&#39;로 변경되었습니다.

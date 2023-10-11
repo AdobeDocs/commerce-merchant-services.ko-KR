@@ -4,9 +4,9 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 9%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 9%
       - [패싯 유형](facets-type.md)
       - [패싯 추가](facets-add.md)
       - [Facet 관리](facets-manage.md)
-      - [기술 참고 사항](facet-technical-notes.md)
    - [색인화](indexing.md)
    - [성능](performance.md)
    - 규칙 {#rules}

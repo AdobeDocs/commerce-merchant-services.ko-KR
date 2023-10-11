@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "다음 [!DNL Live Search storefront popover] 제안 제품 및 썸네일을 동적으로 반환합니다."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 
 [!DNL Live Search] 2자 이상의 쿼리에 대한 결과를 반환합니다. 부분 일치의 경우 단어 당 최대 문자 수는 20자입니다. &quot;입력할 때 검색&quot; 쿼리의 문자 수는 구성할 수 없습니다.
 
+기본적으로, [!DNL Live Search] 지원 [검색어 리디렉션](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
+
 ## 검색 가능한 속성
 
 고도로 타겟팅된 결과를 생성하려면 다음을 검토하십시오. [검색 가능](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) 제품 속성. 관련성을 보장하려면 명확하고 간결한 의미가 있는 콘텐츠가 포함된 경우에만 속성을 검색할 수 있도록 하십시오. 다음과 같이 정확하지 않고 긴 텍스트가 포함된 속성은 사용하지 마십시오. `description`는 기본적으로 검색을 활성화하지만 검색 결과의 정밀도를 줄일 수 있습니다. 예를 들어, &quot;반바지&quot;를 검색하는 사람이 &quot;반팔&quot;이라는 용어가 포함된 설명이 있는 셔츠가 있으면 해당 셔츠가 검색 결과에 포함됩니다.
@@ -24,8 +28,6 @@ ht-degree: 0%
 * `sku`
 * `name`
 * `categories`
-
-[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ## [!DNL Popover] 페이지 크기
 

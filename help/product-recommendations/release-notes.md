@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ _2023년 9월 15일_
 
 ![신규](../assets/new.svg) 를 지원하는 새 모듈이 추가되었습니다. [Saas 가격 인덱서](../price-index/index.md).
 ![신규](../assets/new.svg) 번들 제품 및 기프트 카드를 비롯한 더 많은 제품 유형 내보내기를 지원하기 위해 새로운 데이터 내보내기 모듈이 추가되었습니다.
+![수정](../assets/fix.svg) 제품 및 가격 피드의 테이블 크기가 크게 줄었습니다. 표 `catalog_data_exporter_products` 및 `catalog_data_exporter_product_prices` 크기를 상당히 줄여야 합니다.
 
 #### 알려진 제한 사항
 

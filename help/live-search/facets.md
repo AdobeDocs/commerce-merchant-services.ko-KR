@@ -2,9 +2,9 @@
 title: "패싯"
 description: "[!DNL Live Search] 패싯은 속성 값의 여러 차원을 검색 기준으로 사용합니다."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # 패싯
 
 페이스팅은 속성 값의 여러 차원을 검색 기준으로 사용하는 고성능 필터링 방법입니다. 패싯형 검색은 유사하지만 표준보다 상당히 &quot;똑똑하다&quot; [계층화된 탐색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 사용 가능한 필터 목록은 다음을 통해 결정됩니다. [필터링 가능한 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 검색 결과에서 반환된 제품
+
+[!DNL Live Search] 를 사용합니다. `productSearch` 다음에 고유한 얼굴 및 기타 데이터를 반환하는 쿼리 [!DNL Live Search]. 을(를) 참조하십시오 [`productSearch` 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 코드 예제에 대해서는 개발자 설명서에서 참조하십시오.
 
 ![필터링된 검색 결과](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ ht-degree: 0%
 | [범주 표시 설정](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 앵커 - `Yes` |
 | [속성 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [카탈로그 입력 유형](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (위젯만), `Text swatch` (위젯만) |
 | 속성 storefront 속성 | 검색 결과 계층 탐색 -에서 사용 `Yes` |
+
+## Facet 집계
+
+Facet 집계는 다음과 같이 수행됩니다. 상점 첫 번째 패싯이 세 개 있고(카테고리, 색상 및 가격) 쇼핑객 필터가 세 개 모두 있는 경우(색상 = 파란색이며 가격은 $10.00-50.00, 카테고리 = `promotions`).
+
+* `categories` 집계 - 집계 `categories`를 클릭한 다음 를 적용합니다. `color` 및 `price` 필터(단, `categories` 필터.
+* `color` 집계 - 집계 `color`를 클릭한 다음 를 적용합니다.`price` 및 `categories` 필터(단, `color` 필터.
+* `price` 집계 - 집계 `price`를 클릭한 다음 를 적용합니다. `color` 및 `categories` 필터(단, `price` 필터.
 
 ## 기본 속성 값
 

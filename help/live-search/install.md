@@ -3,9 +3,9 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,6 @@ ht-degree: 0%
 
 이 시나리오에서는 [!DNL Live Search] 서비스는 카탈로그의 모든 제품을 색인화합니다. 설치하는 동안 [!DNL Live Search] 모듈이 활성화되고 [!DNL Elasticsearch] 모듈이 비활성화되었습니다.
 
->[!NOTE]
->
->2023년 3월 현재 라이브 검색은 버전 2.4.4 이상만 지원합니다.
-
 1. 없이 Adobe Commerce 2.4.4+ 설치 [!DNL Live Search].
 
 1. 다운로드하려면 `live-search` package, 명령줄에서 다음을 실행합니다.
@@ -51,8 +47,6 @@ ht-degree: 0%
    ```bash
    composer require magento/live-search
    ```
-
-   자세한 내용은 다음 목록을 참조하십시오 [!DNL Live Search] [종속성](#dependencies) 다음에 의해 캡처됩니다. [!DNL Composer].
 
 1. 다음 명령을 실행하여 비활성화합니다. [!DNL Elasticsearch] 및 관련 모듈 및 설치 [!DNL Live Search]:
 
@@ -104,8 +98,6 @@ ht-degree: 0%
    ```bash
    composer require magento/live-search
    ```
-
-   자세한 내용은 다음 목록을 참조하십시오 [!DNL Live Search] [종속성](#live-search-dependencies) 다음에 의해 캡처됩니다. [!DNL Composer].
 
 1. 다음 명령을 실행하여 를 일시적으로 비활성화합니다. [!DNL Live Search] storefront 검색 결과를 제공하는 모듈입니다.
 

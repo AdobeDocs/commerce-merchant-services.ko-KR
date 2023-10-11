@@ -3,9 +3,9 @@ title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # 온보딩 개요
 
 을(를) 시작하려면 [!DNL Live Search] Adobe Commerce의 경우 온보딩 프로세스를 완료하여 확장을 설치하고, API 키를 구성하고, 카탈로그를 동기화합니다.
-
-## 온보딩 플로우
-
-![[!DNL Live Search] 온보딩 다이어그램](assets/onboarding-flow.svg)
 
 ## 요구 사항 {#requirements}
 
@@ -72,6 +68,12 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] 지원 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
+
+[!DNL Live Search] Inventory management 내에서 제품을 사용할 수 있는지 여부를 나타내는 부울을 반환하지만, 재고가 있는 소스에 대한 정보는 포함하지 않습니다.
+
 ## 가격 인덱서
 
 라이브 검색 고객은 새 [SaaS 가격 인덱서](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
@@ -107,7 +109,6 @@ ht-degree: 0%
 ## 현재 지원되지 않음
 
 * 다음 [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 다음 경우에 모듈이 비활성화됩니다. [!DNL Live Search] 가 설치되고 상점 첫 번째 바닥글의 고급 검색 링크가 제거됩니다.
-* 제품 가격에는 다음이 포함되지 않습니다. [부가 가치세](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (VAT)
 * [계층 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 는 라이브 검색 팝오버 및 제품 목록 페이지 위젯에서 지원되지 않습니다.
 
 ## 쿠키
