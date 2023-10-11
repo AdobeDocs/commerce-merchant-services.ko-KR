@@ -3,9 +3,9 @@ title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Experience Platform으로 전송할 과거 주문의 날짜 범위를 지정합�
 이 예제에서는에서 이벤트 데이터가 표시됩니다. [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)등. 이 보기를 통해 상거래 데이터가 에지에 도달했는지 확인할 수 있습니다.
 
 결과가 예상과 다른 경우 데이터 세트를 열고 실패한 일괄 처리 가져오기를 찾습니다. 자세히 알아보기 [일괄 가져오기 문제 해결](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## 다음 단계
+
+상거래 데이터가 Experience Platform 에지로 전송되면 Adobe Journey Optimizer과 같은 다른 Adobe Experience Cloud 제품에서 해당 데이터를 사용할 수 있습니다. 예를 들어 특정 이벤트를 수신하고, 해당 이벤트 데이터를 기반으로 첫 번째 사용자에 대해 이메일을 트리거하거나 포기한 장바구니가 있는 경우 이메일을 트리거하도록 Journey Optimizer을 구성할 수 있습니다. 다음 방법으로 Commerce 플랫폼을 확장하는 방법을 알아봅니다. [고객 여정 만들기](using-ajo.md) Journey Optimizer.

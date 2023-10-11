@@ -3,16 +3,16 @@ title: 안내서 개요
 description: Experience Platform 커넥터를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Experience Platform 커넥터 개요
 
-Experience Platform 커넥터 확장을 사용하면 Adobe Commerce 판매자가 [상점 첫 화면](events.md#storefront-events) 및 [후선 근무](events.md#back-office-events) Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에서 해당 상거래 데이터를 사용할 수 있도록 Adobe Experience Platform edge에 대한 데이터입니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
+Experience Platform 커넥터 확장을 사용하면 Adobe Commerce 판매자가 [상점 첫 화면](events.md#storefront-events) 및 [후선 근무](events.md#back-office-events) Adobe Analytics 및 Adobe Journey Optimizer과 같은 다른 Adobe Experience Cloud 제품에서 해당 상거래 데이터를 사용할 수 있도록 Adobe Experience Platform edge에 대한 데이터입니다. 상거래 데이터를 Adobe Experience Cloud의 다른 제품에 연결하여 사이트에서 사용자 행동을 분석하고, AB 테스트를 수행하고, 개인화된 캠페인을 만드는 등의 작업을 수행할 수 있습니다.
 
 [Storefront 이벤트](events.md#storefront-events) 다음과 같은 구매자 상호 작용 캡처 `View Page`, `View Product`, `Add to Cart`, 및 [징발 목록](events.md#b2b-events) 정보(B2B 판매자용). [백오피스](events.md#back-office-events) 이벤트는 주문, 취소, 환불, 배송 또는 완료 여부 등 주문 상태에 대한 정보를 캡처합니다. 캡처된 데이터에는 PII(개인 식별 정보)가 포함되지 않습니다. 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명으로 처리됩니다. [자세히 알아보기](https://www.adobe.com/privacy/experience-cloud.html).
 
@@ -49,7 +49,7 @@ Experience Platform 커넥터를 사용하려면 다음 사항이 있어야 합�
 
 ### AEM 지원 {#aem-support}
 
-다음을 참조하십시오. [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) cif - Experience Platform 커넥터를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 상점 이벤트 데이터를 전송하는 방법에 대한 설명서입니다.
+다음을 참조하십시오. [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) CIF - Experience Platform 커넥터를 사용하여 AEM 렌더링 제품 페이지에서 Experience Platform으로 상점 이벤트 데이터를 전송하는 방법에 대한 설명서입니다.
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 

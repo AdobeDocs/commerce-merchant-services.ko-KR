@@ -5,10 +5,10 @@ breadcrumb-title: Adobe Commerce용 Adobe Experience Platform 커넥터
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 91db0176b5ecf09ac403e6e91a4b4513dfb06ea0
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 5%
+source-wordcount: '87'
+ht-degree: 4%
 
 ---
 
@@ -25,3 +25,5 @@ ht-degree: 5%
    - [이벤트](events.md)
    - [사용자 지정 이벤트](custom-events.md)
    - [Adobe Experience Platform 태그 사용](using-tags.md)
+- 사용 사례 {#use-cases}
+   - [Adobe Journey Optimizer을 사용하여 포기한 장바구니 이메일 보내기](using-ajo.md)
