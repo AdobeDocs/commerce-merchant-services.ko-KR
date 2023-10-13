@@ -3,9 +3,9 @@ title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerce은 최대 5년의 [내역 주문 데이터 및 상태](events.md#
 
 Commerce에서 이미 이전 주문 데이터를 수집하는 동안 해당 데이터를 Experience Platform으로 보내려면 몇 가지 단계를 완료해야 합니다.
 
-이 비디오를 통해 이전 주문에 대해 자세히 알아본 후 다음 단계를 완료하여 이전 주문 수집 및 구성을 구현합니다.
+이 비디오를 통해 이전 주문에 대해 자세히 알아본 후 다음 단계를 완료하여 이전 주문 수집을 구현합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### 1단계: 내역 주문 데이터 수집 설치
-
-이전 주문 데이터 수집을 활성화하려면 프로젝트의 루트를 업데이트해야 합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
-
-1. 루트 열기 `composer.json` 파일 및 검색 `magento/experience-platform-connector`.
-
-1. 다음에서 `require` 섹션에서 버전 번호를 다음과 같이 업데이트합니다.
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. B2B 가맹점의 경우 `.json` 파일을 다음과 같이 지정합니다.
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **저장** `composer.json`. 그런 다음 명령줄에서 다음을 실행합니다.
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   또는 B2B 판매자의 경우:
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### 2단계: Adobe Developer 콘솔에서 프로젝트 만들기
+### 1단계: Adobe Developer 콘솔에서 프로젝트 만들기
 
 >[!NOTE]
 >
->을(를) 이미 설치하고 활성화한 경우 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 확장에서는 2단계와 3단계를 이미 완료했습니다.
+>을(를) 이미 설치하고 활성화한 경우 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 확장에서는 1단계와 2단계를 이미 완료했으며 3단계로 건너뛸 수 있습니다.
 
 Experience Platform API 호출을 수행할 수 있도록 Adobe Developer 콘솔에서 상거래를 인증하는 프로젝트를 만듭니다.
 
@@ -182,7 +144,7 @@ Experience Platform API 호출을 수행할 수 있도록 Adobe Developer 콘솔
 
 이 단계의 결과 다음 단계에서 사용하는 구성 파일이 만들어집니다.
 
-### 3단계: 구성 파일 다운로드
+### 2단계: 구성 파일 다운로드
 
 다운로드 [작업 영역 구성 파일](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). 이 파일의 내용을 복사하여 **서비스 계정/자격 증명 세부 정보** 상거래 관리자의 페이지입니다.
 
@@ -204,7 +166,7 @@ Experience Platform API 호출을 수행할 수 있도록 Adobe Developer 콘솔
 
 1. 클릭 **구성 저장**.
 
-### 4단계: 주문 동기화 서비스 설정
+### 3단계: 주문 동기화 서비스 설정
 
 개발자 자격 증명을 입력한 후 주문 동기화 서비스를 설정합니다. 동기화 서비스 주문은 [메시지 큐 프레임워크](https://developer.adobe.com/commerce/php/development/components/message-queues/) 그리고 RabbitMQ. 이러한 단계를 완료하면 주문 상태 데이터가 SaaS에 동기화될 수 있습니다. SaaS는 Experience Platform으로 전송되기 전에 필요합니다.
 
@@ -229,7 +191,7 @@ Experience Platform API 호출을 수행할 수 있도록 Adobe Developer 콘솔
 
 주문 동기화 서비스를 활성화한 상태에서 Experience Platform 커넥터 페이지에서 내역 주문 날짜 범위를 지정할 수 있습니다.
 
-### 5단계: 주문 내역 날짜 범위 지정
+### 4단계: 주문 내역 날짜 범위 지정
 
 Experience Platform으로 전송할 과거 주문의 날짜 범위를 지정합니다.
 

@@ -1,17 +1,17 @@
 ---
-title: Adobe Commerce에서 Adobe Experience Platform 커넥터 설치 및 구성
-description: Adobe Commerce에서 Adobe Experience Platform Connector를 설치, 구성, 업데이트 및 제거하는 방법을 알아봅니다.
+title: Adobe Experience Platform 커넥터 설치
+description: Adobe Commerce에서 Adobe Experience Platform Connector를 설치, 업데이트 및 제거하는 방법을 알아봅니다.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# Experience Platform 커넥터 설치 및 구성
+# Adobe Experience Platform 커넥터 설치
 
 확장을 설치하기 전에 [사전 요구 사항 검토](overview.md#prereqs).
 
@@ -95,7 +95,7 @@ composer update magento/experience-platform-connector --with-dependencies
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-1.0.0에서 2.0.0으로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
+2.0.0에서 3.0.0으로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
 
 1. 루트 열기 `composer.json` 파일 및 검색 `magento/experience-platform-connector`.
 
@@ -104,7 +104,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^3.0",
       ...
     }
    ```

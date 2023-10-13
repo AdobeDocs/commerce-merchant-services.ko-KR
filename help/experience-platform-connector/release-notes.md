@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce의 Adobe Experience Platform 커넥터에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 5e6cf955080338e00f23eaadeaa0192798126151
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ _2022년 10월 12일_
 _2023년 10월 10일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+주요 버전 릴리스입니다. [편집](install.md#update-the-experience-platform-connector) 프로젝트의 루트 composer.json 파일.
 
 ![신규](../assets/new.svg) - 다음에 대한 일반 가용성 [이전 주문 보내기](connect-data.md#send-historical-order-data) Experience Platform에 대한 데이터 및 상태.
 ![신규](../assets/new.svg) - 다음을 수행하는 경우 OAuth 2.0에 대한 지원이 추가됨: [구성](connect-data.md#connect-commerce-data-to-adobe-experience-platform) Experience Platform 커넥터입니다.

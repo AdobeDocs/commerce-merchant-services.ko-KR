@@ -5,9 +5,9 @@ breadcrumb-title: Adobe Commerce용 Adobe Experience Platform 커넥터
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '92'
 ht-degree: 4%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 4%
 - [안내서 개요](overview.md)
 - [릴리스 정보](release-notes.md)
 - 기본 사항 {#fundamentals}
-   - [Experience Platform 커넥터 설치](install.md)
-   - [Experience Platform 커넥터 구성](connect-data.md)
+   - [Adobe Experience Platform 커넥터 확장 설치](install.md)
+   - [Adobe Experience Platform에 상거래 데이터 연결](connect-data.md)
    - [XDM 스키마에 필드 그룹 추가](update-xdm.md)
    - [Adobe Experience Platform Mobile SDK와 Commerce 통합](mobile-sdk-epc.md)
 - 데이터 캡처 {#event-forwarding}
