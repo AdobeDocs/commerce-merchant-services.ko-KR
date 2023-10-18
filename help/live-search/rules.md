@@ -1,17 +1,17 @@
 ---
-title: "규칙 검색"
-description: "[!DNL Live Search] 규칙은 논리와 작업을 결합하여 쇼핑 경험을 구체화합니다."
+title: "머천다이징 검색"
+description: "[!DNL Live Search] 머천다이징 규칙은 논리와 작업을 결합하여 쇼핑 경험을 구체화합니다."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# 규칙 검색
+# 머천다이징 검색
 
-[!DNL Live Search] 규칙은 논리와 작업을 결합하여 스토어에서 쇼핑객의 검색 경험을 형성합니다. 규칙을 사용하여 검색 결과를 실시간으로 보정하여 비즈니스 목표를 지원할 수 있도록 제품을 증폭, 매몰, 고정 또는 숨길 수 있습니다.
+검색 머천다이징은 스토어에서 쇼핑객의 검색 경험을 형성하기 위해 논리와 작업을 결합하는 규칙 세트를 나타냅니다. 머천다이징 규칙을 사용하여 제품을 증폭, 매몰, 고정 또는 숨김으로써 검색 결과를 실시간으로 보정하여 비즈니스 목표를 지원할 수 있습니다.
 
 각 규칙에는 세 가지 주요 구성 요소가 있습니다.
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 * 미리보기 중인 규칙에 `query is` 조건 및 다음에 나오는 일치하는 활성 규칙 `query is` 상태가 발견되면 `query is` 규칙이 적용됩니다.
 * 미리보기 중인 규칙에 `query is` 조건 및 이 포함된 다른 규칙 없음 `query is` 조건을 찾으면 미리보기 중인 규칙이 적용됩니다.
 
-## 범주 규칙 및 범주 제품 할당
+## 카테고리 머천다이징 및 카테고리 제품 할당
 
-[!DNL Live Search] 카테고리별로 필터링할 수 있습니다.
+[!DNL Live Search] 카테고리별로 필터링할 수 있습니다. 다음을 참조하십시오 [카테고리 머천다이징](category-merch.md) 추가 정보.
 하지만 Adobe Commerce에서는 [범주 제품 할당](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). 이 유형의 범주는 런타임에 빌드되며 범주 데이터베이스에 없습니다. 따라서 [!DNL Live Search] 이 범주 유형을 읽거나 사용할 수 없습니다.

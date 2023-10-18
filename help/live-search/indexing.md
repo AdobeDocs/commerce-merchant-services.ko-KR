@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 색인화"
 description: "방법 알아보기 [!DNL Live Search] 는 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 ## 색인 지정 파이프라인
 
 클라이언트가 검색(필터링 가능, 정렬 가능) 인덱스 메타데이터를 검색하기 위해 상점 첫 화면에서 검색 서비스를 호출합니다. 를 사용하는 검색 가능한 제품 속성만 *레이어 탐색에서 사용* 속성이 로 설정됨 `Filterable (with results)` 및 *제품 목록에서 정렬에 사용* 을 로 설정 `Yes` 검색 서비스에서 를 호출할 수 있습니다.
-동적 쿼리를 만들려면 검색 서비스는 검색할 수 있는 특성과 그 가중치를 알아야 합니다. [!DNL Live Search] 는 Adobe Commerce 검색 가중치를 부여합니다(1-10, 여기서 10이 가장 높은 우선 순위). 동기화되어 카탈로그 서비스와 공유되는 데이터 목록은 다음 위치에 정의된 스키마에서 찾을 수 있습니다.
+동적 쿼리를 만들려면 검색 서비스는 검색할 수 있는 특성과 해당 특성을 알아야 합니다 [두께](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] 는 Adobe Commerce 검색 가중치를 부여합니다(1-10, 여기서 10이 가장 높은 우선 순위). 동기화되어 카탈로그 서비스와 공유되는 데이터 목록은 다음 위치에 정의된 스키마에서 찾을 수 있습니다.
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

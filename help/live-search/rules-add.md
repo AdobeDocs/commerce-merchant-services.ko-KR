@@ -1,10 +1,10 @@
 ---
 title: "규칙 추가"
-description: "만드는 방법 알아보기 [!DNL Live Search] 규칙."
+description: "검색 머천다이징 규칙을 만드는 방법을 알아봅니다."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 관리에서 **마케팅** > SEO 및 검색 > **[!DNL Live Search]**.
 1. 설정 **범위** 을(를) 식별하려면 [스토어 뷰](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 규칙이 적용되는 위치입니다.
-1. 다음을 클릭합니다. **규칙 검색** 탭.
+1. 다음을 클릭합니다. **머천다이징 검색** 탭.
 1. 클릭 **규칙 추가** 규칙 편집기를 시작합니다.
 
 ## 조건

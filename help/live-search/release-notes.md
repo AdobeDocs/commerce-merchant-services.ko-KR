@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 정보"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ ht-degree: 0%
 
 +++호스팅된 서비스 업데이트
 
+_2023년 10월 12일_
+
+![신규](../assets/new.svg) 상거래 관리자는 이제 다음에 대한 인덱스의 언어를 지정할 수 있습니다. [!DNL Live Search]. 다음을 참조하십시오 [설정](settings.md).
+![수정](../assets/fix.svg) &quot;검색 규칙&quot; 탭의 이름이 &quot;머천다이징 검색&quot;으로 변경되었습니다.
+
 _2023년 6월 13일_
 
 ![수정](../assets/fix.svg) 따옴표나 아포스트로피와 같은 일부 문자로 인해 순위 문제가 발생하는 문제가 해결되었습니다. 리인덱싱하면 이러한 문제가 해결됩니다.
 
 _2023년 4월 25일_
 
-![신규](../assets/new.svg) 이제 라이브 검색 고객이 새로운 기능을 이용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
+![신규](../assets/new.svg) [!DNL Live Search] 이제 고객은 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
 
 +++
 

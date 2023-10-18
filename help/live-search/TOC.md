@@ -4,9 +4,9 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 9%
    - [상점 첫 화면 [!DNL Popover]](storefront-popover.md)
    - [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md)
 - [!DNL Live Search] 관리자{#live-search-admin}
-   - [카테고리 머천다이징](category-merch.md)
    - [상거래 구성 설정](configuration.md)
    - 패싯 {#facets}
       - [개요](facets.md)
@@ -35,9 +34,10 @@ ht-degree: 9%
       - [Facet 관리](facets-manage.md)
    - [색인화](indexing.md)
    - [성능](performance.md)
-   - 규칙 {#rules}
+   - [카테고리 머천다이징](category-merch.md)
+   - 머천다이징 검색 {#rules}
       - [개요](rules.md)
-      - [규칙 작업 영역](rules-workspace.md)
+      - [머천다이징 작업 영역 검색](rules-workspace.md)
       - [규칙 추가](rules-add.md)
       - [규칙 관리](rules-manage.md)
    - [설정](settings.md)
