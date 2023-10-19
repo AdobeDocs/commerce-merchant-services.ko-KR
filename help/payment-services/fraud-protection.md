@@ -4,13 +4,13 @@ description: 자동화된 사기 행위 보호 활성화 [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # 상당한 사기 방지
 
@@ -18,15 +18,9 @@ ht-degree: 0%
 
 Adobe Commerce은 Signifyd 버전 5.4.0 이상을 지원합니다. [!DNL Payment Services] 는 사전 인증 및 사후 인증 Signifyd 흐름을 지원합니다.
 
+The Signifyd/[!DNL Payment Services] 통합은 신용 카드, 직불 카드, 저장된 카드, 관리자를 통한 체크아웃, PayPal 및 Apple Pay 결제 방법에 대한 보장을 제공합니다. 일부 거래 세부 사항이 결제 서비스와 Signifyd 간에 공유되지 않는 반면 Signifyd는 모든 결제 방법에 대해 포괄적인 위험 범위를 제공하여 최대한 보호를 보장합니다.
+
 다음을 참조하십시오 [Signifyd 설명서](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) 확장 설치 및 구성에 대해 알아봅니다.
-
-## 통합 제한 사항
-
-현재 Signifyd와 의 통합에는 다음과 같은 제한이 적용됩니다 [!DNL Payment Services]:
-
-* The Signifyd/[!DNL Payment Services] 통합은 [신용 카드 필드](../payment-services/payments-options.md#credit-card-fields) (PayPal 결제 단추 또는 Apple Pay는 아님). [!DNL Payment Services] payPal 결제 버튼 및 Apple Pay를 통해 받은 주문 데이터를 Signifyd로 전송하지만 통합은 신용 카드 필드를 통해 주문된 주문에 대한 세부 정보만 제공합니다.
-* Signifyd는 쇼핑객에 대한 상인이 관리자에 주문한 주문을 지원하지 않습니다.
-* Signifyd는 다음으로 주문된 주문을 지원하지 않습니다. [저장된 신용 카드](../payment-services/vaulting.md).
 
 ## 온보딩
 
