@@ -3,9 +3,9 @@ title: SaaS 가격 인덱싱 수동 설치
 description: 이전 버전에 대한 SaaS 가격 색인화 설치
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
 role: Admin, Developer
-source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
+source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -34,10 +34,10 @@ SaaS 가격 색인화는 즉시 사용할 수 있습니다. [최신 버전](inde
 1. 에 다음 모듈을 추가합니다. `composer.json` 파일:
 
    ```json
-   "magento/module-saas-price": "^103.0",
-   "magento/module-saas-scopes": "^103.0",
-   "magento/module-bundle-product-override-data-exporter": "^103.0",
-   "magento/module-gift-card-product-data-exporter": "^103.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. upgrade 명령을 실행합니다.

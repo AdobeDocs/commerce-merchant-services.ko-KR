@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 정보"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _2023년 9월 15일_
 ![신규](../assets/new.svg) 사용자는 이제 규칙을 추가할 때 카테고리 이름으로 검색할 수 있습니다
 ![신규](../assets/new.svg) 이제 카테고리 트리 보기를 통해 규칙이 적용된 카테고리를 볼 수 있습니다.
 ![신규](../assets/new.svg) 범주 미리 보기에는 선택한 범주만 표시됩니다.
+![신규](../assets/new.svg) AEM CIF [팝오버 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/319) 및 [PLP 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/320) 구성 요소를 사용하여 AEM 사이트에서 다음을 활용할 수 있습니다. [!DNL Live Search].
 
 ### 업데이트
 
