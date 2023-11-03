@@ -2,9 +2,9 @@
 title: "패싯"
 description: "[!DNL Live Search] 패싯은 속성 값의 여러 차원을 검색 기준으로 사용합니다."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 페이스팅은 속성 값의 여러 차원을 검색 기준으로 사용하는 고성능 필터링 방법입니다. 패싯형 검색은 유사하지만 표준보다 상당히 &quot;똑똑하다&quot; [계층화된 탐색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). 사용 가능한 필터 목록은 다음을 통해 결정됩니다. [필터링 가능한 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) 검색 결과에서 반환된 제품
 
-[!DNL Live Search] 를 사용합니다. `productSearch` 다음에 고유한 얼굴 및 기타 데이터를 반환하는 쿼리 [!DNL Live Search]. 을(를) 참조하십시오 [`productSearch` 쿼리](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 코드 예제에 대해서는 개발자 설명서에서 참조하십시오.
+[!DNL Live Search] 를 사용합니다. `productSearch` 다음에 고유한 얼굴 및 기타 데이터를 반환하는 쿼리 [!DNL Live Search]. 을(를) 참조하십시오 [`productSearch` 쿼리](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 코드 예제에 대해서는 개발자 설명서에서 참조하십시오.
 
 ![필터링된 검색 결과](assets/storefront-search-results-run.png)
 

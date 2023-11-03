@@ -2,7 +2,7 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 0%
@@ -139,7 +139,7 @@ SaaS 구성이 완료되면 다음을 수행하여 초기 데이터 동기화를
 
 API 키를 가져오려면 관리자의 Commerce Service Connector 영역으로 이동하여 공개 API 키를 복사합니다.
 
-읽기 [GraphQL 설명서](https://developer.adobe.com/commerce/webapi/graphql/) api 요청 생성에 필요한 헤더를 쿼리하고 전송하는 방법을 이해합니다.
+읽기 [GraphQL 설명서](https://developer.adobe.com/commerce/services/graphql/) api 요청 생성에 필요한 헤더를 쿼리하고 전송하는 방법을 이해합니다.
 
 허용하려면 [!DNL Catalog Service] 방화벽을 통해 추가 `commerce.adobe.io` 허용 목록에 추가하다로
 

@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _2023년 7월 18일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 카탈로그 서비스가 이제 다음을 지원합니다. [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Recommendations 제품에 대한 GraphQL 쿼리.
+![신규](../assets/new.svg) 카탈로그 서비스가 이제 다음을 지원합니다. [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) Recommendations 제품에 대한 GraphQL 쿼리.
 
 ### V1.10 릴리스
 
@@ -90,7 +90,7 @@ _2023년 3월 28일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 에 견본이 추가되었습니다. [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) 쿼리.
+![신규](../assets/new.svg) 에 견본이 추가되었습니다. [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 쿼리.
 ![신규](../assets/new.svg) 을(를) 가져오는 기능이 추가됨 `entityId` 사용 [API 메쉬](mesh.md).
 
 ### V1.5 릴리스
@@ -99,7 +99,7 @@ _2023년 3월 6일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 추가됨 [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL 기능.
+![신규](../assets/new.svg) 추가됨 [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL 기능.
 ![수정](../assets/fix.svg) 향상된 성능 및 API 확장성.
 
 ### V1.4 릴리스

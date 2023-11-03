@@ -4,10 +4,10 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 9%
+source-wordcount: '95'
+ht-degree: 10%
 
 ---
 
@@ -48,5 +48,5 @@ ht-degree: 9%
       - [동의어 관리](synonyms-manage.md)
    - [작업 영역](workspace.md)
 - GraphQL 쿼리 {#graphql}
-   - [attributeMeta](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
-   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)
+   - [attributeMeta](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/queries/product-search/)

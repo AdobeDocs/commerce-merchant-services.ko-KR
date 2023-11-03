@@ -3,9 +3,9 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ ht-degree: 0%
 
    다음 시간 후에 패싯을 추가할 수 있습니다. `cron` 는 제품 및 속성 피드를 실행하고 속성 메타데이터를 로 내보냅니다. [!DNL Live Search] 서비스.
 
-1. 데이터가 인덱싱되고 동기화될 때까지 최소 한 시간 동안 기다립니다. 그런 다음 를 사용합니다. [GraphQL 플레이그라운드](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) 기본 쿼리를 사용하여 다음을 확인합니다.
+1. 데이터가 인덱싱되고 동기화될 때까지 최소 한 시간 동안 기다립니다. 그런 다음 를 사용합니다. [GraphQL 플레이그라운드](https://developer.adobe.com/commerce/services/graphql/live-search/) 기본 쿼리를 사용하여 다음을 확인합니다.
 
    * 반환된 제품 수는 스토어 보기에 예상되는 값과 비슷합니다.
    * 패싯이 반환됩니다.

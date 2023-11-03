@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 정보"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ _2023년 9월 1일_
 
 ### 업데이트
 
-![수정](../assets/fix.svg) 제품 목록 위젯이 [카탈로그 서비스 API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![수정](../assets/fix.svg) 제품 목록 위젯이 [카탈로그 서비스 API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -132,7 +132,7 @@ _2023년 3월 14일_
 
 ![신규](../assets/new.svg) 규칙 미리보기의 제품 항목 카드
 ![신규](../assets/new.svg) [제품 목록 페이지 위젯](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-![신규](../assets/new.svg) [범주 필터링 옵션](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![신규](../assets/new.svg) [범주 필터링 옵션](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![신규](../assets/new.svg) 끌어서 놓아 고정 이벤트를 만드는 기능이 추가되었습니다.
 ![신규](../assets/new.svg) 새 고정 작업: * 위치에 고정 - 한 번의 클릭으로 고정 이벤트 만들기 고정 * 상단에 고정 - 첫 번째 위치에 제품 배치 * 하단에 고정 - 결과의 하단에 제품 배치 * 한 번의 클릭으로 이벤트 고정 해제
 ![신규](../assets/new.svg) [규칙에 대한 지능형 순위](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
@@ -179,7 +179,7 @@ _2023년 3월 14일_
 
 ![신규](../assets/new.svg) 이제 라이브 검색은 관리자의 &#39;재고 부족 제품 표시&#39; 설정에 의한 필터링을 지원합니다. &#39;재고 부족 제품 표시&#39;가 false로 설정된 경우 `inStock = true` 가 필터에 추가됩니다.
 ![수정](../assets/fix.svg) 성능을 개선하기 위해 &#39;제안&#39; 블록이 라이브 검색 팝업에서 제거되었습니다. 기능을 교체하려는 경우 데이터는 여전히 GraphQL을 통해 전달됩니다.
-![수정](../assets/fix.svg) `categories` 및 `categoryPath` 을(를) 대체했습니다. `categoryIds` 카테고리 필터링에 사용됩니다. 자세한 내용 [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) 주제.
+![수정](../assets/fix.svg) `categories` 및 `categoryPath` 을(를) 대체했습니다. `categoryIds` 카테고리 필터링에 사용됩니다. 자세한 내용 [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) 주제.
 ![수정](../assets/fix.svg) 이전에는 B2B 회사에 연결된 사용자가 검색을 수행할 때 잘못된 고객 그룹 코드를 받았습니다. 이제 Live Search에서 올바른 값을 반환합니다.
 ![수정](../assets/fix.svg) 이전에는 존재하지 않는 용어를 검색할 때 라이브 검색에서 오류가 반환되었습니다. 해당 버그는 이제 수정되었습니다.
 
@@ -209,7 +209,7 @@ _2023년 3월 14일_
 ![신규](../assets/new.svg) 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 다음에 대해 지원됨 [!DNL Live Search].
 ![신규](../assets/new.svg) 다음 [!DNL Live Search] 설치 프로세스가 고급 프로세스 변경 사항으로 업데이트됩니다.
 ![수정](../assets/fix.svg) [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 상점 첫 번째 바닥글에서 링크가 제거되었습니다.
-![버그](../assets/bug.svg) 다음 제품 속성은에서 지원하지 않습니다. [상거래 GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) PWA의 베타 릴리스와 관련하여 사용할 경우: `description`, `name`, `short_description`
+![버그](../assets/bug.svg) 다음 제품 속성은에서 지원하지 않습니다. [상거래 GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) PWA의 베타 릴리스와 관련하여 사용할 경우: `description`, `name`, `short_description`
 ![버그](../assets/bug.svg) 다음에 대한 PWA 베타 릴리스 [!DNL Live Search] 은(는) 을 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}
