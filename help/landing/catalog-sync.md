@@ -3,9 +3,9 @@ title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법 알아보기 [!DNL Commerce] 서버 대상 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Catalog Sync 서비스가 [!DNL Adobe Commerce] 인스턴스를 [!DNL Commerce S
 - 동기화 상태 보기(**진행 중**, **성공**, **실패**)
 - 동기화된 총 제품 수 보기
 - 동기화된 제품을 검색하여 현재 상태 보기
-- 이름, SKU 등별 검색 스토어 카탈로그
+- 이름, SKU 등을 기준으로 한 검색 스토어 카탈로그
 - 동기화 불일치를 진단하는 데 도움이 되도록 JSON에서 동기화된 제품 세부 정보 보기
 - 동기화 프로세스 다시 시작
 
@@ -67,7 +67,6 @@ Catalog Sync 서비스가 [!DNL Adobe Commerce] 인스턴스를 [!DNL Commerce S
 1. 다음에서 _데이터 재동기화_ 섹션, 클릭 [!UICONTROL Resync].
 
    [!DNL Commerce] 다음 예약된 동기화 기간 동안 카탈로그를 동기화합니다. 카탈로그 크기에 따라 이 작업은 시간이 오래 걸릴 수 있습니다.
-
 
 ## 동기화된 카탈로그 제품
 
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### 프로파일링
 
-특정 피드의 색인 재지정 프로세스에 불합리하게 시간이 걸리는 경우 프로파일러를 실행하여 지원 팀에 유용할 수 있는 추가 데이터를 수집합니다. 이렇게 하려면 다음을 전달하십시오. `EXPORTER_PROFILER=1`환경 변수:
+특정 피드의 색인 재지정 프로세스에 불합리한 시간이 걸리는 경우 프로파일러를 실행하여 지원 팀에 유용할 수 있는 추가 데이터를 수집합니다. 이렇게 하려면 다음을 전달하십시오. `EXPORTER_PROFILER=1`환경 변수:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products

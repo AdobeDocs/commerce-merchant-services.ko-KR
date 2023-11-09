@@ -3,9 +3,9 @@ title: 카탈로그 어댑터 확장
 description: 카탈로그 어댑터를 사용하여 Commerce Services의 가격 렌더링
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce 제품 가격 인덱서가 비활성화되어 있으므로 이러
 ## 요구 사항
 
 * Adobe Commerce 2.4.4+
-* 다음 Commerce Services 중 하나가 설치되었습니다.
+* 다음 Commerce Services가 모두 설치되어 있습니다.
 
    * [카탈로그 서비스](../catalog-service/overview.md)
    * [라이브 검색](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Adobe Commerce 제품 가격 인덱서가 비활성화되어 있으므로 이러
 composer require adobe-commerce/catalog-adapter
 ```
 
-## Adobe Commerce 제품 가격 인덱서 다시 실행
+## Adobe Commerce 제품 가격 인덱서 다시 활성화
 
 기본 Adobe Commerce 제품 가격 인덱서를 사용하는 서드파티 애플리케이션이 있는 경우 다음 명령을 사용하여 다시 활성화할 수 있습니다.
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ composer require magento/module-price-indexer-disabler
 * 필수 서비스(Live Search, Product Recommendations, Catalog Service)가 설치된 Headless Commerce 인스턴스가 있는 판매자입니다.
 * 기본 Adobe Commerce 제품 가격 인덱서에 의존하지 않음
 
-1. 카탈로그 어댑터 패키지에서 &quot;가격 비활성화&quot;를 설치합니다.
+1. 설치 `magento/module-price-indexer-disabler` 카탈로그 어댑터 패키지의 모듈입니다.
