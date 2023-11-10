@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] 스토어 체크아웃 내 결제 버튼.
 
-다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-buttob) 추가 정보.
+완료한 경우에만 Apple 페이를 사용할 수 있습니다. [Apple Paypal을 통해 자가 등록 결제](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 그런 다음 [Apple Pay 구성](settings.md/#payment-buttons) 상점에서요. 다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-button) 추가 정보.
 
 다음을 활성화하고 구성할 수 있습니다. [!UICONTROL Apple Pay] 단추 결제 옵션:
 
