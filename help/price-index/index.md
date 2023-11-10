@@ -4,9 +4,9 @@ description: SaaS 가격 색인을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
+source-git-commit: d9a9137faac12cc1c42c1b41afbd9794dcb29189
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ SaaS 가격 색인화는 Adobe Commerce 서비스를 사용하는 고객에게 �
 
    * [카탈로그 서비스](../catalog-service/overview.md)
    * [라이브 검색](../live-search/guide-overview.md)
+   * [제품 Recommendations](../product-recommendations/guide-overview.md)
 
 Luma 및 Adobe Commerce 핵심 GraphQL 사용자는 [`catalog-adapter`](catalog-adapter.md) Luma 및 Core GraphQl 호환성을 제공하고 Adobe Commerce 제품 가격 인덱서를 비활성화하는 확장입니다.
 
