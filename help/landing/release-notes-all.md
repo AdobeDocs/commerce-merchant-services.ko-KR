@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
 feature: Release Notes, Services
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
       <td><strong>통합 서비스</strong>
         <p>Commerce Services가 다른 서비스 및 Adobe 확장 기능 및 제품과 연결할 수 있도록 하는 통합 서비스의 최신 개선 사항에 대해 알아봅니다.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform 커넥터</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">서비스 커넥터</a></li>
           </ul>
       </td>

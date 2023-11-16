@@ -6,7 +6,7 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -85,13 +85,13 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도�
    </tr>
 </table>
 
-## 데이터 서비스
+## 통합 서비스
 
 <table>
 <tr>
   <td valign="top" width="200">
-      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
     <div>Adobe Commerce과 Adobe Experience Platform Edge 간의 연결을 활용하여 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에 상거래 데이터를 활용할 수 있습니다.</div>
   </td>
    </tr>
@@ -105,7 +105,7 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도�
    </tr>
 </table>
 
-## 통합 서비스
+## 데이터 서비스
 
 <table>
 <tr>

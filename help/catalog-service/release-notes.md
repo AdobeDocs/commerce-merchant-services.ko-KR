@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '537'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ _2023년 10월 12일_
 
 ![신규](../assets/new.svg) 카탈로그 서비스가 다음을 지원합니다. `inStock` 제품 변형에 대한 플래그.
 ![신규](../assets/new.svg) `urlKey` 및 `externalId` GraphQL 스키마에 추가되었습니다.
+![신규](../assets/new.svg) 이제 다운로드 가능한 제품 및 기프트 카드가 지원됩니다.
 
 #### 알려진 제한 사항
 
@@ -44,7 +45,6 @@ API Mesh 및 Core GraphQL API를 사용하면 다음 제한 사항을 해결할 
 
 * 최소 광고 가격
 * [계층 가격](mesh.md)
-* 다운로드 가능한 제품 및 기프트 카드
 
 ## 이전 버전
 
