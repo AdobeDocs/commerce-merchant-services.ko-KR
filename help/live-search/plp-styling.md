@@ -2,9 +2,9 @@
 title: 제품 목록 페이지 위젯
 description: 활성화 및 스타일링 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ ht-degree: 0%
 ## PLP 위젯 활성화
 
 다음의 경우 [!DNL Live Search] 서비스가 설치되면 기본 검색 기능이 [!DNL Live Search] 자동으로 표시됩니다.
-PLP 위젯은 관리자에서 활성화해야 합니다.
 
-1. 다음으로 이동 **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **Storefront 기능** 및 설정 **제품 목록 위젯 활성화** 을 &quot;예&quot;로 바꿉니다.
+다음 [!DNL Live Search] PLP 위젯은 새 설치에 대해 기본적으로 활성화되어 있습니다. 업그레이드 중인 경우 [!DNL Live Search] 그리고 PLP 위젯은 이미 꺼져 있으므로 그대로 유지됩니다.
+
+PLP 위젯을 비활성화하려면 다음과 같이 하십시오.
+
+1. 다음으로 이동 **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **Storefront 기능** 및 설정 **제품 목록 위젯 활성화** &quot;아니요&quot;로 변경되었습니다.
 1. 선택 **구성 저장** 설정을 저장합니다.
 
 ## 스타일 예
@@ -126,7 +129,8 @@ PLP 위젯은 관리자에서 활성화해야 합니다.
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![입력](assets/plp-css-sdk-input.png)

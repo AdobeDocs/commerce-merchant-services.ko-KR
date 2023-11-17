@@ -3,7 +3,7 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -28,17 +28,21 @@ ht-degree: 0%
 
 1. 요구 사항에 맞는 온보딩 방법을 선택하고 지침을 따르십시오.
 
-   * [방법 1](#method-1): 설치 [!DNL Elasticsearch]
-   * [방법 2](#method-2): 다음으로 설치 [!DNL Elasticsearch] (다운타임 없음)
+   * [방법 1](#method-1): 설치 [!DNL OpenSearch]
+   * [방법 2](#method-2): 다음으로 설치 [!DNL OpenSearch] (다운타임 없음)
 
-## 방법 1: Elasticsearch 없이 설치 {#method-1}
+>[!IMPORTANT]
+>
+>2023년 8월의 Elasticsearch 7 지원 종료 발표로 인해 모든 Adobe Commerce 고객은 OpenSearch 2.x 검색 엔진으로 마이그레이션하는 것이 좋습니다. 제품 업그레이드 중 검색 엔진 마이그레이션에 대한 자세한 내용은 [OpenSearch로 마이그레이션](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 다음에서 _업그레이드 안내서_.
+
+## 방법 1: OpenSearch 없이 설치 {#method-1}
 
 설치할 때 이 온보딩 방법이 권장됩니다 [!DNL Live Search] 대상:
 
 * 신규 [!DNL Commerce] 설치
 * 스테이징 환경
 
-이 시나리오에서는 [!DNL Live Search] 서비스는 카탈로그의 모든 제품을 색인화합니다. 설치하는 동안 [!DNL Live Search] 모듈이 활성화되고 [!DNL Elasticsearch] 모듈이 비활성화되었습니다.
+이 시나리오에서는 [!DNL Live Search] 서비스는 카탈로그의 모든 제품을 색인화합니다. 설치하는 동안 [!DNL Live Search] 모듈이 활성화되고 [!DNL OpenSearch] 모듈이 비활성화되었습니다.
 
 1. 없이 Adobe Commerce 2.4.4+ 설치 [!DNL Live Search].
 
@@ -48,7 +52,7 @@ ht-degree: 0%
    composer require magento/live-search
    ```
 
-1. 다음 명령을 실행하여 비활성화합니다. [!DNL Elasticsearch] 및 관련 모듈 및 설치 [!DNL Live Search]:
+1. 다음 명령을 실행하여 비활성화합니다. [!DNL OpenSearch] 및 관련 모듈 및 설치 [!DNL Live Search]:
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -81,17 +85,13 @@ ht-degree: 0%
 
 1. [테스트](#test-the-connection) 상점과의 연결.
 
-## 방법 2: Elasticsearch과 함께 설치 {#method-2}
-
->[!IMPORTANT]
->
->2023년 8월의 Elasticsearch 7 지원 종료 발표로 인해 모든 Adobe Commerce 고객은 OpenSearch 2.x 검색 엔진으로 마이그레이션하는 것이 좋습니다. 제품 업그레이드 중 검색 엔진 마이그레이션에 대한 자세한 내용은 [OpenSearch로 마이그레이션](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) 다음에서 _업그레이드 안내서_.
+## 방법 2: OpenSearch를 사용하여 설치 {#method-2}
 
 설치할 때 이 온보딩 방법이 권장됩니다 [!DNL Live Search] 끝:
 
 * 기존 프로덕션 [!DNL Commerce] 설치
 
-이 시나리오에서는 [!DNL Elasticsearch] 이(가) 다음을 수행하는 동안 상점의 검색 요청을 일시적으로 관리합니다. [!DNL Live Search] 서비스는 정상적인 상점 운영을 중단하지 않고 백그라운드에 있는 모든 제품을 색인화합니다. [!DNL Elasticsearch] 이(가) 비활성화되어 있고 [!DNL Live Search] 모든 카탈로그 데이터가 인덱싱되고 동기화된 후 활성화됩니다.
+이 시나리오에서는 [!DNL OpenSearch] 이(가) 다음을 수행하는 동안 상점의 검색 요청을 일시적으로 관리합니다. [!DNL Live Search] 서비스는 정상적인 상점 운영을 중단하지 않고 백그라운드에 있는 모든 제품을 색인화합니다. [!DNL OpenSearch] 이(가) 비활성화되어 있고 [!DNL Live Search] 모든 카탈로그 데이터가 인덱싱되고 동기화된 후 활성화됩니다.
 
 1. 다운로드하려면 `live-search` package, 명령줄에서 다음을 실행합니다.
 
@@ -131,7 +131,7 @@ ht-degree: 0%
    * 반환된 제품 수는 스토어 보기에 예상되는 값과 비슷합니다.
    * 패싯이 반환됩니다.
 
-1. 활성화하려면 다음 명령을 실행하십시오 [!DNL Live Search] 모듈, 비활성화 [!DNL Elasticsearch], 및 실행 `setup`.
+1. 활성화하려면 다음 명령을 실행하십시오 [!DNL Live Search] 모듈, 비활성화 [!DNL OpenSearch], 및 실행 `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -209,9 +209,9 @@ composer show magento/module-live-search | grep version
 composer update magento/live-search --with-dependencies
 ```
 
-2.0.0에서 3.1.1로 등 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
+3.1.1에서 4.0.0으로 업데이트와 같은 주요 버전으로 업데이트하려면 프로젝트의 루트를 편집합니다 [!DNL Composer] `.json` 파일을 다음과 같이 지정합니다.
 
-1. 현재 설치된 경우 `magento/live-search` 버전: `2.0.3` 또는 그 이하이며 버전으로 업그레이드 중입니다. `3.0.0` 또는 업그레이드 전에 다음 명령을 실행하십시오.
+1. 현재 설치된 경우 `magento/live-search` 버전: `3.1.1` 또는 그 이하이며 버전으로 업그레이드 중입니다. `4.0.0` 또는 업그레이드 전에 다음 명령을 실행하십시오.
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +230,7 @@ composer update magento/live-search --with-dependencies
    ```json
    "require": {
       ...
-      "magento/live-search": "^3.0",
+      "magento/live-search": "^4.0",
       ...
     }
    ```

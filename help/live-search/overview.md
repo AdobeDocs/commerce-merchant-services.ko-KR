@@ -3,16 +3,16 @@ title: 소개 [!DNL Live Search]
 description: "[!DNL Live Search] Adobe Commerce에서는 매우 빠르고, 관련성이 높고, 직관적인 검색 환경을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # 소개 [!DNL Live Search]
 
-[!DNL Live Search] 는 표준 검색 기능을 대체하는 Adobe Commerce용 서비스입니다. 다음 [!DNL Live Search] 모듈이 Composer와 함께 설치되고 [!DNL Commerce] 에 설치 [!DNL Live Search] [서비스](../landing/saas.md). 구성되면 기본 검색 텍스트 필드가 로 바뀝니다. [!DNL Live Search] 텍스트 필드.
+[!DNL Live Search] 는 표준 검색 기능을 대체하는 Adobe Commerce용 서비스입니다. 다음 [!DNL Live Search] 모듈이 Composer와 함께 설치되고 [!DNL Commerce] 에 설치 [!DNL Live Search] [서비스](../landing/saas.md). 구성되면 기본 검색 텍스트 필드가 로 바뀝니다. [!DNL Live Search] 텍스트 필드. [!DNL Live Search] 또한 검색 결과를 검색할 때 강력한 필터링 기능을 제공하는 PLP(제품 목록 페이지) 위젯을 설치합니다.
 
 [!DNL Live Search] 다음 화면에 나타남: *마케팅* 아래 메뉴 *SEO 및 검색* 다음에서 [!DNL Commerce] *관리자*.
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 * [제품 목록 페이지 위젯](plp-styling.md) 패싯 및 동의어 지원이 포함된 검색 가능한 제품 목록 페이지를 제공합니다.
 * AEM CIF 구성 요소: [팝오버 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/319) 및 [PLP 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/320) AEM 사이트에서 다음을 활용하도록 허용 [!DNL Live Search].
 * [[!DNL Live Search] 관리자](workspace.md) 는 규칙, 패싯 및 동의어가 구성되는 위치입니다.
-* 검색 어댑터는 의 기본 구현입니다 [!DNL Live Search].
+* 검색 어댑터는 의 기본 구현입니다 [!DNL Live Search]. Headless 및 사용자 지정 구현에 권장됩니다.
 
 ## [!DNL Live Search] 데모
 

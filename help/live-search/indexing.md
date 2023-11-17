@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] 색인화"
 description: "방법 알아보기 [!DNL Live Search] 는 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # 색인화
+
+다음 [!DNL Live Search] 색인 지정 프로세스는 제품 속성에 대해 카탈로그를 읽고 신속하게 제품을 검색, 필터링 및 제공할 수 있도록 색인을 작성합니다.
 
 제품 속성 속성(메타데이터)은 다음을 결정합니다.
 

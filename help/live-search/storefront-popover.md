@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "다음 [!DNL Live Search storefront popover] 제안 제품 및 썸네일을 동적으로 반환합니다."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,6 @@ ht-degree: 0%
 
 다음 [Adobe Commerce용 카탈로그 서비스](../catalog-service/overview.md) 확장은 제품 관련 상점 경험을 빠르고 완벽하게 렌더링할 수 있는 풍부한 보기 모델 카탈로그 데이터를 제공합니다. 카탈로그 서비스를 라이브 검색과 함께 사용하여 현재 기본 확장에서 지원하지 않는 기능을 제공할 수 있습니다.
 
-* 색상 견본
 * 확장된 속성
 * 다른 제품 정보를 가져올 수 있습니다.
 
