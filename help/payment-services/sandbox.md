@@ -3,9 +3,9 @@ title: 테스트 샌드박스 설정
 description: PayPal 샌드박스 계정을 사용하여 [!DNL Payment Services] 테스트 모드.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ PayPal 샌드박스 온보딩이 승인되면 결제 시스템이 현재 샌드�
 
 ## 연락처 전화 번호 사용
 
-연락처 전화 번호를 사용하면 PayPal이 고객으로부터 수집하는 연락처 전화 번호를 얻을 수 있습니다. PayPal은 항상 PayPal 계정 소유자로부터 연락처 전화 번호를 수집하여 ID를 확인하고 연락하여 계정의 문제를 해결하거나 이행 프로세스를 완료합니다. 하지만 페이팔은 매출에 부정적인 영향을 미칠 수 있기 때문에 가맹점에서 직접 연락처 전화번호를 사용하는 것을 권장하지 않습니다. 다음을 참조하십시오. [PayPal 연락처 전화 번호 받기](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) 설명서 를 참조하십시오.
+연락처 전화 번호를 사용하면 PayPal이 고객으로부터 수집하는 연락처 전화 번호를 얻을 수 있습니다. PayPal은 항상 PayPal 계정 소유자로부터 연락처 전화 번호를 수집하여 ID를 확인하고 연락하여 계정의 문제를 해결하거나 이행 프로세스를 완료합니다. 하지만 페이팔은 매출에 부정적인 영향을 미칠 수 있기 때문에 가맹점에서 직접 연락처 전화번호를 사용하는 것을 권장하지 않습니다. 다음을 참조하십시오. [PayPal 연락처 전화 번호 받기](https://www.sandbox.paypal.com/businessmanage/preferences/website) 설명서 를 참조하십시오.
 
 이 기능은 `off` 기본적으로. 이 기능을 활성화하면 고객이 체크아웃 페이지 외부에서 브랜드 체크아웃 플로우를 완료하면 스토어 관리자가 전화번호를 볼 수 있습니다.
 
