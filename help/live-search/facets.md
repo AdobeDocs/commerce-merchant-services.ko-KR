@@ -2,9 +2,9 @@
 title: "패싯"
 description: "[!DNL Live Search] 패싯은 속성 값의 여러 차원을 검색 기준으로 사용합니다."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ ht-degree: 0%
 * 정렬 가능한 속성 50개
 * 필터링 가능한 특성 200개
 * 검색 가능한 속성 200개
+
+>[!NOTE]
+>
+> 필터링 가능한 속성이 200개 이상 정의된 경우 실제로 인덱싱할 200개는 결정적이지 않습니다.
+
+경합할 속성이 많은 경우 속성을 하나의 &quot;meta-attribute&quot;로 결합하는 것이 좋습니다. 예를 들어, 신발은 일반적으로 숫자 크기를 가지지만 셔츠는 일반적으로 &quot;S/M/L/XL&quot; 크기를 갖습니다. 이 두 가지 유형의 크기를 하나의 검색 가능한 속성으로 결합할 수 있습니다.
 
 | 설정 | 설명 |
 |--- |--- |

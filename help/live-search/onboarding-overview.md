@@ -3,9 +3,9 @@ title: "온보딩 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ ht-degree: 0%
 이 비디오는 카테고리 머천다이징에 대해 소개합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## 위젯 코드 저장소
+
+제품 목록 페이지 위젯 및 검색 팝오버 위젯은 모두 github 저장소에서 다운로드할 수 있습니다.
+
+이를 통해 개발자는 기능과 스타일을 완전히 맞춤화할 수 있습니다. 이러한 사용자는 코드 자체를 호스팅하면서도 [!DNL Live Search] 서비스.
+
+* [PLP 위젯](https://github.com/adobe/storefront-product-listing-page)
+* [검색 창](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 
