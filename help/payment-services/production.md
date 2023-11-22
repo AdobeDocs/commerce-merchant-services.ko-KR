@@ -3,9 +3,9 @@ title: 사용 [!DNL Payment Services] 프로덕션용
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다. [!DNL Payment Services] 프로덕션용
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ ht-degree: 0%
    |---|---|
    | `Authorize` | 구매를 승인하고 자금을 보류합니다. 상인에게 &#39;포착&#39;되기 전까지는 그 금액이 인출되지 않는다. |
    | `Authorize and Capture` | 구매를 승인하고 판매자가 자금을 &quot;캡처&quot;합니다. |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] 는 부분 캡처를 지원합니다. 판매자는 주문의 일부를 부분적으로 수집(송장)할 수 있습니다. 예를 들어 각 항목을 개별적으로 캡처하거나 지금 항목 하나와 나중에 항목 하나를 캡처할 수 있습니다.
 
 1. 클릭 **[!UICONTROL Save]**.
 1. 클릭 **[!UICONTROL Go to Payment Services]** 로 돌아가려면 [!DNL Payment Services] 집.

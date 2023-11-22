@@ -3,9 +3,9 @@ title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 상거래 인스턴스를 연결하고 구성에 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ API 키가 손실되면 새 API 키 쌍은 다음과 같아야 합니다. [생�
 샌드박스 또는 프로덕션 환경에 대한 API 키를 생성하는 방법은 를 참조하십시오. [자격 증명](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >API 키 쌍을 다시 생성하지 않는 것이 좋습니다 *및* 활성 프로덕션 인스턴스에서 SaaS 식별자 및/또는 데이터 공간을 변경합니다. 인스턴스가 수정되면 해당 인스턴스의 데이터가 손실됩니다.
 
 ## 상거래 서비스 구성
 
 인스턴스 간에 동일한 API 키를 사용할 수 있지만 각 인스턴스는 자체 키를 가져야 합니다 [SaaS 데이터 공간](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>판매자는 결제 권한에 대해 MageID에 대해 생성된 동일한 키를 사용해야 합니다.
 
 자격 증명을 받았으므로 SaaS 프로젝트 및 Saas 데이터 공간을 구성할 수 있습니다.
 

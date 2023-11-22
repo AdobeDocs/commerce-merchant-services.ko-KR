@@ -3,9 +3,9 @@ title: 신용 카드 보관
 description: 구매자는 향후 구매를 위해 신용 카드 세부 정보를 저장(저장)할 수 있습니다.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 또한 저장된 신용 카드도 쉽게 삭제할 수 있습니다. [저장된 결제 방법](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) 내 계정에 있어야 합니다.
 
 ![내 계정에 저장된 결제 방법](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal은 현재 최대 5개의 저장된 카드를 저장할 수 있습니다.
 
 ## 보관 사용
 

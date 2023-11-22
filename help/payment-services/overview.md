@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 * **투명한 가격 책정**—가격은 명확하고 선결적입니다.
 * **효율적인 체크아웃 환경**—빠르고 간편한 체크아웃을 위한 모든 장벽을 없애고 [카드 보관](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 및 [즉시 구매](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerce에 대해 기본적으로 활성화됨) 기능입니다.
 
-## 사용 가능
+## 가용성
 
 [!DNL Payment Services] 다음에 사용 가능: [!DNL Adobe Commerce] 및 [!DNL Magento Open Source]. 다음 [!DNL Payment Services] 확장이 이제 와 호환됩니다. [!DNL Adobe Commerce] 버전 2.4.x.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ### 허용된 신용 카드 및 통화
 
-[!DNL Payment Services] 국가의 통화를 수락합니다. [사용 가능한](#availability).
+[!DNL Payment Services] 국가의 통화를 수락합니다. [사용 가능한](#availability). 다음을 참조하십시오 [통화 구성](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) 추가 정보.
 
 PayPal이 지원하는 통화를 확인하려면 다음을 참조하십시오. [지원되는 통화 설명서](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
