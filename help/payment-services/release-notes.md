@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 정보"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '2279'
+source-wordcount: '2316'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,14 @@ _2021년 6월 28일_
 ![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
+
+## v2.3.0
+
+_2023년 12월 1일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg)<!-- PAY-4381 --> [이제 결제 서비스에서 GraphQL 통합을 지원합니다.](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). 이제 GraphQL에서 PayPal 결제 버튼, 호스팅 필드 및 Apple Pay를 지원하므로 결제 서비스는 Headless 상거래 설정을 지원합니다.
 
 ## v2.2.1
 

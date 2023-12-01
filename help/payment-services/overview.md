@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 * [**결제 옵션**](payments-options.md)—스토어(또는 멀티스토어) 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정합니다.
 * **현금 흐름 관리 재무 보고**- 동기화 [결제 세부 사항](order-payment-status.md) 주문과 함께 처리된 수량, 지불 잔액에 대한 완전한 투명성을 얻을 수 있습니다. [지불금](payouts.md), 및 세부 정보 [거래 수준 보고](transactions.md) 재무 조정 및 거래 가시성을 최대한 활용합니다.
 * **투명한 가격 책정**—가격은 명확하고 선결적입니다.
-* **효율적인 체크아웃 환경**—빠르고 간편한 체크아웃을 위한 모든 장벽을 없애고 [카드 보관](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 및 [즉시 구매](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerce에 대해 기본적으로 활성화됨) 기능입니다.
+* **효율적인 체크아웃 환경**—빠르고 간편한 체크아웃을 위한 모든 장벽을 없애고 [카드 보관](vaulting.md) 및 [즉시 구매](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (Adobe Commerce에 대해 기본적으로 활성화됨) 기능입니다.
 
 ## 가용성
 
