@@ -4,10 +4,10 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 10%
+source-wordcount: '84'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 - [소개 [!DNL Live Search]](overview.md)
 - [릴리스 정보](release-notes.md)
 - Live Search 온보드 {#onboard}
-   - [온보딩 개요](onboarding-overview.md)
+   - [기술 개요](technical-overview.md)
    - [설치 [!DNL Live Search]](install.md)
 - [!DNL Live Search] 상점 첫 화면 {#live-search-storefront}
    - [제품 목록 페이지 위젯](plp-styling.md)

@@ -1,20 +1,20 @@
 ---
-title: "카테고리 머천다이징"
-description: "사용 [!DNL Live Search] 더 빠른 쇼핑 경험을 위한 카테고리 머천다이징"
+title: 카테고리 머천다이징
+description: 사용 [!DNL Live Search] 더 빠른 쇼핑 경험을 위한 카테고리 머천다이징.
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # 카테고리 머천다이징
 
 카테고리 머천다이징을 사용하면 스토어 소유자가 을 적용할 수 있습니다. [!DNL Live Search] 인텔리전트 등급 [규칙](rules.md) (제품 범주 및 하위 범주).
 
-이 기능은 다음 위치의 관리자에서 액세스됩니다. **마케팅** > SEO 및 검색 > **[!DNL Live Search]** > **카테고리 머천다이징**.
+기능은 다음 위치의 관리자에서 액세스됩니다. **마케팅** > SEO 및 검색 > **[!DNL Live Search]** > **카테고리 머천다이징**.
 
 >[!NOTE]
 >
