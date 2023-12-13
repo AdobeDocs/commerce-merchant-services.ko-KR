@@ -3,9 +3,9 @@ title: "기술 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ab09bc53666915713bd0180d87b3e40aec430a86
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -80,6 +80,8 @@ ht-degree: 0%
 * pt_PT
 
 위젯이 Commerce 관리자 언어 설정(_스토어_ > 설정 > _구성_ > _일반_ > 국가 옵션) 지원되는 언어와 일치하면 기본적으로 해당 언어로 설정됩니다. 그렇지 않은 경우 위젯은 기본적으로 영어로 설정됩니다.
+
+관리자는 의 언어를 설정할 수도 있습니다. [검색 색인](settings.md#language): 더 나은 검색 결과를 보장해 줍니다.
 
 ## 카테고리 머천다이징
 

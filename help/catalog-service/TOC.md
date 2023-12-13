@@ -5,10 +5,10 @@ breadcrumb-title: “[!DNL Catalog Service] 안내서”
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 8%
+source-wordcount: '54'
+ht-degree: 11%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 8%
 - [소개 [!DNL Catalog Service]](overview.md)
 - [온보딩 및 설치](installation.md)
 - [카탈로그 서비스 및 API 메쉬](mesh.md)
+- [API Mesh를 사용하여 세금 가격 표시](taxes.md)
 - [피드 수집 서비스(베타)](feed-ingestion.md)
 - GraphQL 쿼리 {#graphql}
    - [카테고리 쿼리](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
