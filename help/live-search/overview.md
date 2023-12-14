@@ -1,11 +1,11 @@
 ---
 title: 소개 [!DNL Live Search]
-description: "[!DNL Live Search] Adobe Commerce에서는 매우 빠르고, 관련성이 높고, 직관적인 검색 환경을 제공합니다."
+description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 팝오버 및 PLP 위젯은 필요에 따라 사용자 정의 CSS 규칙을 정의하여 스타일을 지정할 수 있습니다. 다음을 참조하십시오 [팝오버 요소 스타일링](storefront-popover-styling.md) 및 [제품 목록 페이지 위젯](plp-styling.md).
 
 위젯의 기능을 확장하려는 경우 각각의 소스 코드를 공용 리포지토리에서 사용할 수 있습니다.
-이 시나리오에서는 사용자 자신의 요구 사항에 맞게 JavaScript를 사용자 지정한 다음 사용자 지정 코드를 사이트에서 호스팅할 수 있습니다. 이 사용자 지정 스크립트는 [!DNL Live Search] 서비스를 실행하고 일반적인 결과를 반환하여 위젯의 기능을 제어할 수 있습니다.
+이 시나리오에서는 사용자 자신의 요구 사항에 맞게 JavaScript를 사용자 지정한 다음 CDN에서 사용자 지정 코드를 호스팅할 수 있습니다. 이 사용자 지정 스크립트는 [!DNL Live Search] 서비스를 실행하고 일반적인 결과를 반환하여 위젯의 기능을 제어할 수 있습니다.
 
 * [PLP 위젯 저장소](https://github.com/adobe/storefront-product-listing-page)
 * [검색창 저장소](https://github.com/adobe/storefront-search-as-you-type)
@@ -83,4 +83,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-라이브 검색 사용 및 구성 방법에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) 주제.
+라이브 검색 사용 및 구성 방법에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 주제.

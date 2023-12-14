@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: 설치 방법 알아보기 [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ Commerce의 모든 테스트 인스턴스는 샌드박스 엔드포인트를 사
 
 다음 설치 시 이 방법 사용 [!DNL Catalog Service] Commerce Cloud 인스턴스에 대한 확장입니다.
 
-1. 를 엽니다. `<Commerce_root>/composer.json` 텍스트 편집기의 파일을 만들고 필수 섹션을 다음과 같이 업데이트합니다.
+1. 작성기를 사용하여 프로젝트에 카탈로그 서비스 모듈을 추가합니다.
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. 로컬에서 새 구성을 테스트하고 종속성을 업데이트합니다.
+1. 다음을 실행하여 종속성 업데이트:
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ composer update
 
 다음 설치 시 이 방법 사용 [!DNL Catalog Service] 온-프레미스 인스턴스에 대한 확장.
 
-1. 를 엽니다. `<Commerce_root>/composer.json` 텍스트 편집기의 파일을 만들고 필수 섹션을 다음과 같이 업데이트합니다.
+1. 작성기를 사용하여 프로젝트에 카탈로그 서비스 모듈을 추가합니다.
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. 종속성을 업데이트하고 확장을 설치합니다.
