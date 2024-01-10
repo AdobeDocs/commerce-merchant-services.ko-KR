@@ -3,9 +3,9 @@ title: "기술 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ ht-degree: 0%
 
 [!DNL Live Search] 은 의 끝점을 통해 통신합니다. `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->다음으로: [!DNL Live Search] 이(가) 전체 제품 데이터베이스에 액세스할 수 없습니다. [!DNL Live Search] GraphQL 및 Commerce 코어 GraphQL에는 전체 패리티가 없습니다.
+다음으로: [!DNL Live Search] 이(가) 전체 제품 데이터베이스에 액세스할 수 없습니다. [!DNL Live Search] GraphQL 및 Commerce 코어 GraphQL에는 전체 패리티가 없습니다.
+
+SaaS API의 직접 호출(특히 카탈로그 서비스 끝점)을 호출하는 것이 좋습니다.
+
+* Commerce 데이터베이스/Graphql 프로세스를 건너뛰어 성능을 향상시키고 프로세서 로드를 줄입니다.
+* 다음을 활용하십시오. [!DNL Catalog Service] 호출할 페더레이션 [!DNL Live Search], [!DNL Catalog Service], 및 [!DNL Product Recommendations] 단일 엔드포인트에서
+
+일부 사용 사례의 경우 [!DNL Catalog Service] 제품 세부 사항 및 유사 사례에 대한 정보. 다음을 참조하십시오 [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 추가 정보.
+
+사용자 지정 Headless 구현이 있는 경우 [!DNL Live Search] 참조 구현:
+
+* [PLP 위젯](https://github.com/adobe/storefront-product-listing-page)
+* [라이브 검색 필드](https://github.com/adobe/storefront-search-as-you-type)
+
+Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 구성 요소를 사용하지 않는 경우 이벤트(Intelligent Merchandising 및 성능 메트릭을 위해 Adobe Sensei에 데이터를 제공하는 클릭스트림 데이터)가 즉시 작동하지 않으며 Headless 이벤트를 구현하기 위해 사용자 정의 개발이 필요하다는 것을 알고 있어야 합니다.
+의 최신 버전 [!DNL Live Search] 이미 사용 중 [!DNL Catalog Service] 및 설치 [!DNL Catalog Service] 모듈.
 
 ## 경계 및 임계값
 
@@ -69,15 +82,42 @@ ht-degree: 0%
 
 [!DNL Live Search] 위젯은 다음 언어를 지원합니다.
 
-* en_US(기본값)
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| 언어 | 지역 | 언어 코드 | Magento 로케일 |
+| 불가리아어 | 불가리아 | bg_BG | bg_BG |
+| 카탈로니아어 | 스페인 | ca_ES | ca_ES |
+| 체코어 | 체코 | cs_CZ | cs_CZ |
+| 덴마크어 | 덴마크 | da_DK | da_DK |
+| 독일어 | 독일 | de_DE | de_DE |
+| 그리스어 | 그리스 | el_GR | el_GR |
+| 영어 | 영국 | en_GB | en_GB |
+| 영어 | 미국 | en_US | en_US |
+| 스페인어 | 스페인 | es_ES | es_ES |
+| 에스토니아어 | 에스토니아 | et_EE | et_EE |
+| 바스크어 | 스페인 | eu_ES | eu_ES |
+| 페르시아어 | 이란 | fa_IR | fa_IR |
+| 핀란드어 | 핀란드 | fi_FI | fi_FI |
+| 프랑스어 | 프랑스 | fr_FR | fr_FR |
+| 갈리시아어 | 스페인 | gl_ES | gl_ES |
+| 힌디어 | 인도 | hi_IN | hi_IN |
+| 헝가리어 | 헝가리 | hu_HU | hu_HU |
+| 인도네시아어 | 인도네시아 | id_ID | id_ID |
+| 이탈리아어 | 이탈리아 | it_IT | it_IT |
+| 한국어 | 대한민국 | ko_KR | ko_KR |
+| 리투아니아어 | 리투아니아 | lt_LT | lt_LT |
+| 라트비아어 | 라트비아 | lv_LV | lv_LV |
+| 노르웨이어 | 노르웨이 복말 | nb_NO | nb_NO |
+| 네덜란드어 | 네덜란드 | nl_NL | nl_NL |
+| 포르투갈어 | 브라질 | pt_BR | pt_BR |
+| 포르투갈어 | 포르투갈 | pt_PT | pt_PT |
+| 루마니아어 | 루마니아 | ro_RO | ro_RO |
+| 러시아어 | 러시아 | ru_RU | ru_RU |
+| 스웨덴어 | 스웨덴 | sv_SE | sv_SE |
+| 태국인 | 태국 | th_TH | th_TH |
+| 터키어 | 터키 | tr_TR | tr_TR |
+| 중국어 | 중국 | zh_CN | zh_Hans_CN |
+| 중국어 | 대만 | zh_TW | zh_Hant_TW |
 
 위젯이 Commerce 관리자 언어 설정(_스토어_ > 설정 > _구성_ > _일반_ > 국가 옵션) 지원되는 언어와 일치하면 기본적으로 해당 언어로 설정됩니다. 그렇지 않은 경우 위젯은 기본적으로 영어로 설정됩니다.
 
@@ -109,6 +149,17 @@ ht-degree: 0%
 ## 가격 인덱서
 
 라이브 검색 고객은 새 [SaaS 가격 인덱서](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
+
+## 가격 지원
+
+Live Search 위젯은 Adobe Commerce에서 지원하는 대부분의 가격 유형을 지원하지만 일부 가격 유형은 지원하지 않습니다.
+
+현재 기본 가격이 지원됩니다. 지원되지 않는 고급 가격은 다음과 같습니다.
+
+* 비용
+* 최소 광고 가격
+
+다음 항목 보기 [API 메쉬](../catalog-service/mesh.md) 보다 복잡한 가격 계산을 위해.
 
 ## PWA 지원
 
