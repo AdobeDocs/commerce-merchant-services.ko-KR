@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ### Apple 페이
 
-다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] 스토어 체크아웃 내 결제 버튼.
+다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] safari 브라우저에서 스토어의 체크아웃에 있는 결제 버튼입니다.
 
 완료한 경우에만 Apple 페이를 사용할 수 있습니다. [Apple Paypal을 통해 자가 등록 결제](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 그런 다음 [Apple Pay 구성](settings.md/#payment-buttons) 상점에서요. 다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-button) 추가 정보.
 
@@ -230,7 +230,7 @@ PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니
 1. 단추 높이 선택기를 활성화하려면 **[!UICONTROL Responsive button height]** 선택기.
 1. 을 수정하려면 다음을 수행합니다 **[!UICONTROL Label]**&#x200B;원하는 레이블 옵션을 선택합니다.
 
-   레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다.
+   레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다. 아래 이미지에서 **[!UICONTROL Shape]** 이(가) (으)로 설정됨 _사각형_ 및 **[!UICONTROL Label]** 이(가) (으)로 설정됨 _PayPal(권장)_.
 
    ![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="400" zoomable="yes"}
 

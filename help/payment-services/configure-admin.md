@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ## [!UICONTROL Apple Pay]
 
-다음 [!UICONTROL Apple Pay] 결제 옵션을 사용하면 가맹점이 구매 고객에게 Apple Pay를 제공할 수 있으며, 구매자는 디바이스에서 터치 ID를 사용하여 구매할 수 있습니다
+다음 [!UICONTROL Apple Pay] 결제 옵션을 통해 판매자는 장치에서 Touch ID를 사용하여 Safari 브라우저에서 구매할 수 있는 Apple Pay를 쇼핑객에게 제공할 수 있습니다.
 
 다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-button) 추가 정보.
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 다음을 참조하십시오 [결제 옵션](payments-options.md#paypal-smart-buttons) 추가 정보.
 
-Configure [!DNL PayPal Smart Buttons]
+구성 [!DNL PayPal Smart Buttons]
 
 관리자 내에서 PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니다.
 

@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 0%
 
 [!UICONTROL Credit Card Fields] 신용 카드 또는 직불 카드 결제 방법을 위한 간단하고 안전한 체크아웃을 제공합니다. 쇼핑객이 신용 카드 필드를 사용하여 체크아웃할 때 구매자의 이름, 청구 주소 및 신용 또는 직불 카드 정보를 입력하여 주문합니다. 고객 정보는 구매 세션 중에 안전하게 사용되어 체크아웃 흐름을 원활하게 안내합니다.
 
+![체크아웃 시 신용 카드 필드](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 사용 [신용 카드 소산](#vaulting) 스토어에서 구매자가 나중에 빠른 체크아웃을 위해 신용 카드 정보를 저장(저장)할 수 있도록 할 수 있습니다.
 
 다음을 구성할 수 있습니다. [!UICONTROL Credit Card Fields] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](settings.md#credit-card-fields) 추가 정보.
@@ -41,6 +43,10 @@ ht-degree: 0%
 ## [!DNL Apple Pay] 단추
 
 고객은 다음을 사용할 수 있습니다 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/): iOS 또는 macOS 장치에 저장된 신용 카드 및 직불 카드 결제 자격 증명을 사용하여 구매합니다.
+
+[!DNL Apple Pay] 는 Safari 브라우저에서만 사용할 수 있습니다.
+
+![미니카트의 Apple 결제 버튼](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 다음 [!DNL Apple Pay] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
 
@@ -54,7 +60,7 @@ ht-degree: 0%
 
 [!DNL PayPal Smart Buttons]: PayPal을 사용하여 구매를 완료하고 나중에 사용할 수 있도록 쇼핑객의 배송 주소, 청구 주소 및 결제 세부 정보를 저장합니다. 쇼핑객은 PayPal에서 이전에 저장하거나 제공하는 결제 방법을 사용할 수 있습니다.
 
-![[!DNL PayPal Smart Buttons] 옵션](assets/payment-buttons.png){width="400" zoomable="yes"}
+![PayPal 단추](assets/paypal-button.png){width="350" zoomable="yes"}
 
 다음을 구성할 수 있습니다. [!UICONTROL PayPal Smart Buttons] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
 
@@ -89,12 +95,6 @@ PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 �
 다음에서 나중에 결제 오퍼에 대한 정보를 참조하십시오. [PayPal의 Pay Later 오퍼 설명서](https://developer.paypal.com/docs/checkout/pay-later/us/). 사용 **국가 또는 지역** 드롭다운을 통해 관심 영역을 선택합니다.
 
 다음을 참조하십시오 [설정](settings.md#payment-buttons) 을(를) 비활성화/활성화하는 방법에 대해 알아보려면 [!DNL Pay Later] 메시지.
-
-### [!DNL Pay Now] 단추
-
-다음 [!DNL Pay Now] 고객이 결제 화면에서 결제 버튼을 클릭하면 PayPal 팝업 창에 버튼이 표시됩니다.
-
-최종 주문 금액을 아직 알 수 없고(예: 배송 주소 정보가 없는 경우) 고객이 제품 페이지, 미니 장바구니 또는 장바구니에서 체크아웃을 진행 중인 경우 _계속_ 버튼을 대신 사용할 수 있습니다. 고객이 클릭 시 _계속_, 결제 방법을 확인한 후 체크아웃을 완료하기 전에 필요한 세부 정보를 수집하기 위한 주문 검토 페이지로 이동합니다.
 
 ## PayPal 결제 버튼만 사용
 
