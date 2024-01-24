@@ -4,9 +4,9 @@ description: 설치, 업데이트 및 제거 방법 알아보기 [!DNL Data Conn
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ ht-degree: 0%
 
 1. (선택 사항) 다음과 같은 B2B 데이터를 포함합니다. [구매요청 이벤트](events.md#b2b-events), 설치 [B2B 확장](#install-the-b2b-extension).
 
-### 주문 커넥터 구성
+### Adobe I/O 이벤트 설치
 
-를 설치한 후 `experience-platform-connector` 확장을 사용하려면 설치를 완료해야 합니다. `orders-connector` 배포 유형 기반의 모듈: 온프레미스 또는 Adobe Commerce on Cloud 인프라.
+를 설치한 후 `experience-platform-connector` 확장을 사용하려면 Adobe Commerce용 Adobe I/O 이벤트 를 설치해야 합니다.
+
+다음 단계는 Adobe Commerce on cloud infrastructure 및 온프레미스 설치 모두에 적용됩니다.
+
+1. Commerce 2.4.4 또는 2.4.5를 실행하는 경우 다음 명령을 사용하여 이벤트 모듈을 로드합니다.
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Commerce 2.4.6 이상 버전은 이러한 모듈을 자동으로 로드합니다.
+
+1. 프로젝트 종속성을 업데이트합니다.
+
+   ```bash
+   composer update
+   ```
+
+1. 새 모듈 활성화:
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+배포 유형(온-프레미스 또는 Adobe Commerce on Cloud 인프라)을 기반으로 설치를 완료합니다.
 
 #### 온-프레미스
 

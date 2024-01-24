@@ -4,9 +4,9 @@ description: 각 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ ht-degree: 0%
 
 | 설명 | XDM 이벤트 이름 |
 |---|---|
-| 쇼핑객이 주문을 할 때 트리거됩니다. | `commerce.order` |
+| 쇼핑객이 주문을 할 때 트리거됩니다. | `commerce.purchases` |
 
 #### completeCheckout에서 수집한 데이터
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 | `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
 | `commerce.order.taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액. |
 | `commerce.order.discountAmount` | 전체 주문에 적용되는 할인 금액을 나타냅니다. |
-| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. For example, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예를 들어, `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `commerce.shipping.shippingMethod` | 일반배송, 퀵배송, 매장픽업 등 고객이 선택한 배송 방법 |
 | `commerce.shipping.shippingAmount` | 고객이 배송비로 지불해야 했던 금액. |  | `shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
@@ -561,6 +561,29 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
 | `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 
+### deleteRequisitionList
+
+| 설명 | XDM 이벤트 이름 |
+|---|---|
+| 구매자가 구매 요청 목록을 삭제할 때 트리거됩니다. | `commerce.requisitionListDeletes` |
+
+#### deleteRequisitionList에서 수집된 데이터
+
+다음 표에서는 이 이벤트에 대해 수집된 데이터에 대해 설명합니다.
+
+| 필드 | 설명 |
+|---|---|
+| `commerce.requisitionListDeletes` | 구매요청 목록이 삭제되었음을 나타냅니다. |
+| `commerce.requisitionList` | 고객이 생성한 구매요청 목록의 속성. |
+| `commerce.requisitionList.ID` | 구매요청 목록에 대한 고유 식별자. |
+| `commerce.requisitionList.name` | 고객이 지정한 구매요청 목록의 이름. |
+| `commerce.requisitionList.description` | 고객이 지정한 구매요청 목록에 대한 설명. |
+| `commerce.commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
+| `commerce.commerceScope.environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
+| `commerce.commerceScope.storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
+| `commerce.commerceScope.storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
+| `commerce.commerceScope.websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
+
 ## 백오피스 이벤트
 
 백오피스 이벤트에는 주문이 접수, 취소, 환불, 배송 또는 완료된 경우와 같은 주문 상태에 대한 정보가 포함됩니다. 이러한 서버측 이벤트가 수집하는 데이터는 쇼핑객 주문에 대한 360 뷰를 보여줍니다. 이 보기는 마케팅 캠페인을 개발할 때 판매자가 전체 주문 상태를 더 잘 타겟팅하거나 분석하는 데 도움이 됩니다. 예를 들어 연중 다양한 시기에 탁월한 성능을 발휘하는 특정 제품 범주의 트렌드를 확인할 수 있습니다. 예를 들어, 추운 달에 더 잘 팔리는 겨울 옷이나 몇 년 동안 쇼핑객들이 관심을 갖는 특정 제품 색깔. 또한 주문 상태 데이터를 사용하면 이전 주문을 기반으로 전환하는 쇼핑객의 성향을 파악하여 라이프타임 고객 가치를 계산하는 데 도움이 될 수 있습니다.
@@ -590,7 +613,7 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
 | `commerce.order.taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액. |
 | `commerce.order.discountAmount` | 전체 주문에 적용되는 할인 금액을 나타냅니다. |
-| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. For example, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예를 들어, `2022-10-15T20:20:39+00:00`. |
 | `commerce.order.currencyCode` | 주문 합계에 사용되는 ISO 4217 통화 코드. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `commerce.shipping.shippingMethod` | 일반배송, 퀵배송, 매장픽업 등 고객이 선택한 배송 방법 |
@@ -908,7 +931,7 @@ B2B 이벤트에는 [징발 목록](https://experienceleague.adobe.com/docs/comm
 | `commerce.order.payments.paymentType` | 해당 주문에 대한 결제 방법. 계산, 사용자 지정 값이 허용됩니다. |
 | `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
 | `commerce.order.taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액. |
-| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. For example, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예를 들어, `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `commerce.shipping.shippingMethod` | 일반배송, 퀵배송, 매장픽업 등 고객이 선택한 배송 방법 |
 | `commerce.shipping.shippingAmount` | 고객이 배송비로 지불해야 했던 금액. |

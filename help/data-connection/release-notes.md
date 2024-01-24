@@ -3,10 +3,10 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ ht-degree: 1%
 이러한 릴리스 노트는 에서 사용하는 확장과 관련된 기능 변경 사항 및 수정 사항에 대해 설명합니다. [!DNL Data Connection] 확장명.
 
 +++지원되는 서비스 업데이트
+
+_2024년 1월 24일_
+
+![신규](../assets/new.svg) - 을(를) 업데이트함 `data-services-b2b` 새 구매요청 이벤트를 포함하는 확장명 [deleteRequisitionList](events.md#deleterequisitionlist) B2B 판매자용.
 
 _2023년 11월 16일_
 
