@@ -3,9 +3,9 @@ title: 사용 [!DNL Payment Services] 프로덕션용
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다. [!DNL Payment Services] 프로덕션용
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 클릭 **[!UICONTROL Save]**.
 1. 클릭 **[!UICONTROL Go to Payment Services]** 로 돌아가려면 [!DNL Payment Services] 집.
-1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [캐시 지우기](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    모든 구성 변경 후 지우기를 수행해야 합니다.
 
@@ -51,14 +51,58 @@ ht-degree: 0%
 
 ## 완전한 판매자 온보딩
 
+스토어가 결제 서비스와 연동되도록 하는 다음 단계는 라이브 온보딩을 완료하는 것입니다.
+
+결제 서비스 제공 [**고급** (완전히 지원됨) 및 **표준** (Express Checkout) 결제 옵션](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) 및 온보딩 플로우, 운영하는 국가와 선호하는 결제 경험에 따라 다릅니다.
+
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 클릭 **[!UICONTROL Live onboarding]**.
 
    다음에 대한 라이브 온보딩을 아직 완료하지 않은 경우 이 옵션이 표시됩니다 [!DNL Payment Services].
 
-   PayPal 창이 나타납니다.
+1. 다음에서 _국가 선택_ 모달에서 운영 중인 국가를 선택합니다.
 
-1. PayPal 계정 자격 증명(샌드박스 계정 자격 증명이 아님)을 사용하여 PayPal 흐름을 계속 진행하거나 새 PayPal 계정에 등록합니다.
+   결제 서비스는 의 모든 결제 옵션에 대한 전체 지원을 제공합니다. [5개국](../payment-services/overview.md#availability) 현재. 결제 서비스는 국가 목록에 표시된 다른 모든 국가에 대해 빠른 체크아웃 기능(결제 옵션의 하위 집합)을 제공합니다.
+
+   목록에서 선택한 국가에 따라 결제 옵션 및 온보딩 플로우가 결정됩니다.[고급](#advanced-onboarding) (완전히 지원됨) 또는 [표준](#standard-onboarding) (Express Checkout) - 사용할 수 있습니다.
+
+>[!TIP]
+>
+> 온보딩 옵션(Standard 또는 Advanced)을 선택하고 진행한 후에는 온보딩을 다시 완료하여 초기 선택에서 업그레이드 또는 다운그레이드해야 합니다.
+
+### 고급 온보딩
+
+이 온보딩 플로우는에서 판매자가 사용할 수 있습니다. [완전히 지원되는 국가](../payment-services/overview.md#availability).
+
+국가를 선택한 후:
+
+1. 표시되는 모달에서 다음을 선택합니다. **고급**.
+
+   의 경우 **표준** 옵션을 선택한 다음 [표준 온보딩 흐름](#standard-onboarding).
+
+1. 클릭 **계속**.
+1. PayPal 계정 자격 증명(샌드박스 계정 자격 증명이 아님)을 사용하여 완전히 지원되는 고급 온보딩에 대한 PayPal 흐름을 계속 진행합니다 _또는_ 새 PayPal 계정에 등록하십시오.
+
+>[!IMPORTANT]
+>
+>**고급 온보딩** 판매자에게 다음 작업을 요구함: [지급 권한 요청](#request-payments-entitlement-from-adobe) 라이브 온보딩을 활성화하십시오.
+
+### 표준 온보딩
+
+이 표준 온보딩 플로우는 다음 국가의 사용 가능한 상인에 대해 사용할 수 있습니다. [빠른 체크아웃 지원만](../payment-services/overview.md#availability) 이(가) 제공됩니다.
+
+국가를 선택한 후:
+
+1. 다음에서 _결제 서비스 계약_ 표시되는 모달 **결제 서비스 계약** Adobe Commerce 결제 서비스 계약을 보기 위한 링크입니다.
+1. 다음에서 _결제 서비스 계약_ 모달, 클릭 **동의함**.
+1. PayPal 계정 자격 증명(샌드박스 계정 자격 증명이 아님)을 사용하거나 새 PayPal 계정에 등록하여 빠른 체크아웃 온보딩을 위한 PayPal 흐름을 계속 진행합니다.
+
+>[!IMPORTANT]
+>
+>[Apple 결제 및 신용카드 필드](../payment-services/payments-options.md) 다음에 사용할 수 없음: **표준 온보딩**.
+
+## 이메일 주소 확인
+
 1. 관리 사이드바에서 다음 위치로 이동하십시오. **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    다음 _[!UICONTROL Live onboarding]_버튼이 더 이상 표시되지 않고 &quot;[!UICONTROL Live payments pending]&quot; 텍스트 상자입니다.
@@ -77,7 +121,7 @@ ht-degree: 0%
 
 ## Adobe에서 결제 권한 요청
 
-라이브 온보딩을 활성화하려면 Adobe에서 지급 자격을 요청해야 합니다.
+스토어가 라이브로 전환되도록 하려면 Adobe에서 결제 권한을 요청하십시오( 용) [고급 온보딩만](#advanced-onboarding)):
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 클릭 **[!UICONTROL Get Live Payments]** (으)로 [!DNL Payment Services] 집.
@@ -87,7 +131,7 @@ ht-degree: 0%
 1. 양식을 작성합니다.
 1. 영업팀 직원이 연락을 드릴 것입니다.
 
-또는 다음 Adobe에서 결제 권한을 요청할 수 있습니다. [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+또는 다음 Adobe에서 지급 권한을 요청할 수 있습니다. [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -95,8 +139,7 @@ ht-degree: 0%
 
 ## 가격 책정 계층 구성
 
-을(를) 가져오려면 [!DNL Payment Services] _판매자 ID_:
-
+가져오기 [!DNL Payment Services] _판매자 ID_:
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 홈 보기에서 **[!UICONTROL Settings]**. 다음을 참조하십시오 [홈](payments-home.md) 추가 정보.
@@ -106,7 +149,7 @@ ht-degree: 0%
 
 A _프로덕션 판매자 ID_ 는에서 자동 생성되고 채워집니다. [구성](configure-admin.md). 이 ID를 변경하거나 변경하지 마십시오.
 
-라이브 지급을 사용하려면
+라이브 결제 활성화:
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 홈에서 **[!UICONTROL Settings]** 페이지 오른쪽 상단에 있습니다. 다음을 참조하십시오 [홈](payments-home.md) 추가 정보.

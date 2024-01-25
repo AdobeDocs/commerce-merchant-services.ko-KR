@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -46,13 +46,15 @@ ht-degree: 0%
 
 [!DNL Payment Services] 다음에 사용 가능: [!DNL Adobe Commerce] 및 [!DNL Magento Open Source]. 다음 [!DNL Payment Services] 확장이 이제 와 호환됩니다. [!DNL Adobe Commerce] 버전 2.4.x.
 
-현재, [!DNL Payment Services] 은 다음 국가의 상인이 사용할 수 있습니다.
+현재, [!DNL Payment Services] 에서 전체 지원 제공 [고급 온보딩](../payment-services/production.md#advanced-onboarding)) 다음 국가의 모든 결제 방법을 참조하십시오.
 
 * 미국 (US)
 * 캐나다 (CA)
 * 오스트레일리아(호주)
 * 프랑스 (FR)
 * 영국 (UK)
+
+결제 서비스 제공 [Express Checkout 기능](../payment-services/payments-options.md) 기타(지급 옵션 하위 집합) [온보딩 중 사용 가능한 국가](../payment-services/production.md#complete-merchant-onboarding).
 
 다음을 참조하십시오 [라이프사이클 정책](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) 및 [[!DNL Payment Services] 릴리스 정보](release-notes.md) 페이지를 참조하십시오.
 

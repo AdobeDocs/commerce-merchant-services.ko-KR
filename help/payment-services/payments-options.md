@@ -3,19 +3,18 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # 결제 옵션
 
-포함 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] [!DNL Payment Services], 여러 결제 옵션을 사용할 수 있습니다. 다음을 통해 이러한 결제 옵션을 구성할 수 있습니다.
+포함 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] [!DNL Payment Services], 여러 결제 옵션을 사용할 수 있습니다.
 
-* [홈 설정](payments-home.md)
-* [구성 저장](configure-admin.md) (기존 결제 옵션 또는 다중 스토어 설정에 권장)
+다음에서 이러한 결제 옵션을 구성할 수 있습니다. [홈 설정](payments-home.md) 또는 [구성 저장](configure-admin.md) (기존 결제 옵션 또는 다중 스토어 설정에 권장됨).
 
 체크아웃 프로세스의 위치에 따라 각 결제 방법마다 다른 동작이 있습니다.
 
@@ -26,7 +25,16 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->결제를 처리하려면 먼저 결제 서비스 온보딩을 완료해야 합니다.
+>[!DNL Payment Services] 결제를 처리하려면 먼저 온보딩을 완료해야 합니다.
+
+## 표준 및 고급 결제 경험 비교
+
+[!DNL Payment Services] 다음을 제공합니다 **고급** (완전히 지원됨) 및 **표준** (Express Checkout) 결제 옵션 및 온보딩 플로우는 운영하는 국가에 따라 다릅니다.
+
+* **고급** - 모두 사용 가능 [결제 옵션](../payment-services/payments-options.md) 현재에 사용 가능 [완전히 지원되는 국가](../payment-services/overview.md#availability). 실시간 결제를 활성화하려면 온보딩 중에 [고급 온보딩 옵션](../payment-services/production.md#advanced-onboarding).
+* **표준** - 일부 결제 옵션(Express Checkout) - PayPal 신용 카드 및 직불 카드는 지원되는 다른 국가에서 사용할 수 있습니다. [신용 카드 필드](#credit-card-fields) 및 [Apple 페이](#apple-pay-button) 이 온보딩 옵션에는 사용할 수 없습니다. 실시간 결제를 활성화하려면 온보딩 중에 [표준 온보딩 옵션](../payment-services/production.md#standard-onboarding).
+
+다음을 참조하십시오 [사용 [!DNL Payment Services] 프로덕션용](../payment-services/production.md#complete-merchant-onboarding) 고급 및 표준 온보딩 완료에 대한 자세한 내용
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ ht-degree: 0%
 
 사용 [신용 카드 소산](#vaulting) 스토어에서 구매자가 나중에 빠른 체크아웃을 위해 신용 카드 정보를 저장(저장)할 수 있도록 할 수 있습니다.
 
-다음을 구성할 수 있습니다. [!UICONTROL Credit Card Fields] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](settings.md#credit-card-fields) 추가 정보.
+다음을 구성할 수 있습니다. [!UICONTROL Credit Card Fields] 저장소 구성 또는 [!DNL Payment Services] 집. 다음을 참조하십시오 [설정](settings.md#credit-card-fields) 추가 정보.
 
 신용 카드 필드의 레이아웃, 너비, 높이 및 외부 스타일을 변경할 수도 있습니다. 다음을 참조하십시오 [PayPal 설명서](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) 추가 정보.
 
@@ -62,7 +70,7 @@ ht-degree: 0%
 
 ![PayPal 단추](assets/paypal-button.png){width="350" zoomable="yes"}
 
-다음을 구성할 수 있습니다. [!UICONTROL PayPal Smart Buttons] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
+다음을 구성할 수 있습니다. [!UICONTROL PayPal Smart Buttons] 저장소 구성 또는 [!DNL Payment Services] 집.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
 
 PayPal의 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/payment-methods/) 각 결제 방법을 현재 사용할 수 있는 국가를 알아봅니다.
 
