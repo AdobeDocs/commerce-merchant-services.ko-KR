@@ -3,7 +3,7 @@ title: 사용 [!DNL Payment Services] 프로덕션용
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다. [!DNL Payment Services] 프로덕션용
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ ht-degree: 0%
    관련 옵션이 확장된 상태로 홈 보기의 설정 영역으로 이동합니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)를 클릭하여 제품에서 [!DNL Payment Services] 옵션 을 참조하십시오. [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. 위치 _[!UICONTROL General Configuration]_, 설정됨&#x200B;**[!UICONTROL Enable]**끝 `Yes`.
-1. 설정 **[!UICONTROL Payment Action]**, 두 가지 모두에 대해 _[!UICONTROL Credit Card Fields]_및_[!UICONTROL PayPal Smart Buttons]_&#x200B;을 클릭하여 다음 중 하나로 만듭니다.
+1. 설정 **[!UICONTROL Payment Action]**, 두 가지 모두에 대해 _[!UICONTROL Credit Card Fields]_및_[!UICONTROL PayPal payment buttons]_&#x200B;을 클릭하여 다음 중 하나로 만듭니다.
 
    | 설정 | 설명 |
    |---|---|
@@ -47,7 +47,7 @@ ht-degree: 0%
 
    모든 구성 변경 후 지우기를 수행해야 합니다.
 
-다음을 참조하십시오 [결제 서비스 구성](settings.md) 신용 카드 필드 및 PayPal 스마트 단추 구성에 대한 자세한 내용을 보려면.
+다음을 참조하십시오 [결제 서비스 구성](settings.md) 신용 카드 필드 및 PayPal 결제 버튼 구성에 대한 자세한 내용.
 
 ## 완전한 판매자 온보딩
 

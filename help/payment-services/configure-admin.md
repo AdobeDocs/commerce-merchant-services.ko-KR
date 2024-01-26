@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -116,28 +116,28 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Apple Pay] 장바구니 페이지의 를 참조하십시오. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-다음 [!DNL PayPal Smart Buttons] 결제 옵션은 고객에게 간편하고 빠르고 안전한 체크아웃 프로세스를 제공합니다.
+다음 [!DNL PayPal payment buttons] 결제 옵션은 고객에게 간편하고 빠르고 안전한 체크아웃 프로세스를 제공합니다.
 
 다음을 참조하십시오 [결제 옵션](payments-options.md#paypal-smart-buttons) 추가 정보.
 
-구성 [!DNL PayPal Smart Buttons]
+구성 [!DNL PayPal payment buttons]
 
-관리자 내에서 PayPal 스마트 단추 결제 옵션을 활성화하고 구성할 수 있습니다.
+관리자 내에서 PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
 1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
-1. 다음에서 _[!UICONTROL Payment Services]_섹션을 확장합니다._[!UICONTROL PayPal Smart Buttons]_ 섹션.
+1. 다음에서 _[!UICONTROL Payment Services]_섹션을 확장합니다._[!UICONTROL PayPal payment buttons]_ 섹션.
 1. 체크아웃 중에 표시된 대로 결제 방법의 이름을 변경하려면 다음을 편집합니다. _[!UICONTROL Title]_필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **[!UICONTROL Authorize and Capture]**.
 1. 체크아웃 페이지에서 결제 방법의 우선 순위를 정하려면 `Numeric Only` 의 값 **[!UICONTROL Sort order]** 필드.
 1. 활성화/비활성화하려면 [나중에 결제 메시지](payments-options.md#pay-later-button), 선택 `Yes`/`No` 대상 **[!UICONTROL Display Pay Later Message]**.
-1. 체크아웃 페이지에 PayPal 스마트 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on checkout page]**.
-1. 제품 세부 사항 페이지에 PayPal 스마트 단추를 표시하려면 `Yes` 대상: **[!UICONTROL Show buttons on product detail page]**.
-1. 미니 장바구니 미리 보기에 PayPal 스마트 단추를 표시하려면 다음을 선택합니다. `Yes` 대상 **[!UICONTROL Show buttons in mini cart preview]**.
-1. 장바구니 페이지에 PayPal 스마트 단추를 표시하려면 다음을 선택합니다 `Yes` 대상: **[!UICONTROL Show buttons on cart page]**.
+1. 체크아웃 페이지에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on checkout page]**.
+1. 제품 세부 사항 페이지에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on product detail page]**.
+1. 미니 장바구니 미리 보기에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상 **[!UICONTROL Show buttons in mini cart preview]**.
+1. 장바구니 페이지에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on cart page]**.
 1. Venmo를 결제 옵션으로 사용하려면 을 선택합니다. `Yes` 대상 **[!UICONTROL Venmo Enabled]**.
 1. 신용 카드와 직불 카드를 결제 옵션으로 사용하려면(PayPal 스마트 단추) 다음을 선택합니다. `Yes` 대상 **[!UICONTROL Credit and Debit Card Enabled]**.
 1. 활성화/비활성화하려면 [PayPal 나중에 결제](payments-options.md#pay-later-button) 결제 옵션, 선택 `Yes`/`No` 대상 **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -152,10 +152,10 @@ ht-degree: 0%
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: 텍스트 필드 |
 | [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | 웹 사이트 | 장바구니, 제품 페이지, 미니 장바구니에서, 그리고 체크아웃 흐름 동안 나중에 결제 메시지를 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on checkout page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 체크아웃 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on product detail page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 제품 세부 사항 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] ( 미니 장바구니 미리 보기) 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Show buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal Smart Buttons] 장바구니 페이지의 를 참조하십시오. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on checkout page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] 체크아웃 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on product detail page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] 제품 세부 사항 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] ( 미니 장바구니 미리 보기) 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] 장바구니 페이지의 를 참조하십시오. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Venmo Enabled] | 스토어 뷰 | 결제 버튼이 표시되는 Venmo 결제 옵션을 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Credit and Debit Card Enabled] | 스토어 뷰 | 결제 버튼이 표시되는 신용 카드 및 직불 카드 옵션을 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL PayPal Pay Later Enabled] | 스토어 뷰 | 결제 버튼이 표시되는 PayPal Pay Later 결제 옵션 모양을 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -184,12 +184,12 @@ ht-degree: 0%
 
 | 필드 | 범위 | 설명 |
 |--- |--- |--- |
-| [!UICONTROL Layout] | 스토어 뷰 | Paypal 스마트 단추의 레이아웃 스타일을 정의합니다. 옵션: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
-| [!UICONTROL Color] | 스토어 뷰 | Paypal 스마트 단추의 색상을 정의합니다. 옵션: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
-| [!UICONTROL Shape] | 스토어 뷰 | Paypal 스마트 단추의 모양을 정의합니다. 옵션: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
-| [!UICONTROL Use Default Height] | 스토어 뷰 | PayPal 스마트 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
-| [!UICONTROL Height] | 스토어 뷰 | PayPal 스마트 단추의 높이를 정의합니다. 기본값: 없음 |
-| [!UICONTROL Label] | 스토어 뷰 | PayPal 스마트 단추에 표시되는 레이블을 정의합니다. 옵션: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
+| [!UICONTROL Layout] | 스토어 뷰 | Paypal 결제 버튼에 대한 레이아웃 스타일을 정의합니다. 옵션: `[!UICONTROL Vertical]` / `[!UICONTROL Horizontal]` |
+| [!UICONTROL Color] | 스토어 뷰 | Paypal 결제 버튼의 색상을 정의합니다. 옵션: [!UICONTROL Blue] / `[!UICONTROL Gold]` / `[!UICONTROL Silver]` / `[!UICONTROL White]` / `[!UICONTROL Black]` |
+| [!UICONTROL Shape] | 스토어 뷰 | Paypal 결제 버튼의 모양을 정의합니다. 옵션: `[!UICONTROL Rectangular]` / `[!UICONTROL Pill]` |
+| [!UICONTROL Use Default Height] | 스토어 뷰 | PayPal 결제 단추에서 기본 높이를 사용하는지 여부를 정의합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Height] | 스토어 뷰 | PayPal 결제 버튼의 높이를 정의합니다. 기본값: 없음 |
+| [!UICONTROL Label] | 스토어 뷰 | PayPal 결제 단추에 표시되는 레이블을 정의합니다. 옵션: `[!UICONTROL PayPal]` / `[!UICONTROL Checkout]` / `[!UICONTROL Buynow]` / `[!UICONTROL Pay]` / `[!UICONTROL Installment]` |
 | [!UICONTROL Tagline] | 스토어 뷰 | 태그 지정을 활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## 캐시 초기화

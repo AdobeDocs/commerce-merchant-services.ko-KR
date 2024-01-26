@@ -3,9 +3,9 @@ title: 테스트 및 유효성 검사
 description: 테스트 및 유효성 검사는 다음을 수행하는 데 도움이 됩니다. [!DNL Payment Services] 기능은 예상대로 작동하며 고객에게 최상의 결제 옵션을 제공합니다.
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 테스트 [!DNL Payment Services] 샌드박스 환경에서는 실제 은행 및 가맹점이 아닌 PayPal 샌드박스에만 연결된 시뮬레이션된 환경이지만 중요한 유효성 검사 단계입니다.
 
-1. 다음 중 하나를 사용하여 저장소에서 성공적으로 체크아웃을 완료합니다. [신용 카드 필드](payments-options.md#credit-card-fields) 또는 다음 중 하나 [PayPal 스마트 단추](payments-options.md#paypal-smart-buttons). 다음을 참조하십시오 [자격 증명 테스트](#testing-credentials) 테스트를 위해 가짜 신용 카드를 사용하는 방법에 대한 자세한 정보.
+1. 다음 중 하나를 사용하여 저장소에서 성공적으로 체크아웃을 완료합니다. [신용 카드 필드](payments-options.md#credit-card-fields) 또는 다음 중 하나 [PayPal 결제 단추](payments-options.md#paypal-smart-buttons). 다음을 참조하십시오 [자격 증명 테스트](#testing-credentials) 테스트를 위해 가짜 신용 카드를 사용하는 방법에 대한 자세한 정보.
 1. 캡처(결제 액션이 다음과 같은 경우) [을 로 설정 `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [환불](refunds.md), 또는 [무효](voids.md) 방금 완료된 주문. 다음을 간단히 수행할 수도 있습니다. [송장 만들기](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} 주문의 경우, 지급 조치가 다음으로 설정된 경우 `Authorize` 대신 `Authorize and Capture`.
 1. 24-48시간 이내에 트랜잭션 및 기타 정보를 [지급 보고서](payouts.md).
 1. 다음에서 주문 세부 사항 보기: [주문 결제 상태 보고서](order-payment-status.md).

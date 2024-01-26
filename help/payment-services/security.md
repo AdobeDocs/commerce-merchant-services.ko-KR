@@ -4,9 +4,9 @@ description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검�
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ EU 또는 영국 내에서 3DS 준수가 필요한 상인인 경우 수동으로
 
 다음을 참조하십시오 [신용 카드 보관](vaulting.md) 추가 정보.
 
-### PayPal 스마트 단추
+### PayPal 결제 단추
 
-PayPal 스마트 버튼을 사용하면 PCI 규제 데이터가 서비스에 전달되지 않습니다. 이러한 데이터를 저장하거나 유지 관리할 필요가 없으므로 PCI 규정 준수에 대한 우려가 크게 줄어듭니다.
+PayPal 결제 버튼을 사용하면 PCI 규제 데이터가 서비스에 전달되지 않습니다. 이러한 데이터를 저장하거나 유지 관리할 필요가 없으므로 PCI 규정 준수에 대한 우려가 크게 줄어듭니다.
 
 보안상의 이유로 PayPal은 체크아웃 시 청구 주소를 전달하지 않습니다(국가, 이메일 및 이름 만이 사용되는 청구 정보임). PayPal에 연락하고 검사 프로세스를 완료하여 사이트의 PayPal 체크아웃이 전체 청구 주소를 반환하도록 선택적으로 활성화할 수 있습니다.
 

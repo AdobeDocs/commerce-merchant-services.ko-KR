@@ -4,9 +4,9 @@ description: 거래 보고서를 사용하여 거래 승인 비율과 거래 추
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 이 보고서에서 연결된 상거래 주문 및 공급자 거래 ID, 거래 금액, 거래당 결제 방법 등을 모두 참조하십시오.
 
-모든 결제 방법이 동일한 세부 정보를 제공하는 것은 아닙니다. 예를 들어 신용 카드 거래는 응답, AVS 및 CCV 코드를 제공하며 거래 보고서에서 카드의 마지막 네 자리를 제공합니다. PayPal 스마트 단추는 그렇지 않습니다.
+모든 결제 방법이 동일한 세부 정보를 제공하는 것은 아닙니다. 예를 들어 신용 카드 거래는 응답, AVS 및 CCV 코드를 제공하며 거래 보고서에서 카드의 마지막 네 자리를 제공합니다. PayPal 결제 버튼은 제공하지 않습니다.
 
 다음을 수행할 수 있습니다. [트랜잭션 다운로드](#download-transactions) 기존 회계 또는 order management 소프트웨어에서 사용할 .csv 파일 형식으로.
 

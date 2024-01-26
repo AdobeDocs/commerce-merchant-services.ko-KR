@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _2023년 1월 29일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4110 --> 구매자가 제품 페이지, 미니 장바구니 및 장바구니에서 스마트 버튼을 사용하여 주문할 수 없는 문제를 해결했습니다. 이제 구매자가 주문을 성공적으로 완료할 수 있습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4110 --> 구매자가 제품 페이지, 미니 장바구니 및 장바구니의 결제 버튼을 사용하여 주문할 수 없는 문제를 해결했습니다. 이제 구매자가 주문을 성공적으로 완료할 수 있습니다.
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _2022년 12월 22일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부된 경우 결제 서비스의 송장 발행을 개선했습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 결제 서비스 에서는 를 사용하는 가맹점을 위한 PayPal 스마트 단추를 올바르게 표시합니다. [체크아웃 실행](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 Payment Services가 다음을 사용하는 가맹점에 대해 PayPal 결제 버튼을 올바르게 표시합니다. [체크아웃 실행](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _2022년 11월 23일_
 
 ![신규](../assets/new.svg)<!-- Issue PAY-3923 --> 이제 결제 서비스에는 사용하지 않는 끝점을 추적, 필터링 또는 사용하지 않을 수 있는 요청에 대한 버전 번호가 사용자 에이전트 헤더에 포함됩니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 스마트 버튼을 사용하여 제품 페이지에서 주문을 하면 결제 서비스에 주문 데이터가 올바르게 표시됩니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 결제 버튼을 사용하여 제품 페이지에서 주문이 이루어지면 결제 서비스에 주문 데이터가 올바르게 표시됩니다.
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _2022년 9월 30일_
 
 ![신규](../assets/new.svg)<!-- Issue PAY-3231 --> 판매자는 [추가 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 브랜드, 스토어 또는 제품 라인을 설명하기 위해 고객 거래 은행 거래 명세서에 표시되는 웹 사이트 또는 개별 스토어 조회수 구성
 
-![신규](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 스마트 단추 활성화 또는 비활성화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 결제 서비스 설정에서 체크아웃할 경우.
+![신규](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 결제 버튼 활성화 또는 비활성화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 결제 서비스 설정에서 체크아웃할 경우.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3546 --> 고객이 클릭 시 **[!UICONTROL Edit cart]**: 페이지가 장바구니 페이지로 리디렉션되고 빈 장바구니를 표시하는 대신 업데이트된 항목이 표시됩니다.
 
@@ -258,7 +258,7 @@ _2022년 6월 29일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3264 --> 이전에는 로그인한 사용자가 계정에 대한 기본 주소가 아닌 다른 청구/배송 주소를 선택한 경우 체크아웃하지 못했습니다. 이 문제가 해결되었으며 이제 선택한 청구/배송 주소가 (저장된 기본 주소 대신) 전송되고 체크아웃이 정상적으로 완료되었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3314 --> 체크아웃을 위해 PayPal 스마트 단추를 사용하지 않도록 설정하면 오류가 표시되지 않습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3314 --> 체크아웃을 위해 PayPal 결제 버튼을 사용하지 않도록 설정하면 오류가 표시되지 않습니다.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3330 --> 게스트 사용자가 대시가 포함된 전화 번호를 입력하면 체크아웃 중에 결제가 더 이상 실패하지 않습니다.
 
@@ -288,7 +288,7 @@ _2022년 3월 31일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2742 --> 이제 스토어 보기 수준에서 Venmo와 같은 사용 가능한 결제 방법을 활성화 및 비활성화할 수 있습니다. 이전에는 웹 사이트당 결제 방법만 구성할 수 있었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2277 --> 이제 선택적으로 [개별 PayPal 스마트 단추 활성화 또는 비활성화](settings.md#payment-buttons).
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2277 --> 이제 선택적으로 [개별 PayPal 결제 버튼 활성화 또는 비활성화](settings.md#payment-buttons).
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2561 --> 이전에 제거된 제품은 의 장바구니에 표시되지 않습니다. _주문 검토_ 페이지를 가리키도록 업데이트하는 중입니다.
 
@@ -314,7 +314,7 @@ _2021년 11월 29일_
 
 ![신규](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] 는 모든 판매자에게 적용되는 총 처리 용량을 기반으로 유연한 계층형 가격 정책을 지원합니다.
 
-![신규](../assets/new.svg)<!-- Issue PAY-1443 --> 쉽게 할 수 있습니다 [모양 및 느낌 맞춤화](payments-options.md) 의 PayPal 스마트 단추 및 신용 카드 필드 [!DNL Payment Services] 확장명.
+![신규](../assets/new.svg)<!-- Issue PAY-1443 --> 쉽게 할 수 있습니다 [모양 및 느낌 맞춤화](payments-options.md) 의 PayPal 결제 버튼 및 신용 카드 필드 [!DNL Payment Services] 확장명.
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 사용 [잘못된 작성기 키](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) 확장을 설치하는 동안 사용자가 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) 를 정확히 `MAGEID`.
 
