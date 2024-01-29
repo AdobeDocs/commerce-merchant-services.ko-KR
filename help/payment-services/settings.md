@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 ### Apple 페이
 
-다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] safari 브라우저에서 스토어의 체크아웃에 있는 결제 버튼입니다.
+다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] safari 브라우저에서 스토어의 체크아웃 시 결제 버튼(가맹점 계정당 최대 99개 도메인).
 
 완료한 경우에만 Apple 페이를 사용할 수 있습니다. [Apple Paypal을 통해 자가 등록 결제](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 그런 다음 [Apple Pay 구성](settings.md/#payment-buttons) 상점에서요. 다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-button) 추가 정보.
 

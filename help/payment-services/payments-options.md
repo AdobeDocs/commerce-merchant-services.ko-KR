@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 고객은 다음을 사용할 수 있습니다 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/): iOS 또는 macOS 장치에 저장된 신용 카드 및 직불 카드 결제 자격 증명을 사용하여 구매합니다.
 
-[!DNL Apple Pay] 는 Safari 브라우저에서만 사용할 수 있습니다.
+[!DNL Apple Pay] 는 Safari 브라우저에서만 사용할 수 있습니다. 가맹점은 가맹점 계좌당 최대 99개의 도메인을 추가할 수 있다.
 
 ![미니카트의 Apple 결제 버튼](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
