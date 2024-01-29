@@ -4,9 +4,9 @@ description: 설치, 업데이트 및 제거 방법 알아보기 [!DNL Data Conn
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 ## 확장 설치
 
 다음 [!DNL Data Connection] 확장은 다음 위치에서 사용할 수 있습니다. [Adobe 마켓플레이스](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). 서버의 명령줄에서 이 확장을 설치하면 Adobe Commerce 설치에 다음과 같이 연결됩니다. [서비스](../landing/saas.md). 프로세스가 완료되면 **[!DNL Data Connection]** 및 **Commerce Services 커넥터** 다음에 표시: **시스템** 아래 메뉴 **서비스** 상거래 내 _관리자_.
+
+![[!DNL Data Connection] 확장 관리자 보기](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >

@@ -4,9 +4,9 @@ description: Headless 또는 사용자 지정 Commerce 상점 앞에서 Adobe Ex
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,4 @@ Experience Platform에 대한 SDK 구성을 완료한 후 SDK 구성을 Commerce
 
    이제 Adobe Experience Platform Mobile SDK를 Commerce 모바일 앱과 통합했습니다. 이벤트 데이터는 앱에서 Experience Platform 에지로 흐릅니다.
 
-모바일 Commerce 앱에서 Real-Time CDP 대상자를 검색하여 장바구니 가격 규칙 및 동적 블록을 알리는 방법에 대해 알아보려면 를 참조하십시오. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html).
+모바일 Commerce 앱에서 Real-Time CDP 대상자를 검색하여 장바구니 가격 규칙 및 동적 블록을 알리는 방법에 대해 알아보려면 를 참조하십시오. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
