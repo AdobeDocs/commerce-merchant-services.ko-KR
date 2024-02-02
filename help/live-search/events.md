@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] 이벤트'
 description: 이벤트가에 대한 데이터를 수집하는 방법 알아보기 [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ ht-degree: 0%
 
 ## 필수 대시보드 이벤트
 
-을(를) 채우려면 일부 이벤트가 필요합니다. [라이브 검색 대시보드](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+을(를) 채우려면 일부 이벤트가 필요합니다. [라이브 검색 대시보드](performance.md)
 
-| 대시보드 영역 | 이벤트 |
-| ----- | ---- | 
-| 고유 검색 | `search-request-sent`,`search-response-received` |
-| 결과 없음 검색 | `search-request-sent`,`search-response-received` |
-| 결과 없음 비율 | `search-request-sent`,`search-response-received` |
-| 자주 찾는 검색 | `search-request-sent`,`search-response-received` |
-| 평균 클릭 위치 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| 클릭스루 비율 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| 전환율 | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| 대시보드 영역 | 이벤트 | 조인 필드 |
+| ------------------- | ------------- | ---------- |
+| 고유 검색 | `page-view`, `search-request-sent`, | searchRequestId |
+| 결과 없음 검색 | `page-view`, `search-request-sent`, | searchRequestId |
+| 결과 없음 비율 | `page-view`, `search-request-sent`, | searchRequestId |
+| 자주 찾는 검색 | `page-view`, `search-request-sent`, | searchRequestId |
+| 평균 클릭 위치 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| 클릭스루 비율 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| 전환율 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### 필수 컨텍스트
 
