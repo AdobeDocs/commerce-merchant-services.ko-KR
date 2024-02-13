@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ ht-degree: 0%
 
 이 참고 사항에서는 버전 관리된 릴리스 외부에 게시된 업데이트 또는 호스팅된 서비스에 대한 개선 사항에 대해 설명합니다.
 
+_2024년 2월 13일_
+
+![신규](../assets/new.svg) [!DNL Live Search] 이제에서 의 기본 규칙 설정을 지원합니다. [머천다이징 검색](rules.md).
+
 _2023년 10월 27일_
 
 ![신규](../assets/new.svg) 다음 [!DNL Live Search] 이제 PLP 위젯에서 색상 견본을 지원합니다.
@@ -41,37 +45,26 @@ _2023년 4월 25일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 이제 고객은 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0 {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
-_2024년 2월 13일_
+_Feb 13, 2024_
 
-[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### 새로운 기능
+### New Features
 
-![신규](../assets/new.svg) [!DNL Live Search] 이제에서 의 기본 규칙 설정을 지원합니다. [머천다이징 검색](rules.md).
-![신규](../assets/new.svg) 여러 새 기능이 [PLP 위젯](plp-styling.md):
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
-* 목록/표 보기 전환
-* 장바구니에 추가 단추
-* 견본 지원
-* 제품당 여러 이미지
-* 가격 슬라이더
-* 언어 지원
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
 
-판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 이러한 기능에 액세스하려면 버전 >= 4.1.0으로 확장하십시오.
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-버전 3.1.1 이상을 설치한 후 새 인덱서를 활성화합니다.
-
-* 제품 가격 피드
-* 범위 웹 사이트 데이터 피드
-* 고객 그룹 데이터 피드 범위 지정
-
-업그레이드 후 변경 사항을 프로덕션에 푸시하기 전에 QA 또는 스테이징에서 업데이트된 구성을 테스트하십시오.
-
-## 이전 버전
-
-+++4.0.0 및 이전
+--->
 
 ## [!DNL Live Search] 4.0.0 {#400}
 
@@ -92,6 +85,18 @@ _2023년 11월 13일_
 ![수정](../assets/fix.svg) 다음 [!DNL Live Search] 이제 PLP 위젯은 새 설치에 대해 기본적으로 활성화되어 있습니다.
 ![수정](../assets/fix.svg) 위젯 클래스를 더 잘 격리하도록 CSS 스타일을 재구성했습니다.
 ![수정](../assets/fix.svg) 사소한 버그 수정
+
+버전 3.1.1 이상을 설치한 후 새 인덱서를 활성화합니다.
+
+* 제품 가격 피드
+* 범위 웹 사이트 데이터 피드
+* 고객 그룹 데이터 피드 범위 지정
+
+업그레이드 후 변경 사항을 프로덕션에 푸시하기 전에 QA 또는 스테이징에서 업데이트된 구성을 테스트하십시오.
+
+## 이전 버전
+
++++3.1.1 및 이전
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
