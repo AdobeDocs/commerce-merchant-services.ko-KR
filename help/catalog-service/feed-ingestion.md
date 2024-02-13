@@ -1,19 +1,15 @@
 ---
 title: 피드 수집 서비스
 description: Adobe Commerce용 피드 수집 서비스에 대해 알아보기
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # 피드 수집 서비스
-
->[!NOTE]
->
->피드 수집 서비스는 현재 비공개 베타에 있습니다. 아직 일반 용도로는 사용할 수 없습니다.
 
 피드 수집 서비스를 통해 대형 및/또는 복잡한 카탈로그를 보유한 고객이 데이터를 Adobe Commerce 서비스로 직접 보낼 수 있습니다.
 
@@ -36,12 +32,6 @@ Adobe Commerce 구성에 따라 데이터 저장소 및 데이터 흐름은 서�
 
 핵심 상거래 애플리케이션을 무시하고 상거래 서비스로 직접 데이터를 이동함으로써 제품 업데이트가 스토어에 더 빠르게 반영됩니다. SKU와 같은 핵심 카탈로그 데이터는 별도의 처리를 위해 핵심 Commerce 애플리케이션으로 전송됩니다.
 
-## Beta 가입
+## API
 
-피드 수집 서비스는 다음 용도로 디자인되었습니다.
-
-* Headless 구현을 채택한 중견기업 고객
-* 크고 복잡한 카탈로그를 보유한 고객
-* 카탈로그 데이터를 관리하기 위해 ERP 또는 서드파티 시스템을 사용하는 대신, Adobe Commerce 관리자를 사용하여 카탈로그 데이터를 관리하지 않는 고객
-
-Beta 프로그램에 참여하고자 하는 경우 sagonzal@adobe.com으로 팀에 문의하십시오.
+다음 [피드 수집 서비스 API 설명서](https://developer.adobe.com/commerce/services/feed-ingestion) 은 서비스를 구현하는 방법에 대한 자세한 내용을 제공합니다.

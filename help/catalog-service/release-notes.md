@@ -1,12 +1,12 @@
 ---
-title: '[!DNL Catalog Service] 릴리스 정보'
+title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ ht-degree: 1%
 
 ## 현재 메이저 버전
 
-### V1.13 릴리스
+### V1.16 릴리스
 
-_2023년 10월 12일_
+_2023년 2월 13일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 카탈로그 서비스가 다음을 지원합니다. `inStock` 제품 변형에 대한 플래그.
-![신규](../assets/new.svg) `urlKey` 및 `externalId` GraphQL 스키마에 추가되었습니다.
-![신규](../assets/new.svg) 이제 다운로드 가능한 제품 및 기프트 카드가 지원됩니다.
+![신규](../assets/new.svg) 제품 비디오는 이제 카탈로그 서비스 API에서 지원됩니다.
+![수정](../assets/fix.svg) 이제 고정 가격이 적용된 번들 제품이 지원됩니다.
+![수정](../assets/fix.svg) 이제 품절 옵션이 PDP 위젯에 표시됩니다.
 
 #### 알려진 제한 사항
 
 다음 기능은 아직 지원되지 않습니다.
 
-* 고정 가격으로 번들 제품
 * 동적 특성 페이로드의 최대 크기는 9MB입니다.
 * 그룹 제품 가격. 간단한 제품 가격으로 계산할 수 있습니다.
 * 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
@@ -49,6 +48,16 @@ API Mesh 및 Core GraphQL API를 사용하면 다음 제한 사항을 해결할 
 ## 이전 버전
 
 +++ 이전 버전
+
+### V1.13 릴리스
+
+_2023년 10월 12일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg) 카탈로그 서비스가 다음을 지원합니다. `inStock` 제품 변형에 대한 플래그.
+![신규](../assets/new.svg) `urlKey` 및 `externalId` GraphQL 스키마에 추가되었습니다.
+![신규](../assets/new.svg) 이제 다운로드 가능한 제품 및 기프트 카드가 지원됩니다.
 
 ### V1.12 릴리스
 

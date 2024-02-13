@@ -3,9 +3,9 @@ title: 소개 [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] 은 전환율을 높이고 매출을 증대하며 쇼핑객 참여를 촉진하는 데 사용할 수 있는 강력한 마케팅 도구입니다.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Storefront가 PWA Studio을 사용하여 구현된 경우 다음을 참조하십
 
 ## 개인 정보 보호
 
-제품 권장 사항을 위한 데이터 수집에는 PII(개인 식별 정보)가 포함되지 않습니다. 또한 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명으로 처리됩니다. 자세한 내용은 [Adobe 개인정보 처리방침](https://www.adobe.com/privacy/policy.html).
+데이터 수집 용도 [!DNL Product Recommendations] PII(개인 식별 정보)는 포함되지 않습니다. 또한 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명으로 처리됩니다. 자세한 내용은 [Adobe 개인정보 처리방침](https://www.adobe.com/privacy/policy.html).
+
+[!DNL Product Recommendations] 사용자는 다음을 참조할 수 있습니다 [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 데이터 동기화에 대한 자세한 데이터입니다.
 
 ## 제품 권장 사항 대 제품 관계
 

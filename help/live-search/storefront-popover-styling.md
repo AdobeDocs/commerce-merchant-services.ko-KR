@@ -2,9 +2,9 @@
 title: "스타일링 [!DNL Popover] 요소"
 description: "사용자 정의에 대한 기술 참고 사항 [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 67da9016d4bca9750fa9e440cce08ad1ae7100e2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ storefront 요소 스타일링에 대한 자세한 내용은 다음을 참조하
 #### .livesearch.product-price
 
 ![제품 가격](assets/livesearch-product-price.png)
+
+#### .livesearch product-link
+
+![제품 결과](assets/livesearch-product-link.png)
 
 ## 수정된 테마로 작업 {#working-with-modified-theme}
 

@@ -2,9 +2,9 @@
 title: 제품 목록 페이지 위젯
 description: 활성화 및 스타일링 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ PLP 위젯을 비활성화하려면 다음과 같이 하십시오.
 
 1. 다음으로 이동 **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **Storefront 기능** 및 설정 **제품 목록 위젯 활성화** &quot;아니요&quot;로 변경되었습니다.
 1. 선택 **구성 저장** 설정을 저장합니다.
+
+## 위젯 기능
+
+PLP 위젯은 검색 가능한 제품 페이지에서 기대하는 다양한 기능을 제공합니다. 여기에는 다음이 포함됩니다.
+
+* 속성별 필터링.
+* 색상 견본 지원
+* 장바구니에 추가 기능
+* 다중 언어 지원
+* 가격 슬라이더
 
 ## 스타일 예
 

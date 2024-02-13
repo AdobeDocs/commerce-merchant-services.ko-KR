@@ -1,11 +1,11 @@
 ---
-title: "[!DNL Live Search] 릴리스 정보"
+title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,38 @@ _2023년 4월 25일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 이제 고객은 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+_2024년 2월 13일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+### 새로운 기능
+
+![신규](../assets/new.svg) [!DNL Live Search] 이제에서 의 기본 규칙 설정을 지원합니다. [머천다이징 검색](rules.md).
+![신규](../assets/new.svg) 여러 새 기능이 [PLP 위젯](plp-styling.md):
+
+* 목록/표 보기 전환
+* 장바구니에 추가 단추
+* 견본 지원
+* 제품당 여러 이미지
+* 가격 슬라이더
+* 언어 지원
+
+판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 이러한 기능에 액세스하려면 버전 >= 4.1.0으로 확장하십시오.
+
+버전 3.1.1 이상을 설치한 후 새 인덱서를 활성화합니다.
+
+* 제품 가격 피드
+* 범위 웹 사이트 데이터 피드
+* 고객 그룹 데이터 피드 범위 지정
+
+업그레이드 후 변경 사항을 프로덕션에 푸시하기 전에 QA 또는 스테이징에서 업데이트된 구성을 테스트하십시오.
+
+## 이전 버전
+
++++4.0.0 및 이전
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
 _2023년 11월 13일_
@@ -61,27 +93,11 @@ _2023년 11월 13일_
 ![수정](../assets/fix.svg) 위젯 클래스를 더 잘 격리하도록 CSS 스타일을 재구성했습니다.
 ![수정](../assets/fix.svg) 사소한 버그 수정
 
-판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 이러한 기능에 액세스하려면 버전 >= 4.0.0으로 확장하십시오.
-
-버전 3.1.1 이상을 설치한 후 새 인덱서를 활성화합니다.
-
-* 제품 가격 피드
-* 범위 웹 사이트 데이터 피드
-* 고객 그룹 데이터 피드 범위 지정
-
-업그레이드 후 변경 사항을 프로덕션에 푸시하기 전에 QA 또는 스테이징에서 업데이트된 구성을 테스트하십시오.
-
-## 이전 버전
-
-+++3.1.1 및 이전
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _2023년 9월 15일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
-
-
 
 ![신규](../assets/new.svg) 새 카테고리 머천다이징 탭이 추가되었습니다. 이제 카테고리당 지능형 순위 및 수동 순위(고정, 증폭, 파기, 숨기기)를 추가할 수 있습니다.
 ![신규](../assets/new.svg) 사용자는 지능적 또는 수동 등급으로 단일 카테고리 규칙을 추가할 수 있습니다

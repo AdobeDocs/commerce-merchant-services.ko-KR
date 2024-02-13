@@ -1,15 +1,15 @@
 ---
-title: "성능"
+title: "성능 대시보드"
 description: "다음 [!DNL Live Search] 성과 대시보드는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# 성능
+# 성능 대시보드
 
 다음 [!DNL Live Search] 성과 대시보드는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다. 이 정보는 트렌드를 식별하고 클릭스루를 늘리고 전환율을 향상시키는 데 사용할 수 있습니다. 성능 대시보드는 특정 날짜 범위에 대한 검색 지표 스냅숏을 제공하며 다음 보고서를 포함합니다.
 
@@ -18,6 +18,8 @@ ht-degree: 0%
 * 인기 있는 결과
 
 ![성능](assets/performance-unique-searches.png)
+
+다음을 참조할 수도 있습니다. [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 데이터 동기화에 대한 자세한 데이터입니다.
 
 ## 보고서 보기
 
@@ -29,7 +31,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >성능 대시보드는 12시간마다 업데이트됩니다.
-
 
 ## 필드 설명
 

@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] for Adobe Commerce은 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQL 시스템은 구매자가 제품, 고객 계정, 장바구니, 체크아웃 등을 포함한 다양한 유형의 페이지와 상호 작용할 수 있도록 광범위한 쿼리(읽기 작업)와 변형(쓰기 작업)을 제공합니다. 하지만 제품 정보를 반환하는 쿼리는 속도에 최적화되지 않습니다. 서비스 GraphQL 시스템은 제품 및 관련 정보에 대한 쿼리만 수행할 수 있습니다. 이러한 쿼리는 유사한 핵심 쿼리보다 성능이 뛰어납니다.
 
-카탈로그 서비스 고객은 새로운 [SaaS 가격 인덱서](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
+[!DNL Catalog Service] 고객은 새로운 [SaaS 가격 인덱서](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
 
 ## 아키텍처
 
@@ -62,13 +62,13 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 
 ### 가격
 
-단순 제품은 가격이 있는 기본 판매 단위를 나타냅니다. Catalog Service는 할인 전 정가와 할인 후 최종 가격을 계산합니다. 가격 계산에는 고정 제품 세금이 포함될 수 있습니다. 개인화된 프로모션은 제외됩니다.
+단순 제품은 가격이 있는 기본 판매 단위를 나타냅니다. [!DNL Catalog Service] 은 할인 전 정규 가격과 할인 후 최종 가격을 계산합니다. 가격 계산에는 고정 제품 세금이 포함될 수 있습니다. 개인화된 프로모션은 제외됩니다.
 
 복잡한 제품에는 정해진 가격이 없습니다. 대신 카탈로그 서비스는 연결된 단식의 가격을 반환합니다. 예를 들어 판매자는 구성 가능한 제품의 모든 변형에 초기에 동일한 가격을 할당할 수 있습니다. 특정 크기나 색상이 인기가 없으면 판매자는 해당 변형의 가격을 낮출 수 있습니다. 따라서 복합(구성 가능) 제품의 가격은 처음에는 표준 및 인기 없는 변형의 가격을 모두 반영하여 가격 범위를 보여 줍니다. 쇼핑객이 사용 가능한 모든 옵션에 대한 값을 선택하면 상점 전면에는 단일 가격이 표시됩니다.
 
 >[!NOTE]
 >
-> 다음을 보유한 상거래 고객 [!DNL Catalog Service] 를 통해 웹 사이트에서 더 빠른 가격 변경 업데이트 및 동기화 시간을 이용할 수 있습니다. [SaaS 가격 인덱서](../price-index/index.md).
+> 다음을 보유한 상거래 고객 [!DNL Catalog Service] 을(를) 통해 웹 사이트에서 더 빠른 가격 변경 업데이트 및 동기화 시간을 이용할 수 있습니다. [SaaS 가격 인덱서](../price-index/index.md).
 
 ## 구현
 

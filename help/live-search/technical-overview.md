@@ -3,9 +3,9 @@ title: "기술 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ## 위젯 코드 저장소
 
-제품 목록 페이지 위젯 및 검색 팝오버 위젯은 모두 github 저장소에서 다운로드할 수 있습니다.
+제품 목록 페이지 위젯 및 라이브 검색 필드 위젯은 모두 github 저장소에서 다운로드할 수 있습니다.
 
 이를 통해 개발자는 기능과 스타일을 완전히 맞춤화할 수 있습니다. 이러한 사용자는 코드 자체를 호스팅하면서도 [!DNL Live Search] 서비스.
 
@@ -160,6 +160,8 @@ Live Search 위젯은 Adobe Commerce에서 지원하는 대부분의 가격 유�
 * 최소 광고 가격
 
 다음 항목 보기 [API 메쉬](../catalog-service/mesh.md) 보다 복잡한 가격 계산을 위해.
+
+가격 형식은 Commerce 인스턴스 내의 로케일 구성 설정을 지원합니다. *스토어* > 설정 > *구성* > 일반 > *일반* > 로컬 옵션 > 로케일.
 
 ## PWA 지원
 
@@ -192,7 +194,7 @@ Live Search 위젯은 Adobe Commerce에서 지원하는 대부분의 가격 유�
 ## 현재 지원되지 않음
 
 * 다음 [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 다음 경우에 모듈이 비활성화됩니다. [!DNL Live Search] 가 설치되고 상점 첫 번째 바닥글의 고급 검색 링크가 제거됩니다.
-* [계층 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 및 [특별 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 은(는) 다음에서 지원되지 않습니다. [!DNL Live Search] 팝오버 및 제품 목록 페이지 위젯.
+* [계층 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 및 [특별 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 은(는) 다음에서 지원되지 않습니다. [!DNL Live Search] 필드 및 제품 목록 페이지 위젯.
 
 ## 쿠키
 
