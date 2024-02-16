@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _2023년 11월 16일_
 
 _2023년 10월 10일_
 
-![신규](../assets/new.svg) - 새 주문 상태 이벤트가 추가되었습니다. [인보이스 발행 주문](events.md#orderinvoiced), [주문 품목 반품 시작됨](events.md#orderitemsreturninitiated), 및 [주문 품목 반품 완료](events.md#orderitemreturncompleted).
+![신규](../assets/new.svg) - 새 주문 상태 이벤트가 추가되었습니다. [인보이스 발행 주문](events-backoffice.md#orderinvoiced), [주문 품목 반품 시작됨](events.md#orderitemsreturninitiated), 및 [주문 품목 반품 완료](events.md#orderitemreturncompleted).
 ![수정](../assets/fix.svg) - 캐시를 새로 고친 후 통화 구성 변경 사항이 이벤트에 반영되지 않던 문제를 수정했습니다.
 ![수정](../assets/fix.svg) - 비동기 주문 배치가 활성화된 경우 주문 확인 메시지가 표시되지 않는 경우 오류를 수정했습니다.
 ![신규](../assets/new.svg) - 데이터를에 추가했습니다. [addToRequisitionList](events.md#addtorequisitionlist) 카테고리 보기 페이지의 단순 제품에 대한 이벤트입니다.
@@ -71,6 +71,16 @@ _2022년 10월 12일_
 ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support).
 
 +++
+
+## 3.2.0-베타1
+
+_2024년 2월 16일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![신규](../assets/new.svg) - Beta에 참여하는 경우 `composer.json` 파일의 루트 레벨은 다음과 같습니다. ` "minimum-stability": "beta"`.
+![신규](../assets/new.svg) - 에 추가된 기능 [사용자 지정 속성 추가](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![신규](../assets/new.svg) - 에 추가된 기능 [프로필 레코드 수집 및 보내기](connect-data.md#send-customer-profile-data) 및 데이터를 Experience Platform에 추가합니다.
 
 ## 3.1.0
 
@@ -120,8 +130,8 @@ _2023년 3월 30일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) - 번들 `commerce-data-export` 및 `saas-export` 과의 종속성 `experience-platform-connector` 확장명. 이전에는 이러한 종속성을 별도로 설치해야 했습니다. 이러한 종속성은 판매자 구성과 함께 서버 측 처리를 가능하게 합니다. [백오피스 이벤트](events.md#back-office-events).
-![신규](../assets/new.svg) - (이)라는 새로운 백오피스 이벤트가 추가되었습니다. [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![신규](../assets/new.svg) - 번들 `commerce-data-export` 및 `saas-export` 과의 종속성 `experience-platform-connector` 확장명. 이전에는 이러한 종속성을 별도로 설치해야 했습니다. 이러한 종속성은 판매자 구성과 함께 서버 측 처리를 가능하게 합니다. [백오피스 이벤트](events-backoffice.md).
+![신규](../assets/new.svg) - (이)라는 새로운 백오피스 이벤트가 추가되었습니다. [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 

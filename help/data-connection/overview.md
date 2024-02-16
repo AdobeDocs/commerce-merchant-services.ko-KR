@@ -3,9 +3,9 @@ title: 안내서 개요
 description: 를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다. [!DNL Data Connection] 확장명.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b2ef02d6d1efbd1d2bc1d386517f050f56d5d864
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---
@@ -26,18 +26,18 @@ Adobe Experience Platform은 상거래 스토어의 데이터를 하이드레이
 
 ![데이터가 Experience Platform 에지로 이동하는 방법](assets/commerce-edge.png)
 
-위의 이미지에서 상점 및 백오피스 데이터는 SDK, API 및 소스 커넥터를 사용하여 Experience Platform Edge로 전송됩니다. 확장이 데이터 공유 복잡성을 처리하므로 이러한 부분이 어떻게 작동하는지 완전히 이해할 필요는 없습니다. 이벤트 데이터가 에지에 있으면 해당 데이터를 다른 Experience Platform 애플리케이션으로 가져올 수 있습니다. For example:
+위의 이미지에서 동작, 백오피스 및 고객 프로필 데이터는 SDK, API 및 소스 커넥터를 사용하여 Experience Platform Edge로 전송됩니다. 확장이 데이터 공유 복잡성을 처리하므로 이러한 부분이 어떻게 작동하는지 완전히 이해할 필요는 없습니다. 이벤트 데이터가 에지에 있으면 해당 데이터를 다른 Experience Platform 애플리케이션으로 가져올 수 있습니다. For example:
 
 | 애플리케이션 | 목적 | 사용 사례 |
 |---|---|---|
-| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html) | 프로필 관리 및 세분화 서비스 | **구매 내역 세분화**: 판매자는 특정 기간(월별, 분기별, 연간 등)에 따라 품목을 구매하는 고객을 식별할 수 있습니다. 그런 다음 판매자는 이러한 고객을 위한 세그먼트를 만들고 프로모션, 캠페인 및에 타기팅할 수 있습니다. _단계 상단_ 구독 서비스 잠재 고객 데이터.<br> **범주 기반 세분화**: 가맹점은 구매한 제품 카테고리를 볼 수 있습니다.<br> **제공 기반 세분화**: 가맹점은 상품을 일관되게 반품하는 고객을 식별할 수 있습니다. 이제 고객에게 제공되는 오퍼와 할인이 보다 지능적일 수 있습니다. 예를 들어 항상 제품을 반품하는 고객에 대해 무료배송을 제거할 수 있다.<br> **유사 타기팅**: A _유사 대상_ 은 기존 고객과 유사한 특성을 공유하기 때문에 비즈니스에 관심이 있을 가능성이 높은 새로운 사람에게 도달하기 위해 상인이 프로모션을 위해 취하는 방법론입니다. 행동 및 트랜잭션 데이터를 기반으로 유사 세그먼트를 만들 수 있습니다.<br> **고객 성향**: 트랜잭션 데이터에서 만들 수 있는 고객 프로필의 깊이가 깊어지면 고객 행동 변화를 식별할 수 있습니다. 제품 수익률이나 제품 구성 등 계산에 유입되는 데이터가 많을수록 성향 점수에 대한 신뢰도가 높아질 것이다.<br> **크로스셀**: 판매자는 Commerce에서 캡처한 세분화된 정보에서 강력한 크로스셀 및 업셀 기회를 식별할 수 있습니다. |
+| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html) | 프로필 관리 및 세분화 서비스 | **구매 내역 세분화**: 판매자는 특정 기간(월별, 분기별, 연간 등)에 따라 품목을 구매하는 고객을 식별할 수 있습니다. 그런 다음 판매자는 이러한 고객을 위한 세그먼트를 만들고 프로모션, 캠페인 및에 타기팅할 수 있습니다. _단계 상단_ 구독 서비스 잠재 고객 데이터.<br> **범주 기반 세분화**: 가맹점은 구매한 제품 카테고리를 볼 수 있습니다.<br> **제공 기반 세분화**: 가맹점은 상품을 일관되게 반품하는 고객을 식별할 수 있습니다. 이제 고객에게 제공되는 오퍼와 할인이 보다 지능적일 수 있습니다. 예를 들어 항상 제품을 반품하는 고객에 대해 무료배송을 제거할 수 있다.<br> **유사 타기팅**: A _유사 대상_ 은 기존 고객과 유사한 특성을 공유하기 때문에 비즈니스에 관심이 있을 가능성이 높은 새로운 사람에게 도달하기 위해 상인이 프로모션을 위해 취하는 방법론입니다. 행동 및 트랜잭션 데이터를 기반으로 유사 세그먼트를 만들 수 있습니다.<br> **고객 성향**: 트랜잭션 데이터에서 만들 수 있는 고객 프로필의 깊이가 깊어지면 고객 행동 변화를 식별할 수 있습니다. 제품 수익률이나 제품 구성 등 계산에 유입되는 데이터가 많을수록 성향 점수에 대한 신뢰도가 높아질 것이다.<br> **크로스셀**: 판매자는 Commerce에서 캡처한 세분화된 정보에서 강력한 크로스셀 및 업셀 기회를 식별할 수 있습니다. |
 | [고객 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 전체 상거래 여정에 대한 심층 분석 | **계절 트렌드**: 판매자는 계절별 트렌드를 식별하여 특정 제품에 대한 정기적인 수요 변화에 대비할 수 있습니다. 또한 상인들은 수년에 걸쳐 어떤 제품의 전반적인 인기의 변화를 확인할 수 있다.<br> **전환 분석**: 판매자는 제품 구매 시기를 파악하고 상점 노출 이벤트에 대한 액세스를 통해 고객의 풍부한 프로필을 생성하여 전환 분석을 수행할 수 있습니다. |
 | [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 고객 행동 및 캠페인 성과에 대한 심층적인 분석 | **반품 주문**: 판매자는 반품 패턴이 있는 고객 및 대규모 고객 세그먼트를 식별할 수 있습니다. 이는 가맹점이 고객 기반 행동이 어떻게 보이는지 이해함으로써 상거래 전략을 개선하는 데 도움이 됩니다.<br> **주문 주소**: 배송 주소를 기반으로 판매자는 고객이 주문을 하는지 또는 다른 개인 또는 엔티티를 위한 것인지 파악할 수 있습니다.<br> **계절성 트렌드**: 판매자는 계절별 트렌드를 식별하여 특정 제품에 대한 정기적인 수요 변화에 대비할 수 있습니다. 또한 상인들은 수년에 걸쳐 어떤 제품의 전반적인 인기의 변화를 확인할 수 있다.<br> **전환 분석**: 판매자는 제품 구매 시기를 파악하고 상점 노출 이벤트에 대한 액세스를 통해 고객의 풍부한 프로필을 생성하여 전환 분석을 수행할 수 있습니다. **참고** Adobe Analytics은 동작(상점) 이벤트 데이터만 지원합니다. Adobe Analytics은 트랜잭션(백오피스) 이벤트 데이터를 지원하지 않습니다. |
 | [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 채널 간 Campaign 오케스트레이션 | **동작 기반 여정**: 가맹점은 2년 전 휴대폰을 구입한 고객을 대상으로 새 모델의 구매를 제안할 수 있습니다. 판매자는 이러한 고객을 위한 개인화된 캠페인과 프로모션을 만들고 이메일 및 SMS 기능을 사용하여 연락할 수 있습니다. 또한, 상인들은 과거 질서와 행동 데이터를 사용하여 동향을 파악할 수 있습니다. 예를 들어 과거에 특정 구성으로 품목을 구매했다가 이제 동일한 제품을 다시 구매하려는 고객은 동일한 제품 구성에 대한 가시성과 액세스 권한을 제공하여 구매 여정을 향상시킬 수 있습니다.<br> **개인화**: 고객 프로필 정보에 액세스할 수 있는 경우 [!DNL Journey Optimizer] 은 상인이 다양한 채널을 통해 고객에게 연락할 수 있도록 고도로 개인화된 여정을 잠금 해제할 수 있습니다.<br> **새 프로필 생성됨**: 환영 이메일 및 프로모션 활동은 신규 고객의 쇼핑 여정을 격려하고 영향을 줄 수 있습니다.<br> **프로필 삭제됨**: 가맹점은 계정을 닫은 고객에게 홍보 이메일 전송을 중지하도록 선택할 수 있습니다. 또는 상인이 잃어버린 고객을 되찾기 위한 캠페인을 구축할 수도 있습니다. |
 
 ## Experience Platform 데이터를 Commerce로 다시 가져오기
 
-를 사용하여 상거래 데이터를 Experience Platform에 보내기 [!DNL Data Connection] 확장은 Commerce의 데이터 공유 기능 중 하나입니다. 선택적 확장인 반대쪽은 입니다. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 이 확장을 사용하면 Real-Time CDP에서 대상을 작성하고 이러한 대상을 Commerce 스토어에 배포하여 장바구니 가격 규칙 및 동적 블록을 알릴 수 있습니다.
+를 사용하여 상거래 데이터를 Experience Platform에 보내기 [!DNL Data Connection] 확장은 Commerce의 데이터 공유 기능 중 하나입니다. 선택적 확장인 반대쪽은 입니다. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 이 확장을 사용하면 Real-Time CDP에서 대상을 작성하고 이러한 대상을 Commerce 스토어에 배포하여 장바구니 가격 규칙, 관련 제품 규칙(베타) 및 동적 블록을 알릴 수 있습니다.
 
 높은 수준에서 Commerce 스토어에서 Experience Platform으로, 그리고 Audience Activation 확장을 통해 다시 이동하는 데이터 흐름은 다음과 같습니다.
 
@@ -82,8 +82,10 @@ Experience Platform Commerce에서 Commerce로, Experience Platform에서 Commer
 
 1. [설치](install.md) 다음 [!DNL Data Connection] 확장명.
 1. [로그인](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) Adobe 계정 및 [확인할 보기](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) 조직 ID입니다. 조직 ID 는 공급된 Experience Cloud 회사와 연결된 ID입니다. 이 ID는 24자의 영숫자 문자열과 (포함 필수)로 구성됩니다. `@AdobeOrg`.
-1. [만들기 또는 업데이트](update-xdm.md) 상거래 관련 필드 그룹이 있는 XDM 스키마.
-1. [데이터 세트 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 생성 또는 업데이트한 스키마를 기반으로 합니다. 이 데이터 세트에는 전송하는 상거래 데이터가 포함되어 있습니다.
+1. 다음을 수행했는지 확인 [Experience Platform의 데이터 수집 권한](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+1. 리뷰 [데이터 유형](data-ingestion.md) 수집해서 보낼 수 있습니다.
+1. 만들기 또는 업데이트 [시계열 이벤트 스키마](update-xdm.md) 또는 [프로필 레코드 데이터 스키마](profile-data.md) (상거래 관련 필드 그룹 포함)
+1. [데이터 세트 만들기](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) 생성 또는 업데이트한 스키마를 기반으로 합니다. 이 데이터 세트에는 Experience Platform Edge로 전송된 상거래 데이터가 포함되어 있습니다.
 1. [데이터 스트림 만들기](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) 상거래 관련 필드 그룹을 포함하는 XDM 스키마를 선택합니다.
 1. [상거래 서비스에 연결](../landing/saas.md).
 1. [Adobe Experience Platform에 연결](connect-data.md).
