@@ -3,7 +3,7 @@ title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Experience Platform API 호출을 수행할 수 있도록 Adobe Developer 콘솔
 
 Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있도록 하려면 다음을 검토하십시오. [전제 조건](overview.md#prerequisites).
 
-자세한 내용은 이벤트 항목을 참조하십시오 [상점 첫 화면](events.md#storefront-events), [후선 근무](events.md#back-office-events), 및 [프로필](events.md#customer-profile-events-server-side) 이벤트.
+자세한 내용은 이벤트 항목을 참조하십시오 [상점 첫 화면](events.md#storefront-events), [후선 근무](events-backoffice.md), 및 [프로필](events-backoffice.md#customer-profile-events-server-side) 이벤트.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있도록 하�
 
 프로필에 보낼 수 있는 Experience Platform 데이터에는 프로필 레코드와 시계열 프로필 이벤트의 두 가지 유형이 있습니다.
 
-프로필 레코드에는 구매자가 상거래 인스턴스에서 구매자 이름과 같은 프로필을 만들 때 저장되는 데이터가 포함됩니다. 스키마 및 데이터 세트가 다음과 같은 경우 [제대로 구성됨](profile-data.md), 프로필 레코드가 Experience Platform으로 전송되고 Adobe의 프로필 관리 및 세분화 서비스로 전달됩니다. [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+프로필 레코드에는 구매자가 상거래 인스턴스에서 구매자 이름과 같은 프로필을 만들 때 저장되는 데이터가 포함됩니다. 스키마 및 데이터 세트가 다음과 같은 경우 [제대로 구성됨](profile-data.md), 프로필 레코드가 Experience Platform으로 전송되고 Adobe의 프로필 관리 및 세분화 서비스로 전달됩니다. [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ko-KR).
 
 시계열 프로필 이벤트에는 사이트에서 계정을 생성, 편집 또는 삭제하는 경우와 같이 쇼퍼의 프로필 정보에 대한 데이터가 포함됩니다. 프로필 이벤트 데이터가 Experience Platform으로 전송되면 다른 DX 제품에서 사용할 수 있는 데이터 세트에 상주합니다.
 
@@ -193,7 +193,7 @@ Real-Time CDP에서 프로필 레코드를 사용할 수 있도록 하는 데 �
 
 ### 이전 주문 데이터 보내기
 
-Adobe Commerce은 최대 5년의 [내역 주문 데이터 및 상태](events.md#back-office-events). 다음을 사용할 수 있습니다. [!DNL Data Connection] 확장 : 내역 데이터를 Experience Platform으로 전송하여 고객 프로필을 보강하고 과거 주문을 기반으로 고객 경험을 개인화합니다. 데이터는 Experience Platform 내의 데이터 세트에 저장됩니다.
+Adobe Commerce은 최대 5년의 [내역 주문 데이터 및 상태](events-backoffice.md#back-office-events). 다음을 사용할 수 있습니다. [!DNL Data Connection] 확장 : 내역 데이터를 Experience Platform으로 전송하여 고객 프로필을 보강하고 과거 주문을 기반으로 고객 경험을 개인화합니다. 데이터는 Experience Platform 내의 데이터 세트에 저장됩니다.
 
 Commerce에서 이미 이전 주문 데이터를 수집하는 동안 해당 데이터를 Experience Platform으로 보내려면 몇 가지 단계를 완료해야 합니다.
 

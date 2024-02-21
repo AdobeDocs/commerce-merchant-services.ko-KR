@@ -3,7 +3,7 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _2023년 11월 16일_
 
 _2023년 10월 10일_
 
-![신규](../assets/new.svg) - 새 주문 상태 이벤트가 추가되었습니다. [인보이스 발행 주문](events-backoffice.md#orderinvoiced), [주문 품목 반품 시작됨](events.md#orderitemsreturninitiated), 및 [주문 품목 반품 완료](events.md#orderitemreturncompleted).
+![신규](../assets/new.svg) - 새 주문 상태 이벤트가 추가되었습니다. [인보이스 발행 주문](events-backoffice.md#orderinvoiced), [주문 품목 반품 시작됨](events-backoffice.md#orderitemsreturninitiated), 및 [주문 품목 반품 완료](events-backoffice.md#orderitemreturncompleted).
 ![수정](../assets/fix.svg) - 캐시를 새로 고친 후 통화 구성 변경 사항이 이벤트에 반영되지 않던 문제를 수정했습니다.
 ![수정](../assets/fix.svg) - 비동기 주문 배치가 활성화된 경우 주문 확인 메시지가 표시되지 않는 경우 오류를 수정했습니다.
 ![신규](../assets/new.svg) - 데이터를에 추가했습니다. [addToRequisitionList](events.md#addtorequisitionlist) 카테고리 보기 페이지의 단순 제품에 대한 이벤트입니다.
