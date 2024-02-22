@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 358dac1ce083023476022c968bc6a9debfadc119
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ ht-degree: 0%
 ![버그](../assets/bug.svg) 알려진 문제
 
 ## 현재 메이저 버전
+
+### V1.17 릴리스
+
+_2023년 2월 22일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg) 다음 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 을(를) 이제 사용할 수 있습니다. 이렇게 개선된 대시보드는 다음에 대한 데이터 스트림에 대한 통찰력을 제공합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service].
+
+## 이전 버전
+
++++ 이전 버전
 
 ### V1.16 릴리스
 
@@ -44,10 +56,6 @@ API Mesh 및 Core GraphQL API를 사용하면 다음 제한 사항을 해결할 
 
 * 최소 광고 가격
 * [계층 가격](mesh.md)
-
-## 이전 버전
-
-+++ 이전 버전
 
 ### V1.13 릴리스
 

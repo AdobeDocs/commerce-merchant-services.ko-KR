@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: "설치 방법 알아보기 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ SaaS 구성이 완료되면 다음을 수행하여 초기 데이터 동기화를
 - 인덱서가 실행 중인지 확인합니다.
 - 다음을 확인합니다. `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, 및 `Product Variant Feed` 인덱서가 &quot;일정별로 업데이트&quot;로 설정되어 있습니다.
 
-초기 동기화는 카탈로그 크기에 따라 몇 분에서 몇 시간 정도 소요될 수 있습니다. 초기 동기화 후 카탈로그는 Commerce 서버의 제품 데이터를 Commerce 서비스로 내보내 서비스를 최신 상태로 유지합니다.
+초기 동기화는 카탈로그 크기에 따라 몇 분에서 몇 시간 정도 소요될 수 있습니다. 초기 동기화 후 카탈로그는 Commerce 서버의 제품 데이터를 Commerce 서비스로 내보내 서비스를 최신 상태로 유지합니다. 동기화 상태를 모니터링하려면 다음을 참조하십시오 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### 서비스 액세스
 
@@ -145,3 +145,7 @@ API 키를 가져오려면 관리자의 Commerce Service Connector 영역으로 
 다음 [Adobe Developer 앱 빌더용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 을 사용하면 개발자가 Adobe IO를 사용하여 개인 또는 서드파티 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
 
 다음을 참조하십시오.  [[!DNL Catalog Service] 및 API 메쉬](mesh.md) 항목 설치 및 구성 세부 정보.
+
+## 데이터 관리 대시보드
+
+사용자는 다음을 참조할 수 있습니다. [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 다음에 대한 추가 데이터: [!DNL Catalog Service] 데이터 동기화 중.

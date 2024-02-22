@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
+source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -45,26 +45,31 @@ _2023년 4월 25일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 이제 고객은 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0 {#410}
 
-_Feb 13, 2024_
+_2024년 2월 22일_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-### New Features
+### 새로운 기능
 
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+![신규](../assets/new.svg) 다음 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 을(를) 이제 사용할 수 있습니다. 이렇게 개선된 대시보드는 다음에 대한 데이터 스트림에 대한 통찰력을 제공합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service].
+![신규](../assets/new.svg) 여러 새 기능이 [PLP 위젯](plp-styling.md):
 
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
+* 목록/표 보기 전환
+* 장바구니에 추가 단추
+* 견본 지원
+* 제품당 여러 이미지
+* 가격 슬라이더
+* 언어 지원
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 이러한 기능에 액세스하려면 버전 >= 4.1.0으로 확장하십시오.
 
---->
+### 업데이트
+
+![수정](../assets/fix.svg) 게스트 사용자가 기본이 아닌 스토어 보기에서 장바구니에 제품을 추가할 때 오류가 발생하는 문제를 해결했습니다.
+![수정](../assets/fix.svg) 로케일 설정에 관계없이 검색 팝오버에 항상 가격 값 앞에 통화 기호가 표시되는 문제를 해결했습니다.
+![수정](../assets/fix.svg) 설치 시 호환성 문제를 해결하기 위해 비활성화된 핵심 플러그인에 대한 불필요한 유형 정의를 제거했습니다.
 
 ## [!DNL Live Search] 4.0.0 {#400}
 

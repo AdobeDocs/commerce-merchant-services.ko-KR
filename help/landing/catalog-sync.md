@@ -3,9 +3,9 @@ title: 카탈로그 동기화
 description: 에서 제품 데이터를 내보내는 방법 알아보기 [!DNL Commerce] 서버 대상 [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,15 @@ ht-degree: 0%
 
 # 카탈로그 동기화
 
+>[!NOTE]
+>
+> 카탈로그 동기화 대시보드가 이제 데이터 관리 대시보드입니다. 이렇게 개선된 대시보드는 이제 을 지원합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service]. 고객은 해당 서비스 중 하나의 최신 버전으로 업데이트하여 데이터 관리 대시보드를 가져올 수 있습니다. 자세한 내용은 [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 설명서를 참조하십시오. 이 현재 항목은 아직 업그레이드하지 않았으며 여전히 카탈로그 동기화 대시보드가 있는 사용자에게 남아 있습니다.
+
 Adobe Commerce은 인덱서를 사용하여 카탈로그 데이터를 표로 컴파일합니다. 프로세스는 다음 사용자에 의해 자동으로 트리거됩니다. [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) 제품 가격 또는 재고 수준 변경 등.
 
 Catalog Sync 서비스가 [!DNL Adobe Commerce] 인스턴스를 [!DNL Commerce Services] 데이터를 최신 상태로 유지하기 위한 지속적인 플랫폼. 예를 들어, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) 올바른 이름, 가격 및 가용성으로 권장 사항을 정확하게 반환하려면 현재 카탈로그 정보가 필요합니다. 사용 _카탈로그 동기화_ 동기화 프로세스를 관찰하고 관리하는 대시보드 [명령줄 인터페이스](#resynccmdline) 카탈로그 동기화를 트리거하고 다음에 의해 소비될 제품 데이터를 다시 색인화하기 [!DNL Commerce Services].
 
->[!NOTE]
->
-> 을(를) 사용하려면 _카탈로그 동기화_ 대시보드 또는 명령줄 인터페이스에는 [API 키 및 SaaS 데이터 공간 구성](saas.md).
-
 ## 카탈로그 동기화 대시보드 액세스
-
->[!NOTE]
->
-> 다음 _카탈로그 동기화_ 대시보드는 _제품 Recommendations_ 모듈이 설치되고 해당 기능과 관련된 데이터 프로젝션만 반영합니다. 과 같은 기타 상거래 서비스 지원 _라이브 검색_ 및 _카탈로그 서비스_ 은(는) 미래를 위해 계획됩니다.
 
 카탈로그 동기화 대시보드에 액세스하려면 다음을 선택합니다. **시스템** > _데이터 전송_ > **카탈로그 동기화**.
 
