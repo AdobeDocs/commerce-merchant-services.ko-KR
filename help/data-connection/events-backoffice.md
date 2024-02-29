@@ -3,9 +3,9 @@ title: 백오피스 이벤트
 description: 각 백오피스 이벤트가 캡처하는 데이터를 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | 카테고리에 대한 경로입니다. |
 
 ## 고객 프로필 이벤트(백오피스)
-
->[!NOTE]
->
->**베타** 서버측에서 생성된 프로필 이벤트는 Beta 참여자가 사용할 수 있습니다. Beta 프로그램에 참여하려면 다음 대상에게 요청을 전송하십시오. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 서버측에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `accountCreated`, `accountUpdated`, 및 `accountDeleted`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [상점 첫 화면](#customer-profile-events-storefront).
 

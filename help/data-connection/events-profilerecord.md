@@ -3,18 +3,14 @@ title: 프로필 레코드
 description: 프로필 레코드가 캡처하는 데이터를 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] 프로필 레코드(베타)
-
->[!NOTE]
->
->이 기능은 Beta 버전입니다. Beta 프로그램에 참여하려면 다음 대상에게 요청을 전송하십시오. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] 프로필 레코드
 
 다음은 를 설치할 때 사용할 수 있는 상거래 프로필 레코드 데이터에 대해 설명합니다. [!DNL Data Connection] 확장명. 프로필 레코드의 데이터는 Adobe Experience Platform으로 전송됩니다.
 

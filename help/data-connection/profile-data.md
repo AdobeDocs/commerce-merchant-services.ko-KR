@@ -3,18 +3,14 @@ title: 상거래 데이터 수집을 위한 프로필 레코드 스키마 업데
 description: Experience Platform, 데이터 세트 및 데이터 스트림을 만들어 Commerce 프로필 레코드 데이터를 수집하고 프로필로 전송하는 방법을 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # 상거래 데이터 수집을 위한 프로필 레코드 스키마 업데이트
-
->[!NOTE]
->
->이 기능은 Beta 버전입니다. Beta 프로그램에 참여하려면 다음 대상에게 요청을 전송하십시오. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 쇼핑객이 상거래 사이트에서 프로필을 만들면 프로필 레코드가 생성되고 데이터가 캡처됩니다. 해당 프로필 데이터를 Experience Platform에 스트리밍하려면 먼저 해당 프로필 레코드와 관련된 스키마 및 데이터 세트를 만들어야 합니다.
 

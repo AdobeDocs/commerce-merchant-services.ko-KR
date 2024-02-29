@@ -3,9 +3,9 @@ title: 상거래 데이터를 Adobe Experience Platform에 연결
 description: 상거래 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Commerce Services 커넥터를 구성한 다음 [!DNL Data Connection] 확장명
 
 ### 서비스 계정 및 자격 증명 세부 정보 추가
 
-수거 및 발송을 계획하시면 [이전 순서 데이터](#send-historical-order-data) 또는 [(베타) 고객 프로필 데이터](#send-customer-profile-data), 서비스 계정 및 자격 증명 세부 정보를 추가해야 합니다. 또한 을 구성하는 경우 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 확장에서 다음 단계를 완료해야 합니다.
+수거 및 발송을 계획하시면 [이전 순서 데이터](#send-historical-order-data) 또는 [고객 프로필 데이터](#send-customer-profile-data), 서비스 계정 및 자격 증명 세부 정보를 추가해야 합니다. 또한 을 구성하는 경우 [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) 확장에서 다음 단계를 완료해야 합니다.
 
 상점 또는 백오피스 데이터만 수집 및 전송하는 경우 [일반](#general) 섹션.
 
@@ -97,7 +97,7 @@ Experience Platform API 호출을 수행할 수 있도록 Adobe Developer 콘솔
 
 - **백오피스** (서버측 데이터)는 Commerce 서버에 캡처된 데이터입니다. 여기에는 주문이 주문, 취소, 환불, 배송 또는 완료 여부와 같은 주문 상태에 대한 정보가 포함됩니다. 이 호에는 다음의 것도 포함된다. [이전 순서 데이터](#send-historical-order-data).
 
-- (**베타**) **프로필** 은 쇼핑객 프로필 정보와 관련된 데이터입니다. 학습 [기타](#send-customer-profile-data).
+- **프로필** 은 쇼핑객 프로필 정보와 관련된 데이터입니다. 학습 [기타](#send-customer-profile-data).
 
 Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있도록 하려면 다음을 검토하십시오. [전제 조건](overview.md#prerequisites).
 
@@ -157,10 +157,6 @@ Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있도록 하�
 온보딩 후 상점 데이터가 Experience Platform 에지로 흐르기 시작합니다. 백오피스 데이터가 가장자리에 표시되는 데 약 5분이 소요됩니다. cron 일정에 따라 에지에서 후속 업데이트가 표시됩니다.
 
 ### 고객 프로필 데이터 보내기
-
->[!IMPORTANT]
->
->이 기능은 Beta 버전입니다. Beta 프로그램에 참여하려면 다음 대상에게 요청을 전송하십시오. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 프로필에 보낼 수 있는 Experience Platform 데이터에는 프로필 레코드와 시계열 프로필 이벤트의 두 가지 유형이 있습니다.
 

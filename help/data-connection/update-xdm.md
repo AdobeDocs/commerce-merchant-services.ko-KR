@@ -4,9 +4,9 @@ description: 스키마, 데이터 세트 및 데이터스트림을 만들어 상
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ ht-degree: 0%
 쇼핑객의 프로필 정보를 포함하려면 다음 섹션을 참조하십시오.
 
 ## 시계열 프로필 이벤트 데이터
-
->[!NOTE]
->
->이 기능은 Beta 버전입니다. Beta 프로그램에 참여하려면 다음 대상에게 요청을 전송하십시오. [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 시계열 프로필 이벤트 데이터는 다음 이벤트에서 생성됩니다.
 

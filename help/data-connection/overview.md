@@ -3,9 +3,9 @@ title: 안내서 개요
 description: 를 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다. [!DNL Data Connection] 확장명.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Adobe Experience Platform은 상거래 스토어의 데이터를 하이드레이
 
 ## Experience Platform 데이터를 Commerce로 다시 가져오기
 
-를 사용하여 상거래 데이터를 Experience Platform에 보내기 [!DNL Data Connection] 확장은 Commerce의 데이터 공유 기능 중 하나입니다. 선택적 확장인 반대쪽은 입니다. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 이 확장을 사용하면 Real-Time CDP에서 대상을 작성하고 이러한 대상을 Commerce 스토어에 배포하여 장바구니 가격 규칙, 관련 제품 규칙(베타) 및 동적 블록을 알릴 수 있습니다.
+를 사용하여 상거래 데이터를 Experience Platform에 보내기 [!DNL Data Connection] 확장은 Commerce의 데이터 공유 기능 중 하나입니다. 선택적 확장인 반대쪽은 입니다. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). 이 확장을 사용하면 Real-Time CDP에서 대상을 작성하고 이러한 대상을 Commerce 스토어에 배포하여 장바구니 가격 규칙, 관련 제품 규칙 및 동적 블록을 알릴 수 있습니다.
 
 높은 수준에서 Commerce 스토어에서 Experience Platform으로, 그리고 Audience Activation 확장을 통해 다시 이동하는 데이터 흐름은 다음과 같습니다.
 

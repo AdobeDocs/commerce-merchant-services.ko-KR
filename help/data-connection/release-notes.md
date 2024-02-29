@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ _2023년 6월 13일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) - (Beta) 다음에 대한 기능 추가됨 [이전 주문 보내기](connect-data.md#beta-send-historical-order-data) Experience Platform에 대한 데이터 및 상태. 이 기능은 Beta 사용자만 사용할 수 있습니다. 다음 주소로 이메일을 보내 Beta에 가입할 수 있습니다. `dataconnection@adobe.com`.
+![신규](../assets/new.svg) - (Beta) 다음에 대한 기능 추가됨 [이전 주문 보내기](connect-data.md#beta-send-historical-order-data) Experience Platform에 대한 데이터 및 상태.
 
 ## 2.2.0
 
