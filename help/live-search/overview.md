@@ -3,7 +3,7 @@ title: 소개 [!DNL Live Search]
 description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## [!DNL Live Search] 작업 영역
 
-다음 [!DNL Live Search] [작업 영역](workspace.md) 는 관리자에서 를 구성하는 영역입니다 [!DNL Live Search] 동의어, 패싯 및 카테고리 머천다이징과 같은 기능.
+다음 [!DNL Live Search] [작업 영역](workspace.md) 는 관리자가 구성하는 영역입니다. [!DNL Live Search] 동의어, 패싯 및 카테고리 머천다이징과 같은 기능.
 
 ## 이벤트
 

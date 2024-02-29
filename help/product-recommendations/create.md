@@ -2,9 +2,9 @@
 title: 새 권장 사항 만들기
 description: 제품 추천 단위를 만드는 방법을 알아봅니다.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ _추천 단위_
 1. 다음에서 _권장 사항 이름 지정_ 섹션에 내부 참조에 대한 수사적 이름을 입력합니다. `Home page most popular`.
 
 1. 다음에서 _페이지 유형 선택_ 섹션에서 다음 옵션 중 권장 사항을 표시할 페이지를 선택합니다.
+
+   >[!NOTE]
+   >
+   > 스토어가 로 구성된 경우 장바구니 페이지에서 제품 Recommendations이 지원되지 않습니다. [장바구니에 제품을 추가한 후 바로 장바구니 페이지 표시](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * 홈 페이지
    * 범주
