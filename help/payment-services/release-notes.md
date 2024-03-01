@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
+source-git-commit: 36475f3071e819efa9884aefffc8bbeb6b6ac788
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _2021년 6월 28일_
 ![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
+
+## v2.3.4
+
+_2024년 3월 4일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg)<!-- PAY-5244 --> 비동기 체크아웃 호환성을 수정했습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5253 --> 결제 서비스에 속하지 않는 자격 증명 모음 토큰을 삭제할 수 없는 오류를 해결했습니다.
 
 ## v2.3.3
 
