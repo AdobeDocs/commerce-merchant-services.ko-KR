@@ -3,7 +3,7 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 0%
@@ -72,9 +72,9 @@ _2022년 10월 12일_
 
 +++
 
-## 3.2.0-베타1
+## 3.2.0-베타2
 
-_2024년 2월 16일_
+_2024년 3월 4일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
