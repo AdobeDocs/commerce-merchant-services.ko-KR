@@ -3,9 +3,9 @@ title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 상거래 인스턴스를 연결하고 구성에 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * 다음을 보유한 경우: *인스턴스가 이미 연결되었습니다.*, API 자격 증명을 획득 및 사용하고 Commerce Services를 구성하여 다음 작업을 수행할 수 있습니다. [테스트 샌드박스 설정](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * 그래도 *인스턴스를 연결해야 합니다.*&#x200B;에 대해서는 이 항목의 정보를 참조하십시오 [api 자격 증명 가져오기](#obtain-api-credentials) 및 [commerce 서비스 구성](#configure-commerce-services).
 * 다음과 같은 경우 *인스턴스가 연결되어 있는지 확인합니다.*, 다음으로 이동 **시스템** > 서비스 > **Commerce Services 커넥터** 및 다음에서 공개 및 비공개 API 키 값 보기 [!UICONTROL Sandbox Keys] 및 [!UICONTROL Production Keys] 섹션 및 *프로젝트* 및 *데이터 공간* 의 필드 [!UICONTROL SaaS Identifier] 섹션. 해당 값이 있으면 인스턴스가 연결됩니다.
+
+>[!NOTE]
+>
+>결제 서비스를 받을 수 있는 모든 가맹점은 하나의 프로덕션 데이터 공간과 두 개의 테스트 데이터 공간을 사용할 수 있습니다.
 
 ## API 자격 증명 가져오기
 
