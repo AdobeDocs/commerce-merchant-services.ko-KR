@@ -2,9 +2,9 @@
 title: "동의어 추가"
 description: "추가 [!DNL Live Search] 검색 요청에 대한 응답을 개선하기 위한 동의어입니다."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 다음을 입력합니다. **키워드** 일치하는 용어 또는 구문입니다.
 1. 다음을 입력합니다. **확장** 키워드에 대한 동의어로 추가할 용어입니다. 쉼표로 여러 용어를 구분하십시오.
-이 예에서 일치시킬 키워드는 &quot;pants&quot;이고 확장 용어 세트는 &quot;long pants, bars, slacks&quot;입니다.
+이 예에서 일치시킬 키워드는 &quot;pants&quot;이고 확장 용어 세트는 &quot;bars, slacks&quot;입니다.
 
    ![양방향 동의어 예](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
    ![단방향 동의어 예](assets/synonym-add-one-way-example.png)
 
-   이 예에서 키워드는 &quot;pants&quot;이고 단방향 확장 용어 &quot;capris, 종아리 길이 바지, 페달 퍼셔&quot;는 각각 &quot;pants&quot;의 하위 집합이지만 특정 의미를 갖습니다.
+   이 예에서 키워드는 &quot;pants&quot;이고 단방향 확장 용어 &quot;capris, peddle-pushers&quot;는 각각 &quot;pants&quot;의 하위 집합이지만 특정 의미가 있습니다.
 
 1. 완료되면 다음을 클릭하십시오. **저장**.
 동의어 집합은 확장 용어에서 키워드로 가리키는 단방향 화살표와 함께 목록에 표시되어 용어가 키워드의 하위 집합임을 나타냅니다. 더하기 기호는 각 확장 항을 구분합니다.
