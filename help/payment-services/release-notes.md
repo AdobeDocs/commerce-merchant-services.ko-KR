@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 호스팅된 서비스에 대한 일반 버전 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2024년 3월 5일_
+
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-5252 --> 이제 판매자는 단일 셀의 콘텐츠를 선택하여 대시보드 그리드에서 데이터를 복사할 수 있습니다.
 
 _2023년 10월 10일_
 
