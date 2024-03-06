@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] 색인화"
 description: "방법 알아보기 [!DNL Live Search] 는 제품 속성 속성을 인덱싱합니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 다음을 보유한 상거래 고객 [!DNL Live Search] 을(를) 통해 웹 사이트에서 더 빠른 가격 변경 업데이트 및 동기화 시간을 이용할 수 있습니다. [SaaS 가격 인덱서](../price-index/index.md).
+> 다음을 보유한 상거래 고객 [!DNL Live Search] 을(를) 통해 웹 사이트에서 더 빠른 가격 변경 업데이트 및 동기화 시간을 이용할 수 있습니다. [SaaS 가격 인덱서](../price-index/price-indexing.md).
 
 ## 색인 지정 파이프라인
 

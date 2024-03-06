@@ -2,9 +2,9 @@
 title: 온보딩
 description: 에서 요구 사항 및 지원되는 플랫폼에 대해 알아봅니다. [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### SaaS 가격 인덱싱
 
-제품 추천 고객이 사용할 수 있는 항목 [SaaS 가격 인덱싱](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
+제품 추천 고객이 사용할 수 있는 항목 [SaaS 가격 인덱싱](../price-index/price-indexing.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
 
 ### B2B 지원 {#b2bsupport}
 

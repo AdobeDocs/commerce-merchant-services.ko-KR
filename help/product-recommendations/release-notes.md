@@ -3,7 +3,7 @@ title: '''[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 0%
@@ -39,7 +39,7 @@ _2023년 7월 18일_
 
 _2023년 4월 25일_
 
-![신규](../assets/new.svg) 제품 Recommendations 고객은 이제 다음을 활용할 수 있습니다 [SaaS 가격 인덱싱](../price-index/index.md).
+![신규](../assets/new.svg) 제품 Recommendations 고객은 이제 다음을 활용할 수 있습니다 [SaaS 가격 인덱싱](../price-index/price-indexing.md).
 
 +++
 
@@ -64,7 +64,7 @@ _2023년 9월 15일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 를 지원하는 새 모듈이 추가되었습니다. [Saas 가격 인덱서](../price-index/index.md).
+![신규](../assets/new.svg) 를 지원하는 새 모듈이 추가되었습니다. [Saas 가격 인덱서](../price-index/price-indexing.md).
 ![신규](../assets/new.svg) 번들 제품 및 기프트 카드를 비롯한 더 많은 제품 유형 내보내기를 지원하기 위해 새로운 데이터 내보내기 모듈이 추가되었습니다.
 ![수정](../assets/fix.svg) 제품 및 가격 피드의 테이블 크기가 크게 줄었습니다. 표 `catalog_data_exporter_products` 및 `catalog_data_exporter_product_prices` 크기를 상당히 줄여야 합니다.
 

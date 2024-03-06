@@ -3,7 +3,7 @@ title: "기술 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ## 가격 인덱서
 
-라이브 검색 고객은 새 [SaaS 가격 인덱서](../price-index/index.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
+라이브 검색 고객은 새 [SaaS 가격 인덱서](../price-index/price-indexing.md)를 통해 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
 
 ## 가격 지원
 
