@@ -3,9 +3,10 @@ title: 백오피스 이벤트
 description: 각 백오피스 이벤트가 캡처하는 데이터를 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 다음 이벤트가 수집하는 데이터 외에도 [기타 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK에서 제공합니다.
 
-백 오피스 이벤트에는 서버측 데이터가 포함되어 있습니다. 이 데이터는 [주문 상태](#order-status) 주문, 취소, 환불, 배송 또는 완료 여부 등의 정보. 서버측 데이터에는 [고객 프로필 이벤트](#customer-profile-events-back-office) 계정이 생성, 업데이트 또는 삭제된 경우 등의 정보.
+백 오피스 이벤트에는 서버측 데이터가 포함되어 있습니다. 이 데이터는 [주문 상태](#order-status) 주문, 취소, 환불, 배송 또는 완료 여부 등의 정보. 서버측 데이터에는 [고객 프로필 이벤트](#customer-profile-events) 계정이 생성, 업데이트 또는 삭제된 경우 등의 정보.
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ ht-degree: 0%
 | `productListItems.categories.name` | 범주의 이름입니다. |
 | `productListItems.categories.path` | 카테고리에 대한 경로입니다. |
 
-## 고객 프로필 이벤트(백오피스)
+## 고객 프로필 이벤트
 
-서버측에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `accountCreated`, `accountUpdated`, 및 `accountDeleted`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [상점 첫 화면](#customer-profile-events-storefront).
+서버측에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `accountCreated`, `accountUpdated`, 및 `accountDeleted`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [상점 첫 화면](events.md#customer-profile-events).
 
 ### accountCreated
 

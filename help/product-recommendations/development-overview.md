@@ -2,9 +2,9 @@
 title: 제품 Recommendations 관리자 개발
 description: 제품 Recommendations 아키텍처 및 개발 기능에 대한 개요입니다.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 0%
 - **카탈로그** - 이름, 가격, 가용성 등과 같은 제품 메타데이터.
 
 설치 시 `magento/product-recommendations` 모듈 Adobe Sensei은 행동 및 카탈로그 데이터를 집계하여 각 권장 사항 유형에 대한 제품 Recommendations을 만듭니다. 그런 다음 제품 Recommendations 서비스는 이러한 권장 사항을 상점 앞에 배포합니다.
+
+>[!NOTE]
+>
+>구성 가능한 제품의 경우 Product Recommendations은 권장 사항 단위의 상위 제품 이미지를 사용합니다. 구성 가능한 제품에 이미지가 지정되지 않은 경우 해당 특정 제품에 대한 추천 단위가 비어 있게 됩니다.
 
 ## 다음 단계
 

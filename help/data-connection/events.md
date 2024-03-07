@@ -4,9 +4,9 @@ description: 각 행동 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ Storefront 이벤트는 사이트에서 구매자의 상호 작용에서 데이�
 | `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
 | `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
 
-## 고객 프로필 이벤트(행동)
+## 고객 프로필 이벤트
 
-상점 첫 화면에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `signIn`, `signOut`, `createAccount`, 및 `editAccount`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [서버측](events-backoffice.md#customer-profile-events-back-office).
+상점 첫 화면에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `signIn`, `signOut`, `createAccount`, 및 `editAccount`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [서버측](events-backoffice.md#customer-profile-events).
 
 ### 로그인
 
