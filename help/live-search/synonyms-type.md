@@ -2,9 +2,9 @@
 title: "동의어 유형"
 description: "일방향 및 양방향 [!DNL Live Search] 동의어는 키워드의 정의를 확장합니다."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on
 ### 일관성
 
 카탈로그에서 용어가 사용되는 방식을 일관하십시오. 사용량에 있어 지역적 차이가 있을 수 있으며 때로는 업계 내에서도 차이가 있을 수 있습니다.
-
-### 키워드 매핑
-
-이 기술은 제품 간에 키워드 기반 연관을 만들기 위해 동의어가 아닌 검색 가능한 제품 속성을 사용합니다. 그 결과 매핑된 제품이 다른 제품의 검색 결과에 나타날 수 있습니다. 자세한 내용은 다음을 참조하십시오. [검색 결과](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
