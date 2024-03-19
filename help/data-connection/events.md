@@ -4,9 +4,9 @@ description: 각 행동 이벤트가 캡처하는 데이터를 알아봅니다.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ Storefront 이벤트는 사이트에서 구매자의 상호 작용에서 데이�
 | `commerce.commerceScope.storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
 | `commerce.commerceScope.storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
 | `commerce.commerceScope.websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
+| `commerce.order` | 하나 이상의 제품에 대해 보류 중인 주문에 대한 정보를 포함합니다. |
+| `commerce.order.discountAmount` | 전체 주문에 적용되는 할인 금액을 나타냅니다. |
 | `productListItems` | 장바구니에 추가된 제품 배열. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `productListItems.name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름. |

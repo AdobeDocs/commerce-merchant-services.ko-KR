@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: b1a029f07bf6b62443850146c9be0793bc8e7211
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _2022년 10월 12일_
 ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support).
 
 +++
+
+## 3.1.1
+
+_2024년 3월 19일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![신규](../assets/new.svg) PHP 8.3 지원이 추가되었습니다.
 
 ## 3.2.0-베타2
 

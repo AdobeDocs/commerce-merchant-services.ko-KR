@@ -3,9 +3,9 @@ title: "기술 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 다음으로: [!DNL Live Search] 이(가) 전체 제품 데이터베이스에 액세스할 수 없습니다. [!DNL Live Search] GraphQL 및 Commerce 코어 GraphQL에는 전체 패리티가 없습니다.
 
-SaaS API의 직접 호출(특히 카탈로그 서비스 끝점)을 호출하는 것이 좋습니다.
+SaaS API(특히 카탈로그 서비스 끝점)를 직접 호출하는 것이 좋습니다.
 
 * Commerce 데이터베이스/Graphql 프로세스를 건너뛰어 성능을 향상시키고 프로세서 로드를 줄입니다.
 * 다음을 활용하십시오. [!DNL Catalog Service] 호출할 페더레이션 [!DNL Live Search], [!DNL Catalog Service], 및 [!DNL Product Recommendations] 단일 엔드포인트에서
@@ -43,8 +43,8 @@ SaaS API의 직접 호출(특히 카탈로그 서비스 끝점)을 호출하는 
 * [PLP 위젯](https://github.com/adobe/storefront-product-listing-page)
 * [라이브 검색 필드](https://github.com/adobe/storefront-search-as-you-type)
 
-Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 구성 요소를 사용하지 않는 경우 이벤트(Intelligent Merchandising 및 성능 메트릭을 위해 Adobe Sensei에 데이터를 제공하는 클릭스트림 데이터)가 즉시 작동하지 않으며 Headless 이벤트를 구현하기 위해 사용자 정의 개발이 필요하다는 것을 알고 있어야 합니다.
-의 최신 버전 [!DNL Live Search] 이미 사용 중 [!DNL Catalog Service] 및 설치 [!DNL Catalog Service] 모듈.
+Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 구성 요소를 사용하지 않는 경우 이벤트(Intelligent Merchandising 및 성능 지표를 위해 Adobe Sensei에 제공하는 클릭스트림 데이터)가 즉시 작동하지 않으며 Headless 이벤트를 구현하기 위해 사용자 정의 개발이 필요합니다.
+의 최신 버전 [!DNL Live Search] 이미 사용 중 [!DNL Catalog Service].
 
 ## 경계 및 임계값
 
@@ -109,6 +109,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 | 라트비아어 | 라트비아 | lv_LV | lv_LV |
 | 노르웨이어 | 노르웨이 복말 | nb_NO | nb_NO |
 | 네덜란드어 | 네덜란드 | nl_NL | nl_NL |
+| 폴란드어 | 폴란드 | pl_PL | pl_PL |
 | 포르투갈어 | 브라질 | pt_BR | pt_BR |
 | 포르투갈어 | 포르투갈 | pt_PT | pt_PT |
 | 루마니아어 | 루마니아 | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ## Inventory management
 
-[!DNL Live Search] 지원 [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
+[!DNL Live Search] 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
 [!DNL Live Search] Inventory management 내에서 제품을 사용할 수 있는지 여부를 나타내는 부울을 반환하지만, 재고가 있는 소스에 대한 정보는 포함하지 않습니다.
 
@@ -152,7 +153,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ## 가격 지원
 
-Live Search 위젯은 Adobe Commerce에서 지원하는 대부분의 가격 유형을 지원하지만 일부 가격 유형은 지원하지 않습니다.
+라이브 검색 위젯은 Adobe Commerce에서 지원하는 대부분의 가격 유형을 지원하지만 일부 가격 유형은 지원하지 않습니다.
 
 현재 기본 가격이 지원됩니다. 지원되지 않는 고급 가격은 다음과 같습니다.
 
@@ -193,9 +194,9 @@ Live Search 위젯은 Adobe Commerce에서 지원하는 대부분의 가격 유�
 
 ## 현재 지원되지 않음
 
-* 다음 [고급 검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) 다음 경우에 모듈이 비활성화됩니다. [!DNL Live Search] 가 설치되고 상점 첫 번째 바닥글의 고급 검색 링크가 제거됩니다.
-* [계층 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) 및 [특별 가격](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) 은(는) 다음에서 지원되지 않습니다. [!DNL Live Search] 필드 및 제품 목록 페이지 위젯.
+* 다음 [고급 검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 다음 경우에 모듈이 비활성화됩니다. [!DNL Live Search] 가 설치되고 상점 첫 번째 바닥글의 고급 검색 링크가 제거됩니다.
+* [계층 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 및 [특별 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) 은(는) 다음에서 지원되지 않습니다. [!DNL Live Search] 필드 및 제품 목록 페이지 위젯.
 
 ## 쿠키
 
-[!DNL Live Search] 는 기본 기능의 일부로 사용자 상호 작용 데이터를 수집하며 쿠키는 이 데이터를 저장하는 데 사용됩니다. 사용자 정보를 수집할 때 사용자는 쿠키를 저장하는 데 동의해야 합니다. [!DNL Live Search] 및 [!DNL Product Recommendations] 데이터 스트림을 공유하여 동일한 쿠키 메커니즘을 공유합니다. 자세한 내용 보기 [쿠키 제한 처리](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] 는 기본 기능의 일부로 사용자 상호 작용 데이터를 수집하며 쿠키는 이 데이터를 저장하는 데 사용됩니다. 사용자 정보를 수집할 때 사용자는 쿠키를 저장하는 데 동의해야 합니다. [!DNL Live Search] 및 [!DNL Product Recommendations] 데이터 스트림을 공유하여 동일한 쿠키 메커니즘을 공유합니다. 자세한 내용 보기 [쿠키 제한 처리](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).
