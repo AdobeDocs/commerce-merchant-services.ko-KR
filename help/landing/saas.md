@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ SaaS 프로젝트를 선택하거나 만들려면 다음을 요청하십시오. 
 >
 > 내 계정의 API 포털 섹션에서 새 키를 생성하는 경우 관리 구성에서 API 키를 즉시 업데이트합니다. 새 키를 생성하고 관리에서 업데이트하지 않으면 SaaS 확장이 더 이상 작동하지 않고 중요한 데이터를 잃게 됩니다.
 
-SaaS 프로젝트 또는 데이터 공간 이름을 변경하려면 **이름 바꾸기**.
+SaaS 프로젝트 또는 데이터 공간의 이름을 변경하려면 **이름 바꾸기** 둘 중 하나의 옆에 있습니다. 이름은 프로젝트와 데이터 공간을 식별하고 구분하는 데 도움이 되는 레이블일 뿐이므로 이름을 변경해도 서비스에 영향을 주지 않습니다.
 
 ## IMS 조직(선택 사항) {#organizationid}
 
