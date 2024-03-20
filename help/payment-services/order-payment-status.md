@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,36 @@ ht-degree: 0%
 >
 >이 표에 표시된 데이터는 내림차순으로 정렬됩니다(`DESC`) 기본적으로 `TRANS DATE`. 다음 `TRANS DATE` 트랜잭션이 시작된 날짜와 시간입니다.
 
+### 결제 상태 업데이트
+
+특정 결제 방법에는 결제 내용을 캡처하는 데 일정 시간이 필요합니다. [!DNL Payment Services] 이제 은(는) 다음 순서대로 결제 트랜잭션의 보류 상태를 감지합니다.
+
+* 동기적으로 감지 `pending capture` 트랜잭션
+* 비동기적 모니터링 `pending capture` 트랜잭션
+
+>[!NOTE]
+>
+>주문에서 결제 거래의 대기 상태를 감지하면 아직 결제를 받지 않은 경우 실수로 주문을 배송하지 않습니다. 이는 전자 수표 및 PayPal 거래에 대해 발생할 수 있습니다.
+
+#### 보류 중인 캡처 트랜잭션의 동기 감지
+
+에서 캡처 트랜잭션 자동 감지 `Pending` 상태 및 주문 입력 금지 `Processing` 상태: 이러한 트랜잭션이 감지될 때입니다.
+
+고객 체크아웃 중 또는 관리자가 이전에 승인된 지급에 대한 송장을 생성하는 경우 [!DNL Payment Services] 에서 캡처 트랜잭션 자동 감지 `Pending` 상태 및 해당 주문을 다음으로 이동 `Payment Review` 상태.
+
+#### 보류 중인 캡처 트랜잭션의 비동기 모니터링
+
+보류 중인 캡처 트랜잭션이 `Completed` 판매자가 영향을 받는 주문 처리를 다시 시작할 수 있도록 상태.
+
+이 프로세스가 예상대로 작동하는지 확인하려면 판매자는 새 cron 작업을 구성해야 합니다. 작업이 자동으로 실행되도록 구성되면 판매자의 다른 개입이 필요하지 않습니다.
+
+다음을 참조하십시오 [cron 작업 구성](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). 구성된 경우 새 작업은 30분마다 실행되어 다음에 있는 주문에 대한 업데이트를 가져옵니다. `Payment Review` 상태.
+
+가맹점은 주문 결제 상태 보고서 보기를 통해 업데이트된 결제 상태를 확인할 수 있습니다.
+
 ### 보고서에 사용된 데이터
 
-다음 [!DNL Payment Services] 모듈은 주문 데이터를 사용하여 다른 소스(PayPal 포함)의 결제 데이터와 결합하여 의미 있고 유용한 보고서를 제공합니다.
+[!DNL Payment Services] 는 주문 데이터를 사용하고, 이 데이터를 다른 소스(PayPal 포함)의 결제 데이터와 결합하여 의미 있고 유용한 보고서를 제공합니다.
 
 주문 데이터를 내보내고 결제 서비스에서 유지합니다. 다음을 수행하는 경우 [주문 상태 변경 또는 추가](https://docs.magento.com/user-guide/sales/order-status-custom.html) 또는 [스토어 보기 편집](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [스토어](https://docs.magento.com/user-guide/stores/store-information.html)또는 웹 사이트 이름으로, 이 데이터는 결제 데이터와 결합되고 주문 결제 상태 보고서는 결합된 정보로 채워집니다.
 
@@ -132,9 +159,9 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
    선택한 데이터 소스를 기반으로 보고서 결과가 재생성됩니다.
 
-### 날짜 일정 사용자 지정
+### 주문 날짜 일정 사용자 지정
 
-주문 지급 상태 보고서 보기에서, 특정 일자를 선택하여 보려는 상태의 시간대를 사용자 정의할 수 있습니다. 기본적으로 30일의 주문 결제 상태가 그리드에 표시됩니다.
+주문 결제 상태 보고서 보기에서 특정 날짜를 선택하여 보려는 상태 결과의 시간대를 사용자 정의할 수 있습니다. 기본적으로 30일의 주문 결제 상태가 그리드에 표시됩니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 다음을 클릭합니다. _[!UICONTROL Order dates]_달력 선택기 필터.
@@ -148,7 +175,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 다음을 클릭합니다. **[!UICONTROL Filter]** 선택기.
 1. 전환 _지불 상태_ 선택한 주문 지급 상태에 대해서만 보고서 결과를 보는 옵션.
-1. 입력 _최소 주문 금액_ 또는 _최대 주문 금액_ 주문 금액 범위 내에서 보고서 결과를 봅니다.
+1. 다음을 입력하여 주문 금액 범위 내에서 보고서 결과 조회 _[!UICONTROL Min Order Amount]_또는 _[!UICONTROL Max Order Amount_].
 1. 클릭 **[!UICONTROL Hide filters]** 필터를 숨깁니다.
 
 ### 열 표시 및 숨기기
@@ -159,7 +186,7 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 1. 다음을 클릭합니다. _열 설정_ 아이콘(![열 설정 아이콘](assets/column-settings.png){width="20" zoomable="yes"}).
 1. 보고서에 표시되는 열을 사용자 지정하려면 목록에서 열을 선택하거나 선택 취소합니다.
 
-   주문 결제 상태 보고서에는 열 설정 메뉴에서 변경한 사항이 즉시 표시됩니다. 열 환경 설정이 저장되며 보고서 보기에서 나가면 적용됩니다.
+   주문 결제 상태 보고서에는 열 설정 메뉴에서 변경한 사항이 즉시 표시됩니다. 열 기본 설정은 저장되며 보고서 보기에서 멀리 이동하는 경우에도 계속 적용됩니다.
 
 ### 상태 보기
 
@@ -197,10 +224,10 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. 다음 위치로 이동 **[!UICONTROL Disputes column]**.
 1. 특정 주문에 대한 모든 분쟁을 조회하고 다음을 참조하십시오. [분쟁 상태](#order-payment-status-information).
-1. 분쟁 ID 링크(다음으로 시작)를 클릭합니다 _PP-D-_)으로 이동합니다. [PayPal 해결 센터](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. 에서 분쟁 세부 정보 검토 [PayPal 해결 센터](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) 다음으로 시작하는 분쟁 ID 링크를 클릭하여 _PP-D-_.
 1. 필요에 따라 분쟁에 대해 적절한 조치를 취하십시오.
 
-   상태별로 주문 분쟁을 정렬하려면 분쟁 열 헤더를 누릅니다.
+   상태별로 주문 분쟁을 정렬하려면 [!UICONTROL Disputes] 열 머리글입니다.
 
 ### 주문 결제 상태 다운로드
 

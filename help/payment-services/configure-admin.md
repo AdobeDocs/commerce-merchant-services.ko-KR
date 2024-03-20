@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,15 @@ ht-degree: 0%
 
 ## 일반 구성
 
-다음을 활성화할 수 있습니다. [!DNL Payment Services] 스토어에 대해 및 의 샌드박스 테스트 또는 라이브 결제를 활성화하십시오. _[!UICONTROL General Configuration]_섹션.
+다음을 활성화할 수 있습니다. [!DNL Payment Services] 스토어와  _[!UICONTROL Merchant Location]_및 를 활성화하고에서 샌드박스 테스트 또는 라이브 결제_[!UICONTROL General Configuration]_ 섹션.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
 
    ![메서드 보기](assets/methods-view.png){width="400" zoomable="yes"}
 
-1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
+1. 설정 _[!UICONTROL Merchant Country]_의 필드_[!UICONTROL Merchant Location]_.
+1. 확장 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션 액세스_[!UICONTROL [!DNL Payment Services]]_ 섹션.
 1. 다음에서 _[!UICONTROL [!DNL Payment Services]]_섹션을 확장합니다._[!UICONTROL General Configuration]_ 섹션.
 1. 대상 **사용**, 다음으로 설정 `Yes` 활성화하려면 [!DNL Payment Services] 스토어용.
 1. 대상 **방법**, 다음으로 설정 `Sandbox` 아직 테스트 중인 경우 [!DNL Payment Services] 스토어 또는 `Production` 라이브 결제를 활성화할 준비가 된 경우.
@@ -39,6 +40,8 @@ ht-degree: 0%
 1. 대상 **소프트 설명자** (스토어/브랜드/카탈로그를 구분할 고객 거래 은행 거래 명세서에 표시되는 사용자 지정 값) 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하고 을 바꿉니다 `Custom descriptor` 또는 기존 값을 포함할 수 없습니다.
 1. 클릭 **[!UICONTROL Save Config]** 변경 사항을 저장합니다.
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL Flush Cache]** 잘못된 모든 캐시를 새로 고칩니다.
+
+![주요 Adobe 솔루션 보기](assets/featured-adobe-solution-view.png){width="700" zoomable="yes"}
 
 ### 구성 옵션
 
@@ -58,7 +61,7 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
-1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
+1. 확장 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션.
 1. 다음에서 _[!UICONTROL Payment Services]_섹션을 확장합니다._[!UICONTROL Credit Card Fields]_ 섹션.
 1. 대상 **[!UICONTROL Title]**&#x200B;필요한 경우 체크아웃 중에 표시된 대로 결제 방법의 이름을 변경할 텍스트를 입력합니다.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **승인 및 캡처**.
@@ -92,14 +95,15 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
-1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
+1. 확장 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션.
 1. 다음에서 _[!UICONTROL Payment Services]_섹션을 확장합니다._[!UICONTROL Apple Pay]_ 섹션.
 1. 대상 **[!UICONTROL Title]**&#x200B;필요한 경우 체크아웃 중에 표시된 대로 결제 방법의 이름을 변경할 텍스트를 입력합니다.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **[!UICONTROL Authorize and Capture]**.
-1. 표시 [!DNL Apple Pay] 체크아웃 페이지에서 `Yes` 대상: **[!UICONTROL Show buttons on checkout page]**.
-1. 표시 [!DNL Apple Pay] 제품 세부 사항 페이지에서 `Yes` 대상: **[!UICONTROL Show buttons on product detail page]**.
-1. 표시 [!DNL Apple Pay] 미니 장바구니 미리 보기에서 `Yes` 대상 **[!UICONTROL Show buttons in mini cart preview]**.
-1. 표시 [!DNL Apple Pay] 장바구니 페이지에서 `Yes` 대상: **[!UICONTROL Show buttons on cart page]**.
+1. 다음 위치를 지정하십시오. [!DNL Apple Pay] 옵션은 다음을 선택하여 Adobe Commerce에서 활성화됩니다. `Yes` 필요에 따라 다음 옵션을 선택합니다.
+   * **[!UICONTROL Show Apple Pay on checkout page]**
+   * **[!UICONTROL Show Apple Pay on product detail page]**
+   * **[!UICONTROL Show Apple Pay in mini cart preview]**
+   * **[!UICONTROL Show Apple Pay on cart page]**
 1. 디버그 모드를 사용하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Debug Mode]** (`No` 사용 안 함)입니다.
 1. 변경 사항을 저장하려면 를 클릭합니다. **[!UICONTROL Save Config]** .
 1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL Flush Cache]** 잘못된 모든 캐시를 새로 고칩니다.
@@ -111,10 +115,51 @@ ht-degree: 0%
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 활성화 또는 비활성화 [!DNL Apple Pay] 체크아웃 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
 | [!UICONTROL Show buttons on product detail page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Apple Pay] 제품 세부 사항 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Apple Pay] ( 미니 장바구니 미리 보기) 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Apple Pay] 장바구니 페이지의 를 참조하십시오. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+
+## [!UICONTROL Google Pay]
+
+다음 [!UICONTROL Google Pay] 결제 옵션을 통해 가맹점은 구매 고객에게 Google Pay를 제공할 수 있으며, 구매자는 디바이스에서 Google Wallet을 사용하여 구매할 수 있습니다.
+
+다음을 참조하십시오 [결제 옵션](payments-options.md#google-pay-button) 추가 정보.
+
+1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
+1. 확장 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션.
+1. 다음에서 _[!UICONTROL Payment Services]_섹션을 확장합니다._[!UICONTROL Google Pay]_ 섹션.
+1. (선택 사항) 체크아웃 중에 표시되는 결제 방법명에 새 이름을 입력하여 이름을 변경합니다. **[!UICONTROL Title]** 필드.
+1. [결제 조치 설정](production.md#set-payment-services-as-payment-method) 을(를) 선택하여 **[!UICONTROL Authorize]** 또는 **[!UICONTROL Authorize and Capture]**.
+1. 다음 위치를 지정하십시오. [!DNL Google Pay] 옵션은 다음을 선택하여 Adobe Commerce에서 활성화됩니다. `Yes` 필요에 따라 다음 옵션을 선택합니다.
+   * **[!UICONTROL Show Google Pay on checkout page]**
+   * **[!UICONTROL Show Google Pay on product detail page]**
+   * **[!UICONTROL Show Google Pay in mini cart preview]**
+   * **[!UICONTROL Show Google Pay on cart page]**
+1. 디버그 모드를 사용하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Debug Mode]** (`No` 사용 안 함)입니다.
+1. 의 모양 구성 _[!UICONTROL Google Pay]_을(를) 선택하여 버튼&#x200B;**[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**, 및&#x200B;**[!UICONTROL Button Style]**필요한 경우.
+1. 높이를 설정하려면 아래에 정의된 높이의 기본값을 사용합니다. **[!UICONTROL Button Style]**.
+1. 변경 사항을 저장하려면 를 클릭합니다. **[!UICONTROL Save Config]** .
+1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**&#x200B;을 클릭한 다음 을 클릭합니다 **[!UICONTROL Flush Cache]** 잘못된 모든 캐시를 새로 고칩니다.
+
+### 구성 옵션
+
+| 필드 | 범위 | 설명 |
+|---|---|---|
+| [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에 이 결제 옵션에 대해 표시되는 텍스트 레이블을 지정합니다. 옵션: `[!UICONTROL text field]` |
+| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Show on checkout page] | 웹 사이트 | 활성화 또는 비활성화 [!DNL Google Pay] 체크아웃 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
+| [!UICONTROL Show buttons on product detail page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Google Pay] 제품 세부 사항 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Google Pay] ( 미니 장바구니 미리 보기) 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL Google Pay] 장바구니 페이지에서 확인할 수 있습니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Button Color] | 스토어 뷰 | 색상 정의 [!DNL Google Pay] 단추를 클릭합니다. 옵션: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
+| [!UICONTROL Button Type] | 스토어 뷰 | 의 유형 정의 [!DNL Google Pay] 단추를 클릭합니다. 옵션: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
+
+다음을 참조하십시오 [Google Pay API 요청 오브젝트 옵션](https://developers.google.com/pay/api/web/reference/request-objects) 설명서 를 참조하십시오.
 
 ## [!DNL PayPal Payment Buttons]
 
@@ -128,16 +173,17 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
-1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
+1. 확장 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션.
 1. 다음에서 _[!UICONTROL Payment Services]_섹션을 확장합니다._[!UICONTROL PayPal payment buttons]_ 섹션.
 1. 체크아웃 중에 표시된 대로 결제 방법의 이름을 변경하려면 다음을 편집합니다. _[!UICONTROL Title]_필드.
 1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 선택 **[!UICONTROL Authorize]** 또는 **[!UICONTROL Authorize and Capture]**.
 1. 체크아웃 페이지에서 결제 방법의 우선 순위를 정하려면 `Numeric Only` 의 값 **[!UICONTROL Sort order]** 필드.
 1. 활성화/비활성화하려면 [나중에 결제 메시지](payments-options.md#pay-later-button), 선택 `Yes`/`No` 대상 **[!UICONTROL Display Pay Later Message]**.
-1. 체크아웃 페이지에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on checkout page]**.
-1. 제품 세부 사항 페이지에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on product detail page]**.
-1. 미니 장바구니 미리 보기에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상 **[!UICONTROL Show buttons in mini cart preview]**.
-1. 장바구니 페이지에 PayPal 결제 단추를 표시하려면 다음을 선택합니다. `Yes` 대상: **[!UICONTROL Show buttons on cart page]**.
+1. 다음을 선택하여 Adobe Commerce에서 PayPal 결제 단추를 사용할 수 있는 위치를 지정합니다. `Yes` 필요에 따라 다음 옵션을 선택합니다.
+   * **[!UICONTROL Show buttons on checkout page]**
+   * **[!UICONTROL Show buttons on product detail page]**
+   * **[!UICONTROL Show buttons in mini cart preview]**
+   * **[!UICONTROL Show buttons on cart page]**
 1. Venmo를 결제 옵션으로 사용하려면 을 선택합니다. `Yes` 대상 **[!UICONTROL Venmo Enabled]**.
 1. 신용 카드와 직불 카드를 결제 옵션으로 사용하려면(PayPal 스마트 단추) 다음을 선택합니다. `Yes` 대상 **[!UICONTROL Credit and Debit Card Enabled]**.
 1. 활성화/비활성화하려면 [PayPal 나중에 결제](payments-options.md#pay-later-button) 결제 옵션, 선택 `Yes`/`No` 대상 **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -167,7 +213,7 @@ ht-degree: 0%
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. 왼쪽 패널에서 를 확장합니다. **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Payment Methods]**.
-1. 확장 _[!UICONTROL Recommended Solutions]_섹션.
+1. 확장 _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션.
 1. 다음에서 _[!UICONTROL [!DNL Payment Services]]_섹션을 확장합니다._[!UICONTROL PayPal Smart Button Styling]_ 섹션.
 1. 레이아웃을 설정하려면 다음을 선택합니다. `Vertical` 또는 `Horizontal` 대상 **[!UICONTROL Layout]**
 1. 색상을 설정하려면 의 사용 가능한 색상 중에서 선택합니다 **[!UICONTROL Color]**.

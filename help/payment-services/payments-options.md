@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 * **고급** - 모두 사용 가능 [결제 옵션](../payment-services/payments-options.md) 현재에 사용 가능 [완전히 지원되는 국가](../payment-services/overview.md#availability). 실시간 결제를 활성화하려면 온보딩 중에 [고급 온보딩 옵션](../payment-services/production.md#advanced-onboarding).
 * **표준** - 일부 결제 옵션(Express Checkout) - PayPal 신용 카드 및 직불 카드는 지원되는 다른 국가에서 사용할 수 있습니다. [신용 카드 필드](#credit-card-fields) 및 [Apple 페이](#apple-pay-button) 이 온보딩 옵션에는 사용할 수 없습니다. 실시간 결제를 활성화하려면 온보딩 중에 [표준 온보딩 옵션](../payment-services/production.md#standard-onboarding).
 
-다음을 참조하십시오 [사용 [!DNL Payment Services] 프로덕션용](../payment-services/production.md#complete-merchant-onboarding) 고급 및 표준 온보딩 완료에 대한 자세한 내용
+다음을 참조하십시오 [사용 [!DNL Payment Services] 프로덕션용](../payment-services/production.md#complete-merchant-onboarding) 고급 및 표준 온보딩 완료에 대한 자세한 정보.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## [!DNL Apple Pay] 단추
 
-고객은 다음을 사용할 수 있습니다 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/): iOS 또는 macOS 장치에 저장된 신용 카드 및 직불 카드 결제 자격 증명을 사용하여 구매합니다.
+고객은 다음을 사용할 수 있습니다 [[!DNL Apple Pay]](https://www.apple.com/apple-pay/)- iOS 또는 macOS 장치에 저장된 신용 카드 및 직불 카드 결제 자격 증명을 사용하여 구매합니다.
 
 [!DNL Apple Pay] 는 Safari 브라우저에서만 사용할 수 있습니다. 가맹점은 가맹점 계좌당 최대 99개의 도메인을 추가할 수 있다.
 
@@ -64,15 +64,31 @@ ht-degree: 0%
 
 다음을 구성할 수 있습니다. [!UICONTROL Apple Pay] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](settings.md#apple-pay) 추가 정보.
 
+## [!DNL Google Pay] 단추
+
+고객은 다음을 사용할 수 있습니다 [[!DNL Google Pay]](https://pay.google.com/about/) Google 계정에 결제 세부 사항을 추가하여 안전하게 저장함으로써 원활한 체크아웃 환경을 제공할 수 있습니다.
+
+[!DNL Google Pay] 는 특정 국가 또는 지역 및 특정 디바이스에서만 사용할 수 있습니다. 다음을 참조하십시오 [[!DNL Google Pay] 설명서](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) 추가 정보.
+
+![체크아웃 시 Google 결제 버튼](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+다음 [!DNL Google Pay] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
+
+다음을 구성할 수 있습니다. [!UICONTROL Google Pay] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](settings.md) 추가 정보.
+
+>[!NOTE]
+>
+> 다음 [!DNL Google Pay] API는 보안 컨텍스트의 웹 사이트에서만 사용할 수 있습니다. 다음을 참조하십시오 [문제 해결](https://developers.google.com/pay/api/web/support/troubleshooting) 설명서 를 참조하십시오.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons]: PayPal을 사용하여 구매를 완료하고 나중에 사용할 수 있도록 쇼핑객의 배송 주소, 청구 주소 및 결제 세부 정보를 저장합니다. 쇼핑객은 PayPal에서 이전에 저장하거나 제공하는 결제 방법을 사용할 수 있습니다.
 
 ![PayPal 단추](assets/paypal-button.png){width="350" zoomable="yes"}
 
-다음을 구성할 수 있습니다. [!UICONTROL PayPal payment buttons] 저장소 구성 또는 [!DNL Payment Services] 집.  다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
+다음을 구성할 수 있습니다. [!UICONTROL PayPal payment buttons] 저장소 구성 또는 [!DNL Payment Services] 집. 다음을 참조하십시오 [설정](settings.md#payment-buttons) 추가 정보.
 
-PayPal의 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/payment-methods/) 각 결제 방법을 현재 사용할 수 있는 국가를 알아봅니다.
+PayPal에서 국가별 결제 방법을 사용할 수 있는지 알아보기 [결제 방법 설명서](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] 단추
 
@@ -102,17 +118,17 @@ PayPal 직불 또는 신용 카드 버튼은 체크아웃 페이지에서 볼 �
 
 다음에서 나중에 결제 오퍼에 대한 정보를 참조하십시오. [PayPal의 Pay Later 오퍼 설명서](https://developer.paypal.com/docs/checkout/pay-later/us/). 사용 **국가 또는 지역** 드롭다운을 통해 관심 영역을 선택합니다.
 
-다음을 참조하십시오 [설정](settings.md#payment-buttons) 을(를) 비활성화/활성화하는 방법에 대해 알아보려면 [!DNL Pay Later] 메시지.
+을(를) 비활성화하거나 활성화하는 방법에 대해 알아보기 [!DNL Pay Later] 를 업데이트하여 메시지 보내기 [설정](settings.md#payment-buttons) 구성.
 
 ## PayPal 결제 버튼만 사용
 
-스토어를 프로덕션 모드로 빠르게 전환하려면 다음을 구성할 수 있습니다. _전용_ PayPal 결제 버튼(Venmo, PayPal 등)—PayPal 신용카드 결제 옵션을 사용하지 않습니다.
+스토어를 프로덕션 모드로 빠르게 전환하려면 다음을 구성할 수 있습니다. _전용_ PayPal 결제 단추(Venmo, PayPal 등)—PayPal 신용카드 결제 옵션을 사용하지 않습니다.
 
 이를 통해 다음을 수행할 수 있습니다.
 
 * Venmo 및 PayPal 결제 버튼을 포함하여 고객을 위한 다양한 결제 옵션을 제공하고, PayPal 호스팅 카드 필드를 끄고 기존 신용카드 제공업체를 사용할 수 있는 옵션을 제공합니다.
-* PayPal의 다른 결제 옵션을 활용하면서 신용 카드 결제를 위해 기존 신용카드 제공업체를 이용하십시오.
-* PayPal이 신용 카드를 지원하지 않는 지역에서 PayPal의 결제 버튼을 결제 옵션으로 사용합니다.
+* PayPal의 기타 결제 옵션을 사용하면서 신용 카드 결제를 위해 기존 신용카드 제공업체를 이용하십시오.
+* PayPal이 신용 카드를 지원하지 않는 지역의 PayPal 결제 버튼을 결제 옵션으로 사용합니다.
 
 종료 **다음을 사용하여 결제 캡처 _전용_ PayPal 결제 단추(_아님_ payPal 신용카드 결제 옵션)**:
 
