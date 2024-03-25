@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ _2023년 2월 22일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 다음 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 을(를) 이제 사용할 수 있습니다. 이렇게 개선된 대시보드는 다음에 대한 데이터 스트림에 대한 통찰력을 제공합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service].
+![신규](../assets/new.svg) 다음 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 을(를) 이제 사용할 수 있습니다. 이렇게 개선된 대시보드는 다음에 대한 데이터 스트림에 대한 통찰력을 제공합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service]. 이 기능에 대한 지원은 의 v3.1.0에서 도입되었습니다 `catalog-service` 메타패키지.
 
 ## 이전 버전
 
