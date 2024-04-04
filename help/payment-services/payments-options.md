@@ -3,7 +3,7 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 다음 [!DNL Google Pay] 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 버튼이 표시됩니다.
 
-다음을 구성할 수 있습니다. [!UICONTROL Google Pay] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](settings.md) 추가 정보.
+다음을 구성할 수 있습니다. [!UICONTROL Google Pay] 저장소 구성 또는 결제 서비스 홈에서 사용할 수 있습니다. 다음을 참조하십시오 [설정](configure-admin.md) 추가 정보.
 
 >[!NOTE]
 >
