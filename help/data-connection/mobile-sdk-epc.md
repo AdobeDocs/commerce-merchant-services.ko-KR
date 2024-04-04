@@ -4,9 +4,9 @@ description: Headless 또는 사용자 지정 Commerce 상점 앞에서 Adobe Ex
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Experience Platform에 대한 SDK 구성을 완료한 후 SDK 구성을 Commerce
 
    이제 Adobe Experience Platform Mobile SDK를 Commerce 모바일 앱과 통합했습니다. 이벤트 데이터는 앱에서 Experience Platform 에지로 흐릅니다.
 
-모바일 Commerce 앱에서 Real-Time CDP 대상자를 검색하여 장바구니 가격 규칙 및 동적 블록을 알리는 방법에 대해 알아보려면 를 참조하십시오. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## 모바일 애플리케이션에서 생성된 상거래 이벤트를 구분하는 방법
+
+모두 [events](events.md) 라는 필드를 포함합니다. `channel`. 다음 `channel` 필드는 다음을 포함 `channel._id` 및 `channel._type` Luma 상점 첫 화면의 네임스페이스 값은 `"https://ns.adobe.com/xdm/channels/web"` 및 `"https://ns.adobe.com/xdm/channel-types/web"` 각각. 그러나 모바일 상점의 경우 네임스페이스 값은 다음과 같습니다. `"https://ns.adobe.com/xdm/channels/mobile-app"` 및 `"https://ns.adobe.com/xdm/channel-types/mobile"` 각각.
+
+## 다음 단계
+
+모바일 Commerce 앱에서 Real-Time CDP 대상자를 검색하여 장바구니 가격 규칙, 동적 블록 및 관련 제품 규칙을 알리는 방법에 대해 알아보려면 를 참조하십시오. [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

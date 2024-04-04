@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c95b1fc9393c507dd757c74c30473590760d47a6
+source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _2022년 10월 12일_
 ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support).
 
 +++
+
+## 3.1.1
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+_2024년 4월 4일_
+
+![신규](../assets/new.svg) - 모든 PHP 8.3에 대한 지원을 추가했습니다. [!DNL Data Connection] 확장.
+![신규](../assets/new.svg) - 다음 방법에 대한 문서 추가 [통합](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK와 Commerce.
 
 ## 3.2.0-베타2
 
