@@ -3,9 +3,9 @@ title: '[!DNL Page Builder] 통합'
 description: 사용 방법 알아보기 [!DNL Product Recommendations] 페이지 빌더의 단위.
 exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
 feature: Services, Recommendations, Page Builder
-source-git-commit: 6bc8eb5ffbefc46c8666ead8c8ec8b274a0040e7
+source-git-commit: 6bd1010066919d8339ddfb70cd7443d701a4ac78
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >Page Builder 권장 사항 단위에 대한 지표는 기본 스토어 보기에만 나타납니다 [!DNL Product Recommendations] 작업 영역. 기본 스토어 보기가 아닌 스토어 보기에 Page Builder 권장 사항 단위를 배치하더라도 해당 Page Builder 권장 사항 단위와 관련된 지표는 여전히 기본 스토어 보기에만 표시됩니다 [!DNL Product Recommendations] 작업 영역. 기본이 아닌 저장소 보기에서 Page Builder 지표를 보려면 [!DNL Product Recommendations] 작업 영역, 열기 및 [편집](edit.md) 기본 스토어가 아닌 보기에서 페이지 빌더 추천 단위를 클릭한 다음 [!UICONTROL **저장**]. 이제 페이지 빌더 지표가 [!DNL Product Recommendations] 기본 스토리가 아닌 작업 영역 아래에 있는 작업 영역입니다.
+   >Page Builder 권장 사항 단위에 대한 지표는 기본 스토어 보기에만 나타납니다 [!DNL Product Recommendations] 작업 영역. 기본 스토어 보기가 아닌 스토어 보기에 Page Builder 권장 사항 단위를 배치하더라도 해당 Page Builder 권장 사항 단위와 관련된 지표는 기본이 아닌 스토어 보기에 표시되지 않습니다 [!DNL Product Recommendations] 작업 영역. 기본이 아닌 저장소 보기에서 Page Builder 지표를 보려면 [!DNL Product Recommendations] 작업 영역, 열기 및 [편집](edit.md) 기본 스토어가 아닌 보기에서 페이지 빌더 추천 단위를 클릭한 다음 [!UICONTROL **저장**]. 이제 페이지 빌더 지표가 [!DNL Product Recommendations] 기본 스토리가 아닌 작업 영역 아래에 있는 작업 영역입니다.
 
 1. 페이지 빌더에서 제품 Recommendations 컨텐츠 위젯을 선택하고 사이트에 배치합니다.
 
