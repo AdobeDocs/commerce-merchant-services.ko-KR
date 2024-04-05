@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 370d86f32ba0969e2d69f8a9a94f2d47be820ade
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ _2021년 6월 28일_
 
 ## v2.4.1
 
-2024년 4월 5일_
+_2024년 4월 4일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
