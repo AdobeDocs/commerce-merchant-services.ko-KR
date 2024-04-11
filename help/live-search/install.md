@@ -3,9 +3,9 @@ title: "설치 [!DNL Live Search]"
 description: "설치, 업데이트 및 제거 방법 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -195,6 +195,8 @@ API 키 및 개인 키를 생성하려면 다음을 참조하십시오. [Commerc
 [!DNL Live Search] 검색 작업에는 동기화된 제품 데이터가 필요하고 패싯을 구성하려면 동기화된 특성 데이터가 필요합니다. 제품 카탈로그와 카탈로그 서비스 간의 초기 동기화는 [!DNL Live Search] 는 첫 번째로 연결됩니다. 카탈로그의 설치 방법 및 크기에 따라 데이터를 내보내고 인덱싱하는 데 최대 30분이 소요될 수 있습니다 [!DNL Live Search]. 카탈로그 서비스와 동기화되고 공유되는 데이터 목록은 스키마에서 찾을 수 있으며, 스키마는에 정의되어 있습니다.
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+사용 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) Commerce 데이터베이스에서 Commerce SaaS 서비스로 전송되는 제품 데이터의 동기화 상태를 모니터링합니다.
 
 ### 내보내기 확인 {#verify-export}
 
