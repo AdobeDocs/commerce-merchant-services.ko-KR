@@ -3,7 +3,7 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -34,7 +34,7 @@ _2023년 10월 27일_
 
 _2023년 10월 12일_
 
-![신규](../assets/new.svg) 상거래 관리자는 이제 다음에 대한 인덱스의 언어를 지정할 수 있습니다. [!DNL Live Search]. 다음을 참조하십시오 [설정](settings.md).
+![신규](../assets/new.svg) 이제 Commerce 관리자는 색인 언어를 지정할 수 있습니다. [!DNL Live Search]. 다음을 참조하십시오 [설정](settings.md).
 ![수정](../assets/fix.svg) &quot;검색 규칙&quot; 탭의 이름이 &quot;머천다이징 검색&quot;으로 변경되었습니다.
 
 _2023년 6월 13일_
@@ -54,7 +54,7 @@ _2024년 3월 19일_
 ### 새로운 기능
 
 ![신규](../assets/new.svg) 에 대한 언어 지원을 추가했습니다. [폴란드어](technical-overview.md#language-support).
-![신규](../assets/new.svg) [!DNL Live Search] 는 이제 Adobe Commerce 2.4.4를 실행하는 설치용 PHP 8.3을 지원합니다.
+![신규](../assets/new.svg) [!DNL Live Search] 는 이제 Adobe Commerce 2.4.7을 실행하는 설치에서 PHP 8.3을 지원합니다.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -193,7 +193,7 @@ _2023년 3월 14일_
 ![신규](../assets/new.svg) 끌어서 놓아 고정 이벤트를 만드는 기능이 추가되었습니다.
 ![신규](../assets/new.svg) 새 고정 작업: * 위치에 고정 - 한 번의 클릭으로 고정 이벤트 만들기 고정 * 상단에 고정 - 첫 번째 위치에 제품 배치 * 하단에 고정 - 결과의 하단에 제품 배치 * 한 번의 클릭으로 이벤트 고정 해제
 ![신규](../assets/new.svg) [규칙에 대한 지능형 순위](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![신규](../assets/new.svg) [!DNL Live Search] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
+![신규](../assets/new.svg) [!DNL Live Search] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
 ### 업데이트
 
@@ -266,7 +266,7 @@ _2023년 3월 14일_
 ![신규](../assets/new.svg) 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 다음에 대해 지원됨 [!DNL Live Search].
 ![신규](../assets/new.svg) 다음 [!DNL Live Search] 설치 프로세스가 고급 프로세스 변경 사항으로 업데이트됩니다.
 ![수정](../assets/fix.svg) [고급 검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 상점 첫 번째 바닥글에서 링크가 제거되었습니다.
-![버그](../assets/bug.svg) 다음 제품 속성은에서 지원하지 않습니다. [상거래 GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) PWA의 베타 릴리스와 관련하여 사용할 경우: `description`, `name`, `short_description`
+![버그](../assets/bug.svg) 다음 제품 속성은에서 지원하지 않습니다. [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) PWA의 베타 릴리스와 관련하여 사용할 경우: `description`, `name`, `short_description`
 ![버그](../assets/bug.svg) 다음에 대한 PWA 베타 릴리스 [!DNL Live Search] 은(는) 을 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ### [!DNL Live Search] 1.3.1 {#131}

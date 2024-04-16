@@ -2,22 +2,28 @@
 title: 제품 목록 페이지 위젯
 description: 활성화 및 스타일링 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # 제품 목록 페이지 위젯
 
-다음 [!DNL Live Search Product Listing Page Widget] PLP(Commerce Services)는 Commerce Services 플랫폼을 사용하여 성능, 검색 및 패싯 가능한 제품 목록 페이지를 제공합니다. 이 항목에서는 PLP 위젯을 활성화하고 스타일링하는 방법을 설명합니다.
+다음 [!DNL Live Search Product Listing Page Widget] PLP( )는 Commerce Services 플랫폼을 사용하여 성능 향상되고 검색 가능하며 패싯 가능한 제품 목록 페이지를 제공합니다. 이 항목에서는 PLP 위젯을 활성화하고 스타일링하는 방법을 설명합니다.
 
 ## PLP 위젯 활성화
 
 다음의 경우 [!DNL Live Search] 서비스가 설치되면 기본 검색 기능이 [!DNL Live Search] 자동으로 표시됩니다.
 
 다음 [!DNL Live Search] PLP 위젯은 새 설치에 대해 기본적으로 활성화되어 있습니다. 업그레이드 중인 경우 [!DNL Live Search] 그리고 PLP 위젯은 이미 꺼져 있으므로 그대로 유지됩니다.
+
+>[!IMPORTANT]
+>
+>다음의 경우 [!DNL Live Search Product Listing Page Widget] 이(가) 활성화되면 제품 목록 페이지의 정렬 순서 방향을 변경할 수 없습니다.
+
+## PLP 위젯 비활성화
 
 PLP 위젯을 비활성화하려면 다음과 같이 하십시오.
 

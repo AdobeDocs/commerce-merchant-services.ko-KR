@@ -3,9 +3,9 @@ title: "기술 개요"
 description: "[!DNL Live Search] 온보딩 플로우, 시스템 요구 사항, 경계 및 제한 사항"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 18a0e8abd5478963425c4d0030a9a0f1df9d599e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 ## 요구 사항 {#requirements}
 
 * [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-* PHP 8.1 / 8.2
+* PHP 8.1 / 8.2 / 8.3
 * [!DNL Composer]
 
 ### 지원되는 플랫폼
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 SaaS API(특히 카탈로그 서비스 끝점)를 직접 호출하는 것이 좋습니다.
 
-* Commerce 데이터베이스/Graphql 프로세스를 건너뛰어 성능을 향상시키고 프로세서 로드를 줄입니다.
+* Commerce 데이터베이스/Graphql 프로세스를 건너뛰어 성능 향상 및 프로세서 로드 감소
 * 다음을 활용하십시오. [!DNL Catalog Service] 호출할 페더레이션 [!DNL Live Search], [!DNL Catalog Service], 및 [!DNL Product Recommendations] 단일 엔드포인트에서
 
 일부 사용 사례의 경우 [!DNL Catalog Service] 제품 세부 사항 및 유사 사례에 대한 정보. 다음을 참조하십시오 [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 추가 정보.
@@ -120,7 +120,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 | 중국어 | 중국 | zh_CN | zh_Hans_CN |
 | 중국어 | 대만 | zh_TW | zh_Hant_TW |
 
-위젯이 Commerce 관리자 언어 설정(_스토어_ > 설정 > _구성_ > _일반_ > 국가 옵션) 지원되는 언어와 일치하면 기본적으로 해당 언어로 설정됩니다. 그렇지 않은 경우 위젯은 기본적으로 영어로 설정됩니다.
+위젯이 Commerce 관리 언어 설정을 감지하면(_스토어_ > 설정 > _구성_ > _일반_ > 국가 옵션) 지원되는 언어와 일치하면 기본적으로 해당 언어로 설정됩니다. 그렇지 않은 경우 위젯은 기본적으로 영어로 설정됩니다.
 
 관리자는 의 언어를 설정할 수도 있습니다. [검색 색인](settings.md#language): 더 나은 검색 결과를 보장해 줍니다.
 
@@ -143,7 +143,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ## Inventory management
 
-[!DNL Live Search] 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
+[!DNL Live Search] 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
 [!DNL Live Search] Inventory management 내에서 제품을 사용할 수 있는지 여부를 나타내는 부울을 반환하지만, 재고가 있는 소스에 대한 정보는 포함하지 않습니다.
 
@@ -166,7 +166,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ## PWA 지원
 
-[!DNL Live Search] 은 PWA Studio에서 작동하지만 다른 Commerce 구현에 비해 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
+[!DNL Live Search] 은 PWA Studio에서 작동하지만 다른 Commerce 구현과 비교하여 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
 
 * 의 현재 PWA 구현 [!DNL Live Search] 검색 결과를 반환하는 데 보다 많은 처리 시간이 필요합니다. [!DNL Live Search] 기본 Commerce 상점 포함.
 * [!DNL Live Search] PWA에서 을(를) 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 따라서 검색 보고나 지능형 머천다이징도 작동합니다.
