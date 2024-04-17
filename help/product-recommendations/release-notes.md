@@ -3,7 +3,7 @@ title: '''[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _2023년 3월 20일_
 
 ![신규](../assets/new.svg) 업데이트됨 [!DNL Product Recommendations] Adobe Commerce 2.4.6을 지원하려면 다음을 수행하십시오.
 ![신규](../assets/new.svg) 주요 버전 릴리스입니다. [편집](install-configure.md#update) 루트 `composer.json` 프로젝트용 파일입니다.
-![신규](../assets/new.svg) [!DNL Product Recommendations] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install-configure.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
+![신규](../assets/new.svg) [!DNL Product Recommendations] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install-configure.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
 ### magento/제품 권장 사항 4.0.1
 
@@ -125,7 +125,7 @@ _2023년 3월 20일_
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![신규](../assets/new.svg) 추가됨 [B2B 지원](onboarding.md#b2bsupport) 위치: [!DNL Product Recommendations]
-![신규](../assets/new.svg) 에 새 피드를 추가했습니다. [카탈로그 데이터 동기화](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 명령줄을 통해 Commerce Services로
+![신규](../assets/new.svg) 에 새 피드를 추가했습니다. [카탈로그 데이터 동기화](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 명령줄을 통해 Commerce 서비스로
 
 ### magento/product-recommendations 3.3.3
 
