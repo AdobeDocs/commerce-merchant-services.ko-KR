@@ -4,14 +4,20 @@ description: 결제 서비스 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # 설치 [!DNL Payment Services]
+
+다음에 대한 결제 서비스 사용을 시작하려면 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source], 몇 가지 온보딩 단계를 완료해야 합니다.
+
+>[!INFO]
+>
+> 다음 참조: [구성 [!DNL Payment Services] Adobe Commerce용](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) 비디오 를 참조하십시오.
 
 다운로드 및 설치 [!DNL Payment Services] 확장 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 은(는) 을 사용하기 위한 사전 요구 단계입니다. [!DNL Payment Services].
 
@@ -29,7 +35,8 @@ ht-degree: 0%
 
 ## 확장 설치
 
-다음을 설치할 수 있습니다. [!DNL Payment Services] 둘 다 확장 [!DNL Adobe Commerce] Commerce 계정에 연결된 클라우드 인프라 및 온프레미스 인스턴스 [마게드](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) 은 등록 프로세스에서 제공됩니다. [!DNL Magento Open Source] 고객은 온-프레미스 지침을 사용합니다.
+다음을 설치할 수 있습니다. [!DNL Payment Services] 둘 다 확장 [!DNL Adobe Commerce] Commerce 계정에 연결된 온클라우드 인프라 및 온프레미스 인스턴스 [마게드](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) 은 등록 프로세스에서 제공됩니다.
+[!DNL Magento Open Source] 고객은 온-프레미스 지침을 사용합니다.
 
 Composer는 초기 설치 중에 이 키를 사용합니다. [!DNL Adobe Commerce]또는 Composer 키가 이전에 `auth.json` 파일.
 
@@ -132,7 +139,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. 다음을 참조하십시오 [상거래 계정과 연결된 키 `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. 다음을 참조하십시오 [Commerce 계정과 연결된 키 `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### 메모리가 부족하여 PHP를 사용할 수 없습니다.
 
