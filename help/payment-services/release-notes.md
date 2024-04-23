@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
+source-git-commit: 8e123367600c40d1d1207b35c4f7fa41079e7172
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2505'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _2021년 6월 28일_
 ![신규](../assets/new.svg)<!-- Issue PAY-2761 --> 이제에 표시되는 데이터를 사용자 지정할 수 있습니다 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [지급 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) 열 설정 컨트롤을 사용하여 열을 표시하거나 숨깁니다.
 
 +++
+
+## v2.5.0
+
+_2024년 4월 23일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![수정](../assets/fix.svg)<!-- Issue PAY-5396 --> 이제 결제 서비스에서 다음을 지원합니다. [다음을 위한 Adobe Commerce 지침 `--db-prefix` 매개 변수](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) Adobe Commerce 버전 2.4.7 이상용
 
 ## v2.4.3
 
