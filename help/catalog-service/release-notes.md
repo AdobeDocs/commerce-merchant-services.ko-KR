@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
+source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ _2023년 4월 11일_
 
 ![신규](../assets/new.svg) PHP 8.3에 대한 지원이 추가되었습니다.
 
-![신규](../assets/new.svg) 다음 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 이제 query는 단순 제품과 복합 제품 모두에 대해 사용자 지정 가능한 옵션 데이터를 반환합니다.<!--DATA-5538-->
+![신규](../assets/new.svg) 다음 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 및 [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 이제 쿼리는 단순 제품과 복합 제품 모두에 대해 사용자 정의 가능한 옵션 데이터를 반환합니다.<!--DATA-5538-->
 
 ### V1.17 릴리스
 
