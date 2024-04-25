@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,16 @@ ht-degree: 0%
 ![버그](../assets/bug.svg) 알려진 문제
 
 ## 현재 메이저 버전
+
+### V1.18 릴리스
+
+_2023년 4월 11일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg) PHP 8.3에 대한 지원이 추가되었습니다.
+
+![신규](../assets/new.svg) 다음 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 이제 query는 단순 제품과 복합 제품 모두에 대해 사용자 지정 가능한 옵션 데이터를 반환합니다.<!--DATA-5538-->
 
 ### V1.17 릴리스
 
@@ -49,7 +59,7 @@ _2023년 2월 13일_
 다음 기능은 아직 지원되지 않습니다.
 
 * 동적 특성 페이로드의 최대 크기는 9MB입니다.
-* 그룹 제품 가격. 간단한 제품 가격으로 계산할 수 있습니다.
+* 그룹 제품 가격. 이 값은 간단한 제품 가격으로 계산할 수 있다.
 * 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
 
 API Mesh 및 Core GraphQL API를 사용하면 다음 제한 사항을 해결할 수 있습니다.
@@ -64,7 +74,7 @@ _2023년 10월 12일_
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![신규](../assets/new.svg) 카탈로그 서비스가 다음을 지원합니다. `inStock` 제품 변형에 대한 플래그.
-![신규](../assets/new.svg) `urlKey` 및 `externalId` GraphQL 스키마에 추가되었습니다.
+![신규](../assets/new.svg) 다음 `urlKey` 및 `externalId` GraphQL 스키마에 필드가 추가되었습니다.
 ![신규](../assets/new.svg) 이제 다운로드 가능한 제품 및 기프트 카드가 지원됩니다.
 
 ### V1.12 릴리스
@@ -90,7 +100,7 @@ _2023년 6월 27일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 이제 카탈로그 서비스 API가 &quot;관련 제품&quot;을 지원합니다.
+![신규](../assets/new.svg) 이제 카탈로그 서비스 API가 를 지원합니다. `related products`.
 
 ### V1.7 릴리스
 
@@ -184,5 +194,3 @@ _2022년 8월 9일_
 * 간단한 제품에 대한 특정 가격 및 구성 가능한 제품에 대한 가격 범위입니다.
 * 고객 그룹 가격 및 가격 범위. 고객 그룹이 없는 쇼핑객에 대해 대체 기본 가격을 반환합니다.
 * B2B 고객별 가격을 사용하는 제품 유형입니다.
-
-+++
