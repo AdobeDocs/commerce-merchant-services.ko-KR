@@ -3,7 +3,7 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
+source-git-commit: 733bad1c12ff62b226ac8a9675faf9c091e84732
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -32,6 +32,10 @@ _2023년 4월 11일_
 
 ![신규](../assets/new.svg) 다음 [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) 및 [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) 이제 쿼리는 단순 제품과 복합 제품 모두에 대해 사용자 정의 가능한 옵션 데이터를 반환합니다.<!--DATA-5538-->
 
+## 이전 버전
+
++++ 이전 버전
+
 ### V1.17 릴리스
 
 _2023년 2월 22일_
@@ -39,10 +43,6 @@ _2023년 2월 22일_
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![신규](../assets/new.svg) 다음 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 을(를) 이제 사용할 수 있습니다. 이렇게 개선된 대시보드는 다음에 대한 데이터 스트림에 대한 통찰력을 제공합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service]. 이 기능에 대한 지원은 의 v3.1.0에서 도입되었습니다 `catalog-service` 메타패키지.
-
-## 이전 버전
-
-+++ 이전 버전
 
 ### V1.16 릴리스
 
