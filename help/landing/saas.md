@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ ht-degree: 0%
 
 ### SaaS 프로젝트 선택 또는 만들기 {#createsaasenv}
 
->[!NOTE]
->
-> 표시되지 않는 경우 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] 구성, 다음을 설치해야 합니다. [!DNL Commerce] 원하는 모듈 [[!DNL Commerce] 서비스](#availableservices).
-
 SaaS 프로젝트를 선택하거나 만들려면 다음을 요청하십시오. [!DNL Commerce] 의 API 키 [!DNL Commerce] 귀하의 스토어에 대한 라이선스 보유자입니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **시스템** > 서비스 > **Commerce Services 커넥터**.
+
+   표시되지 않는 경우 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] 구성, 설치 [!DNL Commerce] 원하는 모듈 [[!DNL Commerce] 서비스](#availableservices). 또한 `magento/module-services-id` 패키지가 설치되었습니다.
 
 1. 다음에서 _샌드박스 API 키_ 및 _프로덕션 API 키_ 섹션, 키 값을 붙여넣습니다.
 
