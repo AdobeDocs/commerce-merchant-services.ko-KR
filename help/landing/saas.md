@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 높은 수준에서 [!DNL Commerce Services Connector] 는 다음 핵심 요소로 구성됩니다.
 
-![Commerce Services 커넥터 아키텍처](assets/saas-config-sync-workflow.png)
+![Commerce 서비스 커넥터 아키텍처](assets/saas-config-sync-workflow.png)
 
 다음 섹션에서는 이러한 각 요소에 대해 자세히 설명합니다.
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 1. 각 환경(프로덕션 및 샌드박스)에 대해 위의 단계를 반복합니다.
 
-   다음 **API 키** 이제 섹션에 API 키가 표시됩니다. 다음과 같은 경우 프로덕션 키와 샌드박스 키가 모두 필요합니다. [SaaS 프로젝트 선택 또는 만들기](#createsaasenv).
+   다음 **API 키** 이제 섹션에 API(공개) 키가 표시됩니다. 다음과 같은 경우 프로덕션 키와 샌드박스 키(공개+비공개)가 모두 필요합니다. [SaaS 프로젝트 선택 또는 만들기](#createsaasenv).
 
 ## SaaS 구성 {#saasenv}
 
