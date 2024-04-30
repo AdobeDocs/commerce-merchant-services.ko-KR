@@ -4,28 +4,25 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
+source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 11%
+source-wordcount: '78'
+ht-degree: 10%
 
 ---
 
-# [!DNL Live Search] 상거래 {#live-search}
+# [!DNL Live Search] Commerce용 {#live-search}
 
-- [안내서 개요](guide-overview.md)
-- [소개 [!DNL Live Search]](overview.md)
+- [이란? [!DNL Live Search]?](overview.md)
+- [설치](install.md)
+- [경계 및 제한](boundaries-limits.md)
 - [릴리스 정보](release-notes.md)
-- Live Search 온보드 {#onboard}
-   - [기술 개요](technical-overview.md)
-   - [설치 [!DNL Live Search]](install.md)
 - [!DNL Live Search] 상점 첫 화면 {#live-search-storefront}
    - [제품 목록 페이지 위젯](plp-styling.md)
-   - [빠른 둘러보기](quick-tour.md)
    - [상점 첫 화면 [!DNL Popover]](storefront-popover.md)
    - [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md)
 - [!DNL Live Search] 관리자{#live-search-admin}
-   - [상거래 구성 설정](configuration.md)
+   - [Commerce 구성 설정](configuration.md)
    - 패싯 {#facets}
       - [개요](facets.md)
       - [작업 영역 구성](faceting-workspace.md)

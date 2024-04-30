@@ -5,10 +5,10 @@ title: Adobe Commerce용 서비스
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: e1ad97f602eeaa2d0d95d6620dd8e4fa6c5c0152
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 27%
+source-wordcount: '58'
+ht-degree: 48%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 27%
 - 릴리스 정보 {#release-information}
    - [릴리스 정보](/help/landing/release-notes-all.md)
    - [문서의 새로운 기능](/help/landing/whats-new.md)
-- 상거래 서비스 {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
+- Commerce 서비스 {#commerce-services}
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)

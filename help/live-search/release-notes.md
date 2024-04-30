@@ -3,7 +3,7 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _2024년 3월 19일_
 
 ### 새로운 기능
 
-![신규](../assets/new.svg) 에 대한 언어 지원을 추가했습니다. [폴란드어](technical-overview.md#language-support).
-![신규](../assets/new.svg) [!DNL Live Search] 는 이제 Adobe Commerce 2.4.7을 실행하는 설치에서 PHP 8.3을 지원합니다.
+![신규](../assets/new.svg) 폴란드에 대한 언어 지원을 추가했습니다.
+![신규](../assets/new.svg) [!DNL Live Search] 는 이제 Adobe Commerce 2.4.4를 실행하는 설치용 PHP 8.3을 지원합니다.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -262,7 +262,7 @@ _2023년 3월 14일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 는 이제 Adobe Commerce 2.4.4를 실행하는 설치용 PHP 8.1을 지원합니다.
 ![신규](../assets/new.svg) 다음 `Magento_ElasticsearchCatalogPermissionsGraphQl` 설치 중에 비활성화된 모듈 목록에 모듈이 추가됩니다.
-![신규](../assets/new.svg) 에서 사용 가능한 라인 수 [[!DNL storefront popover]](quick-tour.md) 에서 구성할 수 있습니다. *관리자*.
+![신규](../assets/new.svg) 에서 사용 가능한 라인 수 [[!DNL storefront popover]](overview.md) 에서 구성할 수 있습니다. *관리자*.
 ![신규](../assets/new.svg) 베타 [PWA](https://developer.adobe.com/commerce/pwa-studio/) 다음에 대해 지원됨 [!DNL Live Search].
 ![신규](../assets/new.svg) 다음 [!DNL Live Search] 설치 프로세스가 고급 프로세스 변경 사항으로 업데이트됩니다.
 ![수정](../assets/fix.svg) [고급 검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 상점 첫 번째 바닥글에서 링크가 제거되었습니다.
