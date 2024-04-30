@@ -3,9 +3,9 @@ title: 이란? [!DNL Live Search]?
 description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,11 @@ ht-degree: 0%
 
 ## 빠른 둘러보기
 
-속도, 관련성 및 사용 편이성에 중점을 두고 [!DNL Live Search] 은 쇼핑객과 상인들을 위한 게임 체인저입니다. 다음 단계를 따라 간단히 살펴보기 [!DNL Live Search] 가게 앞에서요
+속도, 관련성 및 사용 편이성에 중점을 두고 [!DNL Live Search] 은 쇼핑객과 상인들을 위한 게임 체인저입니다. 다음 비디오를 시청한 다음 간단히 살펴보십시오. [!DNL Live Search] 가게 앞에서요
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+라이브 검색 사용 및 구성 방법에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 주제.
 
 ### 입력할 때 검색
 
@@ -80,11 +84,3 @@ ht-degree: 0%
 ## 이벤트
 
 [!DNL Live Search] 사용 [events](events.md) 계산하려면 [지능형 머천다이징](category-merch.md) 및 [성능](performance.md) 대시보드. 이벤트에는 기본 구현이 제공됩니다. 헤드리스 상점 첫 화면의 이벤트는 수동으로 활성화해야 합니다.
-
-## [!DNL Live Search] 데모
-
-자세한 내용은 이 비디오 를 참조하십시오 [!DNL Live Search]:
-
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
-
-라이브 검색 사용 및 구성 방법에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 주제.
