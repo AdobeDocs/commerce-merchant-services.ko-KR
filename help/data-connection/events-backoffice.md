@@ -4,16 +4,16 @@ description: 각 백오피스 이벤트가 캡처하는 데이터를 알아봅�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Connection] 백오피스 이벤트
 
-다음은 를 설치할 때 사용할 수 있는 Commerce 백 오피스 이벤트 목록입니다. [!DNL Data Connection] 확장명. 이러한 이벤트가 수집하는 데이터는 Adobe Experience Platform으로 전송됩니다. 다음을 만들 수도 있습니다. [사용자 지정 이벤트](custom-events.md) 즉시 제공되지 않는 추가 데이터를 수집합니다.
+다음은 를 설치할 때 사용할 수 있는 Commerce 백 오피스 이벤트입니다. [!DNL Data Connection] 확장명. 이러한 이벤트가 수집하는 데이터는 Adobe Experience Platform으로 전송됩니다. 다음을 만들 수도 있습니다. [사용자 지정 이벤트](custom-events.md) 즉시 제공되지 않는 추가 데이터를 수집합니다.
 
 다음 이벤트가 수집하는 데이터 외에도 [기타 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK에서 제공합니다.
 
@@ -404,7 +404,15 @@ ht-degree: 0%
 
 ## 고객 프로필 이벤트
 
+>[!IMPORTANT]
+>
+>이 기능은 Beta 버전입니다.
+
 서버측에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `accountCreated`, `accountUpdated`, 및 `accountDeleted`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [상점 첫 화면](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>각 고객 프로필 이벤트에는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 프로필의 기본 식별자로 시스템에서 생성한 Commerce 고객 ID와 보조 식별자로 사용되는 이메일 ID가 포함된 필드.
 
 ### accountCreated
 
