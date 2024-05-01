@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ _2023년 10월 10일_
 
 _2023년 6월 10일_
 
-![수정](../assets/fix.svg) - 다음과 같은 경우 문제가 해결되었습니다. `orderId` 상거래 주문 식별자의 접두사로 인해 이(가) 컨텍스트를 전달하지 못했습니다.
+![수정](../assets/fix.svg) - 다음과 같은 경우 문제가 해결되었습니다. `orderId` Commerce 주문 식별자의 접두사로 인해 를 컨텍스트에 전달하지 않았습니다.
 ![수정](../assets/fix.svg) - 콘텐츠 보안 정책 구성을 업데이트했습니다.
 
 _2023년 3월 30일_
@@ -87,7 +87,7 @@ _2024년 3월 4일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![신규](../assets/new.svg) - Beta에 참여하는 경우 `composer.json` 파일의 루트 레벨은 다음과 같습니다. ` "minimum-stability": "beta"`.
+![신규](../assets/new.svg) - Beta에 참여하는 경우 `composer.json` 파일의 루트 레벨은 다음과 같습니다. ` "minimum-stability": "beta"`. 또한, 추가 `composer require "magento/customers-connector: ^1.2.0"` Commerce 인스턴스에서 SaaS로 고객 프로필을 보냅니다.
 ![신규](../assets/new.svg) - 에 추가된 기능 [사용자 지정 속성 추가](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![신규](../assets/new.svg) - 에 추가된 기능 [프로필 레코드 수집 및 보내기](connect-data.md#send-customer-profile-data) 및 데이터를 Experience Platform에 추가합니다.
 

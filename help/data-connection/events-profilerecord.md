@@ -4,9 +4,9 @@ description: 프로필 레코드가 캡처하는 데이터를 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c02496fb3f88f4781b79c5e477d5508c3e3d5224
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 | 필드 | 설명 |
 |---|---|
-| `channel` | 데이터 소스에 대한 정보를 포함합니다. 모두 `_id` 및 `_type` contain [이름 공간 값](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | 데이터 소스에 대한 정보를 포함합니다. 모두 `_id` 및 `_type` contain [이름 공간 값](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | 채널의 고유 식별자(예: ) `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | 는 다음과 같은 채널 데이터의 소스를 식별합니다. `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | 고객에 대한 정보를 포함합니다. |
@@ -41,21 +41,25 @@ ht-degree: 0%
 | `billingAddress.city` | 도시 이름. |
 | `billingAddress.state` | 상태 이름. 자유 형식의 필드입니다. |
 | `billingAddress.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `billingAddress.primary` | 기본 청구 주소인지 여부를 나타냅니다. 값은 항상 `False`. |
 | `billingAddressPhone` | 청구 주소와 연결된 전화번호. |
-| `billingAddressPhone.number` | 전화번호. 전화번호는 문자열이고 대괄호와 같은 의미 있는 문자를 포함할 수 있습니다 `()`, 하이픈 `-`, 또는 확장과 같은 서브다이얼 식별자를 보여 주는 문자 `x` 예를 들어,  `1-353(0)18391111` 또는 `+613 9403600x1234`. |
+| `billingAddressPhone.number` | 전화번호. 전화번호는 문자열이며 대괄호와 같은 의미 있는 문자를 포함할 수 있습니다 `()`, 하이픈 `-`, 또는 확장과 같은 서브다이얼 식별자를 보여 주는 문자 `x` 예를 들어,  `1-353(0)18391111` 또는 `+613 9403600x1234`. |
+| `billingAddressPhone.primary` | 청구 주소의 기본 전화번호인지 여부를 나타냅니다. 값은 항상 `False`. |
 | `shippingAddress` | 배송 우편 주소. |
 | `shippingAddress.street1` | 기본 도로 정보, 아파트 번호, 도로 번호 및 도로명. |
 | `shippingAddress.street2` | 2차선 도로 정보(선택 사항). |
 | `shippingAddress.city` | 도시 이름. |
 | `shippingAddress.state` | 상태 이름. 자유 형식의 필드입니다. |
 | `shippingAddress.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `shippingAddress.primary` | 기본 배송 주소인지 여부를 나타냅니다. 값은 항상 `False`. |
 | `shippingAddressPhone` | 배송 주소와 연계된 전화번호. |
-| `shippingAddressPhone.number` | 전화번호. 전화번호는 문자열이고 대괄호와 같은 의미 있는 문자를 포함할 수 있습니다 `()`, 하이픈 `-`, 또는 확장과 같은 서브다이얼 식별자를 보여 주는 문자 `x` 예를 들어,  `1-353(0)18391111` 또는 `+613 9403600x1234`. |
+| `shippingAddressPhone.number` | 전화번호. 전화번호는 문자열이며 대괄호와 같은 의미 있는 문자를 포함할 수 있습니다 `()`, 하이픈 `-`, 또는 확장과 같은 서브다이얼 식별자를 보여 주는 문자 `x` 예를 들어,  `1-353(0)18391111` 또는 `+613 9403600x1234`. |
+| `shippingAddressPhone.primary` | 배송 주소의 기본 전화 번호인지 보여 줍니다. 값은 항상 `False`. |
 | `userAccount` | 고객 충성도 세부 정보, 환경 설정, 로그인 프로세스 및 기타 계정 환경 설정을 나타냅니다. |
 | `userAccount.startDate` | 프로필이 처음 생성된 날짜입니다. |
 
 >[!NOTE]
 >
->각 프로필 레코드에는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 프로필의 기본 식별자로 시스템에서 생성한 Commerce 고객 ID와 보조 식별자로 사용되는 이메일 ID가 포함된 필드.
+>각 프로필 레코드에는 [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) 프로필의 기본 식별자로 시스템에서 생성한 Commerce 고객 ID와 보조 식별자로 사용되는 이메일 ID가 포함된 필드.
 
 방법 알아보기 [프로필 레코드별 스키마 만들기](profile-data.md) 프로필 레코드에서 데이터를 수집할 수 있습니다.
