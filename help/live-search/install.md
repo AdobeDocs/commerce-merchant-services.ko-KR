@@ -3,16 +3,16 @@ title: "시작하기 [!DNL Live Search]"
 description: "시스템 요구 사항 및 설치 단계 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: a55e3304d590c2bd6a591bdc78a4765ffed46cd1
+source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
 
-# 을(를) 통한 성공을 위한 설정 [!DNL Live Search] 및 [!DNL Catalog Service]
+# 을(를) 통한 성공을 위한 설정 [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] 및 [!DNL Catalog Service] 협력하여 성능이 뛰어나고 관련성이 있으며 직관적인 검색 솔루션을 제공하여 고객이 필요한 것을 신속하게 찾을 수 있도록 하십시오. 특히, [!DNL Catalog Service] 은 다음과 같은 SaaS 서비스를 위한 카탈로그 데이터를 표시합니다. [!DNL Live Search] 사용할 수 있습니다.
+Adobe Commerce [!DNL Live Search] 및 [[!DNL Catalog Service]](../catalog-service/guide-overview.md) 협력하여 성능이 뛰어나고 관련성이 있으며 직관적인 검색 솔루션을 제공하여 고객이 필요한 것을 신속하게 찾을 수 있도록 하십시오. 특히, [!DNL Catalog Service] 은 다음과 같은 SaaS 서비스를 위한 카탈로그 데이터를 표시합니다. [!DNL Live Search] 사용할 수 있습니다.
 
 이 문서에서는 구현을 위한 단계별 지침을 제공합니다 [!DNL Live Search] 포함 [!DNL Catalog Service].
 

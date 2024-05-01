@@ -2,9 +2,9 @@
 title: 제품 목록 페이지 위젯
 description: 활성화 및 스타일링 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ PLP 위젯은 검색 가능한 제품 페이지에서 기대하는 다양한 기
 * 장바구니에 추가 기능
 * 다중 언어 지원
 * 가격 슬라이더
+
+위의 기능을 처리하도록 PLP 위젯을 사용자 정의하는 방법에 대한 자세한 내용은 `storefront-product-listing-page` readme 파일 [보고](https://github.com/adobe/storefront-product-listing-page/).
 
 ## 스타일 예
 
