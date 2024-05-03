@@ -2,9 +2,9 @@
 title: "패싯 추가"
 description: "다음으로 필터링 가능한 제품 속성을 추가하는 방법 알아보기 [!DNL Live Search] 패싯."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 필터링 가능한 모든 제품 속성을 패싯으로 사용할 수 있습니다. 다음 *패싯 추가* 패널에서는 현재 패싯을 나열하므로 추가 제품 속성을 패싯으로 쉽게 할당할 수 있습니다. 이 3단계 프로세스 동안 속성을 Facet으로 사용하도록 선택하고, 필요한 경우 속성을 편집하며, 변경 사항을 Storefront에 게시합니다.
 
-![작업 영역 구성](assets/facets-add.png)
+![패싯 추가](assets/facets-add.png)
 
 ## 1단계: Facet 추가
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 1. 완료되면 다음을 클릭하십시오. **저장**.
 
-   ![작업 영역 구성](assets/facet-edit.png)
+   ![패싯 편집](assets/facet-edit.png)
 
 1. 패싯을 패싯의 위쪽에 고정하려면 *필터* 목록에서 회색 압정을 클릭합니다(![핀 선택기](assets/btn-pin-gray.png)).
 1. 고정된 패싯의 순서를 변경하려면 **이동** (![이동 선택기](assets/btn-move.png)) 아이콘을 클릭하고 행을 의 새 위치로 드래그합니다. *고정 패싯* 섹션.

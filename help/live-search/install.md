@@ -3,9 +3,9 @@ title: "시작하기 [!DNL Live Search]"
 description: "시스템 요구 사항 및 설치 단계 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Adobe Commerce [!DNL Live Search] 및 [[!DNL Catalog Service]](../catalog-servic
 ## 워크플로우 개요
 
 높은 수준에서 온보딩 [!DNL Live Search] 은(는) 다음을 필요로 합니다.
-
-- 확장 설치
-- API 키 구성
-- 카탈로그 데이터 동기화
-- 데이터를 내보냈는지 확인
-- 데이터 구성
-- 연결 테스트
-- 상점용 맞춤화
 
 ![라이브 검색 워크플로](assets/livesearch-workflow.png)
 

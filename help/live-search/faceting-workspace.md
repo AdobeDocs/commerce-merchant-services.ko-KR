@@ -2,16 +2,16 @@
 title: "작업 영역 구성"
 description: "Learn your way around the [!DNL Live Search] 작업 영역 전체에 영향을 미칩니다."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # 작업 영역 구성
 
-다음 [!DNL Live Search] 작업 영역에는 현재 사용 가능한 모든 패싯이 나열되며 패싯을 설정하고 관리하는 데 필요한 도구에 대한 액세스 권한을 제공합니다. 고정된 패싯이 기존 패싯 목록에 먼저 나타나고 그 뒤에 동적 패싯이 나타납니다. 목록을 필터링하여 모든 패싯을 표시하거나 고정되거나 동적인 패싯만 표시할 수 있습니다.
+다음 *안면 효과* 작업 영역에는 현재 사용 가능한 모든 패싯이 나열되며 패싯을 설정하고 관리하는 데 필요한 도구에 대한 액세스 권한을 제공합니다. 고정된 패싯이 기존 패싯 목록에 먼저 나타나고 그 뒤에 동적 패싯이 나타납니다. 목록을 필터링하여 모든 패싯을 표시하거나 고정되거나 동적인 패싯만 표시할 수 있습니다.
 
 ![작업 영역 구성](assets/faceting-workspace.png)
 

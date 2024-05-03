@@ -3,7 +3,7 @@ title: 카테고리 머천다이징
 description: 사용 [!DNL Live Search] 더 빠른 쇼핑 경험을 위한 카테고리 머천다이징.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->카테고리 머천다이징은에서 사용할 수 있습니다. [!DNL Live Search] [3.0.0 이상](release-notes.md). 카테고리 머천다이징 탭이 표시되지만 데이터로 채워지지 않는 경우 [!DNL Live Search] 모듈.
+>카테고리 머천다이징은에서 사용할 수 있습니다. [!DNL Live Search] [3.0.0 이상](release-notes.md). 카테고리 머천다이징 작업 영역이 표시되지만 데이터로 채워지지 않으면 [!DNL Live Search] 모듈.
 
 ![범주 머천다이징](assets/category_workspace.png)
 

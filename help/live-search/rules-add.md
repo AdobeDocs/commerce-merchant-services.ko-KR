@@ -2,7 +2,7 @@
 title: "규칙 추가"
 description: "검색 머천다이징 규칙을 만드는 방법을 알아봅니다."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 1. 관리에서 **마케팅** > SEO 및 검색 > **[!DNL Live Search]**.
 1. 설정 **범위** 을(를) 식별하려면 [스토어 뷰](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 규칙이 적용되는 위치입니다.
-1. 다음을 클릭합니다. **머천다이징 검색** 탭.
+1. 다음을 클릭합니다. **머천다이징 검색** 작업 영역.
 1. 클릭 **규칙 추가** 규칙 편집기를 시작합니다.
 
 ## 규칙 유형
@@ -142,7 +142,7 @@ ht-degree: 0%
 1. 규칙에 여러 쿼리가 있는 경우 규칙의 영향을 받을 수 있는 각 쿼리를 테스트합니다.
 1. 완료되면 다음을 클릭하십시오. **저장 및 게시**.
 
-   규칙이 규칙 작업 영역의 목록에 추가됩니다.
+   규칙이 의 목록에 추가됩니다 *규칙* 작업 영역.
 
 1. 활성 규칙이 즉시 적용되지만, 상점 첫 화면의 캐시된 쿼리 결과가 새로 고쳐질 때까지 최대 15분 정도 기다려야 할 수 있습니다.
 

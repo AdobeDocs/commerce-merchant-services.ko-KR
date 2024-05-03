@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Live Search] 작업 영역'
+title: '작업 영역'
 description: 다음 [!DNL Live Search] 작업 영역은 검색 성능을 구성, 관리 및 모니터링하는 데 사용됩니다.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] 작업 영역
+# 작업 영역
 
 작업 영역에서는 의 성능을 구성, 관리 및 모니터링합니다. [!DNL Live Search]. 맨 위에 있는 메뉴를 통해 각 기능 영역의 도구에 액세스할 수 있습니다.  사용 가능한 기능은 현재 메뉴 선택을 반영합니다.
 
-![작업 영역 구성](assets/workspace.png)
+![작업 영역](assets/workspace.png)
 
 ## 범위 설정
 

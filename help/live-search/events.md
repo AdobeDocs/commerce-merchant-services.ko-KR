@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 이벤트'
 description: 이벤트가에 대한 데이터를 수집하는 방법 알아보기 [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
+source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 [!DNL Live Search] 는 이벤트를 사용하여 &quot;가장 많이 본 항목&quot; 및 &quot;이 항목을 보고 다른 항목을 본 항목&quot;과 같은 검색 알고리즘을 실행합니다. LUMA 사용자는 즉시 이벤트를 사용할 수 있지만 Headless 및 기타 사용자 지정 구현은 자체 요구 사항에 맞게 이벤트를 구현해야 합니다.
 
 다음 이후 [!DNL Live Search] 및 [!DNL Product Recommendations] 동일한 백엔드 알고리즘을 사용합니다. 일부 이벤트는 두 서비스에서 공유됩니다. Recommendations 대시보드를 채우려면 일부 제품 Recommendations 이벤트가 필요합니다.
-
-## 이벤트
 
 이 표에서는 다음에서 사용하는 이벤트에 대해 설명합니다. [!DNL Live Search] 전략.
 

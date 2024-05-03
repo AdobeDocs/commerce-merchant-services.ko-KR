@@ -3,16 +3,16 @@ title: 이란? [!DNL Live Search]?
 description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # 이란? [!DNL Live Search]?
 
-[!DNL Live Search] 는 Adobe Commerce의 표준 검색 기능을 대체하는 확장입니다. 다음 [!DNL Live Search] 확장이 Composer와 함께 설치되고 [!DNL Commerce] 에 설치 [!DNL Live Search] [서비스](../landing/saas.md). 구성되면 기본 검색 텍스트 필드가 로 바뀝니다. [!DNL Live Search] 텍스트 필드. [!DNL Live Search] 또한 검색 결과를 검색할 때 강력한 필터링 기능을 제공하는 PLP(제품 목록 페이지) 위젯을 설치합니다.
+[!DNL Live Search] 는 Adobe Commerce의 표준 검색 기능을 대체하는 기능입니다. 다음 [!DNL Live Search] 이 기능은 Composer와 함께 설치되고 [!DNL Commerce] 에 저장 [Commerce Services 커넥터](../landing/saas.md). 구성되면 기본 검색 텍스트 필드가 로 바뀝니다. [!DNL Live Search] 텍스트 필드. [!DNL Live Search] 또한 검색 결과를 검색할 때 강력한 필터링 기능을 제공하는 PLP(제품 목록 페이지) 위젯을 설치합니다.
 
 포함 [!DNL Live Search], 다음 작업을 수행할 수 있습니다.
 
@@ -75,7 +75,6 @@ ht-degree: 0%
 
 - [!DNL Live Search] [팝오버 위젯](storefront-popover.md) 은 검색 결과가 포함된 검색 필드 아래에 열리는 상자입니다.
 - [제품 목록 페이지 위젯](plp-styling.md) 패싯 및 동의어 지원이 포함된 검색 가능한 제품 목록 페이지를 제공합니다.
-- [[!DNL Live Search] 관리자](workspace.md) 는 규칙, 패싯 및 동의어가 구성되는 위치입니다.
 
 ## [!DNL Live Search] 작업 영역
 
