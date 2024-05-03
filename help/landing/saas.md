@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ ht-degree: 0%
 
 ## 자격 증명 {#apikey}
 
-프로덕션 및 샌드박스 API 키는 [!DNL Commerce] 고유 (으)로 식별되는 라이선스 소유자의 계정 [!DNL Commerce] ID (MageID). 다음과 같은 서비스에 대한 자격 검증을 통과하려면 [!DNL Product Recommendations] 또는 [!DNL Live Search], 판매자 조직의 라이선스 소유자는 계정이 양호한 상태인 한 API 키 세트를 생성할 수 있습니다. 라이선스 소유자를 대신하여 프로젝트 및 환경을 관리하는 시스템 통합자 또는 개발 팀과 &quot;필요한 정보&quot;에 따라 키를 공유할 수 있습니다. 또한 솔루션 통합자는 [!DNL Commerce Services]. 솔루션 통합자인 경우 [!DNL Commerce] 파트너 계약에서 API 키를 생성해야 합니다.
+프로덕션 및 샌드박스 API 키는 [!DNL Commerce] 계정 [라이선스 소유자](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) (이)는 (이)라는 고유한 [!DNL Commerce] ID (MageID). 다음과 같은 서비스에 대한 자격 검증을 통과하려면 [!DNL Product Recommendations] 또는 [!DNL Live Search], 판매자 조직의 라이선스 소유자는 계정이 양호한 상태인 한 API 키 세트를 생성할 수 있습니다. 라이선스 소유자를 대신하여 프로젝트 및 환경을 관리하는 시스템 통합자 또는 개발 팀과 &quot;필요한 정보&quot;에 따라 키를 공유할 수 있습니다. 또한 솔루션 통합자는 [!DNL Commerce Services]. 솔루션 통합자인 경우 [!DNL Commerce] 파트너 계약에서 API 키를 생성해야 합니다.
+
+>[!NOTE]
+>
+>라이선스 소유자는 일반적으로 Adobe Commerce 계정의 기본 담당자이며 항상 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 소유자와 동일하지 않습니다.
 
 ### 프로덕션 및 샌드박스 API 키 생성 {#genapikey}
 
