@@ -6,24 +6,24 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce 서비스 안내서
 
-Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도움이 되는 상거래, 통합 및 데이터 서비스 컬렉션을 제공합니다.
+Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 도움이 되는 Commerce, 통합 및 데이터 서비스 컬렉션을 제공합니다.
 
 >[!BEGINSHADEBOX &quot;릴리스 정보&quot;]
 
-다음을 참조하십시오 [설명서의 새로운 기능](whats-new.md) 또는 [릴리스 정보](release-notes-all.md) 각 Commerce 서비스용
+다음을 참조하십시오 [설명서의 새로운 기능](whats-new.md) 또는 [릴리스 정보](release-notes-all.md) 각 Commerce 서비스용.
 
 >[!ENDSHADEBOX]
 
-## 상거래 서비스
+## Commerce 서비스
 
 <table>
 <tr>
@@ -56,13 +56,6 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도�
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="빠른 체크아웃" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>빠른 체크아웃</strong></a>  <br><em>(Magento Open Source 가능)</em>
-    <div>빠르고 직관적인 쇼핑 경험을 제공하여 일회성 쇼핑객을 단골 계정 소유자로 전환합니다.</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="주문 처리 저장" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>주문 처리 저장</strong></a></br>
@@ -92,7 +85,7 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도�
   <td valign="top" width="200">
       <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
-    <div>Adobe Commerce과 Adobe Experience Platform Edge 간의 연결을 활용하여 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에 상거래 데이터를 활용할 수 있습니다.</div>
+    <div>Adobe Commerce과 Adobe Experience Platform Edge 간의 연결을 활용하여 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에 Commerce 데이터를 활용할 수 있습니다.</div>
   </td>
    </tr>
 <tr>
@@ -100,7 +93,7 @@ Adobe은 상인이 비즈니스의 주요 구성 요소를 지원하는 데 도�
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce Services 커넥터는 API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce 전용)의 경우 구성에서 데이터 공간을 지정할 수도 있습니다.</div>
+    <div>Commerce 서비스 커넥터는 API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce 전용)의 경우 구성에서 데이터 공간을 지정할 수도 있습니다.</div>
   </td>
    </tr>
 </table>
