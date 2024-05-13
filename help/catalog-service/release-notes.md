@@ -3,7 +3,7 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 733bad1c12ff62b226ac8a9675faf9c091e84732
+source-git-commit: 77716f8fd74a7ba390fea5e4454b01152b024da0
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ### V1.18 릴리스
 
-_2023년 4월 11일_
+_2024년 4월 11일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
@@ -38,7 +38,7 @@ _2023년 4월 11일_
 
 ### V1.17 릴리스
 
-_2023년 2월 22일_
+_2024년 2월 22일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
@@ -46,7 +46,7 @@ _2023년 2월 22일_
 
 ### V1.16 릴리스
 
-_2023년 2월 13일_
+_2024년 2월 13일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
