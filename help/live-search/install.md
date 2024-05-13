@@ -3,9 +3,9 @@ title: "시작하기 [!DNL Live Search]"
 description: "시스템 요구 사항 및 설치 단계 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -418,6 +418,20 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 다음 항목 보기 [API 메쉬](../catalog-service/mesh.md) 보다 복잡한 가격 계산을 위해.
 
 가격 형식은 Commerce 인스턴스 내의 로케일 구성 설정을 지원합니다. *스토어* > 설정 > *구성* > 일반 > *일반* > 로컬 옵션 > 로케일.
+
+### 헤드리스 상점 첫 화면 지원
+
+선택적으로 다음을 설치해야 할 수 있습니다. `module-data-services-graphql` 상점 행동 데이터 수집에 필요한 필드를 포함하도록 애플리케이션의 기존 GraphQL 범위를 확장하는 모듈입니다.
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+이 모듈은 GraphQL 쿼리에 추가 컨텍스트를 추가합니다.
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
 
 ### PWA 지원
 
