@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 0%
 - 제품 가격에는 부가가치세(VAT)가 포함되지 않습니다.
 - 콘텐츠 검색이 지원되지 않습니다.
 - 페이지 매김이 가능한 제품은 10k개로 제한됩니다.
+- 검색 어댑터는 사용자 지정 소스 모델로 만들어져 패싯으로 사용되는 제품 속성을 지원하지 않습니다. 이 기능을 지원하려면 다음을 사용해야 합니다 [제품 목록 페이지 위젯](plp-styling.md).
 
 ## 색인화
 

@@ -3,9 +3,9 @@ title: 이란? [!DNL Live Search]?
 description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->사이트 검색과 관련하여 Adobe Commerce은 옵션을 제공합니다. 다음을 읽으십시오. [경계 및 제한](boundaries-limits.md) 구현하기 전에 [!DNL Live Search] 은(는) 귀하의 비즈니스 요구에 적합합니다.
+>사이트 검색과 관련하여 Adobe Commerce은 옵션을 제공합니다. 구현하기 전에 다음을 검토하십시오. [경계 및 제한](boundaries-limits.md) 다음을 확인하기 위한 정보 [!DNL Live Search] 은(는) 귀하의 비즈니스 요구에 적합합니다.
 
 ## 아키텍처
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-라이브 검색 사용 및 구성 방법에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) 주제.
+Live Search 사용 및 구성에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) 주제.
 
 ### 입력할 때 검색
 
-[!DNL Live Search] 추천 제품 및 상위 검색 결과의 썸네일 이미지로 응답함 [팝오버](storefront-popover.md) 구매자가 다음에 쿼리를 입력할 때 [검색](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) 상자. 다음 [제품 세부 사항](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) 쇼핑객이 추천 또는 추천 제품을 클릭하면 페이지가 표시됩니다. A _모두 보기_ 팝오버의 바닥글에 있는 링크에 검색 결과 페이지가 표시됩니다.
+[!DNL Live Search] 추천 제품 및 상위 검색 결과의 썸네일 이미지로 응답함 [팝오버](storefront-popover.md) 구매자가 다음에 쿼리를 입력할 때 [검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 상자. 다음 [제품 세부 사항](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 쇼핑객이 추천 또는 추천 제품을 클릭하면 페이지가 표시됩니다. A _모두 보기_ 팝오버의 바닥글에 있는 링크에 검색 결과 페이지가 표시됩니다.
 
 [!DNL Live Search] 둘 이상의 문자로 이루어진 쿼리에 대해 &quot;검색할 때&quot; 결과를 반환합니다. 부분 일치의 경우 단어 당 최대 문자 수는 20자입니다. 쿼리의 문자 수를 구성할 수 없습니다. 팝오버에는 다음이 포함됩니다.`name`, `sku`, 및 `category_ids` 필드.
 
@@ -69,12 +69,13 @@ ht-degree: 0%
 
 ### 검색어 지원
 
-[!DNL Live Search] Commerce 지원 [검색어 리디렉션](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). 예를 들어 &quot;배송비&quot;와 같은 용어를 검색하여 배송비 페이지로 바로 이동할 수 있습니다.
+[!DNL Live Search] Commerce 지원 [검색어 리디렉션](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). 예를 들어 &quot;배송비&quot;와 같은 용어를 검색하여 배송비 페이지로 바로 이동할 수 있습니다.
 
 ## 라이브 검색 구성 요소
 
 - [!DNL Live Search] [팝오버 위젯](storefront-popover.md) 은 검색 결과가 포함된 검색 필드 아래에 열리는 상자입니다.
-- [제품 목록 페이지 위젯](plp-styling.md) 패싯 및 동의어 지원이 포함된 검색 가능한 제품 목록 페이지를 제공합니다.
+- [제품 목록 페이지 위젯](plp-styling.md) (PLP)는 패싯 및 동의어 지원과 함께 검색 가능한 제품 목록 페이지를 제공합니다. 위젯이 Live Search 4.0.0+에 설치되고 활성화됩니다.
+- (**더 이상 사용되지 않음**) 검색 어댑터는 PLP 위젯의 전조이며 라이브 검색 &lt; 4.0.0과 함께 설치되었습니다. 4.0.0 이전 버전의 라이브 검색 을 사용하는 경우 Commerce에서 업그레이드하여 PLP 위젯 기능과 향후 개선 사항의 이점을 얻을 수 있습니다.
 
 ## [!DNL Live Search] 작업 영역
 

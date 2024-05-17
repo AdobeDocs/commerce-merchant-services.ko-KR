@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
+source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1946'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,16 @@ _2023년 6월 13일_
 _2023년 4월 25일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 이제 고객은 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/price-indexing.md).
+
+## [!DNL Live Search] 4.1.2 {#412}
+
+_2024년 5월 16일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+### 업데이트
+
+![수정](../assets/fix.svg) 을(를) 수정했습니다. [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) 다음을 기반으로 올바르게 필터링할 GraphQL 쿼리 `categoryPath` 및 `categoryList` 카테고리에 사용됩니다.
 
 ## [!DNL Live Search] 4.1.1 {#411}
 
