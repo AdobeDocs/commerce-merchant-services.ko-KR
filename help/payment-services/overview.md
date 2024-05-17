@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 소개 [!DNL Payment Services]
 
-[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 은 상거래 웹 사이트에 강력하고 안전한 결제 처리를 제공하기 위한 샌드박스 테스트 및 간단한 설정을 포함한 턴키 셀프서비스 솔루션입니다.
+[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 은 Commerce 웹 사이트에 강력하고 안전한 결제 처리를 제공하기 위한 샌드박스 테스트 및 간단한 설정을 포함한 턴키 셀프서비스 솔루션입니다.
 
 ![[!DNL Payment Services] 확장 관리자 보기](assets/admin-view.png){width="300" zoomable="yes"}
 
@@ -71,7 +71,7 @@ PayPal이 지원하는 결제 방법을 보려면 [결제 방법 설명서](http
 온보딩 및 설정 [!DNL Payment Services] 은 몇 단계만 거치면 완료됩니다.
 
 1. 가져오기 [[!DNL Payment Services] 확장](install.md).
-1. 상거래 인스턴스를 상거래 서비스에 연결합니다.
+1. Commerce 인스턴스를 Commerce 서비스에 연결합니다.
 1. 샌드박스 서비스를 온보딩하고 설정합니다.
 1. 사용 [!DNL Payment Services] 을 결제 방법으로 사용하고 테스트 결제 처리를 시작합니다.
 1. 판매자 온보딩을 완료하여 웹 사이트에 대한 실시간 결제를 활성화하십시오.
