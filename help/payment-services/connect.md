@@ -3,9 +3,9 @@ title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 Commerce 인스턴스를 연결하고 구성에서 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ API 키가 손실되면 새 API 키 쌍은 다음과 같아야 합니다. [생�
    >[!INFO]
    >
    > 다음 참조: [[!DNL Adobe Commerce] 서비스 커넥터](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) 비디오 를 참조하십시오.
+
+## 엔드포인트
+
+[!DNL Payment Services] 를 사용합니다. [Commerce Services 커넥터](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) Commerce Services에 연결하고 SaaS로 배포합니다. 이 [!DNL Commerce Services Connector] 은 다음 위치의 끝점을 통해 통신합니다.
+
+* `commerce-beta.adobe.io` 샌드박스 환경용
+* `commerce.adobe.io for` 라이브 환경용.

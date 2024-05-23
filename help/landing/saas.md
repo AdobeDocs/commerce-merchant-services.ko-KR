@@ -4,7 +4,7 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-일부 Adobe Commerce 및 Magento Open Source 기능은에서 제공합니다. [!DNL Commerce Services]  SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 다음을 연결해야 합니다. [!DNL Commerce] 프로덕션 및 샌드박스 API 키를 사용하는 인스턴스와 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 한 번만 설정하면 됩니다.
+일부 Adobe Commerce 및 Magento Open Source 기능은에서 제공합니다. [!DNL Commerce Services] SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 다음을 연결해야 합니다. [!DNL Commerce] 프로덕션 및 샌드박스 API 키를 사용하는 인스턴스와 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). 한 번만 설정하면 됩니다.
 
 ## 사용 가능한 서비스 {#availableservices}
 
