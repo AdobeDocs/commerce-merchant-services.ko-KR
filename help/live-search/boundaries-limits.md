@@ -3,7 +3,7 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
+source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 - [!DNL Live Search] 은 카테고리 트리의 전체 분류법에 액세스할 수 없으므로 해당 범위 밖에 일부 계층화된 탐색 검색 시나리오가 만들어집니다.
 - [!DNL Live Search] 고유 사용 [GraphQL 엔드포인트](https://developer.adobe.com/commerce/services/graphql/live-search/) 동적 팩팅 및 검색할 때 사용 가능한 검색 등의 기능을 지원하는 쿼리입니다. 와 유사하긴 하지만 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)에 몇 가지 차이점이 있으며 일부 필드가 완전히 호환되지 않을 수 있습니다.
-- 검색 쿼리에서 검색할 수 있는 최대 결과 수는 10,000개입니다.
+- 검색 쿼리에서 반환할 수 있는 최대 결과 수는 10,000개입니다.
 
 ## 규칙
 
