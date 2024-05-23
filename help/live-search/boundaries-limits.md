@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
+source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 0%
    - 검색 가능한 속성 200개
 - [!DNL Live Search] 는 Adobe Commerce 데이터베이스의 제품만 인덱싱합니다.
 - CMS 페이지가 인덱싱되지 않았습니다.
+- SKU, 이름 및 카테고리 속성은 기본적으로 검색할 수 있으며 검색에서 제외할 수 없습니다. 해당 범주에 포함시키려는 제품이 아닌 경우 해당 범주에서 제품 할당을 취소해야 합니다.
 
 ## 패싯
 
