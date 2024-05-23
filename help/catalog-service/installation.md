@@ -2,39 +2,35 @@
 title: 온보딩 및 설치
 description: "설치 방법 알아보기 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 온보딩 및 설치
 
-다음을 사용하여 Commerce 인스턴스에서 제품 데이터를 요청하고 수신하려면 카탈로그 서비스를 설치하십시오. [카탈로그 서비스 GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+다음을 사용하여 Commerce 인스턴스에서 제품 데이터를 요청하고 수신하려면 카탈로그 서비스를 설치하십시오. [카탈로그 서비스 GraphQL API](https://developer.adobe.com/commerce/services/graphql/catalog-service/). 카탈로그 서비스는 repo.magento.com 저장소에서 작성기 메타패키지로 제공됩니다.
 
 >[!NOTE]
 >
 >Commerce 인스턴스에서 라이브 검색 또는 Product Recommendations을 사용하는 경우 해당 서비스를 온보딩하거나 업그레이드할 때 카탈로그 서비스가 자동으로 설치 또는 업데이트됩니다. 자세한 내용은 다음 설치 지침을 참조하십시오. [라이브 검색](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) 및 [제품 Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## 전제 조건
 
-에 대한 온보딩 프로세스 [!DNL Catalog Service] 서버의 명령줄에 대한 액세스 권한이 필요합니다. 명령줄 작업에 익숙하지 않은 경우 개발자 또는 시스템 통합자에게 도움을 요청하십시오.
+## 시스템 요구 사항
 
 **소프트웨어 요구 사항**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3
 - 작성기: 2.x
 
 **지원되는 플랫폼**
 
 - 클라우드 인프라의 Adobe Commerce: 2.4.4+
 - Adobe Commerce 온프레미스: 2.4.4+
-
->[!ENDSHADEBOX]
 
 ## 엔드포인트
 
@@ -51,19 +47,23 @@ ht-degree: 0%
 
 시작하려면 [!DNL Catalog Service] Adobe Commerce의 경우 다음 단계가 필요합니다.
 
-- 데이터 내보내기 확장 설치
+- 카탈로그 서비스 확장 설치(`magento/catalog-service`)
 - 서비스 및 데이터 내보내기 구성
 - 서비스 액세스
 
-### 데이터 내보내기 확장 설치
+### 카탈로그 서비스 확장 설치
 
-를 완료하려면 서버의 명령줄에 액세스할 수 있어야 합니다 [!DNL Catalog Service] 온보딩 프로세스.
+>[!BEGINSHADEBOX]
 
-다음 [!DNL Catalog Service] 은 Commerce 계정에 연결된 작성기 키와 함께 설치됩니다 [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) 등록 프로세스 중에 제공됩니다. Composer는 Adobe Commerce을 처음 설치하는 동안 또는 이전에 Composer 키가 외부에 저장되지 않은 상황에서 이 키를 사용합니다 `auth.json` 파일.
+**전제 조건**
 
-다음을 참조하십시오 [인증 키 받기](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) composer 키를 가져오는 방법에 대한 자세한 내용은 를 참조하십시오.
+- 액세스 [repo.magento.com](https://repo.magento.com) 확장을 설치합니다. 키 생성 및 필요한 권한 획득에 대한 자세한 내용은 [인증 키 받기](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). 클라우드 설치의 경우 다음을 참조하십시오 [Commerce on Cloud Infrastructure 안내서](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-다음 [!DNL Catalog Service] 확장은 Adobe Commerce cloud 인프라와 온프레미스 인스턴스 모두에 설치할 수 있습니다.
+- Adobe Commerce 애플리케이션 서버의 명령줄에 액세스합니다.
+
+>[!ENDSHADEBOX]
+
+최신 버전의 카탈로그 서비스 확장 설치(`magento/catalog-service`)을 클릭하여 제품에서 사용할 수 있습니다. Adobe Commerce 버전 2.4.4 이상을 실행 중인 Adobe Commerce 인스턴스. 카탈로그 서비스는 의 작성기 메타패키지로 제공됩니다. [repo.magento.com](https://repo.magento.com) 리포지토리.
 
 >[!BEGINTABS]
 
