@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer을 사용하여 포기한 장바구니 이�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ ht-degree: 0%
 |---|---|---|
 | **정의** | 고객이 사이트에서 수행하는 클릭 또는 작업입니다. | 각 주문(과거 및 현재)의 라이프사이클 및 세부 정보에 대한 정보. |
 | **Adobe Commerce에 의해 캡처된 이벤트** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[제품 페이지 보기](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[추가 장바구니](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheck](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [주문](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[주문 내역](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### Adobe Commerce 만으로 무엇을 할 수 있습니까?
-
-Adobe 사용 [!DNL Commerce] 장바구니 역할을 하거나 포기 이메일을 찾아볼 수 있는 규칙 기반 이메일 미리 알림을 설정합니다. 여기에서 방법을 알아보십시오.
-
-### Adobe으로 무엇을 할 수 있습니까 [!DNL Commerce] Experience Cloud?
-
-- **Adobe [!DNL Commerce] Adobe Journey Optimizer 사용** - Adobe 사용 [!DNL Commerce] Adobe Journey Optimizer을 사용하면 다음을 사용할 수 있습니다. [!DNL Commerce] 옴니채널 포기 여정 트리거로서의 데이터. 고객 속성, 포기한 항목, 기타 쇼핑 행동 및 과거 구매 행동을 기반으로 해당 여정을 개인화할 수 있습니다.
-
-- **Adobe Commerce, Adobe Journey Optimizer 및 Adobe Real-Time CDP** - Real-Time CDP을 추가하면 통합 고객 프로필과 중앙 집중식으로 관리되는 규칙 기반 또는 AI 기반 대상자를 기반으로 포기 캠페인을 보다 세분화할 수 있습니다. 예를 들어 다음을 만들 수 있습니다.
-
-   - 포기 비율이 낮은 &quot;강력한 변환기&quot; 대상
-   - 특정 카테고리를 여러 번 재방문한 &quot;높은 배려&quot; 대상
-   - 높은 지출과 충성도를 가지지만 최근에 포기한 &quot;높은 잠재력&quot; 대상
 
 ### 다른 고객들은 어떤 성과를 얻었습니까?
 
