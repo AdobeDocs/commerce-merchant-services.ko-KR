@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer을 사용하여 포기한 장바구니 이�
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,17 +108,17 @@ Adobe [!DNL Commerce] 고객은 Adobe을 사용하여 개인화된 포기 캠페
 
    다음 항목을 찾습니다. `commerce.checkouts` 이벤트 및 이벤트 페이로드를 검사합니다.
 
-       &quot;json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;장바구니&quot;: {},
-       &quot;체크아웃&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    알 수 있듯이 전체 이벤트 페이로드에는 풍부한 이벤트 데이터가 포함되어 있습니다. 다음 섹션에서는 를 수신하고 응답하도록 Journey Optimizer에서 이벤트를 구성합니다. `commerce.checkouts` 에서 이벤트가 생성됨 [!DNL Commerce] 가게 앞이야
 
 ## 3단계: Journey Optimizer에서 이벤트 구성
