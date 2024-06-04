@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 8e123367600c40d1d1207b35c4f7fa41079e7172
+source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2502'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 일반 기능 릴리스 버전 외부에서 릴리스된 기능 변경 및 수정 사항에 대해서는 _호스팅된 서비스 업데이트_ 섹션.
 
-예정된 릴리스, 제품 지원 및 결제 서비스 확장을 지원하는 Adobe Commerce 버전에 대한 자세한 내용은 Adobe Commerce 를 참조하십시오. [릴리스 일정](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) 및 [제품 가용성](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) 주제.
+예정된 릴리스, 제품 지원 및 을 지원하는 Adobe Commerce 버전에 대해 자세히 알아보십시오. [!DNL Payment Services] 확장, Adobe Commerce 참조 [릴리스 일정](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) 및 [제품 가용성](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) 주제.
 
 ## 호스팅된 서비스 업데이트
 
@@ -38,7 +38,7 @@ _2023년 10월 10일_
 
 _2023년 7월 12일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4587 --> 결제 서비스 2.1.0 릴리스에서 이전 확장 버전에서 가져온 인증 공백이 방지되던 문제가 이제 해결되었습니다. 모든 버전의 결제 서비스를 사용하는 가맹점은 승인을 무효화할 수 있습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4587 --> 에 도입된 문제 [!DNL Payment Services] 이전 확장 버전에서 지정한 인증 공백이 해결되지 않았던 2.1.0 릴리스가 해결되었습니다. 모든 버전의 를 사용하는 판매자 [!DNL Payment Services] 권한을 무효화할 수 있습니다.
 
 _2023년 6월 9일_
 
@@ -48,11 +48,11 @@ _2023년 6월 9일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4486--> 이전에는 PayPal PayLater 단추가 영국 상인의 체크아웃에 표시되지 않았습니다. 해당 문제는 해결되었습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4485--> 이제 결제 서비스를 사용하지 않도록 설정한 경우 보고서 데이터 시각화 보기가 결제 서비스 홈에 표시됩니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4485--> 이제 보고서 데이터 시각화 보기가에 표시됩니다. [!DNL Payment Services] 홈 시간[!DNL Payment Services] 이(가) 비활성화되었습니다.
 
 _2023년 1월 25일_
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-4102 --> 새로 설치한 결제 서비스에서 상거래 서비스를 구성할 수 없어 결제 서비스를 사용할 수 없습니다. 이 문제를 해결하려면 결제 서비스 확장을 버전 1.5.3으로 업데이트하십시오.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-4102 --> 의 새로운 설치 [!DNL Payment Services] Commerce 서비스를 구성할 수 없습니다. 렌더링 [!DNL Payment Services] 수술할 수 없어 이 문제를 해결하려면 다음을 업데이트하십시오. [!DNL Payment Services] 버전 1.5.3으로 확장.
 
 _2022년 9월 12일_
 
@@ -60,7 +60,7 @@ _2022년 9월 12일_
 
 _2022년 8월 31일_
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3629 --> 새 판매자가 결제 서비스 홈에 처음 액세스하면 이제 페이지가 즉시 로드되어 페이지를 새로 고치지 않고 콘텐츠를 표시합니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3629 --> 새 판매자가 [!DNL Payment Services] 홈에서 처음으로 페이지를 새로 고치지 않고 페이지를 바로 로드하여 콘텐츠를 표시합니다.
 
 _2021년 8월 9일_
 
@@ -78,13 +78,23 @@ _2021년 6월 28일_
 
 +++
 
+## v2.6.0
+
+_2024년 6월 4일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg)<!-- PAY-4877 --> 자, [!DNL Payment Services] 지원 [L2/L3 가격 기능](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html). 이 기능은 에만 사용할 수 있습니다. [!DNL Payment Services] IC++ 가격이 활성화된 고객. L2/L3 처리 데이터를 [!DNL Payment Services], 다음으로 문의 [!DNL Payment Services] 계정 관리자.
+
+![수정](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] 을(를) 다운로드하여 호스팅하지 않고 확장에서 직접 Apple Pay를 활성화할 수 있습니다. [도메인 연결 파일](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+
 ## v2.5.0
 
 _2024년 4월 23일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![수정](../assets/fix.svg)<!-- Issue PAY-5396 --> 이제 결제 서비스에서 다음을 지원합니다. [다음을 위한 Adobe Commerce 지침 `--db-prefix` 매개 변수](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) Adobe Commerce 버전 2.4.7 이상용
+![수정](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] 이제에서 지원 [다음을 위한 Adobe Commerce 지침 `--db-prefix` 매개 변수](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) Adobe Commerce 버전 2.4.7 이상용
 
 ## v2.4.3
 
@@ -108,7 +118,7 @@ _2024년 4월 4일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![수정](../assets/fix.svg)<!-- PAY-5322 --> 최신 Adobe Commerce 릴리스의 PCI 호환성 문제를 해결했습니다. 이제 결제 서비스는 결제 옵션으로 Adobe Commerce의 요구 사항을 체크아웃하도록 조정되었습니다.
+![수정](../assets/fix.svg)<!-- PAY-5322 --> 최신 Adobe Commerce 릴리스의 PCI 호환성 문제를 해결했습니다. 자, [!DNL Payment Services] 은 결제 옵션으로 Adobe Commerce의 요구 사항을 체크아웃하도록 조정되었습니다.
 
 ![수정](../assets/fix.svg)<!-- PAY-5323 --> PayLater 및 Venmo가 Adobe Commerce에 올바르게 표시됩니다. 관리자가 PayLater 및 Venmo 전환 옵션을 표시할 수 없는 오류를 수정했습니다.
 
@@ -118,11 +128,11 @@ _2024년 3월 20일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg)<!-- PAY-4868 --> 판매자가 성공할 수 있음 [구매 경험 전체에서 Google Pay 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html): 관리자를 통한 결제 서비스의 다른 결제 버튼과 유사합니다.
+![신규](../assets/new.svg)<!-- PAY-4868 --> 판매자가 성공할 수 있음 [구매 경험 전체에서 Google Pay 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), 의 기타 결제 버튼과 유사[!DNL Payment Services] 관리자를 통해.
 
-![신규](../assets/new.svg)<!-- PAY-4381 --> [결제 서비스는 GraphQL을 통해 Google 페이를 지원합니다](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) 상인이 Google 페이 결제 방법을 사용하여 headless 상거래 경험을 할 수 있도록 허용합니다.
+![신규](../assets/new.svg)<!-- PAY-4381 --> [결제 서비스는 GraphQL을 통해 Google 페이를 지원합니다](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) 상인이 Google 페이 결제 방법을 사용하여 headless Commerce 경험을 할 수 있도록 허용합니다.
 
-![신규](../assets/new.svg)<!-- PAY-4878 --> 이제 결제 서비스 기본 체크아웃 기능이 Adobe Commerce 및 Magento Open Source 판매자용으로 번들로 제공됩니다. 결제 서비스는 이제 전 세계 200개 지역 중 어느 곳에서든 비즈니스를 가진 상인을 지원할 수 있습니다. 결제 서비스 기본 체크아웃은 셀프 서비스 온보딩에서 차변/신용, PayPal, Venmo(사용 가능한 경우) 및 PayLater(사용 가능한 경우) 옵션을 제공합니다.
+![신규](../assets/new.svg)<!-- PAY-4878 --> 이제 [!DNL Payment Services] 기본 체크아웃 기능은 Adobe Commerce 및 Magento Open Source 판매자용으로 번들로 제공됩니다.[!DNL Payment Services] 은 이제 전 세계 200개 지역 중 어느 곳에서든 사업을 하는 상인을 지원할 수 있습니다.[!DNL Payment Services] 기본 체크아웃은 셀프 서비스 온보딩에서 직불/신용, PayPal, Venmo(사용 가능한 경우) 및 PayLater(사용 가능한 경우) 옵션을 제공합니다.
 
 ![수정](../assets/fix.svg)<!-- PAY-5291 --> 일부 거래에 대한 결제 확인 수령이 지연될 수 있습니다. 이 경우 이제 가맹점은 주문에 대해 업데이트된 결제 상태를 받을 수 있습니다. [결제 서비스는 결제 거래의 보류 상태를 감지합니다.](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) 대기 중인 트랜잭션을 감지하고 이러한 트랜잭션을 사전에 모니터링한 후 대기 중 상태가 캡처되면 업데이트하여 순서대로 표시합니다.
 
@@ -134,7 +144,7 @@ _2024년 3월 1일_
 
 ![신규](../assets/new.svg)<!-- PAY-5244 --> 비동기 체크아웃 호환성을 수정했습니다.
 
-![수정](../assets/fix.svg)<!-- PAY-5253 --> 결제 서비스에 속하지 않는 자격 증명 모음 토큰을 삭제할 수 없는 오류를 해결했습니다.
+![수정](../assets/fix.svg)<!-- PAY-5253 --> 자격 증명 모음 토큰이 다음에 속하지 않는 오류를 수정했습니다. [!DNL Payment Services] 삭제할 수 없습니다.
 
 ## v2.3.3
 
@@ -163,7 +173,7 @@ _2023년 12월 7일_
 ![신규](../assets/new.svg)<!-- PAY-5047 --> 이제 다음 위치에서 신용/직불 카드 브랜드 또는 결제 방법 유형을 사용할 수 있습니다.
 - 상점 첫 화면의 고객 주문 페이지
 - 구매자에게 전송된 주문 확인 이메일
-- 다음에서 [주문 세부 사항 보기](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) Commerce 관리자
+- 다음에서 [주문 세부 사항 보기](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) Commerce 관리자.
 
 ## v2.3.0
 
@@ -171,7 +181,7 @@ _2023년 12월 1일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg)<!-- PAY-4381 --> [이제 결제 서비스에서 GraphQL 통합을 지원합니다.](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). 이제 GraphQL에서 PayPal 결제 버튼, 호스팅 필드 및 Apple Pay를 지원하므로 결제 서비스는 Headless 상거래 설정을 지원합니다.
+![신규](../assets/new.svg)<!-- PAY-4381 --> [이제 결제 서비스에서 GraphQL 통합을 지원합니다.](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). PayPal 결제 버튼, 호스팅된 필드 및 Apple Pay에 대한 GraphQL 지원[!DNL Payment Services] 이제에서 headless Commerce 설정을 지원합니다.
 
 ## v2.2.1
 
@@ -179,7 +189,7 @@ _2023년 9월 27일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4870 --> 확장 버전을 최신 릴리스로 보낼 때 Storefront에서 새 헤더 속성을 올바르게 잘못 입력하던 문제를 수정했습니다. 이전에는 `1.3.0` 상거래 서비스 커넥터의 릴리스이므로 를 확장할 수 없습니다. `User-Agent header` 결제 서비스 확장.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4870 --> 확장 버전을 최신 릴리스로 보낼 때 Storefront에서 새 헤더 속성을 올바르게 잘못 입력하던 문제를 수정했습니다. 이전에는 `1.3.0` Commerce 서비스 커넥터의 릴리스이므로 를 확장할 수 없습니다. `User-Agent header` 다음에서 [!DNL Payment Services] 확장명.
 
 ## v2.2.0
 
@@ -195,7 +205,7 @@ _2023년 8월 30일_
 
 ![신규](../assets/new.svg)<!-- PAY-4002 --> 판매자가 다음을 수행할 수 있는 기능이 추가되었습니다. [결제 옵션 순서 정렬](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) 특정 결제 옵션의 우선 순위를 지정합니다. 이 기능을 사용하면 체크아웃 대화율이 높아집니다.
 
-![신규](../assets/new.svg)<!-- PAY-4035 --> 상인은 이제 상점의 상태를 효율적으로 모니터링하고 새로운 기능을 사용하여 모든 거래 문제를 식별할 수 있습니다 [거래 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 결제 서비스 관리자 홈 페이지에서 사용할 수 있습니다. 보고서는 거래 승인률과 부정적 거래 추세에 대한 자료도 제시한다.
+![신규](../assets/new.svg)<!-- PAY-4035 --> 상인은 이제 상점의 상태를 효율적으로 모니터링하고 새로운 기능을 사용하여 모든 거래 문제를 식별할 수 있습니다 [거래 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 다음에서 사용 가능:[!DNL Payment Services] 관리자 홈 페이지입니다. 보고서는 거래 승인률과 부정적 거래 추세에 대한 자료도 제시한다.
 
 ## v2.1.0
 
@@ -207,7 +217,7 @@ _2023년 6월 9일_
 
 ![신규](../assets/new.svg)<!-- Issue xxx --> 추가됨 [다음 국가 및 관련 통화의 가용성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): 호주, 프랑스, 영국.
 
-![신규](../assets/new.svg)<!-- Issue PAY-4296 --> 추가됨 [관리자 역할을 위한 리소스 확장](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 를 사용하면 관리자가 고객에 대한 주문을 만들고 관리할 수 있으며 판매 메뉴에서 결제 서비스를 볼 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-4296 --> 추가됨 [관리자 역할을 위한 리소스 확장](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) 를 사용하면 관리자가 고객에 대한 주문을 만들고 관리할 수 있으며[!DNL Payment Services] 을 클릭합니다.
 
 ![신규](../assets/new.svg)<!-- Issue PAY-4236 --> 추가됨 [체크아웃 중에 오류가 발생하는 주문에 대한 자동 무효화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
 
@@ -227,7 +237,7 @@ _2023년 3월 10일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![수정](../assets/fix.svg)<!-- Issue PAY-4226 --> 새 결제 서비스 판매자가 관리자에서 체크아웃을 사용할 수 없는 문제를 해결했습니다. 결제 서비스는 이전에 새 고객에 대해 존재하지 않는 상거래 고객 ID를 사용했습니다.
+![수정](../assets/fix.svg)<!-- Issue PAY-4226 --> 새로 만들 수 없는 문제가 해결되었습니다. [!DNL Payment Services] 관리에서 체크아웃을 사용할 수 없는 판매자입니다.[!DNL Payment Services] 는 이전에 새 고객에 존재하지 않는 Commerce 고객 ID를 사용했습니다.
 
 ![수정](../assets/fix.svg)<!-- Issue PAY-4205 --> 를 사용하여 체크아웃하는 동안 지정된 배송 주소 상태가 기본 세금 설정의 상태로 대체되는 문제를 해결했습니다. [PayPal 옵션](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). 이제 고객은 머천트의 세금 설정에서 기본값으로 구성된 상태 이외의 상태로 주문을 출하할 수 있습니다.
 
@@ -257,7 +267,7 @@ _2023년 1월 25일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 이전에 호환되지 않은 알려진 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스에서는 서비스 ID 확장 버전을 최신 안정된 버전으로 잠가서 새 결제 서비스 설치를 통해 Commerce Services를 구성할 수 있습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-4102 --> 이전에 호환되지 않은 알려진 문제에 대한 수정 사항이 릴리스되었습니다. 이 릴리스는 서비스 ID 확장 버전을 안정적인 최신 버전으로 잠가서 새 버전을 다시 활성화합니다 [!DNL Payment Services] 를 설치하여 Commerce 서비스를 구성합니다.
 
 ## v1.5.2
 
@@ -265,9 +275,9 @@ _2022년 12월 22일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 결제 방법이 거부된 경우 결제 서비스의 송장 발행을 개선했습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3992 --> 의 송장 발행 개선 [!DNL Payment Services] 결제 방법이 거부된 경우.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 --> 이제 Payment Services가 다음을 사용하는 가맹점에 대해 PayPal 결제 버튼을 올바르게 표시합니다. [체크아웃 실행](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3999 -->[!DNL Payment Services] 이제 을 사용하는 가맹점을 위한 PayPal 결제 버튼이 올바르게 표시됩니다. [체크아웃 실행](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} 체크아웃 페이지에 대한 사용자 지정 템플릿입니다. 이전에는 미니마트에서 버튼이 간헐적으로 표시되었습니다.
 
 ## v1.5.1
 
@@ -275,9 +285,9 @@ _2022년 11월 23일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg)<!-- Issue PAY-3923 --> 이제 결제 서비스는 사용자 에이전트 헤더에 버전 번호를 포함하므로 요청이 사용하지 않은 끝점을 추적, 필터링 또는 사용하지 않도록 할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3923 -->[!DNL Payment Services] 이제 에서는 요청이 사용되지 않은 끝점을 추적, 필터링 또는 사용하지 않도록 할 수 있도록 사용자 에이전트 헤더에 버전 번호를 포함합니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 --> 이제 결제 버튼을 사용하여 제품 페이지에서 주문이 이루어지면 결제 서비스에 주문 데이터가 올바르게 표시됩니다.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3968 -->[!DNL Payment Services] 이제 결제 버튼을 사용하여 제품 페이지에서 주문을 하면 주문 데이터가 올바르게 표시됩니다.
 
 ## v1.5.0
 
@@ -287,7 +297,7 @@ _2022년 11월 18일_
 
 ![신규](../assets/new.svg)<!-- Issue PAY-3880 --> 이제 쇼핑객은 [체크아웃 중에 신용 카드 정보를 저장(저장)합니다.](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) 동일한 판매자 계정 내에서 동일한 또는 다른 스토어의 이후 구매에서 사용.
 
-![신규](../assets/new.svg)<!-- Issue PAY-3950 --> 판매자가 이제 [즉시 구매 상거래 기능](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 쇼핑객이 사용할 수 있도록 상점 용 [저장된 신용 카드 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) 신속하게 체크아웃할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-3950 --> 판매자가 이제 [즉시 구매 Commerce 기능](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) 쇼핑객이 사용할 수 있도록 상점 용 [저장된 신용 카드 정보](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) 신속하게 체크아웃할 수 있습니다.
 
 ## v1.4.1
 
@@ -303,11 +313,11 @@ _2022년 9월 30일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg)<!-- Issue PAY-784 --> 이제 결제 서비스에는 다음과 같은 가맹점 계정을 설정할 수 있는 기능이 포함됩니다. [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 이를 통해 판매자는 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나 비즈니스의 일부로 Adobe Commerce을 사용할 수 있습니다.
+![신규](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] 에는 다음에 대한 머천트 계정을 설정할 수 있는 기능이 포함되어 있습니다. [여러 PayPal 비즈니스 계정 사용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). 이를 통해 판매자는 다양한 통화를 사용하여 여러 국가에서 스토어를 운영하거나 비즈니스의 일부로 Adobe Commerce을 사용할 수 있습니다.
 
 ![신규](../assets/new.svg)<!-- Issue PAY-3231 --> 판매자는 [추가 [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) 브랜드, 스토어 또는 제품 라인을 설명하기 위해 고객 거래 은행 거래 명세서에 표시되는 웹 사이트 또는 개별 스토어 조회수 구성
 
-![신규](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 결제 버튼 활성화 또는 비활성화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 결제 서비스 설정에서 체크아웃할 경우.
+![신규](../assets/new.svg)<!-- Issue PAY-3707 --> [신용 카드 필드 및 PayPal 결제 버튼 활성화 또는 비활성화](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) 체크아웃[!DNL Payment Services] 설정.
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3546 --> 고객이 클릭 시 **[!UICONTROL Edit cart]**: 페이지가 장바구니 페이지로 리디렉션되고 빈 장바구니를 표시하는 대신 업데이트된 항목이 표시됩니다.
 
@@ -343,7 +353,7 @@ _2022년 6월 29일_
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3330 --> 게스트 사용자가 대시가 포함된 전화 번호를 입력하면 체크아웃 중에 결제가 더 이상 실패하지 않습니다.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce Services 자격 증명이 유효하지 않은 경우 이제 결제 서비스에서 자격 증명 오류를 표시함으로써 알림을 보냅니다. [!DNL Payment Services] 관리자의 홈.
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Commerce 서비스 자격 증명이 유효하지 않은 경우[!DNL Payment Services] 에서 자격 증명 오류를 표시하여 경고 메시지가 표시됩니다. [!DNL Payment Services] 관리자의 홈.
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] 은(는) 과(와) 호환되지 않습니다. `commerce-data-export` v101.20 이상: 와 호환되지 않음 [[!DNL Channel manager] 확장](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
@@ -363,7 +373,7 @@ _2022년 3월 31일_
 
 ![신규](../assets/new.svg)<!-- Issue PAY-2678 --> 상인은 이제 재무 보고서를 볼 수 있습니다. [주문 결제 상태](order-payment-status.md) 및 [지급 보고서](payouts.md), 캐나다 달러(CAD) 단위.
 
-![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2710 --> [!DNL Payment Services] 은(는) 이제 과(와) 호환됩니다. [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+![해결된 문제](../assets/fix.svg)<!-- Issue PAY-2710 -->[!DNL Payment Services] 은(는) 이제 과(와) 호환됩니다. [PHP 8.1](https://www.php.net/releases/8.1/en.php).
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-3017 --> 여러 스토어에 적절한 경고를 표시하도록 샌드박스 모드 경고가 개선되었습니다.
 
