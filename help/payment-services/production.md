@@ -3,9 +3,9 @@ title: 사용 [!DNL Payment Services] 프로덕션용
 description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다. [!DNL Payment Services] 프로덕션용
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 설정 [!DNL Payment Services] 결제 방법으로
 
-이후 [상거래 서비스 구성](connect.md#configure-commerce-services) 다음 중 하나를 활성화합니다. [샌드박스 테스트](sandbox.md#enable-sandbox-testing) 또는 [라이브 결제](#enable-live-payments), 다음을 설정해야 합니다. [!DNL Payment Services] 결제 방법을 사용하겠습니다.
+이후 [Commerce 서비스 구성](connect.md#configure-commerce-services) 다음 중 하나를 활성화합니다. [샌드박스 테스트](sandbox.md#enable-sandbox-testing) 또는 [라이브 결제](#enable-live-payments), 다음을 설정해야 합니다. [!DNL Payment Services] 결제 방법을 사용하겠습니다.
 
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 클릭 **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ ht-degree: 0%
 1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. 홈 보기에서 **[!UICONTROL Settings]**. 다음을 참조하십시오 [홈](payments-home.md) 추가 정보.
 1. 필요한 항목 선택 _판매자 ID_ 영업 담당자에게 제출하면 영업 담당자가 정확한 가격 책정 계층을 구성하게 됩니다.
+
+다음을 참조하십시오 [레벨 2 및 레벨 3 처리](levels-card-payment-transactions.md) 결제 거래에 대한 자세한 정보.
 
 ## 라이브 결제 활성화
 

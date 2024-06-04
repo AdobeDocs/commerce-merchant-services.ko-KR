@@ -6,15 +6,15 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 3%
+source-wordcount: '91'
+ht-degree: 4%
 
 ---
 
 
-# [!DNL Payment Services] 상거래 {#payment-services}
+# [!DNL Payment Services] Commerce용 {#payment-services}
 
 - [안내서 개요](guide-overview.md)
 - [소개 [!DNL Payment Services]](overview.md)
@@ -29,7 +29,7 @@ ht-degree: 3%
    - [인스턴스 연결](connect.md)
    - [테스트 샌드박스 설정](sandbox.md)
    - [프로덕션에 대해 활성화](production.md)
-- Configure [!DNL Payment Services] {#configure}
+- 구성 [!DNL Payment Services] {#configure}
    - [[!DNL Payment Services] 홈](payments-home.md)
    - [[!DNL Payment Services] 설정](settings.md)
    - [명령줄 구성](configure-cli.md)
@@ -41,6 +41,7 @@ ht-degree: 3%
    - [주문 결제 상태 보고서](order-payment-status.md)
    - [지급 보고서](payouts.md)
    - [사용 가능한 데이터](data.md)
+   - [레벨 2 및 레벨 3 처리](levels-card-payment-transactions.md)
 - 결제 관리 {#manage}
    - [환불](refunds.md)
    - [빈 공간](voids.md)
