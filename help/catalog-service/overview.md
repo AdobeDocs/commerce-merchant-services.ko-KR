@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] for Adobe Commerce은 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 
 ### 스키마 관리
 
-카탈로그 서비스는 서비스로 작동하므로 통합자는 기본 버전의 Commerce에 대해 신경쓰지 않아도 됩니다. 쿼리의 구문은 모든 버전에 대해 동일합니다. 또한 스키마는 모든 판매자에 대해 일관됩니다. 이러한 일관성을 통해 모범 사례를 보다 쉽게 설정하고 상점 위젯의 재사용을 크게 늘릴 수 있습니다.
+Catalog Service는 서비스로 작동하므로 통합자는 Commerce의 기본 버전에 대해 신경쓰지 않아도 됩니다. 쿼리의 구문은 모든 버전에 대해 동일합니다. 또한 스키마는 모든 판매자에 대해 일관됩니다. 이러한 일관성을 통해 모범 사례를 보다 쉽게 설정하고 상점 위젯의 재사용을 크게 늘릴 수 있습니다.
 
 ### 제품 유형 단순화
 
@@ -66,9 +66,11 @@ Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQ
 
 복잡한 제품에는 정해진 가격이 없습니다. 대신 카탈로그 서비스는 연결된 단식의 가격을 반환합니다. 예를 들어 판매자는 구성 가능한 제품의 모든 변형에 초기에 동일한 가격을 할당할 수 있습니다. 특정 크기나 색상이 인기가 없으면 판매자는 해당 변형의 가격을 낮출 수 있습니다. 따라서 복합(구성 가능) 제품의 가격은 처음에는 표준 및 인기 없는 변형의 가격을 모두 반영하여 가격 범위를 보여 줍니다. 쇼핑객이 사용 가능한 모든 옵션에 대한 값을 선택하면 상점 전면에는 단일 가격이 표시됩니다.
 
+카탈로그 서비스는 큰 값(최대 16자리)과 높은 소수점 이하 자리 수(최대 4자리)의 가격을 지원하여 정확한 가격 업데이트 및 계산을 보장합니다.
+
 >[!NOTE]
 >
-> 다음을 보유한 상거래 고객 [!DNL Catalog Service] 을(를) 통해 웹 사이트에서 더 빠른 가격 변경 업데이트 및 동기화 시간을 이용할 수 있습니다. [SaaS 가격 인덱서](../price-index/price-indexing.md).
+> 다음을 보유한 Commerce 고객 [!DNL Catalog Service] 을(를) 통해 웹 사이트에서 더 빠른 가격 변경 업데이트 및 동기화 시간을 이용할 수 있습니다. [SaaS 가격 인덱서](../price-index/price-indexing.md).
 
 ## 구현
 
