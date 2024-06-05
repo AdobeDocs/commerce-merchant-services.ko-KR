@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "의 최신 릴리스 정보 [!DNL Live Search] Adobe Commerce에서."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _2024년 2월 13일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 이제에서 의 기본 규칙 설정을 지원합니다. [머천다이징 검색](rules.md).
 
-_2023년 10월 27일_
-
-![신규](../assets/new.svg) 다음 [!DNL Live Search] 이제 PLP 위젯에서 색상 견본을 지원합니다.
-
 _2023년 10월 12일_
 
 ![신규](../assets/new.svg) 이제 Commerce 관리자는 색인 언어를 지정할 수 있습니다. [!DNL Live Search]. 다음을 참조하십시오 [설정](settings.md).
@@ -44,6 +40,28 @@ _2023년 6월 13일_
 _2023년 4월 25일_
 
 ![신규](../assets/new.svg) [!DNL Live Search] 이제 고객은 새로운 기능을 활용할 수 있습니다 [SaaS 가격 인덱서](../price-index/price-indexing.md).
+
+### PLP 위젯
+
+_2024년 5월 31일_
+
+![신규](../assets/new.svg) 다음 기능에 대한 지원을 추가하는 PLP 위젯 버전 2.0.0이 릴리스되었습니다.
+
+- 장바구니에 추가 버튼 - 간단한 제품에만 사용할 수 있습니다.
+- 제품당 여러 이미지 - 구성 가능한 제품에 대해 다른 색상을 선택하면 이미지가 변경될 수 있습니다.
+
+_2023년 10월 27일_
+
+![신규](../assets/new.svg) 다음 [!DNL Live Search] 이제 PLP 위젯에서 색상 견본을 지원합니다.
+
+
+## [!DNL Live Search] 4.2.0 {#420}
+
+_2024년 5월 31일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![신규](../assets/new.svg) PLP 위젯 버전 2.0.0을 사용하도록 라이브 검색 확장이 업데이트되었습니다.
 
 ## [!DNL Live Search] 4.1.2 {#412}
 
@@ -75,16 +93,6 @@ _2024년 2월 22일_
 ### 새로운 기능
 
 ![신규](../assets/new.svg) 다음 [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) 을(를) 이제 사용할 수 있습니다. 이렇게 개선된 대시보드는 다음에 대한 데이터 스트림에 대한 통찰력을 제공합니다. [!DNL Product Recommendations], [!DNL Live Search], 및 [!DNL Catalog Service].
-![신규](../assets/new.svg) 여러 새 기능이 [PLP 위젯](plp-styling.md):
-
-* 목록/표 보기 전환
-* 장바구니에 추가 단추
-* 견본 지원
-* 제품당 여러 이미지
-* 가격 슬라이더
-* 언어 지원
-
-판매자는 다음을 업그레이드해야 합니다. [!DNL Live Search] 이러한 기능에 액세스하려면 버전 >= 4.1.0으로 확장하십시오.
 
 ### 업데이트
 
@@ -114,9 +122,9 @@ _2023년 11월 13일_
 
 버전 3.1.1 이상을 설치한 후 새 인덱서를 활성화합니다.
 
-* 제품 가격 피드
-* 범위 웹 사이트 데이터 피드
-* 고객 그룹 데이터 피드 범위 지정
+- 제품 가격 피드
+- 범위 웹 사이트 데이터 피드
+- 고객 그룹 데이터 피드 범위 지정
 
 업그레이드 후 변경 사항을 프로덕션에 푸시하기 전에 QA 또는 스테이징에서 업데이트된 구성을 테스트하십시오.
 
@@ -145,7 +153,7 @@ _2023년 9월 15일_
 
 ![수정](../assets/fix.svg) 제품 및 가격 피드의 테이블 크기가 크게 줄었습니다. 표 `catalog_data_exporter_products` 및 `catalog_data_exporter_product_prices` 크기를 상당히 줄여야 합니다.
 ![수정](../assets/fix.svg) &#39;규칙&#39; 탭의 이름이 &#39;검색 규칙&#39;으로 바뀝니다.
-![수정](../assets/fix.svg) 이제 &#39;트렌드&#39;별로 순위를 지정할 때 다음 중 하나를 선택할 수 있습니다. * 3일 (기본값) * 14일 * 30일
+![수정](../assets/fix.svg) 이제 &#39;트렌드&#39;별로 순위를 지정할 때 - 3일(기본값) - 14일 - 30일 중에서 선택할 수 있습니다.
 ![수정](../assets/fix.svg) &#39;이벤트&#39;(증폭/고정/버리/숨기기)의 이름이 &#39;수동 순위&#39;로 변경되었습니다.
 ![수정](../assets/fix.svg) &#39;순위 유형&#39;의 이름이 &#39;지능형 순위&#39;로 변경되었습니다.
 ![수정](../assets/fix.svg) 사소한 버그 수정
@@ -170,11 +178,11 @@ _2023년 8월 7일_
 
 ![신규](../assets/new.svg) 다음 값이 `storeDetails` 개체:
 
-* &quot;페이지당 모든 제품 허용&quot;
-* 통화 비율
-* &quot;그리드 허용 값의 페이지당 제품&quot;
-* &quot;그리드 기본값의 페이지당 제품&quot;
-* 언어 저장
+- &quot;페이지당 모든 제품 허용&quot;
+- 통화 비율
+- &quot;그리드 허용 값의 페이지당 제품&quot;
+- &quot;그리드 기본값의 페이지당 제품&quot;
+- 언어 저장
 
 ### 업데이트
 
@@ -201,7 +209,7 @@ _2023년 3월 14일_
 ![신규](../assets/new.svg) [제품 목록 페이지 위젯](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![신규](../assets/new.svg) [범주 필터링 옵션](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![신규](../assets/new.svg) 끌어서 놓아 고정 이벤트를 만드는 기능이 추가되었습니다.
-![신규](../assets/new.svg) 새 고정 작업: * 위치에 고정 - 한 번의 클릭으로 고정 이벤트 만들기 고정 * 상단에 고정 - 첫 번째 위치에 제품 배치 * 하단에 고정 - 결과의 하단에 제품 배치 * 한 번의 클릭으로 이벤트 고정 해제
+![신규](../assets/new.svg) 새 고정 작업: - 위치에 고정 - 한 번의 클릭으로 고정 이벤트를 만드는 고정 버튼 - 맨 위에 고정 - 제품을 첫 번째 위치에 고정 - 맨 아래에 고정 - 제품을 결과의 맨 아래에 배치 - 한 번의 클릭으로 이벤트 고정 해제
 ![신규](../assets/new.svg) [규칙에 대한 지능형 순위](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![신규](../assets/new.svg) [!DNL Live Search] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
@@ -326,6 +334,6 @@ _2023년 3월 14일_
 
 자세한 내용은 다음을 참조하십시오.
 
-* [Adobe Commerce 개발자 설명서](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] 마켓플레이스에서](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce 개발자 설명서](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] 마켓플레이스에서](https://commercemarketplace.adobe.com/magento-live-search.html)
