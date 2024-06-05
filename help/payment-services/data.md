@@ -1,13 +1,13 @@
 ---
 title: 사용 가능한 데이터
-description: 재무 보고 데이터를 사용하여 보고를 비상거래 시스템과 조정합니다.
+description: 재무 보고 데이터를 사용하여 Commerce이 아닌 시스템과 보고를 조정합니다.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 특정 주문과 연관된 증분 ID를 사용하여 Adobe Commerce financial reporting을 Adobe이 아닌 ERP(Enterprise Resource Planning) 시스템과 대사할 수 있습니다.
 
-결제 서비스에서 Commerce 주문을 PayPal로 보내면 증분 ID가 다음과 같이 포함됩니다. `custom_id` _및_ 다음에서 `invoice_id` (또한 뒤에 임의의 문자열이 포함됨) `increment_id`).
+결제 서비스에서 PayPal로 Commerce 주문을 보내면 증분 ID가 다음과 같이 포함됩니다. `custom_id` _및_ 다음에서 `invoice_id` (또한 뒤에 임의의 문자열이 포함됨) `increment_id`).
 
 ID는 지불에 대한 판매자 활동 세부 사항과 PayPal 웹후크에서 모두 쉽게 액세스할 수 있습니다.
 
@@ -79,5 +79,5 @@ ID는 지불에 대한 판매자 활동 세부 사항과 PayPal 웹후크에서 
 
 자세한 내용은 PayPal의 REST API 설명서 를 참조하십시오.
 
-* [`purchase_unit`, `custom_id` 및 `invoice_id` 상주](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`, `custom_id` 및 `invoice_id` 상주](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [주문 세부 사항 표시](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
