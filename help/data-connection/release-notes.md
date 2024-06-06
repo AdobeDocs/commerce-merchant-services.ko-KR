@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: 에 대한 최신 릴리스 정보 [!DNL Data Connection] Adobe Commerce에서 확장되었습니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _2022년 10월 12일_
 ![신규](../assets/new.svg) - 다음에 대한 지원이 추가됨 [AEM 상점 첫 화면](overview.md#aem-support).
 
 +++
+
+## 3.1.2
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+_2024년 6월 5일_
+
+![수정](../assets/new.svg) - 을(를) 시작할 때 잘못된 날짜 형식이 사용되는 문제가 해결되었습니다. [이전 동기화](connect-data.md#specify-order-history-date-range).
+![수정](../assets/new.svg) - 다음과 같은 문제가 해결되었습니다. [startCheck](events.md#startcheckout) 이벤트가 Adobe Commerce 2.4.7에서 전송되지 않았습니다.
 
 ## 3.1.1
 

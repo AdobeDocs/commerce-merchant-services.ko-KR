@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
+source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,14 @@ ht-degree: 0%
 - Facet 내에서 최대 30개의 버킷이 반환될 수 있습니다. 30개 이상의 버킷이 반환되어야 하는 경우 [지원 티켓 만들기](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) 따라서 Adobe은 성능 영향을 분석하고 환경에 대한 이 제한을 늘릴 수 있는지 여부를 결정할 수 있습니다.
 - 동적 패싯은 큰 인덱스와 순서가 높은 인덱스에서 성능 문제를 일으킬 수 있습니다. 동적 패싯을 만들어 성능 저하 또는 페이지가 시간 초과 오류와 함께 로드되지 않은 것을 발견한 경우 패싯을 고정으로 변경하여 성능 문제가 해결되는지 확인하십시오.
 - 재고 상태 (`quantity_and_stock_status`)은 패싯으로 지원되지 않습니다. 다음을 사용할 수 있습니다. `inStock: 'true'` 재고 제품을 필터링합니다. 이 기능은 의 기본 기능으로 지원됩니다 `LiveSearchAdapter` 모듈에서 &quot;재고 부족 제품 표시&quot;가 &quot;True&quot;로 설정된 경우 [!DNL Commerce] 관리자.
+- 날짜 유형 속성은 패싯으로 지원되지 않습니다.
 
 ## 쿼리
 
 - [!DNL Live Search] 은 카테고리 트리의 전체 분류법에 액세스할 수 없으므로 해당 범위 밖에 일부 계층화된 탐색 검색 시나리오가 만들어집니다.
 - [!DNL Live Search] 고유 사용 [GraphQL 엔드포인트](https://developer.adobe.com/commerce/services/graphql/live-search/) 동적 팩팅 및 검색할 때 사용 가능한 검색 등의 기능을 지원하는 쿼리입니다. 와 유사하긴 하지만 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)에 몇 가지 차이점이 있으며 일부 필드가 완전히 호환되지 않을 수 있습니다.
 - 검색 쿼리에서 반환할 수 있는 최대 결과 수는 10,000개입니다.
+- 날짜 유형 특성을 사용하여 결과를 필터링할 수 없습니다.
 
 ## 규칙
 
@@ -56,7 +58,7 @@ ht-degree: 0%
 ## 동의어
 
 - [!DNL Live Search] 최대 200개까지 관리 가능 [동의어](synonyms.md) 스토어 보기별
-- 여러 단어 동의어는 지원되지 않습니다.
+- 다중 단어 동의어는 스토어 보기당 20개로 제한됩니다.
 
 ## 카테고리 머천다이징
 
