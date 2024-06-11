@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ ht-degree: 0%
 
 ### SaaS 프로젝트 선택 또는 만들기 {#createsaasenv}
 
-SaaS 프로젝트를 선택하거나 만들려면 다음을 요청하십시오. [!DNL Commerce] 의 API 키 [!DNL Commerce] 귀하의 스토어에 대한 라이선스 보유자입니다.
+SaaS 프로젝트를 선택하거나 만들려면 다음을 요청하십시오. [!DNL Commerce] 의 API 키 [!DNL Commerce] 스토어의 라이선스 소유자:
+
+>[!NOTE]
+>
+> 표시되지 않는 경우 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] 구성, 다음을 설치해야 합니다. [!DNL Commerce] 원하는 모듈 [[!DNL Commerce] 서비스](#availableservices).
 
 1. 다음에서 _관리자_ 사이드바, 이동 **시스템** > 서비스 > **Commerce Services 커넥터**.
 
@@ -102,10 +106,14 @@ SaaS 프로젝트를 선택하거나 만들려면 다음을 요청하십시오. 
 1. SaaS 프로젝트가 없는 경우 **프로젝트 만들기**. 그런 다음 **프로젝트** 필드에 SaaS 프로젝트의 이름을 입력합니다.
 
    SaaS 프로젝트를 만들 때 [!DNL Commerce] 에 따라 하나 이상의 SaaS 데이터 공간을 생성합니다. [!DNL Commerce] 라이선스:
-   - Adobe Commerce - 프로덕션 데이터 공간 1개, 테스트 데이터 공간 2개
+   - Adobe Commerce - 프로덕션 데이터 공간 1개, 테스트 데이터 공간 2개만 여러 스테이징 환경이 있는 Cloud Pro 프로젝트에서 다음을 수행하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다. [지원 요청 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source - 프로덕션 데이터 공간 1개, 테스트 데이터 공간 없음
 
 1. 다음 항목 선택 **데이터 공간** 의 현재 구성에 을 사용하려면 [!DNL Commerce] 저장.
+
+>[!NOTE]
+>
+>Commerce 서비스와 통합할 인스턴스가 따로 있는 경우 [지원 티켓 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) 각 추가 인스턴스에 대해 새 SaaS 프로젝트를 요청합니다. 지원이 SaaS 프로젝트를 만든 후 동일한 API 키를 사용하여 인스턴스에 대한 Commerce Services 통합을 구성하고 데이터 공간에 대한 새 SaaS 프로젝트를 선택합니다.
 
 >[!WARNING]
 >
