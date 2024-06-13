@@ -3,9 +3,9 @@ title: "시작하기 [!DNL Live Search]"
 description: "시스템 요구 사항 및 설치 단계 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 5. 데이터 구성
 
-제품 데이터를 올바르게 구성하면 고객에게 좋은 검색 결과를 얻을 수 있습니다. 이 섹션에서는 제품 목록 위젯을 활성화하고 카테고리와 속성을 할당합니다.
+제품 데이터를 올바르게 구성하면 고객에게 좋은 검색 결과를 얻을 수 있습니다. 이 섹션에서는 제품 목록 위젯을 활성화하고 카테고리를 할당합니다.
 
 ### 제품 목록 위젯 활성화
 
@@ -197,16 +197,6 @@ bin/magento saas:resync --feed categoryPermissions
 ### 범주 할당
 
 반환된 제품 [!DNL Live Search] 은(는) 다음에 할당되어야 합니다. [범주](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). 예를 들어 Luma에서 제품은 &quot;남성&quot;, &quot;여성&quot; 및 &quot;톱니바퀴&quot;와 같은 범주에 배치됩니다. 또한 하위 카테고리는 &quot;Tops&quot;, &quot;Bottom&quot; 및 &quot;Watches&quot;에 대해 설정됩니다. 이를 통해 필터링 시 세부기간을 향상시킬 수 있습니다.
-
-### 검색 및 필터링 가능한 필드
-
-제품이 할당됨 [속성](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) 검색 및 필터링에 사용할 수 있습니다. 속성은 &quot;Color&quot;, &quot;Size&quot;, &quot;Material Type&quot;과 같은 것입니다. 이러한 속성을 사용하면 &quot;녹색 꼭대기&quot;를 찾을 수 있습니다. 각 제품에는에 정의된 많은 속성이 있을 수 있습니다. [!DNL Commerce] 관리자.
-
-이러한 각 속성은 다음과 같이 정의할 수 있습니다. [&quot;검색 가능&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 관리에서. &quot;검색 가능&quot;으로 설정된 경우 다음 방법으로 해당 속성을 검색할 수 있습니다. [!DNL Live Search].
-
-[패싯](facets.md) 는에 정의된 제품 속성입니다. [!DNL Live Search] 필터링할 수 있습니다. 필터링 가능한 속성은 모두 패싯으로 설정할 수 있습니다. [!DNL Live Search] 그러나 한 번에 검색할 수 있는 패싯 수에 제한이 있습니다.
-
-[동의어](synonyms.md) 는 사용자에게 올바른 제품을 안내하기 위해 정의할 수 있는 용어입니다. 바지를 찾는 사용자들은 &quot;바지&quot; 또는 &quot;바지&quot;를 타이핑할 수 있습니다. 이러한 검색어가 사용자에게 &quot;바지&quot; 결과를 가져오도록 동의어를 설정할 수 있습니다.
 
 ## 6. 연결 테스트 {#test-connection}
 
@@ -433,11 +423,15 @@ composer require magento/module-data-services-graphql
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
 
+### B2B 지원
+
+[!DNL Live Search] 지원 [B2B 기능](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) 추가 포함 [제한 사항](boundaries-limits.md#b2b-and-category-permissions).
+
 ### PWA 지원
 
 [!DNL Live Search] 은 PWA Studio에서 작동하지만 다른 Commerce 구현과 비교하여 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
 
-- 의 현재 PWA 구현 [!DNL Live Search] 검색 결과를 반환하는 데 보다 많은 처리 시간이 필요합니다. [!DNL Live Search] 기본 Commerce 상점 포함.
+- 의 현재 PWA 구현 [!DNL Live Search] 검색 결과를 반환하는 데 보다 많은 처리 시간이 필요합니다. [!DNL Live Search] 기본 Commerce 상점 포함
 - [!DNL Live Search] PWA에서 을(를) 지원하지 않습니다. [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). 따라서 검색 보고나 지능형 머천다이징도 작동합니다.
 - 바로 필터링 `description`, `name`, `short_description` 과 함께 사용할 경우 GraphQL에서 지원되지 않음 [PWA](https://developer.adobe.com/commerce/pwa-studio/), 하지만 더 일반적인 필터와 함께 반환됩니다.
 

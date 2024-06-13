@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _2024년 5월 9일_
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![수정](../assets/fix.svg) 를 클릭할 때 발생하는 문제가 해결되었습니다. **[!DNL Add to Cart]** 제품 Recommendations 장치 내의 간단한 제품에 있는 버튼은 구매자를 현재 페이지에 머무르지 않고 홈 페이지로 리디렉션했습니다.
+![버그](../assets/bug.svg) 다음 원인으로 인한 유효성 검사 오류가 있습니다. `referenceBlock` 의 요소 `ProductRecommendations Layout` XML 파일.
 
 ### 이전 버전
 
@@ -173,7 +174,7 @@ _2023년 3월 20일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) Magento 서비스 이름이 변경됨 [상거래 서비스](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) 및 관리자의 유용성 개선
+![신규](../assets/new.svg) Magento 서비스 이름이 변경됨 [Commerce 서비스](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) 및 관리자의 유용성 개선
 
 ### magento/product-recommendations 3.2.4
 

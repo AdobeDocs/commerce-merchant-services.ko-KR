@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "다음 [!DNL Live Search storefront popover] 제안 제품 및 썸네일을 동적으로 반환합니다."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,6 @@ ht-degree: 0%
 기본적으로, [!DNL Live Search] 지원 [검색어 리디렉션](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
-
-## 검색 가능한 속성
-
-고도로 타겟팅된 결과를 생성하려면 다음을 검토하십시오. [검색 가능](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) 제품 속성. 관련성을 보장하려면 명확하고 간결한 의미가 있는 콘텐츠가 포함된 경우에만 속성을 검색할 수 있도록 하십시오. 다음과 같이 정확하지 않고 긴 텍스트가 포함된 속성은 사용하지 마십시오. `description`는 기본적으로 검색을 활성화하지만 검색 결과의 정밀도를 줄일 수 있습니다.
-예를 들어, &quot;반바지&quot;를 검색하는 사람이 &quot;반팔&quot;이라는 용어가 포함된 설명이 있는 셔츠가 있으면 해당 셔츠가 검색 결과에 포함됩니다.
-
-[!DNL Live Search] 또한 다음을 준수합니다. [두께](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) Adobe Commerce 내에 설정된 제품 속성. 가중치가 높은 속성은 검색 결과 내에서 더 높게 표시됩니다.
-
-다음 속성은 항상 검색할 수 있습니다.
-
-* `sku`
-* `name`
-* `categories`
 
 ## [!DNL Popover] 페이지 크기
 

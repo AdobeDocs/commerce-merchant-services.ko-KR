@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ ht-degree: 0%
 
 ## 쿼리
 
-- [!DNL Live Search] 은 카테고리 트리의 전체 분류법에 액세스할 수 없으므로 해당 범위 밖에 일부 계층화된 탐색 검색 시나리오가 만들어집니다.
 - [!DNL Live Search] 고유 사용 [GraphQL 엔드포인트](https://developer.adobe.com/commerce/services/graphql/live-search/) 동적 팩팅 및 검색할 때 사용 가능한 검색 등의 기능을 지원하는 쿼리입니다. 와 유사하긴 하지만 [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)에 몇 가지 차이점이 있으며 일부 필드가 완전히 호환되지 않을 수 있습니다.
 - 검색 쿼리에서 반환할 수 있는 최대 결과 수는 10,000개입니다.
 - 날짜 유형 특성을 사용하여 결과를 필터링할 수 없습니다.
@@ -74,3 +73,4 @@ ht-degree: 0%
    - &quot;로그인되지 않은&quot; 고객 그룹에는 &quot;허용&quot; 검색 권한이 부여되어야 합니다.
    - 제품을 &quot;로그인되지 않음&quot; 고객 그룹으로 제한하려면 각 범주로 이동하여 각 고객 그룹에 대한 권한을 설정합니다.
 - PWA Studio에 대한 실시간 검색이 있는 B2B에 대한 지원은 현재 지원되지 않습니다.
+- 의 카테고리 패싯 [!DNL Live Search] 특정 고객 그룹에 표시할 수 없는 카테고리를 표시할 수 있습니다.
