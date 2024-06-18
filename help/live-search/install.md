@@ -3,7 +3,7 @@ title: "시작하기 [!DNL Live Search]"
 description: "시스템 요구 사항 및 설치 단계 알아보기 [!DNL Live Search] Adobe Commerce에서."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
 source-wordcount: '2266'
 ht-degree: 0%
@@ -216,7 +216,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 을(를) 설치했습니다 [!DNL Live Search] 확장, 동기화, 유효성 검사 및 데이터 구성 이제 다음을 확인해야 합니다. [!DNL Live Search] 위젯은 스토어의 모양과 느낌을 따릅니다.
 
-필요에 따라 사용자 정의 CSS 규칙을 정의하여 팝오버 및 PLP 위젯의 스타일을 지정할 수 있습니다. 다음을 참조하십시오 [팝오버 요소 스타일링](storefront-popover-styling.md) 및 [제품 목록 페이지 위젯](plp-styling.md).
+필요에 따라 사용자 정의 CSS 규칙을 정의하여 팝오버 및 PLP 위젯의 스타일을 지정할 수 있습니다. 다음을 참조하십시오 [팝오버 요소 스타일링](storefront-popover.md#styling-popover-example) 및 [제품 목록 페이지 위젯](plp-styling.md#styling-example).
 
 위젯의 기능을 확장하려는 경우 각각의 소스 코드를 공용 리포지토리에서 사용할 수 있습니다.
 이 시나리오에서는 사용자 자신의 요구 사항에 맞게 JavaScript를 사용자 지정한 다음 CDN에서 사용자 지정 코드를 호스팅할 수 있습니다. 이 사용자 지정 스크립트는 [!DNL Live Search] 서비스를 실행하고 일반적인 결과를 반환하여 위젯의 기능을 제어할 수 있습니다.

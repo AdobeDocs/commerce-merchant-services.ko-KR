@@ -4,10 +4,10 @@ user-guide-description: "이 안내서에서는 사용에 대한 자세한 지�
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
+source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 11%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 11%
 
 - [이란? [!DNL Live Search]?](overview.md)
 - [설치](install.md)
+- [라이브 검색 설정](workspace.md)
 - [경계 및 제한](boundaries-limits.md)
 - [릴리스 정보](release-notes.md)
 - 상점 첫 화면 {#live-search-storefront}
-   - [제품 목록 페이지 위젯](plp-styling.md)
+   - [Storefront 위젯](storefront-widgets.md)
+   - [제품 목록 페이지](plp-styling.md)
    - [상점 첫 화면 [!DNL Popover]](storefront-popover.md)
-   - [스타일링 [!DNL Popover] 요소](storefront-popover-styling.md)
 - 관리자 {#live-search-admin}
-   - [작업 영역](workspace.md)
    - [성능](performance.md)
    - 패싯 {#facets}
       - [개요](facets.md)

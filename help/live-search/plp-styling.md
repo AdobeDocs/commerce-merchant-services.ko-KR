@@ -2,9 +2,9 @@
 title: 제품 목록 페이지 위젯
 description: 활성화 및 스타일링 [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
+source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,24 +23,27 @@ ht-degree: 0%
 >
 >다음의 경우 [!DNL Live Search Product Listing Page Widget] 이(가) 활성화되면 제품 목록 페이지의 정렬 순서 방향을 변경할 수 없습니다.
 
-## PLP 위젯 비활성화
-
-PLP 위젯을 비활성화하려면 다음과 같이 하십시오.
-
-1. 다음으로 이동 **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **Storefront 기능** 및 설정 **제품 목록 위젯 활성화** &quot;아니요&quot;로 변경되었습니다.
-1. 선택 **구성 저장** 설정을 저장합니다.
-
 ## 위젯 기능
 
-PLP 위젯은 검색 가능한 제품 페이지에서 기대하는 다양한 기능을 제공합니다. 여기에는 다음이 포함됩니다.
+PLP 위젯은 다음과 같은 기본 기능을 제공합니다.
 
-* 속성별 필터링
-* 색상 견본 지원
-* 장바구니에 추가 기능
-* 다중 언어 지원
-* 가격 슬라이더
+- 장바구니에 추가 버튼 - 간단한 제품에만 사용할 수 있습니다.
+- 제품당 여러 이미지 - 구성 가능한 제품에 대해 다른 색상을 선택하면 이미지가 변경될 수 있습니다.
+- 색상 견본 지원 - 색상 속성의 철자를 입력해야 합니다. `color` 코드 유효성 검사를 제대로 수행합니다.
+
+### 위젯 사용자 정의
+
+PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록 위젯을 추가로 사용자 정의할 수 있습니다.
+
+- 속성별 필터링
+- 다중 언어 지원
+- 가격 슬라이더
 
 위의 기능을 처리하도록 PLP 위젯을 사용자 정의하는 방법에 대한 자세한 내용은 `storefront-product-listing-page` readme 파일 [보고](https://github.com/adobe/storefront-product-listing-page/).
+
+>[!WARNING]
+>
+>리포지토리에서 사용할 수 있는 코드를 사용하여 PLP 위젯을 사용자 정의하는 경우 유지 관리와 필요한 모든 업데이트를 수행해야 합니다. Adobe 릴리스되는 모든 새로운 PLP 위젯 기능은 사용자 정의된 구현과 호환되지 않을 수 있습니다.
 
 ## 스타일 예
 
@@ -48,8 +51,7 @@ PLP 위젯은 검색 가능한 제품 페이지에서 기대하는 다양한 기
 
 >[!NOTE]
 >
->Adobe Commerce 테마 내에 사용자 지정 클래스가 있는 요소는 상속되지 않습니다. 사용자 정의 클래스와 일치하도록 이러한 요소를 특정 클래스에서 타깃팅해야 합니다. 기본 작업 클래스는 위젯 단추에서 작동하지 않습니다.
->CSS 내의 제네릭 타깃팅된 요소는 상속됩니다. `button` 위젯 단추에 적용됩니다.
+>Adobe Commerce 테마 내에 사용자 지정 클래스가 있는 요소는 상속되지 않습니다. 사용자 정의 클래스와 일치하도록 이러한 요소를 특정 클래스에서 타깃팅해야 합니다. 기본 작업 클래스는 위젯 단추에서 작동하지 않습니다. CSS 내의 제네릭 타깃팅된 요소는 상속됩니다. `button` 위젯 단추에 적용됩니다.
 
 강조 표시된 div에는 타겟 클래스가 포함되어 있습니다 `ds-sdk-product-item__product-name`.
 
@@ -69,117 +71,124 @@ PLP 위젯은 검색 가능한 제품 페이지에서 기대하는 다양한 기
 
 ### 제품 목록
 
-* `.ds-sdk-product-list`: 외부 div
-* `.ds-sdk-product-list__grid`: 내부 div
+- `.ds-sdk-product-list`: 외부 div
+- `.ds-sdk-product-list__grid`: 내부 div
 
 ![쪽 매기기](assets/plp-css-product-list.png)
 
 #### 제품 목록 페이지 매김
 
-* `.ds-plp-pagination`
+- `.ds-plp-pagination`
 
 ![쪽 매기기](assets/plp-css-pagination.png)
 
-* `.ds-plp-pagination_item`
+- `.ds-plp-pagination_item`
 
 ![페이지 매김 항목](assets/plp-css-pagination-item.png)
 
-* `.ds-plp-pagination_item--current`
+- `.ds-plp-pagination_item--current`
 
 ![페이지 매김 현재 항목](assets/plp-css-pagination-item-current.png)
 
 ### 위젯
 
-* `.ds-widgets`: 외부 div
-* `.ds-widgets__actions`: 왼쪽 내부 div
-* `.ds-widgets__results`: 오른쪽 내부 div
+- `.ds-widgets`: 외부 div
+- `.ds-widgets__actions`: 왼쪽 내부 div
+- `.ds-widgets__results`: 오른쪽 내부 div
 
 ![위젯 결과](assets/plp-css-widgets.png)
 
 ### 정렬 드롭다운
 
-* `.ds-sdk-sort-dropdown`
+- `.ds-sdk-sort-dropdown`
 
 ![정렬 드롭다운](assets/plp-css-dropdown.png)
 
-* `.ds-sdk-sort-dropdown__button`
+- `.ds-sdk-sort-dropdown__button`
 
 ![드롭다운 단추](assets/plp-css-dropdown-button.png)
 
-* `.ds-sdk-sort-dropdown__items`
+- `.ds-sdk-sort-dropdown__items`
 
 ![드롭다운 항목](assets/plp-css-dropdown-items.png)
 
-* `.ds-sdk-sort-dropdown__items--item`
+- `.ds-sdk-sort-dropdown__items--item`
 
 ![드롭다운 항목](assets/plp-css-dropdown-item.png)
 
-* `.ds-sdk-sort-dropdown__items--item-selected`
+- `.ds-sdk-sort-dropdown__items--item-selected`
 
 ![선택한 항목 드롭다운](assets/plp-css-dropdown-selected.png)
 
-* `.ds-sdk-sort-dropdown__items--item-active`
+- `.ds-sdk-sort-dropdown__items--item-active`
 
 ![드롭다운 활성 선택](assets/plp-css-dropdown-active.png)
 
 ### 패싯
 
-* `.ds-plp-facets`
-* `.ds-plp-facets__header`
-* `.ds-plp-facets__header_title`
-* `.ds-plp-facets__header__clear-all`
+- `.ds-plp-facets`
+- `.ds-plp-facets__header`
+- `.ds-plp-facets__header_title`
+- `.ds-plp-facets__header__clear-all`
 
 ![패싯 헤더 제목](assets/plp-css-facets-title-clear.png){width="350"}
 
-* `.ds-plp-facets__pills`
-* `.ds-sdk-pill`
+- `.ds-plp-facets__pills`
+- `.ds-sdk-pill`
 
 ![패싯 알약](assets/plp-css-facets-pill.png){width="350"}
 
-* `.ds-sdk-pill__label`
-* `.ds-sdk-pill__cta`
+- `.ds-sdk-pill__label`
+- `.ds-sdk-pill__cta`
 
 ![패싯 레이블](assets/plp-css-pill-label-cta.png){width="350"}
 
-* `.ds-plp-facets__list`
+- `.ds-plp-facets__list`
 
 ![패싯 목록](assets/plp-css-facets-list.png){width="350"}
 
-* `.ds-sdk-input`
-* `.ds-sdk-input__label`
-* `.ds-sdk-product-item__product-swatch-group`
-* `ds-sdk-product-item__product-swatch-item`
-* `.ds-sdk-input_fieldset_show-more`
+- `.ds-sdk-input`
+- `.ds-sdk-input__label`
+- `.ds-sdk-product-item__product-swatch-group`
+- `ds-sdk-product-item__product-swatch-item`
+- `.ds-sdk-input_fieldset_show-more`
 
 ![입력](assets/plp-css-sdk-input.png)
 
-* `.ds-sdk-labelled-input`
+- `.ds-sdk-labelled-input`
 
 ![레이블이 지정된 입력](assets/plp-css-labelled-input.png)
 
-* `.ds-sdk-labelled-input__input`
-* `.ds-sdk-labelled-input__label`
+- `.ds-sdk-labelled-input__input`
+- `.ds-sdk-labelled-input__label`
 
 ![입력 레이블](assets/plp-css-labelled-input-label.png)
 
 ### 제품 항목
 
-* `.ds-sdk-product-item`
-* `.ds-sdk-product-item__image`
-* `.ds-sdk-product-item__product-name`
-* `.ds-sdk-product-item__product-options`
-* `.ds-sdk-product-price`
-   * `.ds-sdk-product-price--no-discount`
-   * `.ds-sdk-product-price--grouped`
-   * `.ds-sdk-product-price--bundle`
-   * `.ds-sdk-product-price--discount`
+- `.ds-sdk-product-item`
+- `.ds-sdk-product-item__image`
+- `.ds-sdk-product-item__product-name`
+- `.ds-sdk-product-item__product-options`
+- `.ds-sdk-product-price`
+   - `.ds-sdk-product-price--no-discount`
+   - `.ds-sdk-product-price--grouped`
+   - `.ds-sdk-product-price--bundle`
+   - `.ds-sdk-product-price--discount`
 
 ![제품](assets/plp-css-product.png)
 
 ### 로드 중
 
-* `.ds-sdk-loading`
-* `.ds-sdk-loading__spinner`
-* `.ds-sdk-loading__spinner-label`
+- `.ds-sdk-loading`
+- `.ds-sdk-loading__spinner`
+- `.ds-sdk-loading__spinner-label`
 
 ![표시기 로드 중](assets/plp-css-loading.png)
+
+## PLP 위젯 비활성화
+
+PLP 위젯을 비활성화하려면 다음과 같이 하십시오.
+
+1. 다음으로 이동 **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **Storefront 기능** 및 설정 **제품 목록 위젯 활성화** &quot;아니요&quot;로 변경되었습니다.
+1. 선택 **구성 저장** 설정을 저장합니다.

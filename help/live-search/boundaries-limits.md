@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 0a54c1715b076a7dea70632fcffeacc7de517760
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,10 @@ ht-degree: 0%
    - 제품을 &quot;로그인되지 않음&quot; 고객 그룹으로 제한하려면 각 범주로 이동하여 각 고객 그룹에 대한 권한을 설정합니다.
 - PWA Studio에 대한 실시간 검색이 있는 B2B에 대한 지원은 현재 지원되지 않습니다.
 - 의 카테고리 패싯 [!DNL Live Search] 특정 고객 그룹에 표시할 수 없는 카테고리를 표시할 수 있습니다.
+
+## [!DNL Storefront popover]
+
+- 다음 [[!DNL popover]](storefront-popover.md) 는 를 사용하는 스토어에 대해서만 사용할 수 있습니다. *Luma* 테마 또는 를 기반으로 하는 맞춤화된 테마 *Luma*. 검색 결과 페이지의 경로에는 이 없습니다. *Luma* 스타일링.
+- 다음 [!DNL popover] 은(는) 을 지원하지 않습니다. *비어 있음* 테마.
+- 다음 [!DNL popover] 은(는) 빠른 주문 양식에서 지원되지 않습니다.
+- 위시리스트 및 제품 비교는 지원되지 않습니다.
