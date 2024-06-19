@@ -1,14 +1,15 @@
 ---
-title: 위젯 유형
+title: Storefront 위젯
 description: 상점 첫 화면 팝오버 및 제품 목록 페이지 위젯에 대해 알아봅니다.
-source-git-commit: 39f742f6db725f69ee86446e54891bed43bac9ce
+exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
+source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# 위젯 유형
+# Storefront 위젯
 
 설치 시 [!DNL Live Search] storefront에 두 가지 새로운 위젯이 제공됩니다.
 
