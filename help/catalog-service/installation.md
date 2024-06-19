@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: "설치 방법 알아보기 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB 클라우드 인프라]
 
-이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Service] Commerce Cloud 인스턴스에 대한 확장입니다.
+이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Adapter] Commerce Cloud 인스턴스의 경우
 
 1. 로컬 워크스테이션에서 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 디렉터리로 변경합니다.
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 카탈로그 서비스 모듈을 추가합니다.
+1. 카탈로그 어댑터 모듈을 추가합니다.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 패키지 종속성을 업데이트합니다.
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. 에 대한 코드 변경 내용 커밋 및 푸시 `composer.json` 및 `composer.lock` 파일.
@@ -105,22 +105,22 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   업데이트를 푸시하면 [Commerce 클라우드 배포 프로세스](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 를 눌러 변경 사항을 적용합니다. 에서 배포 상태를 확인합니다. [로그 배포](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   업데이트를 클라우드 환경으로 푸시하면 [Commerce 클라우드 배포 프로세스](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) 를 눌러 변경 사항을 적용합니다. 에서 배포 상태를 확인합니다. [로그 배포](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB 온-프레미스]
 
-이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Service] 온-프레미스 인스턴스에 대한 확장.
+이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Adapter] 온-프레미스 인스턴스용
 
 1. 작성기를 사용하여 프로젝트에 카탈로그 서비스 모듈을 추가합니다.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. 종속성을 업데이트하고 확장을 설치합니다.
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. Adobe Commerce 업그레이드:

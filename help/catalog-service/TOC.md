@@ -5,10 +5,10 @@ breadcrumb-title: “[!DNL Catalog Service] 안내서”
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: d46df10a34bda4dbc21ac484f4821d3e465789c6
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 12%
+source-wordcount: '55'
+ht-degree: 10%
 
 ---
 
@@ -25,3 +25,4 @@ ht-degree: 12%
    - [productSearch 쿼리](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)
    - [refineProduct 쿼리](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [릴리스 정보](release-notes.md)
+- [Commerce 서비스로 돌아가기](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
