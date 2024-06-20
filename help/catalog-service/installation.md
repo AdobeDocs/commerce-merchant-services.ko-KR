@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: "설치 방법 알아보기 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ ht-degree: 0%
 1. 에서 초기 데이터 동기화 수행 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    초기 동기화는 카탈로그 크기에 따라 몇 분에서 몇 시간 정도 소요될 수 있습니다. 데이터 관리 대시보드에서 동기화 상태를 모니터링할 수 있습니다. 초기 동기화 후 카탈로그는 지속적으로 제품 데이터를 내보내 서비스를 최신 상태로 유지합니다.
+
+   >[!NOTE]
+   >
+   >Commerce CLI를 사용하여 명령줄에서 초기 동기화를 시작할 수도 있습니다. 다음을 참조하십시오 [초기 동기화](../data-export/data-export-cli-commands.md#initial-sync) 다음에서 _SaaS 데이터 내보내기 안내서_.
 
 카탈로그 내보내기가 올바르게 실행되는지 확인하려면 다음을 수행하십시오.
 

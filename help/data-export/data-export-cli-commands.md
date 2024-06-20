@@ -1,10 +1,11 @@
 ---
 title: SaaS 데이터 내보내기 명령줄 인터페이스
-description: "명령줄 인터페이스 명령을 사용하여 [!DNL data export extension] Adobe Commerce SaaS 서비스용입니다."
+description: 명령줄 인터페이스 명령을 사용하여 의 피드 및 프로세스를 관리하는 방법을 알아봅니다. [!DNL data export extension] Adobe Commerce SaaS 서비스용
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ Adobe은 다음을 사용하지 않는 것이 좋습니다. `saas:resync` 규칙
 
 ## 초기 동기화
 
+>[!NOTE]
+>Live Search 또는 Product Recommendations을 사용하는 경우 초기 동기화를 실행할 필요가 없습니다. 이 프로세스는 서비스를 Commerce 인스턴스에 연결한 후 자동으로 시작됩니다.
+
 다음을 트리거할 때 `saas:resync` 명령줄에서 카탈로그 크기에 따라 데이터를 업데이트하는 데 몇 분에서 몇 시간이 걸릴 수 있습니다.
 
->[!NOTE]
->Live Search 또는 Product Recommendations을 사용하는 경우 동기화를 시작할 필요가 없습니다. 이 프로세스는 서비스를 Commerce 인스턴스에 연결한 후 자동으로 시작됩니다.
+Adobe 초기 동기화의 경우 다음 순서로 명령을 실행하는 것이 좋습니다.
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## 명령 예
 

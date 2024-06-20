@@ -1,15 +1,15 @@
 ---
 title: 로그 검토 및 문제 해결
-description: "문제 해결 방법 알아보기 [!DNL data export] data-export 및 saas-export 로그를 사용하는 중 오류가 발생했습니다."
+description: 문제 해결 방법 알아보기 [!DNL data export] data-export 및 saas-export 로그를 사용하는 중 오류가 발생했습니다.
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # 로그 검토 및 문제 해결
 
@@ -26,9 +26,7 @@ ht-degree: 0%
 | SaaS 내보내기 로그 | `saas-export.log` | Commerce SaaS 서비스로 전송된 데이터에 대한 정보를 제공합니다. |
 | SaaS 내보내기 오류 로그 | `saas-export-errors.log` | Commerce SaaS 서비스로 데이터를 전송할 때 발생하는 오류에 대한 정보를 제공합니다. |
 
-Adobe Commerce 서비스에 대한 예상 데이터가 표시되지 않으면 데이터 내보내기 확장에 대한 오류 로그를 사용하여 문제가 발생한 위치를 파악하십시오.
-
-추적 및 문제 해결을 위해 추가 데이터로 로그를 확장할 수 있습니다. 다음을 참조하십시오 [확장된 로깅](#extended-logging).
+Adobe Commerce 서비스에 대한 예상 데이터가 표시되지 않으면 데이터 내보내기 확장에 대한 오류 로그를 사용하여 문제가 발생한 위치를 파악하십시오. 또한 추적 및 문제 해결을 위해 추가 데이터로 로그를 확장할 수 있습니다. 다음을 참조하십시오 [확장된 로깅](#extended-logging).
 
 ### 로그 형식
 
@@ -85,7 +83,7 @@ Adobe Commerce 서비스에 대한 예상 데이터가 표시되지 않으면 �
    - **`"synced" < "processed"`** 는 피드 테이블이 이전에 동기화된 버전과 비교하여 항목의 변경 사항을 감지하지 못했음을 의미합니다. 이러한 항목은 동기화 작업 중에 무시됩니다.
    - **`"synced" > "processed"`** 동일한 엔티티 id(예: `Product ID`)에는 다양한 범위의 여러 값이 있을 수 있습니다. 예를 들어 하나의 제품을 5개의 웹 사이트에 할당할 수 있습니다. 이 경우 &quot;1개의 처리된&quot; 항목과 &quot;5개의 동기화된&quot; 항목이 있을 수 있습니다.
 
-+++ 예: 가격 피드에 대한 전체 재동기화 로그
++++ **예: 가격 피드에 대한 전체 재동기화 로그**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ Adobe Commerce 로그를 New Relic에 저장하는 경우 구문 분석 규칙�
 
 **예제 쿼리 문자열**—`feed.feed:"products" and feed.status:"Complete"`
 
+## 문제 해결
+
+Commerce Services에서 데이터가 누락되었거나 잘못된 경우 로그를 확인하여 Adobe Commerce 인스턴스에서 Commerce 서비스 플랫폼으로 동기화하는 동안 문제가 발생했는지 확인하십시오. 필요한 경우 확장 로깅을 사용하여 문제를 해결하기 위해 로그에 추가 정보를 추가합니다.
+
+- commerce-data-export-errors.log - 수집 단계에서 오류가 발생한 경우
+- saas-export-errors.log - 전송 단계 중 오류가 발생한 경우
+
+구성 또는 타사 확장과 관련이 없는 오류가 표시되면 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) 가능한 많은 정보를 제공합니다.
+
+### 카탈로그 동기화 문제 해결 {#resolvesync}
+
+데이터 재동기화를 트리거할 때 데이터를 업데이트하고 라이브 검색 및 추천 단위와 같은 UI 구성 요소에 반영되기까지 최대 1시간이 걸릴 수 있습니다. 여전히 Commerce 상점 첫 화면의 카탈로그와 데이터 사이에 불일치가 있거나 카탈로그 동기화가 실패한 경우 다음을 참조하십시오.
+
+#### 데이터 불일치
+
+1. 검색 결과에 해당 제품에 대한 세부 보기를 표시합니다.
+1. JSON 출력을 복사하고 콘텐츠가 의 내용과 일치하는지 확인합니다. [!DNL Commerce] 카탈로그.
+1. 콘텐츠가 일치하지 않으면 공백 또는 마침표 추가와 같이, 카탈로그의 제품에 약간의 변경 작업을 수행합니다.
+1. 재동기화 대기 또는 [수동 재동기화 트리거](#resync).
+
+#### 동기화가 실행되고 있지 않음
+
+동기화가 일정에 따라 실행되고 있지 않거나 동기화되지 않은 경우 다음을 참조하십시오. [기술 자료](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) 기사.
+
+#### 동기화 실패
+
+카탈로그 동기화 상태가 인 경우 **실패**, 제출 [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## 확장된 로깅
+
+추가 로그 정보의 경우 환경 변수를 사용하여 추적 및 문제 해결을 위한 추가 데이터와 함께 로그를 확장할 수 있습니다.
+
+에는 두 개의 로그 파일이 있습니다. `var/log/` 디렉터리:
+
+- commerce-data-export-errors.log - 수집 단계에서 오류가 발생한 경우
+- saas-export-errors.log - 전송 단계 중 오류가 발생한 경우
 
 환경 변수를 사용하여 추적 및 문제 해결을 위한 추가 데이터와 함께 로그를 확장할 수 있습니다.
 
@@ -164,7 +197,3 @@ EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-

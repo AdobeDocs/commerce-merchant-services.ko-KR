@@ -1,18 +1,23 @@
 ---
 title: SaaS 데이터 내보내기와 데이터 동기화
-description: "다음 방법 알아보기 [!DNL SaaS Data Export] Adobe Commerce 인스턴스와 연결된 SaaS 서비스 간에 데이터를 수집하고 동기화합니다."
+description: 다음 방법을 알아봅니다. [!DNL SaaS Data Export] Adobe Commerce 인스턴스와 연결된 SaaS 서비스 간에 데이터를 수집하고 동기화합니다.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # SaaS 데이터 내보내기와 데이터 동기화
 
-Catalog Service, Live Search 또는 Product Recommendations과 같이 데이터 내보내기가 필요한 Commerce Service를 설치하면 데이터 수집 및 동기화 프로세스를 관리하기 위해 Saas 데이터 내보내기 모듈 컬렉션이 설치됩니다. 다음 다이어그램은 SaaS 데이터 내보내기 플로우를 보여 줍니다.
+Catalog Service, Live Search 또는 Product Recommendations과 같이 데이터 내보내기가 필요한 Commerce Service를 설치하면 데이터 수집 및 동기화 프로세스를 관리하기 위해 Saas 데이터 내보내기 모듈 컬렉션이 설치됩니다.
+
+SaaS 데이터 내보내기는 데이터를 최신 상태로 유지하기 위해 제품 데이터를 Adobe Commerce 인스턴스에서 Commerce 서비스 플랫폼으로 지속적으로 이동합니다. 예를 들어, Product Recommendations은 올바른 이름, 가격 및 가용성으로 권장 사항을 정확하게 반환하기 위해 현재 카탈로그 정보가 필요합니다. 사용 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 동기화 프로세스 또는 명령줄 인터페이스를 관찰하고 관리하여 동기화를 트리거하고 Commerce 서비스에서 사용할 제품 데이터를 다시 색인화합니다.
+
+다음 다이어그램은 SaaS 데이터 내보내기 플로우를 보여 줍니다.
 
 ![Adobe Commerce을 위한 SaaS 데이터 내보내기 수집 및 동기화 흐름](assets/data-export-flow.png){width="900" zoomable="yes"}
 
