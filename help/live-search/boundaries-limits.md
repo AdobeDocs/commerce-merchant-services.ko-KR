@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 의 경계 및 제한에 대해 알아보기 [!DNL Live Search] 비즈니스 요구 사항을 충족하도록 보장합니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0a54c1715b076a7dea70632fcffeacc7de517760
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 0%
    - 제품을 루트 범주에 할당해야 합니다.
    - &quot;로그인되지 않은&quot; 고객 그룹에는 &quot;허용&quot; 검색 권한이 부여되어야 합니다.
    - 제품을 &quot;로그인되지 않음&quot; 고객 그룹으로 제한하려면 각 범주로 이동하여 각 고객 그룹에 대한 권한을 설정합니다.
-- PWA Studio에 대한 실시간 검색이 있는 B2B에 대한 지원은 현재 지원되지 않습니다.
+- PWA Studio 시 PLP 위젯과 함께 B2B에 대한 기본 지원은 현재 지원되지 않습니다. 그러나 다음을 수행할 수 있습니다. [api 사용](install.md#pwa-support) 을 클릭하여 이 기능을 구현할 수 있습니다.
 - 의 카테고리 패싯 [!DNL Live Search] 특정 고객 그룹에 표시할 수 없는 카테고리를 표시할 수 있습니다.
 
 ## [!DNL Storefront popover]
