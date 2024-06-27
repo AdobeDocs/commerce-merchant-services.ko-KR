@@ -2,9 +2,9 @@
 title: '라이브 검색 설정'
 description: 다음 [!DNL Live Search] 작업 영역은 검색 성능을 구성, 관리 및 모니터링하는 데 사용됩니다.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 작업 영역에서는 의 성능을 구성, 관리 및 모니터링합니다. [!DNL Live Search]. 맨 위에 있는 메뉴를 통해 각 기능 영역의 도구에 액세스할 수 있습니다. 사용 가능한 기능은 현재 메뉴 선택을 반영합니다.
 
-![작업 영역](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## 데이터 수집
+
+작업 영역의 각 기능 영역에 올바른 데이터가 포함되어 있는지 확인하려면 선택한 Storefront 구현을 기반으로 데이터 수집을 구성해야 합니다.
+
+1. Luma - 데이터 수집은 즉시 사용할 수 있습니다.
+1. Headless - 데이터 수집은 상점 구현에 따라 수동으로 구성해야 합니다.
+
+Headless Storefront를 사용하는 경우 다음 설명서를 참조하여 추가해야 하는 필수 이벤트에 대한 자세한 내용을 확인하십시오.
+
+- [필수 이벤트](events.md) 라이브 검색 대시보드용
+- [Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) 필수 구성 요소로 추가해야 합니다.
+- [예](https://github.com/adobe/commerce-events/tree/main/examples) 이벤트 구조
 
 ## 범위 설정
 
@@ -41,15 +54,15 @@ ht-degree: 0%
 1. 검색할 속성을 선택합니다. 예: `color`.
 1. 선택 **Storefront 속성** 및 설정 **검색에 사용** 끝 `yes`.
 
-   ![작업 영역](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] 또한 다음을 준수합니다. [두께](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) Adobe Commerce 내에 설정된 제품 속성. 가중치가 높은 속성은 검색 결과 내에서 더 높게 표시됩니다.
 
 다음 속성은 항상 검색할 수 있습니다.
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [패싯](facets.md) 는에 정의된 제품 속성입니다. [!DNL Live Search] 필터링할 수 있습니다. 필터링 가능한 모든 속성을에서 패싯으로 설정할 수 있습니다 [!DNL Live Search], 하지만 [제한](boundaries-limits.md) 한 번에 검색할 수 있는 패싯 수를 표시합니다.
 
