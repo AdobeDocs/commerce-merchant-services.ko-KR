@@ -1,12 +1,12 @@
 ---
-title: Commerce Services 커넥터
+title: Commerce 서비스 커넥터
 description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스를 서비스에 통합하는 방법을 알아봅니다.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ SaaS 프로젝트를 선택하거나 만들려면 다음을 요청하십시오. 
 >
 > 표시되지 않는 경우 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] 구성, 다음을 설치해야 합니다. [!DNL Commerce] 원하는 모듈 [[!DNL Commerce] 서비스](#availableservices).
 
-1. 다음에서 _관리자_ 사이드바, 이동 **시스템** > 서비스 > **Commerce Services 커넥터**.
+1. 다음에서 _관리자_ 사이드바, 이동 **시스템** > 서비스 > **Commerce 서비스 커넥터**.
 
    표시되지 않는 경우 **[!UICONTROL Commerce Services Connector]** 의 섹션 [!DNL Commerce] 구성, 설치 [!DNL Commerce] 원하는 모듈 [[!DNL Commerce] 서비스](#availableservices). 또한 `magento/module-services-id` 패키지가 설치되었습니다.
 
@@ -125,6 +125,6 @@ SaaS 프로젝트 또는 데이터 공간의 이름을 변경하려면 **이름 
 
 Adobe Commerce 인스턴스를 Adobe Experience Platform에 연결하려면 Adobe ID을 사용하여 Adobe 계정에 로그인합니다. 로그인하면 Adobe 계정과 연결된 IMS 조직이 이 섹션에 표시됩니다.
 
-## 카탈로그 동기화
+## SaaS 데이터 내보내기
 
-다음의 경우 [!DNL Commerce] 인스턴스가 성공적으로 연결 [!DNL Commerce Services], 카탈로그 동기화 프로세스가 [!DNL Commerce] 서버 대상 [!DNL Commerce Services]. 현재 Recommendations 제품만 카탈로그 동기화 서비스를 사용합니다. [자세히 알아보기](catalog-sync.md) 카탈로그 동기화 프로세스 정보.
+다음의 경우 [!DNL Commerce] 인스턴스가 성공적으로 연결 [!DNL Commerce Services], SaaS 데이터 내보내기 프로세스는 의 Commerce 데이터를 [!DNL Commerce] 서버 대상 [!DNL Commerce SaaS Services] 연결된 Commerce 서비스와 동기화할 수 있습니다. 관리에서 다음을 사용하여 동기화 상태를 확인할 수 있습니다. [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). 자세한 내용은 [SaaS 데이터 내보내기 안내서](../data-export/overview.md).
