@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Product Recommendations] Adobe Commerce에서.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
+source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,12 @@ ht-degree: 0%
 
 ## 호스팅된 서비스 업데이트
 
-이 참고 사항에서는 버전 관리된 릴리스 외부에 게시된 업데이트 또는 호스팅된 서비스에 대한 개선 사항에 대해 설명합니다.
+이 참고 사항에서는 버전이 지정된 릴리스 또는 호스팅된 서비스에 대한 개선 사항 외부에서 게시되거나 발견된 업데이트 또는 알려진 문제에 대해 설명합니다.
 
-+++호스팅된 서비스 업데이트
+_2024년 6월 28일_
+
+![버그](../assets/bug.svg) 장바구니에 추가된 제품 [!DNL Product Recommendations] 장바구니 페이지가 다시 로드될 때 장바구니 페이지의 장치는 권장 제품 목록에서 제거되지 않습니다.
+![버그](../assets/bug.svg) 장바구니에서 제거된 제품은 `cartSkus` 장바구니 페이지가 다시 로드될 때까지 배열합니다.
 
 _2023년 7월 18일_
 
@@ -40,8 +43,6 @@ _2023년 7월 18일_
 _2023년 4월 25일_
 
 ![신규](../assets/new.svg) [!DNL Product Recommendations] 고객은 이제 다음을 활용할 수 있습니다. [SaaS 가격 인덱싱](../price-index/price-indexing.md).
-
-+++
 
 ## 현재 메이저 버전
 
@@ -97,7 +98,7 @@ _2023년 3월 20일_
 
 ![신규](../assets/new.svg) 업데이트됨 [!DNL Product Recommendations] Adobe Commerce 2.4.6을 지원하려면 다음을 수행하십시오.
 ![신규](../assets/new.svg) 주요 버전 릴리스입니다. [편집](install-configure.md#update) 루트 `composer.json` 프로젝트용 파일입니다.
-![신규](../assets/new.svg) [!DNL Product Recommendations] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce(이전에는 MSI라고 함)의 기능. 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install-configure.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
+![신규](../assets/new.svg) [!DNL Product Recommendations] 이제에서 전체 지원 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Commerce의 기능(이전에는 Multi-Source Inventory 또는 MSI라고 함). 전체 지원을 활성화하려면 다음을 수행해야 합니다 [업데이트](install-configure.md#update) 종속성 모듈 `commerce-data-export` 버전 102.2.0+에
 
 ### magento/제품 권장 사항 4.0.1
 
@@ -223,13 +224,13 @@ _2023년 3월 20일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) **(베타)** 새로운 기능에 대한 지원 포함 [시각적 유사성](type.md#visualsim) 권장 사항 유형.
+![신규](../assets/new.svg) **(Beta)** 새로운 기능에 대한 지원 포함 [시각적 유사성](type.md#visualsim) 권장 사항 유형.
 
 ### magento/module-visual-product-recommendations 1.0.0
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) **(베타)** [시각적 유사성](type.md#visualsim). 포함 _시각적 유사성_ 권장 사항 유형에서는 보고 있는 제품과 시각적으로 유사한 제품을 표시하는 제품 세부 사항 페이지에 권장 사항 단위를 배포할 수 있습니다.
+![신규](../assets/new.svg) **(Beta)** [시각적 유사성](type.md#visualsim). 포함 _시각적 유사성_ 권장 사항 유형에서는 보고 있는 제품과 시각적으로 유사한 제품을 표시하는 제품 세부 사항 페이지에 권장 사항 단위를 배포할 수 있습니다.
 
 ### magento/product-recommendations 3.0.5
 
