@@ -4,9 +4,9 @@ description: 거래 보고서를 사용하여 거래 승인 비율과 거래 추
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ ht-degree: 0%
 
 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**자세한 테이블 형식 트랜잭션 보고서 보기를 표시합니다.
 
-![거래 보고서 보기](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![거래 보고서 보기](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 이 항목의 섹션에 따라 이 보기를 구성하여 보려는 데이터를 가장 잘 표시할 수 있습니다.
 
-이 보고서에서 연결된 상거래 주문 및 공급자 거래 ID, 거래 금액, 거래당 결제 방법 등을 모두 참조하십시오.
+이 보고서에서 연결된 Commerce 주문 및 공급자 거래 ID, 거래 금액, 거래당 결제 방법 등을 모두 참조하십시오.
 
 모든 결제 방법이 동일한 세부 정보를 제공하는 것은 아닙니다. 예를 들어 신용 카드 거래는 응답, AVS 및 CCV 코드를 제공하며 거래 보고서에서 카드의 마지막 네 자리를 제공합니다. PayPal 결제 버튼은 제공하지 않습니다.
 
 다음을 수행할 수 있습니다. [트랜잭션 다운로드](#download-transactions) 기존 회계 또는 order management 소프트웨어에서 사용할 .csv 파일 형식으로.
+
+>[!WARNING]
+>
+> 트랜잭션 보고서에는 외부에서 수행된 캡처가 포함되지 않습니다 [!DNL Payment Services].
 
 ### 데이터 소스 선택
 
@@ -127,8 +131,9 @@ If _[!UICONTROL Live]_은(는) 선택한 데이터 소스이며, 다음을 사�
 
 | 열 | 설명 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | 상거래 주문 ID(성공적인 트랜잭션에 대한 값만 포함되고, 거부된 트랜잭션에 대해서는 비어 있음)<br> <br>관련 항목 보기 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 클릭하고 ID를 클릭합니다. |
+| [!UICONTROL Order ID] | Commerce 주문 ID(성공적인 트랜잭션에 대한 값만 포함되고, 거부된 트랜잭션에 대해서는 비어 있음)<br> <br>관련 항목 보기 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 클릭하고 ID를 클릭합니다. |
 | [!UICONTROL Provider Transaction ID] | 결제 제공자가 제공한 거래 ID. 성공적인 거래에 대한 값만 포함되고 거부된 거래에 대한 대시가 포함됩니다. |
+| [!UICONTROL Customer ID] | 주문의 Commerce 고객 ID<br> <br>다음을 참조하십시오 [고객 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} 항목 을 참조하십시오. |
 | [!UICONTROL Transaction Date] | 트랜잭션 날짜 타임스탬프 |
 | [!UICONTROL Payment Method] | 브랜드 및 카드 종류에 대한 자세한 정보가 포함된 거래 결제 방법. 다음을 참조하십시오 [카드 유형](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) 자세한 내용은 결제 서비스 버전 1.6.0 이상에서 사용 가능합니다. |
 | [!UICONTROL Card Last Four Digits] | 거래에 사용된 신용 카드 또는 직불 카드의 마지막 4자리 |

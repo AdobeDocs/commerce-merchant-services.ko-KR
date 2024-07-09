@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 항목에 대한 자세한 내용은 릴리스 정보 를 참조하십시오 [!DNL Payment Services] 릴리스.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 호스팅 서비스에 대한 일반 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2024년 7월 9일_
+
+![새 문제](../assets/new.svg)<!-- Issue PAY-5488 --> 이제 판매자는 Commerce 고객 ID를 의 열로 볼 수 있습니다. [트랜잭션 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) 특정 고객이 수행한 거래를 식별하는 데 도움이 됩니다. 또한 가맹점은 연결된 주문에 대해 이 Commerce 고객 ID로 트랜잭션 보고서를 필터링할 수 있습니다.
 
 _2024년 3월 5일_
 
@@ -171,6 +175,7 @@ _2023년 12월 7일_
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![신규](../assets/new.svg)<!-- PAY-5047 --> 이제 다음 위치에서 신용/직불 카드 브랜드 또는 결제 방법 유형을 사용할 수 있습니다.
+
 - 상점 첫 화면의 고객 주문 페이지
 - 구매자에게 전송된 주문 확인 이메일
 - 다음에서 [주문 세부 사항 보기](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) Commerce 관리자.
