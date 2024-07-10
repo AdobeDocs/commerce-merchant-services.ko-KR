@@ -2,7 +2,7 @@
 title: 온보딩 및 설치
 description: "설치 방법 알아보기 [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!TAB 클라우드 인프라]
 
-이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Adapter] Commerce Cloud 인스턴스의 경우
+이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Service] Commerce Cloud 인스턴스의 경우
 
 1. 로컬 워크스테이션에서 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 디렉터리로 변경합니다.
 
@@ -83,16 +83,16 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 카탈로그 어댑터 모듈을 추가합니다.
+1. 카탈로그 서비스 모듈을 추가합니다.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. 패키지 종속성을 업데이트합니다.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. 에 대한 코드 변경 내용 커밋 및 푸시 `composer.json` 및 `composer.lock` 파일.
@@ -109,18 +109,18 @@ ht-degree: 0%
 
 >[!TAB 온-프레미스]
 
-이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Adapter] 온-프레미스 인스턴스용
+이 메서드를 사용하여 다음을 설치하십시오. [!DNL Catalog Service] 온-프레미스 인스턴스용
 
 1. 작성기를 사용하여 프로젝트에 카탈로그 서비스 모듈을 추가합니다.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. 종속성을 업데이트하고 확장을 설치합니다.
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Adobe Commerce 업그레이드:
@@ -145,7 +145,7 @@ ht-degree: 0%
 
 를 설치한 후 [!DNL Catalog Service]카탈로그 서비스를 Adobe Commerce 인스턴스와 통합하려면 다음 작업을 완료하십시오. 이 통합을 통해 Commerce 인스턴스, 카탈로그 서비스 및 기타 지원 서비스 간에 데이터를 동기화하고 통신할 수 있습니다.
 
-1. 다음을 설정합니다. [Commerce Services 커넥터](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) api 키를 지정하고 SaaS 데이터 공간을 선택합니다.
+1. 다음을 설정합니다. [Commerce 서비스 커넥터](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) api 키를 지정하고 SaaS 데이터 공간을 선택합니다.
 
    Commerce 서비스 커넥터 설정은 카탈로그 서비스, 라이브 검색 및 제품 Recommendations과 같은 Adobe Commerce 서비스를 사용하는 데 필요한 일회성 프로세스입니다. 다른 서비스에 대한 커넥터를 이미 구성한 경우 이 단계를 건너뜁니다.
 
@@ -175,7 +175,7 @@ GraphQL 쿼리에서 관리자의 Adobe Commerce 서비스 커넥터 구성에 �
 
 ## 카탈로그 서비스 및 API 메쉬
 
-다음 [Adobe Developer 앱 빌더용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 을 사용하면 개발자가 Adobe IO를 사용하여 개인 또는 서드파티 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
+다음 [Adobe Developer App Builder용 API 메쉬](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 을 사용하면 개발자가 Adobe IO를 사용하여 개인 또는 서드파티 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
 
 다음을 참조하십시오. [[!DNL Catalog Service] 및 API 메쉬](mesh.md) 항목 설치 및 구성 세부 정보.
 

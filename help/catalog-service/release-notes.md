@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] 릴리스 정보'
 description: 의 최신 릴리스 정보 [!DNL Catalog Service] Adobe Commerce용
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _2024년 5월 23일_
 ![수정](../assets/fix.svg) <!--DATA-5033-->다음 `InStock` 이제 옵션 값에 대한 플래그는 범위가 고려됩니다. `enabled` 제품 변형의 상태입니다.
 
 ![수정](../assets/fix.svg) <!--DATA-5888-->큰 숫자(최대 16자리)와 더 큰 소수점 이하 자리 수(최대 4자리)가 필요한 제품 가격에 대한 지원을 추가합니다. 가격 구성 업데이트를 기존 카탈로그에 적용하려면 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)또는 를 사용하여 [Adobe Commerce 명령줄 인터페이스](../landing/catalog-sync.md#command-line-interface).
+
+#### 알려진 제한 사항
+
+다음 기능은 아직 지원되지 않습니다.
+
+* 동적 특성 페이로드의 최대 크기는 9MB입니다.
+* 그룹 제품 가격은 간단한 제품 가격으로 계산할 수 있습니다.
+* 이미지 배열에서는 첫 번째 이미지만 역할을 포함합니다.
+
+API Mesh 및 Core GraphQL API를 사용하여 다음 제한 사항을 해결합니다.
+
+* 최소 광고 가격
+* 계층 가격
+* 고정 가격으로 묶음 제품
+
+자세한 내용과 예제는 을 참조하십시오. [카탈로그 서비스 및 API 메쉬](mesh.md)
 
 ## 이전 버전
 
@@ -59,7 +75,6 @@ _2024년 2월 13일_
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![신규](../assets/new.svg) 제품 비디오는 이제 카탈로그 서비스 API에서 지원됩니다.
-![수정](../assets/fix.svg) 이제 고정 가격이 적용된 번들 제품이 지원됩니다.
 ![수정](../assets/fix.svg) 이제 품절 옵션이 PDP 위젯에 표시됩니다.
 
 #### 알려진 제한 사항
@@ -134,7 +149,7 @@ _2023년 3월 6일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![신규](../assets/new.svg) 추가됨 [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL 기능.
+![신규](../assets/new.svg) 추가됨 [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL 기능.
 ![수정](../assets/fix.svg) 향상된 성능 및 API 확장성.
 
 ### V1.4 릴리스
@@ -187,7 +202,7 @@ _2022년 9월 12일_
 ![수정](../assets/fix.svg) 서비스의 안정성 및 성능 향상
 ![신규](../assets/new.svg) 카탈로그에서 제품이 삭제되면 업데이트가 수신됨
 
-### 베타 릴리스
+### Beta 릴리스
 
 _2022년 8월 9일_
 
