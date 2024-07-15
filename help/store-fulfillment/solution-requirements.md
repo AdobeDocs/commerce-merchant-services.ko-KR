@@ -1,13 +1,13 @@
 ---
 title: 저장소 이행 요구 사항
-description: 프로비저닝 및 온보딩 요구 사항 [!DNL Store Fulfillment solution].
+description: ' [!DNL Store Fulfillment solution]을(를) 프로비저닝하고 온보딩하기 위한 요구 사항입니다.'
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 플랫폼 및 소프트웨어 버전 요구 사항
 
-다음 [!DNL Store Fulfillment] 솔루션은 다음 플랫폼에서 Adobe Commerce 고객에게 제공됩니다.
+[!DNL Store Fulfillment] 솔루션은 다음 플랫폼에서 Adobe Commerce 고객에게 제공됩니다.
 
 - ECE(클라우드 인프라)의 Adobe Commerce
 - Adobe Commerce 온-프레미스 (EE)
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 - [이행 릴리스 정보 저장](release-notes.md)
 
-- [Adobe Commerce 릴리스 노트](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) 다음에서 *Adobe Commerce 릴리스 정보*.
+- *Adobe Commerce 릴리스 정보*&#x200B;의 [Adobe Commerce 릴리스 정보](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html).
 
-- [Adobe Commerce 시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) 다음에서 *Adobe Commerce 설치 안내서*.
+- *Adobe Commerce 설치 안내서*&#x200B;의 [Adobe Commerce 시스템 요구 사항](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 
 
 ## 스토어 지원 앱 요구 사항
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 **최소 운영 체제 요구 사항**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **최소 하드웨어 요구 사항**

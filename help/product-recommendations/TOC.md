@@ -1,6 +1,6 @@
 ---
 user-guide-title: “[!DNL Product Recommendations] 안내서”
-user-guide-description: 이 안내서에서는 사용에 대한 자세한 지침을 제공합니다 [!DNL Product Recommendations] Adobe Commerce에서.
+user-guide-description: 이 안내서에서는 Adobe Commerce에서  [!DNL Product Recommendations] 을(를) 사용하는 방법에 대한 자세한 지침을 제공합니다.
 breadcrumb-title: “[!DNL Product Recommendations] 안내서”
 role: Admin
 feature: Services, Recommendations
@@ -11,12 +11,12 @@ ht-degree: 12%
 
 ---
 
-# [!DNL Product Recommendations] 상거래 {#product-recommendations}
+# Commerce용 [!DNL Product Recommendations] {#product-recommendations}
 
 - [안내서 개요](guide-overview.md)
-- [소개 [!DNL Product Recommendations]](overview.md)
+- [ [!DNL Product Recommendations] 소개](overview.md)
 - [릴리스 정보](release-notes.md)
-- 시작 {#getting-started}
+- {#getting-started} 시작
    - [온보딩](onboarding.md)
    - [구현 워크플로](implementation-workflow.md)
    - [동작 데이터](behavioral-data.md)
@@ -27,7 +27,7 @@ ht-degree: 12%
    - [스테이징 환경](staging-environment.md)
    - [페이지 빌더 통합](page-builder.md)
 - [!DNL Product Recommendations] 관리자 {#admin}
-   - [작업 영역](workspace.md)
+   - [Workspace](workspace.md)
    - [만들기](create.md)
    - [편집](edit.md)
    - [권장 사항 유형](type.md)

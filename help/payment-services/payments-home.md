@@ -1,6 +1,6 @@
 ---
 title: 홈
-description: 소개 [!DNL Payment Services] 집.
+description: ' [!DNL Payment Services] Home 소개'
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
@@ -8,19 +8,19 @@ feature: Payments, Checkout
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# 소개 [!DNL Payment Services] 홈
+# [!DNL Payment Services] 홈 소개
 
-[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 에서는 확장 설정 및 사용을 시작하는 데 필요한 모든 정보가 포함된 홈 보기를 제공합니다.
+[!DNL Adobe Commerce] 및 [!DNL Magento Open Source]에 대한 [!DNL Payment Services]에서 확장 설정 및 사용을 시작하는 데 필요한 모든 정보가 포함된 홈 보기를 제공합니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
 
    ![홈 보기](assets/home-view.png){width="700" zoomable="yes"}
 
-1. 이 홈 보기에서 다음에 액세스할 수 있습니다. _홈_ 보기, _학습_ 정보 [!DNL Payment Services], 확장 구성 _설정_&#x200B;또는 get _도움말_.
+1. 이 홈 보기에서 _홈_ 보기에 액세스하거나, [!DNL Payment Services]에 대해 _학습_&#x200B;하거나, 확장 _설정_&#x200B;을 구성하거나, _도움말_&#x200B;을 받을 수 있습니다.
 
 ## 홈
 
@@ -33,17 +33,17 @@ ht-degree: 1%
 
 | 필드 | 설명 |
 |---|---|
-| [!UICONTROL Read documentation] | 에 대한 최신 사용자 및 개발자 문서를 참조하십시오. [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | 설정에 필요한 모든 항목을 찾아서 사용 [!DNL Payment Services] 기능. |
-| [!UICONTROL Understand financial reports] | 의 현금 흐름 관리 보고에 대한 심층적인 설명 [!DNL Payment Services]. |
+| [!UICONTROL Read documentation] | [!DNL Payment Services]의 최신 사용자 및 개발자 문서를 참조하십시오. |
+| [!UICONTROL How to onboard] | 설정하는 데 필요한 모든 항목을 찾아 [!DNL Payment Services] 기능을 사용해 보세요. |
+| [!UICONTROL Understand financial reports] | [!DNL Payment Services]의 현금 흐름 관리 보고에 대한 자세한 설명입니다. |
 
 ## 도움말
 
 | 필드 | 설명 |
 |---|---|
-| [!UICONTROL Visit help center] | 다음 [!DNL Adobe Commerce] 도움말 센터에는 다음에 대한 기술 자료 문서가 있습니다. [!DNL Payment Services]. |
-| [!UICONTROL Get support] | 다음 방문: [!DNL Adobe Commerce] 에 대한 지원을 위한 지원 포털 [!DNL Payment Services.] |
+| [!UICONTROL Visit help center] | [!DNL Adobe Commerce] 도움말 센터에 [!DNL Payment Services]에 대한 기술 자료 문서가 있습니다. |
+| [!UICONTROL Get support] | [!DNL Payment Services.]에 대한 지원이 필요하면 [!DNL Adobe Commerce] 지원 포털을 방문하십시오. |
 
 ## 설정
 
-홈 보기에서 **[!UICONTROL Settings]**. 다음을 참조하십시오 [설정](settings.md) 추가 정보.
+홈 보기에서 **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [설정](settings.md)을 참조하세요.

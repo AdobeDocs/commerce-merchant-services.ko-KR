@@ -1,33 +1,33 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] for Adobe Commerce은 공통 GraphQL 엔드포인트를 통해 여러 데이터 소스를 통합하는 방법을 제공합니다."'
+description: Adobe Commerce용 '[!DNL API Mesh]'은(는) 공통 GraphQL 끝점을 통해 여러 데이터 소스를 통합하는 방법을 제공합니다.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-다음 [Adobe Developer 앱 빌더용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) 을 사용하면 개발자가 Adobe I/O Runtime을 사용하여 개인 또는 서드파티 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
+개발자는 [Adobe Developer App Builder용 API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)를 통해 Adobe I/O Runtime을 사용하여 개인 또는 서드파티 API 및 기타 인터페이스를 Adobe 제품과 통합할 수 있습니다.
 
 ![카탈로그 아키텍처 다이어그램](assets/catalog-service-architecture-mesh.png)
 
-API Mesh를 카탈로그 서비스와 함께 사용하는 첫 번째 단계는 API Mesh를 인스턴스에 연결하는 것입니다. 자세한 내용은 의 지침을 참조하십시오 [메쉬 만들기](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+API Mesh를 카탈로그 서비스와 함께 사용하는 첫 번째 단계는 API Mesh를 인스턴스에 연결하는 것입니다. 자세한 지침은 [메쉬 만들기](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)를 참조하세요.
 
-설치를 완료하려면 [Adobe Developer CLI 패키지](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+설치를 완료하려면 [Adobe Developer CLI 패키지](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)를 설치하십시오.
 
-Adobe I/O Runtime에 메쉬가 구성되면 다음 명령을 실행하여 `CommerceCatalogServiceGraph` 메쉬에 소스를 추가합니다.
+Adobe I/O Runtime에 Mesh가 구성되면 다음 명령을 실행하여 `CommerceCatalogServiceGraph` 소스를 메쉬에 추가합니다.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-위치 `variables.json` 는 Adobe I/O Runtime에 대해 일반적으로 사용되는 값을 저장하는 별도의 파일입니다.
+여기서 `variables.json`은(는) Adobe I/O Runtime에 대해 일반적으로 사용되는 값을 저장하는 별도의 파일입니다.
 예를 들어 API 키는 다음 파일 내에 저장할 수 있습니다.
 
 ```json
@@ -36,16 +36,16 @@ aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 }
 ```
 
-이 명령을 실행한 후에는 API Mesh를 통해 카탈로그 서비스를 실행해야 합니다. 다음을 실행할 수 있습니다. `aio api-mesh:get` 업데이트된 메쉬의 구성을 보는 명령입니다.
+이 명령을 실행한 후에는 API Mesh를 통해 카탈로그 서비스를 실행해야 합니다. `aio api-mesh:get` 명령을 실행하여 업데이트된 메쉬의 구성을 볼 수 있습니다.
 
 ## API Mesh 예
 
-API Mesh를 사용하면 외부 데이터 소스를 사용하여 Adobe Commerce 인스턴스를 향상시킬 수 있습니다. 또한 기존 상거래 데이터를 구성하여 새로운 기능을 활성화하는 데 사용할 수 있습니다.
+API Mesh를 사용하면 외부 데이터 소스를 사용하여 Adobe Commerce 인스턴스를 향상시킬 수 있습니다. 기존 Commerce 데이터를 구성하여 새로운 기능을 활성화하는 데도 사용할 수 있습니다.
 
 ### 계층 가격 활성화
 
 이 예에서는 API Mesh를 사용하여 Adobe Commerce에서 계층 가격을 활성화합니다.
-바꾸기 `name `, `endpoint`, 및 `x-api-key` 값.
+`name `, `endpoint` 및 `x-api-key` 값을 바꿉니다.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### 엔티티 ID 가져오기
 
-이 메쉬는 다음을 추가합니다. `entityId` 를 추가합니다. 바꾸기 `name `, `endpoint`, 및 `x-api-key` 값.
+이 메쉬는 ProductView 인터페이스에 `entityId`을(를) 추가합니다. `name `, `endpoint` 및 `x-api-key` 값을 바꿉니다.
 
 ```json
 {
@@ -237,7 +237,7 @@ query {
   }
 ```
 
-`entityId` 이제 쿼리할 수 있음:
+이제 `entityId`을(를) 쿼리할 수 있습니다.
 
 ```graphql
 query {

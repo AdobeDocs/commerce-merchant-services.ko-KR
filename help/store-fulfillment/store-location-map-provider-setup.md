@@ -7,37 +7,37 @@ feature: Shipping/Delivery, Integration, Tools and External Services, Configurat
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
 # 저장소 위치 및 매핑 설정
 
-다음을 구성하여 저장소 이행 기능용 저장소 위치 및 매핑 기능 활성화 [거리 제공자](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) 소매점 위치를 검색합니다.
+소매 저장소 위치를 검색하도록 [거리 공급자](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html)를 구성하여 저장소 이행 시 저장소 위치 및 매핑 기능을 사용하도록 설정하십시오.
 
 **요구 사항**
 
-구성 프로세스 중에 Google 맵 플랫폼에 Google API 키를 제공합니다. 없으시면, [Google 맵 플랫폼에서 하나를 생성합니다.](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+구성 프로세스 중에 Google 맵 플랫폼에 Google API 키를 제공합니다. 항목이 없으면 [Google 지도 플랫폼에서 항목을 생성](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps)합니다.
 
 거리 공급자를 구성하려면:
 
-1. 다음에서 **[!UICONTROL Stores > General]** 구성에서 맵 콘텐츠 유형에 대한 Google 맵 통합을 추가합니다.
+1. 관리자의 **[!UICONTROL Stores > General]** 구성에서 맵 콘텐츠 형식에 대한 Google 맵 통합을 추가합니다.
 
-   - 다음으로 이동 **[!UICONTROL Stores > Configuration  > General > Content Management]**.
+   - **[!UICONTROL Stores > Configuration  > General > Content Management]**(으)로 이동합니다.
 
-   - Google API 키 추가 **[!UICONTROL Google Maps API Key]** 필드.
+   - **[!UICONTROL Google Maps API Key]** 필드에 Google API 키를 추가합니다.
 
-1. 다음에서 **[!UICONTROL Stores > Inventory]** 구성에서 스토어 이행 거리 공급자를 선택합니다.
+1. 관리자의 **[!UICONTROL Stores > Inventory]** 구성에서 스토어 이행 거리 공급자를 선택합니다.
 
-   - 다음으로 이동 **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
+   - **[!UICONTROL Stores > Configuration > Catalog > Inventory]**(으)로 이동합니다.
 
-   - 확장 **[!UICONTROL Distance Provider for Distance Based SSA]** 섹션.
+   - **[!UICONTROL Distance Provider for Distance Based SSA]** 섹션을 확장합니다.
 
-   - 설정 **공급자** 끝 **Google 맵**.
+   - **공급자**&#x200B;를 **Google 맵**(으)로 설정합니다.
 
-1. 다음에 대한 설정 구성 **[!UICONTROL Google Distance Provider]**.
+1. **[!UICONTROL Google Distance Provider]**&#x200B;에 대한 설정을 구성합니다.
 
-   - 사용자 추가 **Google API 키**.
+   - **Google API 키**&#x200B;를 추가합니다.
 
-   - 설정 **[!UICONTROL Computation Mode]** 끝 `Driving` 및 **[!UICONTROL Value]** 끝 `Distance`
+   - **[!UICONTROL Computation Mode]**&#x200B;을(를) `Driving`(으)로, **[!UICONTROL Value]**&#x200B;을(를) `Distance`(으)로 설정

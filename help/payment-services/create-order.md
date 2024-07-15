@@ -1,27 +1,27 @@
 ---
-title: 다음을 사용하여 주문 만들기 [!DNL Payment Services]
-description: 관리자는 을 사용하여 주문을 이행할 수 있는 기능을 제공합니다. [!DNL Payment Services] 지원이 필요한 고객을 위해 상인이 관리자로부터 직접 제공합니다.
+title: ' [!DNL Payment Services](으)로 순서 만들기'
+description: 관리자는 지원이 필요한 고객을 위해 상인이  [!DNL Payment Services] 직접 관리자로부터 주문을 사용하여 주문을 이행하는 기능을 제공합니다.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '150'
+ht-degree: 0%
 
 ---
 
-# 다음을 사용하여 주문 만들기 [!DNL Payment Services]
+# [!DNL Payment Services](으)로 주문 만들기
 
-다음을 사용하여 필요에 따라 결제 서비스를 사용자 정의할 수 있습니다. [[!DNL Payment Services] 설정](settings.md).
+[[!DNL Payment Services] 설정](settings.md)을 사용하여 필요에 맞게 결제 서비스를 사용자 지정할 수 있습니다.
 
-[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 을 사용하면 도움이 필요한 고객을 위해 상인이 책임자로부터 직접 주문을 이행할 수 있습니다. 다음 **[!UICONTROL Create New Order]** 양식에는 신용 카드 정보가 있는 호스팅 필드를 포함하여 일반 체크아웃 프로세스를 완료하는 데 필요한 모든 정보가 포함되어 있습니다. 다음을 참조하십시오 [주문 만들기](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"} 필요한 단계에 대한 자세한 정보를 제공합니다.
+[!DNL Adobe Commerce] 및 [!DNL Magento Open Source]에 대한 [!DNL Payment Services]을(를) 사용하면 도움이 필요한 고객의 경우 상인이 책임자로부터 직접 주문을 이행할 수 있습니다. **[!UICONTROL Create New Order]** 양식에는 신용 카드 정보가 있는 호스팅 필드를 포함하여 일반 체크아웃 프로세스를 완료하는 데 필요한 모든 정보가 포함되어 있습니다. 필요한 단계에 대한 자세한 내용은 [주문 만들기](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}를 참조하십시오.
 
 ## 호스팅된 신용 카드 필드
 
-[!DNL Payment Services] 은 관리자에서 주문을 만들 때 결제 방법으로 사용할 수 있습니다.
+[!DNL Payment Services]은(는) 관리자에서 주문을 만들 때 결제 방법으로 사용할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 확장 **[!UICONTROL Sales]** 및 선택 **[!UICONTROL Orders]**.
-1. 클릭 **[!UICONTROL Create New Order]**.
-1. 주문에 필요한 섹션 완료(자세한 내용 설명) [주문 만들기](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}).
-1. 다음에서 _[!UICONTROL Payment Method]_섹션, [!DNL Payment Services] 결제 수단으로 사용됩니다.
-1. 클릭 **[!UICONTROL Submit Order]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]**&#x200B;을(를) 확장하고 **[!UICONTROL Orders]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Create New Order]**&#x200B;을(를) 클릭합니다.
+1. 주문에 필요한 섹션을 완료합니다([주문 만들기](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}에 설명된 세부 정보).
+1. _[!UICONTROL Payment Method]_섹션에서 [!DNL Payment Services]을(를) 결제 방법으로 사용할 수 있어야 합니다.
+1. **[!UICONTROL Submit Order]**&#x200B;을(를) 클릭합니다.

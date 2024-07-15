@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Product Recommendations] 안내서 개요'
-description: 다음에 대한 포괄적인 정보 [!DNL Product Recommendations] 설치 및 온보딩을 포함한 Adobe Commerce 관리자용
+description: 설치 및 온보딩을 포함하여 Adobe Commerce 관리자를 위한  [!DNL Product Recommendations] 에 대한 포괄적인 정보
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 2%
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
 # [!DNL Product Recommendations] 안내서 개요
 
-이 안내서는 Adobe Commerce 관리자를 위한 것입니다. 여기에는 의 설치 및 온보딩에 대한 자세한 정보가 포함되어 있습니다 [!DNL Product Recommendations], 서비스 구성 및 관리. 그것은 핵심을 기본적으로 이해하는 것이라고 가정한다 [!DNL Commerce] 구성 및 기능.
+이 안내서는 Adobe Commerce 관리자를 위한 것입니다. 여기에는 [!DNL Product Recommendations]의 설치 및 온보딩과 서비스 구성 및 관리에 대한 자세한 정보가 포함되어 있습니다. 이는 핵심 [!DNL Commerce] 구성 및 기능에 대한 기본적인 이해를 전제로 합니다.
 
-[!DNL Product Recommendations] 에는 관리자를 위한 두 가지 영역이 있습니다.
+[!DNL Product Recommendations]에는 관리자를 위한 두 영역이 있습니다.
 
 * 관리자: 이 영역을 사용하여 구성 UI 및 보고에 액세스합니다.
 * 명령줄 인터페이스: 이 도구를 사용하여 설치 및 백엔드 구성 작업을 실행합니다.
 
 이 안내서에서는 다음 주제를 다룹니다.
 
-* 모두 [!DNL Product Recommendations]- 관리에서 수행되는 특정 작업.
-* 모두 [!DNL Product Recommendations]-다음을 사용하여 수행되는 특정 작업 [!DNL Commerce] 명령줄
+* 관리자에서 수행되는 모든 [!DNL Product Recommendations]별 작업입니다.
+* [!DNL Commerce] 명령줄을 사용하여 수행되는 모든 [!DNL Product Recommendations]별 작업
 
 이 안내서에서는 Adobe Commerce 및 Magento Open Source의 핵심 기능을 다루지 않습니다.
 
@@ -39,5 +39,5 @@ ht-degree: 2%
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-* [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}- 다음을 참조하십시오. [!DNL Product Recommendations]-관련 문제 해결 문서.
-* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}- 추가 지원을 받으려면 티켓을 제출합니다.
+* [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} - [!DNL Product Recommendations] 관련 문제 해결 문서를 참조하십시오.
+* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—추가 지원을 받으려면 티켓을 제출하세요.

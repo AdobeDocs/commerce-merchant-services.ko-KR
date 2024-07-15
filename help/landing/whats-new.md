@@ -18,6 +18,6 @@ ht-degree: 0%
 
 | 서비스 | 변경 | 유형 |
 | -- | -- | -- |
-| [**카탈로그 서비스**](../live-search/overview.md) | 을(를) 추가함 [카탈로그 서비스 및 API 메시를 사용하여 세금 표시](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) 주제. | 새 주제 |
+| [**카탈로그 서비스**](../live-search/overview.md) | [카탈로그 서비스 및 API Mesh를 사용한 세금 표시](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) 항목을 추가했습니다. | 새 주제 |
 
 이 테이블은 매월 첫 번째 월요일에 업데이트됩니다.

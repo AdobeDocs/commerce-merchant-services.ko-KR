@@ -16,9 +16,9 @@ ht-degree: 0%
 
 필요한 인증 자격 증명 및 연결 데이터를 Adobe Commerce 관리자에 추가하여 스토어 이행 서비스를 Adobe Commerce과 연결합니다.
 
-- **[구성 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**- 스토어 이행 서비스에 대한 Adobe Commerce 통합을 만들고 액세스 토큰을 생성하여 스토어 이행 서버에서 들어오는 요청을 인증합니다.
+- **[구성 [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-스토어 이행 서비스에 대한 Adobe Commerce 통합을 만들고 액세스 토큰을 생성하여 스토어 이행 서버에서 들어오는 요청을 인증합니다.
 
-- **[스토어 이행 서비스에 대한 계정 자격 증명 구성](#configure-store-fulfillment-account-credentials)**- 자격 증명을 추가하여 Adobe Commerce을 스토어 이행 계정에 연결합니다.
+- **[스토어 이행 서비스에 대한 계정 자격 증명을 구성합니다](#configure-store-fulfillment-account-credentials)**-자격 증명을 추가하여 Adobe Commerce을 스토어 이행 계정에 연결합니다.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ## Adobe Commerce 통합 만들기
 
-Adobe Commerce을 스토어 이행 서비스와 통합하려면 상거래 통합을 만들고 스토어 이행 서버에서 요청을 인증하는 데 사용할 수 있는 액세스 토큰을 생성합니다. Adobe Commerce도 업데이트해야 합니다. [!UICONTROL Consumer Settings] 방지 옵션 `The consumer isn't authorized to access %resources.` 에 대한 Adobe Commerce의 요청에 대한 응답 오류 [!DNL Store Fulfillment] 서비스.
+Adobe Commerce을 스토어 이행 서비스와 통합하려면 Commerce 통합을 만들고 스토어 이행 서버의 요청을 인증하는 데 사용할 수 있는 액세스 토큰을 생성합니다. 또한 Adobe Commerce [!UICONTROL Consumer Settings] 옵션을 업데이트하여 Adobe Commerce에서 [!DNL Store Fulfillment] 서비스로의 요청에 대해 `The consumer isn't authorized to access %resources.` 응답 오류를 방지해야 합니다.
 
 1. 관리자에서 스토어 이행 통합을 생성합니다.
 
@@ -45,15 +45,15 @@ Adobe Commerce을 스토어 이행 서비스와 통합하려면 상거래 통합
 
 1. 계정 관리자와 협력하여 스토어 이행 측에서 구성을 완료하고 통합을 승인합니다.
 
-1. Adobe Commerce 활성화 [!UICONTROL Consumer Settings] 옵션 대상 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens]에 Adobe Commerce [!UICONTROL Consumer Settings] 옵션을 사용하도록 설정합니다.
 
-   - 관리에서 로 이동합니다. **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - 책임자에서 **[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**(으)로 이동합니다.
 
-   - 설정 [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 옵션 대상 **[!UICONTROL Yes]**.
+   - [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] 옵션을 **[!UICONTROL Yes]**(으)로 설정합니다.
 
 >[!IMPORTANT]
 >
-> 통합 토큰은 환경에 따라 다릅니다. 다른 환경의 소스 데이터가 있는 환경에 대한 데이터베이스를 복원하는 경우(예: 스테이징 환경에서 프로덕션 데이터 복원) 다음을 제외합니다. `oauth_token` 복원 작업 중에 통합 토큰 세부 사항을 덮어쓰지 않도록 데이터베이스 내보내기의 테이블.
+> 통합 토큰은 환경에 따라 다릅니다. 다른 환경의 소스 데이터가 있는 환경에 대한 데이터베이스를 복원하는 경우(예: 스테이징 환경에서 프로덕션 데이터 복원) 복원 작업 중에 통합 토큰 세부 정보를 덮어쓰지 않도록 `oauth_token` 테이블을 데이터베이스 내보내기에서 제외합니다.
 
 
 ## 저장소 이행 계정 자격 증명 구성
@@ -64,25 +64,25 @@ Adobe Commerce을 스토어 이행 서비스와 통합하려면 상거래 통합
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]
-- [!DNL Token Auth Server URL] (일반적으로 위의 구성과 동일)
+- [!DNL Token Auth Server URL](일반적으로 위의 구성과 동일)
 
 저장소 이행 기능을 구성하고 사용하려면 이러한 자격 증명이 필요합니다.
 
 >[!NOTE]
 >
->계정 만들기 프로세스를 완료하는 데 시간이 걸릴 수 있습니다. 자격 증명을 기다리는 동안 [스토어 이행 솔루션에 대한 기타 설정 검토 및 구성](service-config-settings-overview.md).
+>계정 만들기 프로세스를 완료하는 데 시간이 걸릴 수 있습니다. 자격 증명을 기다리는 동안 [스토어 이행 솔루션에 대한 다른 설정을 검토하고 구성](service-config-settings-overview.md)합니다.
 
 ### 자격 증명을 추가하여 저장소 이행
 
-1. 구성 [계정 자격 증명](enable-general.md) 프로덕션 및 샌드박스 환경용.
+1. 프로덕션 및 샌드박스 환경에 대해 [계정 자격 증명](enable-general.md)을 구성하십시오.
 
-1. 관리에서 로 이동합니다. **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. 관리자의 **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**(으)로 이동
 
-1. 에 대해 제공된 계정 자격 증명을 입력합니다. **[!UICONTROL Production environment]**. 모든 필드는 필수입니다.
+1. **[!UICONTROL Production environment]**&#x200B;에 대해 제공된 계정 자격 증명을 입력하십시오. 모든 필드는 필수입니다.
 
-1. 선택 **[!UICONTROL Save Config]**.
+1. **[!UICONTROL Save Config]**&#x200B;을(를) 선택합니다.
 
-1. 을 선택하여 연결 테스트 **[!UICONTROL Validate Credentials]**.
+1. **[!UICONTROL Validate Credentials]**&#x200B;을(를) 선택하여 연결을 테스트합니다.
 
 >[!NOTE]
 >

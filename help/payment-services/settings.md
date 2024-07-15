@@ -1,6 +1,6 @@
 ---
 title: 결제 서비스 설정
-description: 설치 후 다음을 구성할 수 있습니다. [!DNL Payment Services] 홈에서.
+description: 설치 후 홈에서  [!DNL Payment Services] 을(를) 구성할 수 있습니다.
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
@@ -14,62 +14,62 @@ ht-degree: 0%
 
 # 설정
 
-사용자 지정할 수 있습니다. [!DNL Payment Services] 에서 유용한 설정을 사용하여 필요에 맞게 [!DNL Payment Services] 집.
+[!DNL Payment Services] 홈에서 유용한 설정을 사용하여 필요에 맞게 [!DNL Payment Services]을(를) 사용자 지정할 수 있습니다.
 
-구성하려면 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 클릭 **[!UICONTROL Settings]**. 이러한 구성 옵션은 _[!UICONTROL Payment mode]_필드[_&#x200B;일반&#x200B;_구성 옵션](#configure-general-settings).
+[!DNL Adobe Commerce] 및 [!DNL Magento Open Source]에 대해 [!DNL Payment Services]을(를) 구성하려면 **[!UICONTROL Settings]**&#x200B;을(를) 클릭하십시오. 이러한 구성 옵션은 [_일반_ 구성 옵션](#configure-general-settings)의 _[!UICONTROL Payment mode]_필드에 설정된 환경에만 적용됩니다.
 
-다중 스토어 또는 레거시 구성의 경우 다음을 참조하십시오. [관리에서 구성](configure-admin.md).
+다중 스토어 또는 레거시 구성에 대해서는 [관리에서 구성](configure-admin.md)을 참조하십시오.
 
 ## 일반 설정 구성
 
-다음 [!UICONTROL General] 설정은 결제 방법으로 결제 서비스를 활성화 또는 비활성화하고 고객 거래에 정보를 추가하여 웹 사이트 또는 스토어 보기를 사용자 지정 정보로 표시하거나 접두화하는 기능을 제공합니다.
+[!UICONTROL General] 설정은 결제 방법으로 결제 서비스를 사용하거나 사용하지 않도록 설정하고 고객 거래에 정보를 추가하여 웹 사이트 또는 스토어 보기를 사용자 지정 정보로 표시하거나 접두하는 기능을 제공합니다.
 
 ### 결제 서비스 활성화
 
-다음을 활성화할 수 있습니다. [!DNL Payment Services] 웹 사이트에 대해 샌드박스 테스트 또는 라이브 결제를 활성화하십시오.
+웹 사이트에 대해 [!DNL Payment Services]을(를) 사용하도록 설정하고 샌드박스 테스트 또는 라이브 결제를 사용하도록 설정할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
 
    ![홈 보기](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
-1. 클릭 **[!UICONTROL Settings]**. 다음을 참조하십시오 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
+1. **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md)을 참조하세요.
 
-   다음 _[!UICONTROL General]_섹션에는 활성화하는 데 사용되는 설정이 포함되어 있습니다. [!DNL Payment Services] 를 결제 방법으로 사용하십시오.
+   _[!UICONTROL General]_섹션에는 [!DNL Payment Services]을(를) 결제 방법으로 활성화하는 데 사용되는 설정이 포함되어 있습니다.
 
-1. 활성화하려면 [!DNL Payment Services] 스토어의 결제 방법으로, _[!UICONTROL General]_섹션, 전환&#x200B;**[!UICONTROL Enable Payment Services as payment method]**끝 `Yes`.
+1. 스토어의 결제 방법으로 [!DNL Payment Services]을(를) 사용하려면 _[!UICONTROL General]_섹션에서&#x200B;**[!UICONTROL Enable Payment Services as payment method]**을(를) `Yes`(으)로 전환합니다.
 
-1. 아직 테스트 중인 경우 [!DNL Payment Services] 스토어에 대해 다음을 설정합니다. **결제 모드** 끝 `Sandbox`. 라이브 결제를 활성화할 준비가 되면 다음으로 설정하십시오. `Production`.
+1. 스토어에 대해 [!DNL Payment Services]을(를) 계속 테스트하는 경우 **결제 모드**&#x200B;를 `Sandbox`(으)로 설정하십시오. 실시간 결제를 사용할 준비가 되었으면 `Production`(으)로 설정하십시오.
 
    >[!NOTE]
    >
-   >사용자 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_ 는 자동으로 생성되며 샌드박스 및/또는 프로덕션에 대한 온보딩을 마치면 각 필드에 표시됩니다.
+   >샌드박스 및/또는 프로덕션에 대한 온보딩을 마치면 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_&#x200B;이(가) 자동으로 생성되고 해당 필드에 표시됩니다.
 
-1. 클릭 **[!UICONTROL Save]**.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
 
-1. 다음으로 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]** 및 클릭 **[!UICONTROL Flush Cache]** 잘못된 모든 캐시를 새로 고칩니다.
+1. 잘못된 모든 캐시를 새로 고치려면 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**(으)로 이동하고 **[!UICONTROL Flush Cache]**&#x200B;을(를) 클릭합니다.
 
-이제 의 기본 설정을 계속 변경할 수 있습니다. [결제 옵션](#configure-payment-options) 기능 및 상점 첫 화면 디스플레이.
+이제 [결제 옵션](#configure-payment-options) 기능 및 상점 표시에 대한 기본 설정을 계속 변경할 수 있습니다.
 
 ### 소프트 설명자 추가
 
-다음을 추가할 수 있습니다. [!UICONTROL Soft Descriptor] 웹 사이트 또는 개별 스토어 뷰 구성. 고객 거래 은행 거래 명세서에 소프트 설명자가 표시됩니다. 예를 들어 여러 스토어/브랜드/카탈로그가 있는 경우 [!UICONTROL Soft Descriptor] 필드.
+웹 사이트 또는 개별 스토어 보기에 [!UICONTROL Soft Descriptor]을(를) 추가할 수 있습니다. 고객 거래 은행 거래 명세서에 소프트 설명자가 표시됩니다. 예를 들어 여러 상점/브랜드/카탈로그가 있는 경우 [!UICONTROL Soft Descriptor] 필드에 사용자 지정 텍스트를 추가하여 이러한 상점/브랜드/카탈로그를 쉽게 구분할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 클릭 **[!UICONTROL Settings]**. 다음을 참조하십시오 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
-1. 에서 웹 사이트 또는 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 여기에 사용할 소프트 설명자를 만듭니다. 초기 설정의 경우 다음과 같이 둡니다. **[!UICONTROL Default]** 을 클릭하여 기본값을 설정합니다.
-1. 텍스트 필드에 사용자 정의 텍스트(최대 22자)를 추가하고 을 바꿉니다 `Custom descriptor`.
-1. 클릭 **[!UICONTROL Save]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md)을 참조하세요.
+1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 소프트 설명자를 만들 웹 사이트 또는 스토어 보기를 선택합니다. 초기 설정의 경우 기본값을 설정하려면 이 항목을 **[!UICONTROL Default]**(으)로 둡니다.
+1. 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하여 `Custom descriptor`을(를) 바꿉니다.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 1. 웹 사이트 또는 스토어 보기에 대해 구성된 기본값 이외의 소프트 설명자를 만들려면 다음 작업을 수행하십시오.
-   1. 에서 웹 사이트 또는 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 여기에 사용할 소프트 설명자를 만듭니다.
-   1. 전환 _끔_ **[!UICONTROL Use website]** (또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다릅니다.
+   1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 소프트 설명자를 만들 웹 사이트 또는 스토어 보기를 선택합니다.
+   1. _끄기_ **[!UICONTROL Use website]**(또는 선택한 범위에 따라 **[!UICONTROL Use default]**)를 전환합니다.
    1. 텍스트 필드에 사용자 정의 텍스트를 추가합니다.
-   1. 클릭 **[!UICONTROL Save]**.
-1. 웹 사이트 또는 스토어에 대해 활성화하려면 기본 소프트 설명자 보기 _또는_ 상위 웹 사이트에 사용되는 소프트 설명자:
-   1. 에서 웹 사이트 또는 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 기존 소프트 설명자를 활성화할 수 있습니다.
-   1. 전환 _날짜_ **[!UICONTROL Use website]** (또는 **[!UICONTROL Use default]**, 선택한 범위에 따라 다릅니다.
-   1. 클릭 **[!UICONTROL Save]**.
+   1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
+1. 웹 사이트 또는 스토어에 대해 활성화하려면 상위 웹 사이트에 사용되는 기본 소프트 설명자 _또는_&#x200B;을(를) 봅니다.
+   1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 기존 소프트 설명자를 활성화할 웹 사이트 또는 스토어 보기를 선택합니다.
+   1. _on_ **[!UICONTROL Use website]**(또는 선택한 범위에 따라 **[!UICONTROL Use default]**)을(를) 전환합니다.
+   1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
 
@@ -77,84 +77,84 @@ ht-degree: 0%
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
-| [!UICONTROL Enable] | 웹 사이트 | 활성화 또는 비활성화 [!DNL Payment Services] 웹 사이트용. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Enable] | 웹 사이트 | 웹 사이트에 대해 [!DNL Payment Services]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | 스토어 뷰 | 스토어에 대한 메서드 또는 환경을 설정합니다. 옵션: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 샌드박스 판매자 ID입니다. |
 | [!UICONTROL Production Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 프로덕션 판매자 ID입니다. |
-| [!UICONTROL Soft Descriptor] | 웹 사이트 또는 스토어 보기 | 웹 사이트 및 스토어 보기에 부드러운 설명자를 추가하여 브랜드, 스토어 또는 제품 라인을 설명하는 고객 거래에 정보를 추가합니다. 다음 [!UICONTROL Use website] toggle은 웹 사이트 수준에서 추가된 모든 소프트 설명자를 적용합니다. 다음 [!UICONTROL Use default] toggle은 기본값으로 추가된 모든 소프트 설명자를 적용합니다. |
+| [!UICONTROL Soft Descriptor] | 웹 사이트 또는 스토어 보기 | 웹 사이트 및 스토어 보기에 부드러운 설명자를 추가하여 브랜드, 스토어 또는 제품 라인을 설명하는 고객 거래에 정보를 추가합니다. [!UICONTROL Use website] 전환은 웹 사이트 수준에서 추가된 모든 소프트 설명자를 적용합니다. [!UICONTROL Use default] 전환은 기본값으로 추가된 모든 소프트 설명자를 적용합니다. |
 
 ## 결제 옵션 구성
 
-활성화했으므로 [!UICONTROL Payment Services] 웹 사이트의 경우 결제 기능 및 상점 표시에 대한 기본 설정을 변경할 수 있습니다.
+웹 사이트에 대해 [!UICONTROL Payment Services]을(를) 활성화했으므로 이제 결제 기능 및 상점 표시에 대한 기본 설정을 변경할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 클릭 **[!UICONTROL Settings]**. 다음을 참조하십시오 [소개 [!DNL Payment Services] 홈](payments-home.md) 추가 정보.
-1. 다음에 대한 결제 옵션 구성 [신용 카드](#credit-card-fields), [결제 버튼](#payment-buttons), 및 [단추 스타일](#button-style), 다음 섹션에 따라 사용하십시오.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md)을 참조하세요.
+1. 다음 섹션에 따라 [신용 카드](#credit-card-fields), [결제 단추](#payment-buttons) 및 [단추 스타일](#button-style)에 대한 결제 옵션을 구성하십시오.
 
 ### 신용 카드 필드
 
-다음 _[!UICONTROL Credit Card Fields]_설정은 신용 카드 또는 직불 카드 결제 방법을 위한 간단하고 안전한 체크아웃 옵션을 제공합니다.
+_[!UICONTROL Credit Card Fields]_설정은 신용 카드 또는 직불 카드 결제 방법을 위한 간단하고 안전한 체크아웃 옵션을 제공합니다.
 
-다음을 참조하십시오 [결제 옵션](payments-options.md#credit-card-fields) 추가 정보.
+자세한 내용은 [결제 옵션](payments-options.md#credit-card-fields)을 참조하세요.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
-1. 다음에서 **[!UICONTROL Credit card fields]** 섹션에서 값을 편집합니다. **[!UICONTROL Checkout title]** 체크아웃 중에 표시되는 결제 방법의 이름을 변경하는 필드입니다.
-1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
-1. 체크아웃 페이지에서 결제 방법의 우선 순위를 정하려면 `Numeric Only` 의 값 **[!UICONTROL Sort order]** 필드.
-1. 활성화하려면 [3DS 보안 인증](security.md#3ds) (`Off` 기본적으로) **[!UICONTROL 3DS Secure authentication]** 선택기 `Always` 또는 `When required`.
-1. 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화하려면 **[!UICONTROL Show on checkout page]** 선택기.
-1. 활성화 또는 비활성화하기 [카드 보관](#card-vaulting), 전환 **[!UICONTROL Vault enabled]** 선택기.
-1. 활성화 또는 비활성화하기 [관리자의 저장된 결제 방법](#card-vaulting) (판매자가 저장된 결제 방법을 사용하여 관리자의 고객에 대한 주문을 완료할 수 있도록) **[!UICONTROL Show vaulted methods in Admin]** 선택기.
-1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
-1. 클릭 **[!UICONTROL Save]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 결제 방법을 사용할 스토어 보기를 선택합니다.
+1. **[!UICONTROL Credit card fields]** 섹션에서 **[!UICONTROL Checkout title]** 필드의 값을 편집하여 체크아웃 중에 표시되는 결제 방법 이름을 변경합니다.
+1. [결제 작업을 설정](production.md#set-payment-services-as-payment-method)하려면 **[!UICONTROL Payment action]**&#x200B;을(를) `Authorize` 또는 `Authorize and Capture`(으)로 전환하십시오.
+1. 체크아웃 페이지에서 결제 방법의 우선 순위를 지정하려면 **[!UICONTROL Sort order]** 필드에 `Numeric Only` 값을 입력하십시오.
+1. [3DS 보안 인증을 사용하려면](security.md#3ds)(`Off`(기본값) **[!UICONTROL 3DS Secure authentication]** 선택기를 `Always` 또는 `When required`(으)로 전환합니다.
+1. 체크아웃 페이지에서 신용 카드 필드를 활성화하거나 비활성화하려면 **[!UICONTROL Show on checkout page]** 선택기를 전환하십시오.
+1. [카드 보관](#card-vaulting)을 활성화하거나 비활성화하려면 **[!UICONTROL Vault enabled]** 선택기를 전환하십시오.
+1. [관리자](#card-vaulting)에서 보관된 결제 방법을 사용하거나 사용하지 않도록 설정하려면(가맹점이 보관된 결제 방법을 사용하여 관리자 고객에 대한 주문을 완료할 수 있도록) **[!UICONTROL Show vaulted methods in Admin]** 선택기를 전환하십시오.
+1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기를 전환합니다.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
 
-1. [캐시 초기화](#flush-the-cache).
+1. [캐시를 플러시합니다](#flush-the-cache).
 
 #### 구성 옵션
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
-| [!UICONTROL 3DS Secure authentication] | 웹 사이트 | 활성화 또는 비활성화 [3DS 보안 인증](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3DS Secure authentication] | 웹 사이트 | [3DS 보안 인증을 사용하거나 사용하지 않도록 설정](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 신용 카드 필드가 체크아웃 페이지에 표시되도록 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Vault enabled] | 스토어 뷰 | 활성화 또는 비활성화 [신용 카드 소산](vaulting.md). 옵션: [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show vaulted payment methods in Admin] | 스토어 뷰 | 관리자가 판매자가 고객에 대한 주문을 완료할 수 있는 기능을 활성화 또는 비활성화합니다. [적립된 결제 방법 사용](vaulting.md). 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Vault enabled] | 스토어 뷰 | [신용 카드 보관](vaulting.md)을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 스토어 뷰 | 판매자가 관리자 [저장된 결제 방법을 사용하여](vaulting.md)에서 고객에 대한 주문을 완료할 수 있는 기능을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Apple 페이
 
-다음 [!UICONTROL Apple Pay] 버튼 결제 옵션을 통해 다음을 제공할 수 있습니다. [!UICONTROL Apple Pay] safari 브라우저에서 스토어의 체크아웃 시 결제 버튼(가맹점 계정당 최대 99개 도메인).
+[!UICONTROL Apple Pay] 버튼 결제 옵션을 사용하면 Safari 브라우저에서 매장 체크아웃에 [!UICONTROL Apple Pay] 결제 버튼을 제공할 수 있습니다(가맹점 계정당 최대 99개 도메인).
 
-완료한 경우에만 Apple 페이를 사용할 수 있습니다. [Apple Paypal을 통해 자가 등록 결제](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) 그런 다음 [Apple Pay 구성](settings.md/#payment-buttons) 상점에서요. 다음을 참조하십시오 [결제 옵션](payments-options.md#apple-pay-button) 추가 정보.
+Paypal을 통해 [Apple Pay 자체 등록을 완료](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)한 다음 스토어에 대해 [Apple Pay 구성](settings.md/#payment-buttons)한 경우에만 Apple Pay를 사용할 수 있습니다. 자세한 내용은 [결제 옵션](payments-options.md#apple-pay-button)을 참조하세요.
 
-다음을 활성화하고 구성할 수 있습니다. [!UICONTROL Apple Pay] 단추 결제 옵션:
+[!UICONTROL Apple Pay] 단추 결제 옵션을 활성화하고 구성할 수 있습니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
-1. 다음에서 **[!UICONTROL Apple Pay]** 섹션에서 값을 편집합니다. _[!UICONTROL Checkout title]_체크아웃 중에 표시되는 결제 방법의 이름을 변경하는 필드입니다.
-1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
-1. 체크아웃 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on checkout page]** 선택기.
-1. 제품 세부 사항 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on product detail page]** 선택기.
-1. 미니 장바구니 미리 보기에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on the mini cart preview]** 선택기.
-1. 장바구니 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on cart page]** 선택기.
-1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
-1. 클릭 **[!UICONTROL Save]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 결제 방법을 사용할 스토어 보기를 선택합니다.
+1. **[!UICONTROL Apple Pay]** 섹션에서 _[!UICONTROL Checkout title]_필드의 값을 편집하여 체크아웃 중에 표시되는 결제 방법 이름을 변경합니다.
+1. [결제 작업을 설정](production.md#set-payment-services-as-payment-method)하려면 **[!UICONTROL Payment action]**&#x200B;을(를) `Authorize` 또는 `Authorize and Capture`(으)로 전환하십시오.
+1. 체크아웃 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on checkout page]** 선택기를 전환하십시오.
+1. 제품 세부 사항 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on product detail page]** 선택기를 전환하십시오.
+1. 미니 장바구니 미리 보기에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on the mini cart preview]** 선택기를 전환합니다.
+1. 장바구니 페이지에서 Apple Pay를 활성화하거나 비활성화하려면 **[!UICONTROL Show Apple Pay on cart page]** 선택기를 전환하십시오.
+1. 디버그 모드를 활성화하거나 비활성화하려면 **[!UICONTROL Debug Mode]** 선택기를 전환합니다.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
 
-1. [캐시 초기화](#flush-the-cache).
+1. [캐시를 플러시합니다](#flush-the-cache).
 
 #### 구성 옵션
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Checkout title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions) 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions). 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 제품 세부 사항 페이지에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | 웹 사이트 | 미니 장바구니 미리 보기에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
@@ -163,15 +163,15 @@ ht-degree: 0%
 
 ### 결제 버튼
 
-다음 [!DNL PayPal payment buttons] 결제 옵션은 고객에게 간편하고 빠르고 안전한 체크아웃 프로세스를 제공합니다. 다음을 참조하십시오 [결제 옵션](payments-options.md#paypal-smart-buttons) 추가 정보.
+[!DNL PayPal payment buttons] 결제 옵션은 고객에게 간단하고 빠르고 안전한 체크아웃 프로세스를 제공합니다. 자세한 내용은 [결제 옵션](payments-options.md#paypal-smart-buttons)을 참조하세요.
 
 PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다.
 
-1. 에서 스토어 보기를 선택합니다. **[!UICONTROL Scope]** 드롭다운 메뉴. 결제 방법을 사용할 수 있도록 설정합니다.
-1. 체크아웃 시 표시된 대로 결제 방법의 이름을 변경하려면 **[!UICONTROL Checkout Title]** 필드.
-1. 종료 [결제 조치 설정](production.md#set-payment-services-as-payment-method), 전환 **[!UICONTROL Payment action]** 끝 `Authorize` 또는 `Authorize and Capture`.
-1. 체크아웃 페이지에서 결제 방법의 우선 순위를 정하려면 `Numeric Only` 의 값 **[!UICONTROL Sort order]** 필드.
-1. 토글 선택기를 사용하여 활성화 또는 비활성화 [!DNL PayPal smart button] 기능 표시:
+1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 결제 방법을 사용할 스토어 보기를 선택합니다.
+1. 결제 방법 이름을 변경하려면 **[!UICONTROL Checkout Title]** 필드에서 값을 편집합니다.
+1. [결제 작업을 설정](production.md#set-payment-services-as-payment-method)하려면 **[!UICONTROL Payment action]**&#x200B;을(를) `Authorize` 또는 `Authorize and Capture`(으)로 전환하십시오.
+1. 체크아웃 페이지에서 결제 방법의 우선 순위를 지정하려면 **[!UICONTROL Sort order]** 필드에 `Numeric Only` 값을 입력하십시오.
+1. 전환 선택기를 사용하여 [!DNL PayPal smart button] 표시 기능을 활성화하거나 비활성화하십시오.
 
    - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
@@ -185,28 +185,28 @@ PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다
 
      >[!NOTE]
      >
-     > Apple을 사용하려면 다음 작업을 수행하십시오 [은(는) Apple 샌드박스 테스터 계정이 있어야 합니다.](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (가짜 신용 카드 및 청구 정보로 완료) 테스트하십시오. 샌드박스에서 Apple Pay를 사용할 준비가 되면 _또는_ 프로덕션 모드, 완료 후 [테스트 및 유효성 검사](test-validate.md#test-in-sandbox-environment), 완료 [을 사용한 자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_라이브 도메인 등록_ 섹션만 해당) 및 [스토어에 맞게 구성 [!DNL Payment Services]](settings.md#payment-buttons).
+     > Apple Pay를 사용하려면 [Apple 샌드박스 테스터 계정](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account)이 있어야 합니다(가짜 신용 카드 및 청구 정보와 함께 완료). 샌드박스 _또는_ 프로덕션 모드에서 Apple Pay를 사용할 준비가 되면 [테스트 및 유효성 검사](test-validate.md#test-in-sandbox-environment)를 완료한 후 [다음  [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)(으)로 자가 등록&#x200B;_라이브 도메인 등록_ 섹션만 해당)을 완료하고 [다음 저장소에 맞게 구성합니다 [!DNL Payment Services]](settings.md#payment-buttons).
 
      가시성을 결제 버튼 또는 PayPal 나중에 결제 메시지로 전환하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다.
 
-1. 디버그 모드를 활성화하려면 **[!UICONTROL Debug Mode]** 선택기.
-1. 클릭 **[!UICONTROL Save]**.
+1. 디버그 모드를 사용하려면 **[!UICONTROL Debug Mode]** 선택기를 전환합니다.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
 
-1. [캐시 초기화](#flush-the-cache).
+1. [캐시를 플러시합니다](#flush-the-cache).
 
 #### 구성 옵션
 
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: 텍스트 필드 |
-| [!UICONTROL Payment Action] | 웹 사이트 | 다음 [지불 조치](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} 지정된 결제 방법에 대해 참조할 수 있습니다. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
-| [!UICONTROL Show PayPal buttons on checkout page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] 체크아웃 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] 제품 세부 사항 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] ( 미니 장바구니 미리 보기) 옵션: [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show PayPal buttons on cart page] | 스토어 뷰 | 활성화 또는 비활성화 [!DNL PayPal payment buttons] 장바구니 페이지에서 확인할 수 있습니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on checkout page] | 스토어 뷰 | 체크아웃 페이지에서 [!DNL PayPal payment buttons]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | 스토어 뷰 | 제품 세부 정보 페이지에서 [!DNL PayPal payment buttons]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | 스토어 뷰 | 미니 장바구니 미리 보기에서 [!DNL PayPal payment buttons]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | 스토어 뷰 | 장바구니 페이지에서 [!DNL PayPal payment buttons]을(를) 사용하거나 사용하지 않도록 설정합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | 스토어 뷰 | 지급 버튼이 표시되는 나중에 지급 옵션 표시를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later Message] | 웹 사이트 | 장바구니, 제품 페이지, 미니 장바구니에서, 그리고 체크아웃 흐름 동안 나중에 결제 메시지를 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show Venmo button] | 스토어 뷰 | 결제 버튼이 표시되는 Venmo 결제 옵션을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
@@ -216,31 +216,31 @@ PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다
 
 ### 단추 스타일
 
-다음을 구성할 수도 있습니다 _[!UICONTROL Button style]_결제 버튼 옵션:
+결제 버튼의 _[!UICONTROL Button style]_옵션을 구성할 수도 있습니다.
 
-1. 을(를) 변경하려면 **[!UICONTROL Layout]**, 선택 `Vertical` 또는 `Horizontal`.
+1. **[!UICONTROL Layout]**&#x200B;을(를) 변경하려면 `Vertical` 또는 `Horizontal`을(를) 선택하십시오.
 
    >[!NOTE]
    >
-   > 단추 스타일이 다음으로 구성된 경우 `Horizontal` 또한 스토어는 여러 개의 결제 버튼을 표시하도록 구성되어 있으므로 제품 페이지, 체크아웃 페이지 및 미니 카트에 2개의 버튼만 표시되고 장바구니에 1개의 버튼만 표시될 수 있습니다.
+   > 단추 스타일이 `Horizontal`(으)로 구성되어 있고 매장이 여러 결제 단추를 표시하도록 구성된 경우 제품 페이지, 체크아웃 페이지 및 미니 카트에 단추 두 개와 장바구니에 단추 한 개만 표시될 수 있습니다.
 
-1. 가로 레이아웃에서 태그 라인을 활성화하려면 **[!UICONTROL Show tagline]** 선택기.
-1. 을 수정하려면 다음을 수행합니다 **[!UICONTROL Color]**&#x200B;원하는 색상 옵션을 선택합니다.
-1. 을 수정하려면 다음을 수행합니다 **[!UICONTROL Shape]**, 선택 `Pill` 또는 `Rectangle`.
-1. 단추 높이 선택기를 활성화하려면 **[!UICONTROL Responsive button height]** 선택기.
-1. 을 수정하려면 다음을 수행합니다 **[!UICONTROL Label]**&#x200B;원하는 레이블 옵션을 선택합니다.
+1. 가로 레이아웃에서 태그 라인을 활성화하려면 **[!UICONTROL Show tagline]** 선택기를 전환합니다.
+1. **[!UICONTROL Color]**&#x200B;을(를) 수정하려면 원하는 색상 옵션을 선택합니다.
+1. **[!UICONTROL Shape]**&#x200B;을(를) 수정하려면 `Pill` 또는 `Rectangle`을(를) 선택하십시오.
+1. 단추 높이 선택기를 사용하려면 **[!UICONTROL Responsive button height]** 선택기를 전환합니다.
+1. **[!UICONTROL Label]**&#x200B;을(를) 수정하려면 원하는 레이블 옵션을 선택합니다.
 
-   레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다. 아래 이미지에서 **[!UICONTROL Shape]** 이(가) (으)로 설정됨 _사각형_ 및 **[!UICONTROL Label]** 이(가) (으)로 설정됨 _PayPal(권장)_.
+   레이아웃, 색상, 모양, 높이 및 레이블에 대한 구성 옵션을 변경하면 설정 페이지 하단에 해당 구성의 시각적 미리보기가 표시됩니다. 아래 이미지에서 **[!UICONTROL Shape]**&#x200B;은(는) _Rectangle_(으)로 설정되고 **[!UICONTROL Label]**&#x200B;은(는) _PayPal(권장)_(으)로 설정됩니다.
 
-   ![[!DNL PayPal payment buttons] 옵션](assets/payment-buttons.png){width="400" zoomable="yes"}
+   ![[!DNL PayPal payment buttons]개 옵션](assets/payment-buttons.png){width="400" zoomable="yes"}
 
-1. 클릭 **[!UICONTROL Save]**.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
    변경 내용을 저장하지 않고 이 보기에서 나가려고 하면 변경 내용을 취소하거나, 편집을 유지하거나, 변경 내용을 저장하라는 모달이 나타납니다.
 
-1. [캐시 초기화](#flush-the-cache).
+1. [캐시를 플러시합니다](#flush-the-cache).
 
-결제 버튼 스타일을 구성할 수 있습니다 [관리자 의 레거시 구성에서](configure-admin.md#configure-paypal-smart-buttons) 또는 여기 위치 [!DNL Payment Services Home]. 다음을 참조하십시오 [PayPal의 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) PayPal 결제 단추 스타일에 대한 자세한 정보.
+관리자](configure-admin.md#configure-paypal-smart-buttons) 또는 여기 [!DNL Payment Services Home]의 레거시 구성에서 결제 단추 스타일 [을(를) 구성할 수 있습니다. PayPal 결제 단추 스타일에 대한 자세한 내용은 [PayPal의 단추 스타일 가이드](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)를 참조하세요.
 
 #### 구성 옵션
 
@@ -256,27 +256,27 @@ PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다
 
 ## 역할 구성
 
-관리자 사용자가 상거래 관리자에서 주문을 만들고 관리할 수 있도록 하려면 다음을 활성화합니다 [!DNL Payment Services]- 사용자 역할별 리소스.
+관리자 사용자가 Commerce 관리에서 주문을 만들고 관리할 수 있도록 하려면 사용자 역할에 [!DNL Payment Services]별 리소스를 사용하도록 설정하십시오.
 
-다음을 참조하십시오 [사용자 역할](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html) 역할 관리 방법을 알아봅니다.
+역할을 관리하는 방법은 [사용자 역할](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html)을 참조하세요.
 
 역할에 리소스를 할당할 때 다음을 선택해야 합니다.
 
-- **결제 방법[!DNL Payment Services]**—이 리소스는 관리에서 주문을 만들 때 [!DNL Payment Services] 신용 카드는 결제 방법으로 사용할 수 있습니다. 을(를) 선택하는 경우 **작업** 상위 리소스. 이 리소스도 선택됩니다.
-- **[!DNL Payment Services]**—이 리소스에는 **대시보드** 및 **SaaS 서비스 프록시** 리소스. 또한 선택해야 합니다. 다음을 확인합니다. [!DNL Payment Services] 에 표시 _판매_ 메뉴 아래의 제품에서 사용할 수 있습니다.
+- **결제 방법:[!DNL Payment Services]**—이 리소스는 관리자에서 주문을 만들 때 결제 방법으로 [!DNL Payment Services]개의 신용 카드를 사용할 수 있도록 합니다. **Actions** 상위 리소스를 선택하면 이 리소스도 선택됩니다.
+- **[!DNL Payment Services]**—이 리소스에는 **대시보드** 및 **SaaS 서비스 프록시** 리소스가 포함되어 있으며, 이 리소스도 선택해야 합니다. [!DNL Payment Services]이(가) _판매_ 메뉴에 나타나는지 확인합니다.
 
   ![결제 서비스 리소스](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## 캐시 초기화
 
-에서 구성을 변경하는 경우 _설정_&#x200B;예를 들어 Apple Pay, Venmo 또는 PayPal PayLater 버튼을 토글하는 경우 저장소에서 최신 구성을 표시하도록 캐시를 수동으로 플러시합니다.
+Apple Pay, Venmo 또는 PayPal PayLater 단추를 전환하는 등 _설정_&#x200B;에서 구성을 변경하는 경우 저장소에 최신 구성이 표시되도록 캐시를 수동으로 플러시하십시오.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
-1. 클릭 **[!UICONTROL Flush Cache]** 잘못된 모든 캐시를 새로 고칩니다.
+1. _관리자_ 사이드바에서 **[!UICONTROL System]** > **[!UICONTROL Cache Management]**(으)로 이동합니다.
+1. 잘못된 모든 캐시를 새로 고치려면 **[!UICONTROL Flush Cache]**&#x200B;을(를) 클릭합니다.
 
-캐시 관리 테이블의 캐시 유형에 `INVALIDATED` 상태: 저장소에 해당 항목에 대한 최신 구성이 표시되지 않을 수 있습니다. 최신 구성을 표시하도록 저장소를 업데이트하려면 캐시를 플러시하십시오.
+캐시 관리 테이블의 캐시 유형이 `INVALIDATED` 상태인 경우 저장소에 해당 항목에 대한 최신 구성이 표시되지 않을 수 있습니다. 최신 구성을 표시하도록 저장소를 업데이트하려면 캐시를 플러시하십시오.
 
-저장소에 올바른 구성이 표시되는지 정기적으로 확인합니다. [캐시 초기화](https://docs.magento.com/user-guide/system/cache-management.html).
+저장소에 올바른 구성이 표시되는지 확인하려면 주기적으로 [캐시를 플러시](https://docs.magento.com/user-guide/system/cache-management.html)합니다.
 
 ## 카드 보관
 
@@ -284,22 +284,22 @@ PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다
 
 또한 관리자의 카드 보관을 사용하여 기존 고객에 대한 후속 주문을 완료할 수 있습니다.
 
-에서 카드 보관 사용 또는 사용 안 함 [신용 카드 필드 설정](#credit-card-fields).
+[신용 카드 필드 설정](#credit-card-fields)에서 카드 보관을 활성화하거나 비활성화합니다.
 
-다음을 참조하십시오 [신용 카드 보관](vaulting.md) 추가 정보.
+자세한 내용은 [신용 카드 보관](vaulting.md)을 참조하세요.
 
 ## 3DS
 
 3DS는 고객 및 상인의 매장 내 사기 행위를 방지하고 유럽 연합(EU) 표준을 준수할 수 있도록 해줍니다.
 
-에서 3DS 활성화 또는 비활성화 [신용 카드 필드 설정](#credit-card-fields).
+[신용 카드 필드 설정](#credit-card-fields)에서 3DS를 활성화하거나 비활성화합니다.
 
-다음을 참조하십시오 [3DS 보안](security.md#3ds) 추가 정보.
+자세한 내용은 [보안의 3DS](security.md#3ds)를 참조하십시오.
 
 ## 여러 PayPal 계정 사용
 
-위치 [!UICONTROL Payment Services], 내에서 여러 PayPal 계정을 사용할 수 있습니다. **1** 웹 사이트 수준의 판매자 계정. 예를 들어 서로 다른 국가를 사용하는 여러 국가에서 스토어를 운영하고 있는 경우 [통화](https://docs.magento.com/user-guide/stores/currency.html)) 또는 비즈니스 일부에 Adobe Commerce을 사용하고 싶지만 사용하지 않는 경우 _모두_, 판매자 계정을 설정하여 여러 PayPal 계정을 사용할 수 있습니다.
+[!UICONTROL Payment Services]에서 웹 사이트 수준의 **one** 판매자 계정 내에서 여러 PayPal 계정을 사용할 수 있습니다. 예를 들어, 여러 국가([다양한 통화](https://docs.magento.com/user-guide/stores/currency.html) 사용)에서 스토어를 운영하거나 비즈니스의 일부에 Adobe Commerce을 사용하려고 하지만 _모두_&#x200B;는 사용하지 않으려는 경우, 판매자 계정을 설정하여 여러 PayPal 계정을 사용할 수 있습니다.
 
-다음을 참조하십시오 [사이트, 스토어 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) 웹 사이트, 스토어 및 스토어 조회수의 계층에 대한 자세한 정보.
+웹 사이트, 스토어 및 스토어 보기의 계층 구조에 대한 자세한 내용은 [사이트, 스토어 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)를 참조하십시오.
 
-영업 담당자가 새 를 만들 수 있습니다. [범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) 판매자 계정 및 PayPal을 사용하여 추가 사이트를 온보딩하여 표시하도록 구성한 PayPal 버튼이 사이트에 표시되도록 할 수 있습니다. 웹 사이트에서 여러 PayPal 계정을 사용하는 데 도움이 필요하면 영업 담당자에게 문의하십시오.
+영업 사원은 판매자 계정에 대한 새 [scope](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)을(를) 만들고 PayPal로 추가 사이트를 온보딩하여 표시되는 PayPal 단추가 사이트에 표시되도록 할 수 있습니다. 웹 사이트에서 여러 PayPal 계정을 사용하는 데 도움이 필요하면 영업 담당자에게 문의하십시오.

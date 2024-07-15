@@ -1,6 +1,6 @@
 ---
-title: 사용 [!DNL Payment Services] 프로덕션용
-description: 을(를) 활성화하여 온보딩 프로세스를 완료합니다. [!DNL Payment Services] 프로덕션용
+title: 프로덕션에  [!DNL Payment Services] 사용
+description: 프로덕션에 대해  [!DNL Payment Services] 을(를) 활성화하여 온보딩 프로세스를 완료합니다.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
 source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
@@ -10,27 +10,27 @@ ht-degree: 0%
 
 ---
 
-# 사용 [!DNL Payment Services] 프로덕션용
+# 프로덕션에 [!DNL Payment Services] 사용
 
-서비스를 프로덕션에 넣고 다음을 완료할 수 있습니다. [온보딩 프로세스](onboard.md), 이 항목의 단계에 따라 다음 작업을 수행하십시오.
+다음 단계를 수행한 후 이 항목의 단계에 따라 서비스를 프로덕션에 넣고 [온보딩 프로세스](onboard.md)를 완료할 수 있습니다.
 
-* [설치](install.md) 결제 서비스 확장
-* [구성 및 연결](connect.md) 내 인스턴스
-* [설정](sandbox.md) 및 [테스트](test-validate.md) 내 샌드박스
+* 결제 서비스 확장 [설치](install.md)
+* 인스턴스 [구성 및 연결](connect.md)
+* 샌드박스 [설정](sandbox.md) 및 [테스트](test-validate.md)
 
-## 설정 [!DNL Payment Services] 결제 방법으로
+## [!DNL Payment Services]을(를) 결제 방법으로 설정
 
-이후 [Commerce 서비스 구성](connect.md#configure-commerce-services) 다음 중 하나를 활성화합니다. [샌드박스 테스트](sandbox.md#enable-sandbox-testing) 또는 [라이브 결제](#enable-live-payments), 다음을 설정해야 합니다. [!DNL Payment Services] 결제 방법을 사용하겠습니다.
+[Commerce 서비스를 구성](connect.md#configure-commerce-services)하고 [샌드박스 테스트](sandbox.md#enable-sandbox-testing) 또는 [라이브 결제](#enable-live-payments)를 사용하도록 설정한 후에는 [!DNL Payment Services]을(를) 결제 방법으로 설정해야 합니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 클릭 **[!UICONTROL Enable Payment Services]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. **[!UICONTROL Enable Payment Services]**&#x200B;을(를) 클릭합니다.
 
-   이 옵션은 아직 구성하지 않은 경우 표시됩니다 [!DNL Payment Services] 하나 이상의 웹 사이트에 대한 결제 방법으로 사용됩니다.
+   하나 이상의 웹 사이트에 대한 결제 방법으로 [!DNL Payment Services]을(를) 아직 구성하지 않은 경우 이 옵션이 표시됩니다.
 
-   관련 옵션이 확장된 상태로 홈 보기의 설정 영역으로 이동합니다(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)를 클릭하여 제품에서 [!DNL Payment Services] 옵션 을 참조하십시오. [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   관련 옵션이 확장된 (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 홈 보기의 설정 영역으로 이동되었습니다. 이 영역에서 [!DNL Payment Services] 옵션을 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}(으)로 활성화할 수 있습니다.
 
-1. 위치 _[!UICONTROL General Configuration]_, 설정됨&#x200B;**[!UICONTROL Enable]**끝 `Yes`.
-1. 설정 **[!UICONTROL Payment Action]**, 두 가지 모두에 대해 _[!UICONTROL Credit Card Fields]_및_[!UICONTROL PayPal payment buttons]_&#x200B;을 클릭하여 다음 중 하나로 만듭니다.
+1. _[!UICONTROL General Configuration]_에서&#x200B;**[!UICONTROL Enable]**을(를) `Yes`(으)로 설정합니다.
+1. _[!UICONTROL Credit Card Fields]_과(와)_[!UICONTROL PayPal payment buttons]_ 모두에 대해 **[!UICONTROL Payment Action]**&#x200B;을(를) 다음 중 하나로 설정합니다.
 
    | 설정 | 설명 |
    |---|---|
@@ -39,32 +39,32 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >[!DNL Payment Services] 는 부분 캡처를 지원합니다. 판매자는 주문의 일부를 부분적으로 수집(송장)할 수 있습니다. 예를 들어 각 항목을 개별적으로 캡처하거나 지금 항목 하나와 나중에 항목 하나를 캡처할 수 있습니다.
+   >[!DNL Payment Services]은(는) 부분 캡처를 지원합니다. 판매자는 주문의 일부를 부분적으로 수집(송장)할 수 있습니다. 예를 들어 각 항목을 개별적으로 캡처하거나 지금 항목 하나와 나중에 항목 하나를 캡처할 수 있습니다.
 
-1. 클릭 **[!UICONTROL Save]**.
-1. 클릭 **[!UICONTROL Go to Payment Services]** 로 돌아가려면 [!DNL Payment Services] 집.
-1. [캐시 지우기](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
+1. [!DNL Payment Services] 홈으로 돌아가려면 **[!UICONTROL Go to Payment Services]**&#x200B;을(를) 클릭하십시오.
+1. [캐시를 지웁니다](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    모든 구성 변경 후 지우기를 수행해야 합니다.
 
-다음을 참조하십시오 [결제 서비스 구성](settings.md) 신용 카드 필드 및 PayPal 결제 버튼 구성에 대한 자세한 내용.
+신용 카드 필드 및 PayPal 결제 단추 구성에 대한 자세한 내용은 [결제 서비스 구성](settings.md)을 참조하십시오.
 
 ## 완전한 판매자 온보딩
 
 스토어가 결제 서비스와 연동되도록 하는 다음 단계는 라이브 온보딩을 완료하는 것입니다.
 
-결제 서비스 제공 [**고급** (완전히 지원됨) 및 **표준** (Express Checkout) 결제 옵션](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) 및 온보딩 플로우, 운영하는 국가와 선호하는 결제 경험에 따라 다릅니다.
+결제 서비스는 운영하는 국가와 선호하는 결제 환경에 따라 [**고급**(전체 지원) 및 **표준**(빠른 체크아웃) 결제 옵션](../payment-services/payments-options.md#standard-vs-advanced-payments-experience)과(와) 온보딩 흐름을 제공합니다.
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 클릭 **[!UICONTROL Live onboarding]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. **[!UICONTROL Live onboarding]**&#x200B;을(를) 클릭합니다.
 
-   다음에 대한 라이브 온보딩을 아직 완료하지 않은 경우 이 옵션이 표시됩니다 [!DNL Payment Services].
+   [!DNL Payment Services]에 대한 실시간 온보딩을 아직 완료하지 않은 경우 이 옵션이 표시됩니다.
 
-1. 다음에서 _국가 선택_ 모달에서 운영 중인 국가를 선택합니다.
+1. _국가 선택_ 모달에서 운영 중인 국가를 선택합니다.
 
-   결제 서비스는 의 모든 결제 옵션에 대한 전체 지원을 제공합니다. [5개국](../payment-services/overview.md#availability) 현재. 결제 서비스는 국가 목록에 표시된 다른 모든 국가에 대해 빠른 체크아웃 기능(결제 옵션의 하위 집합)을 제공합니다.
+   결제 서비스는 현재 [5개국](../payment-services/overview.md#availability)의 모든 결제 옵션을 완벽하게 지원합니다. 결제 서비스는 국가 목록에 표시된 다른 모든 국가에 대해 빠른 체크아웃 기능(결제 옵션의 하위 집합)을 제공합니다.
 
-   목록에서 선택한 국가에 따라 결제 옵션 및 온보딩 플로우가 결정됩니다.[고급](#advanced-onboarding) (완전히 지원됨) 또는 [표준](#standard-onboarding) (Express Checkout) - 사용할 수 있습니다.
+   목록에서 선택한 국가에 따라 결제 옵션이 결정되며, 온보딩 플로우([고급](#advanced-onboarding)(전체 지원) 또는 [표준](#standard-onboarding)(빠른 체크아웃))를 사용할 수 있습니다.
 
 >[!TIP]
 >
@@ -72,107 +72,107 @@ ht-degree: 0%
 
 ### 고급 온보딩
 
-이 온보딩 플로우는에서 판매자가 사용할 수 있습니다. [완전히 지원되는 국가](../payment-services/overview.md#availability).
+이 온보딩 플로우는 [완전히 지원되는 국가](../payment-services/overview.md#availability)의 판매자에 대해 사용할 수 있습니다.
 
 국가를 선택한 후:
 
-1. 표시되는 모달에서 다음을 선택합니다. **고급**.
+1. 표시되는 모달에서 **고급**&#x200B;을 선택합니다.
 
-   의 경우 **표준** 옵션을 선택한 다음 [표준 온보딩 흐름](#standard-onboarding).
+   **표준** 옵션의 경우 [표준 온보딩 흐름](#standard-onboarding)을 진행하십시오.
 
-1. 클릭 **계속**.
-1. PayPal 계정 자격 증명(샌드박스 계정 자격 증명이 아님)을 사용하여 완전히 지원되는 고급 온보딩에 대한 PayPal 흐름을 계속 진행합니다 _또는_ 새 PayPal 계정에 등록하십시오.
+1. **계속**&#x200B;을 클릭합니다.
+1. PayPal 계정 자격 증명(샌드박스 계정 자격 증명이 아님)을 사용하여 완전히 지원되는 고급 온보딩을 위해 PayPal 흐름을 계속 사용하거나 _또는_&#x200B;새 PayPal 계정에 등록하세요.
 
 >[!IMPORTANT]
 >
->**고급 온보딩** 판매자에게 다음 작업을 요구함: [지급 권한 요청](#request-payments-entitlement-from-adobe) 라이브 온보딩을 활성화하십시오.
+>**고급 온보딩**&#x200B;을(를) 사용하려면 가맹점이 [결제 권한을 요청](#request-payments-entitlement-from-adobe)해야 합니다.
 
 ### 표준 온보딩
 
-이 표준 온보딩 플로우는 다음 국가의 사용 가능한 상인에 대해 사용할 수 있습니다. [빠른 체크아웃 지원만](../payment-services/overview.md#availability) 이(가) 제공됩니다.
+이 표준 온보딩 플로우는 [빠른 체크아웃 지원](../payment-services/overview.md#availability)이 제공되는 국가의 상인에 대해 사용할 수 있습니다.
 
 국가를 선택한 후:
 
-1. 다음에서 _결제 서비스 계약_ 표시되는 모달 **결제 서비스 계약** Adobe Commerce 결제 서비스 계약을 보기 위한 링크입니다.
-1. 다음에서 _결제 서비스 계약_ 모달, 클릭 **동의함**.
+1. 표시되는 _결제 서비스 계약_ 양식에서 **결제 서비스 계약** 링크를 클릭하여 Adobe Commerce 결제 서비스 계약을 봅니다.
+1. _결제 서비스 계약_ 양식에서 **동의함**&#x200B;을 클릭합니다.
 1. PayPal 계정 자격 증명(샌드박스 계정 자격 증명이 아님)을 사용하거나 새 PayPal 계정에 등록하여 빠른 체크아웃 온보딩을 위한 PayPal 흐름을 계속 진행합니다.
 
 >[!IMPORTANT]
 >
->[Apple 결제 및 신용카드 필드](../payment-services/payments-options.md) 다음에 사용할 수 없음: **표준 온보딩**.
+>[Apple 결제 및 신용 카드 필드](../payment-services/payments-options.md)은(는) **표준 온보딩**&#x200B;에 사용할 수 없습니다.
 
 ## 이메일 주소 확인
 
-1. 관리 사이드바에서 다음 위치로 이동하십시오. **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
+1. 관리 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
 
-   다음 _[!UICONTROL Live onboarding]_버튼이 더 이상 표시되지 않고 &quot;[!UICONTROL Live payments pending]&quot; 텍스트 상자입니다.
+   _[!UICONTROL Live onboarding]_단추가 더 이상 표시되지 않으며 &quot;[!UICONTROL Live payments pending]&quot; 텍스트 상자가 표시됩니다.
 
    이 텍스트 상자에는 온보딩을 완료하기 위해 PayPal을 사용하여 이메일 주소를 확인하라는 메시지가 표시될 수도 있습니다.
 
 1. 이메일 주소를 확인하라는 메시지가 표시되면 PayPal에서 보낸 확인 메시지에 대해 이메일을 확인하고 을 클릭하여 이메일 주소를 확인합니다.
-1. 관리 사이드바에서 다음 위치로 이동하십시오. **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. 관리 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
 1. 브라우저 창을 새로 고칩니다.
 
    PayPal 판매자 온보딩이 승인되면 결제 시스템이 샌드박스 모드이고 라이브 결제를 처리하지 않는다는 알림이 표시됩니다.
 
    >[!IMPORTANT]
    >
-   >에 대한 동의를 취소하는 경우 [!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 결제를 처리하기 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 서비스 홈에서 해지된 동의에 대한 경고가 나타납니다.
+   >[!DNL Adobe Commerce] 및 [!DNL Magento Open Source]에 대한 [!DNL Payment Services](PayPal 계정 설정에서) 결제 처리에 대한 동의를 취소하는 경우 [!DNL Payment Services]이(가) 스토어의 주문을 처리할 수 없습니다. 결제 서비스 홈에서 해지된 동의에 대한 경고가 나타납니다.
 
 ## Adobe에서 결제 권한 요청
 
-스토어가 라이브로 전환되도록 하려면 Adobe에서 결제 권한을 요청하십시오( 용) [고급 온보딩만](#advanced-onboarding)):
+스토어를 라이브로 사용하려면 Adobe에서 결제 권한을 요청하세요([고급 온보딩만](#advanced-onboarding)).
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 클릭 **[!UICONTROL Get Live Payments]** (으)로 [!DNL Payment Services] 집.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. [!DNL Payment Services] 홈에서 **[!UICONTROL Get Live Payments]**&#x200B;을(를) 클릭합니다.
 
    ![권한 요청](assets/request-entitlements.png){width="500" zoomable="yes"}
 
 1. 양식을 작성합니다.
 1. 영업팀 직원이 연락을 드릴 것입니다.
 
-또는 다음 Adobe에서 지급 권한을 요청할 수 있습니다. [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+또는 [business.adobe.com](https://business.adobe.com/resources/payment-services.html)에서 Adobe에게 결제 권한을 요청할 수 있습니다.
 
 >[!IMPORTANT]
 >
->**라이브 온보딩** 지급 권한이 승인될 때까지 액세스할 수 없습니다.
+>결제 권한이 승인될 때까지 **실시간 온보딩**&#x200B;에 액세스할 수 없습니다.
 
 ## 가격 책정 계층 구성
 
-가져오기 [!DNL Payment Services] _판매자 ID_:
+[!DNL Payment Services] _판매자 ID_ 받기:
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 홈 보기에서 **[!UICONTROL Settings]**. 다음을 참조하십시오 [홈](payments-home.md) 추가 정보.
-1. 필요한 항목 선택 _판매자 ID_ 영업 담당자에게 제출하면 영업 담당자가 정확한 가격 책정 계층을 구성하게 됩니다.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. 홈 보기에서 **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [홈](payments-home.md)을 참조하세요.
+1. 필요한 _판매자 ID_&#x200B;를 선택하고 영업 담당자에게 제출하면 영업 담당자가 올바른 가격 책정 계층을 구성합니다.
 
-다음을 참조하십시오 [레벨 2 및 레벨 3 처리](levels-card-payment-transactions.md) 결제 거래에 대한 자세한 정보.
+결제 거래에 대한 자세한 내용은 [수준 2 및 수준 3 처리](levels-card-payment-transactions.md)를 참조하십시오.
 
 ## 라이브 결제 활성화
 
-A _프로덕션 판매자 ID_ 는에서 자동 생성되고 채워집니다. [구성](configure-admin.md). 이 ID를 변경하거나 변경하지 마십시오.
+_프로덕션 판매자 ID_&#x200B;이(가) 자동으로 생성되고 [구성](configure-admin.md)에서 채워집니다. 이 ID를 변경하거나 변경하지 마십시오.
 
 라이브 결제 활성화:
 
-1. 다음에서 _관리자_ 사이드바, 이동 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. 홈에서 **[!UICONTROL Settings]** 페이지 오른쪽 상단에 있습니다. 다음을 참조하십시오 [홈](payments-home.md) 추가 정보.
-1. 다음에서 _[!UICONTROL General Configuration]_섹션 세트&#x200B;**[!UICONTROL Payment mode]**끝 `Production`.
-1. 클릭 **[!UICONTROL Save]**.
+1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
+1. 홈에서 페이지의 오른쪽 상단에 있는 **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [홈](payments-home.md)을 참조하세요.
+1. _[!UICONTROL General Configuration]_섹션에서&#x200B;**[!UICONTROL Payment mode]**을(를) `Production`(으)로 설정합니다.
+1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >
    >캐시를 지우지 않으면 고객이 체크아웃 중에 PayPal 결제 옵션을 볼 수 없습니다.
 
-다음으로 돌아가는 경우 [!DNL Payment Services] 홈에서 이제 라이브 결제를 처리 중이므로 샌드박스 결제 모드 메시지가 더 이상 표시되지 않습니다.
+[!DNL Payment Services] 홈으로 돌아오면 이제 실시간 결제를 처리하고 있으므로 더 이상 샌드박스 결제 모드 메시지가 나타나지 않습니다.
 
-다음을 참조하십시오 [관리에서 구성](configure-admin.md) 레거시 구성 옵션의 경우
+기존 구성 옵션에 대해서는 [관리에서 구성](configure-admin.md)을 참조하십시오.
 
 >[!IMPORTANT]
 >
->에 대한 동의를 취소하는 경우 [!DNL Payment Services] 결제를 처리하기 위해(PayPal 계정 설정에서) 스토어의 주문은 [!DNL Payment Services]. 결제 처리를 다시 활성화하려면 온보딩을 다시 완료해야 합니다. 결제 서비스 홈에서 해지된 동의에 대한 경고가 나타납니다.
+>PayPal 계정 설정에서 결제 처리를 위해 [!DNL Payment Services]에 대한 동의를 취소하면 [!DNL Payment Services]이(가) 스토어의 주문을 처리할 수 없습니다. 결제 처리를 다시 활성화하려면 온보딩을 다시 완료해야 합니다. 결제 서비스 홈에서 해지된 동의에 대한 경고가 나타납니다.
 
 ## 프로덕션에서 테스트
 
 이 기능을 쇼핑객에게 노출하기 전에 실제 신용 카드 및 은행으로 생산 시 결제를 테스트하는 것이 좋습니다.
 
-다음을 참조하십시오 [테스트 및 유효성 검사](test-validate.md) 추가 정보.
+자세한 내용은 [테스트 및 유효성 검사](test-validate.md)를 참조하십시오.

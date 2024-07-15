@@ -9,15 +9,15 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-#  Commerce용 스토어 이행 {#store-fulfillment}
+# Commerce에 대한 스토어 이행 {#store-fulfillment}
 
 - [안내서 개요](guide-overview.md)
-- [소개 [!DNL Store Fulfillment]](introduction.md)
+- [ [!DNL Store Fulfillment] 소개](introduction.md)
 - [스토어 지원 워크플로우](store-assist-modules.md)
 - [요구 사항](solution-requirements.md)
 - [릴리스 정보](release-notes.md)
@@ -27,7 +27,7 @@ ht-degree: 10%
    - [저장소 이행 연결](connect-set-up-service.md)
    - [테스트 및 배포](test-and-deploy.md)
 - [구성 개요](service-config-settings-overview.md)
-- 구성 저장 {#store-configuration}
+- 저장소 구성 {#store-configuration}
    - [일반 구성](enable-general.md)
    - [영업 이메일 템플릿](sales-emails.md)
    - [판매점(출처)](merchant-store-configuration.md)
@@ -37,7 +37,7 @@ ht-degree: 10%
 - 시스템 구성 {#system-configuration}
    - [백그라운드 프로세스](background-processes.md)
    - [저장소 위치 및 매핑 설정](store-location-map-provider-setup.md)
-   - [체크인 경험 설정](check-in-experience-setup.md)
+   - [체크 인 경험 설정](check-in-experience-setup.md)
    - [사용자 설정](user-setup.md)
    - [앱 설정](app-setup.md)
 

@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Export] SaaS 서비스 가이드"
-user-guide-description: "이 안내서에서는 사용 방법에 대한 자세한 지침을 제공합니다. [!DNL Data Export] Adobe Commerce SaaS 서비스용 확장"
-breadcrumb-title: "[!DNL Data Export] SaaS 서비스 가이드"
+user-guide-title: " SaaS 서비스에 대한 [!DNL Data Export] 안내서"
+user-guide-description: "이 안내서에서는 Adobe Commerce SaaS 서비스용  [!DNL Data Export] 확장 사용에 대한 자세한 지침을 제공합니다."
+breadcrumb-title: " SaaS 서비스에 대한 [!DNL Data Export] 안내서"
 hide: true
 role: Admin
 feature: Services
@@ -12,7 +12,7 @@ ht-degree: 6%
 
 ---
 
-# [!DNL SaaS Data Export Guide] Adobe Commerce용 {#saas-data-export}
+# Adobe Commerce용 [!DNL SaaS Data Export Guide] {#saas-data-export}
 
 - [안내서 개요](overview.md)
 - [데이터 동기화](data-synchronization.md)

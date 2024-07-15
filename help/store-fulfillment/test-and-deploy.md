@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 개발 환경에서 온보딩 프로세스를 완료한 후 프로세스를 시작하여 스토어 이행 솔루션을 테스트하고 프로덕션 환경에 배포할 수 있습니다.
 
-**전제 조건**
+**필수 구성 요소**
 
 정보, 스토어 또는 주문을 테스트하거나 동기화하기 전에 다음 작업을 완료했는지 확인하십시오.
 
-- 다음을 완료함 [일반 구성](enable-general.md) 스토어 이행 서비스용.
+- 스토어 이행 서비스에 대한 [일반 구성](enable-general.md)을(를) 완료했습니다.
 
 - [샌드박스 및 프로덕션 환경에 대한 계정 자격 증명 및 연결 세부 정보 추가 및 확인](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- 다음을 확인합니다. [Adobe Commerce 통합](connect-set-up-service.md#configure-store-fulfillment-account-credentials) 스토어 이행 솔루션용 은 사용 가능하고 승인됩니다.
+- 스토어 이행 솔루션에 대한 [Adobe Commerce 통합](connect-set-up-service.md#configure-store-fulfillment-account-credentials)을 사용할 수 있고 인증되었는지 확인하십시오.
 
 ## 테스트 준비
 
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 1. 스토어 이행 소스 동기화.
 
-   - 다음으로 이동 **[!UICONTROL Stores > Sources]**.
+   - **[!UICONTROL Stores > Sources]**(으)로 이동합니다.
 
-   - 선택 **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - **[!UICONTROL Synchronize Store Fulfillment Sources]**&#x200B;을(를) 선택합니다.
 
-1. 저장소 그리드에서 저장소가 로 표시되었는지 확인합니다. `Synced` 테스트 주문을 생성하기 전에
+1. 저장소 그리드에서 테스트 주문을 만들기 전에 저장소가 `Synced`(으)로 표시되었는지 확인하십시오.
 
 ## 샘플 테스트 계획
 
@@ -54,14 +54,14 @@ ht-degree: 0%
 | 철저해 | 주문 취소 워크플로우 | 고객, 관리자, 스토어 어소시에이트 |
 | 관리자 | Fulfillment 앱 권한 저장 | 관리자 |
 | Adobe Commerce 프론트엔드 | 제품 유형 | 고객, 관리자 |
-| 프론트엔드 체크아웃</br>체크인 양식 | 체크인 경험 | 고객, 관리자 |
-| 스토어 지원 앱 | 주문</br>선택</br>단계</br>제출 | 스토어 어소시에이트 |
+| 프론트엔드 체크 아웃</br>체크 인 양식 | 체크인 경험 | 고객, 관리자 |
+| 스토어 지원 앱 | 주문</br>선택</br>단계</br>및 전달 | 스토어 어소시에이트 |
 
 ### 인벤토리 API 동기화
 
 이 테스트 계획 섹션에서는 Adobe Commerce과 스토어 이행 솔루션 간에 픽업 소스 및 재고에 대한 업데이트가 올바르게 동기화되는지 확인하기 위한 재고 및 주문 동기화를 다룹니다.
 
-**기능 영역**: 재고 및 주문 동기화</br>
+**기능 영역**: 인벤토리 및 주문 동기화</br>
 **역할:** 관리자</br>
 **테스트 유형:** 모두 양수
 
@@ -85,9 +85,9 @@ ht-degree: 0%
 <td>실시간 동기화 작업은 5분 내에 Walmart GIF에 세부 사항을 전송합니다</td>
 </tr>
 <tr>
-<td><strong>픽업 스톡 소스</br><code>Is Synced</code> 상태</strong></td>
+<td><strong>Pickup stock 원본</br><code>Is Synced</code> 상태</strong></td>
 <td>기존 픽업 스톡 소스에 대한 업데이트를 저장합니다.</td>
-<td>성공적으로 작업한 후 <code>Is Synced</code> 다음에서 소스 관리 페이지 업데이트 열의 열: <code>No</code> 끝 <code>Yes</code>.</td>
+<td>작업이 완료되면 Source 관리 페이지의 <code>Is Synced</code> 열이 <code>No</code>에서 <code>Yes</code>(으)로 업데이트됩니다.</td>
 </tr>
 <tr>
 <td><strong>수정된 재고 예약 프로세스</strong></td>
@@ -97,12 +97,12 @@ ht-degree: 0%
 <tr>
 <td><strong>새 주문 푸시, API 동기화 - 고객 주문</strong></td>
 <td>고객이 매장 픽업 주문을 제출합니다.</td>
-<td><ul><li>관리 순서 보기에서 <strong>Adobe Commerce 관리 사용자</strong> 이(가) 주문 동기화 상태를 (으)로 업데이트했는지 확인합니다. <code>Sent</code></li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>관리 순서 보기에서 <strong>Adobe Commerce 관리자</strong>가 주문 동기화 상태가 (으)로 업데이트되었음을 확인합니다. <code>Sent</code></li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>새 주문 푸시, API 동기화 - 관리자가 주문을 제출함</strong></td>
-<td>안 Adobe Commerce <strong>관리자</strong> 픽업 주문을 제출합니다.</td>
-<td><ul><li>관리자 주문 보기에서 주문 동기화 상태는 다음으로 업데이트됩니다. <code>Sent</code>.</li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td>Adobe Commerce <strong>관리자</strong>가 픽업 주문을 제출합니다.</td>
+<td><ul><li>[관리 순서] 보기에서 [동기화 순서] 상태가 <code>Sent</code>(으)로 업데이트됩니다.</li><li>주문 세부 사항 로그에 메시지가 포함됩니다 <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>새 주문 푸시, 예외 대기열<strong></td>
@@ -117,8 +117,8 @@ ht-degree: 0%
 테스트 계획의 이 섹션에는 Adobe Commerce을 통해 취소된 주문에 대한 엔드 투 엔드 워크플로우를 테스트하는 시나리오가 포함되어 있습니다.
 
 **기능 영역:** Adobe Commerce 관리자</br>
-**역할:** 전체(관리자, 스토어 어소시에이트, 고객)</br>
-**테스트 결과 유형:** 모든 시나리오에 긍정적
+**역할:** 전체(관리자, 스토어 연결, 고객)</br>
+**테스트 결과 형식:** 모든 시나리오에서 양수
 
 <table style="table-layout:fixed">
 <tr>
@@ -137,12 +137,12 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<li>다음으로 업데이트된 주문 내역 <code>We refunded $X online. Transaction ID: transactionID</code> 및 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>주문 상태: <code>Closed</code>. (이제 지불 검토를 설정했습니다.)</li>
+<li>주문 내역이 <code>We refunded $X online. Transaction ID: transactionID</code> 및(으)로 업데이트됨 <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
+<li>주문 상태는 <code>Closed</code>입니다. (이제 지불 검토를 설정했습니다.)</li>
 <li>Adobe Commerce에서 생성한 대변 메모. (크론이 작동할 때까지 기다립니다.)</li>
-<li>모든 항목이 선택된 경우 픽업 이메일 준비 완료 <code>DISPLAY COMMENT HISTORY</code> 표시 <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> 플래그: <code>true</code>.)</li>
+<li>모든 항목을 선택한 경우 <code>DISPLAY COMMENT HISTORY</code> 픽업 이메일에 <code>Order is ready for pickup</code>이(가) 표시됩니다(<code>CUSTOMER NOTIFIED</code> 플래그는 <code>true</code>임).</li>
 <li>모든 항목을 선택하지 않은 경우 취소 이메일 및 댓글 기록 표시 <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> 플래그: <code>true</code>.)</li>
+<li><code>CUSTOMER NOTIFIED</code> 플래그가 <code>true</code>입니다.)</li>
 </ul>
 </td>
 </tr>
@@ -160,26 +160,26 @@ ht-degree: 0%
 <li>주문 내역 업데이트: <code>We refunded $X online. Transaction ID: transactionID</code></li>
 <li>주문 내역 업데이트: <code>Order notified as partly canceled at: Date and Hour</code></li>
 <li>주문 환불 이메일 수신: <code>$x amount was refunded</code></li>
-<li>주문 상태: <code>Processing</code>.</li>
+<li>주문 상태는 <code>Processing</code>입니다.</li>
 <li>Adobe Commerce에서 생성된 대변 메모(cron이 작동할 때까지 대기).</li>
-<li>일부 항목이 선택되지 않은 경우 [!UICONTROL Ready for Pickup] nil 선택 또는 환불 섹션이 포함된 이메일이 표시됩니다. <code>DISPLAY COMMENT HISTORY</code> 표시 <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> 플래그: <code>true</code>.</li>
+<li>일부 항목이 선택되지 않은 경우 nil 선택 또는 환불 섹션이 포함된 [!UICONTROL Ready for Pickup] 전자 메일이 표시되는지 확인하십시오. <code>DISPLAY COMMENT HISTORY</code>이(가) <code>Order is ready for pickup, but some items not available.</code>을(를) 표시합니다.</li>
+<li><code>CUSTOMER NOTIFIED</code> 플래그는 <code>true</code>입니다.</li>
 </ul>
 </td>
 </tr>
-<td><strong>픽업 준비</br></br>전체 취소</br>(모든 제품은 0 수량으로 피킹됨으로 설정됨)</strong></td>
+<td><strong>픽업 준비</br></br>전체 취소</br>(모든 제품이 0수량으로 선택된 상태로 설정됨)</strong></td>
 <td>
 <ol>
 <li>주문하십시오.</li>
 <li>주문이 동기화될 때까지 기다립니다.</li>
 <li>송장이 생성되었는지(승인 및 캡처한 경우), 그리고 송장 이메일이 수신되었는지 확인합니다.</li>
-<li>Postman으로 이동하여 모든 제품을 로 설정한 상태로 픽업 준비 요청을 실행합니다. <code>picked</code> 포함 <code>0 qty</code>.</li>
+<li>Postman으로 이동하여 모든 제품이 <code>0 qty</code>과(와) 함께 <code>picked</code>(으)로 설정된 픽업 준비 요청을 실행합니다.</li>
 </ol>
 </td>
 <td>
 <ul>
 <li>업데이트된 주문 내역: <code>We refunded $X offline</code></li>
-<li>주문 상태는 입니다. <code>CLOSED</code>.
+<li>주문 상태는 <code>CLOSED</code>입니다.
 <li>대변 메모가 생성됩니다. (크론이 작동할 때까지 기다립니다.)</li>
 <li>환불 이메일 수신됨: <code>$x amount was refunded</code></li>
 <li>주문 취소 이메일이 전송되었습니다.</li>
@@ -187,7 +187,7 @@ ht-degree: 0%
 </td>
 </tr>
 <tr>
-<td><strong>픽업 준비 - 부분 취소</strong></br></br><strong>(일부 제품은 선택되며, 일부는 함께 선택됩니다. <code>0 qty</code>)</strong>
+<td><strong>픽업 준비 - 일부 취소</strong></br></br><strong>(일부 제품은 선택되었으며 일부는 <code>0 qty</code>(으)로 선택됨)</strong>
 </td>
 <td>
 <ol>
@@ -199,17 +199,17 @@ ht-degree: 0%
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> 포함 [!UICONTROL Ready for Pickup Items] 및 [!UICONTROL Canceled Items] 테이블. </li>
+<li><code>Your order is ready for pickup</code> 테이블 [!UICONTROL Ready for Pickup Items]개 및 [!UICONTROL Canceled Items]개 </li>
 <li>주문 상태가 픽업 준비되었습니다. </li>
-<li>업데이트된 주문 내역: <code>We refunded $X offline.</code>
-<li>업데이트된 주문 내역: <code>Order notified as partly canceled at: Date and hour</code>
-<li>환불 이메일 수신됨: <code>$x amount was refunded</code>
+<li>주문 내역 업데이트됨: <code>We refunded $X offline.</code>
+<li>주문 내역 업데이트됨: <code>Order notified as partly canceled at: Date and hour</code>
+<li>환불 이메일 수신: <code>$x amount was refunded</code>
 <li>대변 메모가 생성됩니다. (크론이 작동할 때까지 기다립니다.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>픽업 준비 - 부분 취소</br></br>어떤 제품은 고르고 어떤 제품은 따로 고릅니다 <code>0 qty</code>)</strong>
+<td><strong>픽업 준비 - 일부 취소</br></br>일부 제품이 선택되었으며 일부는 <code>0 qty</code>(으)로 선택됨</strong>
 </td>
 <td><ol>
 <li>주문하십시오.</li>
@@ -219,17 +219,17 @@ ht-degree: 0%
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> 포함 [!UICONTROL Ready for Pickup Items] 및 [!UICONTROL Canceled Items] 테이블. </li>
+<li><code>Your order is ready for pickup</code> 테이블 [!UICONTROL Ready for Pickup Items]개 및 [!UICONTROL Canceled Items]개 </li>
 <li>주문 상태가 픽업 준비되었습니다. </li>
-<li>업데이트된 주문 내역: <code>We refunded $X offline.</code>
-<li>업데이트된 주문 내역: <code>Order notified as partly canceled at: Date and hour</code>
-<li>환불 이메일 수신됨: <code>$x amount was refunded</code>
+<li>주문 내역 업데이트됨: <code>We refunded $X offline.</code>
+<li>주문 내역 업데이트됨: <code>Order notified as partly canceled at: Date and hour</code>
+<li>환불 이메일 수신: <code>$x amount was refunded</code>
 <li>대변 메모가 생성됩니다. (크론이 작동할 때까지 기다립니다.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>조제(조제 중) </br></br>전체 취소(모든 제품이 거부됨으로 설정됨)</strong>
+<td><strong>분배됨(분배 중) </br></br>전체 취소(모든 제품이 거부됨으로 설정됨)</strong>
 </td>
 <td>
 <ol>
@@ -237,20 +237,20 @@ ht-degree: 0%
 <li>주문이 동기화될 때까지 기다립니다.</li>
 <li>송장이 생성되었는지(승인 및 캡처한 경우), 그리고 송장 이메일이 수신되었는지 확인합니다.</li>
 <li>Postman으로 이동하여 모든 제품이 피킹됨으로 설정된 상태로 픽업 준비 요청을 실행합니다.</li>
-<li>사서함을 열고 픽업 준비 이메일을 찾습니다. 그런 다음 을 클릭합니다**[!UICONTROL Confirm Arrival]**.</li>
+<li>사서함을 열고 픽업 준비 이메일을 찾습니다. 그런 다음 **[!UICONTROL Confirm Arrival]**을(를) 클릭합니다.</li>
 <li>체크인.</li>
 <li>Postman으로 이동하여 모든 제품이 거부됨으로 설정된 분배됨 요청을 실행합니다.</li>
 </ol>
 <td><ul>
 <li>업데이트된 주문 내역: <code>We refunded $X offline.</code></li>
 <li>환불 이메일 수신됨: <code>$x amount was refunded</code></li>
-<li>상태가 (으)로 설정됨 <code>CLOSED</code>.</li>
+<li>상태가 <code>CLOSED</code>(으)로 설정되었습니다.</li>
 <li>대변 메모가 생성되었습니다. (크론이 작동할 때까지 기다립니다.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>조제(조제 중)</br></br>부분 취소</br>(일부 제품은 분배되고 일부는 거부됩니다.)</strong>
+<td><strong>분배됨(분배 중)</br></br>일부 취소</br>(일부 제품은 분배됨, 일부는 거부됨)</strong>
 </td>
 <td>
 <ol>
@@ -258,7 +258,7 @@ ht-degree: 0%
 <li>주문이 동기화될 때까지 기다립니다.</li>
 <li>송장이 생성되었는지(승인 및 캡처한 경우), 그리고 송장 이메일이 수신되었는지 확인합니다.</li>
 <li>Postman으로 이동하여 모든 제품이 피킹됨으로 설정된 상태로 픽업 준비 요청을 실행합니다.</li>
-<li>사서함을 엽니다. 픽업 준비 이메일을 찾아 다음을 선택합니다. <code>Confirm Arrival</code>.</li>
+<li>사서함을 엽니다. 픽업 준비 이메일을 찾아 <code>Confirm Arrival</code>을(를) 선택합니다.</li>
 <li>체크인.</li>
 <li>Postman으로 이동하여 일부 제품은 분배로 설정되고 일부는 거부로 설정된 분배됨 요청을 실행합니다</li>
 </ol>
@@ -266,13 +266,13 @@ ht-degree: 0%
 <td>
 <li>업데이트된 주문 내역: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
-<li>환불 이메일 수신됨: <code>$x amount was refunded</code>
-<li>주문 상태가 다음으로 설정됨 <code>Ready for pickup Dispensed</code>
+<li>환불 이메일 수신: <code>$x amount was refunded</code>
+<li>주문 상태가 <code>Ready for pickup Dispensed</code>(으)로 설정됨
 <li>대변 메모가 생성되었습니다. (크론이 작동할 때까지 기다립니다.)</li>
 </td>
 </tr>
 <tr>
-<td> <strong>반품 후 신규 RMA(전체)</strong>
+<td> <strong>반환 후 새 RMA(전체)</strong>
 </td>
 <td>
 <ol>
@@ -282,19 +282,19 @@ ht-degree: 0%
 <li>Postman이 포함된 모든 제품을 선택합니다.</li>
 <li>체크인.</li>
 <li>분배 해</li>
-<li>주문으로 이동한 다음<strong>[!UICONTROL Create returns]=
+<li>주문하고 <strong>[!UICONTROL Create returns]을(를) 선택합니다.
 <li>RMA를 생성합니다.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>RMA가 만들어지고 아래에 표시됩니다. <strong>[!UICONTROL Returns]</b> 탭에서 액세스할 수 있습니다.</li>
+<li>RMA가 만들어졌고 주문 보기의 <strong>[!UICONTROL Returns]</b> 탭 아래에 표시됩니다.</li>
 <li>고객이 RMA 확인 이메일을 받았습니다.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>반품 후 신규 RMA — 부분</strong>
+<td><strong>반환 후 새 RMA — 부분</strong>
 </td>
 <td>
 <ol>
@@ -309,9 +309,9 @@ ht-degree: 0%
 </ol>
 <td>
 <ul>
-<li>RMA가 생성되고 아래에 표시됨 <strong>[!UICONTROL Returns]</strong> 탭에서 액세스할 수 있습니다.</li>
+<li>주문 보기의 <strong>[!UICONTROL Returns]</strong> 탭 아래에 만들어진 RMA가 표시됩니다.</li>
 <li>고객이 RMA 확인 이메일을 받았습니다.</li>
-<li>RMA를 생성한 후 RMA 인증 받기: 관리자로부터 다음 위치로 이동 <strong>[!UICONTROL Sales > Returns]</strong>. 생성한 RMA를 선택하고 승인합니다.</li>
+<li>RMA를 만든 후 RMA 인증을 받습니다. 관리자로부터 <strong>[!UICONTROL Sales > Returns]</strong>(으)로 이동합니다. 생성한 RMA를 선택하고 승인합니다.</li>
 <li>고객이 RMA 인증 확인 이메일을 받았는지 확인합니다.</li>
 <li>환불이 거래 및 주문 내역에 추가되었는지 확인합니다.</li>
 </ul>
@@ -328,7 +328,7 @@ ht-degree: 0%
 - 기존 계정에 대한 업데이트가 성공적으로 적용되었는지 확인합니다.
 
 **기능 영역:** Adobe Commerce 관리자</br>
-**역할:** 책임자, 스토어 어소시에이트</br>
+**역할:** 관리자, 스토어 연결</br>
 **테스트 유형:** 모두 양수
 
 <table style="table-layout:auto">
@@ -343,14 +343,14 @@ ht-degree: 0%
 <td>
 <ol>
 <li><strong>관리자</strong> — Adobe Commerce 관리자에 로그인합니다.</li>
-<li>다음으로 이동 <strong>[!UICONTROL System] &gt; 스토어 이행 앱 권한 &gt; 모든 스토어 이행 앱 사용자</strong></li>
+<li><strong>[!UICONTROL System] &gt; 스토어 이행 앱 권한 &gt; 모든 스토어 이행 앱 사용자로 이동</strong></li>
 <li><strong>새 사용자를 추가합니다.</strong></li>
 </ol>
 <td>
 <ul>
 <li>계정이 정상적으로 생성되었습니다.</li>
-<li>새 사용자 계정이 [!UICONTROL Store Fulfillment Users] 대시보드입니다.</li>
-<li><strong>스토어 어소시에이트</strong> 새 사용자 계정으로 스토어 지원 앱에 로그인합니다.</li>
+<li>[!UICONTROL Store Fulfillment Users] 대시보드에 새 사용자 계정이 표시됩니다.</li>
+<li><strong>스토어 연결</strong> 새 사용자 계정으로 스토어 지원 앱에 로그인합니다.</li>
 </ul>
 </td>
 </tr>
@@ -360,14 +360,14 @@ ht-degree: 0%
 <td>
 <ol>
 <li>관리자 계정으로 Adobe Commerce 관리자에 로그인합니다.</li>
-<li>다음으로 이동 <strong>[!UICONTROL System] &gt; 스토어 이행 앱 권한 &gt; 모든 스토어 이행 앱 사용자</strong>.</li>
-<li>사용자 계정 목록에서 를 선택하여 기존 활성 사용자 계정을 엽니다. <strong>[!UICONTROL Edit]</strong>.
-<li>다음을 변경하여 계정 비활성화 <strong>[!UICONTROL Is Active]</strong> 끝 <strong>아니요</strong>.</li>
+<li><strong>[!UICONTROL System] &gt; 스토어 이행 앱 권한 &gt; 모든 스토어 이행 앱 사용자</strong>(으)로 이동합니다.</li>
+<li>사용자 계정 목록에서 <strong>[!UICONTROL Edit]</strong>을(를) 선택하여 기존 활성 사용자 계정을 엽니다.
+<li><strong>[!UICONTROL Is Active]</strong>을(를) <strong>아니요</strong>(으)로 변경하여 계정을 사용하지 않도록 설정하십시오.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>다음에서 <strong>[!UICONTROL Store Fulfillment App Users]</strong> 대시보드에서 업데이트된 계정의 상태가 (으)로 변경됨 <strong>[!UICONTROL Inactive]</strong>.</li>
+<li><strong>[!UICONTROL Store Fulfillment App Users]</strong> 대시보드에서 업데이트된 계정의 상태가 <strong>[!UICONTROL Inactive]</strong>(으)로 변경되었습니다.</li>
 <li>스토어 연결이 비활성 계정 자격 증명으로 스토어 지원 앱에 로그인할 수 없습니다.</li>
 </ul>
 </td>
@@ -381,7 +381,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 - [!UICONTROL Configurable]
 - [!UICONTROL Grouped]
 - [!UICONTROL Virtual]
-- [!UICONTROL Bundle products] Adobe Commerce 상점 앞에서요.
+- Adobe Commerce 상점 첫 화면의 [!UICONTROL Bundle products].
 
 **기능 영역:** Adobe Commerce 프론트엔드</br>
 **역할:** 스토어 지원 앱 사용자(스토어 연결)</br>
@@ -412,10 +412,10 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </td>
 <td>
 <ul>
-<li>게재 방법 및 [!UICONTROL Add to cart] 모든 하위 제품에 다음이 있는 경우 고객에 대해 단추가 비활성화됩니다.
-<code>qty</code> 을 로 설정 <code>0</code>.</li>
-<li>하위 제품 중 하나 이상에 해당되는 경우 고객에 대해 게재 방법이 활성화되었는지 확인합니다. <code>qty</code> 을 로 설정 <code>0.</code></li>
-<li>다음을 확인합니다. [!UICONTROL Store Pickup Delivery] 메서드는 이 있는 제품에 대해서만 표시 및 활성화됩니다. [!UICONTROL Available for Store Pickup] 활성화되었습니다. (하위 제품 확인)</li>
+<li>모든 하위 제품에 포함된 경우 고객에 대해 게재 메서드 및 [!UICONTROL Add to cart] 단추가 비활성화되어 있는지 확인합니다.
+<code>qty</code>이(가) <code>0</code>(으)로 설정되었습니다.</li>
+<li>하위 제품 중 하나 이상에 <code>qty</code>이(가) 설정되어 있는 경우 고객에 대해 게재 메서드가 활성화되어 있는지 확인하십시오. <code>0.</code></li>
+<li>[!UICONTROL Available for Store Pickup]이(가) 활성화된 제품에 대해서만 [!UICONTROL Store Pickup Delivery] 메서드가 표시되고 활성화되어 있는지 확인하십시오. (하위 제품 확인)</li>
 </ul>
 </td>
 <td></td>
@@ -424,18 +424,19 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 <td><strong>가상 제품</strong>
 </td>
 <td>
-가상 제품이  [!UICONTROL In-store Pickup] 게재 방법.
+가상 제품이 [!UICONTROL In-store Pickup] 게재 방법을 제공하지 않는지 확인하십시오.
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>번들 제품</strong>
+<td><strong>제품 번들</strong>
 </td>
 <td>
 <ul>
-<li>하나 이상의 하위 제품에 [!UICONTROL Available for Store Pickup] 이 옵션을 비활성화하면 고객이 스토어 픽업 배달 옵션을 사용할 수 없습니다.</li>
-<li>하나 이상의 하위 제품에 [!UICONTROL Available for Home Delivery] 비활성화되어 있는 경우 고객은 홈 게재 옵션을 사용할 수 없습니다.</li>
-<li>번들의 하위 제품 중 하나 이상이 재고가 없는지 확인하고 번들(상위 제품)도 로 표시됩니다. [!UICONTROL Out of stock].</li>
+<li>하나 이상의 하위 제품에 [!UICONTROL Available for Store Pickup]이(가) 비활성화된 경우 고객이 스토어 픽업 배달 옵션을 사용할 수 없는지 확인합니다.</li>
+<li>하나 이상의 하위 제품에 [!UICONTROL Available for Home Delivery]이(가) 비활성화된 경우 고객이 홈 게재 옵션을 사용할 수 없는지 확인합니다.</li>
+<li>번들의 하위 제품 중 하나 이상이 품절되었는지 확인하고 번들(상위 제품)도 표시됩니다
+[!UICONTROL Out of stock](으)로</li>
 </ul>
 </td>
 <td></td>
@@ -447,12 +448,12 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 
 이 테스트 계획 섹션에서는 다음 기능에 대한 스토어 픽업 주문 체크인 경험을 다룹니다.
 
-- 대체 픽업 접촉 - 추가할 워크플로를 확인합니다. [!UICONTROL Alternate Pickup Contact] 및 선택 [!UICONTROL Preferred Contact] 매장 픽업 주문.
+- 대체 픽업 연락처 - [!UICONTROL Alternate Pickup Contact]을(를) 추가하고 스토어 픽업 주문에서 [!UICONTROL Preferred Contact]을(를) 선택하는 워크플로를 확인하십시오.
 
 - 체크인 양식 - 스토어 픽업 주문에 대한 체크인 요청을 제출하는 워크플로우를 확인합니다.
 
 **기능 영역:** 장바구니 체크아웃, 매장 픽업 주문을 위한 체크인 양식</br>
-**역할:** 책임자, 고객, 스토어 어소시에이트</br>
+**역할:** 관리자, 고객, 스토어 연결</br>
 **테스트 유형:** 모두 양수
 
 ### 대체 픽업 연락처
@@ -474,38 +475,38 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </td>
 <td>
 고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다.</td>
-<td>체크아웃 프로세스 중에 고객은 [!UICONTROL Alternate Pickup Contact] 배송 단계의 옵션입니다.
+<td>체크아웃 프로세스 중에 배송 단계에서 [!UICONTROL Alternate Pickup Contact] 옵션이 표시됩니다.
 </td>
 </tr>
 <tr>
-<td><strong>대체 픽업 기본 담당자, 체크인</strong>
+<td><strong>대체 픽업 기본 담당자, 체크 인</strong>
 <td>
-고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객이 [!UICONTROL Alternate Pickup Contact].</td>
-<td>체크아웃 프로세스 중에 고객은 [!UICONTROL Preferred Contact] 옵션을 선택합니다.</td>
+고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객이 [!UICONTROL Alternate Pickup Contact]을(를) 추가합니다.</td>
+<td>체크아웃 프로세스 중에 배송 단계에서 [!UICONTROL Preferred Contact] 옵션이 표시됩니다.</td>
 </td>
 </tr>
 <tr>
-<td><strong>대체 픽업 연락처 세부 정보, 체크인</strong>
+<td><strong>대체 픽업 연락처 세부 정보, 체크 인</strong>
 </td>
 <td>
-고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 [!UICONTROL Alternate Pickup Contact] 배송 단계에서 확인할 수 있습니다.
+고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃하는 동안 고객은 배송 단계에서 [!UICONTROL Alternate Pickup Contact]을(를) 선택합니다.
 </td>
-<td>고객에게 연락처 세부 정보를 입력하는 입력 옵션이 표시됩니다. [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], 및 [!UICONTROL Email].</td>
+<td>[!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone] 및 [!UICONTROL Email] 연락처 세부 정보를 입력하는 입력 옵션이 고객에게 표시됩니다.</td>
 </tr>
 <tr>
-<td><strong>대체 픽업, 이메일 체크인</strong>
+<td><strong>대체 픽업, 전자 메일 확인</strong>
 </td>
-<td>고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 [!UICONTROL Alternate Pickup Contact] 배송 단계에서 연락처 세부 정보를 추가하고 주문을 제출합니다.</td>
+<td>고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 배송 단계에서 [!UICONTROL Alternate Pickup Contact]을(를) 선택하고 연락처 세부 정보를 추가한 다음 주문을 제출합니다.</td>
 <td>고객과 대체 담당자 모두 주문에 대한 체크인 이메일을 받습니다.</td>
 </tr>
 <td><strong>대체 픽업, 주문 세부 사항</strong></td>
-<td>고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 [!UICONTROL Alternate Pickup Contact] 배송 단계에서 연락처 세부 정보를 추가하고 주문을 제출합니다.</td>
+<td>고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 배송 단계에서 [!UICONTROL Alternate Pickup Contact]을(를) 선택하고 연락처 세부 정보를 추가한 다음 주문을 제출합니다.</td>
 <td>관리자는 저장된 주문에 대한 추가 연락처 정보를 봅니다.</td>
 </tr>
 <tr>
-<td><strong>대체 픽업 담당자, 스토어 연관 주문 보기</strong>
+<td><strong>대체 픽업 연락처, 스토어 연결 주문 보기</strong>
 </td>
-<td>고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 [!UICONTROL Alternate Pickup Contact] 배송 단계에서 연락처 세부 정보를 추가하고 주문을 제출합니다.</td>
+<td>고객이 매장 내 픽업 옵션을 사용하여 주문을 제출합니다. 체크아웃 중에 고객은 배송 단계에서 [!UICONTROL Alternate Pickup Contact]을(를) 선택하고 연락처 세부 정보를 추가한 다음 주문을 제출합니다.</td>
 <td>매장 직원은 FaaS/ChaaS에서 주문에 대한 추가 연락처 정보를 볼 수 있습니다.</td>
 </td>
 </tr>
@@ -515,7 +516,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 ### 체크인 양식
 
 
-**기능 영역:** 체크인 양식</br>
+**기능 영역:** 체크 인 양식</br>
 **역할:** 고객</br>
 **테스트 유형:** 모두 양수
 
@@ -544,7 +545,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </tr>
 <tr>
 <td><strong>체크 인 작업(Check in Action) - 도착 확인</strong></td>
-<td>매장 내 픽업 주문은 FaaS에서 픽업 준비가 된 것으로 표시됩니다. 고객이 픽업 준비 이메일을 받고 다음을 선택합니다 [!UICONTROL Confirm Arrival].</td>
+<td>매장 내 픽업 주문은 FaaS에서 픽업 준비가 된 것으로 표시됩니다. 고객이 픽업 준비 이메일을 받고 [!UICONTROL Confirm Arrival]을(를) 선택합니다.</td>
 <td>고객은 주문에 대한 체크인 양식을 봅니다.</td>
 </tr>
 </tbody>
@@ -555,7 +556,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 테스트 계획의 이 섹션에서는 스토어 지원 앱에서 주문, 선택 및 전달 워크플로우를 테스트하기 위한 시나리오를 다룹니다.
 
 **기능 영역:** 스토어 지원 앱</br>
-**역할:** 스토어 어소시에이트</br>
+**역할:** 스토어 연결</br>
 **테스트 유형:** 모두 양수
 
 <table style="table-layout:auto">
@@ -566,7 +567,7 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 </tr>
 <tr>
 <td>
-<strong>단일 주문 피킹 - 행복한 경로, 곡면의 픽업</strong></td>
+<strong>단일 주문 선택—행복한 경로, 곡선형 선택</strong></td>
 <td>단일 및 복수 수량 품목을 피킹합니다. nil 픽이 없고 곡면으로 된 픽업(스테이징 포함)이 있습니다.
 </td>
 <td>
@@ -644,4 +645,4 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 배포 지침, 체크리스트 및 모범 사례에 대해서는 다음을 참조하십시오. [스토어 배포](https://devdocs.magento.com/cloud/live/stage-prod-live.html) Adobe Commerce 개발자 설명서에서 참조하십시오.
+>클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 배포 지침, 체크리스트 및 모범 사례에 대해서는 Adobe Commerce 개발자 설명서에서 [스토어 배포](https://devdocs.magento.com/cloud/live/stage-prod-live.html)를 참조하십시오.

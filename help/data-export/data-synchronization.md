@@ -1,6 +1,6 @@
 ---
 title: SaaS 데이터 내보내기와 데이터 동기화
-description: 다음 방법을 알아봅니다. [!DNL SaaS Data Export] Adobe Commerce 인스턴스와 연결된 SaaS 서비스 간에 데이터를 수집하고 동기화합니다.
+description: ' [!DNL SaaS Data Export] 이(가) Adobe Commerce 인스턴스와 연결된 SaaS 서비스 간에 데이터를 수집하고 동기화하는 방법에 대해 알아봅니다.'
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Catalog Service, Live Search 또는 Product Recommendations과 같이 데이터 내보내기가 필요한 Commerce Service를 설치하면 데이터 수집 및 동기화 프로세스를 관리하기 위해 Saas 데이터 내보내기 모듈 컬렉션이 설치됩니다.
 
-SaaS 데이터 내보내기는 데이터를 최신 상태로 유지하기 위해 제품 데이터를 Adobe Commerce 인스턴스에서 Commerce 서비스 플랫폼으로 지속적으로 이동합니다. 예를 들어, Product Recommendations은 올바른 이름, 가격 및 가용성으로 권장 사항을 정확하게 반환하기 위해 현재 카탈로그 정보가 필요합니다. 사용 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) 동기화 프로세스 또는 명령줄 인터페이스를 관찰하고 관리하여 동기화를 트리거하고 Commerce 서비스에서 사용할 제품 데이터를 다시 색인화합니다.
+SaaS 데이터 내보내기는 데이터를 최신 상태로 유지하기 위해 제품 데이터를 Adobe Commerce 인스턴스에서 Commerce 서비스 플랫폼으로 지속적으로 이동합니다. 예를 들어, Product Recommendations은 올바른 이름, 가격 및 가용성으로 권장 사항을 정확하게 반환하기 위해 현재 카탈로그 정보가 필요합니다. [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync)를 사용하여 동기화 프로세스를 관찰 및 관리하거나 명령줄 인터페이스를 사용하여 동기화를 트리거하고 Commerce 서비스에서 사용할 제품 데이터를 다시 인덱싱할 수 있습니다.
 
 다음 다이어그램은 SaaS 데이터 내보내기 플로우를 보여 줍니다.
 
-![Adobe Commerce을 위한 SaaS 데이터 내보내기 수집 및 동기화 흐름](assets/data-export-flow.png){width="900" zoomable="yes"}
+Adobe Commerce에 대한 ![SaaS 데이터 내보내기 컬렉션 및 동기화 흐름](assets/data-export-flow.png){width="900" zoomable="yes"}
 
 SaaS 데이터 내보내기 흐름의 주요 구성 요소는 다음과 같습니다.
 
@@ -31,9 +31,9 @@ SaaS 데이터 내보내기 흐름의 주요 구성 요소는 다음과 같습�
 
 SaaS 데이터 내보내기에는 엔티티 피드를 처리하는 두 가지 모드가 있습니다.
 
-- **즉시 내보내기 모드**—이 모드에서는 데이터가 수집되어 한 번의 반복으로 Commerce 서비스로 즉시 전송됩니다. 이 모드는 Commerce 서비스에 대한 엔티티 업데이트 전달 속도를 높이고 피드 테이블의 저장소 크기를 줄입니다.
+- **즉시 내보내기 모드**—이 모드에서는 데이터가 수집되어 단일 반복으로 Commerce 서비스로 즉시 전송됩니다. 이 모드는 Commerce 서비스에 대한 엔티티 업데이트 전달 속도를 높이고 피드 테이블의 저장소 크기를 줄입니다.
 
-- **레거시 내보내기 모드**- 이 모드에서는 데이터가 단일 프로세스로 수집됩니다. 그런 다음 cron 작업은 연결된 상거래 서비스로 수집된 데이터를 전송합니다. 데이터 내보내기 로그 항목에서 기존 모드를 사용하는 피드에 레이블이 지정됩니다 `(legacy)`.
+- **기존 내보내기 모드**—이 모드에서는 데이터가 단일 프로세스로 수집됩니다. 그런 다음 cron 작업은 연결된 상거래 서비스로 수집된 데이터를 전송합니다. 데이터 내보내기 로그 항목에서 레거시 모드를 사용하는 피드의 레이블은 `(legacy)`입니다.
 
 ## 동기화 유형
 
@@ -54,34 +54,34 @@ Adobe Commerce 인스턴스를 Commerce 서비스에 연결한 후 전체 동기
 데이터 내보내기 프로세스에서는 다음 cron 작업을 사용하여 부분 동기화 작업을 자동화합니다.
 
 - &quot;index&quot; cron 그룹 작업:
-   - 다음 `indexer_reindex_all_invalid` 작업이 모든 잘못된 피드를 다시 인덱싱합니다. 표준 Adobe Commerce 크론 작업입니다.
-   - 다음 `saas_data_exporter` 작업은 레거시 내보내기 피드에 사용됩니다.
-   - 다음 `sales_data_exporter` 작업은 판매 데이터 내보내기 피드에만 해당됩니다.
+   - `indexer_reindex_all_invalid` 작업이 잘못된 피드를 모두 다시 인덱싱합니다. 표준 Adobe Commerce 크론 작업입니다.
+   - `saas_data_exporter` 작업은 레거시 내보내기 피드에 사용됩니다.
+   - `sales_data_exporter` 작업은 판매 데이터 내보내기 피드에 따라 다릅니다.
 
 이러한 작업은 매 분마다 실행됩니다.
 
 부분 동기화가 작동하려면 Commerce 애플리케이션에 다음 구성이 필요합니다.
 
-- [작업 예약이 cron job을 통해 활성화됨](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [cron 작업을 통해 작업 일정을 사용할 수 있습니다](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
-- 모든 SaaS 데이터 내보내기 인덱서가에 구성되어 있습니다. `Update by Schedule` 모드.
+- 모든 SaaS 데이터 내보내기 인덱서가 `Update by Schedule` 모드에서 구성되었습니다.
 
-  SaaS 데이터 내보내기 버전 103.1.0 이상에서 `Update by Schedule` 모드는 기본적으로 활성화되어 있습니다. Commerce CLI 명령을 사용하여 서버에서 인덱스 구성을 확인할 수 있습니다. `bin/magento indexer:show-mode | grep -i feed`
+  SaaS 데이터 내보내기 버전 103.1.0 이상에서는 기본적으로 `Update by Schedule` 모드가 활성화되어 있습니다. Commerce CLI 명령 `bin/magento indexer:show-mode | grep -i feed`을(를) 사용하여 서버에서 인덱스 구성을 확인할 수 있습니다.
 
 ### 실패한 항목 동기화 다시 시도
 
 실패한 항목 동기화 다시 시도는 별도의 프로세스를 사용하여 동기화 프로세스 중 오류(예: 애플리케이션 오류, 네트워크 중단 또는 SaaS 서비스 오류)로 인해 동기화에 실패한 항목을 다시 보냅니다. 이 동기화에 대한 구현도 cron 작업을 기반으로 합니다.
 
-- `resync_failed_feeds_data_exporter` cron 그룹 작업:
-   - 다음 `<feed name>_feed_resend_failed_feeds_items` 작업이 동기화에 실패한 항목을 다시 보냅니다. 예: `products_feed_resend_failed_items`.
+- `resync_failed_feeds_data_exporter`개의 cron 그룹 작업:
+   - `<feed name>_feed_resend_failed_feeds_items` 작업이 동기화에 실패한 항목을 다시 보냅니다(예: `products_feed_resend_failed_items`).
 
 ### 동기화 프로세스 보기 및 관리
 
 대부분의 동기화 활동은 애플리케이션 구성에 따라 자동으로 처리됩니다. 그러나 SaaS 데이터 내보내기는 프로세스를 관리하는 도구도 제공합니다.
 
-- 관리자는 동기화 진행 상황을 확인 및 추적하고 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- 관리자는 동기화 진행 상황을 보고 추적하고 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)에서 데이터에 대한 정보를 가져올 수 있습니다.
 
-- Commerce 애플리케이션 서버에 액세스할 수 있는 개발자, 시스템 통합자 또는 관리자는 Adobe Commerce 명령줄 도구(CLI)를 사용하여 동기화 프로세스 및 데이터 피드를 관리할 수 있습니다. 다음을 참조하십시오 [데이터 내보내기 명령 참조](data-export-cli-commands.md).
+- Commerce 애플리케이션 서버에 액세스할 수 있는 개발자, 시스템 통합자 또는 관리자는 Adobe Commerce 명령줄 도구(CLI)를 사용하여 동기화 프로세스 및 데이터 피드를 관리할 수 있습니다. [데이터 내보내기 명령 참조](data-export-cli-commands.md)를 참조하십시오.
 
 ### Commerce 애플리케이션 구성 확인
 
@@ -89,6 +89,6 @@ Commerce 인스턴스가 올바르게 구성된 경우에만 부분 동기화 �
 
 - [cron 작업이 실행 중인지 확인](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- 인덱서가 다음에서 실행 중인지 확인 [관리자](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 또는 Commerce CLI 명령 사용 `bin/magento indexer:info`.
+- 인덱서가 [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)에서 실행되거나 Commerce CLI 명령 `bin/magento indexer:info`을(를) 사용하여 실행되고 있는지 확인하십시오.
 
-- 다음 피드에 대한 인덱서가 로 설정되어 있는지 확인합니다. `Update by Schedule`: 카탈로그 속성, 제품, 제품 재정의 및 제품 변형. 인덱서는 다음 위치에서 확인할 수 있습니다. [색인 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) 관리에서 또는 CLI 사용(`bin/magento indexer:show-mode | grep -i feed`).
+- 카탈로그 특성, Product, Product Overrides 및 Product Variant 피드의 인덱서가 `Update by Schedule`(으)로 설정되어 있는지 확인하십시오. 관리자의 [인덱스 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)에서 또는 CLI(`bin/magento indexer:show-mode | grep -i feed`)를 사용하여 인덱서를 확인할 수 있습니다.

@@ -19,7 +19,7 @@ Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 �
 
 >[!BEGINSHADEBOX &quot;릴리스 정보&quot;]
 
-다음을 참조하십시오 [설명서의 새로운 기능](whats-new.md) 또는 [릴리스 정보](release-notes-all.md) 각 Commerce 서비스용.
+각 Commerce 서비스에 대해 [설명서의 새로운 기능](whats-new.md) 또는 [릴리스 노트](release-notes-all.md)를 참조하십시오.
 
 >[!ENDSHADEBOX]
 
@@ -51,28 +51,28 @@ Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 �
 <tr>
   <td valign="top" width="200px">
     <img alt="결제 서비스" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>결제 서비스</strong></a>  <br><em>(Magento Open Source 가능)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>결제 서비스</strong></a> <br><em>(Magento Open Source 사용 가능)</em>
     <div>무이자 지불 할부, 결제 처리, 주문 및 청구서에 대한 단일 보기를 포함하여 다양한 결제 방법을 쉽게 제공하여 고객 만족을 유도합니다.</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="주문 처리 저장" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>주문 처리 저장</strong></a></br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>이행 저장</strong></a></br>
     <div>모바일 장치를 통해 사용할 수 있는 포괄적인 이행 워크플로우를 제공하여 온라인 구매, 매장 구매(BOPIS) 고객 경험을 제공하고 직원 생산성을 극대화합니다.</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon 판매 채널</strong></a> <br><em>(Magento Open Source 가능)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon 판매 채널</strong></a> <br><em>(Magento Open Source 사용 가능)</em>
     <div>세계에서 가장 큰 글로벌 온라인 쇼핑 대상과 통합하여 단일 대시보드를 통해 Amazon 판매, 데이터 자동화 및 동기화 제공, Amazon 목록 관리 등을 수행할 수 있습니다.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>채널 관리자</strong></a> <br><em>(Magento Open Source 가능)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>채널 관리자</strong></a> <br><em>(Magento Open Source 사용 가능)</em>
     <div>월마트 마켓플레이스와 통합하여 매출 증대, 신규 고객 유치, 운영 효율화, 시간 절약 등의 효과를 누릴 수 있습니다. 직원들이 Commerce에서 Walmart Marketplace 판매, 재고 및 가격을 원활하게 관리할 수 있습니다.</div>
   </td>
    </tr>

@@ -1,6 +1,6 @@
 ---
 title: "동의어 유형"
-description: "일방향 및 양방향 [!DNL Live Search] 동의어는 키워드의 정의를 확장합니다."
+description: "단방향 [!DNL Live Search] 동의어는 키워드의 정의를 확장합니다."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -25,15 +25,15 @@ ht-degree: 0%
 단방향 동의어는 키워드의 하위 집합이지만 보다 구체적인 의미가 있습니다. 예를 들어, 캐프리와 반바지는 바지이지만 모든 바지가 캐프리나 반바지는 아닙니다. 바지 검색에 카프리와 반바지가 포함됩니다. 그러나 반바지를 검색하면 캐퍼리가 반환되지 않습니다.
 
 **스웨트 셔츠** ![단방향 선택기](assets/btn-one-way.png) 후드
-**바지** ![단방향 선택기](assets/btn-one-way.png) 카프리스 ![다중 단방향 선택기](assets/btn-multiple-one-way.png) 종아리 길이 바지 ![다중 단방향 선택기](assets/btn-multiple-one-way.png) 자루 던지기 선수
+**바지** ![단방향 선택기](assets/btn-one-way.png) capris ![여러 단방향 선택기](assets/btn-multiple-one-way.png) 종아리 길이 바지 ![여러 단방향 선택기](assets/btn-multiple-one-way.png) 페들 푸셔
 
 ## 우수 사례
 
-을 최대한 활용하기 위해 다음 모범 사례를 염두에 두십시오. [!DNL Live Search] 동의어
+[!DNL Live Search] 동의어를 최대한 활용하려면 다음 모범 사례를 참고하십시오.
 
 ### &quot;정지어&quot; 사용 안 함
 
-[!DNL Live Search] 다음과 같이 동의어에서 일반적인 영어 &quot;stop words&quot;를 필터링합니다.
+[!DNL Live Search]은(는) 다음과 같이 동의어에서 일반적인 영어 &quot;정지어&quot;를 필터링합니다.
 
 a, an, and, are, as, at, be, but, by, for, if, in, into, is, it, no, not, of, on, or, such, that, the, their, then, there, these, they, this, to, was, will, with
 

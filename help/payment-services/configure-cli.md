@@ -1,6 +1,6 @@
 ---
 title: 명령줄 구성
-description: 설치 후 다음을 구성할 수 있습니다. [!DNL Payment Services] 명령줄 인터페이스(CLI) 사용.
+description: 설치 후 명령줄 인터페이스(CLI)를 사용하여  [!DNL Payment Services] 을(를) 구성할 수 있습니다.
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
@@ -14,23 +14,23 @@ ht-degree: 0%
 
 # 명령줄 구성
 
-설치 후 [!DNL Payment Services]에서 쉽게 구성할 수 있습니다. [홈 내](payments-home.md) 또는 CLI를 통해 실행할 수도 있습니다.
+[!DNL Payment Services]을(를) 설치한 후 [홈](payments-home.md)에서 또는 명령줄 인터페이스(CLI)를 통해 쉽게 구성할 수 있습니다.
 
 ## 데이터 내보내기 구성
 
-[!DNL Payment Services] 에서 내보낸 주문 데이터 결합 [!DNL Magento Open Source] 및 [!DNL Adobe Commerce] 유용한 보고서를 작성하기 위해 결제 공급자의 결제 데이터를 집계한 경우 다음 [!DNL Payment Services] 확장은 인덱서를 사용하여 보고서에 필요한 모든 데이터를 효율적으로 수집합니다.
+[!DNL Payment Services]은(는) [!DNL Magento Open Source] 및 [!DNL Adobe Commerce]에서 내보낸 주문 데이터를 결제 공급자의 집계된 결제 데이터와 결합하여 유용한 보고서를 만듭니다. [!DNL Payment Services] 확장은 인덱서를 사용하여 보고서에 필요한 모든 데이터를 효율적으로 수집합니다.
 
-에 사용된 데이터에 대해 알아보려면 [!DNL Payment Services] 보고, 참조 [주문 결제 상태 보고서](order-payment-status.md#data-used-in-the-report).
+[!DNL Payment Services] 보고에 사용된 데이터에 대한 자세한 내용은 [결제 상태 보고서 주문](order-payment-status.md#data-used-in-the-report)을 참조하세요.
 
-### 크론 구성 [!DNL Magento Open Source]
+### [!DNL Magento Open Source]에서 크론 구성
 
-을(를) 사용하려면 `BY SCHEDULE` 인덱스 모드 [!DNL Magento Open Source], cron 을 구성해야 합니다. 다음을 참조하십시오 [cron 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+[!DNL Magento Open Source]에서 `BY SCHEDULE` 인덱스 모드를 사용하려면 cron을 구성해야 합니다. [cron 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)을 참조하세요.
 
 ### 인덱서 설정
 
-주문 데이터를 내보내고 두 가지 인덱스 모드 중 하나를 사용하여 결제 서비스에서 지속합니다.`ON SAVE` (기본값) 또는 `BY SCHEDULE` (권장).
+주문 데이터를 내보내고 두 인덱스 모드 중 하나(`ON SAVE`(기본값) 또는 `BY SCHEDULE`(권장))를 사용하여 결제 서비스에서 유지합니다.
 
-다음 색인은 다음에 대한 것입니다. [!DNL Payment Services]:
+[!DNL Payment Services]에 대한 색인은 다음과 같습니다.
 
 | 코드 | 이름 | 설명 |
 |    ---    |  ---  |  ---  |
@@ -48,17 +48,17 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >명령에 인덱서를 지정하지 않으면 모든 인덱서가 동일한 값으로 업데이트됩니다. 특정 인덱서를 변경하려면 해당 인덱서를 명령에 나열해야 합니다.
 
-인덱서의 모드를 수동으로 변경하는 방법에 대한 자세한 내용은 [인덱서 구성](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} 개발자 설명서에서 참조하십시오. 관리에서 변경하는 방법에 대해 알아보려면 다음을 참조하십시오. [색인 관리](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} ( 핵심 사용 안내서)를 참조하십시오.
+인덱서의 모드를 수동으로 변경하는 방법에 대한 자세한 내용은 개발자 설명서에서 [인덱서 구성](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"}을(를) 참조하십시오. 관리에서 변경하는 방법에 대해 알아보려면 핵심 사용 안내서의 [인덱스 관리](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}를 참조하십시오.
 
 ### 수동으로 데이터 다시 인덱싱
 
-데이터가 자동으로 발생할 때까지 기다리지 않고 수동으로 데이터를 다시 인덱싱할 수 있습니다. 다음을 참조하십시오 [색인 재지정](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} 위치: [인덱서 관리](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} 추가 정보.
+데이터가 자동으로 발생할 때까지 기다리지 않고 수동으로 데이터를 다시 인덱싱할 수 있습니다. 자세한 내용은 [인덱서 관리](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"}의 [인덱스 다시 지정](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"}을 참조하십시오.
 
-날짜 `BY SCHEDULE` 모드가 설정되면 시스템이 변경된 엔티티를 추적하고 cron 작업이 설정된 일정에 따라 변경된 엔티티에 대한 인덱스를 업데이트합니다. 다음을 참조하십시오 [명령줄에서 cron 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) 위치: [cron 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) cron 작업을 사용하여 색인화를 수동으로 트리거하는 방법에 대해 알아봅니다.
+`BY SCHEDULE` 모드가 설정되면 시스템이 변경된 엔터티를 추적하고 cron 작업이 설정된 일정에 따라 해당 엔터티의 인덱스를 업데이트합니다. cron 작업을 사용하여 인덱싱을 수동으로 트리거하는 방법에 대해 알아보려면 [명령줄에서 cron 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run)([cron 구성 및 실행](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html))을 참조하십시오.
 
 ### 재인덱싱된 데이터를 결제 서비스로 보내기
 
-데이터가 인덱싱되면 자동으로 로 전송됩니다. [!DNL Payment Services]. 다음 명령을 사용하여 인덱싱된 데이터를 전송하는 프로세스를 수동으로 트리거할 수도 있습니다.
+데이터가 인덱싱되면 자동으로 [!DNL Payment Services](으)로 전송됩니다. 다음 명령을 사용하여 인덱싱된 데이터를 전송하는 프로세스를 수동으로 트리거할 수도 있습니다.
 
 ```bash
 bin/magento saas:resync --feed [feedName]
@@ -71,7 +71,7 @@ bin/magento saas:resync --feed [feedName]
 | `bin/magento saas:resync --feed [feedName]` | 지정된 피드의 색인 재지정을 수행하고 해당 서비스로 보냅니다. |
 | `bin/magento saas:resync --no-reindex` | 인덱싱을 건너뛰고 인덱스에서 동기화되지 않은 데이터를 보냅니다. |
 
-다음 `--feed` 매개 변수를 사용하면 전송할 피드를 지정할 수 있습니다.
+`--feed` 매개 변수를 사용하면 전송할 피드를 지정할 수 있습니다.
 
 | 피드 | 설명 |
 |  ---  |  ---  |
@@ -82,22 +82,22 @@ bin/magento saas:resync --feed [feedName]
 | `paymentServicesStoresProduction` | 프로덕션 모드로 저장 |
 | `paymentServicesStoresSandbox` | 샌드박스 모드로 저장 |
 
-보고서에 필요한 모든 데이터가 (으)로 전송됩니다 [!DNL Payment Services] cron 이 구성되고 설치된 경우 자동으로 표시됩니다. cron 데이터를에 전송하는 프로세스를 수동으로 트리거할 수도 있습니다 [!DNL Payment Services].
+cron이 구성 및 설치된 경우 보고서에 필요한 모든 데이터가 자동으로 [!DNL Payment Services](으)로 전송됩니다. cron 데이터를 [!DNL Payment Services](으)로 전송하는 프로세스를 수동으로 트리거할 수도 있습니다.
 
 ```bash
 bin/magento cron:run --group payment_services_data_export
 ```
 
-리인덱싱 및 인덱서에 대한 자세한 내용은 [인덱서 관리](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 개발자 설명서의 항목입니다.
+리인덱싱과 인덱서에 대한 자세한 내용은 개발자 설명서에서 [인덱서 관리](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) 항목을 참조하십시오.
 
 ## L2/L3 처리 구성
 
-[!DNL Payment Services] 는 카드 결제 트랜잭션의 레벨 2 및 레벨 3 데이터를 처리하여 가맹점에 추가 정보를 제공할 수 있습니다.
+[!DNL Payment Services]은(는) 카드 결제 거래에서 레벨 2 및 레벨 3 데이터를 처리하여 가맹점에 대한 추가 정보를 제공할 수 있습니다.
 
 >[!WARNING]
 >
-> PayPal을 사용한 레벨 2 및 레벨 3 처리와 통합은 미국 판매자만 사용할 수 있습니다. 다음을 참조하십시오 [결제 처리](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} 자세한 내용은 PayPal 개발자 설명서 를 참조하십시오.
+> PayPal을 사용한 레벨 2 및 레벨 3 처리와 통합은 미국 판매자만 사용할 수 있습니다. 자세한 내용은 PayPal 개발자 설명서에서 [결제 처리](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}를 참조하십시오.
 
-L2/L3 처리 데이터를 [!DNL Payment Services]또는 질문이 있는 경우 다음으로 문의하십시오. [!DNL Payment Services] 계정 관리자.
+[!DNL Payment Services]에 대한 L2/L3 처리 데이터를 사용하거나 질문이 있는 경우 [!DNL Payment Services] 계정 관리자에게 문의하십시오.
 
-에서 사용되는 L2 및 L3 처리에 대해 알아보려면 [!DNL Payment Services], 참조 [레벨 2 및 레벨 3 처리](levels-card-payment-transactions.md).
+[!DNL Payment Services]에서 사용되는 L2 및 L3 처리에 대한 자세한 내용은 [수준 2 및 수준 3 처리](levels-card-payment-transactions.md)를 참조하십시오.

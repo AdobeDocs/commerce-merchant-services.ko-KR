@@ -1,6 +1,6 @@
 ---
 title: 제품 목록 페이지 위젯
-description: 활성화 및 스타일링 [!DNL Live Search Product Listing Page Widget]
+description: ' [!DNL Live Search Product Listing Page Widget] 사용 및 스타일링'
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # 제품 목록 페이지 위젯
 
-다음 [!DNL Live Search Product Listing Page Widget] PLP( )는 Commerce Services 플랫폼을 사용하여 성능 향상되고 검색 가능하며 패싯 가능한 제품 목록 페이지를 제공합니다. 이 항목에서는 PLP 위젯을 활성화하고 스타일링하는 방법을 설명합니다.
+[!DNL Live Search Product Listing Page Widget](PLP)은 Commerce 서비스 플랫폼을 사용하여 성능 좋고, 검색 가능하며, 패싯 가능한 제품 목록 페이지를 제공합니다. 이 항목에서는 PLP 위젯을 활성화하고 스타일링하는 방법을 설명합니다.
 
 ## PLP 위젯 활성화
 
-다음의 경우 [!DNL Live Search] 서비스가 설치되면 기본 검색 기능이 [!DNL Live Search] 자동으로 표시됩니다.
+[!DNL Live Search] 서비스가 설치되면 기본 검색 기능이 자동으로 [!DNL Live Search](으)로 변환됩니다.
 
-다음 [!DNL Live Search] PLP 위젯은 새 설치에 대해 기본적으로 활성화되어 있습니다. 업그레이드 중인 경우 [!DNL Live Search] 그리고 PLP 위젯은 이미 꺼져 있으므로 그대로 유지됩니다.
+새 설치에 대해 [!DNL Live Search] PLP 위젯이 기본적으로 활성화됩니다. [!DNL Live Search]을(를) 업그레이드하고 있으며 PLP 위젯이 이미 꺼져 있는 경우 그대로 유지됩니다.
 
 >[!IMPORTANT]
 >
->다음의 경우 [!DNL Live Search Product Listing Page Widget] 이(가) 활성화되면 제품 목록 페이지의 정렬 순서 방향을 변경할 수 없습니다.
+>[!DNL Live Search Product Listing Page Widget]이(가) 활성화되면 제품 목록 페이지의 정렬 순서 방향을 변경할 수 없습니다.
 
 ## 위젯 기능
 
@@ -29,7 +29,7 @@ PLP 위젯은 다음과 같은 기본 기능을 제공합니다.
 
 - 장바구니에 추가 버튼 - 간단한 제품에만 사용할 수 있습니다.
 - 제품당 여러 이미지 - 구성 가능한 제품에 대해 다른 색상을 선택하면 이미지가 변경될 수 있습니다.
-- 색상 견본 지원 - 색상 속성의 철자를 입력해야 합니다. `color` 코드 유효성 검사를 제대로 수행합니다.
+- 색상 견본 지원 - 코드의 유효성을 제대로 검사하려면 색상 특성의 맞춤법이 `color`이어야 합니다.
 
 ### 위젯 사용자 정의
 
@@ -39,7 +39,7 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 - 다중 언어 지원
 - 가격 슬라이더
 
-위의 기능을 처리하도록 PLP 위젯을 사용자 정의하는 방법에 대한 자세한 내용은 `storefront-product-listing-page` readme 파일 [보고](https://github.com/adobe/storefront-product-listing-page/).
+위의 기능을 처리하기 위해 PLP 위젯을 사용자 정의하는 방법에 대한 자세한 내용은 다음 [repo](https://github.com/adobe/storefront-product-listing-page/)의 `storefront-product-listing-page` 추가 정보를 참조하십시오.
 
 >[!WARNING]
 >
@@ -47,15 +47,15 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 
 ## 스타일 예
 
-를 사용하여 사이트에 맞게 PLP 위젯의 모양과 느낌을 사용자 정의할 수 있습니다. [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)를 사용하여 사이트에 맞게 PLP 위젯의 모양과 느낌을 사용자 지정할 수 있습니다.
 
 >[!NOTE]
 >
->Adobe Commerce 테마 내에 사용자 지정 클래스가 있는 요소는 상속되지 않습니다. 사용자 정의 클래스와 일치하도록 이러한 요소를 특정 클래스에서 타깃팅해야 합니다. 기본 작업 클래스는 위젯 단추에서 작동하지 않습니다. CSS 내의 제네릭 타깃팅된 요소는 상속됩니다. `button` 위젯 단추에 적용됩니다.
+>Adobe Commerce 테마 내에 사용자 지정 클래스가 있는 요소는 상속되지 않습니다. 사용자 정의 클래스와 일치하도록 이러한 요소를 특정 클래스에서 타깃팅해야 합니다. 기본 작업 클래스는 위젯 단추에서 작동하지 않습니다. CSS 내의 제네릭 타깃팅된 요소는 상속됩니다. `button`은(는) 위젯 단추에 적용됩니다.
 
-강조 표시된 div에는 타겟 클래스가 포함되어 있습니다 `ds-sdk-product-item__product-name`.
+강조 표시된 div에 대상 클래스 `ds-sdk-product-item__product-name`이(가) 포함되어 있습니다.
 
-![쪽 매기기](assets/plp-css-example.png)
+![페이지 매김](assets/plp-css-example.png)
 
 제품 이름을 대문자로 만드는 규칙을 추가하여 사용자 지정합니다.
 
@@ -65,7 +65,7 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 }
 ```
 
-![쪽 매기기](assets/plp-css-example-after.png)
+![페이지 매김](assets/plp-css-example-after.png)
 
 ## CSS 클래스
 
@@ -74,13 +74,13 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 - `.ds-sdk-product-list`: 외부 div
 - `.ds-sdk-product-list__grid`: 내부 div
 
-![쪽 매기기](assets/plp-css-product-list.png)
+![페이지 매김](assets/plp-css-product-list.png)
 
 #### 제품 목록 페이지 매김
 
 - `.ds-plp-pagination`
 
-![쪽 매기기](assets/plp-css-pagination.png)
+![페이지 매김](assets/plp-css-pagination.png)
 
 - `.ds-plp-pagination_item`
 
@@ -88,7 +88,7 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 
 - `.ds-plp-pagination_item--current`
 
-![페이지 매김 현재 항목](assets/plp-css-pagination-item-current.png)
+![현재 항목 페이지 매김](assets/plp-css-pagination-item-current.png)
 
 ### 위젯
 
@@ -102,7 +102,7 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 
 - `.ds-sdk-sort-dropdown`
 
-![정렬 드롭다운](assets/plp-css-dropdown.png)
+![드롭다운 정렬](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -184,11 +184,11 @@ PLP 위젯의 기본 기능 외에도 다음과 같은 기능을 포함하도록
 - `.ds-sdk-loading__spinner`
 - `.ds-sdk-loading__spinner-label`
 
-![표시기 로드 중](assets/plp-css-loading.png)
+![표시기 로드](assets/plp-css-loading.png)
 
 ## PLP 위젯 비활성화
 
 PLP 위젯을 비활성화하려면 다음과 같이 하십시오.
 
-1. 다음으로 이동 **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **Storefront 기능** 및 설정 **제품 목록 위젯 활성화** &quot;아니요&quot;로 변경되었습니다.
-1. 선택 **구성 저장** 설정을 저장합니다.
+1. **스토어** > 설정 > **구성** > **[!DNL Live Search]** > **상점 기능**(으)로 이동하여 **제품 목록 위젯 사용**&#x200B;을(를) &quot;아니요&quot;로 설정합니다.
+1. 설정을 저장하려면 **구성 저장**&#x200B;을 선택하십시오.

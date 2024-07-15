@@ -22,11 +22,11 @@ ht-degree: 0%
 | 데이터 유형 | Storefront 데이터(행동 이벤트) | 백오피스 데이터(서버측 이벤트) |
 |---|---|---|
 | **정의** | 고객이 사이트에서 수행하는 클릭 또는 작업입니다. | 각 주문(과거 및 현재)의 라이프사이클 및 세부 정보에 대한 정보. |
-| **Adobe Commerce에 의해 캡처된 이벤트** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[제품 페이지 보기](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[추가 장바구니](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheck](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [주문](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[주문 내역](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Adobe Commerce에서 캡처한 이벤트** | [페이지 보기](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[제품 페이지 보기](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[장바구니에 추가](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[장바구니 열기](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[시작 체크아웃](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[완료 체크아웃](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[주문 내역](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### 다른 고객들은 어떤 성과를 얻었습니까?
 
-Adobe [!DNL Commerce] 고객은 Adobe을 사용하여 개인화된 포기 캠페인을 구현함으로써 비즈니스에 상당한 영향을 미쳤습니다 [!DNL Commerce], ADOBE [!DNL Journey Optimizer], 및 Adobe [!DNL Real-Time CDP].
+Adobe [!DNL Commerce] 고객은 Adobe [!DNL Commerce], Adobe [!DNL Journey Optimizer] 및 Adobe [!DNL Real-Time CDP]을(를) 사용하여 개인화된 포기 캠페인을 구현함으로써 중요한 비즈니스 영향을 받았습니다.
 
 글로벌 다중 브랜드 의류 소매업체:
 
@@ -44,55 +44,55 @@ Adobe [!DNL Commerce] 고객은 Adobe을 사용하여 개인화된 포기 캠페
 
 ## 시작하겠습니다.
 
-이 특정 사용 사례는 의 데이터를 사용하여 포기한 장바구니 이메일을 만드는 데 중점을 둡니다. [!DNL Commerce] 인스턴스 및 Adobe으로 보내기 [!DNL Journey Optimizer].
+이 특정 사용 사례에서는 [!DNL Commerce] 인스턴스의 데이터를 사용하여 포기한 장바구니 전자 메일을 만들어 [!DNL Journey Optimizer] Adobe으로 보내는 데 중점을 둡니다.
 
 ### Adobe Journey Optimizer란?
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) 은 쇼핑객을 위해 상거래 경험을 개인화할 수 있도록 지원합니다. 예를 들어, Journey Optimizer을 사용하여 소매 스토어에 대한 주별 판촉 행사 등 예약된 마케팅 캠페인을 만들고 게재하거나, 고객이 장바구니에 제품을 추가했지만 체크아웃 프로세스를 완료하지 않은 경우 포기한 장바구니 이메일을 생성할 수 있습니다.
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html)은(는) 쇼핑객을 위한 상거래 환경을 개인화하는 데 도움이 됩니다. 예를 들어, Journey Optimizer을 사용하여 소매 스토어에 대한 주별 판촉 행사 등 예약된 마케팅 캠페인을 만들고 게재하거나, 고객이 장바구니에 제품을 추가했지만 체크아웃 프로세스를 완료하지 않은 경우 포기한 장바구니 이메일을 생성할 수 있습니다.
 
-이 항목에서는 의 설명을 듣고 포기한 장바구니 이메일을 작성하는 방법을 알아봅니다. `checkout` 에서 이벤트가 생성됨 [!DNL Commerce] 인스턴스 및 Journey Optimizer의 해당 이벤트에 대한 응답.
+이 항목에서는 [!DNL Commerce] 인스턴스에서 생성된 `checkout` 이벤트를 수신하고 Journey Optimizer에서 해당 이벤트에 응답함으로써 포기한 장바구니 이메일을 작성하는 방법을 배웁니다.
 
 >[!IMPORTANT]
 >
->데모 목적으로 다음을 사용하십시오. [!DNL Commerce] 샌드박스 환경 을 사용하면 프로덕션 이벤트 데이터를 Experience Platform으로 보내는 storefront 및 back office 이벤트 데이터로 희석하지 않습니다.
+>데모용으로 [!DNL Commerce] 샌드박스 환경을 사용하면 프로덕션 이벤트 데이터를 Experience Platform으로 보내는 상점 및 백 오피스 이벤트 데이터로 희석하지 않습니다.
 
 ### 전제 조건
 
 이 단계를 시작하기 전에 다음을 확인하십시오.
 
-- Adobe을 사용할 수 있도록 프로비저닝되었습니다. [!DNL Journey Optimizer]. 확실하지 않은 경우 프로젝트 및 환경을 관리하는 시스템 통합자나 개발 팀에 문의하십시오.
-- 본인 [설치됨](install.md) 및 [구성됨](connect-data.md) 다음 [!DNL Data Connection] 의 확장 [!DNL Commerce].
-- 본인 [확인됨](connect-data.md#confirm-that-event-data-is-collected) 내 [!DNL Commerce] 이벤트 데이터가 Experience Platform 에지에 도착합니다.
+- Adobe [!DNL Journey Optimizer]을(를) 사용하도록 프로비저닝되었습니다. 확실하지 않은 경우 프로젝트 및 환경을 관리하는 시스템 통합자나 개발 팀에 문의하십시오.
+- [!DNL Commerce]에서 [!DNL Data Connection] 확장을 [설치](install.md) 및 [구성](connect-data.md)했습니다.
+- [!DNL Commerce] 이벤트 데이터가 Experience Platform 에지에 도착하는 것을 [확인](connect-data.md#confirm-that-event-data-is-collected)했습니다.
 
-## 1단계: [!DNL Commerce] 샌드박스 환경
+## 1단계: [!DNL Commerce] 샌드박스 환경에서 사용자 만들기
 
 샌드박스 환경에서 사용자를 만들고 사용자 계정 정보가 Experience Platform에 표시되는지 확인합니다. 지정한 이메일이 이 섹션의 뒷부분에서 포기한 장바구니 이메일을 보내는 데 사용된 이메일과 같이 유효한지 확인합니다.
 
-1. 로그인 또는 계정 만들기 [!DNL Commerce] 샌드박스 환경.
+1. [!DNL Commerce] 샌드박스 환경에서 로그인하거나 계정을 만드십시오.
 
    ![테스트 계정에 로그인](assets/sign-in-account.png){width="700" zoomable="yes"}
 
-   포함 [!DNL Data Connection] 확장이 설치 및 구성되면 이 계정 정보가 프로필로 Experience Platform에게 전송됩니다.
+   [!DNL Data Connection] 확장이 설치 및 구성된 상태에서 이 계정 정보는 프로필로 Experience Platform에게 전송됩니다.
 
-1. 사용자 계정 정보가 **[!UICONTROL Profile]** Experience Platform 섹션에 있는 마지막 항목이 될 필요가 없습니다.
+1. 사용자 계정 정보가 Experience Platform의 **[!UICONTROL Profile]** 섹션에 표시되는지 확인하십시오.
 
-   다음으로 이동 **[!UICONTROL Profiles]** Adobe Experience Platform. 클릭 **[!UICONTROL Detail]** 을 클릭하여 만든 프로필을 확인합니다.
+   Adobe Experience Platform의 **[!UICONTROL Profiles]**(으)로 이동합니다. 만든 프로필을 보려면 프로필에서 **[!UICONTROL Detail]**&#x200B;을(를) 클릭합니다.
 
    ![프로필 확인](assets/check-event-profile.png){width="700" zoomable="yes"}
 
 ## 2단계: Journey Optimizer에서 이벤트 보기
 
-내 [!DNL Commerce] 샌드박스 환경, 제품 페이지를 보고, 장바구니에 항목을 추가하고, 쇼핑객이 수행할 다양한 기타 활동을 완료하여 상점 첫 화면에서 이벤트를 트리거합니다. 그런 다음 이러한 이벤트가 Journey Optimizer으로 전달되는지 확인합니다.
+[!DNL Commerce] 샌드박스 환경에서 제품 페이지를 보고, 장바구니에 항목을 추가하고, 쇼핑객이 수행할 다양한 다른 활동을 완료하여 상점 전면에서 이벤트를 트리거합니다. 그런 다음 이러한 이벤트가 Journey Optimizer으로 전달되는지 확인합니다.
 
-1. 시작 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
-1. 선택 **[!UICONTROL Profiles]**.
-1. 설정 **[!UICONTROL Identity namespace]** 끝 `Email`.
-1. 설정 **[!UICONTROL Identity value]** 이메일 주소로 보냅니다.
-1. 프로필을 선택한 다음 **[!UICONTROL Events]** 탭.
+1. [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html)을(를) 시작합니다.
+1. **[!UICONTROL Profiles]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Identity namespace]**&#x200B;을(를) `Email`(으)로 설정합니다.
+1. **[!UICONTROL Identity value]**&#x200B;을(를) 전자 메일 주소로 설정합니다.
+1. 프로필을 선택한 다음 **[!UICONTROL Events]** 탭을 선택합니다.
 
    ![이벤트 세부 정보 확인](assets/check-event-details.png){width="700" zoomable="yes"}
 
-   다음 항목을 찾습니다. `commerce.checkouts` 이벤트 및 이벤트 페이로드를 검사합니다.
+   `commerce.checkouts` 이벤트를 찾아 이벤트 페이로드를 검사합니다.
 
    ```json
    "personID": "84281643067178465783746543501073369488", 
@@ -105,38 +105,38 @@ Adobe [!DNL Commerce] 고객은 Adobe을 사용하여 개인화된 포기 캠페
        } 
    ```
 
-   알 수 있듯이 전체 이벤트 페이로드에는 풍부한 이벤트 데이터가 포함되어 있습니다. 다음 섹션에서는 를 수신하고 응답하도록 Journey Optimizer에서 이벤트를 구성합니다. `commerce.checkouts` 에서 이벤트가 생성됨 [!DNL Commerce] 가게 앞이야
+   알 수 있듯이 전체 이벤트 페이로드에는 풍부한 이벤트 데이터가 포함되어 있습니다. 다음 섹션에서는 [!DNL Commerce] 상점 첫 화면에서 생성된 `commerce.checkouts` 이벤트를 수신하고 응답하도록 Journey Optimizer에서 이벤트를 구성합니다.
 
 ## 3단계: Journey Optimizer에서 이벤트 구성
 
-Journey Optimizer에서 두 개의 이벤트를 구성합니다. 한 개의 이벤트는 `commerce.checkouts` Commerce의 이벤트이며, 다른 하나는 포기한 장바구니 이메일을 트리거하기 전에 특정 시간이 경과할 때까지 기다리는 기본 시간 초과 이벤트입니다.
+Journey Optimizer에서 두 개의 이벤트를 구성합니다. 한 이벤트는 Commerce에서 `commerce.checkouts` 이벤트를 수신하고, 다른 이벤트는 포기한 장바구니 이메일을 트리거하기 전에 특정 시간이 경과할 때까지 기다리는 기본 시간 초과 이벤트입니다.
 
 ### 리스너 이벤트 만들기
 
-1. 시작 [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html)을(를) 시작합니다.
 
-1. 클릭 **[!UICONTROL Configurations]** 다음 아래에 **[!UICONTROL Administration]** 왼쪽 창의 섹션입니다.
+1. 왼쪽 창의 **[!UICONTROL Administration]** 섹션 아래에서 **[!UICONTROL Configurations]**&#x200B;을(를) 클릭합니다.
 
-1. 다음에서 **[!UICONTROL Events]** 타일, 클릭 **[!UICONTROL Manage]**.
+1. **[!UICONTROL Events]** 타일에서 **[!UICONTROL Manage]**&#x200B;을(를) 클릭합니다.
 
    ![Journey Optimizer 이벤트 구성](assets/ajo-config.png){width="700" zoomable="yes"}
 
-1. 다음에서 **[!UICONTROL Events]** 페이지, 클릭 **[!UICONTROL Create Event]**.
+1. **[!UICONTROL Events]** 페이지에서 **[!UICONTROL Create Event]**&#x200B;을(를) 클릭합니다.
 
 1. 오른쪽 탐색에서 다음과 같이 이벤트를 설정합니다.
 
-   1. 설정 **[!UICONTROL Name]** 끝: `firstname_lastname_checkout`.
-   1. 설정 **[!UICONTROL Type]** 끝 **[!UICONTROL Unitary]**.
-   1. 설정 **[!UICONTROL Event id typ]e** 끝 **[!UICONTROL Rule based]**.
-   1. 설정 **[!UICONTROL Schema]** (으)로 [!DNL Commerce] [스키마](update-xdm.md).
-   1. 선택 **[!UICONTROL Fields]** 을(를) 열려면 **[!UICONTROL Fields]** 페이지를 가리키도록 업데이트하는 중입니다. 그런 다음 이 이벤트에 유용한 필드를 선택합니다. 예를 들어 **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]**, 및 **[!UICONTROL Web]**.
-   1. 클릭 **[!UICONTROL OK]** 을 눌러 선택한 필드를 저장합니다.
-   1. 내부를 클릭합니다. **[!UICONTROL Event id condition]** 필드. 그런 다음 조건을 만듭니다. `eventType` 다음과 같음 `commerce.checkouts` 및 `personalEmail.address` 은 이전 섹션에서 프로필을 만들 때 사용한 이메일 주소와 같습니다.
+   1. **[!UICONTROL Name]**&#x200B;을(를) `firstname_lastname_checkout`(으)로 설정합니다.
+   1. **[!UICONTROL Type]**&#x200B;을(를) **[!UICONTROL Unitary]**(으)로 설정합니다.
+   1. **[!UICONTROL Event id typ]e**&#x200B;을(를) **[!UICONTROL Rule based]**(으)로 설정합니다.
+   1. **[!UICONTROL Schema]**&#x200B;을(를) [!DNL Commerce] [스키마](update-xdm.md)(으)로 설정합니다.
+   1. **[!UICONTROL Fields]** 페이지를 열려면 **[!UICONTROL Fields]**&#x200B;을(를) 선택하십시오. 그런 다음 이 이벤트에 유용한 필드를 선택합니다. 예를 들어 **[!UICONTROL Product list items]**, **[!UICONTROL Commerce]**, **[!UICONTROL eventType]** 및 **[!UICONTROL Web]** 아래의 모든 필드를 선택합니다.
+   1. **[!UICONTROL OK]**&#x200B;을(를) 클릭하여 선택한 필드를 저장합니다.
+   1. **[!UICONTROL Event id condition]** 필드 내부를 클릭합니다. 그러면 조건 만들기: `eventType`은(는) `commerce.checkouts`과(와) 같고 `personalEmail.address`은(는) 이전 섹션에서 프로필을 만들 때 사용한 이메일 주소와 같습니다.
 
-      ![Journey Optimizer 조건 설정](assets/ajo-set-condition.png){width="700" zoomable="yes"}
+      ![Journey Optimizer 설정 조건](assets/ajo-set-condition.png){width="700" zoomable="yes"}
 
-   1. 클릭 **[!UICONTROL OK]**.
-   1. 클릭 **[!UICONTROL Save]** 이벤트를 저장합니다.
+   1. **[!UICONTROL OK]**&#x200B;을(를) 클릭합니다.
+   1. 이벤트를 저장하려면 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
 ### 시간 초과 이벤트 만들기
 
@@ -144,24 +144,24 @@ Journey Optimizer에서 두 개의 이벤트를 구성합니다. 한 개의 이�
 
 1. 오른쪽 탐색에서 다음과 같이 이벤트를 설정합니다.
 
-   1. 설정 **[!UICONTROL Name]** 끝: `firstname_lastname_timeout`.
-   1. 설정 **[!UICONTROL Type]** 끝 **[!UICONTROL Unitary]**.
-   1. 설정 **[!UICONTROL Event id type]** 끝 **[!UICONTROL Rule based]**.
-   1. 설정 **[!UICONTROL Schema]** (으)로 [!DNL Commerce] [스키마](update-xdm.md).
-   1. 설정 **[!UICONTROL Schema]**, **[!UICONTROL Fields]**, 및 **[!UICONTROL Event id condition]** 을 위의 과 동일하게 설정합니다.
-   1. 클릭 **[!UICONTROL Save]** 이벤트를 저장합니다.
+   1. **[!UICONTROL Name]**&#x200B;을(를) `firstname_lastname_timeout`(으)로 설정합니다.
+   1. **[!UICONTROL Type]**&#x200B;을(를) **[!UICONTROL Unitary]**(으)로 설정합니다.
+   1. **[!UICONTROL Event id type]**&#x200B;을(를) **[!UICONTROL Rule based]**(으)로 설정합니다.
+   1. **[!UICONTROL Schema]**&#x200B;을(를) [!DNL Commerce] [스키마](update-xdm.md)(으)로 설정합니다.
+   1. **[!UICONTROL Schema]**, **[!UICONTROL Fields]** 및 **[!UICONTROL Event id condition]**&#x200B;을(를) 위와 동일하게 설정합니다.
+   1. 이벤트를 저장하려면 **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
 이 두 이벤트를 구성하여 포기한 장바구니 이메일을 보내는 여정을 만듭니다.
 
 ## 4단계: 체크아웃 여정 작성
 
-를 수신하는 여정 만들기 `commerce.checkouts` 지정된 시간이 경과하면 중단된 장바구니 이메일을 전송합니다.
+`commerce.checkouts` 이벤트를 수신한 다음 지정된 시간이 지난 후 포기한 장바구니 이메일을 보내는 여정을 만듭니다.
 
-1. Journey Optimizer에서 **[!UICONTROL Journeys]** 아래에 **J[!UICONTROL OURNEY MANAGEMENT]**.
-1. 클릭 **[!UICONTROL Create Journey]**.
+1. Journey Optimizer에서 **J[!UICONTROL OURNEY MANAGEMENT]**&#x200B;의 **[!UICONTROL Journeys]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Create Journey]**&#x200B;을(를) 클릭합니다.
 1. 여정 이름을 지정합니다.
-1. 클릭 **[!UICONTROL OK]** 여정을 저장합니다.
-1. 왼쪽 탐색( 아래) **[!UICONTROL EVENTS]** 섹션에서 이전에 만든 체크아웃 이벤트를 검색합니다. `firstname_lastname_checkout` 캔버스에 끌어서 놓으세요.
+1. **[!UICONTROL OK]**&#x200B;을(를) 클릭하여 여정을 저장합니다.
+1. **[!UICONTROL EVENTS]** 섹션 아래의 왼쪽 탐색에서 이전에 만든 체크아웃 이벤트 `firstname_lastname_checkout`을(를) 검색하고 캔버스에 끌어서 놓습니다.
 
    >[!TIP]
    >
@@ -170,13 +170,13 @@ Journey Optimizer에서 두 개의 이벤트를 구성합니다. 한 개의 이�
 1. 시간 초과 이벤트를 검색하고 캔버스에 추가합니다.
 1. 시간 초과 이벤트를 두 번 클릭합니다.
 
-   1. 다음에서 **[!UICONTROL Timeout]** 섹션에서 **[!UICONTROL Define the event time]** 확인란.
-   1. 다음에서 **[!UICONTROL Wait for]** 필드 입력 `1` 및 `Minute`.
-   1. 다음 항목 선택 **[!UICONTROL Set a timeout path]** 확인란.
+   1. **[!UICONTROL Timeout]** 섹션에서 **[!UICONTROL Define the event time]** 확인란을 선택합니다.
+   1. **[!UICONTROL Wait for]** 필드에 `1` 및 `Minute`을(를) 입력합니다.
+   1. **[!UICONTROL Set a timeout path]** 확인란을 선택합니다.
 
    이 시간 초과 구성을 사용하면 체크아웃을 수행하지만 1분 이내에 주문을 완료하지 않는 쇼퍼가 이 시간 초과 분기를 트리거합니다. 실제 프로덕션 환경에서는 이 값을 24시간과 같이 더 긴 기간 동안 설정합니다.
 
-1. 아래의 왼쪽 탐색에서 **[!UICONTROL ACTIONS]**, 추가 **[!UICONTROL Email]** 작업을 시간 초과 분기에 추가합니다. 여정은 다음과 같아야 합니다.
+1. **[!UICONTROL ACTIONS]** 아래의 왼쪽 탐색에서 **[!UICONTROL Email]** 작업을 시간 제한 분기에 추가합니다. 여정은 다음과 같아야 합니다.
 
    ![Journey Optimizer 캔버스](assets/ajo-canvas.png){width="700" zoomable="yes"}
 
@@ -184,11 +184,11 @@ Journey Optimizer에서 두 개의 이벤트를 구성합니다. 한 개의 이�
 
 포기한 장바구니가 감지될 때 전송되는 포기한 장바구니 이메일을 만듭니다.
 
-1. 위에서 만든 여정에서 **[!UICONTROL Email]** 아이콘으로 표시됩니다.
+1. 위에서 만든 여정에서 캔버스의 **[!UICONTROL Email]** 아이콘을 두 번 클릭합니다.
 
-1. 다음 [단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) 포기한 장바구니 이메일을 만들려면 Journey Optimizer 안내서를 참조하십시오.
+1. 포기한 장바구니 이메일을 만들려면 Journey Optimizer 안내서의 [단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email)를 따르십시오.
 
-여정 이제 Journey Optimizer에서 `commerce.checkouts` 의 이벤트 [!DNL Commerce] 일정 시간이 지난 후 전송된 포기한 장바구니 이메일을 저장합니다. 다음 섹션에서는 여정을 테스트하는 방법을 보여줍니다.
+이제 Journey Optimizer에서 [!DNL Commerce] 스토어에서 `commerce.checkouts` 이벤트를 수신하는 여정과 일정 시간이 지난 후 전송되는 포기한 장바구니 전자 메일이 있습니다. 다음 섹션에서는 여정을 테스트하는 방법을 보여줍니다.
 
 ## 5단계: 실시간으로 체크아웃 이벤트 트리거
 
@@ -196,9 +196,9 @@ Journey Optimizer에서 두 개의 이벤트를 구성합니다. 한 개의 이�
 
 1. Journey Optimizer에서 테스트 모드를 전환합니다.
 
-   ![테스트 모드 활성화](assets/ajo-enable-test.png){width="700" zoomable="yes"}
+   ![테스트 모드 사용](assets/ajo-enable-test.png){width="700" zoomable="yes"}
 
-1. 이 여정을 실시간으로 테스트하려면 다른 브라우저 탭을 열고 [!DNL Commerce] 샌드박스 환경의 웹 사이트
+1. 이 여정을 실시간으로 테스트하려면 다른 브라우저 탭을 열고 샌드박스 환경의 [!DNL Commerce] 웹 사이트로 이동합니다.
 
    1. 장바구니에 제품을 추가합니다.
    1. 체크아웃 페이지로 이동합니다.

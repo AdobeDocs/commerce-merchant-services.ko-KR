@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] 백오피스 이벤트
+# 백 오피스 이벤트 [!DNL Data Connection]개
 
-다음은 를 설치할 때 사용할 수 있는 Commerce 백 오피스 이벤트입니다. [!DNL Data Connection] 확장명. 이러한 이벤트가 수집하는 데이터는 Adobe Experience Platform으로 전송됩니다. 다음을 만들 수도 있습니다. [사용자 지정 이벤트](custom-events.md) 즉시 제공되지 않는 추가 데이터를 수집합니다.
+다음은 [!DNL Data Connection] 확장을 설치할 때 사용할 수 있는 Commerce 백 오피스 이벤트 목록입니다. 이러한 이벤트가 수집하는 데이터는 Adobe Experience Platform으로 전송됩니다. 또한 [사용자 지정 이벤트](custom-events.md)를 만들어 기본 제공되지 않은 추가 데이터를 수집할 수 있습니다.
 
-다음 이벤트가 수집하는 데이터 외에도 [기타 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) Adobe Experience Platform Web SDK에서 제공합니다.
+다음 이벤트에서 수집하는 데이터 외에 Adobe Experience Platform Web SDK에서 제공하는 [기타 데이터](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)도 가져옵니다.
 
-백 오피스 이벤트에는 서버측 데이터가 포함되어 있습니다. 이 데이터는 [주문 상태](#order-status) 주문, 취소, 환불, 배송 또는 완료 여부 등의 정보. 서버측 데이터에는 [고객 프로필 이벤트](#customer-profile-events) 계정이 생성, 업데이트 또는 삭제된 경우 등의 정보.
+백 오피스 이벤트에는 서버측 데이터가 포함되어 있습니다. 이 데이터에는 주문이 주문, 취소, 환불, 배송 또는 완료된 여부와 같은 [주문 상태](#order-status) 정보가 포함되어 있습니다. 서버측 데이터에는 계정이 생성, 업데이트 또는 삭제된 경우와 같은 [고객 프로필 이벤트](#customer-profile-events) 정보도 포함됩니다.
 
 >[!NOTE]
 >
->모든 백오피스 이벤트에는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 구매 가능한 경우 구매자의 이메일 주소 및 ECID가 포함된 필드.
+>모든 백오피스 이벤트에는 가능한 경우 구매자의 이메일 주소 및 ECID를 포함하는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 필드가 포함됩니다.
 
 ## 주문 상태
 
@@ -45,10 +45,10 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | 해당 결제 거래에 대한 고유 식별자. |
 | `commerce.order.payments.paymentAmount` | 결제 값. |
 | `commerce.order.payments.paymentType` | 해당 주문에 대한 결제 방법. 계산, 사용자 지정 값이 허용됩니다. |
-| `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.order.payments.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `commerce.order.taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액. |
 | `commerce.order.discountAmount` | 전체 주문에 적용되는 할인 금액을 나타냅니다. |
-| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예를 들어, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예: `2022-10-15T20:20:39+00:00`. |
 | `commerce.order.currencyCode` | 주문 합계에 사용되는 ISO 4217 통화 코드. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `commerce.shipping.shippingMethod` | 일반배송, 퀵배송, 매장픽업 등 고객이 선택한 배송 방법 |
@@ -65,9 +65,9 @@ ht-degree: 0%
 | `commerce.billing.address.city` | 도시 이름. |
 | `commerce.billing.address.state` | 상태 이름. 자유 형식의 필드입니다. |
 | `commerce.billing.address.postalCode` | 위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다. |
-| `commerce.billing.address.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `commerce.billing.address.country` | 정부가 관리하는 지역의 이름입니다. `xdm:countryCode`이(가) 아닌 모든 언어의 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.id` | 해당 제품 항목에 대한 라인 항목 식별자. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
@@ -75,10 +75,10 @@ ht-degree: 0%
 | `productListItems.priceTotal` | 제품 라인 항목에 대한 총 가격. |
 | `productListItems.quantity` | 장바구니에 있는 제품 단위의 수입니다. |
 | `productListItems.discountAmount` | 적용되는 할인 금액을 나타냅니다. |
-| `productListItems.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `productListItems.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `productListItems.selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
-| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
-| `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 특성을 식별합니다(예: `size` 또는 `color`). |
+| `productListItems.selectedOptions.value` | `small` 또는 `black`과(와) 같은 특성의 값을 식별합니다. |
 | `productListItems.categories` | 제품 범주에 대한 정보를 포함합니다. |
 | `productListItems.categories.id` | 카테고리에 대한 고유 식별자. |
 | `productListItems.categories.name` | 범주의 이름입니다. |
@@ -103,7 +103,7 @@ ht-degree: 0%
 | `commerce.order.currencyCode` | 주문 합계에 사용되는 ISO 4217 통화 코드. |
 | `commerce.order.purchaseOrderNumber` | 구매자가 해당 구매 또는 계약에 할당한 고유 식별자. |
 | `commerce.order.payments` | 해당 주문에 대한 결제 목록. |
-| `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.order.payments.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `commerce.order.payments.paymentType` | 해당 주문에 대한 결제 방법. 계산, 사용자 지정 값이 허용됩니다. |
 | `commerce.order.payments.paymentAmount` | 결제 값. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
@@ -115,7 +115,7 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
 | `commerce.commerceScope.websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.id` | 해당 제품 항목에 대한 라인 항목 식별자. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
@@ -146,10 +146,10 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | 해당 결제 거래에 대한 고유 식별자. |
 | `commerce.order.payments.paymentAmount` | 결제 값. |
 | `commerce.order.payments.paymentType` | 해당 주문에 대한 결제 방법. 계산, 사용자 지정 값이 허용됩니다. |
-| `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.order.payments.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `commerce.order.priceTotal` | 할인 및 세금이 모두 적용된 후 이 주문의 총 가격. |
 | `commerce.order.purchaseOrderNumber` | 구매자가 해당 구매 또는 계약에 할당한 고유 식별자. |
-| `commerce.order.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.order.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `commerce.order.lastUpdatedDate` | 상거래 시스템에서 특정 주문 레코드가 마지막으로 업데이트되는 시간. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `commerce.shipping.shippingMethod` | 일반배송, 퀵배송, 매장픽업 등 고객이 선택한 배송 방법 |
@@ -160,8 +160,8 @@ ht-degree: 0%
 | `commerce.shipping.address.city` | 도시 이름. |
 | `commerce.shipping.address.state` | 주 이름입니다. 자유 형식의 필드입니다. |
 | `commerce.shipping.address.postalCode` | 위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다. |
-| `commerce.shipping.address.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
-| `commerce.shipping.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.shipping.address.country` | 정부가 관리하는 지역의 이름입니다. `xdm:countryCode`이(가) 아닌 모든 언어의 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `commerce.shipping.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `commerce.shipping.trackingNumber` | 주문 품목 선적에 대해 운송 회사가 제공하는 추적 번호. |
 | `commerce.shipping.trackingURL` | 주문 항목의 배송 상태를 추적할 URL입니다. |
 | `commerce.shipping.shipDate` | 주문에서 하나 이상의 품목이 배송된 날짜. |
@@ -176,19 +176,19 @@ ht-degree: 0%
 | `commerce.billing.address.city` | 도시 이름. |
 | `commerce.billing.address.state` | 상태 이름. 자유 형식의 필드입니다. |
 | `commerce.billing.address.postalCode` | 위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다. |
-| `commerce.billing.address.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `commerce.billing.address.country` | 정부가 관리하는 지역의 이름입니다. `xdm:countryCode`이(가) 아닌 모든 언어의 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `productListItems.name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름. |
 | `productListItems.priceTotal` | 제품 라인 항목에 대한 총 가격. |
 | `productListItems.quantity` | 장바구니에 있는 제품 단위의 수입니다. |
 | `productListItems.discountAmount` | 적용되는 할인 금액을 나타냅니다. |
-| `productListItems.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `productListItems.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `productListItems.selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
-| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
-| `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 특성을 식별합니다(예: `size` 또는 `color`). |
+| `productListItems.selectedOptions.value` | `small` 또는 `black`과(와) 같은 특성의 값을 식별합니다. |
 | `productListItems.categories` | 제품 범주에 대한 정보를 포함합니다. |
 | `productListItems.categories.id` | 카테고리에 대한 고유 식별자. |
 | `productListItems.categories.name` | 범주의 이름입니다. |
@@ -217,7 +217,7 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
 | `commerce.commerceScope.websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 
 ### orderLineItemReturned
 
@@ -239,19 +239,19 @@ ht-degree: 0%
 | `commerce.refunds.transactionID` | 해당 환불에 대한 고유 식별자. |
 | `commerce.refunds.refundAmount` | 환불 금액. |
 | `commerce.refunds.refundPaymentType` | 해당 주문에 대한 결제 방법. 계산, 사용자 지정 값이 허용됩니다. |
-| `commerce.refunds.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.refunds.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `productListItems.name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름. |
 | `productListItems.priceTotal` | 제품 라인 항목에 대한 총 가격. |
 | `productListItems.quantity` | 장바구니에 있는 제품 단위의 수입니다. |
 | `productListItems.discountAmount` | 적용되는 할인 금액을 나타냅니다. |
-| `productListItems.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `productListItems.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `productListItems.selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
-| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
-| `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 특성을 식별합니다(예: `size` 또는 `color`). |
+| `productListItems.selectedOptions.value` | `small` 또는 `black`과(와) 같은 특성의 값을 식별합니다. |
 | `productListItems.categories` | 제품 범주에 대한 정보를 포함합니다. |
 | `productListItems.categories.id` | 카테고리에 대한 고유 식별자. |
 | `productListItems.categories.name` | 범주의 이름입니다. |
@@ -280,14 +280,14 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
 | `commerce.commerceScope.websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `productListItems.name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름. |
 | `productListItems.quantity` | 장바구니에 있는 제품 단위의 수입니다. |
 | `productListItems.selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
-| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
-| `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 특성을 식별합니다(예: `size` 또는 `color`). |
+| `productListItems.selectedOptions.value` | `small` 또는 `black`과(와) 같은 특성의 값을 식별합니다. |
 | `productListItems.categories` | 제품 범주에 대한 정보를 포함합니다. |
 | `productListItems.categories.id` | 카테고리에 대한 고유 식별자. |
 | `productListItems.categories.name` | 범주의 이름입니다. |
@@ -325,13 +325,13 @@ ht-degree: 0%
 | `commerce.commerceScope.storeViewCode` | 고유한 스토어 보기 코드입니다. 매장당 여러 개의 매장을 볼 수 있습니다. |
 | `commerce.commerceScope.websiteCode` | 고유 웹 사이트 코드. 하나의 환경에 여러 개의 웹 사이트가 있을 수 있습니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `productListItems.name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름. |
 | `productListItems.selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
-| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
-| `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 특성을 식별합니다(예: `size` 또는 `color`). |
+| `productListItems.selectedOptions.value` | `small` 또는 `black`과(와) 같은 특성의 값을 식별합니다. |
 | `productListItems.categories` | 제품 범주에 대한 정보를 포함합니다. |
 | `productListItems.categories.id` | 카테고리에 대한 고유 식별자. |
 | `productListItems.categories.name` | 범주의 이름입니다. |
@@ -364,9 +364,9 @@ ht-degree: 0%
 | `commerce.order.payments.paymentTransactionID` | 해당 결제 거래에 대한 고유 식별자. |
 | `commerce.order.payments.paymentAmount` | 결제 값. |
 | `commerce.order.payments.paymentType` | 해당 주문에 대한 결제 방법. 계산, 사용자 지정 값이 허용됩니다. |
-| `commerce.order.payments.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `commerce.order.payments.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `commerce.order.taxAmount` | 최종 지급의 일부로 구매자가 지불한 세액. |
-| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예를 들어, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | 상거래 시스템에서 새 주문이 생성된 시간 및 날짜. 예: `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | 하나 이상의 제품에 대한 배송 세부 정보. |
 | `commerce.shipping.shippingMethod` | 일반배송, 퀵배송, 매장픽업 등 고객이 선택한 배송 방법 |
 | `commerce.shipping.shippingAmount` | 고객이 배송비로 지불해야 했던 금액. |
@@ -377,26 +377,26 @@ ht-degree: 0%
 | `commerce.shipping.address.city` | 도시 이름. |
 | `commerce.shipping.address.state` | 주 이름입니다. 자유 형식의 필드입니다. |
 | `commerce.shipping.address.postalCode` | 위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다. |
-| `commerce.shipping.address.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `commerce.shipping.address.country` | 정부가 관리하는 지역의 이름입니다. `xdm:countryCode`이(가) 아닌 모든 언어의 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
 | `commerce.billing.address` | 청구 우편 주소. |
 | `commerce.billing.address.street1` | 기본 도로 정보, 아파트 번호, 도로 번호 및 도로명 |
 | `commerce.billing.address.street2` | 상세 정보 필드를 위한 추가 필드입니다. |
 | `commerce.billing.address.city` | 도시 이름. |
 | `commerce.billing.address.state` | 상태 이름. 자유 형식의 필드입니다. |
 | `commerce.billing.address.postalCode` | 위치의 우편 번호입니다. 우편 번호는 모든 국가에서 사용할 수 없습니다. 일부 국가에서는 우편 번호의 일부만 포함됩니다. |
-| `commerce.billing.address.country` | 정부가 관리하는 지역의 이름입니다. 제외 `xdm:countryCode`, 모든 언어로 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
+| `commerce.billing.address.country` | 정부가 관리하는 지역의 이름입니다. `xdm:countryCode`이(가) 아닌 모든 언어의 국가 이름을 사용할 수 있는 자유 형식의 필드입니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `productListItems` | 순서대로 제품 배열. |
 | `productListItems.SKU` | 재고 관리 장치. 제품에 대한 고유 식별자. |
 | `productListItems.name` | 제품의 표시 이름 또는 사람이 인식할 수 있는 이름. |
 | `productListItems.priceTotal` | 제품 라인 항목에 대한 총 가격. |
 | `productListItems.quantity` | 장바구니에 있는 제품 단위의 수입니다. |
 | `productListItems.discountAmount` | 적용되는 할인 금액을 나타냅니다. |
-| `productListItems.currencyCode` | 다음 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 사용된 통화 코드, 예: `USD` 또는 `EUR`. |
+| `productListItems.currencyCode` | 사용된 [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) 통화 코드(예: `USD` 또는 `EUR`). |
 | `productListItems.selectedOptions` | 구성 가능한 제품에 사용되는 필드. |
-| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 속성(예: ) 식별 `size` 또는 `color`. |
-| `productListItems.selectedOptions.value` | 속성 값(예: ) 식별 `small` 또는 `black`. |
+| `productListItems.selectedOptions.attribute` | 구성 가능한 제품의 특성을 식별합니다(예: `size` 또는 `color`). |
+| `productListItems.selectedOptions.value` | `small` 또는 `black`과(와) 같은 특성의 값을 식별합니다. |
 | `productListItems.categories` | 제품 범주에 대한 정보를 포함합니다. |
 | `productListItems.categories.id` | 카테고리에 대한 고유 식별자. |
 | `productListItems.categories.name` | 범주의 이름입니다. |
@@ -408,11 +408,11 @@ ht-degree: 0%
 >
 >이 기능은 Beta 버전입니다.
 
-서버측에서 캡처된 프로필 이벤트에는 다음과 같은 계정 정보가 포함됩니다. `accountCreated`, `accountUpdated`, 및 `accountDeleted`. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. 에서 캡처한 유사한 프로필 이벤트가 있습니다. [상점 첫 화면](events.md#customer-profile-events).
+서버측에서 캡처된 프로필 이벤트에는 `accountCreated`, `accountUpdated`, `accountDeleted` 등의 계정 정보가 포함됩니다. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. [storefront](events.md#customer-profile-events)에서 캡처된 유사한 프로필 이벤트가 있습니다.
 
 >[!NOTE]
 >
->각 고객 프로필 이벤트에는 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 프로필의 기본 식별자로 시스템에서 생성한 Commerce 고객 ID와 보조 식별자로 사용되는 이메일 ID가 포함된 필드.
+>각 고객 프로필 이벤트에는 프로필의 기본 식별자로 시스템에서 생성한 Commerce 고객 ID와 보조 식별자로 사용되는 이메일 ID가 포함된 [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) 필드도 포함됩니다.
 
 ### accountCreated
 
@@ -431,7 +431,7 @@ ht-degree: 0%
 | `person.name.firstName` | 고객의 이름을 포함합니다. |
 | `person.name.lastName` | 고객의 성을 포함합니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `commerce.commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
 | `commerce.commerceScope.environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
 | `commerce.commerceScope.storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
@@ -455,7 +455,7 @@ ht-degree: 0%
 | `person.name.firstName` | 고객의 이름을 포함합니다. |
 | `person.name.lastName` | 고객의 성을 포함합니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `commerce.commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
 | `commerce.commerceScope.environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
 | `commerce.commerceScope.storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |
@@ -479,7 +479,7 @@ ht-degree: 0%
 | `person.name.firstName` | 고객의 이름을 포함합니다. |
 | `person.name.lastName` | 고객의 성을 포함합니다. |
 | `personalEmail` | 개인 이메일 주소. |
-| `personalEmail.address` | 기술 주소(예: ) `name@domain.com` RFC2822 및 이후 표준에서 일반적으로 정의한 대로. |
+| `personalEmail.address` | 기술 주소(예: RFC2822 및 후속 표준에 일반적으로 정의된 `name@domain.com`). |
 | `commerce.commerceScope` | 이벤트가 발생한 위치(스토어 보기, 스토어, 웹 사이트 등)를 나타냅니다. |
 | `commerce.commerceScope.environmentID` | 환경 ID. 하이픈으로 구분된 32자리 영숫자 ID. |
 | `commerce.commerceScope.storeCode` | 고유한 스토어 코드. 웹사이트당 많은 매장이 있을 수 있습니다. |

@@ -1,6 +1,6 @@
 ---
-title: 이란? [!DNL Live Search]?
-description: "[!DNL Live Search] Adobe Commerce에서 빠르고 관련성이 높고 직관적인 검색 경험을 제공합니다."
+title: ' [!DNL Live Search]이란?'
+description: " Adobe Commerce의 [!DNL Live Search]은(는) 빠르고 관련성이 있으며 직관적인 검색 환경을 제공합니다."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
@@ -10,11 +10,11 @@ ht-degree: 0%
 
 ---
 
-# 이란? [!DNL Live Search]?
+# [!DNL Live Search]이란?
 
-[!DNL Live Search] 는 Adobe Commerce의 표준 검색 기능을 대체하는 기능입니다. 다음 [!DNL Live Search] 이 기능은 Composer와 함께 설치되고 [!DNL Commerce] 에 저장 [Commerce Services 커넥터](../landing/saas.md). 구성되면 기본 검색 텍스트 필드가 로 바뀝니다. [!DNL Live Search] 텍스트 필드. [!DNL Live Search] 또한 검색 결과를 검색할 때 강력한 필터링 기능을 제공하는 PLP(제품 목록 페이지) 위젯을 설치합니다.
+[!DNL Live Search]은(는) Adobe Commerce의 표준 검색 기능을 대체하는 기능입니다. [!DNL Live Search] 기능은 Composer와 함께 설치되어 있으며 [!DNL Commerce] 스토어를 [Commerce 서비스 커넥터](../landing/saas.md)에 연결합니다. 구성된 경우 기본 검색 텍스트 필드가 [!DNL Live Search] 텍스트 필드로 바뀝니다. [!DNL Live Search]은(는) 검색 결과를 검색할 때 강력한 필터링 기능을 제공하는 PLP(제품 목록 페이지) 위젯도 설치합니다.
 
-포함 [!DNL Live Search], 다음 작업을 수행할 수 있습니다.
+[!DNL Live Search]을(를) 사용하여 다음을 수행할 수 있습니다.
 
 - 의미 있는 검색 경험을 만들어 쇼핑객과 구매자가 가능한 한 적은 노력으로 원하는 것을 찾을 수 있도록 지원합니다.
 - 세션 내 구매자 행동에 대응하여 검색 결과를 AI에서 제공하는 동적 팩팅 및 재순위를 활용하십시오.
@@ -23,41 +23,41 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->사이트 검색과 관련하여 Adobe Commerce은 옵션을 제공합니다. 구현하기 전에 다음을 검토하십시오. [경계 및 제한](boundaries-limits.md) 다음을 확인하기 위한 정보 [!DNL Live Search] 은(는) 귀하의 비즈니스 요구에 적합합니다.
+>사이트 검색과 관련하여 Adobe Commerce은 옵션을 제공합니다. 구현하기 전에 [경계 및 제한](boundaries-limits.md) 정보를 검토하여 [!DNL Live Search]이(가) 비즈니스 요구 사항에 맞는지 확인하십시오.
 
 ## 아키텍처
 
-아키텍처의 Adobe Commerce 측에는 검색 호스팅이 포함됩니다 *관리자*, 카탈로그 데이터 동기화 및 쿼리 서비스 실행. 다음 이후 [!DNL Live Search] 가 설치되고 구성되면 Adobe Commerce은 SaaS 서비스와 검색 및 카탈로그 데이터 공유를 시작합니다. 이 시점에서 관리자는 검색을 설정, 사용자 지정 및 관리할 수 있습니다 [패싯](facets.md), [동의어](synonyms.md), 및 [머천다이징 규칙](category-merch.md).
+아키텍처의 Adobe Commerce 측에는 검색 *관리자*&#x200B;를 호스팅하고, 카탈로그 데이터를 동기화하고, 쿼리 서비스를 실행하는 작업이 포함됩니다. [!DNL Live Search]을(를) 설치하고 구성한 후 Adobe Commerce에서 검색 및 카탈로그 데이터를 SaaS 서비스와 공유하기 시작합니다. 이제 관리자는 검색 [패싯](facets.md), [동의어](synonyms.md) 및 [머천다이징 규칙](category-merch.md)을 설정하고, 사용자 지정하고, 관리할 수 있습니다.
 
-![라이브 검색 데이터 흐름](assets/ls-cs-data-flow.png)
+![실시간 검색 데이터 흐름](assets/ls-cs-data-flow.png)
 
 ## 빠른 둘러보기
 
-속도, 관련성 및 사용 편이성에 중점을 두고 [!DNL Live Search] 은 쇼핑객과 상인들을 위한 게임 체인저입니다. 다음 비디오를 시청한 다음 간단히 살펴보십시오. [!DNL Live Search] 가게 앞에서요
+속도, 관련성 및 사용 편의성에 중점을 둔 [!DNL Live Search]은(는) 쇼핑객과 판매자 모두에게 게임 체인저입니다. 다음 비디오를 시청한 다음 상점 앞에서 [!DNL Live Search]을(를) 간단히 둘러보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Live Search 사용 및 구성에 대한 자세한 비디오는 [의 전체 데모 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) 주제.
+Live Search 사용 및 구성에 대한 자세한 비디오는 [전체 데모 위치 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) 항목을 참조하십시오.
 
 ### 입력할 때 검색
 
-[!DNL Live Search] 추천 제품 및 상위 검색 결과의 썸네일 이미지로 응답함 [팝오버](storefront-popover.md) 구매자가 다음에 쿼리를 입력할 때 [검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 상자. 다음 [제품 세부 사항](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 쇼핑객이 추천 또는 추천 제품을 클릭하면 페이지가 표시됩니다. A _모두 보기_ 팝오버의 바닥글에 있는 링크에 검색 결과 페이지가 표시됩니다.
+[!DNL Live Search]이(가) 쇼핑객이 [검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 상자에 쿼리를 입력할 때 [팝오버](storefront-popover.md)에 있는 상위 검색 결과의 추천 제품 및 썸네일 이미지로 응답합니다. 쇼핑객이 추천 또는 추천 제품을 클릭하면 [제품 세부 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) 페이지가 표시됩니다. 팝오버의 바닥글에 있는 _모두 보기_ 링크에 검색 결과 페이지가 표시됩니다.
 
-[!DNL Live Search] 둘 이상의 문자로 이루어진 쿼리에 대해 &quot;검색할 때&quot; 결과를 반환합니다. 부분 일치의 경우 단어 당 최대 문자 수는 20자입니다. 쿼리의 문자 수를 구성할 수 없습니다. 팝오버에는 다음이 포함됩니다.`name`, `sku`, 및 `category_ids` 필드.
+[!DNL Live Search]이(가) 둘 이상의 문자에 대한 &quot;입력한 대로 검색&quot; 결과를 반환합니다. 부분 일치의 경우 단어 당 최대 문자 수는 20자입니다. 쿼리의 문자 수를 구성할 수 없습니다. 팝오버에는 `name`, `sku` 및 `category_ids` 필드가 포함됩니다.
 
-![예 storefront - 입력할 때 검색](assets/storefront-search-as-you-type.png)
+![Example storefront - 입력한 대로 검색](assets/storefront-search-as-you-type.png)
 
 ### 모든 검색 결과 보기
 
-&quot;입력할 때 검색&quot; 쿼리에서 반환된 모든 제품을 나열하려면 _모두 보기_ 팝오버의 바닥글에 있습니다.
+&quot;입력할 때 검색&quot; 쿼리에서 반환된 모든 제품을 나열하려면 팝오버의 바닥글에서 _모두 보기_&#x200B;를 클릭합니다.
 
-![예 storefront - 가격 패싯](assets/storefront-view-all-search-results.png)
+![Example storefront - 가격 패싯](assets/storefront-view-all-search-results.png)
 
 ### 패싯으로 필터링된 검색
 
-필터링된 검색은 속성 값의 여러 차원을 사용하거나 [패싯](facets.md)을 검색 기준으로 사용합니다. 필터 선택은 판매자에 의해 정의되며 반환되는 제품에 따라 변경되며, 가장 일반적으로 사용되는 패싯은 목록의 맨 위에 고정됩니다.
+필터링된 검색에서는 특성 값의 여러 차원 또는 [패싯](facets.md)을 검색 기준으로 사용합니다. 필터 선택은 판매자에 의해 정의되며 반환되는 제품에 따라 변경되며, 가장 일반적으로 사용되는 패싯은 목록의 맨 위에 고정됩니다.
 
-패싯을 URL 매개 변수로 사용:`http://yourwebsite.com?color=red`, 및 라이브 검색 필터는 이러한 속성 값을 기반으로 결과를 필터링합니다.
+패싯을 URL 매개 변수 `http://yourwebsite.com?color=red`(으)로 사용하고 이러한 특성 값을 기반으로 하는 실시간 검색 필터 결과를 사용합니다.
 
 ### 동의어
 
@@ -65,22 +65,22 @@ Live Search 사용 및 구성에 대한 자세한 비디오는 [의 전체 데�
 
 ### 머천다이징 규칙
 
-머천다이징 [규칙](rules.md) 검색할 논리 및 이벤트를 추가하는 if-then 문을 사용하여 쇼핑 경험을 구체화합니다. 프로모션, 계절 또는 기타 기간 동안 제품을 쉽게 부스트하거나 묻을 수 있습니다.
+머천다이징 [규칙](rules.md)은(는) 검색할 논리 및 이벤트를 추가하는 if-then 문을 사용하여 쇼핑 경험을 형성합니다. 프로모션, 계절 또는 기타 기간 동안 제품을 쉽게 부스트하거나 묻을 수 있습니다.
 
 ### 검색어 지원
 
-[!DNL Live Search] Commerce 지원 [검색어 리디렉션](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). 예를 들어 &quot;배송비&quot;와 같은 용어를 검색하여 배송비 페이지로 바로 이동할 수 있습니다.
+[!DNL Live Search]이(가) Commerce [검색어 리디렉션](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)을 지원합니다. 예를 들어 &quot;배송비&quot;와 같은 용어를 검색하여 배송비 페이지로 바로 이동할 수 있습니다.
 
 ## 라이브 검색 구성 요소
 
-- [!DNL Live Search] [팝오버 위젯](storefront-popover.md) 은 검색 결과가 포함된 검색 필드 아래에 열리는 상자입니다.
-- [제품 목록 페이지 위젯](plp-styling.md) (PLP)는 패싯 및 동의어 지원과 함께 검색 가능한 제품 목록 페이지를 제공합니다. 위젯이 Live Search 4.0.0+에 설치되고 활성화됩니다.
-- (**더 이상 사용되지 않음**) 검색 어댑터는 PLP 위젯의 전조이며 라이브 검색 &lt; 4.0.0과 함께 설치되었습니다. 4.0.0 이전 버전의 라이브 검색 을 사용하는 경우 Commerce에서 업그레이드하여 PLP 위젯 기능과 향후 개선 사항의 이점을 얻을 수 있습니다.
+- [!DNL Live Search] [팝오버 위젯](storefront-popover.md)은(는) 검색 결과가 포함된 검색 필드 아래에서 열리는 상자입니다.
+- [제품 목록 페이지 위젯](plp-styling.md)(PLP)은 패싯 및 동의어 지원과 함께 검색 가능한 제품 목록 페이지를 제공합니다. 위젯이 Live Search 4.0.0+에 설치되고 활성화됩니다.
+- (**사용하지 않음**) 검색 어댑터는 PLP 위젯의 전조이며 라이브 검색 &lt; 4.0.0과 함께 설치되었습니다. 4.0.0 이전 버전의 라이브 검색 을 사용하는 경우 Commerce에서 업그레이드하여 PLP 위젯 기능과 향후 개선 사항의 이점을 얻을 수 있습니다.
 
 ## [!DNL Live Search] 작업 영역
 
-다음 [!DNL Live Search] [작업 영역](workspace.md) 는 관리자가 구성하는 영역입니다. [!DNL Live Search] 동의어, 패싯 및 카테고리 머천다이징과 같은 기능.
+[!DNL Live Search] [작업 영역](workspace.md)은(는) 관리자가 동의어, 패싯 및 카테고리 머천다이징과 같은 [!DNL Live Search] 기능을 구성하는 영역입니다.
 
 ## 이벤트
 
-[!DNL Live Search] 사용 [events](events.md) 계산하려면 [지능형 머천다이징](category-merch.md) 및 [성능](performance.md) 대시보드. 이벤트에는 기본 구현이 제공됩니다. 헤드리스 상점 첫 화면의 이벤트는 수동으로 활성화해야 합니다.
+[!DNL Live Search]은(는) [이벤트](events.md)를 사용하여 [지능형 머천다이징](category-merch.md) 및 [성능](performance.md) 대시보드를 계산합니다. 이벤트에는 기본 구현이 제공됩니다. 헤드리스 상점 첫 화면의 이벤트는 수동으로 활성화해야 합니다.

@@ -1,6 +1,6 @@
 ---
 title: "성능"
-description: "다음 [!DNL Live Search] 성능 작업 영역은 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다."
+description: " [!DNL Live Search] 성능 작업 영역은 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 성능
 
-다음 *성능* 작업 영역에서는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다. 이 정보는 트렌드를 식별하고 클릭스루를 늘리고 전환율을 향상시키는 데 사용할 수 있습니다. 성능 작업 영역에서는 특정 날짜 범위에 대한 검색 지표 스냅숏을 제공하며 다음 보고서를 포함합니다.
+*성능* 작업 영역에서는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다. 이 정보는 트렌드를 식별하고 클릭스루를 늘리고 전환율을 향상시키는 데 사용할 수 있습니다. 성능 작업 영역에서는 특정 날짜 범위에 대한 검색 지표 스냅숏을 제공하며 다음 보고서를 포함합니다.
 
 * 고유 검색
 * 결과 없음
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![성능](assets/performance-unique-searches.png)
 
-다음을 참조할 수도 있습니다. [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) 데이터 동기화에 대한 자세한 데이터입니다.
+데이터 동기화에 대한 자세한 내용은 [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)를 참조하십시오.
 
 ## 보고서 보기
 
-1. 을(를) 입력하려면 **날짜 범위**&#x200B;을 클릭하고 달력(![캘린더](assets/btn-calendar.png)) 다음 중 하나를 수행합니다.
+1. **날짜 범위**&#x200B;를 입력하려면 일정(![일정](assets/btn-calendar.png))을 클릭하고 다음 중 하나를 실행하십시오.
 
    * 단일 날짜를 지정하려면 달력에서 날짜를 두 번 클릭합니다.
    * 날짜 범위를 지정하려면 달력에서 첫 번째 날짜와 마지막 날짜를 클릭합니다.

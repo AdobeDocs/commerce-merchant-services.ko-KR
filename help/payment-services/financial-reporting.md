@@ -1,6 +1,6 @@
 ---
 title: 재무 보고
-description: "[!DNL Payment Services] 에서는 스토어의 주문과 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다."
+description: "[!DNL Payment Services]은(는) 스토어의 주문과 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다."
 role: User
 feature: Payments, Checkout
 level: Intermediate
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 재무 보고
 
-[!DNL Payment Services] 대상 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source] 에서는 상점의 주문 및 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
+[!DNL Adobe Commerce] 및 [!DNL Magento Open Source]에 대한 [!DNL Payment Services]은(는) 스토어의 주문과 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.
 
 ![재무 보고서 보기](assets/reports-view.png){width="600" zoomable="yes"}
 
