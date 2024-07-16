@@ -4,9 +4,9 @@ description: Adobe Commerce의  [!DNL Data Export Extension] 에 대한 최신 �
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,17 @@ ht-degree: 0%
 >SaaS 데이터 내보내기 확장은 라이브 검색, 제품 Recommendations 및 카탈로그 서비스와 함께 자동으로 설치되는 모듈 컬렉션입니다. 작성기를 사용하여 시스템에 설치된 버전을 확인할 수 있습니다. 경우에 따라 Commerce 서비스 버전을 업데이트하지 않고 시스템에서 데이터 내보내기 확장 기능을 업그레이드하여 수정 사항이나 새 기능을 선택할 수 있습니다.
 
 ## 현재 메이저 버전
+
+## 103.3.7 릴리스
+
+![수정](../assets/fix.svg)이(가) InventoryDataExporter 모듈에서 불필요한 종속성을 제거했습니다.
+![수정](../assets/fix.svg) Adobe Commerce 버전 2.4.4를 지원하도록 CatalogInventoryDataExporter 모듈에 포함된 인벤토리 모듈에 대한 필수 버전을 변경했습니다.
+
+## 103.3.6 릴리스
+
+![수정](../assets/fix.svg) 다중 스레드 모드에서 피드를 다시 인덱싱하는 동안 발생한 교착 상태를 해결했습니다. 이제 쿼리가 삽입 및 업데이트 작업으로 구분됩니다.
+![수정](../assets/fix.svg) 많은 웹 사이트가 있는 큰 카탈로그의 가격 쿼리를 최적화했습니다.
+![새로 만들기](../assets/new.svg) 교착 상태가 발생할 때 실패한 트랜잭션을 다시 실행하기 위한 다시 시도 논리를 추가했습니다.
 
 ## 103.3.5 릴리스
 
