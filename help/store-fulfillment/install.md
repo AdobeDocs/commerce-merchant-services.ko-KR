@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe Commerce용 [!DNL Store Fulfillment] 확장을 설치하거나 업그레�
 
 Adobe Commerce용 스토어 이행 확장 기능의 프리릴리스 또는 베타 버전을 설치한 경우 현재 버전을 설치하기 전에 다음 명령을 사용하여 제거하십시오.
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ Composer를 사용하여 설치를 위한 소스 디렉토리를 구성하고 St
 
 1. `setup:upgrade` Magento CLI 명령을 사용하여 Adobe Commerce에 확장을 등록합니다.
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ Adobe Commerce 서버에서 Store Fulfillment Services 확장의 모듈이 설�
 
 필요한 경우 [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI 명령을 사용하여 정적 보기 파일을 프로덕션 환경에 배포합니다.
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
