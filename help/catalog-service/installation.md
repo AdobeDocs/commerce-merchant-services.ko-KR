@@ -2,9 +2,9 @@
 title: 온보딩 및 설치
 description: " [!DNL Catalog Service] 설치 방법 알아보기"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Adobe Commerce 버전 2.4.4 이상을 실행 중인 Adobe Commerce 인스턴스�
 
 ### 서비스 및 데이터 내보내기 구성
 
-[!DNL Catalog Service]을(를) 설치한 후 다음 작업을 완료하여 카탈로그 서비스를 Adobe Commerce 인스턴스와 통합합니다. 이 통합을 통해 Commerce 인스턴스, 카탈로그 서비스 및 기타 지원 서비스 간에 데이터를 동기화하고 통신할 수 있습니다.
+[!DNL Catalog Service]을(를) 설치한 후 다음 작업을 완료하여 카탈로그 서비스를 Adobe Commerce 인스턴스와 통합합니다. 이 통합을 통해 Commerce 인스턴스, 카탈로그 서비스 및 기타 지원 서비스 간에 데이터를 동기화하고 통신할 수 있습니다. 데이터 동기화는 [SaaS 데이터 내보내기 확장](../data-export/overview.md)에서 처리됩니다.
 
 1. API 키를 지정하고 SaaS 데이터 공간을 선택하여 [Commerce 서비스 커넥터](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas)를 설정합니다.
 
@@ -162,6 +162,10 @@ Adobe Commerce 버전 2.4.4 이상을 실행 중인 Adobe Commerce 인스턴스�
 - [cron 작업이 실행 중인지 확인](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - 인덱서가 [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)에서 실행되거나 Commerce CLI 명령 `bin/magento indexer:info`을(를) 사용하여 실행되고 있는지 확인하십시오.
 - `Catalog Attributes Feed, Product Feed, Product Overrides Feed` 및 `Product Variant Feed` 인덱서가 `Update by Schedule`(으)로 설정되어 있는지 확인하십시오.
+
+### 데이터 동기화 모니터링 및 문제 해결
+
+Commerce 관리에서 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)를 사용하여 동기화 프로세스를 모니터링할 수 있습니다. [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) 및 로그를 사용하여 프로세스를 관리하고 문제를 해결하십시오.
 
 ### 서비스 액세스
 

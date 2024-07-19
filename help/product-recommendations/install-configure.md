@@ -3,9 +3,9 @@ title: 설치 및 구성
 description: ' [!DNL Product Recommendations]을(를) 설치, 업데이트 및 제거하는 방법을 알아봅니다.'
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## [!DNL Product Recommendations] 구성 {#configure}
 
-`magento/product-recommendations` 모듈을 설치한 후 API 키를 지정하고 SaaS 데이터 공간을 선택하여 [Commerce 서비스 커넥터](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)를 구성해야 합니다.
+1. `magento/product-recommendations` 모듈을 설치한 후 API 키를 지정하고 SaaS 데이터 공간을 선택하여 [Commerce 서비스 커넥터](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)를 구성하십시오.
 
-카탈로그 내보내기가 올바르게 실행되고 있는지 확인하려면 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 작업과 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)가 실행 중이며 `Product Feed` 인덱서가 `Update by Schedule`(으)로 설정되어 있는지 확인하십시오.
+   이 연결을 구성하면 Commerce 인스턴스, 카탈로그 서비스 및 기타 지원 서비스 간에 데이터를 동기화하고 통신할 수 있습니다. 데이터 동기화는 [SaaS 데이터 내보내기 확장](../data-export/overview.md)에서 처리됩니다.
 
-API 키를 통해 Commerce 서비스에 연결하고 SaaS 데이터 공간을 지정하면 카탈로그 동기화가 시작됩니다. 그런 다음 동작 데이터가 상점 앞으로 전송되고 있는지 [확인](verify.md)할 수 있습니다.
+1. 카탈로그 내보내기가 올바르게 실행되도록 하려면 [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) 작업과 [인덱서](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)가 실행 중이며 `Product Feed` 인덱서가 `Update by Schedule`(으)로 설정되어 있는지 확인하십시오.
+
+Commerce 애플리케이션을 Commerce Services에 연결하고 SaaS 데이터 공간을 지정하면 카탈로그 동기화가 시작됩니다. 그런 다음 동작 데이터가 상점 앞으로 전송되고 있는지 [확인](verify.md)할 수 있습니다.
+
+## 데이터 동기화 모니터링 및 문제 해결
+
+Commerce 관리에서 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)를 사용하여 동기화 프로세스를 모니터링할 수 있습니다. [Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) 및 로그를 사용하여 프로세스를 관리하고 문제를 해결하십시오.
+
+그런 다음 동작 데이터가 상점 앞으로 전송되고 있는지 [확인](verify.md)할 수 있습니다.
 
 ## [!DNL Product Recommendations] 설치 업데이트 {#update}
 

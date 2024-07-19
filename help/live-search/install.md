@@ -3,9 +3,9 @@ title: '" [!DNL Live Search]" 시작"'
 description: "Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항과 설치 단계를 알아봅니다."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ bin/magento saas:resync --feed categoryPermissions
 [데이터 관리 대시보드](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)를 사용하여 동기화되고 공유된 데이터를 볼 수 있습니다. 이 대시보드는 상점 제품 데이터의 가용성에 대한 중요한 통찰력을 제공하여 구매자에게 즉시 표시되도록 합니다.
 
 ![데이터 관리 대시보드](assets/data-management-dashboard.png)
+
+[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting) 및 데이터 내보내기 확장 로그를 사용하여 동기화 명령을 실행하고 동기화 프로세스 문제를 해결할 수도 있습니다.
 
 #### 향후 제품 업데이트
 
@@ -386,6 +388,10 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 - [PLP 위젯](https://github.com/adobe/storefront-product-listing-page)
 - [검색 창](https://github.com/adobe/storefront-search-as-you-type)
 
+### 데이터 내보내기 확장
+
+라이브 검색이 활성화된 후 데이터 내보내기 확장은 Commerce 애플리케이션과 라이브 검색 간에 Commerce 데이터를 동기화합니다. 이 프로세스를 통해 상점에서 최신 Commerce 데이터를 사용할 수 있습니다. 관리에서 데이터 관리 대시보드를 사용하여 동기화 상태를 확인할 수 있습니다. Commerce CLI 및 로그를 사용하여 데이터 내보내기 프로세스를 관리하고 문제를 해결할 수 있습니다. 자세한 내용은 [데이터 내보내기 안내서](../data-export/overview.md)를 참조하세요.
+
 ### Inventory management
 
 [!DNL Live Search]은(는) Commerce(이전에는 Multi-Source Inventory 또는 MSI로 알려짐)에서 [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 기능을 지원합니다. 전체 지원을 활성화하려면 종속성 모듈 `commerce-data-export`을(를) 버전 102.2.0+로 [업데이트](install.md#update)해야 합니다.
@@ -394,7 +400,7 @@ Luma의 검색 어댑터 또는 위젯 또는 AEM CIF 위젯과 같은 기본 �
 
 ### 가격 인덱서
 
-Live Search 고객은 새로운 [SaaS 가격 인덱서](../price-index/price-indexing.md)를 사용할 수 있으므로 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
+Live Search 고객은 [SaaS 가격 인덱서](../price-index/price-indexing.md)를 사용할 수 있으므로 가격 변경 업데이트 및 동기화 시간이 빨라집니다.
 
 ### 가격 지원
 

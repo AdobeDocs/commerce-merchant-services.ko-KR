@@ -5,9 +5,9 @@ breadcrumb-title: " Adobe Commerce용 [!DNL Data Connection] 확장"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '116'
 ht-degree: 3%
 
 ---
@@ -32,3 +32,4 @@ ht-degree: 3%
 - 사용 사례 {#use-cases}
    - [Adobe Journey Optimizer을 사용하여 포기한 장바구니 이메일 보내기](using-ajo.md)
    - [Commerce 이벤트 데이터를 사용하여 Real-Time CDP에서 대상 만들기](create-audience.md)
+- [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -4,10 +4,10 @@ user-guide-description: 이 안내서에서는 Adobe Commerce에서  [!DNL Produ
 breadcrumb-title: “[!DNL Product Recommendations] 안내서”
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 12%
+source-wordcount: '60'
+ht-degree: 11%
 
 ---
 
@@ -38,3 +38,4 @@ ht-degree: 12%
    - [데이터 수집](events.md)
    - [사용자 지정](customize.md)
    - [쿠키 제한 처리](setting-cookie.md)
+- [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

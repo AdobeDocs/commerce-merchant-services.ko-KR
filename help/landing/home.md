@@ -6,9 +6,9 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 �
 
 >[!BEGINSHADEBOX &quot;릴리스 정보&quot;]
 
-각 Commerce 서비스에 대해 [설명서의 새로운 기능](whats-new.md) 또는 [릴리스 노트](release-notes-all.md)를 참조하십시오.
+각 Commerce 서비스에 대한 [릴리스 정보](release-notes-all.md)를 참조하세요.
 
 >[!ENDSHADEBOX]
 
@@ -98,9 +98,23 @@ Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 �
    </tr>
 </table>
 
-## 데이터 서비스
+## 데이터 도구
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>SaaS 데이터 내보내기는 서비스를 최신 상태로 유지하기 위해 Commerce 서버의 카탈로그, 주문 및 인벤토리 데이터를 연결된 Commerce 서비스로 내보냅니다. 인덱서는 제품 가격 또는 재고 수준 변경과 같은 이벤트에 의해 트리거될 때 데이터를 컴파일합니다. *데이터 관리 대시보드* 또는 명령줄 인터페이스를 통해 이 프로세스를 관찰 및 관리할 수 있습니다.</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>SaaS 가격 산정 색인화는 색인 지정 및 가격 계산과 같이 리소스 집약적인 작업을 Commerce 애플리케이션에서 Adobe의 클라우드 인프라로 오프로드하여 사이트 성능을 최적화합니다. 이 접근 방식을 통해 판매자는 신속하게 리소스를 확장하여 가격 인덱싱 시간을 단축하고 상점 및 연결된 Commerce 서비스에 보다 빠르게 가격 업데이트를 제공할 수 있습니다.</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

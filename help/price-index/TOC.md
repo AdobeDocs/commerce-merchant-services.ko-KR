@@ -5,9 +5,9 @@ breadcrumb-title: "Saas price indexer 안내서"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '33'
+source-wordcount: '34'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 - [SaaS 가격 인덱싱 개요](price-indexing.md)
 - [카탈로그 어댑터](catalog-adapter.md)
-- [Commerce 서비스로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 

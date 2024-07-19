@@ -4,16 +4,16 @@ description: SaaS 가격 색인을 사용하여 성능 향상
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # SaaS 가격 인덱싱
 
-SaaS 가격 인덱싱은 인덱싱 및 가격 계산과 같은 무거운 계산 프로세스를 Commerce 애플리케이션에서 Adobe의 클라우드 인프라로 이동하여 사이트 성능을 향상시킵니다. 이 접근 방식을 사용하면 상인이 리소스를 빠르게 확장하여 데이터를 상점 및 연결된 Commerce 서비스에 전송할 때 가격 변경 사항을 보다 빠르게 반영할 수 있습니다.
+SaaS 가격 산정 색인화는 색인 지정 및 가격 계산과 같이 리소스 집약적인 작업을 Commerce 애플리케이션에서 Adobe의 클라우드 인프라로 오프로드하여 사이트 성능을 최적화합니다. 이 접근 방식을 통해 판매자는 신속하게 리소스를 확장하여 가격 인덱싱 시간을 단축하고 상점 및 연결된 Commerce 서비스에 보다 빠르게 가격 업데이트를 제공할 수 있습니다.
 
 다음 다이어그램은 Commerce이 Commerce 애플리케이션에 포함된 [가격 인덱싱](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) 프로세스를 사용할 때 SaaS 서비스로 이동하는 인덱싱 데이터 흐름을 보여 줍니다.
 

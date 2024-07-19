@@ -4,7 +4,7 @@ description: Adobe Commerce과 연결된 Adobe Commerce 서비스 간에 데이�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] 안내서
 
-[!DNL SaaS data export]은(는) Adobe Commerce 인스턴스와 연결된 Commerce 서비스 간의 데이터 동기화를 최적화하여 프론트엔드 성능을 향상시킵니다. Live Search, Product Recommendations 또는 Catalog Service를 Adobe Commerce 설치에 추가하면 [!DNL Data export] 확장이 자동으로 설치됩니다.
+[!DNL SaaS data export]은(는) Adobe Commerce 인스턴스와 연결된 Commerce 서비스 간에 데이터를 동기화합니다. Live Search, Product Recommendations 또는 Catalog Service를 Adobe Commerce 설치에 추가하면 [!DNL Data export] 확장이 자동으로 설치됩니다.
 
 SaaS 데이터 내보내기는 특정 유형의 정보를 집계하는 _피드_&#x200B;라고 하는 다양한 유형의 데이터를 수집하고 내보냅니다. 설치된 Commerce 서비스에 따라 SaaS 데이터 내보내기 피드는 다음과 같습니다.
 
@@ -22,7 +22,7 @@ SaaS 데이터 내보내기는 특정 유형의 정보를 집계하는 _피드_&
 - **판매 주문 피드**&#x200B;는 송장, 배송, 대변 메모 등과 같은 관련 엔터티를 포함하는 주문 데이터를 집계합니다.
 - **다중 Source 인벤토리 피드**&#x200B;는 인벤토리 재고 상태 항목에 대한 데이터를 집계합니다.
 
-데이터 내보내기 확장은 데이터 동기화 프로세스를 시작하고 관리하는 여러 방법을 지원합니다.
+SaaS 데이터 내보내기는 PHP 확장으로 제공됩니다. 데이터 동기화 프로세스를 시작하고 관리하는 여러 방법을 지원합니다.
 
 - **관리자 또는 명령줄에서 수동 동기화**
 

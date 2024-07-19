@@ -3,16 +3,16 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] for Adobe Commerce은 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce용 [!DNL Catalog Service]
 
-Adobe Commerce 확장용 [!DNL Catalog Service]은(는) 다음을 포함하여 제품 관련 상점 경험을 빠르고 완전히 렌더링할 수 있도록 풍부한 보기 모델(읽기 전용) 카탈로그 데이터를 제공합니다.
+Adobe Commerce 확장용 [!DNL Catalog Service]은(는) 다음을 포함하여 제품 관련 상점 경험을 빠르고 완벽하게 렌더링할 수 있도록 풍부한 보기 모델(읽기 전용) 카탈로그 데이터를 제공합니다.
 
 * 제품 세부 사항 페이지
 * 제품 목록 및 범주 페이지
@@ -21,11 +21,13 @@ Adobe Commerce 확장용 [!DNL Catalog Service]은(는) 다음을 포함하여 �
 * 제품 비교 페이지
 * 장바구니, 주문 및 위시리스트 페이지와 같이 제품 데이터를 렌더링하는 다른 모든 페이지
 
-[!DNL Catalog Service]은(는) [GraphQL](https://graphql.org/)을(를) 사용하여 제품 데이터를 요청하고 받습니다. GraphQL은 프론트엔드 클라이언트가 Adobe Commerce과 같은 백엔드에 정의된 API(애플리케이션 프로그래밍 인터페이스)와 통신하는 데 사용하는 쿼리 언어입니다. GraphQL은 가볍고 시스템 통합자가 각 응답의 내용과 순서를 지정할 수 있으므로 널리 사용되는 통신 방법입니다.
+[!DNL Catalog Service]은(는) [GraphQL](https://graphql.org/)을(를) 사용하여 제품, 제품 특성, 재고 및 가격을 포함한 카탈로그 데이터를 요청하고 받습니다. GraphQL은 프론트엔드 클라이언트가 Adobe Commerce과 같은 백엔드에 정의된 API(애플리케이션 프로그래밍 인터페이스)와 통신하는 데 사용하는 쿼리 언어입니다. GraphQL은 가볍고 시스템 통합자가 각 응답의 내용과 순서를 지정할 수 있으므로 널리 사용되는 통신 방법입니다.
 
 Adobe Commerce에는 두 개의 GraphQL 시스템이 있습니다. 핵심 GraphQL 시스템은 구매자가 제품, 고객 계정, 장바구니, 체크아웃 등을 포함한 다양한 유형의 페이지와 상호 작용할 수 있도록 광범위한 쿼리(읽기 작업)와 변형(쓰기 작업)을 제공합니다. 하지만 제품 정보를 반환하는 쿼리는 속도에 최적화되지 않습니다. 서비스 GraphQL 시스템은 제품 및 관련 정보에 대한 쿼리만 수행할 수 있습니다. 이러한 쿼리는 유사한 핵심 쿼리보다 성능이 뛰어납니다.
 
-[!DNL Catalog Service] 고객은 더 빠른 가격 변경 업데이트 및 동기화 시간을 제공하는 새로운 [SaaS 가격 인덱서](../price-index/price-indexing.md)를 사용할 수 있습니다.
+카탈로그 서비스에서 사용할 수 있는 데이터는 SaaS 데이터 내보내기 확장에 의해 전달됩니다. 이 확장은 Commerce 애플리케이션과 연결된 Commerce 서비스 간의 데이터를 동기화하여 서비스 GraphQL API 종단점에 대한 쿼리가 가장 최신 카탈로그 데이터를 반환하도록 합니다. SaaS 데이터 내보내기 작업 관리 및 문제 해결에 대한 자세한 내용은 [SaaS 데이터 내보내기 안내서](../data-export/overview.md)를 참조하십시오.
+
+[!DNL Catalog Service] 고객은 더 빠른 가격 업데이트와 동기화 시간을 제공하는 [SaaS 가격 인덱서](../price-index/price-indexing.md)를 사용할 수 있습니다.
 
 ## 아키텍처
 
@@ -54,7 +56,7 @@ Catalog Service는 서비스로 작동하므로 통합자는 Commerce의 기본 
 
 스키마는 제품 유형의 다양성을 두 가지 사용 사례로 줄입니다.
 
-* 단순한 상품은 단일한 가격과 수량으로 정의되는 상품이다. Catalog Service는 단순, 가상, 다운로드 가능 및 기프트 카드 제품 유형을 `simpleProductViews`에 매핑합니다.
+* 단순 상품은 단일한 가격과 수량으로 정의되는 상품이다. Catalog Service는 단순, 가상, 다운로드 가능 및 기프트 카드 제품 유형을 `simpleProductViews`에 매핑합니다.
 
 * 복잡한 제품은 여러 개의 간단한 제품으로 구성됩니다. 구성 요소 단순 제품은 가격이 다를 수 있습니다. 쇼퍼가 구성 요소 단순 제품의 수량을 지정할 수 있도록 복잡한 제품을 정의할 수도 있습니다. Catalog Service는 구성 가능한 제품, 번들 및 그룹화된 제품 형식을 `complexProductViews`에 매핑합니다.
 

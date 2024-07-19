@@ -5,10 +5,10 @@ title: Adobe Commerce용 서비스
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 93abbfba33bc43297394764af5e62af45369ea36
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 43%
+source-wordcount: '61'
+ht-degree: 45%
 
 ---
 
@@ -17,7 +17,6 @@ ht-degree: 43%
 - [개요](home.md)
 - 릴리스 정보 {#release-information}
    - [릴리스 정보](/help/landing/release-notes-all.md)
-   - [문서의 새로운 기능](/help/landing/whats-new.md)
 - Commerce 서비스 {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)

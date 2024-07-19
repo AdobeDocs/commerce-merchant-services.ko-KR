@@ -5,9 +5,9 @@ breadcrumb-title: " SaaS 서비스에 대한 [!DNL Data Export] 안내서"
 hide: true
 role: Admin
 feature: Services
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '63'
 ht-degree: 6%
 
 ---
@@ -23,4 +23,4 @@ ht-degree: 6%
 - [로그 검토 및 문제 해결](troubleshooting-logging.md)
 - [SaaS 데이터 내보내기 확장 관리](manage-extension.md)
 - [릴리스 정보](release-notes.md)
-- [Commerce 서비스로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
