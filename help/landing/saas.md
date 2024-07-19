@@ -4,16 +4,16 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]에서 제공되며 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 프로덕션 및 샌드박스 API 키를 사용하여 [!DNL Commerce] 인스턴스를 연결하고 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)에서 데이터 공간을 지정해야 합니다. 한 번만 설정하면 됩니다.
+일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]에서 제공되며 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 프로덕션 및 샌드박스 API 키를 사용하여 [!DNL Commerce] 인스턴스를 연결하고 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)에서 데이터 공간을 지정해야 합니다. 각 Commerce 인스턴스에 대해 연결을 한 번만 구성하면 됩니다.
 
 ## 사용 가능한 서비스 {#availableservices}
 
@@ -24,7 +24,6 @@ ht-degree: 0%
 | Adobe Sensei 제공 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce |
 | Adobe Sensei 제공 [[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce 및 Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce 및 Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ ht-degree: 0%
 
 ## 자격 증명 {#apikey}
 
-프로덕션 및 샌드박스 API 키는 고유한 [!DNL Commerce] ID(MageID)로 식별되는 [라이선스 소유자](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)의 [!DNL Commerce] 계정에서 생성됩니다. [!DNL Product Recommendations] 또는 [!DNL Live Search]과(와) 같은 서비스에 대한 자격 유효성 검사를 통과하기 위해 판매자 조직의 라이선스 소유자는 계정 상태가 양호한 경우 API 키 집합을 생성할 수 있습니다.
+프로덕션 및 샌드박스 API 키는 [라이선스 소유자](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)의 [!DNL Commerce] 계정에서 생성됩니다. Commerce 계정은 고유한 [!DNL Commerce] ID(MageID)로 식별됩니다. 판매자 조직의 라이선스 소유자는 계정이 양호한 경우 제품 Recommendations 또는 라이브 검색과 같은 서비스에 대한 API 키를 생성할 수 있습니다.
 
 라이선스 소유자를 대신하여 프로젝트 및 환경을 관리하는 시스템 통합자 또는 개발 팀과 &quot;필요한 정보&quot;에 따라 키를 공유할 수 있습니다. 라이선스 소유자가 [!DNL Shared Access]을(를) 부여한 개발자는 해당 계정의 [!DNL Switch Accounts] 드롭다운에 판매자의 조직이 있더라도 해당 사용자를 대신하여 키를 생성할 수 없습니다.
 
@@ -57,15 +56,13 @@ ht-degree: 0%
 
 1. _환경_ 메뉴에서 **프로덕션** 또는 **샌드박스**&#x200B;를 선택합니다.
 
-1. _API 키_ 섹션에 이름을 입력하고 **새로 추가**&#x200B;를 클릭합니다.
-
-   그러면 새 키를 다운로드하는 대화 상자가 열립니다.
+1. _API 키_ 섹션에 이름을 입력하고 **새로 추가**&#x200B;를 클릭하여 대화 상자를 열어 새 키를 다운로드합니다.
 
    ![개인 키 다운로드](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > 이는 키를 복사하거나 다운로드해야 하는 유일한 기회입니다.
+   > 이 대화 상자는 키를 복사하거나 다운로드할 수 있는 유일한 기회를 제공합니다.
 
 1. **다운로드**&#x200B;를 클릭한 다음 **취소**&#x200B;를 클릭합니다.
 
@@ -113,7 +110,7 @@ SaaS 프로젝트를 선택하거나 만들려면 스토어의 [!DNL Commerce] �
 
 >[!NOTE]
 >
->Commerce 서비스와 통합할 인스턴스가 따로 있는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)하여 각 추가 인스턴스에 대해 새 SaaS 프로젝트를 요청합니다. 지원이 SaaS 프로젝트를 만든 후 동일한 API 키를 사용하여 인스턴스에 대한 Commerce Services 통합을 구성하고 데이터 공간에 대한 새 SaaS 프로젝트를 선택합니다.
+>Commerce 서비스와 통합할 인스턴스가 따로 있는 경우 [지원 티켓을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)하여 각 추가 인스턴스에 대해 새 SaaS 프로젝트를 요청하세요. 지원이 SaaS 프로젝트를 만든 후 동일한 API 키를 사용하여 인스턴스에 대한 Commerce Services 통합을 구성하고 데이터 공간에 대한 새 SaaS 프로젝트를 선택합니다.
 
 >[!WARNING]
 >

@@ -1,125 +1,163 @@
 ---
 title: 서비스 설명서
-description: Adobe Commerce 제품 설명서용 서비스 찾아보기
+description: Commerce SaaS 서비스에 대한 Adobe Commerce 제품 설명서 찾아보기
 seo-title: Services for Adobe Commerce
-seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 breadcrumb-title: 설명서
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce 서비스 안내서
 
-Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 도움이 되는 Commerce, 통합 및 데이터 서비스 컬렉션을 제공합니다.
+Adobe은 판매자가 비즈니스의 주요 구성 요소를 지원하는 데 도움이 되는 Commerce 서비스, 통합 서비스 및 데이터 도구의 컬렉션을 제공합니다.
 
->[!BEGINSHADEBOX &quot;릴리스 정보&quot;]
-
-각 Commerce 서비스에 대한 [릴리스 정보](release-notes-all.md)를 참조하세요.
-
->[!ENDSHADEBOX]
+>[!NOTE]
+>
+>Adobe은 모든 Commerce 서비스의 지원되는 최신 버전으로 업그레이드할 것을 권장합니다. [릴리스 정보](release-notes-all.md)를 참조하세요.
 
 ## Commerce 서비스
 
-<table>
-<tr>
-  <td valign="top" width="200">
-      <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview"><strong>[!DNL Live Search]</strong></a>
-    <div>B2C 쇼핑객에게 보다 스마트하고, 빠르고, 적절한 결과를 제공하는 이 AI 기반 검색 도구를 구현하십시오.</div>
-  </td>
-   </tr>
-<tr>
-   <td valign="top" width="200">
-       <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview"><strong>[!DNL Product Recommendations]</strong></a>
-    <div>쇼핑객 행동, 인기 트렌드, 제품 유사성 등을 기반으로 AI 기반 권장 사항을 추가합니다.</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="카탈로그 서비스" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>카탈로그 서비스</strong></a> <br>
-    <div>고객에게 최적화된 제품 경험을 제공하는 동시에 성능을 향상시키고, 확장성을 향상시키고, 전환을 늘립니다.</div>
-  </td>
-   </tr>
-<tr>
-  <td valign="top" width="200px">
-    <img alt="결제 서비스" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>결제 서비스</strong></a> <br><em>(Magento Open Source 사용 가능)</em>
-    <div>무이자 지불 할부, 결제 처리, 주문 및 청구서에 대한 단일 보기를 포함하여 다양한 결제 방법을 쉽게 제공하여 고객 만족을 유도합니다.</div>
-  </td>
-    </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="주문 처리 저장" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>이행 저장</strong></a></br>
-    <div>모바일 장치를 통해 사용할 수 있는 포괄적인 이행 워크플로우를 제공하여 온라인 구매, 매장 구매(BOPIS) 고객 경험을 제공하고 직원 생산성을 극대화합니다.</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top" width="200px">
-       <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon 판매 채널</strong></a> <br><em>(Magento Open Source 사용 가능)</em>
-    <div>세계에서 가장 큰 글로벌 온라인 쇼핑 대상과 통합하여 단일 대시보드를 통해 Amazon 판매, 데이터 자동화 및 동기화 제공, Amazon 목록 관리 등을 수행할 수 있습니다.</div>
-  </td>
-   </tr>
-<tr>
-    <td valign="top">
-       <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>채널 관리자</strong></a> <br><em>(Magento Open Source 사용 가능)</em>
-    <div>월마트 마켓플레이스와 통합하여 매출 증대, 신규 고객 유치, 운영 효율화, 시간 절약 등의 효과를 누릴 수 있습니다. 직원들이 Commerce에서 Walmart Marketplace 판매, 재고 및 가격을 원활하게 관리할 수 있습니다.</div>
-  </td>
-   </tr>
+      <a href="../live-search//overview.md">
+      <img alt="검색" src="../assets/icons/Magnify.svg" width="40">
+      </a>
+      <div>
+         <a href="../live-search//overview.md">
+         <strong>[!DNL Live Search]</strong>
+         </a>
+      </div>
+      <p>
+         <em>B2C 쇼핑객에게 더 스마트하고, 더 빠르고, 더 적절한 결과를 제공하는 이 AI 기반 검색 도구를 구현하십시오.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../product-recommendations/overview.md">
+      <img alt="엄지손가락 위로" src="../assets/icons/ThumbUp.svg" width="40">
+      </a>
+      <div>
+         <a href="../product-recommendations/overview.md">
+         <strong>제품 Recommendations</strong>
+         </a>
+      </div>
+      <p>
+         <em>쇼핑객 행동, 인기 있는 트렌드, 제품 유사성 등을 기반으로 AI 기반 권장 사항을 추가하십시오.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../catalog-service/overview.md">
+      <img alt="연결된 서비스에 대한 카탈로그 데이터" src="../assets/icons/DataBook.svg" width="40">
+      </a>
+      <div>
+         <a href="../catalog-service/overview.md">
+         <strong>카탈로그 서비스</strong>
+         </a>
+      </div>
+      <p>
+         <em>성능을 높이고 확장성을 개선하며 전환을 늘리는 동시에 고객에게 최적화된 제품 경험을 제공합니다.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../payment-services/guide-overview.md">
+      <img alt="신용 카드 결제" src="../assets/icons/CreditCard.svg" width="40">
+      </a>
+      <div>
+         <a href="../payment-services/guide-overview.md">
+         <strong>결제 서비스</strong>
+         </a>
+      </div>
+      <p>
+         <em>무이자 할부, 결제 처리, 주문 및 청구서에 대한 간소화된 보기 등 다양한 결제 방법으로 고객 만족을 높입니다.</em>
+      </p>
+   </td>
+</tr>
 </table>
 
 ## 통합 서비스
 
-<table>
-<tr>
-  <td valign="top" width="200">
-      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview"><strong>[!DNL Data Connection]</strong></a>  
-    <div>Adobe Commerce과 Adobe Experience Platform Edge 간의 연결을 활용하여 Adobe Analytics 및 Adobe Target과 같은 다른 Adobe Experience Cloud 제품에 Commerce 데이터를 활용할 수 있습니다.</div>
-  </td>
-   </tr>
-<tr>
-   <td valign="top" width="200">
-       <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
    <td valign="top">
-   <a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas"><strong>[!DNL Services Connector]</strong></a>
-    <div>Commerce 서비스 커넥터는 API 키 및 개인 키를 사용하여 Adobe Commerce 또는 Magento Open Source 인스턴스에 대한 통합을 제공합니다. 데이터 서비스(Adobe Commerce 전용)의 경우 구성에서 데이터 공간을 지정할 수도 있습니다.</div>
-  </td>
-   </tr>
+      <a href="../data-connection/overview.md">
+      <img alt="플랫폼으로 데이터 전송" src="../assets/icons/TransferToPlatform.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-connection/overview.md">
+         <strong>[!DNL Data Connection]</strong>
+         </a>
+      </div>
+      <p>
+         <em>Adobe Commerce과 Adobe Experience Platform edge 간의 연결을 활용하여 Adobe Analytics, Adobe Target과 같은 다른 Adobe Experience Cloud 제품에 Commerce 데이터를 사용합니다.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../landing/saas.md">
+      <img alt="엄지손가락 위로" src="../assets/icons/DataSetting.svg" width="40">
+      </a>
+      <div>
+          <a href="../landing/saas.md">
+         <strong>Commerce 서비스 커넥터</strong>
+         </a>
+      </div>
+      <p>
+         <em>Adobe Commerce과 연결된 서비스 간에 보안 통신을 사용하도록 인증을 구성하십시오. 각 환경에 대해 Commerce 서비스 데이터 저장소에 대한 데이터 공간 ID를 지정하십시오.</em>
+      </p>
+   </td>
+</tr>
 </table>
 
 ## 데이터 도구
 
-<table>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
-    <div>SaaS 데이터 내보내기는 서비스를 최신 상태로 유지하기 위해 Commerce 서버의 카탈로그, 주문 및 인벤토리 데이터를 연결된 Commerce 서비스로 내보냅니다. 인덱서는 제품 가격 또는 재고 수준 변경과 같은 이벤트에 의해 트리거될 때 데이터를 컴파일합니다. *데이터 관리 대시보드* 또는 명령줄 인터페이스를 통해 이 프로세스를 관찰 및 관리할 수 있습니다.</div>
-  </td>
-</tr>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
-    <div>SaaS 가격 산정 색인화는 색인 지정 및 가격 계산과 같이 리소스 집약적인 작업을 Commerce 애플리케이션에서 Adobe의 클라우드 인프라로 오프로드하여 사이트 성능을 최적화합니다. 이 접근 방식을 통해 판매자는 신속하게 리소스를 확장하여 가격 인덱싱 시간을 단축하고 상점 및 연결된 Commerce 서비스에 보다 빠르게 가격 업데이트를 제공할 수 있습니다.</div>
-  </td>
-</tr>
-<tr>
-   <td valign="top" width="200">
-      <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync"><strong>[!DNL Catalog Sync]</strong></a>
-    <div>카탈로그 동기화는 Commerce 서버의 제품 데이터를 Commerce 서비스로 내보내 서비스를 최신 상태로 유지합니다. 제품 가격 또는 재고 수준 변경과 같은 이벤트에 의해 트리거되는 인덱서는 카탈로그 데이터를 컴파일합니다. *카탈로그 동기화* 대시보드 또는 명령줄 인터페이스를 통해 이 프로세스를 관찰하고 관리할 수 있습니다.</div>
-  </td>
-</tr>
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+   <td valign="top">
+       <a href="../data-export/overview.md">
+      <img alt="SaaS 데이터 내보내기 피드 관리" src="../assets/icons/FeedManagement.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-export/overview.md">
+         <strong>[!DNL SaaS Data Export]</strong>
+         </a>
+      </div>
+      <p>
+         <em>카탈로그, 주문 및 인벤토리 데이터를 Adobe Commerce에서 연결된 서비스에 자동으로 동기화합니다. Commerce CLI 명령 또는 <strong>데이터 관리 대시보드</strong>를 사용하여 동기화 처리를 관리합니다.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../price-index/price-indexing.md">
+      <img alt="제품 가격 피드" src="../assets/icons/Feed.svg" width="40">
+      </a>
+      <div>
+          <a href="../price-index/price-indexing.md">
+         <strong>SaaS 가격 인덱서</strong>
+         </a>
+      </div>
+      <p>
+         <em>인덱싱과 가격 계산과 같이 리소스 집약적인 작업을 Commerce 응용 프로그램에서 Adobe의 클라우드 인프라로 오프로드하여 사이트 성능을 최적화합니다.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <img alt="데이터 동기화 모니터링" src="../assets/icons/Monitoring.svg" width="40">
+      </a>
+      <div>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+         <strong>데이터 관리 대시보드</strong>
+         </a>
+      </div>
+      <p>
+         <em>Commerce 관리자의 통합 대시보드에서 Commerce 데이터 동기화를 쉽게 추적하고 다시 동기화를 트리거할 수 있습니다. 구매 고객에게 적시에 표시할 수 있는 데이터 가용성에 대한 중요한 통찰력을 얻으십시오.</em>
+      </p>
+   </td>
 </table>
+
+>[!NOTE]
+>
+>데이터 관리 대시보드는 활성 라이선스가 있는 Product Recommendations v6.0.0, Live Search v4.1.0 또는 Catalog Service v1.17을 사용하여 Commerce 가맹점에서 추가 비용 없이 사용할 수 있습니다. 이전 서비스 버전을 사용하는 판매자는 [카탈로그 동기화](../landing/catalog-sync.md)를 사용하여 데이터 동기화를 관리하고 추적할 수 있습니다.
