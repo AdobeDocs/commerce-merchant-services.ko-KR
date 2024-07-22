@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce의  [!DNL Data Connection] 확장에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _2022년 10월 12일_
 
 +++
 
-## 3.1.2
+## 3.1.3
+
+_2024년 7월 22일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
+![수정](../assets/new.svg) - 사용하지 않는 데이터 내보내기 및 인덱서를 제거하도록 Experience Platform 커넥터 메타패키지를 업데이트했습니다.
+
+## 3.1.2
+
 _2024년 6월 5일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![수정](../assets/new.svg) - [내역 동기화](connect-data.md#specify-order-history-date-range)를 시작할 때 잘못된 날짜 형식이 사용되는 문제가 해결되었습니다.
 ![수정](../assets/new.svg) - Adobe Commerce 2.4.7에서 [startCheckout](events.md#startcheckout) 이벤트가 전송되지 않는 문제가 해결되었습니다.
 
 ## 3.1.1
 
-[!BADGE 호환성]{type=Informative tooltip="호환성"}
-
 _2024년 4월 4일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![새로 만들기](../assets/new.svg) - 모든 [!DNL Data Connection] 확장에 대해 PHP 8.3에 대한 지원을 추가했습니다.
 ![새로 만들기](../assets/new.svg) - Adobe Experience Platform Mobile SDK를 Commerce과 [통합](mobile-sdk-epc.md)하는 방법에 대한 문서를 추가했습니다.
@@ -132,7 +140,6 @@ _2023년 6월 27일_
 ![수정](../assets/fix.svg) - 콘텐츠 보안 정책 구성을 업데이트했습니다.
 ![수정](../assets/fix.svg) - Commerce 2.4.7 버전에서 백 오피스 이벤트에 대한 지원이 수정되었습니다.
 ![새로 만들기](../assets/new.svg) - [!DNL Data Connection] 확장 양식의 변경 사항을 저장할 때 캐시 무효화에 대한 알림 메시지를 추가했습니다.
-
 
 ## 3.0.0-beta1(내부용)
 

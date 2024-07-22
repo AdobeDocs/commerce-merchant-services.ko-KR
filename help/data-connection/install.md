@@ -4,9 +4,9 @@ description: Adobe Commerce에서  [!DNL Data Connection] 확장을 설치, 업�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,12 @@ ht-degree: 0%
 
    이 메타패키지에는 다음 모듈 및 확장이 포함되어 있습니다.
 
-   * `module-experience-connector-admin` - 특정 Adobe Commerce 인스턴스에 대한 데이터 스트림 ID를 선택할 수 있도록 관리 UI를 업데이트합니다.
-   * `module-experience-connector` - Storefront Events SDK에서 `Organization ID` 및 `datastreamId`을(를) 설정합니다.
-   * `data-services` - storefront 이벤트에 대한 특성 컨텍스트를 제공합니다. 예를 들어 체크아웃 이벤트가 발생하면 장바구니에 들어 있는 항목 수에 대한 정보와 해당 항목에 대한 제품 속성 데이터가 포함됩니다.
-   * `services-id` - 샌드박스 및 프로덕션 API 키를 사용하여 Adobe Commerce 인스턴스를 [Adobe Commerce SaaS](../landing/saas.md)에 연결하고 Adobe Experience Platform에 연결하여 IMS 조직 ID를 검색합니다.
-   * `orders-connector` - 주문 상태 서비스를 Adobe Commerce 인스턴스에 연결합니다.
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. (선택 사항) [검색 이벤트](events.md#search-events)를 구성하는 [!DNL Live Search] 데이터를 포함하려면 [[!DNL Live Search]](../live-search/install.md) 확장을 설치하십시오.
 
