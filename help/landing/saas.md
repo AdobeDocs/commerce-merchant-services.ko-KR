@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ SaaS 프로젝트를 선택하거나 만들려면 스토어의 [!DNL Commerce] �
 
 1. SaaS 프로젝트가 없는 경우 **프로젝트 만들기**&#x200B;를 클릭하십시오. 그런 다음 **프로젝트** 필드에 SaaS 프로젝트의 이름을 입력합니다.
 
-   SaaS 프로젝트를 만들 때 [!DNL Commerce]은(는) [!DNL Commerce] 라이선스에 따라 하나 이상의 SaaS 데이터 공간을 생성합니다.
-   - Adobe Commerce - 프로덕션 데이터 공간 1개, 테스트 데이터 공간 2개만 여러 스테이징 환경이 있는 Cloud Pro 프로젝트에서 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다.
-   - Magento Open Source - 프로덕션 데이터 공간 1개, 테스트 데이터 공간 없음
+   모든 판매자는 SaaS 프로젝트당 하나의 프로덕션 데이터 공간과 두 개의 테스트 데이터 공간에 액세스할 수 있습니다. 여러 스테이징 환경이 있는 On Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다.
 
 1. [!DNL Commerce] 저장소의 현재 구성에 사용할 **데이터 공간**&#x200B;을(를) 선택하십시오.
 
