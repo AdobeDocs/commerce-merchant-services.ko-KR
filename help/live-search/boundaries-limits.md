@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
+source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
    - 필터링 가능한 특성 200개
    - 검색 가능한 속성 200개
 - [!DNL Live Search]은(는) Adobe Commerce 데이터베이스의 제품만 인덱싱합니다.
-- CMS 페이지가 인덱싱되지 않았습니다.
+- CMS 페이지는 색인화되지 않습니다.
 - SKU, 이름 및 카테고리 속성은 기본적으로 검색할 수 있으며 검색에서 제외할 수 없습니다. 해당 범주에 포함시키려는 제품이 아닌 경우 해당 범주에서 제품 할당을 취소해야 합니다.
 
 ## 패싯
@@ -58,7 +58,7 @@ ht-degree: 0%
 ## 동의어
 
 - [!DNL Live Search]은(는) 스토어 보기당 최대 200개의 [동의어](synonyms.md)를 관리할 수 있습니다.
-- 다중 단어 동의어는 스토어 보기당 20개로 제한됩니다.
+- 여러 단어 동의어가 항상 예상대로 작동하지 않을 수 있습니다. 이러한 동의어는 관련성에 부정적인 영향을 미칠 수 있으므로 프로덕션 환경에서 사용하기 전에 스테이징 환경에서 테스트해야 합니다.
 
 ## 카테고리 머천다이징
 
