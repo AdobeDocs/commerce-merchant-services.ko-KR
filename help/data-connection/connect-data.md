@@ -3,9 +3,9 @@ title: Commerce 데이터를 Adobe Experience Platform에 연결
 description: Commerce 데이터를 Adobe Experience Platform에 연결하는 방법을 알아봅니다.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Adobe Commerce 인스턴스가 데이터 수집을 시작할 수 있는지 확�
 
 Real-Time CDP에서 프로필 레코드를 사용할 수 있도록 하는 데 약 10분 정도 걸릴 수 있습니다. 프로필 이벤트가 즉시 스트리밍을 시작합니다.
 
+>[!TIP]
+>
+>Experience Platform에 프로필 데이터가 표시되지 않으면 [Commerce 기술 자료](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)에서 문제 해결 제안을 확인하십시오.
+
 #### 필드 설명
 
 | 필드 | 설명 |
@@ -277,6 +281,10 @@ Commerce 스토어에서 데이터가 수집되고 있는지 확인하려면 [Ad
 이 예제에서는 [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview) 등의 이벤트 데이터가 표시됩니다. 이 보기를 통해 Commerce 데이터가 에지에 도달했는지 확인할 수 있습니다.
 
 결과가 예상과 다른 경우 데이터 세트를 열고 실패한 일괄 처리 가져오기를 찾습니다. [일괄 가져오기 문제 해결](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html)에 대해 자세히 알아보세요.
+
+### 프로필 데이터가 Experience Platform에 표시되는지 확인
+
+Experience Platform에 프로필 데이터가 표시되지 않으면 [Commerce 기술 자료](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)에서 문제 해결 제안을 확인하십시오.
 
 ## 다음 단계
 

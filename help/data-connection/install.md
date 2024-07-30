@@ -4,9 +4,9 @@ description: Adobe Commerce에서  [!DNL Data Connection] 확장을 설치, 업�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
+source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ ht-degree: 0%
 
    - `magento/orders-connector`
    - `magento/data-services`
+   - `magento/customers-connector`
    - `magento/module-experience-connector`
    - `magento/module-experience-connector-admin`
    - `magento/module-experience-connector-admin-graph-ql`
@@ -44,9 +45,9 @@ ht-degree: 0%
 
 1. (선택 사항) [구매요청 이벤트](events.md#b2b-events)를 구성하는 B2B 데이터를 포함하려면 [B2B 확장](#install-the-b2b-extension)을 설치하십시오.
 
-### Adobe I/O 이벤트 설치
+### Adobe I/O 이벤트 설치 및 고객 커넥터 모듈 구성
 
-`experience-platform-connector` 확장을 설치한 후에는 Adobe Commerce에 대한 Adobe I/O 이벤트를 설치해야 합니다.
+`experience-platform-connector` 확장을 설치한 후 Adobe Commerce에 대한 Adobe I/O 이벤트를 설치하고 `customers-connector` 모듈을 구성해야 합니다.
 
 다음 단계는 Adobe Commerce on cloud infrastructure 및 온프레미스 설치 모두에 적용됩니다.
 
@@ -70,19 +71,7 @@ ht-degree: 0%
    bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
    ```
 
-배포 유형(온-프레미스 또는 Adobe Commerce on Cloud 인프라)을 기반으로 설치를 완료합니다.
-
-#### 온-프레미스
-
-온-프레미스 환경에서 코드 생성 및 Adobe Commerce 이벤트를 수동으로 활성화해야 합니다.
-
-```bash
-bin/magento events:generate:module
-bin/magento module:enable Magento_AdobeCommerceEvents
-bin/magento setup:upgrade
-bin/magento setup:di:compile
-bin/magento config:set adobe_io_events/eventing/enabled 1
-```
+배포 유형(Adobe Commerce on Cloud 인프라 또는 온프레미스)을 기반으로 설치를 완료합니다.
 
 #### 클라우드 인프라
 
@@ -97,6 +86,18 @@ stage:
 업데이트된 파일을 커밋하고 클라우드 환경으로 푸시합니다. 배포가 완료되면 다음 명령을 사용하여 이벤트 전송을 활성화합니다.
 
 ```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### 온-프레미스
+
+온-프레미스 환경에서 코드 생성 및 Adobe Commerce 이벤트를 수동으로 활성화해야 합니다.
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
 bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 
