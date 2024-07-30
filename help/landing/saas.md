@@ -4,16 +4,16 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]에서 제공되며 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 프로덕션 및 샌드박스 API 키를 사용하여 [!DNL Commerce] 인스턴스를 연결하고 [구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)에서 데이터 공간을 지정해야 합니다. 각 Commerce 인스턴스에 대해 연결을 한 번만 구성하면 됩니다.
+일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]에서 제공되며 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 프로덕션 및 샌드박스 API 키를 사용하여 [!DNL Commerce] 인스턴스를 연결하고 [구성](#saas-configuration)에서 데이터 공간을 지정해야 합니다. 각 Commerce 인스턴스에 대해 연결을 한 번만 구성하면 됩니다.
 
 ## 사용 가능한 서비스 {#availableservices}
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 | Adobe Sensei 제공 [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) | Adobe Commerce |
 | Adobe Sensei 제공 [[!DNL Live Search]](/help/live-search/overview.md) | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce 및 Magento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### 프로덕션 및 샌드박스 API 키 생성 {#genapikey}
 
-1. [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}에서 [!DNL Commerce] 계정에 로그인합니다.
+1. [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}에서 [!DNL Commerce] 계정에 로그인합니다.
 
 1. **Magento** 탭에서 사이드바의 **API 포털**&#x200B;을 선택합니다.
 
@@ -72,13 +72,17 @@ ht-degree: 0%
 
 ## SaaS 구성 {#saasenv}
 
-[!DNL Commerce Services]에서 올바른 위치에 데이터를 보낼 수 있도록 [!DNL Commerce]개의 인스턴스를 SaaS 프로젝트 및 SaaS 데이터 공간으로 구성해야 합니다. SaaS 프로젝트는 모든 SaaS 데이터 공간을 그룹화합니다. SaaS Data Spaces는 [!DNL Commerce Services]이(가) 작동할 수 있는 데이터를 수집하고 저장하는 데 사용됩니다. 이 데이터 중 일부는 [!DNL Commerce] 인스턴스에서 내보낼 수 있으며 일부는 상점 앞의 쇼핑객 활동에서 수집할 수 있습니다. 그런 다음 해당 데이터는 보안 클라우드 스토리지로 유지됩니다.
+[!DNL Commerce Services]에서 올바른 위치에 데이터를 보낼 수 있도록 [!DNL Commerce]개의 인스턴스를 SaaS 프로젝트 및 SaaS 데이터 공간으로 구성해야 합니다. SaaS 프로젝트는 모든 SaaS 데이터 공간을 그룹화합니다. SaaS 데이터 공간은 [!DNL Commerce Services]이(가) 작동하도록 하는 데이터를 수집하고 저장하는 데 사용됩니다. 이 데이터 중 일부는 [!DNL Commerce] 인스턴스에서 내보낼 수 있으며 일부는 상점 앞의 쇼핑객 활동에서 수집할 수 있습니다. 그런 다음 해당 데이터는 보안 클라우드 스토리지로 유지됩니다.
 
 [!DNL Product Recommendations]의 경우 SaaS 데이터 공간에 카탈로그 및 동작 데이터가 포함되어 있습니다. [!DNL Commerce] 구성에서 [선택하여](https://docs.magento.com/user-guide/configuration/services/saas.html) SaaS 데이터 공간으로 [!DNL Commerce] 인스턴스를 지정할 수 있습니다.
 
 >[!WARNING]
 >
 > 프로덕션 SaaS 데이터 공간은 프로덕션 [!DNL Commerce] 설치에서만 사용하여 데이터 충돌을 방지하십시오. 그렇지 않으면 테스트 데이터로 프로덕션 사이트 데이터를 오염시켜 배포가 지연될 위험이 있습니다. 예를 들어 스테이징 URL과 같은 스테이징 데이터에서 프로덕션 제품 데이터를 실수로 덮어쓸 수 있습니다.
+
+### SaaS 데이터 공간 프로비저닝
+
+모든 판매자는 SaaS 프로젝트당 하나의 프로덕션 데이터 공간과 두 개의 테스트 데이터 공간에 액세스할 수 있습니다. 여러 스테이징 환경이 있는 Adobe Commerce Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다.
 
 ### SaaS 프로젝트 선택 또는 만들기 {#createsaasenv}
 
@@ -92,17 +96,15 @@ SaaS 프로젝트를 선택하거나 만들려면 스토어의 [!DNL Commerce] �
 
    [!DNL Commerce] 구성에 **[!UICONTROL Commerce Services Connector]** 섹션이 표시되지 않으면 원하는 [[!DNL Commerce] 서비스](#availableservices)에 대한 [!DNL Commerce] 모듈을 설치하십시오. 또한 `magento/module-services-id` 패키지가 설치되어 있는지 확인하십시오.
 
-1. _샌드박스 API 키_ 및 _프로덕션 API 키_ 섹션에 키 값을 붙여 넣으십시오.
+1. _[!UICONTROL Sandbox API Keys]_및_[!UICONTROL Production API Keys]_ 섹션에 키 값을 붙여 넣습니다.
 
-   비공개 키에는 키 시작 부분의 `----BEGIN PRIVATE KEY---` 및 비공개 키 끝 부분의 `----END PRIVATE KEY----`이(가) 포함되어야 합니다.
+   비공개 키에는 키 시작 부분의 `----BEGIN PRIVATE KEY---` 및 키 끝 부분의 `----END PRIVATE KEY----`이(가) 포함되어야 합니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
 키와 연결된 모든 SaaS 프로젝트가 **SaaS 식별자** 섹션의 **프로젝트** 필드에 나타납니다.
 
 1. SaaS 프로젝트가 없는 경우 **프로젝트 만들기**&#x200B;를 클릭하십시오. 그런 다음 **프로젝트** 필드에 SaaS 프로젝트의 이름을 입력합니다.
-
-   모든 판매자는 SaaS 프로젝트당 하나의 프로덕션 데이터 공간과 두 개의 테스트 데이터 공간에 액세스할 수 있습니다. 여러 스테이징 환경이 있는 On Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다.
 
 1. [!DNL Commerce] 저장소의 현재 구성에 사용할 **데이터 공간**&#x200B;을(를) 선택하십시오.
 

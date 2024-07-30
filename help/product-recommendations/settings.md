@@ -2,16 +2,16 @@
 title: 설정
 description: ' [!DNL Product Recommendations] 데이터 소스를 변경하는 방법과 시각적 권장 사항을 활성화하는 방법을 알아봅니다.'
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # 설정
 
-Recommendations에 대해 [SaaS 데이터 공간을 구성](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)하면 SaaS 데이터 공간에서 카탈로그 데이터와 상점 행동 데이터를 수집합니다. [Adobe Sensei](https://www.adobe.com/sensei.html)은(는) 해당 데이터를 분석하고 제품 Recommendations을 제공하는 데 사용되는 제품 연결을 계산합니다.
+Recommendations에 대해 [SaaS 데이터 공간을 구성](../landing/saas.md#saas-configuration)하면 SaaS 데이터 공간에서 카탈로그 데이터와 상점 행동 데이터를 수집합니다. [Adobe Sensei](https://www.adobe.com/sensei.html)은(는) 해당 데이터를 분석하고 제품 Recommendations을 제공하는 데 사용되는 제품 연결을 계산합니다.
 
 테스트 또는 스테이징을 위한 비프로덕션 환경에는 일반적으로 실제 제품 추천을 제공하는 상점 행동 데이터의 수량이나 품질이 없습니다. 규모에 따른 실제 구매자 행동은 프로덕션 환경에서만 캡처할 수 있습니다. 이 문제를 해결하기 위해 Adobe Commerce에서는 프로덕션 환경의 제품 권장 사항을 다른 비프로덕션 SaaS 데이터 공간과 함께 사용할 수 있습니다. 비프로덕션 환경에서 실제 상점 데이터를 사용하면 쇼핑객이 보는 권장 사항을 미리 보고 다양한 권장 사항 유형 및 배치 위치를 실험할 수 있습니다. 다른 SaaS 데이터 공간의 Recommendations은 쇼핑객이 미리 볼 수 있지만 클릭은 할 수 없습니다.
 
