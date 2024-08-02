@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
+source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,14 @@ _2023년 10월 27일_
 
 ![새로 만들기](../assets/new.svg) 이제 [!DNL Live Search] PLP 위젯에서 색상 견본을 지원합니다.
 
+## [!DNL Live Search] 4.2.1 {#421}
+
+_2024년 7월 31일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![수정](../assets/fix.svg) 특정 스크립트가 체크아웃 페이지에서 로드되지 않는 문제를 해결했습니다.
+![수정](../assets/fix.svg) `composer.json` 파일에서 종속성 버전을 수정했습니다.
 
 ## [!DNL Live Search] 4.2.0 {#420}
 
