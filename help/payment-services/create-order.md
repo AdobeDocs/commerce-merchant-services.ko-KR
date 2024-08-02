@@ -3,7 +3,7 @@ title: ' [!DNL Payment Services](으)로 순서 만들기'
 description: 관리자는 지원이 필요한 고객을 위해 상인이  [!DNL Payment Services] 직접 관리자로부터 주문을 사용하여 주문을 이행하는 기능을 제공합니다.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 호스팅된 신용 카드 필드
 
-[!DNL Payment Services]은(는) 관리자에서 주문을 만들 때 결제 방법으로 사용할 수 있습니다.
+[!DNL Payment Services]은(는) 주문 생성 시 결제 방법으로 관리자에서 사용할 수 있습니다.
 
 1. _관리자_ 사이드바에서 **[!UICONTROL Sales]**&#x200B;을(를) 확장하고 **[!UICONTROL Orders]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL Create New Order]**&#x200B;을(를) 클릭합니다.

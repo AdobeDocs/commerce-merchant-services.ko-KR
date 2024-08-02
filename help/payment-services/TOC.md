@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '103'
+ht-degree: 3%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 4%
 - [안내서 개요](guide-overview.md)
 - [ [!DNL Payment Services] 소개](overview.md)
 - [릴리스 정보](release-notes.md)
-- 결제 및 체크아웃 {#payments-checkout}
-   - [결제 옵션](payments-options.md)
-   - [신용 카드 보관](vaulting.md)
-   - [체크아웃](checkout.md)
 - [!DNL Payment Services] {#get-started} 온보드
    - [온보딩 개요](onboard.md)
    - [ [!DNL Payment Services] 확장 설치](install.md)
@@ -34,18 +30,23 @@ ht-degree: 4%
    - [[!DNL Payment Services] 설정](settings.md)
    - [명령줄 구성](configure-cli.md)
    - [이전 구성](configure-admin.md)
-- [테스트 및 유효성 검사](test-validate.md)
-- [주문 만들기](create-order.md)
+   - [테스트 및 유효성 검사](test-validate.md)
+- 결제 및 체크아웃 {#payments-checkout}
+   - [결제 옵션](payments-options.md)
+   - [신용 카드 보관](vaulting.md)
+   - [체크아웃](checkout.md)
+   - [관리자에서 주문 만들기](create-order.md)
+   - 결제 관리 {#manage}
+      - [ [!DNL Payment Services]에 대한 라인 항목](line-items.md)
+      - [환불](refunds.md)
+      - [빈 공간](voids.md)
 - Financial Reporting {#reporting}
    - [거래 보고서](transactions.md)
    - [주문 결제 상태 보고서](order-payment-status.md)
    - [지급 보고서](payouts.md)
    - [사용 가능한 데이터](data.md)
    - [레벨 2 및 레벨 3 처리](levels-card-payment-transactions.md)
-- 결제 관리 {#manage}
-   - [환불](refunds.md)
-   - [빈 공간](voids.md)
-- 보안 {#security-compliance}
-   - [보안 및 규정 준수](security.md)
+- 보안 및 규정 준수 {#security-compliance}
+   - [보안](security.md)
    - [상당한 사기 방지](fraud-protection.md)
 - [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
