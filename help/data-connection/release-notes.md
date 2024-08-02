@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce의  [!DNL Data Connection] 확장에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ ht-degree: 0%
 
 [!DNL Data Connection] 확장에서 사용하는 확장과 관련된 기능 변경 및 수정 사항에 대해서는 **지원되는 서비스 업데이트**&#x200B;를 참조하십시오.
 
-릴리스 일정 및 지원에 대한 자세한 내용은 [예정된 릴리스](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)를 참조하세요.
+릴리스 일정 및 지원에 대한 자세한 내용은 [예정된 릴리스](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)를 참조하세요.
 
-개발자 설명서를 참조하여 [이 모듈을 지원하는 Commerce 버전을 알아보세요](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+개발자 설명서를 참조하여 [이 모듈을 지원하는 Commerce 버전을 알아보세요](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## 지원되는 서비스 업데이트
 
 이 릴리스 노트는 [!DNL Data Connection] 확장에서 사용하는 확장과 관련된 기능 변경 및 수정 사항에 대해 설명합니다.
 
 +++지원되는 서비스 업데이트
+
+_2024년 8월 2일_
+
+![수정](../assets/fix.svg) - 주문 합계가 세금을 포함하도록 구성된 경우 결제 총액을 수정했습니다.
+![새로 만들기](../assets/new.svg) - 구매 이벤트를 주문하기 위해 `taxAmount` 필드를 추가했습니다.
+![새로 만들기](../assets/new.svg) - 사용자 지정 데이터를 이벤트에 추가하는 기능을 추가했습니다. [예](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md)에 대해서는 다음을 참조하세요.
 
 _2024년 1월 24일_
 
@@ -78,7 +84,7 @@ _2024년 7월 22일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![수정](../assets/new.svg) - 사용하지 않는 데이터 내보내기 및 인덱서를 제거하도록 Experience Platform 커넥터 메타패키지를 업데이트했습니다.
+![수정](../assets/fix.svg) - 사용하지 않는 데이터 내보내기 및 인덱서를 제거하도록 Experience Platform 커넥터 메타패키지를 업데이트했습니다.
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _2024년 6월 5일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![수정](../assets/new.svg) - [내역 동기화](connect-data.md#specify-order-history-date-range)를 시작할 때 잘못된 날짜 형식이 사용되는 문제가 해결되었습니다.
-![수정](../assets/new.svg) - Adobe Commerce 2.4.7에서 [startCheckout](events.md#startcheckout) 이벤트가 전송되지 않는 문제가 해결되었습니다.
+![수정](../assets/fix.svg) - [내역 동기화](connect-data.md#specify-order-history-date-range)를 시작할 때 잘못된 날짜 형식이 사용되는 문제가 해결되었습니다.
+![수정](../assets/fix.svg) - Adobe Commerce 2.4.7에서 [startCheckout](events.md#startcheckout) 이벤트가 전송되지 않는 문제가 해결되었습니다.
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _2023년 11월 16일_
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![새로 만들기](../assets/new.svg) - Experience Platform 커넥터의 이름이 [!DNL Data Connection](으)로 변경되었습니다.
-![수정](../assets/new.svg) - Adobe IMS에서 액세스 토큰을 생성할 수 없는 경우 오류 응답을 기록하는 기능이 추가되었습니다.
-![수정](../assets/new.svg) - 이전 주문을 동기화하려고 시도했지만 계정 자격 증명을 지정하지 않은 경우 알림 메시지를 추가했습니다.
+![수정](../assets/fix.svg) - Adobe IMS에서 액세스 토큰을 생성할 수 없는 경우 오류 응답을 기록하는 기능이 추가되었습니다.
+![수정](../assets/fix.svg) - 이전 주문을 동기화하려고 시도했지만 계정 자격 증명을 지정하지 않은 경우 알림 메시지를 추가했습니다.
 
 ## 3.0.0
 
