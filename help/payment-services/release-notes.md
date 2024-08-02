@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 [!DNL Payment Services] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,26 @@ _2021년 6월 28일_
 
 +++
 
+## v2.7.0
+
+_2024년 8월 2일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![새로 만들기](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]은(는) 이제 주문 수준](line-items.md)에서 [라인 항목 데이터를 지원합니다. 이 기능을 사용하면 판매자가 제품 세부 정보, 수량, 가격(판매세, 할인 및 기타 관련 정보 포함) 등 주문에 있는 항목에 대한 자세한 정보를 볼 수 있습니다.
+
+![새로 만들기](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services]은(는) 더 쉽고 직관적인 온보딩 프로세스를 위해 판매자를 위한 [관리](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) 환경의 구성을 개선합니다. 이 기능을 사용하면 판매자가 [!DNL Payment Services] ID를 재설정할 수 있습니다.
+
+![새로 만들기](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services]에 [결제 실패 알림](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails)이 포함되어 있습니다. 이 기능은 가맹점에 결제 실패에 대한 거의 실시간으로 알림을 제공하므로 구매자에게 연락하여 주문을 절약하고 문제 해결을 잠재적으로 개선할 수 있습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5469 --> **Google 결제 팝업이 Safari에 의해 차단되는 문제를 해결했습니다**. 이제 쇼핑객은 Safari에서 Google 결제 거래를 완료할 수 있습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5492 --> 판매자가 사용자 지정된 약관을 체크아웃 페이지에 추가할 때 발생하는 문제를 해결했습니다. [빠른 체크아웃](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience)을 진행하는 동안 쇼핑객은 이제 문제 없이 체크아웃을 완료할 수 있도록 이 사용 약관에 동의할 수 있습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5532 --> **InstantPurchase**&#x200B;를 통해 ISPU(매장 내 픽업) 기능을 개선했습니다. 쇼핑객이 **InstantPurchase**&#x200B;를 주문하면 **ISPU 배달 방법**&#x200B;이 더 이상 표시되지 않습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5606 --> 판매자의 국가가 **독일**(으)로 설정되어 있는 경우 **구성 페이지** 국가 선택기 내의 문제를 해결했습니다.
+
 ## v2.6.0
 
 _2024년 6월 4일_
@@ -137,7 +157,7 @@ _2024년 3월 20일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![새로 만들기](../assets/new.svg)<!-- PAY-4868 --> 가맹점은 관리자를 통해 [!DNL Payment Services]의 다른 결제 버튼과 유사하게 [구매 경험 전체에서 Google Pay를 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)할 수 있습니다.
+![신규](../assets/new.svg)<!-- PAY-4868 --> 가맹점은 관리자를 통해 [!DNL Payment Services]의 다른 결제 버튼과 마찬가지로 구매 경험 전체에서 [Google Pay를 구성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html)할 수 있습니다.
 
 ![새로 만들기](../assets/new.svg)<!-- PAY-4381 --> [결제 서비스에서 GraphQL을 통해 Google 페이를 지원](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) 가맹점에서 Google 페이 결제 방법을 통해 headless Commerce 경험을 할 수 있도록 허용합니다.
 
