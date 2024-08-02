@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 0%
 
 1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
 
-   ![홈 보기](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
-
 1. **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md)을 참조하세요.
+
+   ![React 설정 보기](assets/react-settings-view.png){width="500" zoomable="yes"}
 
    _[!UICONTROL General]_섹션에는 [!DNL Payment Services]을(를) 결제 방법으로 활성화하는 데 사용되는 설정이 포함되어 있습니다.
 
@@ -40,9 +40,11 @@ ht-degree: 0%
 
 1. 스토어에 대해 [!DNL Payment Services]을(를) 계속 테스트하는 경우 **결제 모드**&#x200B;를 `Sandbox`(으)로 설정하십시오. 실시간 결제를 사용할 준비가 되었으면 `Production`(으)로 설정하십시오.
 
-   >[!NOTE]
+1. [Commerce 서비스 커넥터](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}를 설정하고 [!DNL Payment Services] 대시보드를 처음 방문하면 **[!UICONTROL Payment Services Sandbox ID]** 및 **[!UICONTROL Payment Services Production ID]** 값이 자동으로 채워집니다. 이렇게 하여 샌드박스 및/또는 프로덕션 환경에 대한 온보딩을 완료합니다. 이 값은 SaaS ID를 [!DNL Payment Services]에 연결합니다.
+
+   >[!WARNING]
    >
-   >샌드박스 및/또는 프로덕션에 대한 온보딩을 마치면 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_&#x200B;이(가) 자동으로 생성되고 해당 필드에 표시됩니다.
+   > [!DNL Payment Services] ID를 재설정하는 경우 다시 온보딩해야 합니다.
 
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
@@ -59,7 +61,7 @@ ht-degree: 0%
 1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**(으)로 이동합니다.
 1. **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [소개 [!DNL Payment Services] 홈](payments-home.md)을 참조하세요.
 1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 소프트 설명자를 만들 웹 사이트 또는 스토어 보기를 선택합니다. 초기 설정의 경우 기본값을 설정하려면 이 항목을 **[!UICONTROL Default]**(으)로 둡니다.
-1. 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하여 `Custom descriptor`을(를) 바꿉니다.
+1. 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하여 `Soft descriptor`을(를) 바꿉니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 1. 웹 사이트 또는 스토어 보기에 대해 구성된 기본값 이외의 소프트 설명자를 만들려면 다음 작업을 수행하십시오.
    1. **[!UICONTROL Scope]** 드롭다운 메뉴에서 소프트 설명자를 만들 웹 사이트 또는 스토어 보기를 선택합니다.
@@ -79,8 +81,8 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Enable] | 웹 사이트 | 웹 사이트에 대해 [!DNL Payment Services]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | 스토어 뷰 | 스토어에 대한 메서드 또는 환경을 설정합니다. 옵션: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 샌드박스 판매자 ID입니다. |
-| [!UICONTROL Production Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 프로덕션 판매자 ID입니다. |
+| [!UICONTROL Payment Services Sandbox ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 샌드박스 판매자 ID입니다. |
+| [!UICONTROL Payment Services Production ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 프로덕션 판매자 ID입니다. |
 | [!UICONTROL Soft Descriptor] | 웹 사이트 또는 스토어 보기 | 웹 사이트 및 스토어 보기에 부드러운 설명자를 추가하여 브랜드, 스토어 또는 제품 라인을 설명하는 고객 거래에 정보를 추가합니다. [!UICONTROL Use website] 전환은 웹 사이트 수준에서 추가된 모든 소프트 설명자를 적용합니다. [!UICONTROL Use default] 전환은 기본값으로 추가된 모든 소프트 설명자를 적용합니다. |
 
 ## 결제 옵션 구성

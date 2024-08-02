@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,18 @@ ht-degree: 0%
 
 1. _관리자_ 사이드바에서 **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**(으)로 이동합니다.
 1. 왼쪽 패널에서 **[!UICONTROL Sales]**&#x200B;을(를) 확장하고 **[!UICONTROL Payment Methods]**&#x200B;을(를) 선택합니다.
-
-   ![메서드 보기](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. _[!UICONTROL Merchant Location]_에서_[!UICONTROL Merchant Country]_ 필드를 설정합니다.
+1. _[!UICONTROL Merchant Location]_에서_[!UICONTROL Merchant Country]_ 필드를 설정합니다. _[!UICONTROL Merchant Country]_을(를) 지정하지 않으면 일반 구성의_[!UICONTROL Default Country]_&#x200B;이(가) 사용됩니다.
 1. _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_섹션을 확장하여_[!UICONTROL [!DNL Payment Services]]_ 섹션에 액세스합니다.
 1. _[!UICONTROL [!DNL Payment Services]]_섹션에서_[!UICONTROL General Configuration]_ 섹션을 확장합니다.
 1. **사용**&#x200B;의 경우 스토어에 대해 [!DNL Payment Services]을(를) 사용하려면 `Yes`(으)로 설정하십시오.
 1. **메서드**&#x200B;의 경우 스토어에 대해 [!DNL Payment Services]을(를) 테스트하는 경우 `Sandbox`(으)로 설정하고, 실시간 결제를 활성화할 준비가 된 경우 `Production`(으)로 설정하십시오.
+1. [Commerce 서비스 커넥터](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}를 설정하고 [!DNL Payment Services] 대시보드를 처음 방문하면 **[!UICONTROL Payment Services Sandbox ID]** 및 **[!UICONTROL Payment Services Production ID]** 값이 자동으로 채워집니다. 이렇게 하여 샌드박스 및/또는 프로덕션 환경에 대한 온보딩을 완료합니다. 이 값은 SaaS ID를 [!DNL Payment Services]에 연결합니다.
 
    >[!WARNING]
    >
-   >샌드박스 및/또는 프로덕션에 대한 온보딩을 완료하면 _[!UICONTROL Sandbox Merchant ID]_및_[!UICONTROL Production Merchant ID]_&#x200B;이(가) 자동으로 생성되고 각각의 해당 필드에 표시됩니다. 이 ID를 제거하거나 변경하지 마십시오.
+   > Commerce 서비스 커넥터에서 데이터 공간 ID를 변경해야 하는 경우 [!DNL Payment Services] ID를 재설정해야 합니다. 샌드박스 또는 프로덕션 ID를 재설정하려면 **결제 서비스 ID 재설정**&#x200B;을 클릭하십시오. [!DNL Payment Services] ID를 재설정하는 경우 다시 온보딩해야 합니다.
 
-1. **소프트 설명자**(스토어/브랜드/카탈로그를 구분할 고객 거래 은행 거래 명세서에 표시되는 사용자 지정 값)의 경우 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하여 `Custom descriptor` 또는 기존 값을 바꿉니다.
+1. **소프트 설명자**(스토어/브랜드/카탈로그를 구분할 고객 거래 은행 거래 명세서에 표시되는 사용자 지정 값)의 경우 텍스트 필드에 사용자 지정 텍스트(최대 22자)를 추가하여 `Soft descriptor` 또는 기존 값을 바꿉니다.
 1. 변경 내용을 저장하려면 **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL System]** > **[!UICONTROL Cache Management]**(으)로 이동한 다음 **[!UICONTROL Flush Cache]**&#x200B;을(를) 클릭하여 모든 잘못된 캐시를 새로 고칩니다.
 
@@ -49,8 +47,8 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Enable] | 웹 사이트 | 웹 사이트에 대해 [!DNL Payment Services]을(를) 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | 스토어 뷰 | 스토어에 대한 메서드 또는 환경을 설정합니다. 옵션: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 샌드박스 판매자 ID입니다. 이 ID를 변경하거나 변경하지 마십시오. |
-| [!UICONTROL Production Merchant ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 프로덕션 판매자 ID입니다. 이 ID를 변경하거나 변경하지 마십시오. |
+| [!UICONTROL Payment Services Sandbox ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 샌드박스 판매자 ID입니다. |
+| [!UICONTROL Payment Services Production ID] | 스토어 뷰 | 샌드박스 온보딩 중 자동으로 생성되는 프로덕션 판매자 ID입니다. |
 | [!UICONTROL Soft Descriptor] | 웹 사이트 또는 스토어 보기 | 웹 사이트 및 스토어 보기에 부드러운 설명자를 추가하여 브랜드, 스토어 또는 제품 라인을 설명하는 고객 거래에 정보를 추가합니다. |
 
 ## [!UICONTROL Credit Card Fields]
