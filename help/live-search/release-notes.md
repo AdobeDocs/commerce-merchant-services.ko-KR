@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 호스팅된 서비스 업데이트
 
 이 참고 사항에서는 버전 관리된 릴리스 외부에 게시된 업데이트 또는 호스팅된 서비스에 대한 개선 사항에 대해 설명합니다.
+
+_2024년 8월 7일_
+
+![수정](../assets/fix.svg) [가격 팩팅](settings.md#price-faceting)의 최대 간격 값 또는 가격 범위를 10,000에서 40,000,000으로 늘렸습니다.
 
 _2024년 2월 13일_
 

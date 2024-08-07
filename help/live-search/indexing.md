@@ -2,9 +2,9 @@
 title: "색인화"
 description: " [!DNL Live Search] 제품 특성 속성을 인덱싱하는 방법을 알아봅니다."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 특성 메타데이터의 범위는 `website/store/store view`입니다.
 
-[!DNL Live Search] API를 사용하면 클라이언트가 Adobe Commerce 관리자에서 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`이(가) `Yes`(으)로 설정된 모든 제품 특성별로 정렬할 수 있습니다. 활성화하면 특성에 대해 `Search Weight` 및 `Visible in Advanced Search`을(를) 설정할 수 있습니다.
+[!DNL Live Search] API를 사용하면 클라이언트가 Adobe Commerce 관리자에서 [storefront 속성](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search`이(가) `Yes`(으)로 설정된 모든 제품 특성별로 정렬할 수 있습니다. 사용하도록 설정하면 특성에 `Search Weight`을(를) 설정할 수 있습니다.
 
 [!DNL Live Search]은(는) 삭제된 제품 또는 `Not Visible Individually`(으)로 설정된 제품을 색인화하지 않습니다.
 

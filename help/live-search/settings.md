@@ -2,7 +2,7 @@
 title: "설정"
 description: " [!DNL Live Search] 서비스 설정을 구성합니다."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. 관리자의 **마케팅** > *SEO 및 검색* > **[!DNL Live Search]**(으)로 이동합니다.
 1. *가격 결정*&#x200B;의 **설정** 작업 영역에서 다음을 수행합니다.
    * 사용할 수 있는 **선택 항목 수** 또는 가격 그룹화를 입력하십시오. 최대 50개의 가격 그룹화를 정의할 수 있습니다.
-   * **간격 값** 또는 각 그룹의 가격 범위를 입력하십시오. 최대값은 10,000입니다.
+   * **간격 값** 또는 각 그룹의 가격 범위를 입력하십시오. 최대값은 40,000,000입니다.
 1. **저장**&#x200B;을 클릭합니다.
 
    상점에서 업데이트된 설정을 사용할 수 있기까지는 약 15분이 소요됩니다.

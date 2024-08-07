@@ -4,10 +4,10 @@ user-guide-description: "이 안내서에서는 Adobe Commerce에서  [!DNL Live
 breadcrumb-title: “[!DNL Live Search] 안내서”
 role: Admin
 feature: Services, Search
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 2e13908ff96259bb707b6d0f897206bcd2059386
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 10%
+source-wordcount: '82'
+ht-degree: 9%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 10%
 - [설치](install.md)
 - [라이브 검색 설정](workspace.md)
 - [경계 및 제한](boundaries-limits.md)
+- [우수 사례](best-practice.md)
 - [릴리스 정보](release-notes.md)
 - Storefront {#live-search-storefront}
    - [Storefront 위젯](storefront-widgets.md)
