@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce의  [!DNL Data Connection] 확장에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
+source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ _2022년 10월 12일_
 
 +++
 
+## 3.1.4
+
+_2024년 8월 9일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![수정](../assets/fix.svg) - 사용하지 않는 데이터 내보내기 및 인덱서를 추가로 제거하도록 `experience-platform-connector` 메타패키지를 업데이트했습니다.
+
 ## 3.1.3
 
 _2024년 7월 22일_
 
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
-![수정](../assets/fix.svg) - 사용하지 않는 데이터 내보내기 및 인덱서를 제거하도록 Experience Platform 커넥터 메타패키지를 업데이트했습니다.
+![수정](../assets/fix.svg) - 사용하지 않는 데이터 내보내기 및 인덱서를 제거하도록 `experience-platform-connector` 메타패키지를 업데이트했습니다.
 
 ## 3.1.2
 
