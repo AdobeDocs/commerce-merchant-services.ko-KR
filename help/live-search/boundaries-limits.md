@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 0%
 - 카테고리 머천다이징에는 카테고리당 하나의 규칙이 있을 수 있습니다.
 - 규칙당 최대 조건 수는 10개입니다.
 - 규칙당 최대 이벤트 수는 25개입니다.
+- 페이지가 매겨진 응답에서 예측할 수 없는 결과를 방지하려면 고정된 제품의 수가 요청된 페이지 크기를 초과하지 않아야 합니다.
 
 ## 동의어
 
