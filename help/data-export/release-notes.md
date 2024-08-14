@@ -4,9 +4,9 @@ description: Adobe Commerce의  [!DNL Data Export Extension] 에 대한 최신 �
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ ht-degree: 0%
 
 ![새로 만들기](../assets/new.svg) 피드를 즉시 내보내는 크론 작업이 `*_feed_resend_failed_items`(으)로 이름이 변경되었습니다.
 
-![새로 만들기](../assets/new.svg) 바로 내보내기 피드 및 변경 로그 테이블의 이름이 변경되었습니다.
+![새로 만들기](../assets/new.svg) 즉각적인 내보내기 피드, 인덱서 보기 ID 및 변경 로그 테이블의 이름이 변경되었습니다.
+- 피드 테이블(및 인덱서 보기 ID):
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- 로그 테이블 이름 변경 - 피드 테이블과 동일한 이름 지정 패턴을 따르지만 로그 테이블 이름 변경에는 `_cl` 접미사가 추가됩니다.  예: `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+이러한 엔티티를 참조하는 사용자 지정 코드가 있는 경우 코드가 계속 제대로 작동하도록 참조를 새 이름으로 업데이트하십시오.
 
 ![수정](../assets/fix.svg) 필요한 피드에 대해서만 피드 데이터의 `modified_at` 필드를 설정합니다.
 
