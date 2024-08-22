@@ -2,9 +2,9 @@
 title: "패싯 유형"
 description: "[!DNL Live Search] 패싯은 동적이며 관련성이 있을 때 필터 목록에 나타납니다."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 
 * 고정 패싯 - 가장 일반적으로 사용되는 패싯을 목록의 맨 위에 고정할 수 있습니다. 나머지 패싯은 고정된 패싯 다음에 *정렬 형식* 순서로 나열됩니다.
 * 동적 패싯 - [Adobe Sensei](https://www.adobe.com/sensei.html)이(가) 제품 집합 및 쿼리와 가장 관련이 있는 제품 특성입니다. 이 계산은 전체 카탈로그의 속성 메타데이터를 고려하고 쿼리 시간에 쿼리에 가장 적합한 패싯을 결정합니다.
+
+  >[!NOTE]
+  >
+  >동적 패싯을 만든 후 GraphQL 쿼리 응답에 시간 초과 오류가 표시되는 경우 모든 패싯을 고정으로 변경하여 성능 문제가 해결되는지 확인하십시오.
+
 * 인기 패싯 - 검색 결과에 가장 자주 표시되는 제품 속성.
 * 가격 패싯 - 가격 범위별로 제품을 반환합니다. [*설정*](settings.md) 작업 영역에서 선택 항목 수와 가격 범위 간격을 지정할 수 있습니다.
 

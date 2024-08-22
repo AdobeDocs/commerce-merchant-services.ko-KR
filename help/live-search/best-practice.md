@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] 모범 사례'
 description: 스토어에서  [!DNL Live Search] 을(를) 구현하기 위한 모범 사례를 알아봅니다.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ ht-degree: 0%
 
 [팝오버](storefront-popover.md) 위젯에 대해 자세히 알아보십시오.
 
-### 동의어 및 철자
+### 동의어 및 철자 오류
 
-동의어와 일반적인 철자 오류를 통합하여 포괄적인 검색 결과를 보장합니다. 또한 쇼핑객이 카탈로그에 지정된 단어와 다른 단어를 사용할 수 있도록 검색 쿼리를 확장할 수 있습니다. 제품이 &quot;소파&quot;로 나열되어 있는 동안 다른 사람이 &quot;소파&quot;를 찾고 있으므로 판매에서 지고 싶지 않습니다. 고객이 제품을 찾을 때 사용할 수 있는 모든 단어를 입력하여 광범위한 검색어를 캡처할 수 있습니다. [동의어를 한 가지 방법 또는 두 가지 방법으로 설정](synonyms-add.md#step-2-define-the-synonym-by-type)하여 결과를 개선할 수 있습니다.
+라이브 검색은 기본적으로 철자 오류를 관리합니다. 쇼핑객이 카탈로그에 지정된 단어와 다를 수 있는 단어를 포함하도록 동의어를 설정할 수 있습니다. 제품이 &quot;소파&quot;로 나열되어 있는 동안 다른 사람이 &quot;소파&quot;를 찾고 있으므로 판매에서 지고 싶지 않습니다. 고객이 제품을 찾을 때 사용할 수 있는 모든 단어를 입력하여 광범위한 검색어를 캡처할 수 있습니다. [동의어를 한 가지 방법 또는 두 가지 방법으로 설정](synonyms-add.md#step-2-define-the-synonym-by-type)하여 결과를 개선할 수 있습니다.
 
 #### 동의어 최적화 팁
 
