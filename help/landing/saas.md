@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ SaaS 프로젝트를 선택하거나 만들려면 스토어의 [!DNL Commerce] �
 
 1. _[!UICONTROL Sandbox API Keys]_및_[!UICONTROL Production API Keys]_ 섹션에 키 값을 붙여 넣습니다.
 
-   비공개 키에는 키 시작 부분의 `----BEGIN PRIVATE KEY---` 및 키 끝 부분의 `----END PRIVATE KEY----`이(가) 포함되어야 합니다.
+   - 비공개 키에는 키 시작 부분의 `----BEGIN PRIVATE KEY---` 및 키 끝 부분의 `----END PRIVATE KEY----`이(가) 포함되어야 합니다.
+   - 실제 키의 사본이 없는 경우 계정 소유자에게 요청한 다음 값을 구성에 연결합니다.
+
+   >[!WARNING]
+   >
+   > 데이터베이스 백업이나 스냅샷을 쿼리하고 값을 구성에 붙여 넣어 키 값을 추가하면 추가 암호화 계층이 적용되고 키가 작동하지 않습니다.
 
 1. **저장**&#x200B;을 클릭합니다.
 
