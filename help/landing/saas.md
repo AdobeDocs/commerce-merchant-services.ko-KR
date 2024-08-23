@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ### 프로덕션 및 샌드박스 API 키 생성 {#genapikey}
 
-1. [https://account.magento.com](https://account.magento.com/customer/account/login){:target=&quot;_blank&quot;}에서 [!DNL Commerce] 계정에 로그인합니다.
+1. [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}에서 [!DNL Commerce] 계정에 로그인합니다.
 
 1. **Magento** 탭에서 사이드바의 **API 포털**&#x200B;을 선택합니다.
 
@@ -79,10 +79,17 @@ ht-degree: 0%
 >[!WARNING]
 >
 > 프로덕션 SaaS 데이터 공간은 프로덕션 [!DNL Commerce] 설치에서만 사용하여 데이터 충돌을 방지하십시오. 그렇지 않으면 테스트 데이터로 프로덕션 사이트 데이터를 오염시켜 배포가 지연될 위험이 있습니다. 예를 들어 스테이징 URL과 같은 스테이징 데이터에서 프로덕션 제품 데이터를 실수로 덮어쓸 수 있습니다.
+> 이 경우 데이터 정리를 요청하려면 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하십시오.
 
 ### SaaS 데이터 공간 프로비저닝
 
-모든 판매자는 SaaS 프로젝트당 하나의 프로덕션 데이터 공간과 두 개의 테스트 데이터 공간에 액세스할 수 있습니다. 여러 스테이징 환경이 있는 Adobe Commerce Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다.
+모든 Adobe Commerce 판매자는 SaaS 프로젝트당 하나의 프로덕션 데이터 공간과 두 개의 테스트 데이터 공간에 액세스할 수 있습니다.
+
+여러 환경에서 동일한 데이터 공간을 동시에 사용하지 않는 한 비프로덕션 환경에서 테스트 데이터 공간을 사용할 수 있습니다. 다른 환경에서 테스트 데이터 공간을 사용하려면 해당 환경에서 데이터 공간을 선택하고 구성하기 전에 데이터 정리를 수행하십시오.
+
+여러 스테이징 환경이 있는 Adobe Commerce Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다. 그러나 스테이징 환경이 한 개만 있고 추가 테스트 데이터 공간이 필요한 경우 다음 옵션을 사용할 수 있습니다.
+- 추가 스테이징 환경을 요청하려면 고객 성공 팀 또는 귀사의 지정된 고객 성공 관리자에게 문의하십시오. 추가 비용이 발생합니다.
+- 추가 테스트 데이터 공간에 대한 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하고 추가 데이터 공간에 대한 비즈니스 타당성을 나타냅니다. 이 요청은 승인 대상이 됩니다.
 
 ### SaaS 프로젝트 선택 또는 만들기 {#createsaasenv}
 
