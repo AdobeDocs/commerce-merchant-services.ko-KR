@@ -4,9 +4,9 @@ description: ' [!DNL SaaS Data Export] 이(가) Adobe Commerce 인스턴스와 �
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ Commerce 인스턴스가 올바르게 구성된 경우에만 부분 동기화 �
 - 인덱서가 [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)에서 실행되거나 Commerce CLI 명령 `bin/magento indexer:info`을(를) 사용하여 실행되고 있는지 확인하십시오.
 
 - 카탈로그 특성, Product, Product Overrides 및 Product Variant 피드의 인덱서가 `Update by Schedule`(으)로 설정되어 있는지 확인하십시오. 관리자의 [인덱스 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)에서 또는 CLI(`bin/magento indexer:show-mode | grep -i feed`)를 사용하여 인덱서를 확인할 수 있습니다.
+
+### 데이터 전송 로깅을 위한 이벤트 관리자 알림
+
+버전 103.3.4 이상에서는 Commerce 인스턴스에서 Adobe Commerce 서비스로 데이터를 보낼 때 SaaS 데이터 내보내기가 `data_sent_outside` 이벤트를 전달합니다.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>이벤트 및 이벤트 구독 방법에 대한 자세한 내용은 Adobe Commerce 개발자 설명서에서 [이벤트 및 관찰자](https://developer.adobe.com/commerce/php/development/components/events-and-observers)를 참조하십시오.
