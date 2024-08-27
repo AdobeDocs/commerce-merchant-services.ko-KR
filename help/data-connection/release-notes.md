@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce의  [!DNL Data Connection] 확장에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
+source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,15 @@ _2022년 10월 12일_
 ![새로 만들기](../assets/new.svg) - [AEM 상점](overview.md#aem-support)에 대한 지원이 추가되었습니다.
 
 +++
+
+## 3.2.0-베타3
+
+_2024년 8월 27일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![새로 만들기](../assets/new.svg) - Beta에 참여하는 경우 `composer.json` 파일의 루트 수준이 ` "minimum-stability": "beta"`인지 확인하세요. 또한 `composer require "magento/customers-connector: ^1.2.0"`을(를) 추가하여 Commerce 인스턴스에서 SaaS로 고객 프로필을 보냅니다.
+![새로 만들기](../assets/new.svg) - 이 릴리스에는 3.1.1, 3.1.2, 3.1.3 및 3.1.4에 릴리스된 패치가 포함되어 있습니다.
 
 ## 3.1.4
 
