@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] 릴리스 노트'
 description: Adobe Commerce의  [!DNL Catalog Service] 에 대한 최신 릴리스 정보입니다.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,25 @@ ht-degree: 0%
 
 ## 현재 메이저 버전
 
+### V1.22 릴리스
+
+_2024년 8월 13일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![새로 만들기](../assets/new.svg) 제품 SKU별로 모든 변형을 검색할 수 있는 지원이 추가되었습니다. [카탈로그 서비스 API 참조](https://developer.adobe.com/commerce/services/graphql/catalog-service/)를 참조하세요. <!--DATA-6067-->
+
+
+## 이전 버전
+
++++ 이전 버전
+
 ### V1.19 릴리스
 
 _2024년 5월 23일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
 
 ![수정](../assets/fix.svg) <!--DATA-5033-->옵션 값에 대한 `InStock` 플래그는 이제 제품 변형의 범위 `enabled` 상태를 고려합니다.
 
@@ -45,10 +61,6 @@ API Mesh 및 Core GraphQL API를 사용하여 다음 제한 사항을 해결합�
 * 고정 가격으로 묶음 제품
 
 자세한 내용과 예제는 [카탈로그 서비스 및 API Mesh](mesh.md)를 참조하세요.
-
-## 이전 버전
-
-+++ 이전 버전
 
 ### V1.18 릴리스
 
