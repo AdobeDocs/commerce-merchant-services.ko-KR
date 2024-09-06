@@ -3,9 +3,9 @@ title: '" [!DNL Live Search]" 시작"'
 description: "Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항과 설치 단계를 알아봅니다."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Adobe은 SaaS API(특히 카탈로그 서비스 엔드포인트)를 직접 호�
 - [PLP 위젯](https://github.com/adobe/storefront-product-listing-page)
 - [실시간 검색 필드](https://github.com/adobe/storefront-search-as-you-type)
 
-검색 어댑터, Luma 위젯 또는 AEM CIF 위젯과 같은 표준 구성 요소를 사용하지 않는 경우 사용자 상호 작용 데이터의 자동 수집이 기본적으로 작동하지 않습니다. 이렇게 수집된 데이터는 Adobe Sensei에서 지능형 머천다이징 및 성능 추적에 사용됩니다. 이 문제를 해결하려면 headless 방식으로 이 데이터 수집을 구현할 수 있는 맞춤형 솔루션을 개발해야 합니다.
+검색 어댑터, Luma 위젯 또는 AEM CIF 위젯과 같은 표준 구성 요소를 사용하지 않는 경우 사용자 상호 작용 데이터의 자동 수집이 기본적으로 작동하지 않습니다. Adobe Sensei은 수집된 이 데이터를 지능형 머천다이징 및 성능 추적에 사용합니다. 이 문제를 해결하려면 headless 방식으로 이 데이터 수집을 구현할 수 있는 맞춤형 솔루션을 개발해야 합니다.
 
 [!DNL Live Search]의 최신 버전은 이미 [!DNL Catalog Service]을(를) 사용하고 있습니다.
 

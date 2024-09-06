@@ -2,9 +2,9 @@
 title: 제품 필터링
 description: 권장 사항으로 사용되는 제품을 포함하거나 제외하는 조건을 정의합니다.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Adobe Commerce은 구성 불가능한 기본 필터를 권장 사항 단위에 �
 
 ### 범주
 
-제품의 범주를 기반으로 하는 필터는 직접 범주 할당 및 해당 하위 범주를 사용합니다. 예를 들어 `Gear` 범주에 대한 제외 조건을 활성화하면 `Gear`에 할당된 제품과 `Gear/Bags` 또는 `Gear/Fitness Equipment`과(와) 같은 모든 하위 범주가 제외됩니다. B2B 판매자의 경우 범주 필터는 사용자가 구성한 [고객별 제품 범주](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)를 준수합니다.
+제품의 범주를 기반으로 하는 필터는 직접 범주 할당 및 해당 하위 범주를 사용합니다. 예를 들어 `Gear` 범주에 대한 제외 조건을 활성화하면 `Gear`에 할당된 제품과 `Gear/Bags` 또는 `Gear/Fitness Equipment`과(와) 같은 모든 하위 범주가 제외됩니다. 범주의 포함 필터에 대해서도 마찬가지입니다. 예를 들어 범주 `Gear`에 대한 포함 조건을 활성화하면 `Gear`에 할당된 제품과 `Gear/Bags` 또는 `Gear/Fitness Equipment`과(와) 같은 모든 하위 범주가 포함됩니다.
+
+>[!NOTE]
+>
+>B2B 판매자의 경우 범주 필터는 사용자가 구성한 [고객별 제품 범주](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)를 준수합니다.
 
 Adobe Commerce에서는 페이지 유형에 권장 사항을 배포할 때 다음 카테고리 필터 구성을 사용하는 것을 권장합니다.
 

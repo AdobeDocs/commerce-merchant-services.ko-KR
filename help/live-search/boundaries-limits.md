@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ ht-degree: 0%
 - [계층 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) 및 [특별 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)은(는) [!DNL Live Search] 필드 및 제품 목록 페이지 위젯에서 지원되지 않습니다.
 - 제품 가격에는 부가가치세(VAT)가 포함되지 않습니다.
 - 콘텐츠 검색이 지원되지 않습니다.
-- 페이지 매김이 가능한 제품은 10k개로 제한됩니다.
+- 페이지 매김이 가능한 제품은 10k개로 제한됩니다. 이 제한을 늘릴 수 있지만 성능에 영향을 줄 수 있습니다. 카테고리 또는 검색 결과에 제품 수가 많아 쇼핑객이 페이지 매김을 깊게 사용하지 않아도 되는 경우 제품을 필터링할 수 있는 의미 있는 방법을 제공해야 합니다.
 - 설명 및 사용자 지정 속성을 포함하여 속성당 1MB의 하드 제한이 있습니다.
 - 검색 어댑터는 사용자 지정 소스 모델로 만들어져 패싯으로 사용되는 제품 속성을 지원하지 않습니다. 이 기능을 지원하려면 [제품 목록 페이지 위젯](plp-styling.md)을 사용해야 합니다.
+- 사용자 지정 제품 유형은 지원되지 않습니다.
 
 ## 색인화
 
@@ -84,3 +85,15 @@ ht-degree: 0%
 - [!DNL popover]은(는) *Blank* 테마를 지원하지 않습니다.
 - [!DNL popover]은(는) 빠른 주문 양식에서 지원되지 않습니다.
 - 위시리스트 및 제품 비교는 지원되지 않습니다.
+- 페루 솔(PEN)의 통화 기호는 지원되지 않습니다.
+
+## 문제 해결
+
+[!DNL Live Search]의 몇 가지 일반적인 문제를 해결하는 데 대한 도움말을 보려면 다음 기술 자료를 참조하십시오.
+
+- [[!DNL Live Search] 카탈로그가 동기화되지 않음](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] 대시보드 및 검색 결과 순위가 잘못됨](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] 관리자의 재고 상태 설정에 관계없이 품절 제품을 표시합니다](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] 패싯이 알파벳순으로 정렬되지 않음](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+추가 지원이 필요한 경우 [지원](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)에 문의하십시오.
