@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 ## 패싯
 
 - 인덱싱할 수 있는 200개의 필터링 가능한 속성에서 패싯으로 최대 100개의 속성을 구성할 수 있습니다.
-- Facet 내에서 최대 30개의 버킷이 반환될 수 있습니다. 30개가 넘는 버킷을 반환해야 하는 경우 [지원 티켓을 만듭니다](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). 그러면 Adobe은 성능에 미치는 영향을 분석하고 환경에 대한 이 제한을 늘릴 수 있는지 확인할 수 있습니다.
+- Facet 내에서 최대 100개의 버킷이 반환될 수 있습니다. 100개가 넘는 버킷을 반환해야 하는 경우 [지원 티켓을 만들기](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)하여 Adobe이 성능에 미치는 영향을 분석하고 환경에 대한 이 제한을 늘릴 수 있는지 확인합니다.
 - 동적 패싯은 큰 인덱스와 순서가 높은 인덱스에서 성능 문제를 일으킬 수 있습니다. 동적 패싯을 만들어 성능 저하 또는 페이지가 시간 초과 오류와 함께 로드되지 않은 것을 발견한 경우 패싯을 고정으로 변경하여 성능 문제가 해결되는지 확인하십시오.
 - 재고 상태(`quantity_and_stock_status`)는 패싯으로 지원되지 않습니다. `inStock: 'true'`을(를) 사용하여 재고 제품을 필터링할 수 있습니다. 이는 [!DNL Commerce] 관리자의 &quot;재고 부족 제품 표시&quot;가 &quot;True&quot;로 설정된 경우 `LiveSearchAdapter` 모듈에서 즉시 지원됩니다.
 - 날짜 유형 속성은 패싯으로 지원되지 않습니다.

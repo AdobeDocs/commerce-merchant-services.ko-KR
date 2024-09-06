@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 ## 호스팅된 서비스 업데이트
 
 이 참고 사항에서는 버전 관리된 릴리스 외부에 게시된 업데이트 또는 호스팅된 서비스에 대한 개선 사항에 대해 설명합니다.
+
+_2024년 9월 4일_
+
+![수정](../assets/fix.svg) 패싯 내에서 [반환할 수 있는 최대 버킷 수를 늘렸습니다](boundaries-limits.md#facets).
 
 _2024년 8월 7일_
 
