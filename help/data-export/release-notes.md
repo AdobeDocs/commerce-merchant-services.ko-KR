@@ -4,9 +4,9 @@ description: Adobe Commerce의  [!DNL Data Export Extension] 에 대한 최신 �
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ ht-degree: 0%
 
 ## 103.3.11 릴리스
 
-![수정](../assets/fix.svg) 이제 데이터 내보내기 서비스에서 번들 제품에 대한 특별 가격 데이터를 백분율로 보내어, 최종 가격으로 전송된 이전 문제를 해결합니다.&lt;!-MDEE-854—>
-![수정](../assets/fix.svg) Monolog 3과의 호환성을 위해 Monolog 구현을 업데이트했습니다.&lt;!-MDEE-858—>
+![수정](../assets/fix.svg) 이제 데이터 내보내기 서비스에서 번들 제품에 대한 특별 가격 데이터를 백분율로 보내어, 최종 가격으로 전송된 이전 문제를 해결합니다. <!--MDEE-854-->
+![수정](../assets/fix.svg) 모노로그 3과의 호환성을 위해 모노로그 구현을 업데이트했습니다. <!--MDEE-858-->
 
 ## 103.3.10 릴리스
 
