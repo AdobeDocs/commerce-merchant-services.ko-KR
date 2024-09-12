@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 3%
 - 결제 및 체크아웃 {#payments-checkout}
    - [결제 옵션](payments-options.md)
    - [신용 카드 보관](vaulting.md)
-   - [체크아웃](checkout.md)
-   - [관리자에서 주문 만들기](create-order.md)
+   - [ [!DNL Payment Services]에서 체크아웃](checkout.md)
    - 결제 관리 {#manage}
       - [ [!DNL Payment Services]에 대한 라인 항목](line-items.md)
       - [환불](refunds.md)
       - [빈 공간](voids.md)
+   - [관리자에서 주문 만들기](create-order.md)
+   - [ [!DNL Payment Services]에서 배송 추적](track-shipment.md)
 - Financial Reporting {#reporting}
    - [거래 보고서](transactions.md)
    - [주문 결제 상태 보고서](order-payment-status.md)

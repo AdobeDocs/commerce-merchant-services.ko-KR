@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 [!DNL Payment Services] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 이러한 릴리스 노트는 호스팅 서비스에 대한 일반 기능 릴리스 외부에서 발생하거나 릴리스된 기능 변경 사항 및 수정 사항에 대해 설명합니다.
 
 +++호스팅된 서비스 업데이트
+
+_2024년 8월 30일_
+
+![새 문제](../assets/new.svg)<!-- Issue PAY-5658 --> 이제 가맹점은 보다 자세하고 정확한 결제 방법 데이터를 위해 [거래 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html)의 결제 세부 정보별로 거래를 필터링할 수 있습니다.
 
 _2024년 7월 15일_
 
@@ -86,6 +90,20 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 열 설정 컨트롤을 사용하여 열을 표시하거나 숨김으로써 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)에 표시되는 데이터를 사용자 지정할 수 있습니다.
 
 +++
+
+## v2.8.0
+
+_2024년 9월 13일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![새로 만들기](../assets/new.svg)<!-- PAY-5499 --> 이제 [!DNL Payment Services]은(는) Adobe Commerce에서 [추적 번호를 입력](track-shipment.md)할 때 PayPal에 추적 번호 정보를 보낼 수 있습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services]은(는) 고객이 Commerce 체크아웃 페이지를 방문할 때 판매자 레지스트리에 대한 요청 프로세스를 최적화했습니다. 이전에는 각 결제 방법(호스트형 필드, Google 페이, Apple 페이 및 스마트 버튼)에 대해 별도의 요청이 있었습니다. 이러한 개선을 통해 호출 수를 줄여 체크아웃 프로세스 중 성능 및 효율성을 개선합니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5645 --> 이제 [!DNL Payment Services]은(는) 구매자가 결제 페이지에서 사용자 지정 약관을 만든 가맹점에 동의하지 않은 경우 PayPal/Google Pay 팝업이 열리지 않도록 합니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services]이(가) PayPal 포털의 라인 항목 세금 분류와 관련된 문제를 해결했습니다. 주문의 배송비에 세금이 연관되어 있는 경우 세금은 배송비의 일부로 포함되며 PayPal 포털에 표시된 라인 항목 세부 사항에 표시됩니다.
 
 ## v2.7.0
 

@@ -1,16 +1,17 @@
 ---
-title: 체크아웃
-description: 고객의 요구 사항에 맞게 체크아웃을 사용자 정의합니다.
+title: ' [!DNL Payment Services]에서 체크아웃'
+description: 고객의 요구 사항에 맞게  [!DNL Payment Services] 체크아웃을 사용자 지정합니다.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# 체크아웃
+
+# [!DNL Payment Services]에서 체크아웃
 
 쇼핑객에게 가장 적합한 Adobe Commerce [!DNL Payment Services]에 대한 체크아웃을 구성할 수 있습니다. [주문 자동 무효화](#order-auto-voided-if-error) 및 [신용 카드 보관](#credit-card-vaulting)과 같은 기능을 통해 쇼핑객이 원활한 사용자 경험을 할 수 있습니다.
 

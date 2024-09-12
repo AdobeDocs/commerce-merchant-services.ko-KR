@@ -4,9 +4,9 @@ description: 거래 보고서를 사용하여 거래 승인 비율과 거래 추
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ ht-degree: 0%
 
 _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**(으)로 이동하여 자세한 테이블 형식 트랜잭션 보고서 보기를 확인합니다.
 
-![트랜잭션 보고서 보기](assets/transactions-report-view.png){width="600" zoomable="yes"}
+![트랜잭션 보고서 보기](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
 이 항목의 섹션에 따라 이 보기를 구성하여 보려는 데이터를 가장 잘 표시할 수 있습니다.
 
-이 보고서에서 연결된 Commerce 주문 및 공급자 거래 ID, 거래 금액, 거래당 결제 방법 등을 모두 참조하십시오.
+이 보고서에서 연결된 Commerce 주문 및 PayPal 거래 ID, 거래 금액, 거래당 결제 방법 등을 참조하십시오.
 
 모든 결제 방법이 동일한 세부 정보를 제공하는 것은 아닙니다. 예를 들어 신용 카드 거래는 응답, AVS 및 CCV 코드를 제공하며 거래 보고서에서 카드의 마지막 네 자리를 제공합니다. PayPal 결제 버튼은 제공하지 않습니다.
 
@@ -86,12 +86,11 @@ _[!UICONTROL Live]_이(가) 선택한 데이터 소스인 경우 프로덕션 �
 1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**(으)로 이동합니다.
 1. **[!UICONTROL Filter]** 선택기를 클릭합니다.
 1. 선택한 주문 트랜잭션에 대한 보고서 결과를 보려면 _[!UICONTROL Transaction Result]_옵션을 전환하십시오.
-1. 선택한 카드 유형에 대한 보고서 결과를 보려면 _[!UICONTROL Card Type]_을(를) 선택하십시오. 결제 프로세서가 카드 유형을 식별할 수 없는 경우 자세한 정보가 포함된 도구 설명이 표시됩니다.
-1. 선택한 카드 브랜드에 대한 보고서 결과를 보려면 _[!UICONTROL Card Brand]_을(를) 선택하십시오. 결제 프로세서가 카드 브랜드를 식별할 수 없는 경우 자세한 정보가 포함된 도구 설명이 표시됩니다.
-1. _[!UICONTROL Payment Method]_옵션을 전환하여 선택한 결제 방법에 대한 보고서 결과만 표시합니다.
+1. 거래에 사용된 결제 유형에 대한 보고서 결과를 보려면 _[!UICONTROL Payment Method]_옵션을 전환하십시오.
+1. 사용 가능한 경우 사용된 결제 유형에 대한 추가 정보를 보려면 _[!UICONTROL Payment Detail]_옵션을 전환하십시오.
 1. 해당 주문 금액 범위 내에서 보고서 결과를 보려면 _최소 주문 금액_ 또는 _최대 주문 금액_&#x200B;을 입력하십시오.
 1. 특정 트랜잭션을 검색하려면 _[!UICONTROL Order ID]_을(를) 입력하십시오.
-1. 특정 신용 카드 또는 직불 카드를 검색하려면 _[!UICONTROL Card Last Four Digits]_을(를) 도입하십시오.
+1. 특정 신용 카드 또는 직불 카드를 검색하려면 _[!UICONTROL Card Last Four]_을(를) 도입하십시오.
 1. 특정 고객의 모든 트랜잭션을 표시하려면 _[!UICONTROL Customer ID]_을(를) 입력하십시오.
 1. 해당 전자 메일에 대한 트랜잭션을 필터링하려면 _[!UICONTROL Customer Email]_을(를) 입력하십시오.
 1. 필터를 숨기려면 **[!UICONTROL Hide filters]**&#x200B;을(를) 클릭합니다.
@@ -134,11 +133,12 @@ _[!UICONTROL Live]_이(가) 선택한 데이터 소스인 경우 프로덕션 �
 | 열 | 설명 |
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce 주문 ID(성공적인 트랜잭션에 대한 값만 포함하며 거부된 트랜잭션에 대해서는 비어 있음)<br> <br>관련 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 보려면 ID를 클릭하세요. |
-| [!UICONTROL Provider Transaction ID] | 결제 제공자가 제공한 거래 ID. 성공적인 거래에 대한 값만 포함되고 거부된 거래에 대한 대시가 포함됩니다. |
+| [!UICONTROL PayPal Transaction ID] | 결제 제공자가 제공한 거래 ID. 성공적인 거래에 대한 값만 포함되고 거부된 거래에 대한 대시가 포함됩니다. 이 ID를 클릭하여 PayPal 거래 세부 사항 페이지에 액세스할 수 있습니다. |
 | [!UICONTROL Customer ID] | 주문의 Commerce 고객 ID<br> <br>자세한 내용은 [고객 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} 항목을 참조하십시오. |
 | [!UICONTROL Transaction Date] | 트랜잭션 날짜 타임스탬프 |
-| [!UICONTROL Payment Method] | 브랜드 및 카드 종류에 대한 자세한 정보가 포함된 거래 결제 방법. 자세한 내용은 [카드 유형](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type)을 참조하십시오. 결제 서비스 버전 1.6.0 이상에서 사용할 수 있습니다 |
-| [!UICONTROL Card Last Four Digits] | 거래에 사용된 신용 카드 또는 직불 카드의 마지막 4자리 |
+| [!UICONTROL Payment Method] | 브랜드 및 카드 유형에 대한 정보로 거래에 사용되는 결제 유형. 자세한 내용은 [카드 유형](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type)을 참조하십시오. 결제 서비스 버전 1.6.0 이상에서 사용할 수 있습니다 |
+| [!UICONTROL Payment Detail] | 거래에 사용된 결제 유형에 대한 추가 정보를 제공합니다(사용 가능한 경우). |
+| [!UICONTROL Card Last Four] | 거래에 사용된 신용 카드 또는 직불 카드의 마지막 4자리 |
 | [!UICONTROL Result] | 거래 결과—*[!UICONTROL OK]*(거래 성공), *[!UICONTROL Rejected by Payment Provider]*(PayPal에서 거부), *[!UICONTROL Rejected by Bank]*(카드를 발급한 은행에서 거부) |
 | [!UICONTROL Response Code] | 결제 공급자 또는 은행에서 거부 이유를 제공하는 오류 코드. [`Rejected by Bank` 상태](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) 및 [`Rejected by Payment Provider` 상태](https://developer.paypal.com/api/rest/reference/orders/v2/errors/)에 대해 가능한 응답 코드 목록 및 설명을 참조하십시오. |
 | [!UICONTROL AVS Code] | 주소 확인 서비스 코드, 결제 요청에 대한 프로세서 응답 정보. 자세한 내용은 [가능한 코드 및 설명 목록](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)을 참조하세요. |
