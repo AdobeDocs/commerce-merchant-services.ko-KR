@@ -2,7 +2,7 @@
 title: ' [!DNL Payment Services]에서 배송 추적'
 description: Paypal 판매자 대시보드에 표시되는  [!DNL Payment Services] 배송 및 추적 정보를 사용자 지정합니다.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ PayPal은 추적 정보를 처리하기 위해 `capture_id`을(를) 받아야 �
 
 ### 서드파티와의 호환성
 
-타사 확장은 배송 엔터티가 [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}를 통해 만들어지는 경우 기능과 호환됩니다.
+타사 확장은 배송 엔터티가 [Commerce API](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}를 통해 만들어지는 경우 기능과 호환됩니다.
