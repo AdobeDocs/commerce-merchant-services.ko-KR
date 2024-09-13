@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 [!DNL Payment Services] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 열 설정 컨트롤을 사용하여 열을 표시하거나 숨김으로써 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)에 표시되는 데이터를 사용자 지정할 수 있습니다.
 
 +++
+
+## v2.8.1
+
+_2024년 9월 13일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![수정](../assets/fix.svg)<!-- PAY-5644 --> [!DNL Payment Services]에서 여러 범위를 사용할 때 SDK 매개 변수 캐시의 문제를 해결했습니다. 이제 SDK 구성이 단일 키 아래에 있는 대신 각 범위에 대해 개별적으로 캐시됩니다. 이렇게 하면 각 범위의 캐시가 독립적으로 무효화되므로 여러 범위를 관리할 때 안정성이 향상됩니다.
 
 ## v2.8.0
 
