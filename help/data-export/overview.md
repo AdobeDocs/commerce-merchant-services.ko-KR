@@ -2,9 +2,8 @@
 title: '[!DNL SaaS Data Export Guide]'
 description: Adobe Commerce과 연결된 Adobe Commerce 서비스 간에 데이터를 동기화하는 Commerce SaaS 서비스용  [!DNL data export] 확장 사용에 대해 알아봅니다.
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 2eeb11bf5ead38131d42b330162ea3d9c531c465
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
