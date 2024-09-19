@@ -3,9 +3,9 @@ title: '" [!DNL Live Search]" 시작"'
 description: "Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항과 설치 단계를 알아봅니다."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ Adobe Commerce [!DNL Live Search]과(와) [[!DNL Catalog Service]](../catalog-se
    ```bash
    bin/magento setup:upgrade
    ```
+
+### [!DNL Live Search] 베타 설치
+
+>[!IMPORTANT]
+>
+>[!DNL Live Search]에서 사용할 수 있는 새로운 기능을 살펴보려면 Beta를 설치하세요.
+
+이 베타는 [`productSearch` 쿼리](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)에서 세 가지 새로운 기능을 지원합니다.
+
+- **계층화된 검색** - 다른 검색 컨텍스트에서 검색 - 이 기능을 사용하면 검색 쿼리에 대해 최대 두 개의 계층을 검색할 수 있습니다. For example:
+
+   - **계층 1 검색** - &quot;product_attribute_1&quot;에서 &quot;motor&quot;를 검색합니다.
+   - **계층 2 검색** - &quot;product_attribute_2&quot;에서 &quot;부품 번호 123&quot;을 검색합니다. 이 예제에서는 결과 내에서 &quot;motor&quot;에 대해 &quot;part number 123&quot;을 검색합니다.
+
+  아래에 설명된 대로 `startsWith` 검색 인덱싱과 `contains` 검색 인덱싱에 모두 계층화된 검색을 사용할 수 있습니다.
+
+- **검색 인덱싱으로 시작** - `startsWith` 인덱싱을 사용하여 검색 이 새로운 기능을 통해 다음과 같은 작업을 수행할 수 있습니다.
+
+   - 속성 값이 특정 문자열로 시작하는 제품을 검색합니다.
+   - 구매자가 속성 값이 특정 문자열로 끝나는 제품을 검색할 수 있도록 &quot;다음으로 끝남&quot; 검색을 구성합니다. &quot;다음으로 끝남&quot; 검색을 활성화하려면 제품 속성을 역순으로 수집해야 하며 API 호출도 역순 문자열이어야 합니다.
+
+- **검색 인덱싱을 포함** -포함 인덱싱을 사용하여 특성을 검색합니다. 이 새로운 기능을 통해 다음과 같은 작업을 수행할 수 있습니다.
+
+   - 더 큰 문자열 내에서 쿼리를 검색하고 있습니다. 예를 들어 구매자가 문자열 &quot;HAPE-123&quot;에서 제품 번호 &quot;PE-123&quot;을 검색하는 경우,
+
+      - 참고: 이 검색 유형은 자동 완성 검색을 수행하는 기존 [구 검색](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase)과(와) 다릅니다. 예를 들어 제품 속성 값이 &quot;outdoor pants&quot;인 경우 구문 검색은 &quot;out pan&quot;에 대한 응답을 반환하지만 &quot;or ants&quot;에 대한 응답은 반환하지 않습니다. 그러나 에는 검색이 포함되어 있으며 &quot;or ants&quot;에 대한 응답을 반환합니다.
+
+이러한 새 조건은 검색 결과를 구체화하기 위한 검색 쿼리 필터링 메커니즘을 향상시킵니다. 이러한 새 조건은 기본 검색 쿼리에 영향을 주지 않습니다.
+
+검색 결과 페이지에서 이러한 새 조건을 구현할 수 있습니다. 예를 들어, 쇼핑객이 검색 결과를 더 구체화할 수 있는 페이지에 새 섹션을 추가할 수 있습니다. 구매자가 &quot;제조업체&quot;, &quot;부품 번호&quot; 및 &quot;설명&quot;과 같은 특정 제품 속성을 선택할 수 있도록 할 수 있습니다. 여기에서 `contains` 또는 `startsWith` 조건을 사용하여 해당 특성 내에서 검색합니다. 검색 가능한 [특성](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) 목록은 관리 안내서를 참조하십시오.
+
+1. Beta를 설치하려면 명령줄에서 다음을 실행합니다.
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   이 베타는 관리자의 **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** 및 **[!UICONTROL Starts with]**&#x200B;에 대한 **[!UICONTROL Search types]**&#x200B;개의 확인란을 추가합니다. 또한 이러한 새로운 검색 기능을 포함하도록 `productSearch` GraphQL API를 업데이트합니다.
+
+1. 관리에서 [제품 특성을 검색 가능하게 설정](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)하고 해당 특성에 대한 검색 기능을 지정하십시오(예: **포함**(기본값) 또는 **다음으로 시작**). **포함**&#x200B;에 대해 최대 6개의 특성을 사용할 수 있도록 지정하고 **다음으로 시작**&#x200B;에 대해 최대 6개의 특성을 사용할 수 있도록 지정할 수 있습니다. Beta의 경우 관리자가 이 제한을 적용하지 않지만 API 검색에 적용된다는 점에 유의하십시오.
+
+   ![검색 기능 지정](./assets/search-filters-admin.png)
+
+1. 새로운 `contains` 및 `startsWith` 검색 기능을 사용하여 [!DNL Live Search] API 호출을 업데이트하는 방법에 대해 알아보려면 [개발자 설명서](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)를 참조하십시오.
+
+### 필드 설명
+
+| 필드 | 설명 |
+|--- |--- |
+| `Autocomplete` | 기본적으로 활성화되고 수정할 수 없습니다. `Autocomplete`을(를) 사용하면 [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering)에서 `contains`을(를) 사용할 수 있습니다. `contains`의 검색 쿼리가 자동 완성 형식 검색 응답을 반환합니다. Adobe은 일반적으로 50자를 초과하는 설명 필드에 대해 이 유형의 검색을 사용할 것을 권장합니다. |
+| `Contains` | 자동 완성 검색 대신 &quot;문자열에 포함된 텍스트&quot; 검색을 true로 설정합니다. [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)에서 `contains`을(를) 사용합니다. 자세한 내용은 [제한](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)을 참조하세요. |
+| `Starts with` | 특정 값으로 시작하는 문자열을 쿼리할 수 있습니다. [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)에서 `startsWith`을(를) 사용합니다. |
 
 ## 2. API 키 구성
 
