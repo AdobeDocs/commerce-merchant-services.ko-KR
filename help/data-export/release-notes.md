@@ -4,9 +4,9 @@ description: Adobe Commerce의  [!DNL Data Export Extension] 에 대한 최신 �
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: ade4837a3b8ed4800fa73f16c1083885306c7389
+source-git-commit: 1ef9e27bfe92da801225ca8b2da998fd771479f7
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 >SaaS 데이터 내보내기 확장은 라이브 검색, 제품 Recommendations 및 카탈로그 서비스와 함께 자동으로 설치되는 모듈 컬렉션입니다. 작성기를 사용하여 시스템에 설치된 버전을 확인할 수 있습니다. 경우에 따라 Commerce 서비스 버전을 업데이트하지 않고 시스템에서 데이터 내보내기 확장 기능을 업그레이드하여 수정 사항이나 새 기능을 선택할 수 있습니다.
 
 ## 현재 메이저 버전
+
+## 103.3.13 릴리스
+
+![수정](../assets/fix.svg) 특성 옵션 데이터에 대한 로컬 캐시를 추가하여 데이터 동기화 프로세스의 성능을 개선했습니다.&lt;!-MDEE-864—>
 
 ## 103.3.12 릴리스
 
