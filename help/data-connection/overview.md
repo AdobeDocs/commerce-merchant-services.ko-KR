@@ -3,7 +3,7 @@ title: 안내서 개요
 description: ' [!DNL Data Connection] 확장을 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.'
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Adobe Experience Platform은 Commerce 스토어의 데이터로 하이드레이�
 
 | 애플리케이션 | 목적 | 사용 사례 |
 |---|---|---|
-| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=ko-KR) | 프로필 관리 및 세분화 서비스 | **구매 내역 세분화**: 판매자는 특정 기간(월별, 분기별, 연간 등)에 따라 품목을 구매하는 고객을 식별할 수 있습니다. 그런 다음 판매자는 이러한 고객에 대한 세그먼트를 만들고 프로모션, 캠페인 및 구독 서비스에 대한 리드에 대한 _단계 상단_ 데이터로 타겟팅할 수 있습니다.<br> **범주 기반 세분화**: 판매자는 구매한 제품 범주를 볼 수 있습니다.<br> **제공 기반 세분화**: 판매자는 제품을 일관되게 반품하는 고객을 식별할 수 있습니다. 이제 고객에게 제공되는 오퍼와 할인이 보다 지능적일 수 있습니다. 예를 들어 항상 제품을 반품하는 고객에 대해 무료 배송을 제거할 수 있습니다.<br> **유사 대상 타기팅**: _유사 대상_&#x200B;은(는) 기존 고객과 유사한 특성을 공유하므로 비즈니스에 관심이 있는 새로운 사람에게 제공하기 위해 판매자가 프로모션을 위해 취하는 방법론입니다. 동작 및 트랜잭션 데이터를 기반으로 유사 세그먼트를 만들 수 있습니다.<br> **고객 성향**: 트랜잭션 데이터에서 만들 수 있는 고객 프로필의 깊이가 더 깊기 때문에 고객 동작이 변경되는 것을 확인할 수 있습니다. 제품 반환 및 제품 구성과 같은 계산에 유입되는 데이터가 많을수록 성향 점수에 대한 신뢰도가 높아집니다.<br> **교차 판매**: 판매자는 Commerce에서 캡처한 세분화된 정보에서 강력한 교차 판매 및 상향 판매 기회를 식별할 수 있습니다. |
+| [Adobe [!DNL Real-Time CDP]](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html#?lang=ko) | 프로필 관리 및 세분화 서비스 | **구매 내역 세분화**: 판매자는 특정 기간(월별, 분기별, 연간 등)에 따라 품목을 구매하는 고객을 식별할 수 있습니다. 그런 다음 판매자는 이러한 고객에 대한 세그먼트를 만들고 프로모션, 캠페인 및 구독 서비스에 대한 리드에 대한 _단계 상단_ 데이터로 타겟팅할 수 있습니다.<br> **범주 기반 세분화**: 판매자는 구매한 제품 범주를 볼 수 있습니다.<br> **제공 기반 세분화**: 판매자는 제품을 일관되게 반품하는 고객을 식별할 수 있습니다. 이제 고객에게 제공되는 오퍼와 할인이 보다 지능적일 수 있습니다. 예를 들어 항상 제품을 반품하는 고객에 대해 무료 배송을 제거할 수 있습니다.<br> **유사 대상 타기팅**: _유사 대상_&#x200B;은(는) 기존 고객과 유사한 특성을 공유하므로 비즈니스에 관심이 있는 새로운 사람에게 제공하기 위해 판매자가 프로모션을 위해 취하는 방법론입니다. 동작 및 트랜잭션 데이터를 기반으로 유사 세그먼트를 만들 수 있습니다.<br> **고객 성향**: 트랜잭션 데이터에서 만들 수 있는 고객 프로필의 깊이가 더 깊기 때문에 고객 동작이 변경되는 것을 확인할 수 있습니다. 제품 반환 및 제품 구성과 같은 계산에 유입되는 데이터가 많을수록 성향 점수에 대한 신뢰도가 높아집니다.<br> **교차 판매**: 판매자는 Commerce에서 캡처한 세분화된 정보에서 강력한 교차 판매 및 상향 판매 기회를 식별할 수 있습니다. |
 | [고객 [!DNL Journey Analytics]](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html) | 전체 Commerce 여정에 대한 심층 분석 | **계절별 트렌드**: 판매자는 계절별 트렌드를 식별하여 특정 제품에 대한 정기적인 수요 변화에 대비할 수 있습니다. 또한 상인은 수년에 걸쳐 모든 제품의 전반적인 인기도 변화를 확인할 수 있습니다.<br> **전환 분석**: 판매자는 제품을 구매한 시점을 알고 상점 노출 이벤트에 대한 액세스와 함께 고객의 풍부한 프로필을 생성하여 전환 분석을 수행할 수 있습니다. |
 | [Adobe [!DNL Analytics]](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) | 고객 행동 및 캠페인 성과에 대한 심층적인 분석 | **주문 반품**: 판매자는 반품하는 상품 패턴을 가진 고객과 대규모 고객 세그먼트를 식별할 수 있습니다. 따라서 가맹점은 고객 기반 동작이 어떻게 보이는지 파악하여 상거래 전략을 개선하는 데 도움이 됩니다.<br> **주문 주소**: 배송 주소를 기반으로 판매자는 고객이 직접 주문을 했는지 또는 다른 개인 또는 엔터티를 위한 주문인지 파악할 수 있습니다.<br> **계절성 트렌드**: 판매자는 계절성 트렌드를 식별하여 특정 제품에 대한 정기적인 수요 변화에 대비할 수 있습니다. 또한 상인은 수년에 걸쳐 모든 제품의 전반적인 인기도 변화를 확인할 수 있습니다.<br> **전환 분석**: 판매자는 제품을 구매한 시점을 알고 상점 노출 이벤트에 대한 액세스와 함께 고객의 풍부한 프로필을 생성하여 전환 분석을 수행할 수 있습니다. **참고** Adobe Analytics은 동작(상점) 이벤트 데이터만 지원합니다. Adobe Analytics은 트랜잭션(백오피스) 이벤트 데이터를 지원하지 않습니다. |
 | [Adobe [!DNL Journey Optimizer]](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) | 채널 간 Campaign 오케스트레이션 | **동작 기반 여정**: 판매자는 새 모델을 구입하도록 제안하여 2년 전에 휴대폰을 구입한 고객을 타깃팅할 수 있습니다. 판매자는 이러한 고객을 위한 개인화된 캠페인과 프로모션을 만들고 이메일 및 SMS 기능을 사용하여 연락할 수 있습니다. 또한, 상인들은 과거 질서와 행동 데이터를 사용하여 동향을 파악할 수 있습니다. 예를 들어 과거에 특정 구성을 사용하여 제품을 구매했다가 이제 동일한 제품을 다시 구매하려는 고객은 동일한 제품 구성에 대한 가시성과 액세스 권한을 제공하여 구매 여정을 향상시킬 수 있습니다.<br> **Personalization**: 고객 프로필 정보에 대한 액세스 권한을 통해 [!DNL Journey Optimizer]은(는) 상인이 여러 다른 채널의 고객에게 연락할 수 있도록 높은 개인화 여정을 잠금 해제할 수 있습니다.<br> **새 프로필 생성됨**: 환영 전자 메일 및 홍보 활동이 새로운 고객의 쇼핑 여정을 격려하고 영향을 줄 수 있습니다.<br> **프로필이 삭제됨**: 가맹점은 계정을 닫은 고객에게 프로모션 이메일 전송을 중지할 수 있습니다. 또는 상인이 잃어버린 고객을 되찾기 위한 캠페인을 구축할 수도 있습니다. |
@@ -67,6 +67,8 @@ Commerce에서 Experience Platform으로, Experience Platform에서 Commerce으�
 * [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
 * [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
+>[!BEGINSHADEBOX]
+
 ## 전제 조건
 
 [!DNL Data Connection] 확장을 사용하려면 다음 항목이 있어야 합니다.
@@ -75,6 +77,8 @@ Commerce에서 Experience Platform으로, Experience Platform에서 Commerce으�
 * Adobe ID 및 조직 ID
 * [ACDL(Adobe 클라이언트 데이터 레이어)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), storefront 이벤트 데이터를 수집하는 데 필요
 * 다른 Adobe DX 제품에 대한 자격.
+
+>[!ENDSHADEBOX]
 
 ## 온보딩 단계
 

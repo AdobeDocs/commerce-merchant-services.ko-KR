@@ -4,9 +4,9 @@ description: 각 백오피스 이벤트가 캡처하는 데이터를 알아봅�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ ht-degree: 0%
 | `productListItems.categories.path` | 카테고리에 대한 경로입니다. |
 
 ## 고객 프로필 이벤트
-
->[!IMPORTANT]
->
->이 기능은 Beta 버전입니다.
 
 서버측에서 캡처된 프로필 이벤트에는 `accountCreated`, `accountUpdated`, `accountDeleted` 등의 계정 정보가 포함됩니다. 이 데이터는 등록 할인 오퍼, 계정 변경 확인 전송 등과 같이, 세그먼트를 더 잘 정의하거나 마케팅 캠페인을 실행하는 데 필요한 주요 고객 세부 정보를 채우는 데 사용됩니다. [storefront](events.md#customer-profile-events)에서 캡처된 유사한 프로필 이벤트가 있습니다.
 

@@ -4,14 +4,14 @@ description: 스키마, 데이터 세트 및 데이터스트림을 만들어 Com
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# Commerce 데이터 수집을 위한 프로필 레코드 스키마 업데이트(Beta)
+# Commerce 데이터 수집을 위한 프로필 레코드 스키마 업데이트
 
 쇼핑객이 Commerce 사이트에서 프로필을 만들면 프로필 레코드가 생성되고 데이터가 캡처됩니다. 해당 프로필 데이터를 Experience Platform에 스트리밍하려면 먼저 해당 프로필 레코드와 관련된 스키마 및 데이터 세트를 만들어야 합니다.
 

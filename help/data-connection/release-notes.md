@@ -3,9 +3,9 @@ title: 릴리스 정보
 description: Adobe Commerce의  [!DNL Data Connection] 확장에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _2022년 10월 12일_
 
 +++
 
+## 3.2.0
+
+_2024년 10월 7일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![새로 만들기](../assets/new.svg) - 백 오피스 데이터에 대한 [사용자 지정 순서 특성](custom-attributes.md)을(를) 만드는 기능이 추가되었습니다.
+![새로 만들기](../assets/new.svg) - [!DNL Commerce]에 구성되어 Experience Platform으로 전송된 사용자 지정 특성을 보는 데 도움이 되는 새 [사용자 지정 순서 특성](connect-data.md#data-customization) 테이블을 추가했습니다.
+![새로 만들기](../assets/new.svg) - [Experience Platform 레코드 및 데이터를 수집하고 보내기](connect-data.md#send-customer-profile-data) 기능을 추가했습니다.
+
 ## 3.2.0-베타3
 
 _2024년 8월 27일_
@@ -128,7 +138,7 @@ _2024년 3월 4일_
 [!BADGE 호환성]{type=Informative tooltip="호환성"}
 
 ![새로 만들기](../assets/new.svg) - Beta에 참여하는 경우 `composer.json` 파일의 루트 수준이 ` "minimum-stability": "beta"`인지 확인하세요. 또한 `composer require "magento/customers-connector: ^1.2.0"`을(를) 추가하여 Commerce 인스턴스에서 SaaS로 고객 프로필을 보냅니다.
-![새로 만들기](../assets/new.svg) - [사용자 지정 특성을 추가](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data)하는 기능이 추가되었습니다.
+![새로 만들기](../assets/new.svg) - [사용자 지정 특성을 추가](custom-attributes.md)하는 기능이 추가되었습니다.
 ![새로 만들기](../assets/new.svg) - [Experience Platform 레코드 및 데이터를 수집하고 보내기](connect-data.md#send-customer-profile-data) 기능을 추가했습니다.
 
 ## 3.1.0

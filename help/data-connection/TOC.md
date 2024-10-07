@@ -5,9 +5,9 @@ breadcrumb-title: " Adobe Commerce용 [!DNL Data Connection] 확장"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 3%
 
 ---
@@ -20,13 +20,14 @@ ht-degree: 3%
    - [ [!DNL Data Connection] 확장 설치](install.md)
    - [Commerce 데이터 유형](data-ingestion.md)
    - [Commerce 데이터 수집을 위한 시계열 이벤트 스키마 업데이트](update-xdm.md)
-   - [Commerce 데이터 수집을 위한 프로필 레코드 스키마 업데이트(Beta)](profile-data.md)
+   - [Commerce 데이터 수집을 위한 프로필 레코드 스키마 업데이트](profile-data.md)
    - [Commerce 데이터를 Adobe Experience Platform에 연결](connect-data.md)
    - [Adobe Experience Platform Mobile SDK와 Commerce 통합](mobile-sdk-epc.md)
 - {#event-forwarding} 데이터 캡처
    - [동작 이벤트](events.md)
    - [백오피스 이벤트](events-backoffice.md)
-   - [프로필 레코드(Beta)](events-profilerecord.md)
+   - [프로필 레코드](events-profilerecord.md)
+   - [사용자 지정 순서 속성 추가](custom-attributes.md)
    - [사용자 지정 이벤트](custom-events.md)
    - [Adobe Experience Platform 태그 사용](using-tags.md)
 - 사용 사례 {#use-cases}

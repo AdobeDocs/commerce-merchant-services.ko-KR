@@ -4,14 +4,14 @@ description: 프로필 레코드가 캡처하는 데이터를 알아봅니다.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
-source-git-commit: c02496fb3f88f4781b79c5e477d5508c3e3d5224
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection]개의 프로필 레코드(Beta)
+# [!DNL Data Connection]개의 프로필 레코드
 
 다음은 [!DNL Data Connection] 확장을 설치할 때 사용할 수 있는 Commerce 프로필 레코드 데이터에 대해 설명합니다. 프로필 레코드의 데이터는 Adobe Experience Platform으로 전송됩니다.
 

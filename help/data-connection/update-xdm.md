@@ -4,9 +4,9 @@ description: 스키마, 데이터 세트 및 데이터스트림을 만들어 Com
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ ht-degree: 0%
 동작 및 백 오피스 데이터에 대해 구성된 스키마, 데이터 세트 및 데이터 스트림을 사용하여 해당 데이터를 수집하여 Experience Platform으로 보내도록 Commerce 인스턴스를 [구성](connect-data.md#data-collection)할 수 있습니다.
 
 구매자의 프로필 정보를 포함하려면 [시계열 프로필 이벤트 데이터](#time-series-profile-event-data)를 참조하세요.
-
-### 사용자 지정 속성 추가
-
-Commerce 인스턴스에서 Experience Platform으로 사용자 지정 백 오피스 이벤트 데이터를 전달하려는 경우 사용자 지정 특성을 사용할 수 있습니다.
-
-사용자 지정 속성은 다음 두 가지 수준에서 지원됩니다.
-
-- 주문 수준
-- 주문 항목 레벨
-
->[!NOTE]
->
->Adobe Commerce은 문자열 또는 문자열 배열의 데이터 유형이 있는 사용자 지정 속성을 지원합니다.
-
-1. [!DNL Commerce] 응용 프로그램에서 추가 모듈을 추가하고 사용하도록 설정합니다. 다음 [예제](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php)를 참조하십시오.
-
-   추가 사용자 지정 특성을 노출하려면 예제 코드를 수정해야 합니다. 구현은 이러한 특성이 저장되는 위치와 특성을 추출하는 데 필요한 논리에 따라 달라집니다.
-
-1. 기존 XDM 스키마를 확장합니다. 주문 및 주문 항목 수준에 대한 사용자 지정 특성을 만들려면 다음 [안내서](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)를 참조하세요. 테넌트 ID 필드는 동적으로 생성되지만 필드 구조는 제공된 예와 유사해야 합니다.
-
-   >[!IMPORTANT]
-   >
-   >XDM 사용자 지정 특성은 [!DNL Commerce]에서 보낸 특성과 일치해야 합니다.
-
-1. XDM 스키마와 연결된 데이터 스트림이 [데이터 수집](connect-data.md#data-collection) 탭에서 지정한 데이터 스트림과 같은지 확인하십시오.
-
-1. 지정한 사용자 지정 특성을 검색하려면 **데이터 수집** 탭에서 **[!UICONTROL Save]**&#x200B;을(를) 클릭하십시오.
 
 ## 시계열 프로필 이벤트 데이터
 
