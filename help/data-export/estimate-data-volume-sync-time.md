@@ -2,9 +2,8 @@
 title: 데이터 볼륨 및 전송 시간 예측
 description: ' [!DNL data export] 도구가 Adobe Commerce과 연결된 서비스 간에 피드 데이터를 동기화하는 데 필요한 데이터 볼륨과 전송 시간을 예상하는 방법에 대해 알아봅니다.'
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%

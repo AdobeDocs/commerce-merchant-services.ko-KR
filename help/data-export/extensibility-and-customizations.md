@@ -2,8 +2,8 @@
 title: SaaS 데이터 내보내기 피드 데이터 확장 및 사용자 지정
 description: ' [!DNL SaaS Data Export] 피드 데이터를 확장하고 사용자 지정하는 방법을 알아봅니다.'
 role: Admin, Developer
-recommendations: noCatalog
-source-git-commit: 51238f86f36a756b86d07bdf6bb0a5cf0c61cbeb
+exl-id: 69300242-d317-4ec8-86d0-0cd5d0c9c958
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%

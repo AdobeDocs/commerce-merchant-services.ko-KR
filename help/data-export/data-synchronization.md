@@ -2,9 +2,8 @@
 title: SaaS 데이터 내보내기와 데이터 동기화
 description: ' [!DNL SaaS Data Export] 이(가) Adobe Commerce 인스턴스와 연결된 SaaS 서비스 간에 데이터를 수집하고 동기화하는 방법에 대해 알아봅니다.'
 role: Admin, Developer
-recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '822'
 ht-degree: 0%
