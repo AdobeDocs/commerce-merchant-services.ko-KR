@@ -3,9 +3,9 @@ title: '" [!DNL Live Search]" 시작"'
 description: "Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항과 설치 단계를 알아봅니다."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Adobe Commerce [!DNL Live Search]과(와) [[!DNL Catalog Service]](../catalog-se
 
 높은 수준에서 [!DNL Live Search]을(를) 온보딩하려면 다음을 수행해야 합니다.
 
-![실시간 검색 워크플로](assets/livesearch-workflow.png)
+1. [!DNL Live Search] 확장을 [설치](#1-install-the-live-search-extension)
+1. API 키 [구성](#2-configure-api-keys)
+1. 카탈로그 데이터 [동기화](#3-sync-your-catalog-data)
+1. 카탈로그 데이터를 내보냈는지 [확인](#4-verify-that-the-data-was-exported)
+1. 데이터를 [구성](#5-configure-the-data)
+1. 연결을 [테스트](#6-test-the-connection)
+1. 이벤트가 데이터를 캡처하고 있는지 [확인](#7-validate-events-are-capturing-data)
+1. 상점 [사용자 지정](#8-customize-for-your-storefront)
 
 ## 1. [!DNL Live Search] 확장 설치
 
@@ -272,7 +279,15 @@ bin/magento saas:resync --feed categoryPermissions
 
 방화벽을 통해 [!DNL Live Search]을(를) 허용하려면 `commerce.adobe.io`을(를) 허용 목록에 추가하십시오.
 
-## 7. 상점 전면을 맞춤 설정합니다
+## 7. 이벤트가 데이터를 캡처하고 있는지 확인합니다
+
+사이트에 배포된 Storefront 이벤트가 작동하는지 확인합니다. 이는 Headless 구현에 특히 중요합니다.
+
+- [!DNL Live Search]에 필요한 [이벤트](events.md)을(를) 검토하십시오.
+- [실시간 검색 대시보드](performance.md)에 비프로덕션 환경의 데이터가 표시되는지 확인하십시오.
+- [이벤트 컬렉션 확인](../product-recommendations/verify.md). 이 페이지가 [!DNL Product Recommendations] 안내서에 있는 동안 확인 단계는 [!DNL Live Search]에도 적용됩니다.
+
+## 8. 상점용 사용자 지정
 
 [!DNL Live Search] 확장을 설치하고, 동기화하고, 검증하고, 데이터를 구성했습니다. 다음 단계는 [!DNL Live Search] 위젯이 스토어의 모양과 느낌을 준수하도록 하는 것입니다.
 

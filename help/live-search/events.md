@@ -3,34 +3,25 @@ title: '[!DNL Live Search]개 이벤트'
 description: 이벤트가  [!DNL Live Search]에 대한 데이터를 수집하는 방법을 알아봅니다.
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search]개 이벤트
 
-[!DNL Live Search]은(는) 이벤트를 사용하여 &quot;가장 많이 본 항목&quot; 및 &quot;이 항목을 보고 다른 항목을 본 항목&quot;과 같은 검색 알고리즘을 실행합니다. LUMA 사용자는 즉시 이벤트를 사용할 수 있지만 Headless 및 기타 사용자 지정 구현은 자체 요구 사항에 맞게 이벤트를 구현해야 합니다.
+[!DNL Live Search]은(는) 이벤트를 사용하여 &quot;가장 많이 본 항목&quot; 및 &quot;이 항목을 보고 다른 항목을 본 항목&quot;과 같은 검색 알고리즘을 실행합니다. [Commerce 샘플 Luma 테마](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)는 즉시 사용할 수 있는 이벤트이지만 Headless 및 기타 사용자 지정 구현은 자체 요구 사항에 맞게 이벤트를 구현해야 합니다.
 
-[!DNL Live Search]과(와) [!DNL Product Recommendations]이(가) 동일한 백엔드 알고리즘을 사용하므로 일부 이벤트는 두 서비스에서 공유됩니다. Recommendations 대시보드를 채우려면 일부 제품 Recommendations 이벤트가 필요합니다.
+이 표에서는 [!DNL Live Search] [순위 전략](rules-add.md#intelligent-ranking)에서 사용하는 이벤트에 대해 설명합니다.
 
-이 표에서는 [!DNL Live Search] 전략에서 사용하는 이벤트에 대해 설명합니다.
-
-| 전략 | 제품 | 이벤트 | 페이지 |
+| 순위 전략 | 이벤트 | 페이지 |
 | --- | --- | --- | ---|
-| 가장 많이 본 항목 | Live Search<br>제품 레코드 | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지 |
-| 최다 구매 | Live Search<br>제품 레코드 | 페이지 보기<br>체크아웃 완료 | 장바구니/체크아웃 |
-| 장바구니에 가장 많이 추가됨 | Live Search<br>제품 레코드 | 페이지 보기<br>장바구니에 추가 | 제품 세부 사항 페이지<br>제품 목록 페이지<br>장바구니<br>위시리스트 |
-| 이 항목을 보고 다른 항목도 보았습니다. | Live Search<br>제품 레코드 | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지 |
-| 트렌딩 | Live Search<br>제품 레코드 | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지 |
-| 이 항목을 보고 다른 항목을 구입함 | 제품 Recs | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지<br>장바구니/체크아웃 |
-| 구매, 구매 | 제품 Recs | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지 |
-| 전환: 구매로 보기 | 제품 Recs | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지 |
-| 전환: 구매로 보기 | 제품 Recs | 페이지 보기<br>체크아웃 완료 | 장바구니/체크아웃 |
-| 전환: 장바구니로 보기 | 제품 Recs | 페이지 보기<br>제품 보기 | 제품 세부 사항 페이지 |
-| 전환: 장바구니로 보기 | 제품 Recs | 페이지 보기<br>장바구니에 추가 | 제품 세부 사항 페이지<br>제품 목록 페이지<br>장바구니<br>위시리스트 |
+| 가장 많이 본 항목 | `page-view`<br>`product-view` | 제품 세부 사항 페이지 |
+| 최다 구매 | `page-view`<br>`complete-checkout` | 장바구니/체크아웃 |
+| 장바구니에 가장 많이 추가됨 | `page-view`<br>`add-to-cart` | 제품 세부 사항 페이지<br>제품 목록 페이지<br>장바구니<br>위시리스트 |
+| 이 항목을 보고 다른 항목도 보았습니다. | `page-view`<br>`product-view` | 제품 세부 사항 페이지 |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ ht-degree: 0%
 
 | 대시보드 영역 | 이벤트 | 조인 필드 |
 | ------------------- | ------------- | ---------- |
-| 고유 검색 | `page-view`, `search-request-sent`, | searchRequestId |
-| 결과 없음 검색 | `page-view`, `search-request-sent`, | searchRequestId |
-| 결과 없음 비율 | `page-view`, `search-request-sent`, | searchRequestId |
-| 자주 찾는 검색 | `page-view`, `search-request-sent`, | searchRequestId |
+| 고유 검색 | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| 결과 없음 검색 | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| 결과 없음 비율 | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| 자주 찾는 검색 | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | 평균 클릭 위치 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| 클릭스루 비율 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| 전환율 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| 클릭스루 비율 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
+| 전환율 | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 
 ### 필수 컨텍스트
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## 주의 사항
 
-광고 차단기 및 개인 정보 설정을 사용하면 이벤트가 캡처되지 않을 수 있으며, 이로 인해 참여 및 매출 [지표](workspace.md)이(가) 제대로 보고되지 않을 수 있습니다.
-
-이벤트가 판매자의 사이트에서 일어나는 모든 거래를 포착하지는 못한다. 이벤트란 사이트에서 일어나는 사건에 대한 일반적인 아이디어를 판매자에게 제공하는 것이다.
-
-Headless 구현은 [제품 Recommendations 대시보드](../product-recommendations/events.md)를 제공하는 이벤트를 구현해야 합니다.
+- 광고 차단기 및 개인 정보 설정을 사용하면 이벤트가 캡처되지 않을 수 있으며, 이로 인해 참여 및 매출 [지표](performance.md)이(가) 제대로 보고되지 않을 수 있습니다. 또한 페이지 또는 네트워크 문제로 인해 일부 이벤트가 전송되지 않을 수 있습니다.
+- Headless 구현은 지능형 머천다이징을 향상시키기 위해 이벤트를 구현해야 합니다.
 
 >[!NOTE]
 >

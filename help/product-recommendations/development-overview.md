@@ -2,9 +2,9 @@
 title: 제품 Recommendations 관리자 개발
 description: 제품 Recommendations 아키텍처 및 개발 기능에 대한 개요입니다.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ ht-degree: 0%
 ![제품 추천 아키텍처 다이어그램](assets/arch-diag-sensei.svg)
 
 권장 사항 모듈을 설치하고 구성하면 상점 첫 화면에서 동작 데이터 수집을 시작합니다. Adobe Sensei은 카탈로그 데이터와 함께 이 행동 데이터를 처리하고 recommendations 서비스에서 활용하는 제품 연결을 계산합니다. 이 시점에서 판매자는 관리 UI에서 직접 제품 추천 단위를 만들고, 관리하고, 상점 앞에 배포할 수 있습니다.
-
-## 데이터 유형
-
-제품 Recommendations에는 다음 데이터가 필요합니다.
-
-- **행동** - 제품 보기, 장바구니에 추가된 항목, 구매 등 사이트에 대한 쇼핑객 참여의 데이터. Commerce 및 Adobe Sensei은 개인 식별 정보를 수집하지 않습니다.
-
-- **카탈로그** - 이름, 가격, 가용성 등의 제품 메타데이터입니다.
-
-`magento/product-recommendations` 모듈을 설치하면 Adobe Sensei에서 동작 및 카탈로그 데이터를 집계하여 각 권장 사항 유형에 대한 제품 Recommendations을 만듭니다. 그런 다음 제품 Recommendations 서비스는 이러한 권장 사항을 상점 앞에 배포합니다.
-
->[!NOTE]
->
->구성 가능한 제품의 경우 Product Recommendations은 권장 사항 단위의 상위 제품 이미지를 사용합니다. 구성 가능한 제품에 이미지가 지정되지 않은 경우 해당 특정 제품에 대한 추천 단위가 비어 있게 됩니다.
 
 ## 다음 단계
 

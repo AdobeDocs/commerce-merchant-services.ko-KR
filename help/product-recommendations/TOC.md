@@ -4,10 +4,10 @@ user-guide-description: 이 안내서에서는 Adobe Commerce에서  [!DNL Produ
 breadcrumb-title: “[!DNL Product Recommendations] 안내서”
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 11%
+source-wordcount: '58'
+ht-degree: 12%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 11%
 - {#getting-started} 시작
    - [온보딩](onboarding.md)
    - [구현 워크플로](implementation-workflow.md)
-   - [동작 데이터](behavioral-data.md)
    - [Headless](headless.md)
    - [설치](install-configure.md)
    - [설정](settings.md)
-   - [확인](verify.md)
    - [스테이징 환경](staging-environment.md)
    - [페이지 빌더 통합](page-builder.md)
 - [!DNL Product Recommendations] 관리자 {#admin}
@@ -36,6 +34,7 @@ ht-degree: 11%
 - [!DNL Product Recommendations] 개발자 {#developer}
    - [개요](development-overview.md)
    - [데이터 수집](events.md)
+   - [확인](verify.md)
    - [사용자 지정](customize.md)
    - [쿠키 제한 처리](setting-cookie.md)
 - [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

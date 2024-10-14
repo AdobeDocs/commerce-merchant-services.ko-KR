@@ -3,7 +3,7 @@ title: 스테이징 환경에서 테스트
 description: 테스트 목적으로 스테이징 환경의 프로덕션 환경에서  [!DNL Product Recommendations] 을(를) 사용하는 방법을 알아봅니다.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 프로덕션 환경에 권장 사항을 배포하기 전에 비프로덕션 환경에서 서비스를 테스트하여 모든 것이 예상대로 작동하는지 확인하십시오.
 
-[!DNL Product Recommendations]님이 상점 앞에서 수집한 [쇼핑객 행동 데이터](behavioral-data.md)를 기반으로 제품을 반품했습니다. 그러나 비프로덕션 환경에서는 쇼핑객의 행동 데이터가 없을 수 있습니다. 동작 데이터 없이 테스트할 수 있는 유일한 권장 사항 형식은 `More like this`입니다. 이 권장 사항 유형은 직접적인 콘텐츠 유사성 일치를 사용하므로 입력 데이터가 필요하지 않습니다.
+[!DNL Product Recommendations]님이 상점 앞에서 수집한 [쇼핑객 행동 데이터](events.md)를 기반으로 제품을 반품했습니다. 그러나 비프로덕션 환경에서는 쇼핑객의 행동 데이터가 없을 수 있습니다. 동작 데이터 없이 테스트할 수 있는 유일한 권장 사항 형식은 `More like this`입니다. 이 권장 사항 유형은 직접적인 콘텐츠 유사성 일치를 사용하므로 입력 데이터가 필요하지 않습니다.
 
 다음 권장 사항 유형에는 동작 데이터가 필요합니다.
 

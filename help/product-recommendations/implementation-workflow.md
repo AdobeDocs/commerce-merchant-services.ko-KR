@@ -2,9 +2,9 @@
 title: 구현 워크플로
 description: 상점 첫 화면에서  [!DNL Product Recommendations] 을(를) 성공적으로 구현하는 단계에 대해 알아봅니다.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. **프로덕션에 데이터 수집 배포**
 
-   [!DNL Product Recommendations]을(를) 배포하려면 두 개의 기본 [데이터 원본](type.md)(카탈로그 및 동작)이 필요합니다. 프로덕션은 쇼핑객의 작업을 캡처하고 분석하는 유일한 환경이므로 가능한 한 빨리 프로덕션에 데이터 수집을 시작하는 것이 가장 좋습니다. [Adobe Sensei에서 고품질 추천을 제공하는 머신 러닝 모델을 교육하는 방법에 대해 알아봅니다](behavioral-data.md). 추가된 혜택으로, 프로덕션에서 동작 데이터를 수집하기 시작할 때 비프로덕션 환경에서 작업하는 동안 이 프로덕션 데이터를 기반으로 [권장 사항을 가져오기](verify.md)할 수 있습니다. 그런 다음 프로덕션에서 수집된 실제 구매자 데이터를 기반으로 계산되는 다양한 권장 사항을 테스트하고 실험할 수 있습니다.
+   [!DNL Product Recommendations]을(를) 배포하려면 두 개의 기본 [데이터 원본](type.md)(카탈로그 및 동작)이 필요합니다. 프로덕션은 쇼핑객의 작업을 캡처하고 분석하는 유일한 환경이므로 가능한 한 빨리 프로덕션에 데이터 수집을 시작합니다. [Adobe Sensei에서 고품질 추천을 제공하는 머신 러닝 모델을 교육하는 방법에 대해 알아봅니다](events.md). 추가된 혜택으로, 프로덕션에서 동작 데이터를 수집하기 시작할 때 비프로덕션 환경에서 작업하는 동안 이 프로덕션 데이터를 기반으로 [권장 사항을 가져오기](verify.md)할 수 있습니다. 그런 다음 프로덕션에서 수집된 실제 구매자 데이터를 기반으로 계산되는 다양한 권장 사항을 테스트하고 실험할 수 있습니다.
 
    프로덕션에 데이터 수집을 배포하려면 [API 키](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html)를 제공하여 [!DNL Product Recommendations] 모듈을 [설치 및 구성](install-configure.md)해야 합니다.
 
