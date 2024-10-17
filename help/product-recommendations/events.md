@@ -3,7 +3,7 @@ title: 데이터 수집
 description: 이벤트가 제품 추천에 대한 데이터를 수집하는 방법을 알아봅니다.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ _콜드 스타트_ 문제는 모델이 교육하고 효과를 얻는 데 걸리�
 [Adobe Commerce Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)는 Storefront에 배포된 모든 이벤트를 나열합니다. 그러나 이 목록에는 제품 Recommendations과 관련된 이벤트의 하위 집합이 있습니다. 이러한 이벤트는 쇼핑객이 상점 위의 추천 단위와 상호 작용할 때 데이터를 수집하여 추천 실적을 분석하는 데 사용되는 지표에 전원을 공급합니다.
 
 | 이벤트 | 설명 |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | 페이지에서 추천 단위가 렌더링될 때 전송됩니다. 페이지에 두 개의 추천 단위(구매, 보기)가 있으면 두 개의 `impression-render` 이벤트가 전송됩니다. 이 이벤트는 노출 지표를 추적하는 데 사용됩니다. |
 | `rec-add-to-cart-click` | 쇼핑객이 추천 단위에서 항목에 대한 **장바구니에 추가** 단추를 클릭합니다. |
 | `rec-click` | 쇼핑객이 추천 단위에서 제품을 클릭합니다. |
@@ -113,7 +113,7 @@ _콜드 스타트_ 문제는 모델이 교육하고 효과를 얻는 데 걸리�
 이 표에서는 각 권장 사항 유형에서 사용하는 이벤트에 대해 설명합니다.
 
 | 권장 사항 유형 | 이벤트 | 페이지 |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | 가장 많이 본 항목 | `page-view`<br>`product-view` | 제품 세부 사항 페이지 |
 | 최다 구매 | `page-view`<br>`complete-checkout` | 장바구니/체크아웃 |
 | 장바구니에 가장 많이 추가됨 | `page-view`<br>`add-to-cart` | 제품 세부 사항 페이지<br>제품 목록 페이지<br>장바구니<br>위시리스트 |
