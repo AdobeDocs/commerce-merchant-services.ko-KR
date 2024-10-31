@@ -4,16 +4,16 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]에서 제공되며 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 프로덕션 및 샌드박스 API 키를 사용하여 [!DNL Commerce] 인스턴스를 연결하고 [구성](#saas-configuration)에서 데이터 공간을 지정해야 합니다. 각 Commerce 인스턴스에 대해 연결을 한 번만 구성하면 됩니다.
+일부 Adobe Commerce 및 Magento Open Source 기능은 [!DNL Commerce Services]에서 제공되며 SaaS(Software as a Service)로 배포됩니다. 이러한 서비스를 사용하려면 프로덕션 및 샌드박스 API 키를 사용하여 [!DNL Commerce] 인스턴스를 연결하고 [구성](#saas-configuration)에서 데이터 공간을 지정해야 합니다. 각 인스턴스에 대해 연결을 한 번만 구성하면 됩니다.
 
 ## 사용 가능한 서비스 {#availableservices}
 
@@ -45,6 +45,7 @@ ht-degree: 0%
 또한 솔루션 통합자는 [!DNL Commerce Services]을(를) 사용할 수 있습니다. 솔루션 통합자인 경우 [!DNL Commerce] 파트너 계약의 서명자가 API 키를 생성해야 합니다.
 
 >[!NOTE]
+>키 식별자 *Production* 및 *Sandbox*&#x200B;이(가) 환경을 참조하지 않습니다. 로컬, 개발, 스테이징 또는 프로덕션 환경과 같은 각 환경에 대해 동일한 API 키 세트를에 사용합니다.
 >
 >라이선스 소유자는 일반적으로 Adobe Commerce 계정의 기본 담당자이며 항상 Adobe Commerce on cloud infrastructure 프로젝트의 프로젝트 소유자와 동일하지 않습니다.
 
@@ -68,7 +69,7 @@ ht-degree: 0%
 
 1. 각 환경(프로덕션 및 샌드박스)에 대해 위의 단계를 반복합니다.
 
-   이제 **API 키** 섹션에 API(공개) 키가 표시됩니다. [SaaS 프로젝트를 선택하거나 생성](#createsaasenv)할 때 프로덕션 키와 샌드박스 키(공개+비공개)가 모두 필요합니다.
+   이제 **API 키** 섹션에 API(공개) 키가 표시됩니다. 라이센스와 연결된 환경/설치에서 [SaaS 프로젝트를 선택하거나 생성](#createsaasenv)할 때 4개의 키(프로덕션 및 샌드박스 키, 공용+개인)가 모두 필요합니다.
 
 ## SaaS 구성 {#saasenv}
 
@@ -78,7 +79,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 프로덕션 SaaS 데이터 공간은 프로덕션 [!DNL Commerce] 설치에서만 사용하여 데이터 충돌을 방지하십시오. 그렇지 않으면 테스트 데이터로 프로덕션 사이트 데이터를 오염시켜 배포가 지연될 위험이 있습니다. 예를 들어 스테이징 URL과 같은 스테이징 데이터에서 프로덕션 제품 데이터를 실수로 덮어쓸 수 있습니다.
+> 데이터 충돌을 방지하려면 프로덕션 [!DNL Commerce] 설치에서만 **프로덕션 SaaS 데이터 공간**을 사용하십시오. 그렇지 않으면 테스트 데이터로 프로덕션 사이트 데이터를 오염시켜 배포가 지연될 위험이 있습니다. 예를 들어 스테이징 URL과 같은 스테이징 데이터에서 프로덕션 제품 데이터를 실수로 덮어쓸 수 있습니다.
 > 이 경우 데이터 정리를 요청하려면 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하십시오.
 
 ### SaaS 데이터 공간 프로비저닝
