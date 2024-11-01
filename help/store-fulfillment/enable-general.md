@@ -4,7 +4,7 @@ description: 스토어에 대해  [!DNL Store Fulfillment] 을(를) 사용하도
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -356,7 +356,7 @@ Adobe Commerce 스토어에 대한 매장 내 픽업 및 홈 배송 옵션의 �
 
 >[!NOTE]
 >
->매장 내 배달 옵션 구성에 대한 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [매장 내 배달](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html)을 참조하세요.
+>매장 내 배달 옵션 구성에 대한 자세한 내용은 _Adobe Commerce 사용 안내서_&#x200B;의 [매장 내 배달](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)을 참조하세요.
 
 
 ### 게재 방법 구성

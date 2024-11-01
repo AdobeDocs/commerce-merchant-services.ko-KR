@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Walmart Commerce Technologies 소프트웨어 아카이브(.zip 파일)의 스토어 이행 액세스** - 온보딩 및 활성화 프로세스 동안 계정 관리자와 협력하여 스토어 이행 확장에 대한 설치 파일에 액세스하십시오.
 
-- **Adobe Commerce 계정 정보** - [!DNL Store Fulfillment] 솔루션을 설치하려면 [[!DNL Commerce] 계정](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}이 필요합니다. [!DNL Adobe Commerce] 프로젝트에 대한 소유자 또는 관리자 액세스 권한을 가진 계정 ID 및 자격 증명이 필요합니다.
+- **Adobe Commerce 계정 정보** - [!DNL Store Fulfillment] 솔루션을 설치하려면 [[!DNL Commerce] 계정](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}이 필요합니다. [!DNL Adobe Commerce] 프로젝트에 대한 소유자 또는 관리자 액세스 권한을 가진 계정 ID 및 자격 증명이 필요합니다.
 
-- 클라우드 인프라 프로젝트의 [!DNL Adobe Commerce]에 대해 소프트웨어 설치 관리자에게는 클라우드 프로젝트에 대한 관리자 액세스 권한이 있어야 합니다. [사용자 액세스 관리](https://devdocs.magento.com/cloud/project/user-admin.html)를 참조하십시오.
+- 클라우드 인프라 프로젝트의 [!DNL Adobe Commerce]에 대해 소프트웨어 설치 관리자에게는 클라우드 프로젝트에 대한 관리자 액세스 권한이 있어야 합니다. [사용자 액세스 관리](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access)를 참조하십시오.
 
-- **작성기 및[!DNL Commerce CLI]**&#x200B;을(를) 사용한 환경—이러한 도구를 사용하여 [!DNL Adobe Commerce] 플랫폼에서 확장을 설치하고 관리하는 방법에 대한 자세한 내용은 [일반 CLI 설치](https://devdocs.magento.com/extensions/install/){target="_blank"}를 참조하십시오.
+- **작성기 및[!DNL Commerce CLI]**&#x200B;을(를) 사용한 환경—이러한 도구를 사용하여 [!DNL Adobe Commerce] 플랫폼에서 확장을 설치하고 관리하는 방법에 대한 자세한 내용은 [일반 CLI 설치](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"}를 참조하십시오.
 
 - **Adobe Commerce에 타사 확장 설치 경험** - 자세한 내용은 Adobe Commerce 설명서를 참조하십시오.
 
-   - [클라우드 인프라 인스턴스에 Adobe Commerce용 확장을 설치](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [클라우드 인프라 인스턴스에 Adobe Commerce용 확장을 설치](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [Adobe Commerce 온-프레미스 인스턴스에 대한 확장을 설치](https://devdocs.magento.com/extensions/install/).
+   - [Adobe Commerce 온-프레미스 인스턴스에 대한 확장을 설치](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### 1단계: 확장 번들 다운로드
 
@@ -135,7 +135,7 @@ Adobe Commerce 서버에서 Store Fulfillment Services 확장의 모듈이 설�
 
 1. 서버에 로그인.
 
-   클라우드 인프라의 Adobe Commerce에 설치하는 경우 [SSH를 사용하여 원격 환경에 로그인합니다](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   클라우드 인프라의 Adobe Commerce에 설치하는 경우 [SSH를 사용하여 원격 환경에 로그인합니다](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Store Fulfillment Services 모듈이 활성화되어 있는지 확인합니다.
 

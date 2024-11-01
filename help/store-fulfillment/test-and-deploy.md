@@ -5,7 +5,7 @@ role: User, Admin
 level: Intermediate
 feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2661'
 ht-degree: 0%
@@ -645,4 +645,4 @@ Adobe Commerce 제품 유형에 대한 테스트 시나리오는 고객이 다�
 
 >[!TIP]
 >
->클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 배포 지침, 체크리스트 및 모범 사례에 대해서는 Adobe Commerce 개발자 설명서에서 [스토어 배포](https://devdocs.magento.com/cloud/live/stage-prod-live.html)를 참조하십시오.
+>클라우드 인프라 프로젝트에서 Adobe Commerce에 대한 배포 지침, 체크리스트 및 모범 사례에 대해서는 Adobe Commerce 개발자 설명서에서 [스토어 배포](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)를 참조하십시오.

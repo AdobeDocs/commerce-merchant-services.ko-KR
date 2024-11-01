@@ -3,7 +3,7 @@ title: 프로덕션에  [!DNL Payment Services] 사용
 description: 프로덕션에 대해  [!DNL Payment Services] 을(를) 활성화하여 온보딩 프로세스를 완료합니다.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
    하나 이상의 웹 사이트에 대한 결제 방법으로 [!DNL Payment Services]을(를) 아직 구성하지 않은 경우 이 옵션이 표시됩니다.
 
-   관련 옵션이 확장된 (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 홈 보기의 설정 영역으로 이동되었습니다. 이 영역에서 [!DNL Payment Services] 옵션을 [결제 방법](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}(으)로 활성화할 수 있습니다.
+   관련 옵션이 확장된 (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_) 홈 보기의 설정 영역으로 이동되었습니다. 이 영역에서 [!DNL Payment Services] 옵션을 [결제 방법](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}(으)로 활성화할 수 있습니다.
 
 1. _[!UICONTROL General Configuration]_에서&#x200B;**[!UICONTROL Enable]**을(를) `Yes`(으)로 설정합니다.
 1. _[!UICONTROL Credit Card Fields]_과(와)_[!UICONTROL PayPal payment buttons]_ 모두에 대해 **[!UICONTROL Payment Action]**&#x200B;을(를) 다음 중 하나로 설정합니다.
@@ -157,7 +157,7 @@ _프로덕션 판매자 ID_&#x200B;이(가) 자동으로 생성되고 [구성](c
 1. 홈에서 페이지의 오른쪽 상단에 있는 **[!UICONTROL Settings]**&#x200B;을(를) 클릭합니다. 자세한 내용은 [홈](payments-home.md)을 참조하세요.
 1. _[!UICONTROL General Configuration]_섹션에서&#x200B;**[!UICONTROL Payment mode]**을(를) `Production`(으)로 설정합니다.
 1. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
-1. [캐시 지우기](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [캐시 지우기](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

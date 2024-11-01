@@ -4,7 +4,7 @@ description: 결제 서비스 확장을 설치합니다.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ ht-degree: 0%
 
 작성기가 [!DNL Adobe Commerce]을(를) 처음 설치하는 동안 또는 작성기 키가 이전에 `auth.json` 파일에 저장되지 않은 상황에서 이 키를 사용합니다.
 
-작성기 키 가져오기에 대한 자세한 내용은 [인증 키 가져오기](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)를 참조하십시오.
+작성기 키 가져오기에 대한 자세한 내용은 [인증 키 가져오기](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)를 참조하십시오.
 
-확장을 다운로드하여 설치하기 전에 고려해야 할 사항에 대한 자세한 내용은 [확장 설치](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html)를 참조하십시오.
+확장을 다운로드하여 설치하기 전에 고려해야 할 사항에 대한 자세한 내용은 [확장 설치](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)를 참조하십시오.
 
 ### 클라우드 인프라의 [!DNL Adobe Commerce]
 
@@ -155,7 +155,7 @@ Could not find a matching version of package magento/payment-services. Check the
    cat /path/to/auth.json
    ```
 
-1. [Commerce 계정 `MageID`과(와) 연결된 키](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)를 확인하세요.
+1. [Commerce 계정 `MageID`과(와) 연결된 키](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)를 확인하세요.
 
 ### 메모리가 부족하여 PHP를 사용할 수 없습니다.
 
@@ -165,7 +165,7 @@ PHP에 대한 충분한 메모리가 없다는 것을 나타내는 다음 오류
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-`php.ini`의 환경에서 PHP에 대한 [메모리 제한을 늘립니다](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit).
+`php.ini`의 환경에서 PHP에 대한 [메모리 제한을 늘립니다](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit).
 
 또는 `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services` 명령을 사용하여 메모리 제한을 지정할 수 있습니다.
 

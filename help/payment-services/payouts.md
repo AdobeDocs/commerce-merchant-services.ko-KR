@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1301'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->지급 보고서는 캡처된 주문(결제 작업이 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)(으)로 설정됨) 또는 [이(가) `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html)(으)로 표시된 주문만 표시합니다.
+>지급 보고서는 캡처된 주문(결제 작업이 [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)(으)로 설정됨) 또는 [이(가) `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)(으)로 표시된 주문만 표시합니다.
 
 ## 지급액 데이터 시각화 보기
 
@@ -155,7 +155,7 @@ _[!UICONTROL Live]_이(가) 선택한 데이터 소스인 경우 프로덕션 �
 | [!UICONTROL Code] | 대변(*CR*) 또는 차변(*DR*)을 나타내는 거래 코드 |
 | [!UICONTROL Reference ID] | 이 이벤트와 관련된 원래 거래 ID |
 | [!UICONTROL Invoice] | 거래의 송장 ID(주문당 하나) |
-| [!UICONTROL Commerce order] | Commerce 주문 ID <br> <br>관련 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html)를 보려면 ID를 클릭하십시오. |
+| [!UICONTROL Commerce order] | Commerce 주문 ID <br> <br>관련 [주문 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders)를 보려면 ID를 클릭하십시오. |
 | [!UICONTROL Commerce trans] | Commerce 거래 ID |
 | [!UICONTROL Pay method] | 신용 카드 유형—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]* 및 관련 카드 공급자(예: *Visa* 또는 *MasterCard*) |
 | [!UICONTROL TRANS AMT] | 거래 금액 |

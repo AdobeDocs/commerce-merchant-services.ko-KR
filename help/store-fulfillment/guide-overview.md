@@ -5,7 +5,7 @@ seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -32,8 +32,8 @@ ht-degree: 0%
 
 | 안내서 | 설명 |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 사용 안내서](https://docs.magento.com/user-guide/) | Adobe Commerce에 대한 판매자 중심 설명서 |
-| [Adobe Commerce 2.4 개발자 안내서](https://devdocs.magento.com/) | Adobe Commerce을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서 |
+| [Adobe Commerce 2.4 사용 안내서](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Adobe Commerce에 대한 판매자 중심 설명서 |
+| [Adobe Commerce 2.4 개발자 안내서](https://developer.adobe.com/commerce/docs/) | Adobe Commerce을 빌드하고 사용자 지정하는 데 사용되는 개발자 중심의 설명서 |
 
 ## 지원
 

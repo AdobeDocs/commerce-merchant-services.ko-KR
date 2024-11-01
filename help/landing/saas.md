@@ -4,7 +4,7 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 0%
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 [!DNL Commerce Services]에서 올바른 위치에 데이터를 보낼 수 있도록 [!DNL Commerce]개의 인스턴스를 SaaS 프로젝트 및 SaaS 데이터 공간으로 구성해야 합니다. SaaS 프로젝트는 모든 SaaS 데이터 공간을 그룹화합니다. SaaS 데이터 공간은 [!DNL Commerce Services]이(가) 작동하도록 하는 데이터를 수집하고 저장하는 데 사용됩니다. 이 데이터 중 일부는 [!DNL Commerce] 인스턴스에서 내보낼 수 있으며 일부는 상점 앞의 쇼핑객 활동에서 수집할 수 있습니다. 그런 다음 해당 데이터는 보안 클라우드 스토리지로 유지됩니다.
 
-[!DNL Product Recommendations]의 경우 SaaS 데이터 공간에 카탈로그 및 동작 데이터가 포함되어 있습니다. [!DNL Commerce] 구성에서 [선택하여](https://docs.magento.com/user-guide/configuration/services/saas.html) SaaS 데이터 공간으로 [!DNL Commerce] 인스턴스를 지정할 수 있습니다.
+[!DNL Product Recommendations]의 경우 SaaS 데이터 공간에 카탈로그 및 동작 데이터가 포함되어 있습니다. [!DNL Commerce] 구성에서 [선택하여](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) SaaS 데이터 공간으로 [!DNL Commerce] 인스턴스를 지정할 수 있습니다.
 
 >[!WARNING]
 >

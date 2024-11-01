@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 [!DNL Payment Services] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '3017'
 ht-degree: 0%
@@ -391,7 +391,7 @@ _2022년 8월 9일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![새](../assets/new.svg)<!-- Issue PAY-XX --> 일반 가용성 릴리스—[!DNL Payment Services]은(는) 이제 [및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility)까지 지원됩니다. [!DNL Adobe Commerce] 
+![새](../assets/new.svg)<!-- Issue PAY-XX --> 일반 가용성 릴리스—[!DNL Payment Services]은(는) 이제 [및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)까지 지원됩니다. [!DNL Adobe Commerce] 
 
 ![해결된 문제](../assets/fix.svg)<!-- Issue PAY-x --> 이제 Apple Pay가 모바일과 데스크탑에서 Safari 브라우저 v15.5와 호환됩니다.
 
@@ -419,7 +419,7 @@ _2022년 3월 31일_
 
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
-![새](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[!DNL Payment Services]은(는) 이제 [및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility)까지 지원됩니다. [!DNL Adobe Commerce] 
+![새](../assets/new.svg)<!-- Issue PAY-2127 --> 일반 가용성 릴리스—[!DNL Payment Services]은(는) 이제 [및 [!DNL Magento Open Source] 버전 2.4.0에서 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)까지 지원됩니다. [!DNL Adobe Commerce] 
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2682 --> 이제 캐나다 상인이 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source]에 대한 [!DNL Payment Services] 확장을 사용할 수 있습니다. 가맹점은 [프랑스어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) 또는 [영어](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies)로 결제 구성을 볼 수 있습니다.
 
@@ -463,7 +463,7 @@ _2021년 11월 29일_
 
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-1443 --> [!DNL Payment Services] 확장에 대한 PayPal 결제 단추 및 신용 카드 필드를 [사용자 지정](payments-options.md)할 수 있습니다.
 
-![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 확장을 설치하는 동안 [잘못된 작성기 키](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html)를 사용하면 사용자가 올바른 `MAGEID`을(를) 사용하여 [인증](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)할 수 없습니다.
+![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2473 --> 확장을 설치하는 동안 [잘못된 작성기 키](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html)를 사용하면 사용자가 올바른 `MAGEID`을(를) 사용하여 [인증](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)할 수 없습니다.
 
 ![알려진 문제](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]개의 보고서 [을(를) 즉시 동기화할 수 없습니다](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 

@@ -4,7 +4,7 @@ description: 거래 보고서를 사용하여 거래 승인 비율과 거래 추
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ _[!UICONTROL Live]_이(가) 선택한 데이터 소스인 경우 프로덕션 �
 
 | 열 | 설명 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce 주문 ID(성공적인 트랜잭션에 대한 값만 포함하며 거부된 트랜잭션에 대해서는 비어 있음)<br> <br>관련 [주문 정보](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}를 보려면 ID를 클릭하세요. |
+| [!UICONTROL Order ID] | Commerce 주문 ID(성공적인 트랜잭션에 대한 값만 포함하며 거부된 트랜잭션에 대해서는 비어 있음)<br> <br>관련 [주문 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}를 보려면 ID를 클릭하세요. |
 | [!UICONTROL PayPal Transaction ID] | 결제 제공자가 제공한 거래 ID. 성공적인 거래에 대한 값만 포함되고 거부된 거래에 대한 대시가 포함됩니다. 이 ID를 클릭하여 PayPal 거래 세부 사항 페이지에 액세스할 수 있습니다. |
 | [!UICONTROL Customer ID] | 주문의 Commerce 고객 ID<br> <br>자세한 내용은 [고객 정보](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} 항목을 참조하십시오. |
 | [!UICONTROL Transaction Date] | 트랜잭션 날짜 타임스탬프 |

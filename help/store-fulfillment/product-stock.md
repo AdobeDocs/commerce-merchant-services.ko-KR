@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 제품 재고 관리
 
-판매자는 Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) 재고 및 소스 옵션을 사용할 수 있습니다. 또한 상점 이행 솔루션을 사용하여 판매점 운영과 관련된 기타 재고 가용성 옵션을 제어할 수 있습니다.
+판매자는 Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) 재고 및 소스 옵션을 사용할 수 있습니다. 또한 상점 이행 솔루션을 사용하여 판매점 운영과 관련된 기타 재고 가용성 옵션을 제어할 수 있습니다.
 
 - 상점에서 가정 배달 옵션
 

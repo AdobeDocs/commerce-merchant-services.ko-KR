@@ -3,7 +3,7 @@ title: 인스턴스 연결
 description: API 키 및 개인 키를 사용하여 Commerce 인스턴스를 연결하고 구성에서 데이터 공간을 지정합니다.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## API 자격 증명 가져오기
 
-Commerce SaaS 서비스를 사용하려면 샌드박스와 프로덕션에 모두 인스턴스의 API 키(Commerce 공개 API 키 및 개인 키)를 사용해야 합니다. 이 키는 [내 계정 대시보드](https://account.magento.com/customer/account/login)에서 만들고 관리합니다. [한 번에 한 쌍만 활발하게 사용할 수 있지만 Commerce 계정(샌드박스 계정과 프로덕션 계정)에 대해 키 쌍](https://docs.magento.com/user-guide/configuration/services/saas.html)을 만들 수 있습니다.
+Commerce SaaS 서비스를 사용하려면 샌드박스와 프로덕션에 모두 인스턴스의 API 키(Commerce 공개 API 키 및 개인 키)를 사용해야 합니다. 이 키는 [내 계정 대시보드](https://account.magento.com/customer/account/login)에서 만들고 관리합니다. [한 번에 한 쌍만 활발하게 사용할 수 있지만 Commerce 계정(샌드박스 계정과 프로덕션 계정)에 대해 키 쌍](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)을 만들 수 있습니다.
 
 >[!NOTE]
 >
->[!UICONTROL My Account] 대시보드에 액세스하는 데 도움이 필요하십니까? [Commerce 계정 만들기](https://docs.magento.com/user-guide/magento/magento-account-create.html)를 참조하세요.
+>[!UICONTROL My Account] 대시보드에 액세스하는 데 도움이 필요하십니까? [Commerce 계정 만들기](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)를 참조하세요.
 
 공개 API 키가 생성되면 내 계정 대시보드에서 항상 사용할 수 있습니다. 필요에 따라 복사하거나 삭제할 수 있습니다. 샌드박스 또는 프로덕션용 공개 API 키를 만들면 개인 API 키가 표시됩니다. 이 키는 다음 대화 상자에서 복사하거나 저장하는 데만 사용할 수 있으며 나중에 액세스할 수 없습니다.
 
@@ -40,7 +40,7 @@ Commerce SaaS 서비스를 사용하려면 샌드박스와 프로덕션에 모�
 
 API 키가 손실된 경우 새 API 키 쌍은 관리자의 Commerce 서비스 커넥터 구성에 [생성](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) 및 [적용](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project)되어야 합니다. 잘못된 키가 구성되었거나 구성에 아무 것도 없는 경우, 계정이 확인되지 않았음을 알리는 계정 확인 오류 대화 상자가 결제 서비스에 나타납니다.
 
-[API를 사용하는 사용 가능한 Commerce 서비스 목록](https://docs.magento.com/user-guide/system/saas.html#available-services)을 참조하세요.
+[API를 사용하는 사용 가능한 Commerce 서비스 목록](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices)을 참조하세요.
 
 샌드박스 또는 프로덕션 환경에 대한 API 키를 생성하는 방법에 대해 알아보려면 [자격 증명](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey)을 참조하세요.
 

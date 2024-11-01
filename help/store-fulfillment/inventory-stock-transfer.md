@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ ht-degree: 0%
 
 이러한 구성 변경을 통해 다음 세 가지 사항을 달성할 수 있습니다.
 
-1. [인벤토리를 소스로 전송](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html)하여 기본 재고/원본에서 새 재고/원본으로 인벤토리를 이동합니다.
+1. [인벤토리를 소스로 전송](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer)하여 기본 재고/원본에서 새 재고/원본으로 인벤토리를 이동합니다.
 
-1. [소스를 일괄 할당](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html)하여 모든 제품에 대한 새 소스를 추가합니다.
+1. [소스를 일괄 할당](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment)하여 모든 제품에 대한 새 소스를 추가합니다.
 
-1. [제품 특성에 대한 대량 업데이트를 완료](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)하여 `Allow Store Pickup` 및 `Allow Home Delivery` 특성을 기존 제품에 추가합니다. 솔루션이 설치되면 속성에 최적의 *기본값* 값이 있습니다. 그러나 이러한 속성은 일괄 updaContes 프로세스를 완료할 때까지 기존 제품에 적용되지 않습니다.
+1. [제품 특성에 대한 대량 업데이트를 완료](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)하여 `Allow Store Pickup` 및 `Allow Home Delivery` 특성을 기존 제품에 추가합니다. 솔루션이 설치되면 속성에 최적의 *기본값* 값이 있습니다. 그러나 이러한 속성은 일괄 updaContes 프로세스를 완료할 때까지 기존 제품에 적용되지 않습니다.
 
-재고는 선택한 출처(소매점 위치 또는 전자 상거래 창고)에서 공제됩니다. 전자 상거래 창고로 사용되는 출처는 매장 픽업 위치와 동일한 재고에 할당되어야 하고 소매 위치보다 우선 순위가 지정되어야 한다. 자세한 내용은 [재고 소스 우선 순위 지정](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)을 참조하십시오.
+재고는 선택한 출처(소매점 위치 또는 전자 상거래 창고)에서 공제됩니다. 전자 상거래 창고로 사용되는 출처는 매장 픽업 위치와 동일한 재고에 할당되어야 하고 소매 위치보다 우선 순위가 지정되어야 한다. 자세한 내용은 [재고 소스 우선 순위 지정](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)을 참조하십시오.
 
 재고, 재고 및 소스 관리에 대한 자세한 내용은 Adobe Commerce 사용 설명서를 참조하십시오.
 
-- [인벤토리 관리](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [인벤토리 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [재고 수량 관리](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [재고 수량 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [재고 관리](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [재고 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [소스 관리](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [소스 관리](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [주식에 대한 소스 우선 순위 지정](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [주식에 대한 소스 우선 순위 지정](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [제품 특성에 대한 대량 업데이트](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [제품 특성에 대한 대량 업데이트](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

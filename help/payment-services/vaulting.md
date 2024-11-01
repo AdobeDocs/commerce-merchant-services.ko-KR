@@ -3,7 +3,7 @@ title: 신용 카드 보관
 description: 구매자는 향후 구매를 위해 신용 카드 세부 정보를 저장(저장)할 수 있습니다.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![나중에 구입할 수 있도록 저장된 자격 증명 사용](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-또한 저장된 신용 카드를 내 계정의 [저장된 결제 방법](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html)에서 쉽게 삭제할 수 있습니다.
+또한 저장된 신용 카드를 내 계정의 [저장된 결제 방법](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)에서 쉽게 삭제할 수 있습니다.
 
 ![내 계정에 저장된 결제 방법](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

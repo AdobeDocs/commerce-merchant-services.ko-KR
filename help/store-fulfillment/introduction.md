@@ -4,7 +4,7 @@ description: " [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies는 [!DNL C
 
 * 구성, 그룹화, 번들 및 가상 등 대부분의 제품 유형 지원
 
-* [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)와 통합
+* [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)와 통합
 
 * ERP, OMS, WMS와 같은 POS(Point of Sale) 판매업체 재고 관리 시스템과 통합
 

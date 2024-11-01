@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -120,7 +120,7 @@ _[!UICONTROL Credit Card Fields]_설정은 신용 카드 또는 직불 카드 �
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
 | [!UICONTROL 3DS Secure authentication] | 웹 사이트 | [3DS 보안 인증을 사용하거나 사용하지 않도록 설정](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 신용 카드 필드가 체크아웃 페이지에 표시되도록 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
@@ -156,7 +156,7 @@ Paypal을 통해 [Apple Pay 자체 등록을 완료](https://developer.paypal.co
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Checkout title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions). 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions). 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 제품 세부 사항 페이지에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show on mini cart preview] | 웹 사이트 | 미니 장바구니 미리 보기에 표시할 Apple 결제 버튼을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Off] / [!UICONTROL On] |
@@ -203,7 +203,7 @@ PayPal 결제 버튼 결제 옵션을 활성화하고 구성할 수 있습니다
 | 필드 | 범위 | 설명 |
 |---|---|---|
 | [!UICONTROL Title] | 스토어 뷰 | 체크아웃 중에 결제 방법 보기에서 이 결제 방법의 제목으로 표시할 텍스트를 추가합니다. 옵션: 텍스트 필드 |
-| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"}. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | 웹 사이트 | 지정한 결제 방법에 대한 [결제 작업](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}. 옵션: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 스토어 뷰 | 체크아웃 페이지에서 지정된 결제 방법에 대한 정렬 순서. `Numeric Only` 값 |
 | [!UICONTROL Show PayPal buttons on checkout page] | 스토어 뷰 | 체크아웃 페이지에서 [!DNL PayPal payment buttons]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | 스토어 뷰 | 제품 세부 정보 페이지에서 [!DNL PayPal payment buttons]을(를) 활성화하거나 비활성화합니다. 옵션: [!UICONTROL  Yes] / [!UICONTROL No] |
@@ -278,7 +278,7 @@ Apple Pay, Venmo 또는 PayPal PayLater 단추를 전환하는 등 _설정_&#x20
 
 캐시 관리 테이블의 캐시 유형이 `INVALIDATED` 상태인 경우 저장소에 해당 항목에 대한 최신 구성이 표시되지 않을 수 있습니다. 최신 구성을 표시하도록 저장소를 업데이트하려면 캐시를 플러시하십시오.
 
-저장소에 올바른 구성이 표시되는지 확인하려면 주기적으로 [캐시를 플러시](https://docs.magento.com/user-guide/system/cache-management.html)합니다.
+저장소에 올바른 구성이 표시되는지 확인하려면 주기적으로 [캐시를 플러시](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)합니다.
 
 ## 카드 보관
 
@@ -300,7 +300,7 @@ Apple Pay, Venmo 또는 PayPal PayLater 단추를 전환하는 등 _설정_&#x20
 
 ## 여러 PayPal 계정 사용
 
-[!UICONTROL Payment Services]에서 웹 사이트 수준의 **one** 판매자 계정 내에서 여러 PayPal 계정을 사용할 수 있습니다. 예를 들어, 여러 국가([다양한 통화](https://docs.magento.com/user-guide/stores/currency.html) 사용)에서 스토어를 운영하거나 비즈니스의 일부에 Adobe Commerce을 사용하려고 하지만 _모두_&#x200B;는 사용하지 않으려는 경우, 판매자 계정을 설정하여 여러 PayPal 계정을 사용할 수 있습니다.
+[!UICONTROL Payment Services]에서 웹 사이트 수준의 **one** 판매자 계정 내에서 여러 PayPal 계정을 사용할 수 있습니다. 예를 들어, 여러 국가([다양한 통화](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency) 사용)에서 스토어를 운영하거나 비즈니스의 일부에 Adobe Commerce을 사용하려고 하지만 _모두_&#x200B;는 사용하지 않으려는 경우, 판매자 계정을 설정하여 여러 PayPal 계정을 사용할 수 있습니다.
 
 웹 사이트, 스토어 및 스토어 보기의 계층 구조에 대한 자세한 내용은 [사이트, 스토어 및 보기 범위](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)를 참조하십시오.
 

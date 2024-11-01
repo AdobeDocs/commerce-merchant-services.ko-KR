@@ -4,7 +4,7 @@ description: "데이터를 이행 서비스와 동기화하는 데 사용되는 
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # 백그라운드 프로세스 구성
 
-Store Fulfillment 통합에서는 최적의 성능과 확장을 위해 백그라운드 프로세스와 메시지 대기열을 사용합니다. [메시지 큐 실행자](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html)를 자동으로 시작하는 [배포 변수](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner)을(를) 사용하여 Adobe Commerce 스토어에 대한 환경을 빌드합니다.
+Store Fulfillment 통합에서는 최적의 성능과 확장을 위해 백그라운드 프로세스와 메시지 대기열을 사용합니다. [메시지 큐 실행자](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)를 자동으로 시작하는 [배포 변수](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)을(를) 사용하여 Adobe Commerce 스토어에 대한 환경을 빌드합니다.
 
-백그라운드 프로세스는 표준 Adobe Commerce [예약된 작업](https://docs.magento.com/user-guide/system/cron.html) 기능을 사용하여 관리됩니다. 이러한 프로세스는 주문 및 가맹점 구성 데이터를 매장 이행 웹 서비스와 동기화하는 역할을 합니다.
+백그라운드 프로세스는 표준 Adobe Commerce [예약된 작업](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron) 기능을 사용하여 관리됩니다. 이러한 프로세스는 주문 및 가맹점 구성 데이터를 매장 이행 웹 서비스와 동기화하는 역할을 합니다.
 
 ## 스토어 이행 예약 작업 관리
 

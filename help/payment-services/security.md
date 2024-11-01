@@ -4,7 +4,7 @@ description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검�
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce] 및 [!DNL Magento Open Source]은(는) 여러 보안 기능을 지원합니다.
 
-보안 모범 사례를 검토하고 관리 세션 및 자격 증명을 관리하고 CAPTCHA를 구현하며 웹 사이트 제한을 관리하는 방법에 대해 알아보려면 핵심 사용 안내서의 [보안](https://docs.magento.com/user-guide/stores/security.html){target="_blank"}을(를) 참조하십시오.
+보안 모범 사례를 검토하고 관리 세션 및 자격 증명을 관리하고 CAPTCHA를 구현하며 웹 사이트 제한을 관리하는 방법에 대해 알아보려면 핵심 사용 안내서의 [보안](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"}을(를) 참조하십시오.
 
 ## PCI 준수
 
 PCI(Payment Card Industry)는 인터넷을 통해 신용 카드로 결제를 받는 사업자를 위한 일련의 요구 사항을 수립했습니다. 고객 신용카드 정보를 취급하는 가맹점은 안전한 환경 유지와 더불어 몇 가지 표준 가이드라인을 준수할 책임이 있다.
 
-자세한 내용은 [PCI 준수 지침](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"}을 참조하십시오.
+자세한 내용은 [PCI 준수 지침](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}을 참조하십시오.
 
 가맹점은 카드 소지자 데이터에 대한 보안을 평가하기 위한 자체 유효성 검사 도구인 [SAQ(자체 평가 설문)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}을(를) 완료할 수 있습니다.
 
