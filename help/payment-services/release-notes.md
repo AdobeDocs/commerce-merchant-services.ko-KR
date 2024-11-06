@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] 릴리스 노트"
 description: 모든 [!DNL Payment Services] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _2021년 6월 28일_
 ![새로 만들기](../assets/new.svg)<!-- Issue PAY-2761 --> 이제 열 설정 컨트롤을 사용하여 열을 표시하거나 숨김으로써 [주문 결제 상태 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) 및 [결제 보고서](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns)에 표시되는 데이터를 사용자 지정할 수 있습니다.
 
 +++
+
+## v2.9.0
+
+_2024년 11월 7일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![새로 만들기](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services]은(는) 이제 Apple Pay에 대해 **업그레이드된 SDK URL**&#x200B;을 지원하므로 Apple Pay를 사용하는 가맹점의 통합이 향상됩니다. 이 기능은 macOS 14 이상과 호환되므로 이전 버전의 macOS을 실행하는 장치에서는 이 기능이 표시되지 않습니다.
+
+![새로 만들기](../assets/new.svg)<!-- PAY-5630 --> **체크아웃**, **제품**, **장바구니** 및 **MiniCart** 페이지를 업데이트하여 **Apple Pay용 업그레이드된 SDK URL**&#x200B;을 지원합니다. 이를 통해 결제 옵션으로 Apple Pay를 제공하는 가맹점을 위한 사용자 환경을 개선할 수 있습니다.
+
+![신규](../assets/new.svg)<!-- PAY-5635 --> 배송 예상 개선 **Apple 결제 주소 기준**&#x200B;으로, 체크아웃 중에 정확한 배송 비용을 확인할 수 있습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5661 --> 체크아웃 시 여러 **[!DNL Payment Services]문제를 해결했습니다**. 따라서 가맹점과 쇼핑객의 결제 프로세스의 신뢰성이 향상되었습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5692 --> 빠른 체크아웃에 **스마트 단추**&#x200B;를 사용할 때 **고객의 이름과 성**&#x200B;이 주문에 추가되지 않는 문제를 해결했습니다.
+
+![수정](../assets/fix.svg)<!-- PAY-5712 --> 총 금액이 무료일 때 가맹점이 **소계 결제 옵션을 사용하여 체크아웃을 완료할 수 없는 문제**&#x200B;를 해결했습니다.
 
 ## v2.8.1
 
