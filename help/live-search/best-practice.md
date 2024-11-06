@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] 모범 사례'
 description: 스토어에서  [!DNL Live Search] 을(를) 구현하기 위한 모범 사례를 알아봅니다.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ Facet에 대해 자세히 알아보기:
 
 ### 제품 메타데이터 활용
 
-정확하고 자세한 제품 특성이 [검색 가능한 것으로 설정](workspace.md#set-attributes-as-searchable)되어 있는지 확인하십시오. SKU, 이름 및 카테고리 속성은 기본적으로 검색할 수 있으며 검색에서 제외할 수 없습니다. 
+정확하고 자세한 제품 특성이 [검색 가능한 것으로 설정](workspace.md#set-attributes-as-searchable)되어 있는지 확인하십시오. SKU, 이름 및 카테고리 속성은 기본적으로 검색할 수 있으며 검색에서 제외할 수 없습니다. 최상의 결과를 얻으려면 SKU에 공백을 사용하지 마십시오.
 
 검색 관련성을 높이려면 검색 가능한 각 속성에 가중치를 할당합니다. 가중치가 높은 속성은 검색 결과 내에서 더 높게 표시되어야 합니다. 관련성을 기준으로 정렬하는 것은 검색 가중치와 같은 여러 기준의 영향을 받습니다. 이는 경우에 따라 검색 가중치가 낮은 속성이 검색 가중치가 높은 속성보다 더 많은 관련성을 가질 수 있음을 의미합니다. 다른 기준에는 특정 속성의 일치 수, 검색된 검색어의 위치 및 검색어 전후의 전체 텍스트 구조가 포함될 수 있습니다.
 

@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 릴리스 노트'
 description: Adobe Commerce의  [!DNL Product Recommendations] 에 대한 최신 릴리스 정보입니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _2023년 4월 25일_
 ![신규](../assets/new.svg) [!DNL Product Recommendations] 고객은 이제 [SaaS 가격 인덱싱](../price-index/price-indexing.md)를 이용할 수 있습니다.
 
 ## 현재 메이저 버전
+
+### magento/product-recommendations 6.0.3
+
+_2024년 11월 6일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![수정](../assets/fix.svg) [범주 필터](filters.md#category)에 현재 저장소 보기에 속하지 않는 범주가 포함된 문제가 해결되었습니다.
+![수정](../assets/fix.svg) `magento/product-recommendations` 메타패키지에서 종속성 문제를 해결했습니다.
 
 ### magento/product-recommendations 6.0.2
 
@@ -142,7 +151,7 @@ Commerce ![새로 만들기](../assets/new.svg) 명령줄을 통해 [카탈로�
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![새로 만들기](../assets/new.svg) 새 [권장 사항 유형](type.md) 추가: 전환(장바구니로 보기), 전환(구매로 보기) 및 최근에 본 항목. 이러한 새로운 권장 사항 유형은 `magento/product-recommendations` 모듈 3.2.2 이상에서 사용할 수 있습니다.
-![수정](../assets/fix.svg) Fastly의 WAF(웹 응용 프로그램 방화벽)에서 쿠키를 잘못 차단하는 문제를 해결했습니다
+![수정](../assets/fix.svg) Fastly의 웹 응용 프로그램 방화벽(WAF)에서 쿠키를 잘못 차단하는 문제를 해결했습니다
 ![수정](../assets/fix.svg) 특정 스토어 보기에 대한 권장 사항을 만들 때 기본값이 아닌 스토어 보기에 할당된 제품이 _Recommendations 제품 미리 보기_ 패널에 표시되지 않는 문제가 해결되었습니다
 ![수정](../assets/fix.svg) 페이지 빌더의 특정 권장 사항 단위 이름이 권장 사항 단위를 상점 앞에 표시하지 못하게 하는 문제가 해결되었습니다
 
@@ -169,7 +178,7 @@ Commerce ![새로 만들기](../assets/new.svg) 명령줄을 통해 [카탈로�
 [!BADGE 지원됨]{type=Informative tooltip="지원됨"}
 
 ![수정](../assets/fix.svg) JavaScript 모달 오류를 수정했습니다.
-![수정](../assets/fix.svg) Fastly의 WAF(웹 응용 프로그램 방화벽)에서 쿠키를 잘못 차단하는 문제를 해결했습니다
+![수정](../assets/fix.svg) Fastly의 웹 응용 프로그램 방화벽(WAF)에서 쿠키를 잘못 차단하는 문제를 해결했습니다
 
 ### magento/product-recommendations 3.2.5
 

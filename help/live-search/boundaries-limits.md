@@ -3,9 +3,9 @@ title: '경계 및 제한'
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
+source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ ht-degree: 0%
 - 동적 패싯은 큰 인덱스와 순서가 높은 인덱스에서 성능 문제를 일으킬 수 있습니다. 동적 패싯을 만들어 성능 저하 또는 페이지가 시간 초과 오류와 함께 로드되지 않은 것을 발견한 경우 패싯을 고정으로 변경하여 성능 문제가 해결되는지 확인하십시오.
 - 재고 상태(`quantity_and_stock_status`)는 패싯으로 지원되지 않습니다. `inStock: 'true'`을(를) 사용하여 재고 제품을 필터링할 수 있습니다. 이는 [!DNL Commerce] 관리자의 &quot;재고 부족 제품 표시&quot;가 &quot;True&quot;로 설정된 경우 `LiveSearchAdapter` 모듈에서 즉시 지원됩니다.
 - 날짜 유형 속성은 패싯으로 지원되지 않습니다.
+- 해당 속성이 Facet으로 추가된 후 속성 메타데이터에 수행된 모든 변경 사항은 Facet에 반영되지 않습니다.
 
 ## 쿼리
 

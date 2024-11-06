@@ -3,9 +3,9 @@ title: "[!DNL Live Search] 릴리스 노트"
 description: "Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ _2023년 3월 14일_
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
-![수정](../assets/fix.svg) [사용자 지정 가격 특성](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)이(가) [facet]({% 링크 live-search/facets-add.md %})으로 구성된 경우 더 이상 오류를 반환하지 않습니다.
-![수정](../assets/fix.svg) 사용 가능한 [통화 기호](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional))(`data-currency-symbol`)가 없을 때 오류가 발생하는 문제를 해결했습니다.
+![수정](../assets/fix.svg) [사용자 지정 가격 특성](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)이(가) [facet](facets-add.md)(으)로 구성된 경우 더 이상 오류를 반환하지 않습니다.
+![수정](../assets/fix.svg) 사용 가능한 [통화 기호](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional)(`data-currency-symbol`)가 없을 때 오류가 발생하는 문제를 해결했습니다.
 사용 가능한 경우 ![수정](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)에 [특별 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)(최소 최종 가격)이 표시됩니다.
 
 ### [!DNL Live Search] 1.3.0 {#130}
