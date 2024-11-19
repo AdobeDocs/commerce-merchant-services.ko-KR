@@ -2,9 +2,9 @@
 title: Storefront 위젯
 description: 상점 첫 화면 팝오버 및 제품 목록 페이지 위젯에 대해 알아봅니다.
 exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
-source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
+source-git-commit: 256a1891a4769dcb3f5fa3e78bf1300190363c10
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Commerce 상점 검색 상자에 입력하기 시작하면 [!DNL Live Search]이(가) [팝오버 위젯](storefront-popover.md)에서 추천 제품 및 상위 검색 결과의 썸네일 이미지에 응답합니다.
 
-![팝오버 위젯](assets/ls-search-popover.png)
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 팝오버 위젯에 대한 자세한 내용 및 상점용 위젯을 사용자 지정하는 방법에 대한 자세한 내용은 [[!DNL Storefront Popover]](storefront-popover.md)을(를) 참조하십시오.
 
@@ -30,6 +30,6 @@ Commerce 상점 검색 상자에 입력하기 시작하면 [!DNL Live Search]이
 
 Storefront 팝오버의 모든 결과를 클릭하여 보면 제품 목록 페이지 위젯에 검색을 지속적으로 구체화하는 데 사용할 수 있는 기능이 표시됩니다.
 
-![제품 목록 페이지 위젯](assets/ls-plp.png)
+![제품 목록 페이지 위젯 결과](assets/plp-css-widgets.png)
 
 제품 목록 페이지 위젯에 대해 자세히 알아보고 Storefront에 맞게 위젯을 사용자 지정하는 방법을 알아보려면 [제품 목록 페이지 위젯](plp-styling.md)을 참조하세요.
