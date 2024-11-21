@@ -4,9 +4,9 @@ user-guide-description: "이 안내서에서는 Adobe Commerce SaaS 서비스용
 breadcrumb-title: " SaaS 서비스에 대한 [!DNL Data Export] 안내서"
 role: Admin
 feature: Services
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 5%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 5%
 - [CLI 명령 참조](data-export-cli-commands.md)
 - [로그 검토 및 문제 해결](troubleshooting-logging.md)
 - [SaaS 데이터 내보내기 확장 관리](manage-extension.md)
-- [SaaS 데이터 내보내기 피드 확장 및 사용자 지정](extensibility-and-customizations.md)
+- 확장성 {#extensibility}
+   - [SaaS 데이터 내보내기 피드 확장 및 사용자 지정](extensibility-and-customizations.md)
+   - [제품 속성을 동적으로 추가](add-attribute-dynamically.md)
 - [릴리스 정보](release-notes.md)
 - [Commerce 서비스 홈으로 돌아가기](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

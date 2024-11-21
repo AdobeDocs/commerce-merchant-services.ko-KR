@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] for Adobe Commerce은 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ Catalog Service는 서비스로 작동하므로 통합자는 Commerce의 기본 
 * 복잡한 제품은 여러 개의 간단한 제품으로 구성됩니다. 구성 요소 단순 제품은 가격이 다를 수 있습니다. 쇼퍼가 구성 요소 단순 제품의 수량을 지정할 수 있도록 복잡한 제품을 정의할 수도 있습니다. Catalog Service는 구성 가능한 제품, 번들 및 그룹화된 제품 형식을 `complexProductViews`에 매핑합니다.
 
 복잡한 제품 옵션은 유형이 아닌 동작에 의해 통합되고 구별됩니다. 각 옵션 값은 간단한 제품을 나타냅니다. 이 옵션 값은 가격을 포함한 간단한 제품 속성에 액세스할 수 있습니다. 구매자가 복잡한 제품에 대한 모든 옵션을 선택하면 선택한 옵션의 조합이 특정 간단한 제품을 가리킵니다. 단순 제품은 구매자가 사용 가능한 모든 옵션에 대한 값을 선택할 때까지 모호한 상태로 유지됩니다.
+
+#### 제품 보기 속성
+
+단순 제품과 복합 제품 모두 상점에 표시할 수 있는 고객 정의 속성이 있습니다. 이러한 특성은 [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type)(으)로 반환됩니다. Adobe Commerce에서 사용 가능한 속성은 제품을 만들 때 정의됩니다. Adobe Commerce 백엔드에서 또는 프로그래밍 방식으로 특성을 추가할 수 있습니다. [SaaS 데이터 내보내기 피드 데이터 확장 및 사용자 지정](../data-export/extensibility-and-customizations.md)을 참조하세요.
+
+>[!TIP]
+>
+>Commerce 백엔드에 데이터 형식을 추가하는 대신 [카탈로그 서비스와 API Mesh](mesh.md)를 사용하여 카탈로그 서비스 GraphQL 스키마를 확장하여 데이터를 추가하거나 기존 카탈로그 데이터를 구성하여 새 기능을 사용하도록 할 수 있습니다.
 
 ### 가격
 
