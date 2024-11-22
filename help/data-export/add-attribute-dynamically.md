@@ -1,15 +1,15 @@
 ---
-title: 프로그래밍 방식으로 데이터 내보내기 피드에 제품 특성 추가
-description: ' [!DNL SaaS Data Export] 피드 데이터에 사용자 지정 제품 특성을 추가하는 방법을 알아봅니다.'
+title: 제품 속성을 동적으로 추가
+description: 데이터 동기화 프로세스 중에 사용자 지정 제품 속성을 데이터 내보내기 피드에 동적으로 추가하는 방법을 알아봅니다.
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# 프로그래밍 방식으로 데이터 내보내기 피드에 제품 특성 추가
+# 데이터 동기화 중에 제품 속성을 동적으로 추가
 
 데이터 동기화 프로세스 중에 속성을 추가하는 플러그인을 만들어 Adobe Commerce에 등록하지 않고 제품 속성을 확장할 수 있습니다.
 
