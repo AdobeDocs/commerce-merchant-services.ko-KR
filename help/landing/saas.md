@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ SaaS 프로젝트를 선택하거나 만들려면 스토어의 [!DNL Commerce] �
 키와 연결된 모든 SaaS 프로젝트가 **SaaS 식별자** 섹션의 **프로젝트** 필드에 나타납니다.
 
 1. SaaS 프로젝트가 없는 경우 **프로젝트 만들기**&#x200B;를 클릭하십시오. 그런 다음 **프로젝트** 필드에 SaaS 프로젝트의 이름을 입력합니다.
+
+>[!NOTE]
+>
+>혼동을 방지하기 위해 특정 Commerce 서비스를 프로젝트 이름으로 사용하지 마십시오(예: *Live Search*, *제품 Recommendations* 또는 *데이터 연결*).  여러 SaaS 프로젝트에 대해 라이선스가 프로비저닝되지 않은 경우 여러 서비스에 대해 동일한 SaaS 프로젝트를 사용할 수 있습니다.
 
 1. [!DNL Commerce] 저장소의 현재 구성에 사용할 **데이터 공간**&#x200B;을(를) 선택하십시오.
 
