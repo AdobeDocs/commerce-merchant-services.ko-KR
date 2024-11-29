@@ -4,9 +4,9 @@ description: 사이트에 대한 보안 및 규정 준수 요구 사항을 검�
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,16 @@ PCI 3D Secure(3DS)는 온라인 신용 카드 구매 시 신용 카드 발급자
 
 EU 또는 영국 내에서 3DS 준수가 필요한 상인인 경우 [설정](settings.md#credit-card-fields)에서 수동으로 3DS(기본적으로 `Off`임)를 켜야 합니다.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >3DS 요건은 회사 및 카드 소유자의 은행이 [유럽 경제 지역](https://www.efta.int/eea)(EEA) 및 영국에 있는 거래에 적용됩니다. 미국 상인은 3DS를 필요로 하지 않지만, 원할 경우 거래에 사용할 수 있습니다.
 
 판매자/점포 직원이 구매자를 위해 발주한 주문은 3DS 준수 조치로 구성되지 않는다.
 
-자세한 내용은 [설정](settings.md#3ds)의 3DS를 참조하십시오.
+>[!MORELIKETHIS]
+>
+> * 자세한 내용은 ](settings.md#3ds) 설정의 [3DS를 참조하십시오.
+> * 3DS 테스트를 위한 특정 신용 카드에 대한 자세한 내용은 PayPal 개발자 설명서에서 [테스트 카드](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)를 참조하십시오.
 
 ### 카드 보관
 
@@ -65,7 +68,9 @@ PayPal 결제 버튼을 사용하면 PCI 규제 데이터가 서비스에 전달
 
 ## 사기 방지
 
-[Signifyd 확장](https://commercemarketplace.adobe.com/signifyd-module-connect.html)을(를) 사용하여 결제 서비스에 대해 자동 사기 방지 기능을 사용할 수 있습니다.
+[Signifyd 확장](https://commercemarketplace.adobe.com/signifyd-module-connect.html)을(를) 사용하여 결제 서비스에 대해 자동 사기 방지 기능을 사용할 수 있습니다. 자세한 내용은 [Signifyd 사기 방지](fraud-protection.md)를 참조하십시오.
 
-자세한 내용은 [Signifyd 사기 방지](fraud-protection.md)를 참조하십시오.
+PayPal은 개발자 설명서에서 [사기 방지](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014){target=_blank}를 위한 다른 옵션을 제공합니다.
 
+* 자세한 내용은 [사기 방지 고급](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced){target=_blank}을 참조하십시오.
+* 자세한 내용은 [비용 산출 보호](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608){target=_blank}를 참조하십시오.

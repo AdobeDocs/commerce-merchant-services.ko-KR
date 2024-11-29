@@ -3,9 +3,9 @@ title: 결제 옵션
 description: 스토어 고객이 사용할 수 있는 방법을 사용자 지정하려면 결제 옵션을 설정하십시오.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,11 @@ ht-degree: 0%
 
 제품 페이지, 미니 장바구니, 장바구니 및 체크아웃 보기에서 [!DNL Apple Pay] 단추를 볼 수 있습니다.
 
+스토어에 [!DNL Apple Pay]을(를) 사용하려면 [자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)(_라이브 도메인 등록_ 섹션만 해당)을 완료하고 [스토어에 대해 구성 [!DNL Payment Services]](settings.md#payment-buttons)하세요.
+
 >[!NOTE]
 >
-> 스토어에 [!DNL Apple Pay]을(를) 사용하려면 [자가 등록 [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)(_라이브 도메인 등록_ 섹션만 해당)을 완료하고 [스토어에 대해 구성 [!DNL Payment Services]](settings.md#payment-buttons)하세요.
+> 구매자가 사이트에서 Apple Pay로 결제할 수 있도록 하는 방법을 확인하려면 PayPal 개발자 설명서에서 [고급 체크아웃](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953){target=_blank}을 참조하십시오.
 
 저장소 구성 또는 결제 서비스 홈에서 [!UICONTROL Apple Pay]을(를) 구성할 수 있습니다. 자세한 내용은 [설정](settings.md#apple-pay)을 참조하세요.
 
