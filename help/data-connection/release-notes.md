@@ -3,10 +3,10 @@ title: 릴리스 정보
 description: Adobe Commerce의  [!DNL Data Connection] 확장에 대한 최신 릴리스 정보입니다.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
+source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 0%
+source-wordcount: '1108'
+ht-degree: 1%
 
 ---
 
@@ -77,6 +77,15 @@ _2022년 10월 12일_
 ![새로 만들기](../assets/new.svg) - [AEM 상점](overview.md#aem-support)에 대한 지원이 추가되었습니다.
 
 +++
+
+## 3.2.1
+
+_2024년 12월 2일_
+
+[!BADGE 호환성]{type=Informative tooltip="호환성"}
+
+![새로 만들기](../assets/new.svg) - 상인이 Experience Platform과 [!DNL Commerce] 백 오피스 이벤트 데이터를 공유하고 HIPAA 규정 준수를 유지할 수 있도록 HIPAA 준비 확장을 [!DNL Data Connection]에 추가했습니다.
+![수정](../assets/fix.svg) - [!DNL Data Connection] 확장에서 `eventForwarding` 데이터를 덮어쓰고 모든 고객에 대해 `HIPAA` 플래그를 설정하는 문제가 해결되었습니다. 이제 확장은 HIPAA 고객에 대한 플래그만 설정합니다.
 
 ## 3.2.0
 
