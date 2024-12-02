@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: Adobe Commerce용 '[!DNL API Mesh]'은(는) 공통 GraphQL 끝점을 통해 여러 데이터 소스를 통합하는 방법을 제공합니다.'
+description: Adobe Commerce용 [!DNL API Mesh]은(는) 공통 GraphQL 끝점을 통해 여러 데이터 소스를 통합하는 방법을 제공합니다.
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service

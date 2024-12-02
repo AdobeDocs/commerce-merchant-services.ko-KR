@@ -1,6 +1,6 @@
 ---
-title: '" [!DNL Live Search]" 시작"'
-description: "Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항과 설치 단계를 알아봅니다."
+title: ' [!DNL Live Search] 시작'
+description: Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항 및 설치 단계에 대해 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491

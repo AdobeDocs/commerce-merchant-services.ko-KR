@@ -1,5 +1,5 @@
 ---
-title: '라이브 검색 설정'
+title: 라이브 검색 설정
 description: ' [!DNL Live Search] 작업 영역은 검색 성능을 구성, 관리 및 모니터링하는 데 사용됩니다.'
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

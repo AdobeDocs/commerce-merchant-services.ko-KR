@@ -1,6 +1,6 @@
 ---
 title: Inventory management Source 전송
-description: "Adobe Commerce Inventory management을 사용하여  [!DNL Store Fulfillment solution] 에 대한 주식을 구성합니다. 새 재고를 설정하고 기본 재고에서 재고를 이전하여 스토어 이행 솔루션에 필요한 스토어 픽업 기능을 사용하도록 구성된 소스에 할당할 수 있습니다."
+description: Adobe Commerce Inventory management을 사용하여  [!DNL Store Fulfillment solution] 에 대한 주식을 구성합니다. 새 재고를 설정하고 기본 재고에서 재고를 이전하여 Store Fulfillment 솔루션에 필요한 Store Pickup 기능을 사용하도록 구성된 소스에 할당할 수 있습니다.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

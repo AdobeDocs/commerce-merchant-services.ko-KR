@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 노트'
-description: "모든 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오."
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스 정보'
+description: 모든 [!DNL Store Fulfillment by Walmart Commerce Technologies] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0

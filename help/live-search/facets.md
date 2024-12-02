@@ -1,6 +1,6 @@
 ---
-title: "패싯"
-description: "[!DNL Live Search] 패싯은 여러 특성 값 차원을 검색 기준으로 사용합니다."
+title: 패싯
+description: '[!DNL Live Search] 패싯은 여러 차원의 특성 값을 검색 기준으로 사용합니다.'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt

@@ -1,6 +1,6 @@
 ---
-title: "머천다이징 검색"
-description: "[!DNL Live Search] 머천다이징 규칙은 논리와 작업을 결합하여 쇼핑 경험을 구체화합니다."
+title: 머천다이징 검색
+description: '[!DNL Live Search] 머천다이징 규칙은 논리와 작업을 결합하여 쇼핑 경험을 구체화합니다.'
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt

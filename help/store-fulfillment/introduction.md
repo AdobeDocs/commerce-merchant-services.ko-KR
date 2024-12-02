@@ -1,6 +1,6 @@
 ---
-title: " [!DNL Store Fulfillment] 소개"
-description: " [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 이(가) 고객을 위해 온라인 구매, 매장 픽업(BOPI)을 지원하는 방법을 알아봅니다. Store Assist Mobile을 사용하여 스토어 동료 및 Commerce 고객을 위한 BOPIS 이행 및 주문 처리를 간소화하십시오."
+title: ' [!DNL Store Fulfillment] 소개'
+description: ' [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] 이(가) 고객을 위해 온라인 구매, 매장 픽업(BOPI)을 지원하는 방법을 알아봅니다. Store Assist 모바일을 사용하여 스토어 동료 및 Commerce 고객을 위한 BOPIS 이행 및 주문 처리를 간소화합니다.'
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c

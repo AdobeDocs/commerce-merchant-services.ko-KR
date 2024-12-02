@@ -1,6 +1,6 @@
 ---
-title: "규칙 추가"
-description: "검색 머천다이징 규칙을 만드는 방법을 알아봅니다."
+title: 규칙 추가
+description: 검색 머천다이징 규칙을 만드는 방법을 알아봅니다.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
 source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt

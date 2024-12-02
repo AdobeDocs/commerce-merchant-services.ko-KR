@@ -1,6 +1,6 @@
 ---
-title: "동의어"
-description: "[!DNL Live Search] 동의어는 카탈로그의 단어와 다른 단어로 쿼리를 확장합니다."
+title: 동의어
+description: '[!DNL Live Search] 동의어는 카탈로그의 단어와 다른 단어로 쿼리를 확장합니다.'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt

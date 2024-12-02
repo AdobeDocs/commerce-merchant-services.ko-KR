@@ -1,6 +1,6 @@
 ---
 title: 온보딩 및 설치
-description: " [!DNL Catalog Service] 설치 방법 알아보기"
+description: ' [!DNL Catalog Service]을(를) 설치하는 방법 알아보기'
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
 source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt

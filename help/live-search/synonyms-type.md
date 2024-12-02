@@ -1,6 +1,6 @@
 ---
-title: "동의어 유형"
-description: "단방향 [!DNL Live Search] 동의어는 키워드의 정의를 확장합니다."
+title: 동의어 유형
+description: 단방향 및 양방향 [!DNL Live Search] 동의어는 키워드의 정의를 확장합니다.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt

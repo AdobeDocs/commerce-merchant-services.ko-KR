@@ -1,6 +1,6 @@
 ---
-title: "성능"
-description: " [!DNL Live Search] 성능 작업 영역은 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다."
+title: 성능
+description: ' [!DNL Live Search] 성능 작업 영역에서는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다.'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

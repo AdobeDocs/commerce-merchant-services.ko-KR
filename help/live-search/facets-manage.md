@@ -1,6 +1,6 @@
 ---
-title: "Facet 관리"
-description: "기존 [!DNL Live Search] 패싯을 관리하는 방법을 알아봅니다."
+title: Facet 관리
+description: 기존 [!DNL Live Search] 패싯을 관리하는 방법을 알아봅니다.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt

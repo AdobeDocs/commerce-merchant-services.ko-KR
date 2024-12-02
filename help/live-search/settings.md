@@ -1,6 +1,6 @@
 ---
-title: "설정"
-description: " [!DNL Live Search] 서비스 설정을 구성합니다."
+title: 설정
+description: ' [!DNL Live Search] 서비스에 대한 설정을 구성합니다.'
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

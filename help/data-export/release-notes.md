@@ -1,5 +1,5 @@
 ---
-title: '[!DNL SaaS Data Export Extension] 릴리스 노트'
+title: '[!DNL SaaS Data Export Extension] 릴리스 정보'
 description: Adobe Commerce의  [!DNL Data Export Extension] 에 대한 최신 릴리스 정보입니다.
 feature: Services, Release Notes
 recommendations: noCatalog

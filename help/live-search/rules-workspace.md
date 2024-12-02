@@ -1,6 +1,6 @@
 ---
-title: "머천다이징 Workspace 검색"
-description: "검색 머천다이징 작업 영역을 자세히 알아보십시오."
+title: 머천다이징 Workspace 검색
+description: 검색 머천다이징 작업 영역을 통해 자세히 알아보십시오.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

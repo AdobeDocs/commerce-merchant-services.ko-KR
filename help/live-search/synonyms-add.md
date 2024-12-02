@@ -1,6 +1,6 @@
 ---
-title: "동의어 추가"
-description: "검색 요청에 대한 응답을 개선하기 위해  [!DNL Live Search] 동의어를 추가하십시오."
+title: 동의어 추가
+description: 검색 요청에 대한 응답을 향상시키려면  [!DNL Live Search] 동의어를 추가하십시오.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt

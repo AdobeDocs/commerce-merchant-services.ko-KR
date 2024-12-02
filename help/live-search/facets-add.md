@@ -1,6 +1,6 @@
 ---
-title: "패싯 추가"
-description: "필터링 가능한 제품 특성을  [!DNL Live Search] 패싯으로 추가하는 방법에 대해 알아봅니다."
+title: 패싯 추가
+description: 필터링 가능한 제품 특성을  [!DNL Live Search] 패싯으로 추가하는 방법에 대해 알아봅니다.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt

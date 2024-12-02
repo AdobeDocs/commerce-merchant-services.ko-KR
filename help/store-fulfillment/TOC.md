@@ -1,5 +1,5 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
+user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Adobe Commerce 스토어를 위한 스토어 이행 기능의 설치, 구성 및 사용에 대한 자세한 정보입니다.
 breadcrumb-title: Adobe Commerce용 스토어 이행
 index: true

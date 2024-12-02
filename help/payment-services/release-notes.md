@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Payment Services] 릴리스 노트"
+title: '[!DNL Payment Services] 릴리스 정보'
 description: 모든 [!DNL Payment Services] 릴리스에 대한 정보는 릴리스 정보를 검토하십시오.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes

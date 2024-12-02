@@ -1,6 +1,6 @@
 ---
 title: 설치
-description: "PHP용 Composer를 사용하여 Adobe Commerce 스토어프론트용  [!DNL Store Fulfillment solution] 을(를) 설치하십시오."
+description: PHP용 Composer를 사용하여 Adobe Commerce 스토어프론트용  [!DNL Store Fulfillment solution] 을(를) 설치합니다.
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install

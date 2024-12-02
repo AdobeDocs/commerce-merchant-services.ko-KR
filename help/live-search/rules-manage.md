@@ -1,6 +1,6 @@
 ---
-title: "검색 머천다이징 규칙 관리"
-description: "기존 검색 머천다이징 규칙을 관리하는 방법을 알아봅니다."
+title: 검색 머천다이징 규칙 관리
+description: 기존 검색 머천다이징 규칙을 관리하는 방법을 알아봅니다.
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

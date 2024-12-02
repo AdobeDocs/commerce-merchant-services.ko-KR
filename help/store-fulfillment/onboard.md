@@ -1,6 +1,6 @@
 ---
 title: 스토어 이행 서비스에 대한 온보딩 개요
-description: '[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항'
+description: '[!DNL Live Search] 온보딩 흐름, 시스템 요구 사항, 경계 및 제한 사항.'
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install

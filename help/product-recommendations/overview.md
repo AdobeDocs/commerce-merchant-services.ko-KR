@@ -1,6 +1,6 @@
 ---
 title: ' [!DNL Product Recommendations] 소개'
-description: '''[!DNL Product Recommendations]''은(는) 전환율을 높이고 매출을 증대하며 쇼핑객 참여를 촉진하는 데 사용할 수 있는 강력한 마케팅 도구입니다.'''
+description: '[!DNL Product Recommendations]은(는) 전환율을 높이고 매출을 증대하며 쇼핑객 참여를 촉진하는 데 사용할 수 있는 강력한 마케팅 도구입니다.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
 source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941

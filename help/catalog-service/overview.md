@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service]'
-description: '[!DNL Catalog Service] for Adobe Commerce은 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.'
+description: Adobe Commerce용 [!DNL Catalog Service]은(는) 기본 Adobe Commerce GraphQL 쿼리보다 훨씬 빠르게 제품 표시 페이지 및 제품 목록 페이지의 콘텐츠를 검색할 수 있는 방법을 제공합니다.
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 role: Admin, Developer
 recommendations: noCatalog

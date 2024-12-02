@@ -1,6 +1,6 @@
 ---
-title: "패싯 유형"
-description: "[!DNL Live Search] 패싯은 동적이며 관련성이 있을 때 필터 목록에 나타납니다."
+title: 패싯 유형
+description: '[!DNL Live Search]개의 패싯이 동적이며 관련성이 있을 경우 필터 목록에 나타납니다.'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

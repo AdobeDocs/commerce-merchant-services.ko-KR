@@ -1,6 +1,6 @@
 ---
-title: "Workspace 환경 설정"
-description: " [!DNL Live Search] 페이스팅 작업 영역에 대해 자세히 알아보세요."
+title: Workspace 환경 설정
+description: ' [!DNL Live Search] 페이스팅 작업 영역에 대한 자세한 내용을 살펴보십시오.'
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

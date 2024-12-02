@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Catalog Service] 릴리스 노트'
+title: '[!DNL Catalog Service] 릴리스 정보'
 description: Adobe Commerce의  [!DNL Catalog Service] 에 대한 최신 릴리스 정보입니다.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes

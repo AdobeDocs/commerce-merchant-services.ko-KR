@@ -1,7 +1,7 @@
 ---
-user-guide-title: “[!DNL Catalog Service] 안내서”
-user-guide-description: "이 안내서에서는 Adobe Commerce용  [!DNL Catalog Service] 을(를) 사용하는 방법에 대한 자세한 지침을 제공합니다."
-breadcrumb-title: “[!DNL Catalog Service] 안내서”
+user-guide-title: '[!DNL Catalog Service] 안내서'
+user-guide-description: 이 안내서에서는 Adobe Commerce용  [!DNL Catalog Service] 을(를) 사용하는 방법에 대한 자세한 지침을 제공합니다.
+breadcrumb-title: '[!DNL Catalog Service] 안내서'
 hide: true
 role: Admin
 feature: Services, Catalog Service

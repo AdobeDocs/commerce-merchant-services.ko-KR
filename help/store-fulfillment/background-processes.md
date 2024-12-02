@@ -1,6 +1,6 @@
 ---
 title: 백그라운드 프로세스 구성
-description: "데이터를 이행 서비스와 동기화하는 데 사용되는  [!DNL Store Fulfillment] 백그라운드 프로세스에 대한 일정을 구성합니다."
+description: 데이터를 이행 서비스와 동기화하는 데 사용되는  [!DNL Store Fulfillment] 백그라운드 프로세스에 대한 일정을 구성합니다.
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7

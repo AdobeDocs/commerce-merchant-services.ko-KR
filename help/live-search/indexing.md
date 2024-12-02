@@ -1,6 +1,6 @@
 ---
-title: "색인화"
-description: " [!DNL Live Search] 제품 특성 속성을 인덱싱하는 방법을 알아봅니다."
+title: 색인화
+description: ' [!DNL Live Search] 제품 특성 속성을 인덱싱하는 방법을 알아봅니다.'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: 2833b723845312fe657b29024b9d715ee07d5a1e
 workflow-type: tm+mt

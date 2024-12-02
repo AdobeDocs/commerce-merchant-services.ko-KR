@@ -1,6 +1,6 @@
 ---
 title: 재무 보고
-description: "[!DNL Payment Services]은(는) 스토어의 주문과 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다."
+description: '[!DNL Payment Services]은(는) 스토어의 주문과 결제를 명확하게 볼 수 있도록 포괄적인 보고를 제공합니다.'
 role: User
 feature: Payments, Checkout
 level: Intermediate

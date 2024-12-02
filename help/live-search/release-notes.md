@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Live Search] 릴리스 노트"
-description: "Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다."
+title: '[!DNL Live Search] 릴리스 정보'
+description: Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

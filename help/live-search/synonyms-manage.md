@@ -1,6 +1,6 @@
 ---
-title: "동의어 관리"
-description: " [!DNL Live Search] 기존 동의어를 관리하는 방법을 알아봅니다."
+title: 동의어 관리
+description: 기존 [!DNL Live Search] 동의어를 관리하는 방법을 알아봅니다.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
 source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt

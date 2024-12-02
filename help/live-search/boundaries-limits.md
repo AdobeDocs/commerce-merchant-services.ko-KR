@@ -1,5 +1,5 @@
 ---
-title: '경계 및 제한'
+title: 경계 및 제한
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53

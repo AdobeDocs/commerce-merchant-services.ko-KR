@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Payment Services] 안내서 개요"
+title: '[!DNL Payment Services] 안내서 개요'
 description: 설치 및 온보딩을 포함한  [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] 관리자에 대한 포괄적인 정보
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].

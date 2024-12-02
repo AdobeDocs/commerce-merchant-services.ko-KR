@@ -1,7 +1,7 @@
 ---
-user-guide-title: “[!DNL Live Search] 안내서”
-user-guide-description: "이 안내서에서는 Adobe Commerce에서  [!DNL Live Search] 을(를) 사용하는 방법에 대한 자세한 지침을 제공합니다."
-breadcrumb-title: “[!DNL Live Search] 안내서”
+user-guide-title: '[!DNL Live Search] 안내서'
+user-guide-description: 이 안내서에서는 Adobe Commerce에서  [!DNL Live Search] 을(를) 사용하는 방법에 대한 자세한 지침을 제공합니다.
+breadcrumb-title: '[!DNL Live Search] 안내서'
 role: Admin
 feature: Services, Search
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

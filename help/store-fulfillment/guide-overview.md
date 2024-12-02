@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Store Fulfillment] 안내서 개요'
-description: "설치 및 온보딩을 포함하여 Adobe Commerce 관리자를 위한  [!DNL Store Fulfillment] 에 대한 포괄적인 정보입니다."
+description: 설치 및 온보딩을 포함하여 Adobe Commerce 관리자를 위한  [!DNL Store Fulfillment] 에 대한 포괄적인 정보입니다.
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay

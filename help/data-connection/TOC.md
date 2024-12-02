@@ -1,7 +1,7 @@
 ---
-user-guide-title: " Adobe Commerce용 [!DNL Data Connection] 확장"
-user-guide-description: "이 안내서에서는 Adobe Commerce용  [!DNL Data Connection] 확장 사용에 대한 자세한 지침을 제공합니다."
-breadcrumb-title: " Adobe Commerce용 [!DNL Data Connection] 확장"
+user-guide-title: Adobe Commerce용 [!DNL Data Connection] 확장
+user-guide-description: 이 안내서에서는 Adobe Commerce용  [!DNL Data Connection] 확장 사용에 대한 자세한 지침을 제공합니다.
+breadcrumb-title: Adobe Commerce용 [!DNL Data Connection] 확장
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
