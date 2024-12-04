@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 모범 사례'
 description: 스토어에서  [!DNL Live Search] 을(를) 구현하기 위한 모범 사례를 알아봅니다.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Facet에 대해 자세히 알아보기:
 ## 검색 결과 관련성 개선
 
 이 섹션에서는 정확하고 자세한 속성을 검색할 수 있도록 효과적인 검색 규칙을 구현하고 제품 메타데이터를 사용하여 검색 결과 관련성을 향상시키는 방법에 대해 설명합니다.
+
+### 이미지
+
+구성 가능한 제품의 하위 제품에 올바른 역할이 있는 이미지가 있는지 확인합니다. 상위 또는 하위 제품이 있으면 검색 결과에 이미지가 없을 수 있습니다.
+
+>[!NOTE]
+>
+>검색 결과에 있는 이미지는 검색어에 따라 다를 수 있습니다. 검색어에 따라 하위 제품이 더 연관성이 있다고 판단되면 상위 제품의 이미지 대신 하위 제품의 이미지가 사용됩니다.
 
 ### 규칙 검색
 
