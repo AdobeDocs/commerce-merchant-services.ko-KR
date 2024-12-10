@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ _[!UICONTROL Live]_이(가) 선택한 데이터 소스인 경우 프로덕션 �
 
 1. _관리자_ 사이드바에서 **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**(으)로 이동합니다.
 1. [트랜잭션에 대한 날짜 범위 일정 사용자 지정](#customize-transactions-timeframe).
-1. _다운로드_(![](assets/icon-download.png){width="20" zoomable="yes"}) 아이콘을 클릭합니다.
+1. _다운로드_(![다운로드 아이콘](assets/icon-download.png){width="20" zoomable="yes"}) 아이콘을 클릭합니다.
 
 지급 트랜잭션은 .csv 형식으로 다운로드됩니다.
 
