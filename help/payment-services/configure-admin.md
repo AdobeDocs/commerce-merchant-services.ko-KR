@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 1. **[!UICONTROL Show on checkout page]**&#x200B;의 경우 `Yes`을(를) 선택하여 체크아웃 페이지에서 신용 카드 필드를 사용하도록 설정합니다.
 1. **[!UICONTROL Vault Enabled]**&#x200B;의 경우 `Yes`을(를) 선택하여 체크아웃에 신용 카드 보관을 사용하도록 설정하십시오.
 1. **[!UICONTROL Vault Enabled in Admin]**&#x200B;에 대해 가맹점이 저장된 신용 카드를 사용하는 고객에 대한 주문을 만들 수 있도록 하려면 `Yes`을(를) 선택하십시오.
-1. **[!UICONTROL 3DS Secure authentication]**(기본적으로 `Off`)을(를) 사용하려면 `Always` 또는 `When required`을(를) 선택하십시오.
+1. **[!UICONTROL 3D Secure authentication]**(기본적으로 `Off`)을(를) 사용하려면 `Always` 또는 `When required`을(를) 선택하십시오.
 1. **[!UICONTROL Debug Mode]**&#x200B;의 경우 디버그 모드를 활성화하려면 `Yes`을(를) 선택하고 비활성화하려면 `No`을(를) 선택하십시오.
 1. 변경 내용을 저장하려면 **[!UICONTROL Save Config]**&#x200B;을(를) 클릭합니다.
 1. **[!UICONTROL System]** > **[!UICONTROL Cache Management]**(으)로 이동한 다음 **[!UICONTROL Flush Cache]**&#x200B;을(를) 클릭하여 모든 잘못된 캐시를 새로 고칩니다.
@@ -82,7 +82,7 @@ ht-degree: 0%
 | [!UICONTROL Show on checkout page] | 웹 사이트 | 체크아웃 페이지에서 신용 카드 필드를 활성화 또는 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | 스토어 뷰 | [신용 카드 보관](vaulting.md)을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | 스토어 뷰 | [판매자가 보관된 결제 방법을 사용하여 ](vaulting.md)에서 고객에 대한 주문을 완료할 수 있는 기능을 활성화하거나 비활성화합니다. 옵션: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | 웹 사이트 | [3DS 보안 인증을 사용하거나 사용하지 않도록 설정](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | 웹 사이트 | [3DS 보안 인증을 사용하거나 사용하지 않도록 설정](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. **[!UICONTROL 3D Secure authentication]**(기본적으로 `Off`)을(를) 사용하려면 `Always` 또는 `When required`을(를) 선택하십시오.
 1. 디버그 모드를 사용하려면 **[!UICONTROL Debug Mode]**&#x200B;에 대해 `Yes`을(를) 선택합니다(`No`이(가) 비활성화함).
 1. 필요에 따라 **[!UICONTROL Button Color]**, **[!UICONTROL Button Type]** 및 **[!UICONTROL Button Style]**&#x200B;을(를) 선택하여 _[!UICONTROL Google Pay]_단추의 모양을 구성합니다.
 1. 높이를 설정하려면 **[!UICONTROL Button Style]**&#x200B;에 정의된 높이의 기본값을 사용합니다.
@@ -153,6 +154,7 @@ ht-degree: 0%
 | [!UICONTROL Show buttons on product detail page] | 스토어 뷰 | 제품 세부 정보 페이지에서 [!DNL Google Pay]을(를) 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | 스토어 뷰 | 미니 장바구니 미리 보기에서 [!DNL Google Pay]을(를) 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | 스토어 뷰 | 장바구니 페이지에서 [!DNL Google Pay]을(를) 사용하거나 사용하지 않도록 설정합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | 스토어 뷰 | [3D 보안 인증을 사용하거나 사용하지 않도록 설정합니다](security.md#3ds). 옵션: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | 웹 사이트 | 디버그 모드를 활성화하거나 비활성화합니다. 옵션: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | 스토어 뷰 | [!DNL Google Pay] 단추의 색상을 정의합니다. 옵션: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | 스토어 뷰 | [!DNL Google Pay] 단추의 형식을 정의합니다. 옵션: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
