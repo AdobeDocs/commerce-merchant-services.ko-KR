@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 릴리스 정보'
 description: Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _2024년 5월 31일_
 _2023년 10월 27일_
 
 ![새로 만들기](../assets/new.svg) 이제 [!DNL Live Search] PLP 위젯에서 색상 견본을 지원합니다.
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_2025년 1월 6일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![수정](../assets/fix.svg) Adobe Commerce 버전 2.4.5 및 이전 버전에서 `categoryList` GraphqL 쿼리에 오류가 발생하는 문제를 해결했습니다.
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -327,7 +335,7 @@ _2023년 3월 14일_
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
 ![새로 만들기](../assets/new.svg) [성능](performance.md) 보고 대시보드는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다.
-![새로 만들기](../assets/new.svg) [!DNL Live Search] [Storefront 이벤트 SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)에서는 이벤트 게시 및 구독 서비스와 지표를 사용하여 공통 데이터 레이어에 액세스할 수 있습니다.
+![새로 만들기](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)에서는 이벤트 게시 및 구독 서비스와 지표가 있는 공통 데이터 레이어에 액세스할 수 있습니다.
 ![수정](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)에 가시성을 제어하는 `.search-autocomplete` 컨테이너에 대한 새 `active` 클래스가 있습니다.
 ![수정](../assets/fix.svg) 상점 첫 화면에서 [검색어](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) 바닥글 링크가 제거되고 해당 캐시가 [!DNL Live Search] 설치에 사용할 수 없습니다.
 검색 어댑터용 ![버그](../assets/bug.svg) 패치가 중복 제품을 처리합니다.
