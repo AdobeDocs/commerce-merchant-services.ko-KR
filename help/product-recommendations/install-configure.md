@@ -3,9 +3,9 @@ title: 설치 및 구성
 description: ' [!DNL Product Recommendations]을(를) 설치, 업데이트 및 제거하는 방법을 알아봅니다.'
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 0%
 ## [!DNL Product Recommendations] 설치 {#install}
 
 [!DNL Product Recommendations] 모듈은 독립 실행형 메타패키지이므로 Adobe Commerce보다 업데이트가 더 자주 릴리스됩니다. 최신 버그 수정 및 기능을 확인하려면 [릴리스 정보](release-notes.md)를 참조하세요.
+
+>[!IMPORTANT]
+>
+>Product Recommendations을 사용할 올바른 [자격](../landing/saas.md#credentials)이 있는지 확인하십시오.
 
 작성기를 사용하여 `magento/product-recommendations` 모듈 설치:
 

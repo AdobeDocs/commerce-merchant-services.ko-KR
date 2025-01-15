@@ -2,9 +2,9 @@
 title: 동의어 관리
 description: 기존 [!DNL Live Search] 동의어를 관리하는 방법을 알아봅니다.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 0%
 1. **편집**을 클릭합니다.
 키워드는 목록의 첫 번째 용어이며 각 용어는 쉼표로 구분됩니다. 키워드 및 확장 용어는 업데이트할 수 있지만 동의어의 유형은 변경할 수 없습니다.
 1. 편집할 항목을 클릭합니다. 그런 다음 필요에 따라 텍스트를 업데이트합니다.
-
-   ![양방향 동의어 편집](assets/synonym-two-way-edit.png)
 
 1. 완료되면 **저장**&#x200B;을 클릭하세요.
 
