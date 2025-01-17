@@ -1,22 +1,26 @@
 ---
 title: 데이터 수집
-description: 이벤트가 제품 추천에 대한 데이터를 수집하는 방법을 알아봅니다.
+description: 이벤트가  [!DNL Product Recommendations]에 대한 데이터를 수집하는 방법을 알아봅니다.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # 데이터 수집
 
-[Product Recommendations](install-configure.md) 또는 [Live Search](../live-search/install.md)와 같은 SaaS 기반 Adobe Commerce 기능을 설치하고 구성하면 모듈이 동작 데이터 수집을 상점 앞에 배포합니다. 이 메커니즘은 쇼핑객으로부터 익명으로 처리된 행동 데이터를 수집하고 제품 추천과 [실시간 검색](../live-search/overview.md) 결과를 지원합니다. 예를 들어 `view` 이벤트는 `Viewed this, viewed that` 권장 사항 유형을 계산하는 데 사용되고 `place-order` 이벤트는 `Bought this, bought that` 권장 사항 유형을 계산하는 데 사용됩니다.
+[[!DNL Product Recommendations]](install-configure.md) 또는 [[!DNL Live Search]](../live-search/install.md)과(와) 같은 SaaS 기반 Adobe Commerce 기능을 설치하고 구성하면 모듈이 동작 데이터 수집을 상점 앞에 배포합니다. 이 메커니즘은 쇼핑객으로부터 익명으로 처리된 행동 데이터를 수집하고 [!DNL Product Recommendations]을(를) 실행합니다. 예를 들어 `view` 이벤트는 `Viewed this, viewed that` 권장 사항 유형을 계산하는 데 사용되고 `place-order` 이벤트는 `Bought this, bought that` 권장 사항 유형을 계산하는 데 사용됩니다.
 
 >[!NOTE]
 >
->제품 권장 사항을 위한 데이터 수집에는 PII(개인 식별 정보)가 포함되지 않습니다. 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명으로 처리됩니다. [자세히](https://www.adobe.com/privacy/experience-cloud.html)를 알아보세요.
+>[!DNL Product Recommendations]을(를) 위한 데이터 수집에는 PII(개인 식별 정보)가 포함되지 않습니다. 쿠키 ID 및 IP 주소와 같은 모든 사용자 식별자는 엄격히 익명으로 처리됩니다. [자세히](https://www.adobe.com/privacy/experience-cloud.html)를 알아보세요.
+
+## 의료 서비스 고객
+
+의료 서비스 고객이고 [데이터 연결](../data-connection/overview.md) 확장의 일부인 [데이터 서비스 HIPAA 확장](../data-connection/hipaa-readiness.md#installation)을 설치한 경우 [!DNL Product Recommendations]에서 사용하는 Storefront 이벤트 데이터는 더 이상 캡처되지 않습니다. 이는 storefront 이벤트 데이터가 클라이언트측에서 생성되기 때문입니다. 상점 이벤트 데이터를 계속 캡처하고 보내려면 [!DNL Product Recommendations]에 대한 이벤트 컬렉션을 다시 사용하도록 설정하십시오. 자세한 내용은 [일반 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)을 참조하세요.
 
 ## 데이터 유형 및 이벤트
 
@@ -75,7 +79,7 @@ _콜드 스타트_ 문제는 모델이 교육하고 효과를 얻는 데 걸리�
 
 ### 이벤트
 
-[Adobe Commerce Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)는 Storefront에 배포된 모든 이벤트를 나열합니다. 그러나 이 목록에는 제품 Recommendations과 관련된 이벤트의 하위 집합이 있습니다. 이러한 이벤트는 쇼핑객이 상점 위의 추천 단위와 상호 작용할 때 데이터를 수집하여 추천 실적을 분석하는 데 사용되는 지표에 전원을 공급합니다.
+[Adobe Commerce Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)는 Storefront에 배포된 모든 이벤트를 나열합니다. 해당 목록에 [!DNL Product Recommendations]과(와) 관련된 이벤트의 하위 집합이 있습니다. 이러한 이벤트는 쇼핑객이 상점 위의 추천 단위와 상호 작용할 때 데이터를 수집하여 지표에 권한을 부여하여 추천의 실적을 분석합니다.
 
 | 이벤트 | 설명 |
 | --- | --- |

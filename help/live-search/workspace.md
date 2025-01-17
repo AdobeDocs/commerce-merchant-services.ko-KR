@@ -2,9 +2,9 @@
 title: 라이브 검색 설정
 description: ' [!DNL Live Search] 작업 영역은 검색 성능을 구성, 관리 및 모니터링하는 데 사용됩니다.'
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Headless Storefront를 사용하는 경우 다음 설명서를 참조하여 추�
 - Live Search 대시보드에 대한 [필수 이벤트](events.md).
 - 필수 구성 요소로 추가해야 하는 [Storefront 이벤트 수집기](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/).
 - 이벤트 구조의 [예](https://github.com/adobe/commerce-events/tree/main/examples).
+
+### 의료 서비스 고객
+
+의료 서비스 고객이고 [데이터 연결](../data-connection/overview.md) 확장의 일부인 [데이터 서비스 HIPAA 확장](../data-connection/hipaa-readiness.md#installation)을 설치한 경우 [!DNL Live Search]에서 사용하는 Storefront 이벤트 데이터는 더 이상 캡처되지 않습니다. 이는 storefront 이벤트 데이터가 클라이언트측에서 생성되기 때문입니다. 상점 이벤트 데이터를 계속 캡처하고 보내려면 [!DNL Live Search]에 대한 이벤트 컬렉션을 다시 사용하도록 설정하십시오. 자세한 내용은 [일반 구성](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)을 참조하세요.
 
 ## 범위 설정
 

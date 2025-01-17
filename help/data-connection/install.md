@@ -4,9 +4,9 @@ description: Adobe Commerce에서  [!DNL Data Connection] 확장을 설치, 업�
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ ht-degree: 0%
 1. (선택 사항) [검색 이벤트](events.md#search-events)를 구성하는 [!DNL Live Search] 데이터를 포함하려면 [[!DNL Live Search]](../live-search/install.md) 확장을 설치하십시오.
 
 1. (선택 사항) [구매요청 이벤트](events.md#b2b-events)를 구성하는 B2B 데이터를 포함하려면 [B2B 확장](#install-the-b2b-extension)을 설치하십시오.
+
+1. (선택 사항) 의료 서비스 판매자인 경우 [데이터 서비스 HIPAA](#install-the-data-services-hipaa-extension) 확장을 설치하여 [!DNL Commerce] 백 오피스 데이터가 HIPAA를 사용할 수 있도록 합니다.
 
 ### Adobe I/O 이벤트 설치 및 고객 커넥터 모듈 구성
 
@@ -109,6 +111,16 @@ B2B 판매자의 경우 [구매요청 목록](events.md#b2b-events) 이벤트 �
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### 데이터 서비스 HIPAA 확장 설치
+
+의료 서비스 판매자의 경우 다음 확장을 설치하여 백오피스 이벤트 데이터가 HIPAA에 대비되도록 합니다.
+
+명령줄에서 다음을 실행하여 `magento/module-data-services-hipaa` 확장을 다운로드합니다.
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## [!DNL Data Connection] 확장 업데이트 {#update}

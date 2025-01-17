@@ -5,9 +5,9 @@ breadcrumb-title: Adobe Commerce용 [!DNL Data Connection] 확장
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # Adobe Commerce용 [!DNL Data Connection] 확장 {#data-connection}
 
 - [안내서 개요](overview.md)
+- [Commerce 서비스에 대한 HIPAA 준비](hipaa-readiness.md)
+- [Commerce Services에서 개인 정보 요청을 처리하는 방법](handle-privacy-request.md)
 - [릴리스 정보](release-notes.md)
 - 기본 {#fundamentals}
    - [ [!DNL Data Connection] 확장 설치](install.md)
@@ -22,7 +24,7 @@ ht-degree: 3%
    - [Commerce 데이터 수집을 위한 시계열 이벤트 스키마 업데이트](update-xdm.md)
    - [Commerce 데이터 수집을 위한 프로필 레코드 스키마 업데이트](profile-data.md)
    - [Commerce 데이터를 Adobe Experience Platform에 연결](connect-data.md)
-   - [Adobe Experience Platform Mobile SDK와 Commerce 통합](mobile-sdk-epc.md)
+   - [Adobe Experience Platform Mobile SDK과 Commerce 통합](mobile-sdk-epc.md)
 - {#event-forwarding} 데이터 캡처
    - [동작 이벤트](events.md)
    - [백오피스 이벤트](events-backoffice.md)

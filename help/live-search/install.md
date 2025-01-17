@@ -3,7 +3,7 @@ title: ' [!DNL Live Search] 시작'
 description: Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항 및 설치 단계에 대해 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ Adobe Commerce API 키와 연결된 개인 키가 있어야 Adobe Commerce 설�
 
 [Commerce 서비스 커넥터](../landing/saas.md) 문서에서 API 키를 구성하는 방법을 알아봅니다.
 
-## 3. 카탈로그 데이터 동기화 {#synchronize-catalog-data}
+## 3. 카탈로그 데이터 동기화
 
 [!DNL Live Search]이(가) 카탈로그 데이터를 Adobe의 SaaS 인프라로 이동합니다. 데이터가 색인화되고 검색 결과가 이 색인에서 상점 앞으로 직접 전달됩니다. 크기와 복잡성에 따라 색인화는 30분에서 2시간 정도 소요될 수 있습니다.
 
@@ -214,7 +214,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 초기 동기화 후 점포 검색에서 증분 제품 업데이트를 사용할 수 있는 데 최대 15분이 걸릴 수 있습니다. 자세한 내용은 색인화 설명서에서 [제품 업데이트 스트리밍](indexing.md)을 참조하세요.
 
-## 4. 데이터를 내보냈는지 확인합니다 {#verify-export}
+## 4. 데이터를 내보냈는지 확인합니다
 
 카탈로그 데이터를 Adobe Commerce에서 내보내고 [!DNL Live Search]과(와) 동기화했는지 확인하려면 다음 몇 가지 옵션을 사용하십시오.
 
@@ -265,7 +265,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 [!DNL Live Search]에서 반환된 제품은 [category](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)에 할당되어야 합니다. 예를 들어 Luma에서 제품은 &quot;남성&quot;, &quot;여성&quot; 및 &quot;톱니바퀴&quot;와 같은 범주에 배치됩니다. 또한 하위 카테고리는 &quot;Tops&quot;, &quot;Bottom&quot; 및 &quot;Watches&quot;에 대해 설정됩니다. 이러한 범주 할당은 필터링 시 세부기간을 개선합니다.
 
-## 6. 연결 테스트 {#test-connection}
+## 6. 연결 테스트
 
 이제 SaaS에서 카탈로그 데이터를 사용하여 다음 시나리오에서 제품 데이터가 반환되는지 테스트하십시오.
 
@@ -299,7 +299,7 @@ bin/magento saas:resync --feed categoryPermissions
 - [PLP 위젯 리포지토리](https://github.com/adobe/storefront-product-listing-page)
 - [검색 창 리포지토리](https://github.com/adobe/storefront-search-as-you-type)
 
-## [!DNL Live Search] 업데이트 중 {#update}
+## [!DNL Live Search] 업데이트 중
 
 Live Search를 업데이트하기 전에 명령줄에서 다음을 실행하여 설치된 Live Search 버전을 확인합니다.
 
@@ -345,11 +345,11 @@ composer update magento/live-search --with-dependencies
    composer update magento/live-search --with-dependencies
    ```
 
-## [!DNL Live Search]을(를) 제거하는 중 {#uninstall}
+## [!DNL Live Search]을(를) 제거하는 중
 
 [!DNL Live Search]을(를) 제거하려면 [모듈 제거](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)를 참조하세요.
 
-## 패키지 [!DNL Live Search]개 {#packages}
+## 패키지 [!DNL Live Search]개
 
 [!DNL Live Search] 확장은 다음 패키지로 구성됩니다.
 
@@ -359,7 +359,7 @@ composer update magento/live-search --with-dependencies
 | `module-live-search-adapter` | Storefront에서 [!DNL Live Search] 서비스로 검색 요청을 라우팅하고 Storefront에서 결과를 렌더링합니다. <br />- 범주 찾아보기 - 상점 [위쪽 탐색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top)에서 검색 서비스로 요청을 라우팅합니다.<br />- 전역 검색 - 상점 오른쪽 상단의 [빠른 검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 상자에서 [!DNL Live Search] 서비스로 요청을 라우팅합니다. |
 | `module-live-search-storefront-popover` | &quot;입력할 때 검색&quot; 팝오버는 표준 빠른 검색을 대체하며 상위 검색 결과의 데이터 및 썸네일을 반환합니다. |
 
-## [!DNL Live Search]개의 종속성 {#dependencies}
+## [!DNL Live Search]개의 종속성
 
 [!DNL Live Search] 확장을 설치하기 위한 [!DNL Composer] 메타패키지에 다음 모듈 종속성이 포함되어 있습니다.
 

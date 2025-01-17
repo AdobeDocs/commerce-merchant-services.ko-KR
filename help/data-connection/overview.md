@@ -3,9 +3,9 @@ title: 안내서 개요
 description: ' [!DNL Data Connection] 확장을 사용하여 Adobe Commerce 데이터를 Adobe Experience Platform과 통합하는 방법을 알아봅니다.'
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >Experience Platform 커넥터의 이름이 [!DNL Data Connection](으)로 바뀌었습니다.
 
-[!DNL Data Connection] 확장은 Adobe Commerce 웹 인스턴스를 Adobe Experience Platform 및 Edge Network에 연결합니다. 모바일 앱 개발자의 경우 Adobe Experience Platform Mobile SDK와 Commerce을 함께 사용하여 Commerce 데이터를 캡처하고 Experience Platform으로 보냅니다. [자세히 알아보기](./mobile-sdk-epc.md).
+[!DNL Data Connection] 확장은 Adobe Commerce 웹 인스턴스를 Adobe Experience Platform 및 Edge Network에 연결합니다. 모바일 앱 개발자의 경우 Adobe Experience Platform Mobile SDK과 Commerce을 함께 사용하여 Commerce 데이터를 캡처하고 Experience Platform으로 보냅니다. [자세히 알아보기](./mobile-sdk-epc.md).
 
 Commerce 스토어에는 풍부한 데이터가 있습니다. 쇼핑객이 사이트에서 제품을 검색하고, 보고, 최종적으로 구매하는 방법에 대한 정보는 보다 개인화된 쇼핑 경험을 만들 수 있는 기회를 보여줄 수 있습니다. 해당 데이터는 장바구니 가격 규칙 및 동적 블록과 같은 기본 Commerce 기능을 알릴 수 있지만 데이터는 Commerce 인스턴스에 격리된 상태로 유지됩니다.
 
@@ -26,7 +26,7 @@ Adobe Experience Platform은 Commerce 스토어의 데이터로 하이드레이�
 
 ![데이터가 Experience Platform 에지로 이동하는 방법](assets/commerce-edge.png)
 
-위의 이미지에서 동작, 백오피스 및 고객 프로필 데이터는 SDK, API 및 소스 커넥터를 사용하여 Experience Platform Edge로 전송됩니다. 확장이 데이터 공유 복잡성을 처리하므로 이러한 부분이 어떻게 작동하는지 완전히 이해할 필요는 없습니다. 이벤트 데이터가 에지에 있으면 해당 데이터를 다른 Experience Platform 애플리케이션으로 가져올 수 있습니다. For example:
+위의 이미지에서 행동, 백오피스 및 고객 프로필 데이터는 SDK, API 및 소스 커넥터를 사용하여 Experience Platform 에지로 전송됩니다. 확장이 데이터 공유 복잡성을 처리하므로 이러한 부분이 어떻게 작동하는지 완전히 이해할 필요는 없습니다. 이벤트 데이터가 에지에 있으면 해당 데이터를 다른 Experience Platform 애플리케이션으로 가져올 수 있습니다. For example:
 
 | 애플리케이션 | 목적 | 사용 사례 |
 |---|---|---|
@@ -49,23 +49,23 @@ Commerce에서 Experience Platform으로, Experience Platform에서 Commerce으�
 
 이 두 시스템 간에 데이터를 공유하려면 몇 가지 개념을 이해해야 합니다.
 
-* **데이터** - Experience Platform과 공유되는 데이터는 상점의 브라우저 이벤트, 서버의 백 오피스 이벤트 및 프로필 레코드 데이터에서 수집된 데이터입니다. Storefront 이벤트는 사이트의 쇼핑객 상호 작용에서 캡처되며 [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout) 등의 이벤트를 포함합니다. storefront 이벤트의 전체 목록은 [storefront 이벤트](events.md#storefront-events)를 참조하십시오. 서버측 또는 백오피스 이벤트에는 [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) 등의 [주문 상태](events-backoffice.md#order-status) 정보가 포함됩니다. 백 오피스 이벤트의 전체 목록은 [백 오피스 이벤트](events-backoffice.md)를 참조하십시오. 프로필 레코드 데이터에는 새 프로필이 생성, 업데이트 또는 삭제될 때의 정보가 포함됩니다. 자세한 내용은 [프로필 레코드 데이터](events-profilerecord.md)를 참조하세요.
+- **데이터** - Experience Platform과 공유되는 데이터는 상점의 브라우저 이벤트, 서버의 백 오피스 이벤트 및 프로필 레코드 데이터에서 수집된 데이터입니다. Storefront 이벤트는 사이트의 쇼핑객 상호 작용에서 캡처되며 [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout) 등의 이벤트를 포함합니다. storefront 이벤트의 전체 목록은 [storefront 이벤트](events.md#storefront-events)를 참조하십시오. 서버측 또는 백오피스 이벤트에는 [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) 등의 [주문 상태](events-backoffice.md#order-status) 정보가 포함됩니다. 백 오피스 이벤트의 전체 목록은 [백 오피스 이벤트](events-backoffice.md)를 참조하십시오. 프로필 레코드 데이터에는 새 프로필이 생성, 업데이트 또는 삭제될 때의 정보가 포함됩니다. 자세한 내용은 [프로필 레코드 데이터](events-profilerecord.md)를 참조하세요.
 
-* **Experience Platform 및 Edge Network** - 대부분의 Adobe DX 제품에 대한 데이터 웨어하우스 그런 다음 Experience Platform으로 전송된 데이터는 Experience Platform Edge Network을 통해 Adobe DX 제품으로 전파됩니다. 예를 들어 Journey Optimizer을 시작하고, Edge에서 특정 Commerce 이벤트 데이터를 검색하고, Journey Optimizer에서 포기한 장바구니 이메일을 작성할 수 있습니다. 그러면 Journey Optimizer 스토어에 구매하지 않은 카트가 있는 경우 Commerce에서 해당 이메일을 보낼 수 있습니다. [Experience Platform 및 Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)에 대해 자세히 알아보세요.
+- **Experience Platform 및 Edge Network** - 대부분의 Adobe DX 제품에 대한 데이터 웨어하우스 Experience Platform으로 전송된 데이터는 Experience Platform Edge Network을 통해 Adobe DX 제품으로 전파된다. 예를 들어 Journey Optimizer을 시작하고, Edge에서 특정 Commerce 이벤트 데이터를 검색하고, Journey Optimizer에서 포기한 장바구니 이메일을 작성할 수 있습니다. 그러면 Journey Optimizer 스토어에 구매하지 않은 카트가 있는 경우 Commerce에서 해당 이메일을 보낼 수 있습니다. [Experience Platform 및 Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)에 대해 자세히 알아보세요.
 
-* **스키마** - 전송 중인 데이터 구조를 설명하는 스키마입니다. Experience Platform이 Commerce 데이터를 수집하려면 먼저 데이터의 구조를 설명하는 스키마를 구성하고 각 필드 내에 포함될 수 있는 데이터 유형에 제약 조건을 제공해야 합니다. 스키마는 기본 클래스와 0개 이상의 스키마 필드 그룹으로 구성됩니다. 스키마는 모든 Adobe DX 제품이 읽을 수 있는 XDM 구조를 사용합니다. 따라서 Experience Platform에 데이터를 보낼 때 모든 DX 제품에서 데이터를 이해할 수 있습니다. [스키마](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)에 대해 자세히 알아보세요.
+- **스키마** - 스키마는 전송 중인 데이터 구조를 설명합니다. Experience Platform이 Commerce 데이터를 수집하려면 먼저 데이터의 구조를 설명하는 스키마를 구성하고 각 필드 내에 포함될 수 있는 데이터 유형에 대한 제약 조건을 제공해야 합니다. 스키마는 기본 클래스와 0개 이상의 스키마 필드 그룹으로 구성됩니다. 스키마는 모든 Adobe DX 제품이 읽을 수 있는 XDM 구조를 사용합니다. 스키마는 Experience Platform으로 전송된 데이터를 모든 DX 제품에서 이해할 수 있도록 합니다. [스키마](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)에 대해 자세히 알아보세요.
 
-* **데이터 집합** - 데이터 수집을 위한 저장소 및 관리 구성으로서, 일반적으로 스키마(열)와 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다. Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트 내에 포함됩니다. [데이터 세트](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)에 대해 자세히 알아보세요.
+- **데이터 집합** - 데이터 수집을 위한 저장소 및 관리 구성으로서, 일반적으로 스키마(열)와 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다. Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트 내에 포함됩니다. [데이터 세트](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)에 대해 자세히 알아보세요.
 
-* **데이터스트림** - Adobe Experience Platform에서 다른 Adobe DX 제품으로 데이터를 이동할 수 있는 ID입니다. 이 ID는 특정 Adobe Commerce 인스턴스 내의 특정 웹 사이트에 연결되어야 합니다. 이 데이터 스트림을 만들 때 위에서 만든 XDM 스키마를 지정합니다. [데이터스트림](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)에 대해 자세히 알아보세요.
+- **데이터스트림** - Adobe Experience Platform에서 다른 Adobe DX 제품으로 데이터를 이동할 수 있는 ID입니다. 이 ID는 특정 Adobe Commerce 인스턴스 내의 특정 웹 사이트에 연결되어야 합니다. 이 데이터 스트림을 만들 때 위에서 만든 XDM 스키마를 지정합니다. [데이터스트림](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)에 대해 자세히 알아보세요.
 
 ## 지원되는 아키텍처
 
 [!DNL Data Connection] 확장은 다음 아키텍처에서 사용할 수 있습니다.
 
-* PHP/Luma
-* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ Commerce에서 Experience Platform으로, Experience Platform에서 Commerce으�
 
 [!DNL Data Connection] 확장을 사용하려면 다음 항목이 있어야 합니다.
 
-* Adobe Commerce 2.4.4 이상
-* Adobe ID 및 조직 ID
-* [ACDL(Adobe 클라이언트 데이터 레이어)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), storefront 이벤트 데이터를 수집하는 데 필요
-* 다른 Adobe DX 제품에 대한 자격.
+- Adobe Commerce 2.4.4 이상
+- Adobe ID 및 조직 ID
+- [ACDL(Adobe 클라이언트 데이터 레이어)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), storefront 이벤트 데이터를 수집하는 데 필요
+- 다른 Adobe DX 제품에 대한 자격.
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +98,11 @@ Commerce에서 Experience Platform으로, Experience Platform에서 Commerce으�
 
 >[!NOTE]
 >
->모바일 개발자의 경우 Adobe Experience Platform Mobile SDK를 Commerce과 [통합](./mobile-sdk-epc.md)하는 방법에 대해 알아보십시오.
+>모바일 개발자의 경우 Adobe Experience Platform Mobile SDK을 Commerce과 [통합](./mobile-sdk-epc.md)하는 방법에 대해 알아보십시오.
+
+## HIPAA 준비
+
+[!DNL Data Connection] 확장을 사용하면 [!DNL Commerce] 백 오피스 데이터를 Experience Platform과 공유하고 HIPAA 준수를 유지할 수 있습니다. [자세히 알아보기](hipaa-readiness.md).
 
 ## 대상자
 
@@ -108,5 +112,5 @@ Commerce에서 Experience Platform으로, Experience Platform에서 Commerce으�
 
 이 안내서에서 다루지 않는 정보가 필요하거나 질문이 있는 경우 다음 리소스를 사용하십시오.
 
-* [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—추가 지원을 받으려면 티켓을 제출하세요.
+- [도움말 센터](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [지원 티켓](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—추가 지원을 받으려면 티켓을 제출하세요.
