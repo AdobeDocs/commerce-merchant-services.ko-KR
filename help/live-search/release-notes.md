@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 릴리스 정보'
 description: Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _2023년 11월 13일_
 ### 업데이트
 
 ![수정](../assets/fix.svg) 이제 새 설치에 대해 [!DNL Live Search] PLP 위젯이 기본적으로 활성화됩니다.
+![수정](../assets/fix.svg) 검색 어댑터가 더 이상 사용되지 않습니다. 앞으로는 보안 문제를 해결하기 위해 검색 어댑터만 업데이트됩니다.
 ![수정](../assets/fix.svg) 위젯 클래스를 더 잘 격리하도록 CSS 스타일을 다시 구성했습니다.
 ![수정](../assets/fix.svg) 사소한 버그 수정
 

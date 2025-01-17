@@ -3,9 +3,9 @@ title: ' [!DNL Live Search]이란?'
 description: Adobe Commerce의 [!DNL Live Search]은(는) 빠르고 관련성이 있으며 직관적인 검색 환경을 제공합니다.
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Live Search 사용 및 구성에 대한 자세한 비디오는 [전체 데모 �
 ## 라이브 검색 구성 요소
 
 - [!DNL Live Search] [팝오버 위젯](storefront-popover.md)은(는) 검색 결과가 포함된 검색 필드 아래에서 열리는 상자입니다.
-- [제품 목록 페이지 위젯](plp-styling.md)(PLP)은 패싯 및 동의어 지원과 함께 검색 가능한 제품 목록 페이지를 제공합니다. 위젯이 Live Search 4.0.0+에 설치되고 활성화됩니다.
-- (**사용하지 않음**) 검색 어댑터는 PLP 위젯의 전조이며 라이브 검색 &lt; 4.0.0과 함께 설치되었습니다. 4.0.0 이전 버전의 라이브 검색 을 사용하는 경우 Commerce에서 업그레이드하여 PLP 위젯 기능과 향후 개선 사항의 이점을 얻을 수 있습니다.
+- [제품 목록 페이지 위젯](plp-styling.md)(PLP)은 패싯 및 동의어 지원과 함께 검색 가능한 제품 목록 페이지를 제공합니다. 위젯은 라이브 검색 4.0.0+에 설치되고 활성화되며 검색 어댑터를 대체합니다.
+- (**사용하지 않음**) 검색 어댑터는 PLP 위젯의 전조이며 라이브 검색 &lt; 4.0.0과 함께 설치되었습니다. 4.0.0 이전 버전의 라이브 검색 을 사용하는 경우 Commerce에서 업그레이드하여 PLP 위젯 기능과 향후 개선 사항의 이점을 얻을 수 있습니다. 앞으로는 보안 문제를 해결하기 위해 검색 어댑터만 업데이트됩니다.
 
 ## [!DNL Live Search] 작업 영역
 
