@@ -3,9 +3,9 @@ title: 경계 및 제한
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 - 설명 및 사용자 지정 속성을 포함하여 속성당 1MB의 하드 제한이 있습니다.
 - 검색 어댑터는 사용자 지정 소스 모델로 만들어져 패싯으로 사용되는 제품 속성을 지원하지 않습니다. 이 기능을 지원하려면 [제품 목록 페이지 위젯](plp-styling.md)을 사용해야 합니다.
 - 사용자 지정 제품 유형은 지원되지 않습니다.
+- `"is_user_defined": false`을(를) 사용하여 프로그래밍 방식으로 만든 사용자 지정 특성은 지원되지 않습니다.
 - [여기](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)에 설명된 대로 일부 제한 사항이 있는 &quot;다음으로 시작&quot; 또는 &quot;포함&quot; 조건을 사용하여 결과를 필터링할 수 있습니다.
 
 ## 색인화
