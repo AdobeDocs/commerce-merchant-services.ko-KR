@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ ht-degree: 0%
 
 여러 환경에서 동일한 데이터 공간을 동시에 사용하지 않는 한 비프로덕션 환경에서 테스트 데이터 공간을 사용할 수 있습니다. 다른 환경에서 테스트 데이터 공간을 사용하려면 해당 환경에서 데이터 공간을 선택하고 구성하기 전에 데이터 정리를 수행하십시오.
 
-여러 스테이징 환경이 있는 Adobe Commerce Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다. 그러나 스테이징 환경이 한 개만 있고 추가 테스트 데이터 공간이 필요한 경우 다음 옵션을 사용할 수 있습니다.
-- 추가 스테이징 환경을 요청하려면 고객 성공 팀 또는 귀사의 지정된 고객 성공 관리자에게 문의하십시오. 추가 비용이 발생합니다.
-- 추가 테스트 데이터 공간에 대한 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)하고 추가 데이터 공간에 대한 비즈니스 타당성을 나타냅니다. 이 요청은 승인 대상이 됩니다.
+여러 스테이징 환경이 있는 Adobe Commerce Cloud Pro 프로젝트의 경우 [지원 요청을 제출](https://experienceleague.adobe.com/home?support-tab=home#support)하여 각 스테이징 환경에 대한 추가 테스트 데이터 공간을 요청할 수 있습니다. 그러나 스테이징 환경이 한 개만 있고 추가 테스트 데이터 공간이 필요한 경우 다음 옵션을 사용할 수 있습니다.
+- 추가 스테이징 환경을 요청하려면 고객 성공 팀 또는 귀사의 지정된 고객 성공 관리자에게 문의하십시오.
+- 추가 테스트 데이터 공간을 요청하고 추가 데이터 공간에 대한 비즈니스 타당성을 나타내려면 [지원 요청을 제출](https://experienceleague.adobe.com/home?support-tab=home#support)하십시오. 이 요청은 승인 대상이 됩니다.
+
+Adobe 결제 서비스를 사용하는 Magento Open Source 고객도 추가 데이터 공간을 요청할 수 있습니다. 테스트 데이터 공간을 요청하기 위해 [지원 요청](https://experienceleague.adobe.com/home?support-tab=home#support)을 제출하기 전에 결제 팀에 연락하여 추가 데이터 공간의 사전 승인을 받으십시오.
 
 ### SaaS 프로젝트 선택 또는 만들기 {#createsaasenv}
 
