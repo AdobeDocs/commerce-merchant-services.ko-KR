@@ -3,9 +3,9 @@ title: ' [!DNL Product Recommendations] 소개'
 description: '[!DNL Product Recommendations]은(는) 전환율을 높이고 매출을 증대하며 쇼핑객 참여를 촉진하는 데 사용할 수 있는 강력한 마케팅 도구입니다.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ PWA Studio을 사용하여 상점이 구현되면 [PWA 설명서](https://develo
 [!DNL Product Recommendations]에 대해 알아보려면 이 비디오 보기:
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## 카탈로그 데이터 보존 정책
+
+테스트 환경에서 카탈로그 데이터에 대한 쿼리를 90일 연속 제출하지 않으면 카탈로그 데이터가 최대 절전 모드로 설정되고 쿼리에 대해 데이터가 반환되지 않습니다. 프로덕션 환경의 카탈로그 데이터는 이 정책의 영향을 받지 않습니다.
+
+테스트 환경에서 카탈로그 데이터를 다시 활성화하려면 [지원 요청을 제출](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)하고 제목은 &quot;[!DNL Product Recommendations] 다시 활성화&quot;로 지정하고 환경 ID를 포함하십시오. 테스트 환경의 카탈로그 데이터는 2시간 이내에 복원되어야 합니다.

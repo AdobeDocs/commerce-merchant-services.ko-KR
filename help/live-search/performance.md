@@ -2,9 +2,9 @@
 title: 성능
 description: ' [!DNL Live Search] 성능 작업 영역에서는 쇼핑객이 사용하는 검색어에 대한 통찰력을 제공합니다.'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 
 데이터 동기화에 대한 자세한 내용은 [데이터 관리 대시보드](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)를 참조하십시오.
 
+>[!NOTE]
+>
+>성능 작업 영역은 12시간마다 업데이트됩니다.
+
 ## 보고서 보기
 
 1. **날짜 범위**&#x200B;를 입력하려면 일정(![일정](assets/btn-calendar.png))을 클릭하고 다음 중 하나를 실행하십시오.
@@ -30,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->성능 작업 영역은 12시간마다 업데이트됩니다.
+>날짜 범위는 1년을 초과할 수 없습니다.
 
 ## 필드 설명
 

@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] 릴리스 정보'
 description: Adobe Commerce의  [!DNL Product Recommendations] 에 대한 최신 릴리스 정보입니다.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 0%
 ## 호스팅된 서비스 업데이트
 
 이 참고 사항에서는 버전이 지정된 릴리스 또는 호스팅된 서비스에 대한 개선 사항 외부에서 게시되거나 발견된 업데이트 또는 알려진 문제에 대해 설명합니다.
+
+_2025년 1월 31일_
+
+![새로 만들기](../assets/new.svg) 테스트 환경에서 쿼리되지 않은 카탈로그 데이터에 대한 새 데이터 보존 정책이 있습니다. [자세히 알아보기](overview.md#catalog-data-retention-policy).
 
 _2024년 6월 28일_
 

@@ -3,9 +3,9 @@ title: 경계 및 제한
 description: 비즈니스 요구 사항을 충족하도록  [!DNL Live Search] 의 경계 및 제한에 대해 알아봅니다.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
 - 사용자 지정 제품 유형은 지원되지 않습니다.
 - `"is_user_defined": false`을(를) 사용하여 프로그래밍 방식으로 만든 사용자 지정 특성은 지원되지 않습니다.
 - [여기](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)에 설명된 대로 일부 제한 사항이 있는 &quot;다음으로 시작&quot; 또는 &quot;포함&quot; 조건을 사용하여 결과를 필터링할 수 있습니다.
+- 지난 해 내에서만 성과 지표를 추적할 수 있습니다.
 
 ## 색인화
 
