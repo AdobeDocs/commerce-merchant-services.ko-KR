@@ -4,9 +4,9 @@ description: 프로덕션 및 샌드박스 API 키를 사용하여 Adobe Commerc
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ ht-degree: 0%
 
 1. _환경_ 메뉴에서 **프로덕션** 또는 **샌드박스**&#x200B;를 선택합니다.
 
+   >[!NOTE]
+   >
+   >*프로덕션* 및 *샌드박스*&#x200B;는 Adobe SaaS 백엔드 시스템에 데이터가 저장되는 데이터 공간 환경을 나타냅니다. 키를 사용할 상거래 환경은 참조되지 않습니다.
+
 1. _API 키_ 섹션에 이름을 입력하고 **새로 추가**&#x200B;를 클릭하여 대화 상자를 열어 새 키를 다운로드합니다.
 
    ![개인 키 다운로드](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ ht-degree: 0%
 
 1. 각 환경(프로덕션 및 샌드박스)에 대해 위의 단계를 반복합니다.
 
-   이제 **API 키** 섹션에 API(공개) 키가 표시됩니다. 라이센스와 연결된 환경/설치에서 [SaaS 프로젝트를 선택하거나 생성](#createsaasenv)할 때 4개의 키(프로덕션 및 샌드박스 키, 공용+개인)가 모두 필요합니다.
+   이제 **API 키** 섹션에 API(공개) 키가 표시됩니다. 라이선스와 연결된 환경 또는 설치에서 [SaaS 프로젝트를 선택 또는 생성](#createsaasenv)할 때 4개의 키(프로덕션 및 샌드박스 키, 공용+개인)가 모두 필요합니다.
 
 ## SaaS 구성 {#saasenv}
 
