@@ -5,9 +5,9 @@ feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d7aeee8f-9043-4517-9fde-ffe24aa77b19
-source-git-commit: 8cf67ed76e191b03ddfbfb68ed4ba07e456a3c35
+source-git-commit: 7bc5a4185317afbe3b767945455070734c452450
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 0%
 
 ## 현재 메이저 버전
 
+## 1.0.9 릴리스
+
+![수정](../assets/fix.svg) PHP 8.4에 대한 호환성을 추가했습니다. <!--MDEE-941-->
+
 ## 1.0.8 릴리스
 
-![수정](../assets/fix.svg) 숫자 SKU를 사용하는 구성 가능한 제품 변형을 위시리스트에 추가할 때 예외 로그에 오류가 발생하는 문제를 해결했습니다. &lt;!-MDEE-876—>
+![수정](../assets/fix.svg) 숫자 SKU를 사용하는 구성 가능한 제품 변형을 위시리스트에 추가할 때 예외 로그에 오류가 발생하는 문제를 해결했습니다. <!--MDEE-876-->
