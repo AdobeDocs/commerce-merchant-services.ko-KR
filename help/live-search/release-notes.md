@@ -3,9 +3,9 @@ title: '[!DNL Live Search] 릴리스 정보'
 description: Adobe Commerce의  [!DNL Live Search] 에 대한 최신 릴리스 정보입니다.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
+source-git-commit: f5bd9e76239dfa73babe4067efae20b4fbcd82c1
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2129'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,15 @@ _2023년 10월 27일_
 
 ![새로 만들기](../assets/new.svg) 이제 [!DNL Live Search] PLP 위젯에서 색상 견본을 지원합니다.
 
-## [!DNL Live Search] 4.2.2 {#422}
+## [!DNL Live Search] 4.2.3
+
+_2025년 2월 13일_
+
+[!BADGE 지원됨]{type=Informative tooltip="지원됨"}
+
+![수정](../assets/fix.svg) 주문 세부 사항 페이지에 주문 번호, 날짜 및 **[!UICONTROL Reorder]** 단추가 없는 문제를 해결했습니다.
+
+## [!DNL Live Search] 4.2.2
 
 _2025년 1월 6일_
 
@@ -78,7 +86,7 @@ _2025년 1월 6일_
 
 ![수정](../assets/fix.svg) Adobe Commerce 버전 2.4.5 및 이전 버전에서 `categoryList` GraphqL 쿼리에 오류가 발생하는 문제를 해결했습니다.
 
-## [!DNL Live Search] 4.2.1 {#421}
+## [!DNL Live Search] 4.2.1
 
 _2024년 7월 31일_
 
@@ -87,7 +95,7 @@ _2024년 7월 31일_
 ![수정](../assets/fix.svg) 특정 스크립트가 체크아웃 페이지에서 로드되지 않는 문제를 해결했습니다.
 ![수정](../assets/fix.svg) `composer.json` 파일에서 종속성 버전을 수정했습니다.
 
-## [!DNL Live Search] 4.2.0 {#420}
+## [!DNL Live Search] 4.2.0
 
 _2024년 5월 31일_
 
@@ -95,7 +103,7 @@ _2024년 5월 31일_
 
 ![새로 만들기](../assets/new.svg) PLP 위젯 버전 2.0.0을 사용하도록 라이브 검색 확장 기능이 업데이트되었습니다.
 
-## [!DNL Live Search] 4.1.2 {#412}
+## [!DNL Live Search] 4.1.2
 
 _2024년 5월 16일_
 
@@ -105,7 +113,7 @@ _2024년 5월 16일_
 
 ![수정](../assets/fix.svg) 범주의 `categoryPath` 및 `categoryList`을(를) 기반으로 올바르게 필터링하도록 [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL 쿼리를 수정했습니다.
 
-## [!DNL Live Search] 4.1.1 {#411}
+## [!DNL Live Search] 4.1.1
 
 _2024년 3월 19일_
 
@@ -116,7 +124,7 @@ _2024년 3월 19일_
 ![새로 만들기](../assets/new.svg) 폴란드에 대한 언어 지원을 추가했습니다.
 ![새로 만들기](../assets/new.svg) [!DNL Live Search]은(는) 이제 Adobe Commerce 2.4.4를 실행하는 설치에서 PHP 8.3을 지원합니다.
 
-## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0
 
 _2024년 2월 22일_
 
@@ -132,7 +140,7 @@ _2024년 2월 22일_
 ![수정](../assets/fix.svg) 로케일 설정에 관계없이 검색 팝오버에 항상 가격 값 앞에 통화 기호가 표시되는 문제를 해결했습니다.
 ![수정](../assets/fix.svg) 설치 시 호환성 문제를 해결하기 위해 비활성화된 핵심 플러그인에 대한 불필요한 형식 정의를 제거했습니다.
 
-## [!DNL Live Search] 4.0.0 {#400}
+## [!DNL Live Search] 4.0.0
 
 _2023년 11월 13일_
 
@@ -165,7 +173,7 @@ _2023년 11월 13일_
 
 +++3.1.1 및 이전
 
-## [!DNL Live Search] 3.1.1 {#311}
+## [!DNL Live Search] 3.1.1
 
 _2023년 9월 15일_
 
@@ -180,7 +188,7 @@ _2023년 9월 15일_
 ![새](../assets/new.svg) 사용자는 이제 규칙을 추가할 때 범주 이름으로 검색할 수 있습니다.
 ![새로 만들기](../assets/new.svg) 이제 범주 트리 보기를 사용하여 규칙이 적용된 범주를 볼 수 있습니다.
 ![새로 만들기](../assets/new.svg) 범주 미리 보기에는 선택한 범주만 표시됩니다.
-![새](../assets/new.svg) AEM CIF [팝오버 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/319) 및 [PLP 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/320) 구성 요소를 통해 AEM 사이트에서 [!DNL Live Search]을(를) 활용할 수 있습니다.
+![새로 만들기](../assets/new.svg) AEM CIF [팝오버 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/319) 및 [PLP 위젯](https://github.com/adobe/aem-cif-guides-venia/pull/320) 구성 요소를 통해 AEM 사이트에서 [!DNL Live Search]을(를) 활용할 수 있습니다.
 
 ### 업데이트
 
@@ -194,7 +202,7 @@ _2023년 9월 15일_
 ![수정](../assets/fix.svg) &#39;순위 유형&#39;의 이름이 &#39;지능형 순위&#39;로 변경되었습니다.
 ![수정](../assets/fix.svg)작은 버그 수정
 
-## [!DNL Live Search] 3.1.0 {#310}
+## [!DNL Live Search] 3.1.0
 
 _2023년 9월 1일_
 
@@ -204,7 +212,7 @@ _2023년 9월 1일_
 
 ![수정](../assets/fix.svg) 제품 목록 위젯이 [카탈로그 서비스 API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)를 사용하도록 업데이트되었습니다.
 
-## [!DNL Live Search] 3.0.2 {#302}
+## [!DNL Live Search] 3.0.2
 
 _2023년 8월 7일_
 
@@ -233,7 +241,7 @@ _2023년 8월 7일_
 
 라이브 검색 제품 목록 페이지 위젯을 사용하면 Google Tag Manager가 실패합니다. Google 태그 관리자가 필요한 경우 기본 검색 어댑터를 사용합니다.
 
-## [!DNL Live Search] 3.0.1 {#301}
+## [!DNL Live Search] 3.0.1
 
 _2023년 3월 14일_
 
@@ -278,7 +286,7 @@ _2023년 3월 14일_
 
 프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
-## [!DNL Live Search] 2.0.5 {#205}
+## [!DNL Live Search] 2.0.5
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -288,7 +296,7 @@ _2023년 3월 14일_
 
 프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
-### [!DNL Live Search] 2.0.4 {#204}
+### [!DNL Live Search] 2.0.4
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -302,7 +310,7 @@ _2023년 3월 14일_
 
 사용자는 프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
-### [!DNL Live Search] 2.0.3 {#203}
+### [!DNL Live Search] 2.0.3
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -312,7 +320,7 @@ _2023년 3월 14일_
 
 사용자는 프로덕션으로 푸시하기 전에 업그레이드 및 테스트하는 것이 좋습니다. 테스트 환경 결과를 확인한 후 사용량이 적은 시간 동안 프로덕션 환경을 업그레이드하는 것이 좋습니다.
 
-### [!DNL Live Search] 2.0 {#20}
+### [!DNL Live Search] 2.0
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -324,10 +332,10 @@ _2023년 3월 14일_
 [!DNL Live Search]에 대해 ![새](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)이(가) 지원됩니다.
 ![새로 만들기](../assets/new.svg) [!DNL Live Search] 설치 프로세스가 고급 프로세스 변경 내용으로 업데이트됩니다.
 ![수정](../assets/fix.svg) [고급 검색](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) 링크가 상점 바닥글에서 제거되었습니다.
-![버그](../assets/bug.svg) 다음 제품 특성은 PWA 베타 릴리스와 관련하여 사용할 때 [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/)에서 지원되지 않습니다. `description`, `name`, `short_description`
-![버그](../assets/bug.svg) [!DNL Live Search]에 대한 PWA 베타 릴리스는 [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)를 지원하지 않습니다.
+![버그](../assets/bug.svg) 다음 제품 특성은 PWA의 베타 릴리스와 관련하여 사용할 때 [Commerce GraphQL API](https://developer.adobe.com/commerce/services/graphql/live-search/)에서 지원되지 않습니다. `description`, `name`, `short_description`
+![버그](../assets/bug.svg) [!DNL Live Search]용 PWA 베타 릴리스는 [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)를 지원하지 않습니다.
 
-### [!DNL Live Search] 1.3.1 {#131}
+### [!DNL Live Search] 1.3.1
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -335,7 +343,7 @@ _2023년 3월 14일_
 ![수정](../assets/fix.svg) 사용 가능한 [통화 기호](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional)(`data-currency-symbol`)가 없을 때 오류가 발생하는 문제를 해결했습니다.
 사용 가능한 경우 ![수정](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)에 [특별 가격](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)(최소 최종 가격)이 표시됩니다.
 
-### [!DNL Live Search] 1.3.0 {#130}
+### [!DNL Live Search] 1.3.0
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -346,7 +354,7 @@ _2023년 3월 14일_
 검색 어댑터용 ![버그](../assets/bug.svg) 패치가 중복 제품을 처리합니다.
 ![버그](../assets/bug.svg) [!DNL Live Search]은(는) 다중(가상) [재고](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)가 있는 [단일 소스](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)(실제) 인벤토리 위치를 지원합니다. 지금은 여러 인벤토리 소스가 지원되지 않습니다.
 
-### [!DNL Live Search] 1.2.0 {#120}
+### [!DNL Live Search] 1.2.0
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
@@ -359,7 +367,7 @@ _2023년 3월 14일_
 ![수정](../assets/fix.svg) [!DNL Live Search] 검색 조건에 빈 정렬 순서 값이 포함된 경우 더 이상 오류가 발생하지 않습니다
 ![수정](../assets/fix.svg) 특성 코드에 문자열 &quot;to&quot; 또는 &quot;from&quot;이 포함된 경우 범위 필터링이 더 이상 중단되지 않습니다.
 
-### [!DNL Live Search] 1.1.0 {#110}
+### [!DNL Live Search] 1.1.0
 
 [!BADGE 지원됨]{type="정보" tooltip="지원됨"}
 
