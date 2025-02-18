@@ -3,14 +3,14 @@ title: ' [!DNL Live Search] 시작'
 description: Adobe Commerce에서  [!DNL Live Search] 의 시스템 요구 사항 및 설치 단계에 대해 알아봅니다.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search](으)로 성공을 위한 설정
+# [!DNL Live Search]&#x200B;(으)로 성공을 위한 설정
 
 Adobe Commerce [!DNL Live Search]과(와) [[!DNL Catalog Service]](../catalog-service/guide-overview.md)이(가) 함께 작동하여 성능이 뛰어나고 관련성이 있으며 직관적인 검색 솔루션을 제공하므로 고객이 필요한 것을 빠르게 찾을 수 있습니다. 특히 [!DNL Catalog Service]은(는) 사용할 [!DNL Live Search]과(와) 같은 SaaS 서비스를 위한 카탈로그 데이터를 표시합니다.
 
@@ -50,7 +50,7 @@ Adobe Commerce [!DNL Live Search]과(와) [[!DNL Catalog Service]](../catalog-se
 
 ## 1. [!DNL Live Search] 확장 설치
 
-[!DNL Live Search]이(가) [Adobe 마켓플레이스](https://commercemarketplace.adobe.com/magento-live-search.html)부터 [작성기](https://getcomposer.org/)까지 확장으로 설치되었습니다. [!DNL Live Search]을(를) 설치하고 구성한 후 [!DNL Commerce] Adobe이 SaaS 서비스와 검색 및 카탈로그 데이터를 공유하기 시작합니다. 이 시점에서 *관리자* 사용자는 검색 패싯, 동의어 및 머천다이징 규칙을 설정하고, 사용자 지정하고, 관리할 수 있습니다.
+[!DNL Live Search]이(가) [Adobe 마켓플레이스](https://commercemarketplace.adobe.com/magento-live-search.html)부터 [작성기](https://getcomposer.org/)까지 확장으로 설치되었습니다. [!DNL Live Search]을(를) 설치하고 구성한 후 Adobe [!DNL Commerce]에서 SaaS 서비스와 검색 및 카탈로그 데이터를 공유하기 시작합니다. 이 시점에서 *관리자* 사용자는 검색 패싯, 동의어 및 머천다이징 규칙을 설정하고, 사용자 지정하고, 관리할 수 있습니다.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Adobe Commerce [!DNL Live Search]과(와) [[!DNL Catalog Service]](../catalog-se
 
 | 필드 | 설명 |
 |--- |--- |
-| `Autocomplete` | 기본적으로 활성화되고 수정할 수 없습니다. `Autocomplete`을(를) 사용하면 [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering)에서 `contains`을(를) 사용할 수 있습니다. `contains`의 검색 쿼리가 자동 완성 형식 검색 응답을 반환합니다. Adobe은 일반적으로 50자를 초과하는 설명 필드에 대해 이 유형의 검색을 사용할 것을 권장합니다. |
+| `Autocomplete` | 기본적으로 활성화되고 수정할 수 없습니다. `Autocomplete`을(를) 사용하면 [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering)에서 `contains`을(를) 사용할 수 있습니다. `contains`의 검색 쿼리가 자동 완성 형식 검색 응답을 반환합니다. Adobe에서는 일반적으로 50자를 초과하는 설명 필드에 대해 이 유형의 검색을 사용하는 것이 좋습니다. |
 | `Contains` | 자동 완성 검색 대신 &quot;문자열에 포함된 텍스트&quot; 검색을 true로 설정합니다. [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)에서 `contains`을(를) 사용합니다. 자세한 내용은 [제한](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations)을 참조하세요. |
 | `Starts with` | 특정 값으로 시작하는 문자열을 쿼리할 수 있습니다. [검색 필터](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability)에서 `startsWith`을(를) 사용합니다. |
 
@@ -227,7 +227,7 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >`table does not exist` 오류가 발생하면 `catalog_data_exporter_products` 및 `catalog_data_exporter_product_attributes` 테이블에서 항목을 찾습니다. 이 테이블 이름은 [!DNL Live Search] 버전 4.2.1 이전 버전에서 사용됩니다.
 
-- 기본 쿼리와 함께 [GraphQL 플레이그라운드](https://developer.adobe.com/commerce/services/graphql/live-search/)를 사용하여 다음을 확인하십시오.
+- 기본 쿼리와 함께 [GraphQL 플레이그라운드](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql)를 사용하여(자세한 내용은 [GraphQL 참조](https://developer.adobe.com/commerce/services/graphql/live-search/) 참조) 다음을 확인하십시오.
 
    - 반환된 제품 수는 스토어 보기에 예상되는 값과 비슷합니다.
    - Facet이 반환됩니다.
@@ -390,7 +390,7 @@ composer update magento/live-search --with-dependencies
 
 [!DNL Live Search]이(가) 전체 제품 데이터베이스에 액세스할 수 없으므로 [!DNL Live Search] GraphQL 및 Commerce 코어 GraphQL API에 전체 패리티가 없습니다.
 
-Adobe은 SaaS API(특히 카탈로그 서비스 엔드포인트)를 직접 호출하는 것을 권장합니다.
+Adobe에서는 SaaS API(특히 카탈로그 서비스 엔드포인트)를 직접 호출하는 것이 좋습니다.
 
 - Commerce 데이터베이스/Graphql 프로세스를 건너뛰어 성능 향상 및 프로세서 로드 감소
 - [!DNL Catalog Service] 페더레이션을 사용하여 단일 끝점에서 [!DNL Live Search], [!DNL Catalog Service] 및 [!DNL Product Recommendations]을(를) 호출합니다.
@@ -448,7 +448,7 @@ Adobe은 SaaS API(특히 카탈로그 서비스 엔드포인트)를 직접 호�
 | 중국어 | 중국 | zh_CN | zh_Hans_CN |
 | 중국어 | 대만 | zh_TW | zh_Hant_TW |
 
-위젯이 Commerce 관리 언어 설정이 지원되는 언어와 일치함을 감지하면 기본적으로 해당 언어로 설정됩니다. 그렇지 않은 경우 위젯은 기본적으로 영어로 설정됩니다. 관리자의 경우 _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options](으)로 이동하여 언어 설정을 구성합니다.
+위젯이 Commerce 관리 언어 설정이 지원되는 언어와 일치함을 감지하면 기본적으로 해당 언어로 설정됩니다. 그렇지 않은 경우 위젯은 기본적으로 영어로 설정됩니다. 관리자의 경우 _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options]&#x200B;(으)로 이동하여 언어 설정을 구성합니다.
 
 관리자는 [검색 인덱스](settings.md#language)의 언어를 설정하여 더 나은 검색 결과를 얻을 수 있습니다.
 
@@ -511,10 +511,10 @@ composer require magento/module-data-services-graphql
 [!DNL Live Search]은(는) PWA Studio에서 작동하지만 다른 Commerce 구현과 비교하여 약간의 차이가 있을 수 있습니다. 검색 및 제품 목록 페이지와 같은 기본 기능은 Venia에서 작동하지만 Graphql의 일부 순열이 제대로 작동하지 않을 수 있습니다. 성능 차이도 있을 수 있습니다.
 
 - [!DNL Live Search]의 현재 PWA 구현에서는 기본 Commerce 상점 이름을 사용하는 [!DNL Live Search]보다 검색 결과를 반환하는 데 더 많은 처리 시간이 필요합니다.
-- PWA의 [!DNL Live Search]은(는) [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)를 지원하지 않습니다. 따라서 검색 보고 및 지능형 머천다이징은 PWA 상점 전면에서 작동하지 않습니다.
+- PWA의 [!DNL Live Search]은(는) [이벤트 처리](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)를 지원하지 않습니다. 따라서 검색 보고 및 지능형 머천다이징은 PWA 상점 첫 화면에서 작동하지 않습니다.
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)을(를) 사용하는 경우 GraphQL에서는 `description`, `name`, `short_description`에서 직접 필터링을 지원하지 않지만, 더 일반적인 필터를 사용하여 이러한 필드를 반환할 수 있습니다.
 
-PWA Studio에 [!DNL Live Search]을(를) 사용하려면 통합자도 다음을 수행해야 합니다.
+PWA Studio에서 [!DNL Live Search]을(를) 사용하려면 통합자도 다음을 수행해야 합니다.
 
 1. [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils)을(를) 설치합니다.
 1. `storeDetails` 개체에서 `environmentId`을(를) 설정합니다.
