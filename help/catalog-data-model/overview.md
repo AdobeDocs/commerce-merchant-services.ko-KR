@@ -2,8 +2,10 @@
 title: '[!DNL Composable Catalog Data Model]'
 description: ' [!DNL Composable Catalog Data Model] for Adobe Commerce을 통해 비즈니스 모델과 Go-To-Market 전략에 맞게 카탈로그를 설정하는 방법을 알아봅니다'
 hidefromtoc: true
+hide: true
 recommendations: noCatalog
-source-git-commit: 0c90180e571faa2e41508efd697e043a050d480e
+exl-id: c743c020-0f32-4e23-9ea8-9cc992784613
+source-git-commit: 28a0743231c64b10844007db1a86e3448bae46c2
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 0%
